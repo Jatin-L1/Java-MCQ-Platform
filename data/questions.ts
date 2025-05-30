@@ -11,3316 +11,8972 @@ export interface Question {
 export const questions: Question[] = [
   {
     "id": 1,
-    "question": "Which component of the Java platform is responsible for converting bytecode into native machine code at runtime?",
+    "question": "What is the primary difference between system software and application software?",
     "options": [
-      "JRE",
-      "JDK",
-      "JVM",
-      "javac"
+      "System software is used by end-users, while application software manages hardware.",
+      "System software manages hardware, while application software is used by end-users.",
+      "System software and application software are the same.",
+      "Application software is used to develop system software."
     ],
-    "correctAnswer": "C",
-    "topic": "Java Platform",
+    "correctAnswer": "B",
+    "topic": "Software Types",
     "difficulty": "easy"
   },
   {
     "id": 2,
-    "question": "Which year was Java first released by Sun Microsystems?",
+    "question": "Which of the following is not a characteristic of software?",
     "options": [
-      "1991",
-      "1995",
-      "1998",
-      "2000"
+      "Reliability", 
+      "Usability", 
+      "Inflexibility", 
+      "Efficiency"
     ],
-    "correctAnswer": "B",
-    "topic": "Java History",
-    "difficulty": "easy"
-  },
-  {
-    "id": 3,
-    "question": "Which feature introduced in Java 5 improved performance by allowing multiple primitive values to be stored in a Collection?",
-    "options": [
-      "Generics",
-      "Autoboxing",
-      "Enhanced for-loop",
-      "Enum types"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Features",
+    "correctAnswer": "C",
+    "topic": "Software Characteristics",
     "difficulty": "medium"
   },
   {
-    "id": 4,
-    "question": "What’s the primary role of the JRE?",
+    "id": 3,
+    "question": "Why is software evolution necessary?",
     "options": [
-      "Compile Java source files",
-      "Run Java programs",
-      "Debug Java applications",
-      "Document Java APIs"
+      "To maintain hardware compatibility",
+      "To reduce the size of software",
+      "To adapt to changing requirements and environments",
+      "To eliminate the need for testing"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Platform",
+    "correctAnswer": "C",
+    "topic": "Software Evolution",
     "difficulty": "easy"
   },
   {
-    "id": 5,
-    "question": "Which of these is not a feature added in Java 8?",
+    "id": 4,
+    "question": "What does encapsulation refer to in software engineering?",
     "options": [
-      "Lambda expressions",
-      "Stream API",
-      "Modules",
-      "Default methods in interfaces"
+      "Hiding the data and methods within an object",
+      "Breaking down software into smaller components",
+      "Creating reusable components",
+      "Continuous integration and deployment"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Features",
+    "correctAnswer": "A",
+    "topic": "Software Engineering Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is not a type of software mentioned in the document?",
+    "options": [
+      "Middleware",
+      "Firmware",
+      "Engineering and Scientific Software",
+      "Financial Software"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Types",
     "difficulty": "medium"
   },
   {
     "id": 6,
-    "question": "The “Write Once, Run Anywhere” slogan refers to Java’s use of:",
+    "question": "What is the role of middleware?",
     "options": [
-      "Native compilation",
-      "Virtual machine",
-      "Platform-specific libraries",
-      "Bytecode obfuscation"
+      "To manage hardware resources",
+      "To provide a platform for application software",
+      "To sit between system software and applications",
+      "To act as an operating system"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Platform",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Software Types",
+    "difficulty": "medium"
   },
   {
     "id": 7,
-    "question": "Which part of the JDK includes tools like javac, javadoc, and jar?",
+    "question": "Which of the following principles is not part of software engineering?",
     "options": [
-      "JRE",
-      "JVM",
-      "Development tools",
-      "Runtime libraries"
+      "Modularity",
+      "Abstraction",
+      "Encapsulation",
+      "Centralization"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Platform",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "topic": "Software Engineering Principles",
+    "difficulty": "medium"
   },
   {
     "id": 8,
-    "question": "What’s the signature of the entry-point method in Java?",
+    "question": "What does 'software scope' refer to?",
     "options": [
-      "public static void main()",
-      "public void main(String args[])",
-      "public static void main(String[] args)",
-      "static public void main(String args[])"
+      "The size of the software",
+      "The performance requirements of the software",
+      "The functionality and features of the software",
+      "The cost of developing the software"
     ],
     "correctAnswer": "C",
-    "topic": "Java Basics",
+    "topic": "Software Requirements",
     "difficulty": "easy"
   },
   {
     "id": 9,
-    "question": "How do you pass three command-line arguments to a Java program?",
+    "question": "In the context of software engineering, what is 'agile methodology'?",
     "options": [
-      "java MyApp 1 2 3",
-      "javac MyApp 1 2 3",
-      "java MyApp \"1 2 3\"",
-      "run MyApp 1 2 3"
+      "A method focusing on fixed requirements",
+      "A method focusing on iterative and incremental development",
+      "A method for hardware development",
+      "A method for final product testing"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Basics",
+    "correctAnswer": "B",
+    "topic": "Software Development Methodologies",
     "difficulty": "easy"
   },
   {
     "id": 10,
-    "question": "What happens if you omit String[] args in main?",
+    "question": "What is 'continuous integration' in software development?",
     "options": [
-      "Program compiles but won't run",
-      "Compile-time error",
-      "Runtime error",
-      "JVM picks default args"
+      "Regularly integrating changes into the software",
+      "Developing software without testing",
+      "Ensuring software runs on multiple platforms",
+      "Rewriting the software from scratch"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Basics",
+    "correctAnswer": "A",
+    "topic": "Software Development Practices",
     "difficulty": "medium"
   },
   {
     "id": 11,
-    "question": "Which command both compiles and runs a single-file Java program in Java 11+?",
+    "question": "Which type of software is specifically designed to operate computer devices and peripherals?",
     "options": [
-      "java -compile MyApp.java",
-      "javac MyApp.java && java MyApp",
-      "java MyApp.java",
-      "run MyApp.java"
+      "System Software",
+      "Application Software",
+      "Driver Software",
+      "Programming Software"
     ],
     "correctAnswer": "C",
-    "topic": "Java Basics",
-    "difficulty": "medium"
+    "topic": "Software Types",
+    "difficulty": "easy"
   },
   {
     "id": 12,
-    "question": "In public static void main(String... args), args is treated as:",
+    "question": "Which attribute of software measures its capability to provide failure-free service?",
     "options": [
-      "Array of arrays",
-      "Varargs of String",
-      "Two-dimensional array",
-      "Linked list"
+      "Usability",
+      "Reliability",
+      "Efficiency",
+      "Maintainability"
     ],
     "correctAnswer": "B",
-    "topic": "Java Basics",
+    "topic": "Software Quality Attributes",
     "difficulty": "medium"
   },
   {
     "id": 13,
-    "question": "Which of these is a valid Java identifier?",
+    "question": "What is the main focus of embedded software?",
     "options": [
-      "_value",
-      "2ndValue",
-      "value-2",
-      "class"
+      "To perform scientific calculations",
+      "To manage database systems",
+      "To control features and functions of a product or system",
+      "To facilitate business operations"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Basics",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Software Types",
+    "difficulty": "medium"
   },
   {
     "id": 14,
-    "question": "What is the default value of a boolean field in a class?",
+    "question": "What is the purpose of software testing?",
     "options": [
-      "true",
-      "false",
-      "null",
-      "0"
+      "To add new features",
+      "To verify that software meets its requirements and is free of bugs",
+      "To reduce software size",
+      "To increase the software cost"
     ],
     "correctAnswer": "B",
-    "topic": "Java Basics",
+    "topic": "Software Testing",
     "difficulty": "easy"
   },
   {
     "id": 15,
-    "question": "Which operator has the highest precedence?",
+    "question": "Which software classification is based on deployment?",
     "options": [
-      "*",
-      "+",
-      "==",
-      "&&"
+      "Native software and cross-platform software",
+      "Installed software and cloud-based software",
+      "Proprietary software and open-source software",
+      "Small-scale software and enterprise software"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Operators",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "topic": "Software Classifications",
+    "difficulty": "medium"
   },
   {
     "id": 16,
-    "question": "What's the size of an int in Java?",
+    "question": "What does 'maintainability' in software refer to?",
     "options": [
-      "16 bits",
-      "32 bits",
-      "64 bits",
-      "Platform-dependent"
+      "The ability to be used by multiple users",
+      "The capability to be modified for corrections, improvements, or adaptations",
+      "The ability to run on multiple platforms",
+      "The efficiency in resource usage"
     ],
     "correctAnswer": "B",
-    "topic": "Java Data Types",
+    "topic": "Software Quality Attributes",
     "difficulty": "easy"
   },
   {
     "id": 17,
-    "question": "Which keyword reserves space but doesn't initialize a variable?",
+    "question": "What is 'web application software' primarily characterized by?",
     "options": [
-      "var",
-      "new",
-      "None (all locals must be initialized before use)",
-      "reserve"
+      "Running on client browsers",
+      "Controlling embedded systems",
+      "Managing hardware resources",
+      "Facilitating scientific research"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Basics",
-    "difficulty": "medium"
-  },
-  {
-    "id": 18,
-    "question": "What's the result of 5 + 2 * 3?",
-    "options": [
-      "21",
-      "11",
-      "16",
-      "35"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Operators",
+    "correctAnswer": "A",
+    "topic": "Software Types",
     "difficulty": "easy"
   },
   {
-    "id": 19,
-    "question": "What's the default value of a local object reference?",
+    "id": 18,
+    "question": "What does the 'efficiency' attribute of software measure?",
     "options": [
-      "null",
-      "New instance of the type",
-      "Zeroed memory",
-      "Compiler error if uninitialized"
+      "The performance relative to the amount of resources used",
+      "The ability to be understood and used",
+      "The ease of modifying the software",
+      "The software's ability to adapt to different environments"
     ],
-    "correctAnswer": "D",
-    "topic": "Java Variables",
+    "correctAnswer": "A",
+    "topic": "Software Quality Attributes",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "question": "Which software development model is known for its iterative and adaptive approach?",
+    "options": [
+      "Waterfall model",
+      "V-model",
+      "Agile model",
+      "Spiral model"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
     "difficulty": "medium"
   },
   {
     "id": 20,
-    "question": "Which literal denotes a long value?",
+    "question": "What is 'portability' in software?",
     "options": [
-      "1234",
-      "1234L",
-      "1234.0",
-      "(long)1234"
+      "The capability to be used by multiple users simultaneously",
+      "The ability to be adapted for different environments without changes",
+      "The efficiency in executing commands",
+      "The ease of debugging"
     ],
     "correctAnswer": "B",
-    "topic": "Java Data Types",
-    "difficulty": "easy"
+    "topic": "Software Quality Attributes",
+    "difficulty": "medium"
   },
   {
     "id": 21,
-    "question": "What's the output? int x = 5; if (x > 5) System.out.println(\"A\"); else if (x == 5) System.out.println(\"B\"); else System.out.println(\"C\");",
+    "question": "What is the main goal of software engineering?",
     "options": [
-      "A",
-      "B",
-      "C",
-      "Compilation error"
+      "To develop hardware components",
+      "To create high-quality, reliable, and maintainable software",
+      "To increase the complexity of software",
+      "To eliminate the need for user feedback"
     ],
     "correctAnswer": "B",
-    "topic": "Java Control Flow",
+    "topic": "Software Engineering",
     "difficulty": "easy"
   },
   {
     "id": 22,
-    "question": "Which switch types are allowed in Java 7+?",
+    "question": "Which of the following is a nonnumerical algorithm used in Artificial Intelligence software?",
     "options": [
-      "int, enum, String",
-      "int, double, String",
-      "char, boolean, String",
-      "long, float, String"
+      "Sorting algorithms",
+      "Numerical integration",
+      "Pattern recognition",
+      "Matrix multiplication"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Control Flow",
-    "difficulty": "medium"
+    "correctAnswer": "C",
+    "topic": "Software Algorithms",
+    "difficulty": "hard"
   },
   {
     "id": 23,
-    "question": "How many times will this loop print? for(int i=0; i<3; i++) { System.out.println(i); }",
+    "question": "Which type of software is designed for a specific operating system?",
     "options": [
-      "2",
-      "3",
-      "Infinite",
-      "1"
+      "Cross-platform software",
+      "Native software",
+      "Cloud-based software",
+      "Enterprise software"
     ],
     "correctAnswer": "B",
-    "topic": "Java Loops",
+    "topic": "Software Types",
     "difficulty": "easy"
   },
   {
     "id": 24,
-    "question": "What does continue do inside a loop?",
+    "question": "What is a 'design pattern' in software engineering?",
     "options": [
-      "Exits loop",
-      "Jumps to next iteration",
-      "Skips loop entirely",
-      "Jumps out two levels"
+      "A template for solving recurring problems in software design",
+      "A method for hardware design",
+      "A type of software license",
+      "A security measure"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Control Flow",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "topic": "Software Design",
+    "difficulty": "medium"
   },
   {
     "id": 25,
-    "question": "Which keyword can terminate a method immediately?",
+    "question": "What does 'usability' of software refer to?",
     "options": [
-      "break",
-      "exit",
-      "return",
-      "stop"
+      "The software's ability to run efficiently",
+      "The software's ability to be understood, learned, and used",
+      "The software's resistance to security threats",
+      "The software's portability across different platforms"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Methods",
+    "correctAnswer": "B",
+    "topic": "Software Quality Attributes",
     "difficulty": "easy"
   },
   {
     "id": 26,
-    "question": "What's the result of falling off the end of a non-void method?",
+    "question": "Which software is primarily used to fulfill specific business needs?",
     "options": [
-      "Returns default value",
-      "Compile-time error",
-      "Runtime exception",
-      "Returns null"
+      "System software",
+      "Application software",
+      "Middleware",
+      "Driver software"
     ],
     "correctAnswer": "B",
-    "topic": "Java Methods",
-    "difficulty": "medium"
+    "topic": "Software Types",
+    "difficulty": "easy"
   },
   {
     "id": 27,
-    "question": "How many branches in this if chain can execute? if(cond1) {...} if(cond2) {...}",
+    "question": "What does the term 'release planning' involve in software evolution?",
     "options": [
-      "Only one",
-      "Zero or more",
-      "Exactly two",
-      "Always one"
+      "Analyzing and planning for changes, and implementing them in new software versions",
+      "Testing the software for bugs",
+      "Documenting software requirements",
+      "Designing the software architecture"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Control Flow",
+    "correctAnswer": "A",
+    "topic": "Software Development Process",
     "difficulty": "medium"
   },
   {
     "id": 28,
-    "question": "Declare a 2×3 int array named m",
+    "question": "Which of the following is not an example of system software?",
     "options": [
-      "int[][] m = new int[2][3];",
-      "int m[][] = new int(2,3);",
-      "int[][] m = new int[2,3];",
-      "int m = new int[2][3][];"
+      "Operating system",
+      "Device drivers",
+      "Web browser",
+      "Utility software"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Arrays",
+    "correctAnswer": "C",
+    "topic": "Software Types",
     "difficulty": "easy"
   },
   {
     "id": 29,
-    "question": "Which index is out of bounds? int[] a = new int[5]; a[5] = 10;",
+    "question": "What does 'abstraction' mean in the context of software engineering?",
     "options": [
-      "0",
-      "4",
-      "5",
-      "None"
+      "Hiding the implementation details of a component and exposing only necessary functionality",
+      "Wrapping data and methods into a single unit",
+      "Creating multiple instances of an object",
+      "Testing the software for bugs"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Arrays",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "topic": "Software Engineering Principles",
+    "difficulty": "medium"
   },
   {
     "id": 30,
-    "question": "Jagged array in Java is:",
+    "question": "Why is security an important factor in software evolution?",
     "options": [
-      "Array of different types",
-      "Array of arrays with varying lengths",
-      "3D array",
-      "Irregular matrix"
+      "To reduce software size",
+      "To ensure software compatibility with old hardware",
+      "To prevent software-based cyberattacks and protect confidential data",
+      "To increase the complexity of the software"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Arrays",
+    "correctAnswer": "C",
+    "topic": "Software Security",
     "difficulty": "medium"
   },
   {
     "id": 31,
-    "question": "What's the length of new int[2][3]?",
+    "question": "Which of the following is NOT a key process activity common to all software processes?",
     "options": [
-      "2",
-      "3",
-      "6",
-      "0"
+      "Software specifications",
+      "Software development",
+      "Software validation",
+      "Software marketing"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Arrays",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "topic": "Software Process",
+    "difficulty": "medium"
   },
   {
     "id": 32,
-    "question": "How to iterate over a 1D array via enhanced for?",
+    "question": "The process model that shows the series of activities in the process along with their inputs, outputs, and dependencies is known as:",
     "options": [
-      "for(int i : arr)",
-      "for(int i = 0; i < arr.length; i++)",
-      "for(arr : int i)",
-      "foreach(int i in arr)"
+      "Workflow model",
+      "Dataflow model",
+      "Role/action model",
+      "Object model"
     ],
     "correctAnswer": "A",
-    "topic": "Java Arrays",
-    "difficulty": "easy"
+    "topic": "Software Process Models",
+    "difficulty": "medium"
   },
   {
     "id": 33,
-    "question": "What's the default value in an int[]?",
+    "question": "In which phase of the software process are the functionality and constraints on software operation defined?",
     "options": [
-      "null",
-      "0",
-      "-1",
-      "Compiler error"
+      "Software specification",
+      "Software development",
+      "Software validation",
+      "Software evolution"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Arrays",
+    "correctAnswer": "A",
+    "topic": "Software Process",
     "difficulty": "easy"
   },
   {
     "id": 34,
-    "question": "Which prints diagonal of 2D array? int[][] m = {{1,2},{3,4}}; for(int i=0;i<m.length;i++) System.out.print(m[i][i]);",
+    "question": "A role/action model primarily focuses on:",
     "options": [
-      "1 4",
-      "1 2",
-      "3 4",
-      "2 3"
+      "The data transformations within the process",
+      "The roles of people and their responsibilities",
+      "The sequence of activities in the process",
+      "The software architecture"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Arrays",
+    "correctAnswer": "B",
+    "topic": "Software Process Models",
     "difficulty": "medium"
   },
   {
     "id": 35,
-    "question": "Which class would you use to split a string into tokens based on delimiters?",
+    "question": "Which software process model represents the process as a set of activities, each of which carries out some data transformations?",
     "options": [
-      "String",
-      "StringBuilder",
-      "StringTokenizer",
-      "Scanner"
+      "Workflow model",
+      "Dataflow or activity model",
+      "Role/action model",
+      "Incremental model"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Strings",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "topic": "Software Process Models",
+    "difficulty": "hard"
   },
   {
     "id": 36,
-    "question": "What's the output? StringBuilder sb = new StringBuilder(\"Hello\"); sb.append(\" World\"); System.out.println(sb);",
+    "question": "Which of the following is a primary reason for using a software process model?",
     "options": [
-      "Hello",
-      "World",
-      "Hello World",
-      "Compilation error"
+      "To increase marketing potential",
+      "To ensure systematic software product development",
+      "To minimize the need for documentation",
+      "To ensure software is free of bugs"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Strings",
+    "correctAnswer": "B",
+    "topic": "Software Process Models",
     "difficulty": "easy"
   },
   {
     "id": 37,
-    "question": "Which is not true about String?",
+    "question": "What is a key consequence of not following a process model in software development?",
     "options": [
-      "Immutable",
-      "Can use + to concatenate",
-      "Thread-safe",
-      "Implements CharSequence"
+      "Reduced software cost",
+      "Increased team discipline",
+      "Development chaos",
+      "Faster development"
     ],
     "correctAnswer": "C",
-    "topic": "Java Strings",
+    "topic": "Software Process Models",
     "difficulty": "medium"
   },
   {
     "id": 38,
-    "question": "What does new String(\"abc\") == \"abc\" evaluate to?",
+    "question": "Which model was introduced by Winston Royce in 1970?",
     "options": [
-      "true",
-      "false",
-      "Compile-time error",
-      "Runtime exception"
+      "Spiral model",
+      "Waterfall model",
+      "V-Model",
+      "Incremental model"
     ],
     "correctAnswer": "B",
-    "topic": "Java Strings",
+    "topic": "Software Development Models",
     "difficulty": "medium"
   },
   {
     "id": 39,
-    "question": "Which method of String tests content equality?",
+    "question": "In the Waterfall Model, which phase follows after the Design phase?",
     "options": [
-      "==",
-      "equals()",
-      "compareTo()",
-      "contentEquals()"
+      "Requirements analysis",
+      "Implementation and unit testing",
+      "Integration and system testing",
+      "Operation and maintenance"
     ],
     "correctAnswer": "B",
-    "topic": "Java Strings",
+    "topic": "Waterfall Model",
     "difficulty": "easy"
   },
   {
     "id": 40,
-    "question": "How do you reverse a string using StringBuilder?",
+    "question": "Which phase of the Waterfall Model involves creating a detailed Software Requirement Specification (SRS) document?",
     "options": [
-      "sb.reverse()",
-      "sb.invert()",
-      "StringUtils.reverse(sb)",
-      "new StringBuilder(sb).flip()"
+      "Requirements analysis and specification",
+      "Design",
+      "Implementation and unit testing",
+      "Integration and system testing"
     ],
     "correctAnswer": "A",
-    "topic": "Java Strings",
-    "difficulty": "medium"
+    "topic": "Waterfall Model",
+    "difficulty": "easy"
   },
   {
     "id": 41,
-    "question": "Which wrapper class represents a double?",
+    "question": "Which of the following is NOT an advantage of the Waterfall Model?",
     "options": [
-      "Double",
-      "double",
-      "Float",
-      "BigDecimal"
+      "Suitable for smaller projects with well-understood requirements",
+      "High customer interaction during development",
+      "Fixed start and end points for each phase",
+      "Easy to manage due to phase rigidity"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Wrapper Classes",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "topic": "Waterfall Model",
+    "difficulty": "medium"
   },
   {
     "id": 42,
-    "question": "What is the default constructor?",
+    "question": "One of the disadvantages of the Waterfall Model is:",
     "options": [
-      "Provided only if no other constructors exist",
-      "Always provided",
-      "Only for abstract classes",
-      "Only for classes without fields"
+      "Overlapping phases",
+      "High customer interaction",
+      "Inflexibility to requirement changes",
+      "Continuous delivery of working software"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Classes",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Waterfall Model",
+    "difficulty": "medium"
   },
   {
     "id": 43,
-    "question": "Which throws NumberFormatException? Integer i = Integer.valueOf(\"abc\");",
+    "question": "The phase where the quality of the end product is determined by the effectiveness of testing carried out is known as:",
     "options": [
-      "true",
-      "false"
+      "Requirements analysis",
+      "Implementation and unit testing",
+      "Integration and system testing",
+      "Operation and maintenance"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Exceptions",
+    "correctAnswer": "C",
+    "topic": "Software Testing",
     "difficulty": "medium"
   },
   {
     "id": 44,
-    "question": "Copy constructor purpose is to:",
+    "question": "In which scenario is the Waterfall Model MOST suitable?",
     "options": [
-      "Prevent copying",
-      "Duplicate object state",
-      "Initialize defaults",
-      "Enforce immutability"
+      "Projects with ambiguous requirements",
+      "Projects with well-known, fixed requirements",
+      "Projects requiring high customer interaction",
+      "Projects with a high risk of changing requirements"
     ],
     "correctAnswer": "B",
-    "topic": "Java Classes",
+    "topic": "Waterfall Model",
     "difficulty": "medium"
   },
   {
     "id": 45,
-    "question": "Autoboxing converts:",
+    "question": "Which SDLC model is described as an evolutionary model suitable for projects with high-risk analysis?",
     "options": [
-      "int → Integer",
-      "Integer → int",
-      "int[] → Integer[]",
-      "long → Long[]"
+      "Waterfall model",
+      "V-Model",
+      "Spiral model",
+      "Incremental model"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Wrapper Classes",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
   },
   {
     "id": 46,
-    "question": "Which is true about wrapper classes?",
+    "question": "Which phase is NOT typically part of the SDLC?",
     "options": [
-      "Mutable",
-      "Immutable",
-      "Neither",
-      "Both"
+      "Feasibility study",
+      "Marketing analysis",
+      "Implementation",
+      "Maintenance"
     ],
     "correctAnswer": "B",
-    "topic": "Java Wrapper Classes",
+    "topic": "Software Development Lifecycle",
     "difficulty": "easy"
   },
   {
     "id": 47,
-    "question": "Which keyword disambiguates a field from a parameter?",
+    "question": "The Spiral Model combines elements of which two types of process models?",
     "options": [
-      "self",
-      "this",
-      "super",
-      "current"
+      "Waterfall and Agile",
+      "Incremental and Iterative",
+      "Waterfall and Prototyping",
+      "Agile and V-Model"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Classes",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
+    "difficulty": "hard"
   },
   {
     "id": 48,
-    "question": "Can you overload main?",
+    "question": "In the Spiral Model, what is the primary focus during the Risk Analysis phase?",
     "options": [
-      "Yes",
-      "No"
+      "Defining system requirements",
+      "Designing system architecture",
+      "Identifying and mitigating project risks",
+      "Testing and validation"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Methods",
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 49,
-    "question": "Which is a static member?",
+    "question": "Agile methodologies prioritize:",
     "options": [
-      "Instance method",
-      "Field declared with static",
-      "Constructor",
-      "Final method"
+      "Comprehensive documentation",
+      "Following a strict plan",
+      "Customer collaboration and response to change",
+      "Long-term contracts"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Classes",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 50,
-    "question": "What's method overloading?",
+    "question": "Which Agile framework focuses on iterative development and frequent releases with fixed time intervals called Sprints?",
     "options": [
-      "Same name, different signature",
-      "Same signature, different return",
-      "Duplicate method",
-      "Runtime dispatch"
+      "Scrum",
+      "Kanban",
+      "Extreme Programming (XP)",
+      "Lean"
     ],
     "correctAnswer": "A",
-    "topic": "Java Methods",
-    "difficulty": "easy"
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
-  // ...existing code with questions 1-50...
-
   {
     "id": 51,
-    "question": "Can a static method use this?",
+    "question": "The V-Model is also known as:",
     "options": [
-      "Yes",
-      "No"
+      "Verification and Validation model",
+      "Evolutionary model",
+      "Incremental model",
+      "Iterative model"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Static Members",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "topic": "V-Model",
+    "difficulty": "medium"
   },
   {
     "id": 52,
-    "question": "Which allows reuse of parent behavior?",
+    "question": "In the V-Model, which phase directly follows System Design?",
     "options": [
-      "this",
-      "super",
-      "base",
-      "parent"
+      "Acceptance Testing",
+      "Unit Testing",
+      "Integration Testing",
+      "Implementation"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Inheritance",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "topic": "V-Model",
+    "difficulty": "medium"
   },
   {
     "id": 53,
-    "question": "What's true about method overriding?",
+    "question": "Which of the following is a key characteristic of the Incremental Model?",
     "options": [
-      "Same signature, same return type",
-      "Different signature",
-      "Private methods",
-      "Static methods"
+      "Single-phase completion",
+      "High customer interaction",
+      "Stepwise refinement",
+      "Continuous integration"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Inheritance",
+    "correctAnswer": "C",
+    "topic": "Incremental Model",
     "difficulty": "medium"
   },
   {
     "id": 54,
-    "question": "Can you extend multiple classes?",
+    "question": "Incremental Model is most suitable for:",
     "options": [
-      "Yes",
-      "No"
+      "Small projects with fixed requirements",
+      "Large projects with changing requirements",
+      "Short-term projects with fixed timelines",
+      "Projects with minimal user interaction"
     ],
     "correctAnswer": "B",
-    "topic": "Java Inheritance",
-    "difficulty": "easy"
+    "topic": "Incremental Model",
+    "difficulty": "medium"
   },
   {
     "id": 55,
-    "question": "Which call invokes parent constructor? class B extends A { B() { super(); } }",
+    "question": "Which type of testing is performed to ensure that individual modules function correctly?",
     "options": [
-      "this()",
-      "super()",
-      "parent()",
-      "base()"
+      "Integration Testing",
+      "System Testing",
+      "Unit Testing",
+      "Acceptance Testing"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Inheritance",
+    "correctAnswer": "C",
+    "topic": "Software Testing",
     "difficulty": "easy"
   },
   {
     "id": 56,
-    "question": "Overriding a final method results in:",
+    "question": "In which SDLC phase is user acceptance testing (UAT) performed?",
     "options": [
-      "Compile error",
-      "Runtime error",
-      "Silent ignore",
-      "New method"
+      "Design",
+      "Implementation",
+      "Testing",
+      "Maintenance"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Inheritance",
-    "difficulty": "medium"
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "easy"
   },
   {
     "id": 57,
-    "question": "Which binding occurs at runtime?",
+    "question": "What is the primary goal of the maintenance phase in SDLC?",
     "options": [
-      "Static binding",
-      "Dynamic binding",
-      "Early binding",
-      "Link-time binding"
+      "To create the system architecture",
+      "To correct faults and improve system performance",
+      "To gather system requirements",
+      "To train users on the new system"
     ],
     "correctAnswer": "B",
-    "topic": "Java Polymorphism",
-    "difficulty": "medium"
+    "topic": "Software Maintenance",
+    "difficulty": "easy"
   },
   {
     "id": 58,
-    "question": "Declaring class final prevents:",
+    "question": "Which type of maintenance involves modifying the system to cope with changes in the software environment?",
     "options": [
-      "Instantiation",
-      "Extension",
-      "Method overriding",
-      "Field access"
+      "Corrective Maintenance",
+      "Adaptive Maintenance",
+      "Perfective Maintenance",
+      "Preventive Maintenance"
     ],
     "correctAnswer": "B",
-    "topic": "Java Classes",
+    "topic": "Software Maintenance",
     "difficulty": "medium"
   },
   {
     "id": 59,
-    "question": "Which call uses polymorphism? A obj = new B(); obj.method();",
+    "question": "In the context of SDLC, what does SRS stand for?",
     "options": [
-      "No",
-      "Yes"
+      "Software Review System",
+      "System Requirements Specification",
+      "Software Requirements Specification",
+      "Systematic Review Specification"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Polymorphism",
+    "correctAnswer": "C",
+    "topic": "Software Requirements",
     "difficulty": "easy"
   },
   {
     "id": 60,
-    "question": "Can you declare a final variable without initialization?",
+    "question": "Which SDLC model allows phases to overlap and exhibit a flexible, iterative process?",
     "options": [
-      "Yes, in constructor",
-      "No"
+      "Waterfall model",
+      "V-Model",
+      "Spiral model",
+      "Agile model"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Variables",
+    "correctAnswer": "D",
+    "topic": "Software Development Models",
     "difficulty": "medium"
   },
   {
     "id": 61,
-    "question": "Abstract class may contain:",
+    "question": "Which software development model combines both iterative and incremental approaches?",
     "options": [
-      "Only abstract methods",
-      "Both abstract and concrete methods",
-      "No methods",
-      "Only static methods"
+      "Waterfall Model",
+      "Evolutionary Model",
+      "V-Model",
+      "RAD Model"
     ],
     "correctAnswer": "B",
-    "topic": "Java Abstract Classes",
-    "difficulty": "easy"
+    "topic": "Software Development Models",
+    "difficulty": "medium"
   },
   {
     "id": 62,
-    "question": "Can you instantiate an abstract class?",
+    "question": "In the Evolutionary Model, how is user feedback utilized?",
     "options": [
-      "Yes",
-      "No"
+      "Only at the end of the development cycle",
+      "After each incremental delivery",
+      "Only during the initial planning phase",
+      "Feedback is not considered"
     ],
     "correctAnswer": "B",
-    "topic": "Java Abstract Classes",
-    "difficulty": "easy"
+    "topic": "Evolutionary Model",
+    "difficulty": "medium"
   },
   {
     "id": 63,
-    "question": "Abstract method signature must end with:",
+    "question": "Which model is best suited for projects where requirements are expected to change frequently?",
     "options": [
-      "{}",
-      ";",
-      "()",
-      "throw"
+      "Waterfall Model",
+      "Spiral Model",
+      "Prototype Model",
+      "Evolutionary Model"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Abstract Classes",
+    "correctAnswer": "D",
+    "topic": "Software Development Models",
     "difficulty": "medium"
   },
   {
     "id": 64,
-    "question": "Subclass must override all abstract methods unless:",
+    "question": "What is the main advantage of the Iterative Waterfall Model over the classical Waterfall Model?",
     "options": [
-      "It's final",
-      "It's abstract",
-      "It's static",
-      "It's private"
+      "It requires less documentation.",
+      "It provides feedback paths for error correction.",
+      "It does not need a feasibility study.",
+      "It skips the testing phase."
     ],
     "correctAnswer": "B",
-    "topic": "Java Abstract Classes",
+    "topic": "Waterfall Model",
     "difficulty": "medium"
   },
   {
     "id": 65,
-    "question": "Default access in a package is:",
+    "question": "What is the Incremental Process Model also known as?",
     "options": [
-      "Public",
-      "Protected",
-      "Package-private",
-      "Private"
+      "Waterfall Model",
+      "V-Model",
+      "Successive Version Model",
+      "RAD Model"
     ],
     "correctAnswer": "C",
-    "topic": "Java Packages",
-    "difficulty": "easy"
+    "topic": "Incremental Model",
+    "difficulty": "hard"
   },
   {
     "id": 66,
-    "question": "Interfaces may contain:",
+    "question": "Which phase is not part of the Spiral Model?",
     "options": [
-      "Instance fields",
-      "Default methods",
-      "Constructors",
-      "Static initializers"
+      "Planning",
+      "Risk Analysis",
+      "Development",
+      "Maintenance"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Interfaces",
+    "correctAnswer": "D",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 67,
-    "question": "Can an interface extend multiple interfaces?",
+    "question": "Which of the following is not an advantage of the Spiral Model?",
     "options": [
-      "Yes",
-      "No"
+      "Flexibility in Requirements",
+      "High Cost",
+      "Emphasis on Risk Management",
+      "Improved Communication"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Interfaces",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
   },
   {
     "id": 68,
-    "question": "Which keyword implements an interface?",
+    "question": "Which SDLC model is typically used when the customer does not know the exact project requirements beforehand?",
     "options": [
-      "extends",
-      "implements",
-      "uses",
-      "imports"
+      "Waterfall Model",
+      "Prototype Model",
+      "V-Model",
+      "Incremental Model"
     ],
     "correctAnswer": "B",
-    "topic": "Java Interfaces",
-    "difficulty": "easy"
+    "topic": "Prototype Model",
+    "difficulty": "medium"
   },
   {
     "id": 69,
-    "question": "Which is checked exception?",
+    "question": "In the Prototyping Model, which step comes immediately after building a prototype?",
     "options": [
-      "NullPointerException",
-      "IOException",
-      "ArithmeticException",
-      "ArrayIndexOutOfBoundsException"
+      "Requirement Gathering and Analysis",
+      "Quick Design",
+      "Initial User Evaluation",
+      "Refining Prototype"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Exceptions",
+    "correctAnswer": "C",
+    "topic": "Prototype Model",
     "difficulty": "medium"
   },
   {
     "id": 70,
-    "question": "What must you do with a checked exception?",
+    "question": "Which model divides the development cycle into smaller incremental waterfall models?",
     "options": [
-      "Catch or declare",
-      "Ignore",
-      "Only catch",
-      "Only declare"
+      "Evolutionary Model",
+      "Spiral Model",
+      "Incremental Model",
+      "Prototype Model"
     ],
     "correctAnswer": "A",
-    "topic": "Java Exceptions",
-    "difficulty": "easy"
+    "topic": "Evolutionary Model",
+    "difficulty": "hard"
   },
   {
     "id": 71,
-    "question": "finally block executes if:",
+    "question": "Which model is best suited for large projects that can be easily divided into smaller modules?",
     "options": [
-      "Exception thrown",
-      "No exception",
-      "Both",
-      "Only on return"
+      "Waterfall Model",
+      "V-Model",
+      "Evolutionary Model",
+      "Prototype Model"
     ],
     "correctAnswer": "C",
-    "topic": "Java Exceptions",
-    "difficulty": "easy"
+    "topic": "Evolutionary Model",
+    "difficulty": "medium"
   },
   {
     "id": 72,
-    "question": "Throwing custom exception uses:",
+    "question": "In the Spiral Model, what is the focus of the first loop?",
     "options": [
-      "throw new MyEx();",
-      "throws MyEx;",
-      "try MyEx;",
-      "catch MyEx;"
+      "Final product delivery",
+      "Requirement gathering and risk analysis",
+      "System testing",
+      "Maintenance planning"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Exceptions",
+    "correctAnswer": "B",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 73,
-    "question": "Uncaught runtime exception leads to:",
+    "question": "Which of the following is a disadvantage of the Prototyping Model?",
     "options": [
-      "Compile error",
-      "Default handler prints stack trace",
-      "Silent ignore",
-      "JVM crash"
+      "Early feedback from customers",
+      "Costly with respect to time and money",
+      "Easy to accommodate new requirements",
+      "Errors can be detected early"
     ],
     "correctAnswer": "B",
-    "topic": "Java Exceptions",
+    "topic": "Prototype Model",
     "difficulty": "medium"
   },
   {
     "id": 74,
-    "question": "Which enum method returns names?",
+    "question": "What is the primary goal of risk analysis in the Spiral Model?",
     "options": [
-      "name()",
-      "toString()",
-      "values()",
-      "ordinal()"
-    ],
-    "correctAnswer": "A",
-    "topic": "Java Utilities",
-    "difficulty": "easy"
-  },
-  {
-    "id": 75,
-    "question": "Annotations start with:",
-    "options": [
-      "#",
-      "@",
-      "!",
-      "&"
+      "To reduce the development cost",
+      "To manage and mitigate potential risks",
+      "To speed up the development process",
+      "To eliminate the need for testing"
     ],
     "correctAnswer": "B",
-    "topic": "Java Annotations",
-    "difficulty": "easy"
-  },
-  {
-    "id": 76,
-    "question": "Which API handles dates in Java 8+?",
-    "options": [
-      "java.util.Date",
-      "java.time",
-      "java.sql.Date",
-      "java.text.DateFormat"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Date API",
-    "difficulty": "easy"
-  },
-  {
-    "id": 77,
-    "question": "Regex pattern compilation class?",
-    "options": [
-      "Pattern",
-      "Matcher",
-      "RegEx",
-      "Scanner"
-    ],
-    "correctAnswer": "A",
-    "topic": "Java Regular Expressions",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
-    "id": 78,
-    "question": "Random number generator class?",
+    "id": 75,
+    "question": "Which SDLC model is recommended for projects with many unknown risks?",
     "options": [
-      "Math.random()",
-      "java.util.Random",
-      "ThreadLocalRandom",
-      "All of the above"
+      "Waterfall Model",
+      "Incremental Model",
+      "Spiral Model",
+      "Prototype Model"
+    ],
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
+  },
+  {
+    "id": 76,
+    "question": "In the Incremental Process Model, what is developed and delivered in successive iterations?",
+    "options": [
+      "Complete software system",
+      "Simple working systems with core features",
+      "Final product only",
+      "Documentation"
+    ],
+    "correctAnswer": "B",
+    "topic": "Incremental Model",
+    "difficulty": "medium"
+  },
+  {
+    "id": 77,
+    "question": "Which model provides a working prototype early in the development cycle to gather user feedback?",
+    "options": [
+      "Waterfall Model",
+      "V-Model",
+      "Incremental Model",
+      "Prototype Model"
     ],
     "correctAnswer": "D",
-    "topic": "Java Utilities",
+    "topic": "Prototype Model",
+    "difficulty": "easy"
+  },
+  {
+    "id": 78,
+    "question": "What is the main disadvantage of the Spiral Model?",
+    "options": [
+      "It handles risks effectively.",
+      "It is simple to use.",
+      "It can be very complex and costly.",
+      "It provides customer satisfaction."
+    ],
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 79,
-    "question": "To read bytes from a file use:",
+    "question": "What does the Incremental Process Model focus on during each iteration?",
     "options": [
-      "FileInputStream",
-      "BufferedReader",
-      "Scanner",
-      "FileReader"
+      "Delivering the entire system",
+      "Developing core features first",
+      "Skipping the testing phase",
+      "Completing the entire design phase"
     ],
-    "correctAnswer": "A",
-    "topic": "Java IO",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "topic": "Incremental Model",
+    "difficulty": "medium"
   },
   {
     "id": 80,
-    "question": "Which writes objects to stream?",
+    "question": "Which of the following is a key characteristic of the Prototype Model?",
     "options": [
-      "ObjectInputStream",
-      "ObjectOutputStream",
-      "DataOutputStream",
-      "FileWriter"
+      "Rigid requirements",
+      "Limited user involvement",
+      "Iterative refinement based on user feedback",
+      "No need for testing"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Serialization",
+    "correctAnswer": "C",
+    "topic": "Prototype Model",
     "difficulty": "medium"
   },
   {
     "id": 81,
-    "question": "Closing streams best practice is using:",
+    "question": "Which SDLC model emphasizes regular evaluations and reviews?",
     "options": [
-      "try-finally",
-      "try-with-resources",
-      "finally-only",
-      "Explicit close() only"
+      "Waterfall Model",
+      "V-Model",
+      "Spiral Model",
+      "RAD Model"
     ],
-    "correctAnswer": "B",
-    "topic": "Java IO",
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 82,
-    "question": "Serializable marker interface has:",
+    "question": "In the Prototyping Model, which step involves improving the design based on user feedback?",
     "options": [
-      "Methods",
-      "No methods",
-      "One method",
-      "Two methods"
+      "Initial User Evaluation",
+      "Quick Design",
+      "Requirement Gathering and Analysis",
+      "Refining Prototype"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Serialization",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "topic": "Prototype Model",
+    "difficulty": "medium"
   },
   {
     "id": 83,
-    "question": "transient keyword prevents:",
+    "question": "What is the main purpose of the engineering phase in the Spiral Model?",
     "options": [
-      "Method execution",
-      "Field serialization",
-      "Class loading",
-      "Stream closing"
+      "Gathering requirements",
+      "Developing the software",
+      "Analyzing risks",
+      "Evaluating the project"
     ],
     "correctAnswer": "B",
-    "topic": "Java Serialization",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 84,
-    "question": "To check file existence use: File f = new File(\"test.txt\"); f.exists();",
+    "question": "Which model allows for early user interaction and feedback?",
     "options": [
-      "true",
-      "false"
+      "Waterfall Model",
+      "V-Model",
+      "Incremental Model",
+      "Prototype Model"
     ],
-    "correctAnswer": "A",
-    "topic": "Java IO",
+    "correctAnswer": "D",
+    "topic": "Prototype Model",
     "difficulty": "easy"
   },
   {
     "id": 85,
-    "question": "Appending to a file requires:",
+    "question": "What is a significant advantage of using the Evolutionary Model?",
     "options": [
-      "new FileOutputStream(file, true)",
-      "new FileWriter(file)",
-      "new PrintStream(file)",
-      "new BufferedOutputStream(file)"
+      "Fixed requirements",
+      "No user feedback required",
+      "Increased customer confidence",
+      "Single-phase development"
     ],
-    "correctAnswer": "A",
-    "topic": "Java IO",
+    "correctAnswer": "C",
+    "topic": "Evolutionary Model",
     "difficulty": "medium"
   },
   {
     "id": 86,
-    "question": "Which reads text lines?",
+    "question": "Which SDLC model is known for its systematic and iterative approach?",
     "options": [
-      "FileInputStream",
-      "BufferedReader",
-      "DataInputStream",
-      "ObjectInputStream"
+      "Waterfall Model",
+      "Spiral Model",
+      "Prototype Model",
+      "Incremental Model"
     ],
     "correctAnswer": "B",
-    "topic": "Java IO",
-    "difficulty": "easy"
+    "topic": "Spiral Model",
+    "difficulty": "medium"
   },
   {
     "id": 87,
-    "question": "Serialization UID is:",
+    "question": "In the Prototyping Model, what is created during the Quick Design phase?",
     "options": [
-      "Optional",
-      "Mandatory",
-      "Compile error without",
-      "Runtime error without"
+      "Final product",
+      "Detailed design",
+      "Basic design of the requirement",
+      "Complete system"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Serialization",
+    "correctAnswer": "C",
+    "topic": "Prototype Model",
     "difficulty": "medium"
   },
   {
     "id": 88,
-    "question": "Explain how the JVM class loader architecture works.",
+    "question": "Which model breaks down work into smaller chunks that are delivered incrementally to the customer?",
     "options": [
-      "Bootstrap, Extension, Application",
-      "Preloader, Verifier, Executor",
-      "Loader, Linker, Initializer",
-      "Compiler, Interpreter, JIT"
+      "Waterfall Model",
+      "V-Model",
+      "Evolutionary Model",
+      "Prototype Model"
     ],
-    "correctAnswer": "A",
-    "topic": "JVM Architecture",
-    "difficulty": "hard"
+    "correctAnswer": "C",
+    "topic": "Evolutionary Model",
+    "difficulty": "easy"
   },
   {
     "id": 89,
-    "question": "Given this code, what's printed? class A { static { System.out.print(\"A\"); } } class B extends A { static { System.out.print(\"B\"); } } public class Test { public static void main(String[] args) { new B(); } }",
+    "question": "In the Incremental Process Model, what is the main benefit of developing core features first?",
     "options": [
-      "AB",
-      "BA",
-      "A",
-      "B"
+      "Reduced documentation",
+      "Easier modification of the system",
+      "Faster final delivery",
+      "Elimination of the testing phase"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Classes",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "topic": "Incremental Model",
+    "difficulty": "medium"
   },
   {
     "id": 90,
-    "question": "What optimizations does HotSpot perform?",
+    "question": "What is the focus of the evaluation phase in the Spiral Model?",
     "options": [
-      "Inlining, escape analysis, JIT compilation",
-      "Bytecode weaving",
-      "AOT only",
-      "None"
+      "Developing software",
+      "Analyzing risks",
+      "Determining if the software meets customer requirements",
+      "Gathering requirements"
     ],
-    "correctAnswer": "A",
-    "topic": "JVM",
-    "difficulty": "hard"
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
   },
   {
     "id": 91,
-    "question": "Concurrency: What's the effect of volatile?",
+    "question": "Which SDLC model is particularly useful for large and complex projects?",
     "options": [
-      "Atomicity",
-      "Visibility",
-      "Ordering and atomicity",
-      "None"
+      "Waterfall Model",
+      "V-Model",
+      "Spiral Model",
+      "Prototype Model"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Concurrency",
-    "difficulty": "hard"
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
   },
   {
     "id": 92,
-    "question": "Which collection is thread-safe by default?",
+    "question": "In the Prototyping Model, what is the purpose of the initial user evaluation?",
     "options": [
-      "HashMap",
-      "ConcurrentHashMap",
-      "ArrayList",
-      "HashSet"
+      "Gathering final requirements",
+      "Refining the prototype based on feedback",
+      "Finalizing the design",
+      "Delivering the final product"
     ],
     "correctAnswer": "B",
-    "topic": "Java Collections",
-    "difficulty": "hard"
+    "topic": "Prototype Model",
+    "difficulty": "medium"
   },
   {
     "id": 93,
-    "question": "Explain diamond problem in Java and how interfaces solve it.",
+    "question": "Which model is described as having loops representing complete software development cycles?",
     "options": [
-      "Impossible, interfaces allow default methods resolution by class",
-      "Occurs with classes only",
-      "Causes runtime error",
-      "Only in C++"
+      "Waterfall Model",
+      "V-Model",
+      "Spiral Model",
+      "Incremental Model"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Interfaces",
-    "difficulty": "hard"
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
   },
   {
     "id": 94,
-    "question": "What's the difference between Checked vs Unchecked exceptions?",
+    "question": "What is a disadvantage of the Prototyping Model related to customer expectations?",
     "options": [
-      "Compile-time vs runtime checking",
-      "Both same",
-      "Only custom exceptions",
-      "Only system exceptions"
+      "Customers may lose interest if not satisfied with the initial prototype.",
+      "Prototypes are too detailed.",
+      "Requirements are fixed early on.",
+      "There is no user feedback."
     ],
     "correctAnswer": "A",
-    "topic": "Java Exceptions",
-    "difficulty": "hard"
+    "topic": "Prototype Model",
+    "difficulty": "medium"
   },
   {
     "id": 95,
-    "question": "ByteBuffer vs Stream I/O—advantages?",
+    "question": "Which phase is not explicitly part of the Spiral Model's typical phases?",
     "options": [
-      "Non-blocking, channels",
-      "Same",
-      "Stream is faster",
-      "ByteBuffer deprecated"
+      "Planning",
+      "Risk Analysis",
+      "Engineering",
+      "Deployment"
     ],
-    "correctAnswer": "A",
-    "topic": "Java IO",
+    "correctAnswer": "D",
+    "topic": "Spiral Model",
     "difficulty": "hard"
   },
   {
     "id": 96,
-    "question": "Generics: Type erasure implications?",
+    "question": "What is a benefit of using the Evolutionary Model for software development?",
     "options": [
-      "No runtime type info",
-      "Invariant only",
-      "Both",
-      "Covariant"
+      "Reduced customer involvement",
+      "Quick delivery of the final product",
+      "Continuous feedback and improvement",
+      "Fixed requirements from the start"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Generics",
-    "difficulty": "hard"
+    "correctAnswer": "C",
+    "topic": "Evolutionary Model",
+    "difficulty": "medium"
   },
   {
     "id": 97,
-    "question": "What's CompletableFuture used for?",
+    "question": "In the Incremental Process Model, which phase typically follows the delivery of each iteration?",
     "options": [
-      "Synchronous tasks",
-      "Asynchronous, non-blocking computations",
-      "GUI framework",
-      "File I/O only"
+      "Final testing",
+      "Requirement gathering",
+      "Planning for the next increment",
+      "Complete system redesign"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Concurrency",
-    "difficulty": "hard"
+    "correctAnswer": "C",
+    "topic": "Incremental Model",
+    "difficulty": "medium"
   },
   {
     "id": 98,
-    "question": "Describe difference between StringBuffer and StringBuilder.",
+    "question": "Which SDLC model allows for incorporating changes even at later stages of development?",
     "options": [
-      "Thread-safe vs not",
-      "Both thread-safe",
-      "Only methods differ",
-      "No difference"
+      "Waterfall Model",
+      "V-Model",
+      "Prototype Model",
+      "Incremental Model"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Strings",
-    "difficulty": "hard"
+    "correctAnswer": "D",
+    "topic": "Incremental Model",
+    "difficulty": "medium"
   },
   {
     "id": 99,
-    "question": "Explain how HashMap handles collisions.",
+    "question": "What is a common risk associated with the Spiral Model?",
     "options": [
-      "Chaining with linked lists/balanced trees",
-      "Open addressing",
-      "Linear probing only",
-      "No collision handling"
+      "Lack of user involvement",
+      "High dependency on risk analysis",
+      "Fixed project duration",
+      "No documentation"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Collections",
+    "correctAnswer": "B",
+    "topic": "Spiral Model",
     "difficulty": "hard"
   },
   {
     "id": 100,
-    "question": "What does the transient keyword do during serialization?",
+    "question": "Which model is suitable when the customer wants to start using the core features early?",
     "options": [
-      "Excludes field from serialization",
-      "Marks method",
-      "Pauses thread",
-      "Nothing"
+      "Waterfall Model",
+      "V-Model",
+      "Evolutionary Model",
+      "Incremental Model"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Serialization",
-    "difficulty": "hard"
+    "correctAnswer": "C",
+    "topic": "Evolutionary Model",
+    "difficulty": "medium"
   },
   {
     "id": 101,
-    "question": "Which method of String returns a new String object representing the concatenation of this string and the argument?",
+    "question": "In the Prototyping Model, what happens if the user is not satisfied with the initial prototype?",
     "options": [
-      "concat()",
-      "append()",
-      "plus()",
-      "join()"
+      "The project is canceled.",
+      "The prototype is refined based on feedback.",
+      "Development moves to the next phase.",
+      "The requirements are fixed."
     ],
-    "correctAnswer": "A",
-    "topic": "Java Strings",
+    "correctAnswer": "B",
+    "topic": "Prototype Model",
     "difficulty": "easy"
   },
   {
     "id": 102,
-    "question": "What's the output? String s = \"abc\"; s.toUpperCase(); System.out.println(s);",
+    "question": "What is a key difference between the Spiral Model and the Waterfall Model?",
     "options": [
-      "ABC",
-      "abc",
-      "Compilation error",
-      "Runtime exception"
+      "Spiral Model does not include risk analysis.",
+      "Waterfall Model includes iterative development.",
+      "Spiral Model focuses on risk management.",
+      "Waterfall Model is more flexible to changes."
     ],
-    "correctAnswer": "B",
-    "topic": "Java Strings",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
   },
   {
     "id": 103,
-    "question": "Which class is unsynchronized and therefore faster when thread safety is not needed?",
+    "question": "Which model is particularly beneficial for projects with high risks?",
     "options": [
-      "StringBuffer",
-      "StringBuilder",
-      "String",
-      "StringTokenizer"
+      "Waterfall Model",
+      "V-Model",
+      "Prototype Model",
+      "Spiral Model"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Strings",
+    "correctAnswer": "D",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 104,
-    "question": "What does StringTokenizer st = new StringTokenizer(\"a,b,c\", \",\"); produce?",
+    "question": "In the Incremental Process Model, how is the system developed?",
     "options": [
-      "Tokens a,b,c",
-      "Tokens a b c",
-      "Tokens , ,",
-      "Single token a,b,c"
+      "All at once",
+      "In increments with core features first",
+      "By gathering all requirements upfront",
+      "With no user feedback"
     ],
     "correctAnswer": "B",
-    "topic": "Java Strings",
-    "difficulty": "medium"
-  },
-  {
-    "id": 105,
-    "question": "Which method of String checks if it starts with the specified prefix?",
-    "options": [
-      "isStart()",
-      "startsWith()",
-      "beginWith()",
-      "prefixOf()"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Strings",
+    "topic": "Incremental Model",
     "difficulty": "easy"
   },
   {
-    "id": 106,
-    "question": "What's the time complexity of substring() in Java 7+?",
+    "id": 105,
+    "question": "Which phase in the Spiral Model is repeated in every cycle?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n²)"
+      "Planning",
+      "Risk Analysis",
+      "Engineering",
+      "All of the above"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Strings",
+    "correctAnswer": "D",
+    "topic": "Spiral Model",
     "difficulty": "hard"
   },
   {
-    "id": 107,
-    "question": "Which of these operations does not modify the existing object but returns a new one?",
+    "id": 106,
+    "question": "In the Prototyping Model, what is the main advantage of building a prototype early?",
     "options": [
-      "StringBuilder.append()",
-      "StringBuffer.reverse()",
-      "String.toLowerCase()",
-      "StringBuilder.insert()"
+      "It speeds up final delivery.",
+      "It helps in understanding user requirements better.",
+      "It reduces the need for testing.",
+      "It fixes all requirements early."
+    ],
+    "correctAnswer": "B",
+    "topic": "Prototype Model",
+    "difficulty": "medium"
+  },
+  {
+    "id": 107,
+    "question": "What is a disadvantage of using the Incremental Process Model?",
+    "options": [
+      "Reduced flexibility",
+      "Higher initial costs",
+      "Potential for incomplete system integration",
+      "Lack of customer feedback"
     ],
     "correctAnswer": "C",
-    "topic": "Java Strings",
+    "topic": "Incremental Model",
     "difficulty": "hard"
   },
   {
     "id": 108,
-    "question": "Which constructor is provided by default if no constructors are defined?",
+    "question": "Which model emphasizes continuous user involvement and feedback?",
     "options": [
-      "Parameterized constructor",
-      "Copy constructor",
-      "No-arg (default) constructor",
-      "Private constructor"
+      "Waterfall Model",
+      "V-Model",
+      "Prototype Model",
+      "Incremental Model"
     ],
     "correctAnswer": "C",
-    "topic": "Java Classes",
+    "topic": "Prototype Model",
     "difficulty": "easy"
   },
   {
     "id": 109,
-    "question": "Given Integer i = new Integer(5); Integer j = new Integer(5);, what does i == j evaluate to?",
+    "question": "Which model uses a cyclic approach for software development?",
     "options": [
-      "true",
-      "false",
-      "Compile-time error",
-      "Runtime exception"
+      "Waterfall Model",
+      "V-Model",
+      "Spiral Model",
+      "Incremental Model"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Wrapper Classes",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
   },
   {
     "id": 110,
-    "question": "Which of these creates an immutable object?",
+    "question": "What is the main purpose of the Quick Design phase in the Prototyping Model?",
     "options": [
-      "StringBuilder sb = new StringBuilder(\"x\");",
-      "String s = new String(\"x\");",
-      "StringBuffer sbf = new StringBuffer(\"x\");",
-      "All of the above"
+      "To finalize the design",
+      "To gather detailed requirements",
+      "To create a simple initial version of the system",
+      "To complete the entire system"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Strings",
+    "correctAnswer": "C",
+    "topic": "Prototype Model",
     "difficulty": "medium"
   },
   {
     "id": 111,
-    "question": "What's the result of Double.parseDouble(\"NaN\")?",
+    "question": "Which of the following is a critical activity during the risk analysis phase of the Spiral Model?",
     "options": [
-      "0.0",
-      "NaN",
-      "Throws NumberFormatException",
-      "Infinity"
+      "Coding the system",
+      "Identifying potential project risks",
+      "Finalizing user requirements",
+      "Integrating system components"
     ],
     "correctAnswer": "B",
-    "topic": "Java Wrapper Classes",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 112,
-    "question": "Which constructor signature is not legal?",
+    "question": "In the context of the Evolutionary Model, what is the primary goal of each iteration?",
     "options": [
-      "public MyClass()",
-      "MyClass(int x)",
-      "private MyClass(MyClass other)",
-      "void MyClass()"
+      "Complete system development",
+      "Thorough testing",
+      "Delivering a working subset of the system",
+      "Gathering requirements"
     ],
-    "correctAnswer": "D",
-    "topic": "Java Classes",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Evolutionary Model",
+    "difficulty": "medium"
   },
   {
     "id": 113,
-    "question": "What does new Integer(128) == new Integer(128) return?",
+    "question": "Which model is characterized by a focus on iterative development with a series of prototypes?",
     "options": [
-      "true",
-      "false",
-      "Compiler error",
-      "Depends on JVM"
+      "Waterfall Model",
+      "RAD Model",
+      "Incremental Model",
+      "Spiral Model"
     ],
     "correctAnswer": "B",
-    "topic": "Java Wrapper Classes",
-    "difficulty": "hard"
+    "topic": "RAD Model",
+    "difficulty": "medium"
   },
   {
     "id": 114,
-    "question": "Which wrapper class caches values in the range -128 to 127?",
+    "question": "In the V-Model, which phase corresponds to the System Design phase in the development lifecycle?",
     "options": [
-      "Long",
-      "Integer",
-      "Short",
-      "Byte"
+      "Unit Testing",
+      "Integration Testing",
+      "System Testing",
+      "Acceptance Testing"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Wrapper Classes",
+    "correctAnswer": "C",
+    "topic": "V-Model",
     "difficulty": "hard"
   },
   {
     "id": 115,
-    "question": "Which keyword refers to the current class instance?",
+    "question": "What is the key objective of the Planning phase in the Spiral Model?",
     "options": [
-      "static",
-      "super",
-      "this",
-      "self"
+      "Risk mitigation",
+      "Development of the final product",
+      "Requirement analysis",
+      "Scheduling and resource allocation"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Classes",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
   },
   {
     "id": 116,
-    "question": "What's printed? class A { static int x = 1; int y = 2; } System.out.println(A.x);",
+    "question": "Which of the following is not a benefit of using the Prototype Model?",
     "options": [
-      "1",
-      "2",
-      "Compilation error",
-      "Runtime exception"
+      "Improved user involvement",
+      "Early identification of misunderstandings",
+      "Reduction in overall development time",
+      "Flexible design accommodating changes"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Static Members",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Prototype Model",
+    "difficulty": "medium"
   },
   {
     "id": 117,
-    "question": "Which is valid method overloading?",
+    "question": "How does the Spiral Model handle high-risk projects compared to the Waterfall Model?",
     "options": [
-      "void m(int a) and int m(int a)",
-      "void m(int a) and void m(int b, int c)",
-      "void m(int a) and void m(Integer a)",
-      "Both B and C"
+      "It avoids risk analysis.",
+      "It includes risk analysis and management in each iteration.",
+      "It postpones risk analysis until the end.",
+      "It eliminates the need for risk management."
     ],
-    "correctAnswer": "D",
-    "topic": "Java Methods",
+    "correctAnswer": "B",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 118,
-    "question": "Which cannot be overloaded?",
+    "question": "In the Incremental Model, what typically follows the delivery of an increment?",
     "options": [
-      "Methods",
-      "Constructors",
-      "static initializer blocks",
-      "main method"
+      "Complete project closure",
+      "Maintenance phase",
+      "Customer evaluation and feedback",
+      "Full system deployment"
     ],
     "correctAnswer": "C",
-    "topic": "Java Methods",
+    "topic": "Incremental Model",
     "difficulty": "medium"
   },
   {
     "id": 119,
-    "question": "What does this() call invoke?",
+    "question": "Which SDLC model is best suited for projects with well-understood and unchanging requirements?",
     "options": [
-      "Parent class constructor",
-      "Overloaded constructor in same class",
-      "Current method",
-      "Default constructor of Object"
+      "Waterfall Model",
+      "Incremental Model",
+      "Prototype Model",
+      "Spiral Model"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Classes",
-    "difficulty": "medium"
+    "correctAnswer": "A",
+    "topic": "Waterfall Model",
+    "difficulty": "easy"
   },
   {
     "id": 120,
-    "question": "Can you overload on return type alone?",
+    "question": "What is a major drawback of using the Waterfall Model for software development?",
     "options": [
-      "Yes",
-      "No",
-      "Only for constructors",
-      "Only for main"
+      "High flexibility in requirements",
+      "Inability to handle changes well",
+      "Lack of documentation",
+      "Early user involvement"
     ],
     "correctAnswer": "B",
-    "topic": "Java Methods",
-    "difficulty": "easy"
-  },
-  {
-    "id": 121,
-    "question": "Which is not a valid use of super?",
-    "options": [
-      "super() in constructor",
-      "super.field in method",
-      "super() in instance initializer",
-      "super.method() in overriding method"
-    ],
-    "correctAnswer": "C",
-    "topic": "Java Inheritance",
-    "difficulty": "hard"
-  },
-  {
-    "id": 122,
-    "question": "What's the effect of declaring a method final?",
-    "options": [
-      "Cannot be overloaded",
-      "Cannot be overridden",
-      "Cannot be called",
-      "Cannot use this inside"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Methods",
-    "difficulty": "easy"
-  },
-  {
-    "id": 123,
-    "question": "If class B extends A, which call invokes A's constructor?",
-    "options": [
-      "this()",
-      "super()",
-      "parent()",
-      "Implicit call to Object()"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Inheritance",
-    "difficulty": "easy"
-  },
-  {
-    "id": 124,
-    "question": "What's printed? class A { void m() { System.out.print(\"A\"); } } class B extends A { void m() { System.out.print(\"B\"); } } new B().m();",
-    "options": [
-      "A",
-      "B",
-      "Compilation error",
-      "Runtime error"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Inheritance",
-    "difficulty": "easy"
-  },
-  {
-    "id": 125,
-    "question": "Which scenario is not method overriding?",
-    "options": [
-      "Same name, same signature in subclass",
-      "Covariant return type",
-      "Different access modifier in subclass",
-      "Same name, different parameters"
-    ],
-    "correctAnswer": "D",
-    "topic": "Java Inheritance",
+    "topic": "Waterfall Model",
     "difficulty": "medium"
   },
   {
-    "id": 126,
-    "question": "Can a subclass constructor invoke a different superclass constructor with parameters?",
+    "id": 121,
+    "question": "Which phase in the V-Model is directly related to verifying the design specifications?",
     "options": [
-      "Yes, via this()",
-      "Yes, via super(args)",
-      "No",
-      "Only in interfaces"
+      "Coding phase",
+      "Unit Testing phase",
+      "Integration Testing phase",
+      "Validation phase"
+    ],
+    "correctAnswer": "C",
+    "topic": "V-Model",
+    "difficulty": "medium"
+  },
+  {
+    "id": 122,
+    "question": "In the context of the Spiral Model, which of the following best describes the purpose of a risk assessment?",
+    "options": [
+      "To complete the coding phase",
+      "To identify and mitigate potential project risks",
+      "To finalize user documentation",
+      "To conduct system testing"
     ],
     "correctAnswer": "B",
-    "topic": "Java Inheritance",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
+  },
+  {
+    "id": 123,
+    "question": "What is the main focus during the Engineering phase of the Spiral Model?",
+    "options": [
+      "Planning the project schedule",
+      "Developing the software and system components",
+      "Conducting risk analysis",
+      "Gathering user requirements"
+    ],
+    "correctAnswer": "B",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
+  },
+  {
+    "id": 124,
+    "question": "Which model allows developers to start with simple implementations and gradually add features until the final system is complete?",
+    "options": [
+      "Waterfall Model",
+      "Incremental Model",
+      "Prototype Model",
+      "V-Model"
+    ],
+    "correctAnswer": "B",
+    "topic": "Incremental Model",
+    "difficulty": "medium"
+  },
+  {
+    "id": 125,
+    "question": "In the Prototyping Model, what is the result of the quick design phase?",
+    "options": [
+      "Final product",
+      "Fully detailed design",
+      "Basic design of the system's core features",
+      "Comprehensive user documentation"
+    ],
+    "correctAnswer": "C",
+    "topic": "Prototype Model",
+    "difficulty": "medium"
+  },
+    {
+    "id": 126,
+    "question": "Why is the Spiral Model considered more flexible than the Waterfall Model?",
+    "options": [
+      "It has no documentation requirements.",
+      "It integrates risk management and iterative refinement.",
+      "It eliminates the need for testing.",
+      "It finalizes all requirements at the start."
+    ],
+    "correctAnswer": "B",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 127,
-    "question": "What's the default superclass of every Java class?",
+    "question": "Which of the following is not a key characteristic of the RAD Model?",
     "options": [
-      "java.lang.Object",
-      "java.util.Object",
-      "java.lang.Class",
-      "None"
+      "Prototyping",
+      "Rapid development",
+      "Limited user involvement",
+      "Incremental delivery"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Classes",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "RAD Model",
+    "difficulty": "medium"
   },
   {
     "id": 128,
-    "question": "Which gives a compile error? class A { private void m() {} } class B extends A { void m() {} }",
+    "question": "In the Incremental Model, what is the purpose of delivering the core features first?",
     "options": [
-      "No error",
-      "Compile-time error",
-      "Runtime exception",
-      "Linkage error"
+      "To ensure complete system testing",
+      "To provide users with a working product early",
+      "To reduce overall project cost",
+      "To finalize the requirements"
     ],
     "correctAnswer": "B",
-    "topic": "Java Inheritance",
-    "difficulty": "hard"
+    "topic": "Incremental Model",
+    "difficulty": "medium"
   },
   {
     "id": 129,
-    "question": "How many times is the superclass constructor called in multi-level inheritance?",
+    "question": "What is a primary disadvantage of using the Spiral Model for small projects?",
     "options": [
-      "Once per level",
-      "Only once at top",
-      "Depends on super() calls",
-      "Never automatically"
+      "Lack of user involvement",
+      "Overhead due to extensive risk management",
+      "Inflexibility in accommodating changes",
+      "Inadequate for handling risks"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Inheritance",
+    "correctAnswer": "B",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 130,
-    "question": "What type of polymorphism is method overloading?",
+    "question": "Which model is designed to be adaptable to changes and iterations throughout the development process?",
     "options": [
-      "Compile-time (static)",
-      "Runtime (dynamic)",
-      "Hybrid",
-      "No polymorphism"
+      "Waterfall Model",
+      "V-Model",
+      "Incremental Model",
+      "Spiral Model"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Polymorphism",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "topic": "Spiral Model",
+    "difficulty": "medium"
   },
   {
     "id": 131,
-    "question": "What type of polymorphism is method overriding?",
+    "question": "In the Prototyping Model, what should be done if the user is not satisfied with the initial prototype?",
     "options": [
-      "Compile-time",
-      "Runtime",
-      "Neither",
-      "Both"
+      "Move on to the next phase",
+      "Ignore user feedback",
+      "Refine the prototype based on user feedback",
+      "Finalize the requirements as they are"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Polymorphism",
+    "correctAnswer": "C",
+    "topic": "Prototype Model",
     "difficulty": "easy"
   },
   {
     "id": 132,
-    "question": "Which declaration prevents a class from being subclassed?",
+    "question": "What is a significant benefit of the RAD Model?",
     "options": [
-      "abstract class",
-      "final class",
-      "static class",
-      "sealed class"
+      "Reduced cost",
+      "High flexibility",
+      "Rapid application development",
+      "Minimal user involvement"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Classes",
+    "correctAnswer": "C",
+    "topic": "RAD Model",
     "difficulty": "easy"
   },
   {
     "id": 133,
-    "question": "Which method call is resolved at runtime? A a = new B(); a.m();",
+    "question": "Which phase in the Spiral Model involves assessing the feasibility of the project?",
     "options": [
-      "A.m() always",
-      "B.m() if overridden",
-      "Compile-time error",
-      "Depends on final"
+      "Planning",
+      "Risk Analysis",
+      "Engineering",
+      "Customer Evaluation"
     ],
     "correctAnswer": "B",
-    "topic": "Java Polymorphism",
+    "topic": "Spiral Model",
     "difficulty": "medium"
   },
   {
     "id": 134,
-    "question": "Can a final method be overridden?",
+    "question": "In the V-Model, what is the relationship between development and testing activities?",
     "options": [
-      "Yes",
-      "No",
-      "Only in subclasses",
-      "Only if static"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Methods",
-    "difficulty": "easy"
-  },
-  {
-    "id": 135,
-    "question": "Which is not true of polymorphism in Java?",
-    "options": [
-      "A reference variable can refer to object of any subclass",
-      "Overloaded methods exhibit polymorphism",
-      "Final methods support polymorphism",
-      "Interfaces enable polymorphism"
+      "Development and testing activities are performed sequentially.",
+      "Development activities are performed after all testing activities.",
+      "Testing activities correspond directly to each development activity.",
+      "Development activities are independent of testing activities."
     ],
     "correctAnswer": "C",
-    "topic": "Java Polymorphism",
+    "topic": "V-Model",
     "difficulty": "hard"
   },
   {
-    "id": 136,
-    "question": "What happens if you declare a class final and attempt to extend it?",
+    "id": 135,
+    "question": "Why is the Incremental Model particularly effective for large projects?",
     "options": [
-      "Compile-time error",
-      "Runtime exception",
-      "It works if in same package",
-      "It works if subclass is final too"
+      "It reduces documentation requirements.",
+      "It allows for the system to be developed and tested in small, manageable increments.",
+      "It eliminates the need for planning.",
+      "It requires all requirements to be defined upfront."
     ],
-    "correctAnswer": "A",
-    "topic": "Java Classes",
+    "correctAnswer": "B",
+    "topic": "Incremental Model",
+    "difficulty": "medium"
+  },
+  {
+    "id": 136,
+    "question": "Which principle emphasizes the continuous delivery of valuable software in Agile?",
+    "options": [
+      "Technical Excellence",
+      "Customer Satisfaction",
+      "Sustainable Development",
+      "Frequent Delivery"
+    ],
+    "correctAnswer": "D",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 137,
-    "question": "Which statement is true?",
+    "question": "What is the primary measure of progress in Agile?",
     "options": [
-      "Abstract class cannot have concrete methods",
-      "Abstract class must have at least one abstract method",
-      "Abstract class can be instantiated",
-      "Abstract class may have constructors"
+      "Completed tasks",
+      "Working software",
+      "Customer feedback",
+      "Documentation"
     ],
-    "correctAnswer": "D",
-    "topic": "Java Abstract Classes",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 138,
-    "question": "Which is legal?",
+    "question": "In Scrum, who is responsible for maximizing the value of the product?",
     "options": [
-      "abstract class A { abstract void m() {} }",
-      "abstract class A { abstract void m(); }",
-      "class A { abstract void m(); }",
-      "interface A { void m(); }"
+      "Scrum Master",
+      "Development Team",
+      "Product Owner",
+      "Stakeholders"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Abstract Classes",
-    "difficulty": "medium"
+    "correctAnswer": "C",
+    "topic": "Agile Development",
+    "difficulty": "easy"
   },
   {
     "id": 139,
-    "question": "Can an abstract class implement an interface without implementing its methods?",
+    "question": "What does ASD stand for in Agile methodologies?",
     "options": [
-      "Yes",
-      "No",
-      "Only if marked final",
-      "Only if in same package"
+      "Adaptive Software Development",
+      "Advanced System Design",
+      "Agile Software Delivery",
+      "Application Software Development"
     ],
     "correctAnswer": "A",
-    "topic": "Java Abstract Classes",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 140,
-    "question": "What must a concrete subclass of an abstract class do?",
+    "question": "Which phase of the ASD lifecycle involves actual development?",
     "options": [
-      "Override all abstract methods",
-      "Declare itself abstract",
-      "Provide no constructors",
-      "Nothing"
+      "Speculation",
+      "Collaboration",
+      "Learning",
+      "Planning"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Abstract Classes",
-    "difficulty": "easy"
-  },
-  {
-    "id": 141,
-    "question": "Which constructor calls are allowed in abstract classes?",
-    "options": [
-      "this() only",
-      "super() only",
-      "Both this() and super()",
-      "Neither"
-    ],
-    "correctAnswer": "C",
-    "topic": "Java Abstract Classes",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "hard"
   },
   {
-    "id": 142,
-    "question": "Which is not true about abstract classes?",
+    "id": 141,
+    "question": "Which Agile concept involves fabricated biographies of hypothetical users?",
     "options": [
-      "Can contain fields",
-      "Can have static methods",
-      "Cannot extend another class",
-      "Can implement interfaces"
+      "Personas",
+      "User Stories",
+      "Daily Meeting",
+      "Incremental Development"
+    ],
+    "correctAnswer": "A",
+    "topic": "Agile Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 142,
+    "question": "What is a common artifact in Scrum that shows the remaining work in a sprint?",
+    "options": [
+      "Product Backlog",
+      "Sprint Backlog",
+      "Burndown Chart",
+      "Increment"
     ],
     "correctAnswer": "C",
-    "topic": "Java Abstract Classes",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 143,
-    "question": "Which keyword is used to declare an interface?",
+    "question": "Which role in Scrum is responsible for removing impediments?",
     "options": [
-      "interface",
-      "implements",
-      "extends",
-      "package"
+      "Scrum Master",
+      "Product Owner",
+      "Development Team",
+      "Stakeholder"
     ],
     "correctAnswer": "A",
-    "topic": "Java Interfaces",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 144,
-    "question": "Can interfaces have static methods?",
+    "question": "In Extreme Programming (XP), what value emphasizes the importance of simple solutions?",
     "options": [
-      "Yes",
-      "No",
-      "Only in Java 7",
-      "Only if default"
+      "Communication",
+      "Simplicity",
+      "Feedback",
+      "Courage"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Interfaces",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 145,
-    "question": "Which is true of multiple inheritance in Java?",
+    "question": "Which Agile principle focuses on sustainable development?",
     "options": [
-      "Classes can extend multiple classes",
-      "Interfaces can extend multiple interfaces",
-      "Classes can implement multiple interfaces",
-      "Both B and C"
+      "Good Design",
+      "Constant Pace",
+      "Working Software",
+      "Reflect and Adjust"
     ],
-    "correctAnswer": "D",
-    "topic": "Java Interfaces",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 146,
-    "question": "What's the default access of members in an interface?",
+    "question": "In Scrum, what event is a 15-minute daily meeting for the team to synchronize activities?",
     "options": [
-      "public",
-      "protected",
-      "private",
-      "Package-private"
+      "Sprint Planning",
+      "Sprint Review",
+      "Daily Scrum",
+      "Sprint Retrospective"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Interfaces",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 147,
-    "question": "Which file must begin with a package statement if present?",
+    "question": "Which XP value involves delivering working software early and receiving feedback?",
     "options": [
-      "First non-comment line",
-      "Immediately after imports",
-      "After class declaration",
-      "Anywhere in file"
+      "Communication",
+      "Simplicity",
+      "Feedback",
+      "Courage"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Packages",
-    "difficulty": "hard"
-  },
-  {
-    "id": 148,
-    "question": "What must a class declare to use an interface?",
-    "options": [
-      "extends",
-      "implements",
-      "imports",
-      "uses"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Interfaces",
-    "difficulty": "easy"
-  },
-  {
-    "id": 149,
-    "question": "Can interfaces contain instance fields?",
-    "options": [
-      "Yes",
-      "No",
-      "Only if static",
-      "Only in Java 8+"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Interfaces",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
-    "id": 150,
-    "question": "Which is legal in interfaces?",
+    "id": 148,
+    "question": "Which Agile principle is about maximizing the amount of work not done?",
     "options": [
-      "private void helper() {}",
-      "default void m() {}",
-      "protected void m();",
-      "static abstract void m();"
+      "Simplicity",
+      "Self-Organization",
+      "Good Design",
+      "Reflect and Adjust"
+    ],
+    "correctAnswer": "A",
+    "topic": "Agile Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 149,
+    "question": "What term is used for functional increments of work in Agile?",
+    "options": [
+      "Personas",
+      "User Stories",
+      "Daily Meeting",
+      "Incremental Development"
     ],
     "correctAnswer": "B",
-    "topic": "Java Interfaces",
-    "difficulty": "hard"
+    "topic": "Agile Development",
+    "difficulty": "easy"
+  },
+  {
+    "id": 150,
+    "question": "Which event in Scrum is held at the end of the sprint to inspect the increment and adapt the backlog?",
+    "options": [
+      "Sprint Planning",
+      "Sprint Review",
+      "Daily Scrum",
+      "Sprint Retrospective"
+    ],
+    "correctAnswer": "B",
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 151,
-    "question": "Which block always executes?",
+    "question": "In ASD, what phase involves defining the project mission statement and adaptive planning?",
     "options": [
-      "try",
-      "catch",
-      "finally",
-      "throw"
+      "Speculation",
+      "Collaboration",
+      "Learning",
+      "Development"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Exceptions",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "topic": "Agile Development",
+    "difficulty": "hard"
   },
   {
     "id": 152,
-    "question": "How do you explicitly throw an exception?",
+    "question": "Which Agile practice involves reflecting on how to become more effective and adjusting accordingly?",
     "options": [
-      "throw new Exception();",
-      "throws new Exception();",
-      "throw Exception();",
-      "throws Exception;"
+      "Self-Organization",
+      "Simplicity",
+      "Reflect and Adjust",
+      "Good Design"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Exceptions",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 153,
-    "question": "What must a method declare if it throws a checked exception?",
+    "question": "What is the role of the Product Owner in Scrum?",
     "options": [
-      "throw clause",
-      "throws clause",
-      "try block",
-      "finally block"
+      "Ensures the team follows agile principles",
+      "Defines the product backlog and priorities",
+      "Removes impediments for the team",
+      "Conducts sprint retrospectives"
     ],
     "correctAnswer": "B",
-    "topic": "Java Exceptions",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 154,
-    "question": "Which exception is unchecked?",
+    "question": "Which principle states that the best architectures, requirements, and designs emerge from self-organizing teams?",
     "options": [
-      "IOException",
-      "SQLException",
-      "NullPointerException",
-      "ClassNotFoundException"
+      "Simplicity",
+      "Good Design",
+      "Self-Organization",
+      "Reflect and Adjust"
     ],
     "correctAnswer": "C",
-    "topic": "Java Exceptions",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 155,
-    "question": "What happens if an exception isn't caught or declared?",
+    "question": "Which phase in ASD focuses on enhancing knowledge through practices such as technical reviews?",
     "options": [
-      "Compile-time error",
-      "Runtime error",
-      "Default handler prints stack trace",
-      "JVM ignores it"
+      "Speculation",
+      "Collaboration",
+      "Learning",
+      "Development"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Exceptions",
-    "difficulty": "medium"
-  },
-  {
-    "id": 156,
-    "question": "Can finally block suppress an exception?",
-    "options": [
-      "Yes, if it returns",
-      "No",
-      "Only for RuntimeException",
-      "Only in Java 9+"
-    ],
-    "correctAnswer": "A",
-    "topic": "Java Exceptions",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "hard"
   },
   {
-    "id": 157,
-    "question": "Which keyword rethrows the same exception?",
+    "id": 156,
+    "question": "Which of the following best describes Agile?",
     "options": [
-      "throw",
-      "throws",
-      "rethrow",
-      "catch"
+      "A method for sequential software development",
+      "A project management framework focusing on adaptability and customer satisfaction",
+      "A tool for automating testing",
+      "A database management system"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Exceptions",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
+    "difficulty": "easy"
+  },
+  {
+    "id": 157,
+    "question": "Which Agile principle emphasizes the importance of face-to-face communication?",
+    "options": [
+      "Simplicity",
+      "Good Design",
+      "Face-to-Face Interaction",
+      "Reflect and Adjust"
+    ],
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 158,
-    "question": "What type of exception is Error?",
+    "question": "Which principle ensures that Agile teams deliver working software frequently?",
     "options": [
-      "Checked",
-      "Unchecked",
-      "Compile-time only",
-      "Deprecated"
+      "Deliver Frequently",
+      "Motivated Team",
+      "Customer Satisfaction",
+      "Simplicity"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Exceptions",
+    "correctAnswer": "A",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 159,
-    "question": "Which is true of multi-catch?",
+    "question": "In Agile, what is a 'user story'?",
     "options": [
-      "Order doesn't matter",
-      "You can catch exception hierarchies together",
-      "Only for checked exceptions",
-      "Cannot have a finally"
+      "A detailed project plan",
+      "A fictional representation of a user's goals",
+      "A functional unit of work to add value",
+      "A test case"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Exceptions",
-    "difficulty": "hard"
-  },
-  {
-    "id": 160,
-    "question": "Which package contains the Pattern class?",
-    "options": [
-      "java.util.regex",
-      "java.lang.regex",
-      "java.regex",
-      "java.util"
-    ],
-    "correctAnswer": "A",
-    "topic": "Java Regular Expressions",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
-    "id": 161,
-    "question": "How do you define an enum?",
+    "id": 160,
+    "question": "What is an 'incremental development' in Agile?",
     "options": [
-      "enum Day { MON, TUE }",
-      "class Day enum { MON, TUE }",
-      "enum Day();",
-      "interface Day { MON, TUE }"
+      "Developing the entire system at once",
+      "Adding user-visible functionality in each iteration",
+      "Testing all features simultaneously",
+      "Developing software without any customer feedback"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Enums",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 161,
+    "question": "Who is responsible for creating the product backlog in Scrum?",
+    "options": [
+      "Scrum Master",
+      "Development Team",
+      "Product Owner",
+      "Stakeholders"
+    ],
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 162,
-    "question": "Which annotation marks a method as deprecated?",
+    "question": "What is the main responsibility of the Scrum Master?",
     "options": [
-      "@Deprecated",
-      "@DeprecatedMethod",
-      "@Old",
-      "@Outdated"
+      "Defining the product backlog",
+      "Managing team workload",
+      "Ensuring Scrum practices are followed",
+      "Writing code"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Annotations",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 163,
-    "question": "Which class represents a date without time in Java 8+?",
+    "question": "During a sprint, who is responsible for selecting tasks from the sprint backlog?",
     "options": [
-      "java.time.LocalDate",
-      "java.util.Date",
-      "java.sql.Date",
-      "java.time.Date"
+      "Product Owner",
+      "Scrum Master",
+      "Development Team",
+      "Project Manager"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Date API",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 164,
-    "question": "What's the method to generate a random int?",
+    "question": "What is the purpose of the daily scrum meeting?",
     "options": [
-      "Random.next()",
-      "Random.nextInt()",
-      "Math.randomInt()",
-      "ThreadLocalRandom.getInt()"
+      "To review the project budget",
+      "To update team members on progress and obstacles",
+      "To finalize the product backlog",
+      "To train new team members"
     ],
     "correctAnswer": "B",
-    "topic": "Java Utilities",
-    "difficulty": "medium"
+    "topic": "Agile Development",
+    "difficulty": "easy"
   },
   {
     "id": 165,
-    "question": "Which element is required in a custom annotation definition?",
+    "question": "Which value is NOT part of Extreme Programming (XP)?",
     "options": [
-      "@interface",
-      "@Annotation",
-      "@Custom",
-      "@Define"
+      "Communication",
+      "Courage",
+      "Respect",
+      "Efficiency"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Annotations",
-    "difficulty": "hard"
+    "correctAnswer": "D",
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 166,
-    "question": "What does Pattern.compile(\"a*b\").matcher(\"aaab\").matches() return?",
+    "question": "What is the goal of the 'small releases' practice in XP?",
     "options": [
-      "true",
-      "false",
-      "Compile-time error",
-      "Runtime exception"
+      "To reduce project costs",
+      "To release the MVP quickly and iterate based on feedback",
+      "To avoid customer involvement",
+      "To complete the entire project in one release"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Regular Expressions",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
-  // Adding new questions after the existing ones
-
   {
     "id": 167,
-    "question": "What does JVM stand for in Java?",
+    "question": "Which XP practice involves two developers working together on the same code?",
     "options": [
-      "Java Virtual Machine",
-      "Java Visual Manager", 
-      "Java Variable Method", 
-      "Java Version Manager"
+      "Continuous Integration",
+      "Pair Programming",
+      "Test-Driven Development",
+      "On-Site Customer"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Platform",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 168,
-    "question": "Which component is responsible for converting bytecode to machine code in Java?",
+    "question": "What is a 'spike' in XP?",
     "options": [
-      "JRE", 
-      "JDK", 
-      "JIT Compiler", 
-      "Java Compiler"
+      "A defect in the code",
+      "A research activity to reduce uncertainty",
+      "An unplanned sprint",
+      "A performance test"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Platform",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 169,
-    "question": "What is the relationship between JDK, JRE, and JVM?",
+    "question": "Which of the following is a major difference between Agile and Waterfall models?",
     "options": [
-      "JDK contains JRE, JRE contains JVM", 
-      "JRE contains JDK, JDK contains JVM", 
-      "JVM contains JRE, JRE contains JDK", 
-      "All are independent components"
+      "Waterfall is iterative; Agile is linear",
+      "Agile emphasizes customer collaboration; Waterfall emphasizes contract negotiation",
+      "Waterfall allows for frequent changes; Agile does not",
+      "Agile involves detailed upfront planning; Waterfall does not"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Platform",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
   },
   {
     "id": 170,
-    "question": "Which feature of Java makes it platform independent?",
+    "question": "In which model is the project scope typically defined at the beginning?",
     "options": [
-      "Object-oriented programming", 
-      "Bytecode compilation", 
-      "Multi-threading", 
-      "Dynamic memory allocation"
+      "Agile",
+      "Waterfall",
+      "Both Agile and Waterfall",
+      "Neither Agile nor Waterfall"
     ],
     "correctAnswer": "B",
-    "topic": "Java Platform",
+    "topic": "Software Development Models",
     "difficulty": "easy"
   },
   {
     "id": 171,
-    "question": "In which year was Java first released by Sun Microsystems?",
+    "question": "What is the primary focus of Agile testing?",
     "options": [
-      "1991", 
-      "1995", 
-      "1996", 
-      "1998"
+      "Ensuring all requirements are met",
+      "Finding and fixing bugs quickly",
+      "Detailed test documentation",
+      "Testing only at the end of the development process"
     ],
     "correctAnswer": "B",
-    "topic": "Java History",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 172,
-    "question": "What happens when you try to run a Java program without installing JRE?",
+    "question": "Which of the following is a key characteristic of Agile testing?",
     "options": [
-      "Program runs normally", 
-      "Compilation error occurs", 
-      "Runtime error - JRE not found", 
-      "Program runs with warnings"
+      "It is done only by testers",
+      "It is performed continuously throughout the project",
+      "It follows a strict plan",
+      "It focuses on testing only after the coding phase"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Platform",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 173,
-    "question": "Which of the following main method declarations is valid?",
+    "question": "Which of the following is NOT an obstacle to Agile adoption?",
     "options": [
-      "public static void main(String args){}", 
-      "public static synchronized final strictfp void main(String... args){}", 
-      "public static int main(String[] args){}", 
-      "public synchronized final strictfp void main(String[] args){}"
+      "Resistance to change",
+      "Lack of management support",
+      "Fixed mindset towards processes",
+      "Frequent customer feedback"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Basics",
+    "correctAnswer": "D",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 174,
-    "question": "What is the correct way to compile a Java file named 'Test.java'?",
+    "question": "What is often the biggest challenge when transitioning from Waterfall to Agile?",
     "options": [
-      "java Test.java", 
-      "javac Test.java", 
-      "compile Test.java", 
-      "jvm Test.java"
+      "Learning new programming languages",
+      "Adjusting to the need for more frequent customer interactions",
+      "Implementing automated testing",
+      "Finding suitable project management tools"
     ],
     "correctAnswer": "B",
-    "topic": "Java Basics",
-    "difficulty": "easy"
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 175,
-    "question": "How do you access command line arguments in a Java program?",
+    "question": "What is a 'burndown chart' used for in Scrum?",
     "options": [
-      "args.length", 
-      "args[0]", 
-      "String[] args parameter", 
-      "All of the above"
+      "Tracking project budget",
+      "Showing remaining work in a sprint",
+      "Displaying team productivity",
+      "Planning future sprints"
     ],
-    "correctAnswer": "D",
-    "topic": "Java Basics",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 176,
-    "question": "What happens if you don't provide command line arguments but try to access args[0]?",
+    "question": "Which Agile framework involves continuous integration and testing?",
     "options": [
-      "Returns null", 
-      "ArrayIndexOutOfBoundsException", 
-      "Compilation error", 
-      "Returns empty string"
+      "Scrum",
+      "Kanban",
+      "Extreme Programming (XP)",
+      "Lean"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Basics",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 177,
-    "question": "Which command is used to run a compiled Java program?",
+    "question": "What does the 'inspect and adapt' principle refer to in Agile?",
     "options": [
-      "javac", 
-      "java", 
-      "run", 
-      "execute"
+      "Regularly reviewing and adjusting processes and practices",
+      "Developing detailed specifications",
+      "Focusing solely on coding",
+      "Avoiding changes during the project"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Basics",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 178,
-    "question": "What is the file extension of Java bytecode?",
+    "question": "In Agile, what is the role of 'personas'?",
     "options": [
-      ".java", 
-      ".class", 
-      ".byte", 
-      ".jvm"
+      "Real user profiles",
+      "Hypothetical user biographies to guide development",
+      "Project stakeholders",
+      "Team members responsible for testing"
     ],
     "correctAnswer": "B",
-    "topic": "Java Basics",
-    "difficulty": "easy"
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 179,
-    "question": "Which of the following is a valid Java identifier?",
+    "question": "Which of the following is NOT a characteristic of a motivated team according to Agile principles?",
     "options": [
-      "2variable", 
-      "_myVar", 
-      "class", 
-      "my-var"
+      "They are trusted to complete the project",
+      "They require constant supervision",
+      "They are given the necessary support and resources",
+      "They are self-organizing"
     ],
     "correctAnswer": "B",
-    "topic": "Java Basics",
-    "difficulty": "easy"
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 180,
-    "question": "What is the range of boolean data type in Java?",
+    "question": "What is the purpose of the 'planning game' in XP?",
     "options": [
-      "-128 to 127", 
-      "-32768 to 32767", 
-      "0 to 65535", 
-      "Not Applicable"
+      "To develop a detailed project plan",
+      "To create a release and iteration plan",
+      "To test the software",
+      "To manage project risks"
     ],
-    "correctAnswer": "D",
-    "topic": "Java Data Types",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "topic": "Agile Development",
+    "difficulty": "hard"
   },
   {
     "id": 181,
-    "question": "Which operator has the highest precedence in Java?",
+    "question": "How does XP ensure simplicity in design?",
     "options": [
-      "++", 
-      "*", 
-      "+", 
-      "[]"
+      "By using complex architectures",
+      "By continuously refactoring code",
+      "By avoiding feedback loops",
+      "By minimizing customer involvement"
     ],
-    "correctAnswer": "D",
-    "topic": "Java Operators",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 182,
-    "question": "What is the size of int data type in Java?",
+    "question": "In Scrum, what is a 'product increment'?",
     "options": [
-      "16 bits", 
-      "32 bits", 
-      "64 bits", 
-      "Platform dependent"
+      "A component of the project budget",
+      "A part of the project scope",
+      "The sum of all completed work in a sprint",
+      "A plan for future sprints"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Data Types",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 183,
-    "question": "Which of the following is NOT a Java keyword?",
+    "question": "Which Agile concept involves adapting processes based on team reflections?",
     "options": [
-      "final", 
-      "finally", 
-      "finalize", 
-      "friend"
+      "Self-organization",
+      "Iterative development",
+      "Reflect and Adjust",
+      "Daily meeting"
     ],
-    "correctAnswer": "D",
-    "topic": "Java Basics",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 184,
-    "question": "What happens when you perform 'int a = 130; byte b = (byte)a;'?",
+    "question": "What is a key benefit of pair programming in XP?",
     "options": [
-      "b = 130", 
-      "b = -126", 
-      "Compilation error", 
-      "Runtime error"
+      "Reduced project costs",
+      "Higher-quality code with fewer bugs",
+      "Faster project completion",
+      "Less need for customer feedback"
     ],
     "correctAnswer": "B",
-    "topic": "Java Data Types",
-    "difficulty": "hard"
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 185,
-    "question": "Which control statement is used to exit from a loop?",
+    "question": "In Agile, what is a 'sprint review'?",
     "options": [
-      "continue", 
-      "break", 
-      "return", 
-      "exit"
+      "A meeting to plan the next sprint",
+      "A meeting to demonstrate completed work to stakeholders",
+      "A retrospective meeting to discuss process improvements",
+      "An internal team meeting to allocate tasks"
     ],
     "correctAnswer": "B",
-    "topic": "Java Control Flow",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 186,
-    "question": "What is the default value in a switch statement if no case matches?",
+    "question": "Which practice in XP involves having a real user available full-time to answer questions?",
     "options": [
-      "First case executes", 
-      "Last case executes", 
-      "Nothing happens if no default", 
-      "Compilation error"
+      "Metaphor",
+      "On-Site Customer",
+      "Refactoring",
+      "Continuous Integration"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Control Flow",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 187,
-    "question": "Which of the following data types can be used in a switch statement in Java 8?",
+    "question": "What does 'Kanban' focus on in Agile project management?",
     "options": [
-      "int, char, String", 
-      "float, double", 
-      "boolean", 
-      "All primitive types"
+      "Sequential development",
+      "Limiting work in progress and managing flow",
+      "Detailed upfront planning",
+      "Monthly releases"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Control Flow",
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 188,
-    "question": "What does the continue statement do in a loop?",
+    "question": "Which Agile framework uses a visual board to track work items?",
     "options": [
-      "Exits the loop", 
-      "Skips current iteration", 
-      "Restarts the loop", 
-      "Does nothing"
+      "Scrum",
+      "XP",
+      "Kanban",
+      "Waterfall"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Control Flow",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 189,
-    "question": "In a nested loop, what does 'break' do?",
+    "question": "In Agile, what is the purpose of 'backlog grooming'?",
     "options": [
-      "Breaks all loops", 
-      "Breaks innermost loop only", 
-      "Breaks outermost loop only", 
-      "Compilation error"
+      "To finalize the project scope",
+      "To ensure the backlog is well-ordered and ready for sprint planning",
+      "To create a detailed project plan",
+      "To review completed tasks"
     ],
     "correctAnswer": "B",
-    "topic": "Java Control Flow",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 190,
-    "question": "What happens when you use return statement in a try block with finally?",
+    "question": "Which of the following is a principle of Lean software development?",
     "options": [
-      "Finally doesn't execute", 
-      "Finally executes after return", 
-      "Finally executes before return", 
-      "Compilation error"
+      "Maximize completed work",
+      "Deliver as late as possible",
+      "Eliminate waste",
+      "Focus on individual performance"
     ],
     "correctAnswer": "C",
-    "topic": "Java Control Flow",
-    "difficulty": "hard"
-  },
-  {
-    "id": 191,
-    "question": "How do you declare a single-dimensional array in Java?",
-    "options": [
-      "int arr[] = new int[5];", 
-      "int[] arr = new int[5];", 
-      "Both A and B", 
-      "int arr = new int[5];"
-    ],
-    "correctAnswer": "C",
-    "topic": "Java Arrays",
-    "difficulty": "easy"
-  },
-  {
-    "id": 192,
-    "question": "What is the default value of elements in an int array?",
-    "options": [
-      "0", 
-      "null", 
-      "1", 
-      "undefined"
-    ],
-    "correctAnswer": "A",
-    "topic": "Java Arrays",
-    "difficulty": "easy"
-  },
-  {
-    "id": 193,
-    "question": "How do you declare a jagged array in Java?",
-    "options": [
-      "int[][] arr = new int[3][4];", 
-      "int[][] arr = new int[3][];", 
-      "int[] arr[] = new int[][3];", 
-      "int arr[][] = new int[3,4];"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Arrays",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
-    "id": 194,
-    "question": "What is the length of array 'int[][] arr = {{1,2},{3,4,5}};'?",
+    "id": 191,
+    "question": "What does 'velocity' measure in Scrum?",
     "options": [
-      "2", 
-      "5", 
-      "3", 
-      "Cannot determine"
+      "Team speed in delivering software",
+      "Number of bugs found",
+      "Project budget usage",
+      "Customer satisfaction"
     ],
     "correctAnswer": "A",
-    "topic": "Java Arrays",
+    "topic": "Agile Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 192,
+    "question": "What is a 'burn-up chart' used for?",
+    "options": [
+      "Tracking remaining work",
+      "Showing the total work completed over time",
+      "Monitoring team attendance",
+      "Planning future sprints"
+    ],
+    "correctAnswer": "B",
+    "topic": "Agile Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 193,
+    "question": "Which tool is commonly used for Agile project management?",
+    "options": [
+      "Microsoft Word",
+      "JIRA",
+      "Notepad",
+      "Visual Studio"
+    ],
+    "correctAnswer": "B",
+    "topic": "Agile Development",
+    "difficulty": "easy"
+  },
+  {
+    "id": 194,
+    "question": "In Agile, what is a 'spike'?",
+    "options": [
+      "A major bug in the system",
+      "A research activity to understand a requirement or technology",
+      "A task completed by the Product Owner",
+      "A sudden increase in workload"
+    ],
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 195,
-    "question": "Which exception is thrown when accessing an invalid array index?",
+    "question": "Who facilitates the daily stand-up meeting in Scrum?",
     "options": [
-      "IndexOutOfBoundsException", 
-      "ArrayIndexOutOfBoundsException", 
-      "InvalidIndexException", 
-      "NullPointerException"
+      "Product Owner",
+      "Development Team",
+      "Scrum Master",
+      "Project Manager"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Arrays",
+    "correctAnswer": "C",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 196,
-    "question": "What happens when you declare 'int[] arr = new int[5]; System.out.println(arr[-1]);'?",
+    "question": "What is the main function of the 'definition of done' in Scrum?",
     "options": [
-      "Prints 0", 
-      "ArrayIndexOutOfBoundsException", 
-      "Compilation error", 
-      "Prints null"
+      "To specify the project's end date",
+      "To ensure all work meets agreed-upon quality standards",
+      "To define the project budget",
+      "To list tasks for the development team"
     ],
     "correctAnswer": "B",
-    "topic": "Java Arrays",
-    "difficulty": "hard"
+    "topic": "Agile Development",
+    "difficulty": "medium"
   },
   {
     "id": 197,
-    "question": "Which class is immutable in Java?",
+    "question": "What is a 'sprint retrospective'?",
     "options": [
-      "StringBuffer", 
-      "StringBuilder", 
-      "String", 
-      "StringTokenizer"
+      "A meeting to plan the next sprint",
+      "A review of work completed during the sprint",
+      "A meeting to reflect on the past sprint and suggest improvements",
+      "A detailed project status report"
     ],
     "correctAnswer": "C",
-    "topic": "Java Strings",
+    "topic": "Agile Development",
     "difficulty": "easy"
   },
   {
     "id": 198,
-    "question": "What is the difference between String and StringBuffer?",
+    "question": "In Agile, what is 'refactoring'?",
     "options": [
-      "String is mutable, StringBuffer is immutable", 
-      "String is immutable, StringBuffer is mutable", 
-      "Both are mutable", 
-      "Both are immutable"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Strings",
-    "difficulty": "easy"
-  },
-  {
-    "id": 199,
-    "question": "Which method is used to convert StringBuffer to String?",
-    "options": [
-      "convert()", 
-      "toString()", 
-      "getString()", 
-      "valueOf()"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Strings",
-    "difficulty": "easy"
-  },
-  {
-    "id": 200,
-    "question": "What is the key difference between StringBuffer and StringBuilder?",
-    "options": [
-      "StringBuffer is faster", 
-      "StringBuilder is thread-safe", 
-      "StringBuffer is thread-safe", 
-      "No difference"
+      "Adding new features to the software",
+      "Revising the software architecture",
+      "Improving the internal structure of the code without changing its behavior",
+      "Changing project requirements"
     ],
     "correctAnswer": "C",
-    "topic": "Java Strings",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
-    "id": 201,
-    "question": "Which constructor does StringTokenizer use by default for delimiters?",
+    "id": 199,
+    "question": "Which Agile practice focuses on frequent releases and customer feedback?",
     "options": [
-      "Space only", 
-      "Space, tab, newline, carriage return, form feed", 
-      "Comma", 
-      "Semicolon"
+      "Continuous Integration",
+      "Small Releases",
+      "Pair Programming",
+      "On-Site Customer"
     ],
     "correctAnswer": "B",
-    "topic": "Java Strings",
+    "topic": "Agile Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 200,
+    "question": "What is the main purpose of a 'sprint backlog'?",
+    "options": [
+      "To outline the project timeline",
+      "To detail the tasks and user stories for the current sprint",
+      "To track overall project progress",
+      "To manage the project budget"
+    ],
+    "correctAnswer": "B",
+    "topic": "Agile Development",
+    "difficulty": "easy"
+  },
+  {
+    "id": 201,
+    "question": "In Agile, what is the role of 'test-driven development' (TDD)?",
+    "options": [
+      "To write tests after coding",
+      "To write tests before writing the actual code",
+      "To conduct user acceptance testing",
+      "To focus solely on performance testing"
+    ],
+    "correctAnswer": "B",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
     "id": 202,
-    "question": "What happens when you execute 'String s1 = \"hello\"; String s2 = \"hello\"; System.out.println(s1 == s2);'?",
+    "question": "Which Agile framework is known for using 'story points' for estimating effort?",
     "options": [
-      "false", 
-      "true", 
-      "Compilation error", 
-      "Runtime error"
+      "Waterfall",
+      "Scrum",
+      "Lean",
+      "Kanban"
     ],
     "correctAnswer": "B",
-    "topic": "Java Strings",
-    "difficulty": "hard"
-  },
-  {
-    "id": 203,
-    "question": "What is a constructor in Java?",
-    "options": [
-      "A method that returns a value", 
-      "A special method to initialize objects", 
-      "A method that destroys objects", 
-      "A static method"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Classes",
-    "difficulty": "easy"
-  },
-  {
-    "id": 204,
-    "question": "Which wrapper class is used for primitive type 'char'?",
-    "options": [
-      "Char", 
-      "Character", 
-      "String", 
-      "CharWrapper"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Wrapper Classes",
-    "difficulty": "easy"
-  },
-  {
-    "id": 205,
-    "question": "Can a constructor be private in Java?",
-    "options": [
-      "Yes", 
-      "No", 
-      "Only in abstract classes", 
-      "Only with static keyword"
-    ],
-    "correctAnswer": "A",
-    "topic": "Java Classes",
+    "topic": "Agile Development",
     "difficulty": "medium"
   },
   {
-    "id": 206,
-    "question": "What happens if you don't define any constructor in a class?",
+    "id": 203,
+    "question": "Which UML diagram is primarily used to model the dynamic behavior of a system?",
     "options": [
-      "Compilation error", 
-      "Runtime error", 
-      "Java provides default constructor", 
-      "Cannot create objects"
+      "Class Diagram",
+      "Use Case Diagram",
+      "Sequence Diagram",
+      "Component Diagram"
     ],
     "correctAnswer": "C",
-    "topic": "Java Classes",
-    "difficulty": "easy"
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 204,
+    "question": "What year was UML adopted as a standard by the Object Management Group (OMG)?",
+    "options": [
+      "1994",
+      "1995",
+      "1997",
+      "1999"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML",
+    "difficulty": "hard"
+  },
+  {
+    "id": 205,
+    "question": "Who are the three main contributors to the initial development of UML?",
+    "options": [
+      "James Gosling, Linus Torvalds, Bjarne Stroustrup",
+      "Grady Booch, Ivar Jacobson, James Rumbaugh",
+      "Ken Thompson, Dennis Ritchie, Brian Kernighan",
+      "Tim Berners-Lee, Robert Cailliau, Marc Andreessen"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML",
+    "difficulty": "hard"
+  },
+  {
+    "id": 206,
+    "question": "Which goal of UML involves the ability to extend the core concepts?",
+    "options": [
+      "Provide formal basis for understanding the modeling language",
+      "Be independent of particular programming languages",
+      "Provide extensibility and specialization mechanisms",
+      "Integrate best practices"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML",
+    "difficulty": "medium"
   },
   {
     "id": 207,
-    "question": "Which method is automatically called when an object is garbage collected?",
+    "question": "What is NOT a primary goal of UML?",
     "options": [
-      "finalize()", 
-      "dispose()", 
-      "destroy()", 
-      "delete()"
+      "To be language and process independent",
+      "To provide a means for visualizing software design",
+      "To generate code directly from diagrams",
+      "To support higher-level development concepts such as collaborations, frameworks, and patterns"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Classes",
+    "correctAnswer": "C",
+    "topic": "UML",
     "difficulty": "medium"
   },
   {
     "id": 208,
-    "question": "What is autoboxing in Java?",
+    "question": "Which of the following statements is true about UML?",
     "options": [
-      "Converting wrapper to primitive", 
-      "Converting primitive to wrapper automatically", 
-      "Boxing objects", 
-      "Creating boxes"
+      "It is a programming language.",
+      "It is only used for modeling the static aspects of systems.",
+      "It can be used to model both the structure and behavior of systems.",
+      "It is primarily used for database schema design."
     ],
-    "correctAnswer": "B",
-    "topic": "Java Wrapper Classes",
-    "difficulty": "hard"
+    "correctAnswer": "C",
+    "topic": "UML",
+    "difficulty": "easy"
   },
   {
     "id": 209,
-    "question": "What does the 'this' keyword refer to?",
+    "question": "Which UML building block represents the static parts of a model?",
     "options": [
-      "Current class", 
-      "Current object", 
-      "Parent class", 
-      "Parent object"
+      "Behavioral Things",
+      "Structural Things",
+      "Grouping Things",
+      "Annotational Things"
     ],
     "correctAnswer": "B",
-    "topic": "Java Classes",
-    "difficulty": "easy"
+    "topic": "UML",
+    "difficulty": "medium"
   },
   {
     "id": 210,
-    "question": "Can static methods access instance variables directly?",
+    "question": "Which UML building block is used to organize elements of the UML model?",
     "options": [
-      "Yes", 
-      "No", 
-      "Only with this keyword", 
-      "Only if they are public"
+      "Structural Things",
+      "Behavioral Things",
+      "Grouping Things",
+      "Annotational Things"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Static Members",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "UML",
+    "difficulty": "medium"
   },
   {
     "id": 211,
-    "question": "What is method overloading?",
+    "question": "Which type of UML diagram would you use to show interactions among a set of objects?",
     "options": [
-      "Same method name, different parameters", 
-      "Same method name, same parameters", 
-      "Different method name, same parameters", 
-      "Changing method implementation"
+      "Class Diagram",
+      "Use Case Diagram",
+      "Sequence Diagram",
+      "State Machine Diagram"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Methods",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
   },
   {
     "id": 212,
-    "question": "Can you overload constructors in Java?",
+    "question": "Which UML diagram type is primarily used to illustrate the internal structure of a class?",
     "options": [
-      "Yes", 
-      "No", 
-      "Only with different access modifiers", 
-      "Only in abstract classes"
+      "Component Diagram",
+      "Deployment Diagram",
+      "Object Diagram",
+      "Class Diagram"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Classes",
-    "difficulty": "medium"
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
   },
   {
     "id": 213,
-    "question": "Which keyword is used to call another constructor in the same class?",
+    "question": "Which UML relationship represents a whole-part hierarchy where parts can exist independently of the whole?",
     "options": [
-      "super()", 
-      "this()", 
-      "call()", 
-      "invoke()"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Classes",
-    "difficulty": "medium"
-  },
-  {
-    "id": 214,
-    "question": "What happens when you try to access a static variable using an object reference?",
-    "options": [
-      "Compilation error", 
-      "Runtime error", 
-      "Works but gives warning", 
-      "Works normally"
+      "Dependency",
+      "Association",
+      "Aggregation",
+      "Composition"
     ],
     "correctAnswer": "C",
-    "topic": "Java Static Members",
+    "topic": "UML",
     "difficulty": "hard"
   },
   {
-    "id": 215,
-    "question": "What is inheritance in Java?",
+    "id": 214,
+    "question": "Which relationship in UML is used to represent that one class inherits from another?",
     "options": [
-      "Creating new classes", 
-      "Acquiring properties of parent class", 
-      "Deleting classes", 
-      "Copying classes"
+      "Realization",
+      "Dependency",
+      "Association",
+      "Generalization"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML",
+    "difficulty": "medium"
+  },
+  {
+    "id": 215,
+    "question": "In a use case diagram, which element represents the functionalities offered by the system?",
+    "options": [
+      "Actor",
+      "Use Case",
+      "Component",
+      "Node"
     ],
     "correctAnswer": "B",
-    "topic": "Java Inheritance",
+    "topic": "UML Diagrams",
     "difficulty": "easy"
   },
   {
     "id": 216,
-    "question": "Which keyword is used to inherit a class in Java?",
+    "question": "Which of the following best describes an actor in a use case diagram?",
     "options": [
-      "inherit", 
-      "extends", 
-      "implements", 
-      "super"
+      "A user or any other system that interacts with the system being modeled",
+      "The internal component of the system",
+      "A static entity within the system",
+      "A deployment unit of the system"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Inheritance",
-    "difficulty": "easy"
-  },
-    {
-    "id": 217,
-    "question": "What does the 'super' keyword do?",
-    "options": [
-      "Refers to current object", 
-      "Refers to parent class", 
-      "Creates new object", 
-      "Destroys object"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Inheritance",
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
     "difficulty": "easy"
   },
   {
-    "id": 218,
-    "question": "What is method overriding?",
+    "id": 217,
+    "question": "In UML, what does the term 'extend' mean in a use case diagram?",
     "options": [
-      "Same method in different classes", 
-      "Redefining parent method in child class", 
-      "Creating new methods", 
-      "Deleting methods"
+      "A relationship where one use case is a variant of another",
+      "A relationship where one use case includes the behavior of another",
+      "A relationship where one class is a subclass of another",
+      "A relationship where one actor uses the system"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Inheritance",
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "hard"
+  },
+  {
+    "id": 218,
+    "question": "What is an 'include' relationship in a use case diagram?",
+    "options": [
+      "A relationship where one use case includes the behavior of another",
+      "A relationship where one use case extends another",
+      "A relationship where one actor performs multiple use cases",
+      "A relationship where a use case is divided into smaller use cases"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 219,
-    "question": "Can you override static methods in Java?",
+    "question": "Which UML diagram focuses on showing the system's runtime instances and their interactions?",
     "options": [
-      "Yes", 
-      "No", 
-      "Only in abstract classes", 
-      "Only with super keyword"
+      "Class Diagram",
+      "Sequence Diagram",
+      "Component Diagram",
+      "Object Diagram"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Inheritance",
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 220,
-    "question": "Which annotation is used to indicate method overriding?",
+    "question": "What does an association relationship between classes in UML signify?",
     "options": [
-      "@Override", 
-      "@Overrides", 
-      "@Inherit", 
-      "@Super"
+      "Generalization/Specialization",
+      "Interaction between instances of the classes",
+      "Inheritance",
+      "State transitions"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Inheritance",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "topic": "UML",
+    "difficulty": "medium"
   },
   {
     "id": 221,
-    "question": "What is polymorphism in Java?",
+    "question": "Which UML diagram would you use to model the sequence of activities in a system?",
     "options": [
-      "Multiple forms of same entity", 
-      "Single form of entity", 
-      "Creating objects", 
-      "Destroying objects"
+      "Sequence Diagram",
+      "State Machine Diagram",
+      "Activity Diagram",
+      "Use Case Diagram"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Polymorphism",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
   },
   {
     "id": 222,
-    "question": "What is dynamic method dispatch?",
+    "question": "Which UML diagram is used to model the lifecycle of an object?",
     "options": [
-      "Compile-time method binding", 
-      "Runtime method binding", 
-      "Static method calling", 
-      "Constructor calling"
+      "Activity Diagram",
+      "Sequence Diagram",
+      "State Machine Diagram",
+      "Use Case Diagram"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Polymorphism",
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 223,
-    "question": "What does the 'final' keyword prevent when applied to a class?",
+    "question": "What is the purpose of a package in UML?",
     "options": [
-      "Instantiation", 
-      "Inheritance", 
-      "Method calling", 
-      "Variable declaration"
+      "To define the physical components of a system",
+      "To group related elements together",
+      "To model dynamic behaviors",
+      "To represent external interfaces"
     ],
     "correctAnswer": "B",
-    "topic": "Java Polymorphism",
-    "difficulty": "easy"
+    "topic": "UML",
+    "difficulty": "medium"
   },
   {
     "id": 224,
-    "question": "Can a final method be overridden?",
+    "question": "Which UML element is used to add explanatory notes to the diagram?",
     "options": [
-      "Yes", 
-      "No", 
-      "Only in child classes", 
-      "Only with super keyword"
+      "Annotation",
+      "Comment",
+      "Note",
+      "Text Box"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Polymorphism",
-    "difficulty": "medium"
+    "correctAnswer": "C",
+    "topic": "UML",
+    "difficulty": "easy"
   },
   {
     "id": 225,
-    "question": "What happens when you declare a variable as final?",
+    "question": "Which diagram would best show the physical deployment of artifacts on nodes?",
     "options": [
-      "Can be reassigned", 
-      "Cannot be reassigned", 
-      "Becomes static", 
-      "Becomes private"
+      "Component Diagram",
+      "Deployment Diagram",
+      "Use Case Diagram",
+      "Sequence Diagram"
     ],
     "correctAnswer": "B",
-    "topic": "Java Variables",
-    "difficulty": "easy"
-  },
-  {
-    "id": 226,
-    "question": "Which type of polymorphism is achieved through method overloading?",
-    "options": [
-      "Runtime polymorphism", 
-      "Compile-time polymorphism", 
-      "Dynamic polymorphism", 
-      "Late binding"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Polymorphism",
-    "difficulty": "hard"
-  },
-  {
-    "id": 227,
-    "question": "What is an abstract class in Java?",
-    "options": [
-      "Class with all concrete methods", 
-      "Class with at least one abstract method", 
-      "Interface", 
-      "Final class"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Abstract Classes",
-    "difficulty": "easy"
-  },
-  {
-    "id": 228,
-    "question": "Can you instantiate an abstract class?",
-    "options": [
-      "Yes", 
-      "No", 
-      "Only with super keyword", 
-      "Only in child classes"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Abstract Classes",
-    "difficulty": "easy"
-  },
-  {
-    "id": 229,
-    "question": "What keyword is used to declare an abstract method?",
-    "options": [
-      "abstract", 
-      "virtual", 
-      "pure", 
-      "override"
-    ],
-    "correctAnswer": "A",
-    "topic": "Java Abstract Classes",
-    "difficulty": "easy"
-  },
-  {
-    "id": 230,
-    "question": "Can an abstract class have constructor?",
-    "options": [
-      "Yes", 
-      "No", 
-      "Only default constructor", 
-      "Only private constructor"
-    ],
-    "correctAnswer": "A",
-    "topic": "Java Abstract Classes",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
-    "id": 231,
-    "question": "Can an abstract class have static methods?",
+    "id": 226,
+    "question": "In a sequence diagram, what does a lifeline represent?",
     "options": [
-      "Yes", 
-      "No", 
-      "Only abstract static methods", 
-      "Only final static methods"
+      "A class in the system",
+      "An interaction between objects",
+      "The lifespan of an object during an interaction",
+      "The flow of control in the system"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Abstract Classes",
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 227,
+    "question": "In a state machine diagram, what triggers a transition between states?",
+    "options": [
+      "A class operation",
+      "An event",
+      "A message",
+      "An activity"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 228,
+    "question": "Which UML diagram is used to show the overall structure of the system at a high level?",
+    "options": [
+      "Sequence Diagram",
+      "Class Diagram",
+      "Use Case Diagram",
+      "Component Diagram"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 229,
+    "question": "Which structural thing in UML represents a physical entity that exists at runtime?",
+    "options": [
+      "Class",
+      "Object",
+      "Node",
+      "Component"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML",
+    "difficulty": "hard"
+  },
+  {
+    "id": 230,
+    "question": "What is a stereotype in UML?",
+    "options": [
+      "A type of relationship between classes",
+      "A predefined class in the system",
+      "A way to extend UML to create new model elements",
+      "A type of diagram in UML"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML",
+    "difficulty": "hard"
+  },
+  {
+    "id": 231,
+    "question": "What is a primary advantage of using use case diagrams in system modeling?",
+    "options": [
+      "They help in detailing the internal workings of the system",
+      "They provide a high-level overview of the system's functional requirements",
+      "They model the hardware configuration of the system",
+      "They are used to write the system's code"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 232,
-    "question": "What happens if a child class doesn't implement all abstract methods of parent?",
+    "question": "Which UML concept involves defining the software architecture and includes components and their interactions?",
     "options": [
-      "Compilation error", 
-      "Runtime error", 
-      "Child must be abstract", 
-      "Works normally"
+      "Class Diagram",
+      "Component Diagram",
+      "Activity Diagram",
+      "Use Case Diagram"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Abstract Classes",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
   },
   {
     "id": 233,
-    "question": "What is a package in Java?",
+    "question": "Which of the following is NOT a type of feasibility study?",
     "options": [
-      "Collection of classes", 
-      "Single class", 
-      "Method group", 
-      "Variable group"
+      "Technical feasibility",
+      "Operational feasibility",
+      "Financial feasibility",
+      "User feasibility"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Packages",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
   },
   {
     "id": 234,
-    "question": "Which keyword is used to import a package?",
+    "question": "What is the primary goal of the requirement elicitation process?",
     "options": [
-      "include", 
-      "import", 
-      "package", 
-      "using"
+      "To gather information about stakeholders' needs and expectations",
+      "To analyze the gathered requirements",
+      "To document the requirements",
+      "To validate the requirements"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Packages",
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
     "difficulty": "easy"
   },
   {
     "id": 235,
-    "question": "What is an interface in Java?",
+    "question": "Which of the following is NOT a technique used for requirement elicitation?",
     "options": [
-      "Class with all concrete methods", 
-      "Contract with abstract methods", 
-      "Abstract class", 
-      "Final class"
+      "Interviews",
+      "Surveys",
+      "Focus groups",
+      "Prototyping"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Interfaces",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
   },
   {
     "id": 236,
-    "question": "How does Java achieve multiple inheritance?",
+    "question": "Which of the following is NOT a problem associated with requirement elicitation and analysis?",
     "options": [
-      "Through classes", 
-      "Through interfaces", 
-      "Through abstract classes", 
-      "Not possible"
+      "Stakeholders may have conflicting requirements",
+      "Requirements may change during the analysis process",
+      "Organizational and political factors may influence system requirements",
+      "Stakeholders always know what they want"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Interfaces",
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
     "difficulty": "medium"
   },
   {
     "id": 237,
-    "question": "Which keyword is used to implement an interface?",
+    "question": "What is the primary purpose of a Software Requirement Specification (SRS) document?",
     "options": [
-      "extends", 
-      "implements", 
-      "inherit", 
-      "override"
+      "To document the requirements in technical language for the development team",
+      "To gather requirements from stakeholders",
+      "To validate the requirements",
+      "To manage changing requirements during development"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Interfaces",
-    "difficulty": "medium"
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "easy"
   },
   {
     "id": 238,
-    "question": "Can an interface have static methods in Java 8?",
+    "question": "Which of the following models is used to show the flow of data through a system?",
     "options": [
-      "Yes", 
-      "No", 
-      "Only default methods", 
-      "Only abstract methods"
+      "Data Flow Diagrams (DFDs)",
+      "Entity-Relationship Diagrams (ERDs)",
+      "State Transition Diagrams",
+      "Function Decomposition Diagrams (FDDs)"
     ],
     "correctAnswer": "A",
-    "topic": "Java Interfaces",
-    "difficulty": "hard"
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
   },
   {
     "id": 239,
-    "question": "What is exception handling in Java?",
+    "question": "What is the purpose of a data dictionary in the context of requirement specification?",
     "options": [
-      "Preventing errors", 
-      "Handling runtime errors gracefully", 
-      "Debugging code", 
-      "Optimizing performance"
+      "To store information about all data items defined in DFDs",
+      "To model the data flow in the system",
+      "To model the behavior of the system",
+      "To model the relationships between data objects"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Exceptions",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
   },
   {
     "id": 240,
-    "question": "Which block always executes in exception handling?",
+    "question": "Which of the following diagrams is used to represent the relationships between data entities and their associated attributes?",
     "options": [
-      "try", 
-      "catch", 
-      "finally", 
-      "throw"
+      "Data Flow Diagrams (DFDs)",
+      "State Transition Diagrams",
+      "Entity-Relationship Diagrams (ERDs)",
+      "Function Decomposition Diagrams (FDDs)"
     ],
     "correctAnswer": "C",
-    "topic": "Java Exceptions",
-    "difficulty": "easy"
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
   },
   {
     "id": 241,
-    "question": "What is the difference between throw and throws?",
+    "question": "Which of the following is NOT a component of a use case model?",
     "options": [
-      "No difference", 
-      "throw is for methods, throws for statements", 
-      "throw creates exception, throws declares", 
-      "throws creates exception, throw declares"
+      "System",
+      "Actors",
+      "Use cases",
+      "Sequence diagrams"
     ],
-    "correctAnswer": "C",
-    "topic": "Java Exceptions",
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 242,
-    "question": "Which class is the parent of all exception classes?",
+    "question": "What is the primary purpose of a use case diagram?",
     "options": [
-      "Exception", 
-      "RuntimeException", 
-      "Throwable", 
-      "Error"
+      "To model the system architecture",
+      "To represent the dynamic behavior of the system",
+      "To capture the functional requirements of the system",
+      "To design the user interface"
     ],
     "correctAnswer": "C",
-    "topic": "Java Exceptions",
-    "difficulty": "medium"
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
   },
   {
     "id": 243,
-    "question": "How do you create a custom exception?",
+    "question": "Which of the following statements about actors is FALSE?",
     "options": [
-      "Extend Exception class", 
-      "Implement Exception interface", 
-      "Use throw keyword", 
-      "Use new keyword"
+      "An actor can be a human or a system",
+      "An actor initiates the use cases",
+      "An actor must be connected to at least one use case",
+      "An actor represents a specific instance of a role"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Exceptions",
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 244,
-    "question": "What happens if an exception occurs in finally block?",
+    "question": "What is the purpose of the 'include' relationship between use cases?",
     "options": [
-      "Original exception is thrown", 
-      "Finally exception is thrown", 
-      "Both exceptions are thrown", 
-      "Program terminates"
+      "To indicate that one use case is a part of another use case",
+      "To indicate that one use case inherits behavior from another use case",
+      "To indicate that one use case is an alternative to another use case",
+      "To indicate that one use case is a precondition for another use case"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Exceptions",
-    "difficulty": "hard"
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
   },
   {
     "id": 245,
-    "question": "Which package contains the Pattern class for regex?",
+    "question": "Which of the following is NOT a valid section in a use case description?",
     "options": [
-      "java.util", 
-      "java.util.regex", 
-      "java.text", 
-      "java.lang"
+      "Use case name",
+      "Use case number",
+      "Use case authors",
+      "Use case class diagram"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Regular Expressions",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
   },
   {
     "id": 246,
-    "question": "What is an enum in Java?",
+    "question": "What is the purpose of the 'extends' relationship between use cases?",
     "options": [
-      "Special class for constants", 
-      "Interface", 
-      "Abstract class", 
-      "Final class"
+      "To indicate that one use case is a part of another use case",
+      "To indicate that one use case inherits behavior from another use case",
+      "To indicate that one use case is an alternative to another use case",
+      "To indicate that one use case is a precondition for another use case"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Enums",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
   },
   {
     "id": 247,
-    "question": "Which annotation indicates a method parameter cannot be null?",
+    "question": "Which of the following is NOT a valid approach to finding actors in a system?",
     "options": [
-      "@NotNull", 
-      "@NonNull", 
-      "@Required", 
-      "@NotEmpty"
+      "Identifying who or what interacts with the system",
+      "Identifying the roles played by users of the system",
+      "Identifying the classes in the system design",
+      "Identifying the devices or other systems that interact with the system"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Annotations",
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 248,
-    "question": "Which class replaced Date class in Java 8?",
+    "question": "What is the purpose of the 'generalization' relationship between actors?",
     "options": [
-      "DateTime", 
-      "LocalDateTime", 
-      "Calendar", 
-      "Time"
+      "To indicate that one actor inherits behavior from another actor",
+      "To indicate that one actor is a specialization of another actor",
+      "To indicate that one actor is a part of another actor",
+      "To indicate that one actor is an alternative to another actor"
     ],
     "correctAnswer": "B",
-    "topic": "Java Date API",
-    "difficulty": "medium"
-  },
-  {
-    "id": 249,
-    "question": "Which method generates random integers in a specific range?",
-    "options": [
-      "Random.nextInt()", 
-      "Random.nextInt(bound)", 
-      "Random.randomInt()", 
-      "Random.getInt()"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Utilities",
-    "difficulty": "easy"
-  },
-  {
-    "id": 250,
-    "question": "What does the regex pattern '\\d+' match?",
-    "options": [
-      "One digit", 
-      "One or more digits", 
-      "Any character", 
-      "Word characters"
-    ],
-    "correctAnswer": "B",
-    "topic": "Java Regular Expressions",
+    "topic": "UML Diagrams",
     "difficulty": "hard"
   },
   {
-    "id": 251,
-    "question": "Which class is used to read from files in Java?",
+    "id": 249,
+    "question": "Which of the following is NOT a valid approach to finding use cases in a system?",
     "options": [
-      "FileReader", 
-      "BufferedReader", 
-      "Scanner", 
-      "All of the above"
+      "Identifying the functions required by each actor",
+      "Identifying the events that the system must handle",
+      "Identifying the problems with existing systems",
+      "Identifying the classes in the system design"
     ],
     "correctAnswer": "D",
-    "topic": "Java IO",
-    "difficulty": "easy"
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 250,
+    "question": "What is the purpose of the 'association' relationship between actors and use cases?",
+    "options": [
+      "To indicate that an actor initiates a use case",
+      "To indicate that an actor inherits behavior from a use case",
+      "To indicate that an actor is a part of a use case",
+      "To indicate that an actor is an alternative to a use case"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+    {
+    "id": 251,
+    "question": "Which of the following is NOT a valid section in a use case description?",
+    "options": [
+      "Related use cases",
+      "Typical process description",
+      "Exceptions and how to handle them",
+      "Use case class diagram"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
   },
   {
     "id": 252,
-    "question": "What interface must a class implement to be serializable?",
+    "question": "What is the purpose of the \"system\" component in a use case diagram?",
     "options": [
-      "Cloneable", 
-      "Serializable", 
-      "Comparable", 
-      "Runnable"
+      "To represent the boundaries of the system being modeled",
+      "To represent the actors interacting with the system",
+      "To represent the use cases of the system",
+      "To represent the relationships between actors and use cases"
     ],
-    "correctAnswer": "B",
-    "topic": "Java Serialization",
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
     "difficulty": "easy"
   },
   {
     "id": 253,
-    "question": "Which method is used to write objects to a file?",
+    "question": "Which of the following statements about use cases is FALSE?",
     "options": [
-      "writeObject()", 
-      "serialize()", 
-      "write()", 
-      "save()"
+      "A use case must always be initiated by an actor",
+      "A use case must provide value to at least one actor",
+      "A use case must be connected to at least one actor",
+      "A use case must be a complete description of a single scenario"
     ],
-    "correctAnswer": "A",
-    "topic": "Java Serialization",
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 254,
-    "question": "What is the difference between FileInputStream and FileReader?",
+    "question": "What is the purpose of the \"stimulus\" component in a use case model?",
     "options": [
-      "No difference", 
-      "FileInputStream for bytes, FileReader for characters", 
-      "FileReader for bytes, FileInputStream for characters", 
-      "FileInputStream is faster"
+      "To represent the event that triggers a use case",
+      "To represent the actor that initiates a use case",
+      "To represent the system being modeled",
+      "To represent the process description of a use case"
     ],
-    "correctAnswer": "B",
-    "topic": "Java IO",
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 255,
-    "question": "Which keyword prevents a field from being serialized?",
+    "question": "Which of the following is NOT a valid approach to identifying use cases?",
     "options": [
-      "static", 
-      "final", 
-      "transient", 
-      "volatile"
+      "Asking what events the system must handle",
+      "Asking what inputs and outputs the system has",
+      "Asking what classes the system should have",
+      "Asking what problems the existing systems have"
     ],
     "correctAnswer": "C",
-    "topic": "Java Serialization",
+    "topic": "UML Diagrams",
     "difficulty": "medium"
   },
   {
     "id": 256,
-    "question": "What happens if you try to serialize an object whose class doesn't implement Serializable?",
+    "question": "What is the purpose of the \"overview\" section in a use case description?",
     "options": [
-      "Compilation error", 
-      "NotSerializableException", 
-      "Works normally", 
-      "Returns null"
+      "To provide a brief statement about the use case",
+      "To describe the typical process flow of the use case",
+      "To list the exceptions and how to handle them",
+      "To list the related use cases"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 257,
+    "question": "Which of the following statements about actors is TRUE?",
+    "options": [
+      "An actor must always be a human",
+      "An actor can be ranked as primary or secondary",
+      "An actor must be connected to all use cases",
+      "An actor represents a specific instance of a role"
     ],
     "correctAnswer": "B",
-    "topic": "Java Serialization",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 258,
+    "question": "What is the purpose of the \"event\" section in a use case description?",
+    "options": [
+      "To describe the stimulus that initiates the use case",
+      "To describe the typical process flow of the use case",
+      "To list the exceptions and how to handle them",
+      "To list the related use cases"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 259,
+    "question": "Which of the following is NOT a valid approach to identifying actors?",
+    "options": [
+      "Identifying who will use the functionality of the system",
+      "Identifying who will maintain the system",
+      "Identifying the use cases of the system",
+      "Identifying the devices or other systems that interact with the system"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 260,
+    "question": "Which of the following statements about use cases is TRUE?",
+    "options": [
+      "A use case can be initiated by the system itself",
+      "A use case must always have a single actor",
+      "A use case can be connected to multiple actors",
+      "A use case must always have a single scenario"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 261,
+    "question": "What is the purpose of the \"related use cases\" section in a use case description?",
+    "options": [
+      "To list the use cases that are included or extended by the current use case",
+      "To list the use cases that are alternatives to the current use case",
+      "To list the use cases that are preconditions for the current use case",
+      "To list the use cases that are related to the current use case in some way"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 262,
+    "question": "Which of the following is NOT a valid approach to describing use cases?",
+    "options": [
+      "Providing a use case name and number",
+      "Listing the authors of the use case",
+      "Describing the typical process flow of the use case",
+      "Providing the sequence diagram for the use case"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 263,
+    "question": "What is the purpose of the \"authors\" section in a use case description?",
+    "options": [
+      "To list the people who wrote the use case description",
+      "To list the actors involved in the use case",
+      "To list the related use cases",
+      "To list the exceptions and how to handle them"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 264,
+    "question": "Which of the following statements about use case diagrams is FALSE?",
+    "options": [
+      "A use case diagram shows the system, actors, use cases, and their relationships",
+      "A use case diagram can consist of multiple diagrams",
+      "A use case diagram must have at least one actor and one use case",
+      "A use case diagram can have multiple systems"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 265,
+    "question": "What is the purpose of the \"typical process description\" section in a use case description?",
+    "options": [
+      "To describe the stimulus that initiates the use case",
+      "To describe the typical process flow of the use case",
+      "To list the exceptions and how to handle them",
+      "To list the related use cases"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 266,
+    "question": "Which of the following is NOT a valid approach to identifying use cases?",
+    "options": [
+      "Identifying the scenarios that the system must support",
+      "Identifying the user goals or tasks that the system must facilitate",
+      "Identifying the sequence of steps to be performed by the system",
+      "Identifying the classes and objects in the system design"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 267,
+    "question": "What is the purpose of the \"preconditions\" section in a use case description?",
+    "options": [
+      "To describe the conditions that must be met before the use case can start",
+      "To describe the typical process flow of the use case",
+      "To list the exceptions and how to handle them",
+      "To list the related use cases"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 268,
+    "question": "Which of the following statements about use case diagrams is TRUE?",
+    "options": [
+      "A use case diagram can have multiple systems",
+      "A use case diagram must have at least one actor and one use case",
+      "A use case diagram can consist of multiple diagrams",
+      "All of the above are true"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 269,
+    "question": "What is the purpose of the \"postconditions\" section in a use case description?",
+    "options": [
+      "To describe the conditions that must be met after the use case has completed",
+      "To describe the typical process flow of the use case",
+      "To list the exceptions and how to handle them",
+      "To list the related use cases"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 270,
+    "question": "Which of the following is NOT a valid approach to identifying actors?",
+    "options": [
+      "Identifying who will use the functionality of the system",
+      "Identifying who will maintain the system",
+      "Identifying the devices or other systems that interact with the system",
+      "Identifying the classes and objects in the system design"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 271,
+    "question": "What is the purpose of the \"alternate flows\" section in a use case description?",
+    "options": [
+      "To describe alternative scenarios or paths that the use case can take",
+      "To describe the typical process flow of the use case",
+      "To list the exceptions and how to handle them",
+      "To list the related use cases"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 272,
+    "question": "Which of the following is NOT a valid relationship between use cases in a use case diagram?",
+    "options": [
+      "Include",
+      "Extends",
+      "Inheritance",
+      "Association"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 273,
+    "question": "What is the purpose of the \"success guarantees\" section in a use case description?",
+    "options": [
+      "To describe the conditions that must be met for the use case to be considered successful",
+      "To describe the typical process flow of the use case",
+      "To list the exceptions and how to handle them",
+      "To list the related use cases"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 274,
+    "question": "Which of the following statements about actors is TRUE?",
+    "options": [
+      "An actor must always be a human",
+      "An actor can be ranked as primary or secondary",
+      "An actor must be connected to all use cases",
+      "An actor represents a specific instance of a role"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 275,
+    "question": "What is the purpose of the \"minimal guarantees\" section in a use case description?",
+    "options": [
+      "To describe the minimal conditions that must be met for the use case to be considered successful",
+      "To describe the typical process flow of the use case",
+      "To list the exceptions and how to handle them",
+      "To list the related use cases"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 276,
+    "question": "Which of the following is NOT a primary task of requirements analysis?",
+    "options": [
+      "Specifying software's operational characteristics",
+      "Indicating software's interface with other system elements",
+      "Establishing constraints that software must meet",
+      "Writing the actual code for the software"
+    ],
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 277,
+    "question": "In the context of software specification guidelines, what do the persuasive connectors like \"certainly,\" \"therefore,\" and \"clearly\" indicate?",
+    "options": [
+      "The specification is well-written and easy to understand",
+      "The specification needs to be scrutinized for potential assumptions or biases",
+      "The specification is following industry-standard guidelines",
+      "The specification is using technical jargon that needs to be simplified"
+    ],
+    "correctAnswer": "B",
+    "topic": "Requirements Engineering",
     "difficulty": "hard"
+  },
+  {
+    "id": 278,
+    "question": "What is the primary purpose of domain analysis?",
+    "options": [
+      "To define the domain to be investigated",
+      "To collect a representative sample of applications in the domain",
+      "To analyze each application in the sample",
+      "To develop an analysis model for the objects in the domain"
+    ],
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 279,
+    "question": "In the context of data modeling, what is the primary purpose of an Entity-Relationship Diagram (ERD)?",
+    "options": [
+      "To examine data objects independently of processing",
+      "To focus attention on the data domain",
+      "To create a model at the customer's level of abstraction",
+      "To indicate how data objects relate to one another"
+    ],
+    "correctAnswer": "D",
+    "topic": "Data Modeling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 280,
+    "question": "Which of the following is NOT a key concept in object-oriented analysis?",
+    "options": [
+      "Classes and objects",
+      "Attributes and operations",
+      "Encapsulation and instantiation",
+      "Normalization and denormalization"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 281,
+    "question": "In the context of object-oriented analysis, what is the purpose of a metaclass (or superclass)?",
+    "options": [
+      "To define a template for a class",
+      "To establish a hierarchy of classes",
+      "To identify specific instances of a class",
+      "Both a) and b)"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "hard"
+  },
+  {
+    "id": 282,
+    "question": "Which of the following statements is TRUE about encapsulation in object-oriented analysis?",
+    "options": [
+      "It separates data from the methods that operate on the data",
+      "It exposes both data and methods to other parts of the system",
+      "It achieves \"information hiding\" by encapsulating data and methods within a class",
+      "It allows direct access to data members from outside the class"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 283,
+    "question": "In the context of flow-oriented modeling, what is the primary purpose of a Data Flow Diagram (DFD)?",
+    "options": [
+      "To represent how data objects are transformed as they move through the system",
+      "To model the control flow and events in the system",
+      "To depict the class hierarchy and inheritance relationships",
+      "To show the sequence of operations and their dependencies"
+    ],
+    "correctAnswer": "A",
+    "topic": "Data Flow Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 284,
+    "question": "Which of the following is NOT a valid notation used in a Data Flow Diagram (DFD)?",
+    "options": [
+      "External entity",
+      "Process",
+      "Data flow",
+      "Control flow"
+    ],
+    "correctAnswer": "D",
+    "topic": "Data Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 285,
+    "question": "In the context of Data Flow Diagramming, what is the purpose of the \"level 0\" or \"context level\" diagram?",
+    "options": [
+      "To show all the external entities interacting with the system",
+      "To provide a detailed view of the internal processes and data flows",
+      "To represent the highest level of abstraction for the system",
+      "Both a) and c)"
+    ],
+    "correctAnswer": "D",
+    "topic": "Data Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 286,
+    "question": "Which of the following statements is TRUE about the Process Specification (PSPEC) in Data Flow Diagrams?",
+    "options": [
+      "It provides a narrative description of the process",
+      "It can include pseudocode, equations, tables, and diagrams",
+      "It helps refine each process bubble until it does just one thing",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Data Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 287,
+    "question": "In the context of Control Flow Diagrams, what is the purpose of a \"control flow\"?",
+    "options": [
+      "To represent data flows between processes",
+      "To represent events and control items that manage processes",
+      "To depict the sequence of operations in the system",
+      "To model the class hierarchy and relationships"
+    ],
+    "correctAnswer": "B",
+    "topic": "Control Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 288,
+    "question": "Which of the following statements is TRUE about the Control Specification (CSPEC) in Control Flow Diagrams?",
+    "options": [
+      "It describes how control is handled in the system",
+      "It can be represented using state diagrams, state transition tables, or decision tables",
+      "It lists all the sensors, interrupt conditions, and switches that are relevant to the system",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Control Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 289,
+    "question": "In the context of Control Flow Diagrams, what does a vertical bar notation represent?",
+    "options": [
+      "An input to or output from a control spec (CSPEC)",
+      "A data flow between processes",
+      "An external entity interacting with the system",
+      "A process that transforms data"
+    ],
+    "correctAnswer": "A",
+    "topic": "Control Flow Diagrams",
+    "difficulty": "hard"
+  },
+  {
+    "id": 290,
+    "question": "Which of the following statements is FALSE regarding the guidelines for building a Control Specification (CSPEC)?",
+    "options": [
+      "List all sensors that are \"read\" by the software",
+      "List all interrupt conditions",
+      "List all \"switches\" that are actuated by an operator",
+      "Describe the behavior of the system using only state diagrams"
+    ],
+    "correctAnswer": "D",
+    "topic": "Control Flow Diagrams",
+    "difficulty": "hard"
+  },
+  {
+    "id": 291,
+    "question": "In the context of object-oriented analysis, what is the purpose of generalization?",
+    "options": [
+      "To represent the \"is-a\" relationship between classes",
+      "To model the logical or physical containment of one object by another",
+      "To represent the dependency between two classes",
+      "To model the realization of an interface or abstract class by a concrete class"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 292,
+    "question": "Which of the following statements best describes the difference between association and aggregation in object-oriented analysis?",
+    "options": [
+      "Association represents a \"has-a\" relationship, while aggregation represents a \"part-of\" relationship",
+      "Association represents a \"part-of\" relationship, while aggregation represents a \"has-a\" relationship",
+      "Association is a unidirectional relationship, while aggregation is bidirectional",
+      "There is no difference between association and aggregation"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 293,
+    "question": "In the context of object-oriented analysis, what is the primary difference between structured analysis and object-oriented analysis?",
+    "options": [
+      "Structured analysis focuses on data flow, while object-oriented analysis focuses on objects and their interactions",
+      "Structured analysis is based on procedural programming, while object-oriented analysis is based on object-oriented programming",
+      "Structured analysis uses functional decomposition, while object-oriented analysis uses class decomposition",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 294,
+    "question": "Under what conditions would you decompose a process on a Data Flow Diagram (DFD)?",
+    "options": [
+      "When the process is too complex and needs to be broken down into smaller, more manageable processes",
+      "When the process is interacting with multiple external entities",
+      "When the process is consuming or producing multiple data flows",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Data Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 295,
+    "question": "Which of the following is NOT a specific benefit of using Data Flow Models?",
+    "options": [
+      "They provide a graphical representation of the system's data flow",
+      "They help identify potential data redundancies and inconsistencies",
+      "They facilitate the identification of system boundaries and interfaces",
+      "They automatically generate the system's code from the model"
+    ],
+    "correctAnswer": "D",
+    "topic": "Data Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 296,
+    "question": "In the context of data modeling, what does the notation \"(0, m)\" represent in an Entity-Relationship Diagram (ERD)?",
+    "options": [
+      "Exactly one instance of the object must exist",
+      "Zero or more instances of the object can exist",
+      "The object is optional and can have multiple instances",
+      "The object is mandatory and can have multiple instances"
+    ],
+    "correctAnswer": "B",
+    "topic": "Data Modeling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 297,
+    "question": "Which of the following is NOT a valid approach for a Control Specification (CSPEC) in Control Flow Diagrams?",
+    "options": [
+      "State diagram",
+      "State transition table",
+      "Decision tables",
+      "Use case diagram"
+    ],
+    "correctAnswer": "D",
+    "topic": "Control Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 298,
+    "question": "In the context of object-oriented analysis, what is the purpose of a dependency relationship?",
+    "options": [
+      "To represent the \"is-a\" relationship between classes",
+      "To model the logical or physical containment of one object by another",
+      "To represent a semantic relationship between two classes",
+      "To model the realization of an interface or abstract class by a concrete class"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 299,
+    "question": "Which of the following statements is TRUE about the Process Specification (PSPEC) in Data Flow Diagrams?",
+    "options": [
+      "It is used to refine each process bubble until it does just one thing",
+      "It provides a narrative description of the data flow",
+      "It represents the control flow and events in the system",
+      "It shows the sequence of operations and their dependencies"
+    ],
+    "correctAnswer": "A",
+    "topic": "Data Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 300,
+    "question": "In the context of object-oriented analysis, what is the purpose of a realization relationship?",
+    "options": [
+      "To represent the \"is-a\" relationship between classes",
+      "To model the logical or physical containment of one object by another",
+      "To represent a semantic relationship between two classes",
+      "To model the realization of an interface or abstract class by a concrete class"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "hard"
+  },
+  {
+    "id": 301,
+    "question": "Which of the following statements is FALSE regarding the guidelines for Data Flow Diagramming?",
+    "options": [
+      "All icons must be labeled with meaningful names",
+      "The DFD evolves through a number of levels of detail",
+      "Always begin with a level 1 DFD",
+      "Always show external entities at level 0"
+    ],
+    "correctAnswer": "C",
+    "topic": "Data Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 302,
+    "question": "In the context of object-oriented analysis, what is the purpose of a package?",
+    "options": [
+      "To represent a collection of related classes and interfaces",
+      "To model the logical or physical containment of one object by another",
+      "To represent a semantic relationship between two classes",
+      "To model the realization of an interface or abstract class by a concrete class"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 303,
+    "question": "Which of the following statements is TRUE about the relationship between Data Flow Diagrams (DFDs) and the analysis model?",
+    "options": [
+      "DFDs are not related to the analysis model",
+      "DFDs are used to construct the analysis model",
+      "DFDs are derived from the analysis model",
+      "DFDs and the analysis model are completely independent"
+    ],
+    "correctAnswer": "B",
+    "topic": "Data Flow Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 304,
+    "question": "In the context of object-oriented analysis, what is the primary difference between composition and aggregation?",
+    "options": [
+      "Composition represents a stronger form of association than aggregation",
+      "Aggregation represents a stronger form of association than composition",
+      "There is no difference between composition and aggregation",
+      "Composition represents a \"has-a\" relationship, while aggregation represents a \"part-of\" relationship"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "hard"
+  },
+  {
+    "id": 305,
+    "question": "Which of the following statements is TRUE about the guidelines for building a Control Specification (CSPEC)?",
+    "options": [
+      "Focus on possible omissions and ask if there are any other ways to reach or exit a particular state",
+      "Only consider the sensors and interrupt conditions, not the switches or data conditions",
+      "Describe the behavior of the system using only state diagrams or state transition tables",
+      "Do not consider the noun-verb parse applied to the software statement of scope"
+    ],
+    "correctAnswer": "A",
+    "topic": "Control Flow Diagrams",
+    "difficulty": "hard"
+  },
+  {
+    "id": 306,
+    "question": "Which of the following is NOT a characteristic of a good design?",
+    "options": [
+      "Implement explicit requirements",
+      "Accommodate implicit requirements",
+      "Provide an incomplete picture of the software",
+      "Be a readable and understandable guide"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 307,
+    "question": "What is the primary benefit of abstraction?",
+    "options": [
+      "It allows for the suppression of low-level details",
+      "It facilitates a top-down approach to software design",
+      "It improves code readability",
+      "It enhances software maintainability"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 308,
+    "question": "Which of the following is the best type of cohesion?",
+    "options": [
+      "Logical cohesion",
+      "Temporal cohesion",
+      "Procedural cohesion",
+      "Functional or informational cohesion"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 309,
+    "question": "What is the worst type of coupling?",
+    "options": [
+      "Data coupling",
+      "Stamp coupling",
+      "Control coupling",
+      "Content coupling"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 310,
+    "question": "Which of the following architectural views shows how the software is decomposed for development?",
+    "options": [
+      "Logical view",
+      "Process view",
+      "Development view",
+      "Physical view"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Architecture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 311,
+    "question": "Which of the following is NOT a design principle for user interfaces?",
+    "options": [
+      "User familiarity",
+      "Consistency",
+      "Minimal surprise",
+      "High complexity"
+    ],
+    "correctAnswer": "D",
+    "topic": "User Interface Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 312,
+    "question": "What is the primary advantage of direct manipulation interfaces?",
+    "options": [
+      "Users feel in control of the computer",
+      "Users get immediate feedback on their actions",
+      "Both a) and b)",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 313,
+    "question": "Which of the following interaction styles is best suited for occasional users?",
+    "options": [
+      "Direct manipulation",
+      "Menu selection",
+      "Command language",
+      "Natural language"
+    ],
+    "correctAnswer": "D",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 314,
+    "question": "What is the primary disadvantage of command interfaces?",
+    "options": [
+      "Users have to learn and remember a command language",
+      "Commands of arbitrary complexity cannot be created",
+      "System interaction requires typing ability",
+      "Both a) and c)"
+    ],
+    "correctAnswer": "D",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 315,
+    "question": "Which of the following is NOT a criterion for good design?",
+    "options": [
+      "Be traceable back to analysis",
+      "Accommodate change",
+      "Degrade gently",
+      "Reinvent the wheel"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 316,
+    "question": "What is the purpose of stepwise refinement?",
+    "options": [
+      "To decompose a high-level statement of function until low-level programming language statements are reached",
+      "To abstract away low-level details",
+      "To partition a system into modules",
+      "To enhance cohesion and reduce coupling"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 317,
+    "question": "Which of the following is the best type of coupling?",
+    "options": [
+      "Data coupling",
+      "Stamp coupling",
+      "Control coupling",
+      "Common coupling"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 318,
+    "question": "What is the primary purpose of architectural design?",
+    "options": [
+      "To identify the sub-systems making up a system and the framework for sub-system control and communication",
+      "To create a detailed design specification for each module",
+      "To define the user interface of the system",
+      "To optimize the performance of the system"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Architecture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 319,
+    "question": "Which of the following architectural views shows the system hardware and how software components are distributed across the processors?",
+    "options": [
+      "Logical view",
+      "Process view",
+      "Development view",
+      "Physical view"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Architecture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 320,
+    "question": "Which of the following interaction styles is best suited for video games and CAD systems?",
+    "options": [
+      "Direct manipulation",
+      "Menu selection",
+      "Form fill-in",
+      "Command language"
+    ],
+    "correctAnswer": "A",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 321,
+    "question": "What is the primary advantage of menu systems?",
+    "options": [
+      "Users need not remember command names",
+      "Typing effort is minimal",
+      "User errors are trapped by the interface",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "User Interface Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 322,
+    "question": "Which of the following is a disadvantage of form-based interfaces?",
+    "options": [
+      "Simple data entry",
+      "Easy to learn",
+      "Causes problems where user options do not match the form fields",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 323,
+    "question": "What is the primary purpose of information presentation in user interface design?",
+    "options": [
+      "To present system information to system users",
+      "To transform information for presentation in graphical form",
+      "Both a) and b)",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 324,
+    "question": "Which of the following is NOT a design principle for user interfaces?",
+    "options": [
+      "Recoverability",
+      "User guidance",
+      "User diversity",
+      "High complexity"
+    ],
+    "correctAnswer": "D",
+    "topic": "User Interface Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 325,
+    "question": "Which of the following is a disadvantage of natural language interfaces?",
+    "options": [
+      "They require too much typing for experienced users",
+      "The vocabulary is unlimited",
+      "They are not suitable for casual users",
+      "Both a) and c)"
+    ],
+    "correctAnswer": "A",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 326,
+    "question": "Which of the following is NOT a benefit of modularity?",
+    "options": [
+      "Easier to build",
+      "Easier to change",
+      "Easier to fix",
+      "Increases the cost of software development"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design Principles",
+    "difficulty": "easy"
+  },
+  {
+    "id": 327,
+    "question": "What is the primary goal of cohesion in software design?",
+    "options": [
+      "To minimize the interaction between modules",
+      "To maximize the functional strength of a module",
+      "To enhance reusability of modules",
+      "To improve the readability of code"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 328,
+    "question": "Which of the following types of coupling is associated with the use of global variables?",
+    "options": [
+      "Data coupling",
+      "Stamp coupling",
+      "Control coupling",
+      "Common coupling"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 329,
+    "question": "What is the primary disadvantage of temporal cohesion?",
+    "options": [
+      "It makes modules difficult to understand",
+      "It reduces the reusability of modules",
+      "It increases the coupling between modules",
+      "It decreases the functional strength of modules"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design Principles",
+    "difficulty": "hard"
+  },
+  {
+    "id": 330,
+    "question": "Which of the following architectural patterns is NOT typically used for security purposes?",
+    "options": [
+      "Layered architecture",
+      "Client-server architecture",
+      "Peer-to-peer architecture",
+      "Microservices architecture"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Architecture",
+    "difficulty": "hard"
+  },
+  {
+    "id": 331,
+    "question": "Which of the following is the primary purpose of the \"4+1\" view model of software architecture?",
+    "options": [
+      "To provide a comprehensive understanding of the system from different perspectives",
+      "To identify the sub-systems making up a system",
+      "To define the framework for sub-system control and communication",
+      "To optimize the performance of the system"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Architecture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 332,
+    "question": "Which of the following interaction styles is best suited for stock control and personal loan processing?",
+    "options": [
+      "Direct manipulation",
+      "Menu selection",
+      "Form fill-in",
+      "Command language"
+    ],
+    "correctAnswer": "C",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 333,
+    "question": "What is the primary disadvantage of command interfaces for occasional users?",
+    "options": [
+      "They require users to learn and remember a command language",
+      "They are not suitable for presenting a small number of choices",
+      "They are difficult to program",
+      "They make heavy demands on the computer system"
+    ],
+    "correctAnswer": "A",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 334,
+    "question": "Which of the following is a disadvantage of menu systems?",
+    "options": [
+      "Users need to remember command names",
+      "Typing effort is minimal",
+      "Actions involving logical conjunction or disjunction are awkward to represent",
+      "Context-dependent help cannot be provided"
+    ],
+    "correctAnswer": "C",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 335,
+    "question": "Which of the following is NOT a design principle for user interfaces?",
+    "options": [
+      "Minimal surprise",
+      "User guidance",
+      "User diversity",
+      "High cohesion"
+    ],
+    "correctAnswer": "D",
+    "topic": "User Interface Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 336,
+    "question": "Which of the following is NOT a purpose of a Class Diagram?",
+    "options": [
+      "Analysis and design of the static view of an application",
+      "Describe responsibilities of a system",
+      "Base for component and deployment diagrams",
+      "Testing the dynamic behavior of the system"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 337,
+    "question": "Which of the following relationships represents the \"has-a\" relationship?",
+    "options": [
+      "Inheritance",
+      "Aggregation",
+      "Composition",
+      "Both b) and c)"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 338,
+    "question": "In a Unidirectional Association relationship, if Class A can call Class B, then which statement is true?",
+    "options": [
+      "Class B can call Class A",
+      "Class B cannot call Class A",
+      "Class A cannot call Class B",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 339,
+    "question": "Which of the following is NOT a valid multiplicity notation?",
+    "options": [
+      "1..*",
+      "0..1",
+      "2..5",
+      "*"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 340,
+    "question": "Which of the following relationships is represented by a solid line with a diamond at one end?",
+    "options": [
+      "Inheritance",
+      "Aggregation",
+      "Composition",
+      "Association"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 341,
+    "question": "Which of the following is NOT a valid attribute type in a Class Diagram?",
+    "options": [
+      "int",
+      "double",
+      "String",
+      "void"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 342,
+    "question": "Which of the following is a static diagram in UML?",
+    "options": [
+      "Use Case Diagram",
+      "Sequence Diagram",
+      "Class Diagram",
+      "Activity Diagram"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 343,
+    "question": "What does the notation \"1..*\" represent in a Class Diagram?",
+    "options": [
+      "One or more instances",
+      "Exactly one instance",
+      "Zero or more instances",
+      "One instance only"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 344,
+    "question": "Which of the following relationships is represented by a solid line with an open arrowhead?",
+    "options": [
+      "Inheritance",
+      "Aggregation",
+      "Composition",
+      "Association"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 345,
+    "question": "Which of the following is NOT a valid cardinality notation in a Class Diagram?",
+    "options": [
+      "0..1",
+      "1..*",
+      "0..0",
+      "2..5"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 346,
+    "question": "Which of the following relationships is represented by a dashed line with an open arrowhead?",
+    "options": [
+      "Inheritance",
+      "Aggregation",
+      "Composition",
+      "Dependency"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 347,
+    "question": "Which of the following notations represents the multiplicity of \"zero or one\" in a Class Diagram?",
+    "options": [
+      "0..1",
+      "1",
+      "*",
+      "0..*"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 348,
+    "question": "Which of the following is NOT a valid syntax for representing a method in a Class Diagram?",
+    "options": [
+      "methodName()",
+      "methodName(parameterList)",
+      "returnType methodName(parameterList)",
+      "methodName(): returnType"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 349,
+    "question": "Which of the following is a valid notation for representing a private attribute in a Class Diagram?",
+    "options": [
+      "-attributeName",
+      "+attributeName",
+      "#attributeName",
+      "~attributeName"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 350,
+    "question": "Which of the following is NOT a valid notation for representing a protected method in a Class Diagram?",
+    "options": [
+      "-methodName()",
+      "+methodName()",
+      "#methodName()",
+      "~methodName()"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 351,
+    "question": "Which of the following is a valid notation for representing a static attribute in a Class Diagram?",
+    "options": [
+      "attributeName",
+      "{static} attributeName",
+      "underline attributeName",
+      "italicize attributeName"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 352,
+    "question": "What is the primary goal of the software design process?",
+    "options": [
+      "Implementing low-level functions",
+      "Translating the requirements model into a blueprint for construction",
+      "Conducting software testing",
+      "Ensuring user interface consistency"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 353,
+    "question": "Which of the following is not a characteristic of good software design?",
+    "options": [
+      "Explicit requirements implementation",
+      "Readability",
+      "Ambiguity",
+      "Completeness"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 354,
+    "question": "In the context of software design, what does \"refinement\" refer to?",
+    "options": [
+      "Increasing modularity",
+      "Elaborating on details iteratively",
+      "Ensuring high cohesion",
+      "Reducing coupling"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 355,
+    "question": "Which type of cohesion is considered the weakest?",
+    "options": [
+      "Functional cohesion",
+      "Temporal cohesion",
+      "Procedural cohesion",
+      "Coincidental cohesion"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 356,
+    "question": "Which of the following best describes \"low coupling\"?",
+    "options": [
+      "Modules are highly dependent on each other",
+      "Modules have minimal interdependencies",
+      "Modules have a high degree of similarity",
+      "Modules share global data"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 357,
+    "question": "Which principle involves using a higher-level description without worrying about lower-level details initially?",
+    "options": [
+      "Modularity",
+      "Abstraction",
+      "Refinement",
+      "Encapsulation"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design Principles",
+    "difficulty": "easy"
+  },
+  {
+    "id": 358,
+    "question": "What is the primary purpose of architectural design in software engineering?",
+    "options": [
+      "Coding the software",
+      "Creating detailed module specifications",
+      "Establishing the overall structure of the system",
+      "Writing user documentation"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Architecture",
+    "difficulty": "easy"
+  },
+  {
+    "id": 359,
+    "question": "Which view in the 4+1 architectural view model represents the runtime behavior of the system?",
+    "options": [
+      "Logical view",
+      "Process view",
+      "Development view",
+      "Physical view"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Architecture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 360,
+    "question": "Which architectural style is characterized by a set of cooperating processes interconnected by message-passing communication?",
+    "options": [
+      "Layered",
+      "Client-server",
+      "Event-driven",
+      "Microservices"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Architecture",
+    "difficulty": "hard"
+  },
+  {
+    "id": 361,
+    "question": "Which principle of UI design emphasizes making the interface familiar to users by leveraging their prior experiences?",
+    "options": [
+      "Consistency",
+      "User familiarity",
+      "Recoverability",
+      "Minimal surprise"
+    ],
+    "correctAnswer": "B",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 362,
+    "question": "In which interaction style does the user interact with the system by manipulating visual representations on the screen?",
+    "options": [
+      "Command language",
+      "Menu selection",
+      "Direct manipulation",
+      "Form fill-in"
+    ],
+    "correctAnswer": "C",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 363,
+    "question": "Which of the following is NOT an advantage of using graphical user interfaces (GUIs)?",
+    "options": [
+      "Intuitive interaction",
+      "High learning curve",
+      "Immediate feedback",
+      "Easier navigation"
+    ],
+    "correctAnswer": "B",
+    "topic": "User Interface Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 364,
+    "question": "Which relationship in class diagrams indicates a \"has-a\" relationship where the existence of the contained class depends on the containing class?",
+    "options": [
+      "Inheritance",
+      "Association",
+      "Aggregation",
+      "Composition"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 365,
+    "question": "What does multiplicity in a class diagram specify?",
+    "options": [
+      "The number of operations in a class",
+      "The number of attributes in a class",
+      "The number of instances one class can have relative to another",
+      "The number of classes in the diagram"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 366,
+    "question": "In a class diagram, which symbol represents a private attribute?",
+    "options": [
+      "+",
+      "#",
+      "-",
+      "/"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 367,
+    "question": "In a library management system, which class is likely to have attributes such as Title, Author, ISBN?",
+    "options": [
+      "User",
+      "Librarian",
+      "Book",
+      "Account"
+    ],
+    "correctAnswer": "C",
+    "topic": "Class Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 368,
+    "question": "Which method would most likely be found in the Librarian class in a library management system?",
+    "options": [
+      "Search()",
+      "Calculate_fine()",
+      "Verify()",
+      "Add()"
+    ],
+    "correctAnswer": "A",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 369,
+    "question": "In a library management system, which attribute would not logically belong to the Account class?",
+    "options": [
+      "no_borrowed_books",
+      "fine_amount",
+      "Password",
+      "no_reserved_books"
+    ],
+    "correctAnswer": "C",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 370,
+    "question": "In a college information system, which class would contain the attribute HODName?",
+    "options": [
+      "CollegeInformation",
+      "Department",
+      "Student",
+      "Staff"
+    ],
+    "correctAnswer": "B",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 371,
+    "question": "What is the relationship between the classes Student and UGStudent in a college information system?",
+    "options": [
+      "Association",
+      "Aggregation",
+      "Inheritance",
+      "Composition"
+    ],
+    "correctAnswer": "C",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 372,
+    "question": "Which method would be part of the Classroom class in a college information system?",
+    "options": [
+      "PayFees()",
+      "IsOccupied()",
+      "ShowEvents()",
+      "StaffDetails()"
+    ],
+    "correctAnswer": "B",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 373,
+    "question": "Which class in a hospital management system would likely have attributes such as DoctorID, Specialization, and Department?",
+    "options": [
+      "Patient",
+      "Doctor",
+      "Appointment",
+      "Prescription"
+    ],
+    "correctAnswer": "B",
+    "topic": "Class Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 374,
+    "question": "In a hospital management system, which class relationship would best describe a doctor being assigned to multiple patients?",
+    "options": [
+      "One-to-one",
+      "One-to-many",
+      "Many-to-one",
+      "Many-to-many"
+    ],
+    "correctAnswer": "B",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 375,
+    "question": "Which method would you expect to find in a Patient class in a hospital management system?",
+    "options": [
+      "ScheduleAppointment()",
+      "CalculateDosage()",
+      "UpdateMedicalRecord()",
+      "VerifyInsurance()"
+    ],
+    "correctAnswer": "C",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 376,
+    "question": "In an online shopping system, which class would contain the attributes ProductID, ProductName, and Price?",
+    "options": [
+      "Customer",
+      "Order",
+      "Product",
+      "Cart"
+    ],
+    "correctAnswer": "C",
+    "topic": "Class Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 377,
+    "question": "Which method would most likely belong to the Order class in an online shopping system?",
+    "options": [
+      "AddToCart()",
+      "ProcessPayment()",
+      "CheckOut()",
+      "TrackShipment()"
+    ],
+    "correctAnswer": "C",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 378,
+    "question": "What type of relationship exists between the classes Customer and Order in an online shopping system?",
+    "options": [
+      "Association",
+      "Aggregation",
+      "Inheritance",
+      "Composition"
+    ],
+    "correctAnswer": "A",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 379,
+    "question": "In a banking system, which class would likely include methods such as Deposit() and Withdraw()?",
+    "options": [
+      "Customer",
+      "Account",
+      "Transaction",
+      "Loan"
+    ],
+    "correctAnswer": "B",
+    "topic": "Class Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 380,
+    "question": "What attribute is essential for the Transaction class in a banking system?",
+    "options": [
+      "AccountNumber",
+      "TransactionID",
+      "Balance",
+      "InterestRate"
+    ],
+    "correctAnswer": "B",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 381,
+    "question": "In a banking system, which method would belong to the Loan class?",
+    "options": [
+      "CalculateInterest()",
+      "GenerateStatement()",
+      "ApproveLoan()",
+      "CloseAccount()"
+    ],
+    "correctAnswer": "A",
+    "topic": "Class Diagrams",
+    "difficulty": "medium"
+  },
+    {
+    "id": 382,
+    "question": "Which of the following is not a step in unit testing?",
+    "options": [
+      "Planning",
+      "Writing test cases",
+      "Performing the unit test",
+      "Integration testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 383,
+    "question": "What is the main objective of unit testing?",
+    "options": [
+      "To isolate and test the smallest testable parts of an application",
+      "To test the entire application",
+      "To perform integration testing",
+      "To perform system testing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 384,
+    "question": "Which of the following is not an advantage of unit testing?",
+    "options": [
+      "Easier debugging processes",
+      "Developers can quickly make changes to the codebase",
+      "Developers can reuse code and migrate it to new projects",
+      "Unit tests can uncover every bug"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 385,
+    "question": "Which of the following is a disadvantage of unit testing?",
+    "options": [
+      "Tests will not uncover every bug",
+      "Fixing problems early is usually cheaper than fixing them later in development",
+      "Easier debugging processes",
+      "Developers can quickly make changes to the codebase"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 386,
+    "question": "Which testing methodology requires developers to first write failing unit tests before writing the actual code?",
+    "options": [
+      "Unit testing",
+      "Integration testing",
+      "Test-driven development (TDD)",
+      "Behavior-driven development (BDD)"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 387,
+    "question": "Which of the following is a component of test-driven development (TDD)?",
+    "options": [
+      "Unit testing",
+      "Integration testing",
+      "System testing",
+      "Acceptance testing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 388,
+    "question": "Which of the following is the first level of software testing, performed before other testing methods?",
+    "options": [
+      "Unit testing",
+      "Integration testing",
+      "System testing",
+      "Acceptance testing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 389,
+    "question": "Which of the following statements is true about unit testing?",
+    "options": [
+      "Unit tests should be created for every line of code",
+      "Unit tests should focus on code that could affect the behavior of the software being developed",
+      "Unit tests should test the entire application",
+      "Unit tests should test the integration of different components"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 390,
+    "question": "What is the difference between verification and validation in software testing?",
+    "options": [
+      "Verification ensures that the software correctly implements a specific function, while validation ensures that the software meets customer requirements",
+      "Verification ensures that the software meets customer requirements, while validation ensures that the software correctly implements a specific function",
+      "There is no difference between verification and validation",
+      "Verification and validation are the same process"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 391,
+    "question": "Which of the following is not an importance of software testing mentioned?",
+    "options": [
+      "Defects can be identified early",
+      "Improves quality of software",
+      "Increased customer satisfaction",
+      "Ensures 100% bug-free software"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 392,
+    "question": "What is the purpose of test cases in software testing?",
+    "options": [
+      "To verify the functionality of the software",
+      "To validate the software against customer requirements",
+      "To identify defects and bugs",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 393,
+    "question": "Which of the following is a disadvantage of manual unit testing?",
+    "options": [
+      "Lack of consistency",
+      "Time-consuming",
+      "Prone to human errors",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 394,
+    "question": "Which of the following is an advantage of automated unit testing?",
+    "options": [
+      "Faster execution",
+      "Consistent results",
+      "Reusable test cases",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 395,
+    "question": "What is the purpose of non-functional testing in software testing?",
+    "options": [
+      "To identify scalability issues",
+      "To test the user interface",
+      "To test the integration of different components",
+      "To test the functionality of the software"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 396,
+    "question": "What is the purpose of a testing framework in unit testing?",
+    "options": [
+      "To develop test cases",
+      "To flag and report any failed test cases",
+      "To provide a summary of test cases",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 397,
+    "question": "Which of the following statements is true about unit testing?",
+    "options": [
+      "Unit tests should test the integration of different components",
+      "Unit tests should test the entire application",
+      "Unit tests should be performed in an isolated environment to ensure a lack of dependencies in the code",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 398,
+    "question": "Which of the following is a real-time scenario where unit testing is used?",
+    "options": [
+      "Testing the user interface of a web application",
+      "Testing the performance of a database system",
+      "Testing the functionality of a calculator application",
+      "Testing the integration of different modules in a software system"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 399,
+    "question": "Which of the following is a characteristic of test-driven development (TDD)?",
+    "options": [
+      "Tests are written before the code",
+      "Tests are written after the code",
+      "Tests are not required",
+      "Tests are written during the coding process"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 400,
+    "question": "What is the purpose of unit testing in software development?",
+    "options": [
+      "To test the entire application",
+      "To test the integration of different components",
+      "To test the smallest testable parts of an application",
+      "To perform acceptance testing"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 401,
+    "question": "What is the purpose of verification in software testing?",
+    "options": [
+      "To ensure that the software meets customer requirements",
+      "To ensure that the software correctly implements a specific function",
+      "To perform integration testing",
+      "To perform system testing"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 402,
+    "question": "Which of the following is an advantage of unit testing?",
+    "options": [
+      "Tests will uncover every bug",
+      "Easier integration testing",
+      "Developers can reuse code and migrate it to new projects",
+      "Tests can be performed without an isolated environment"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 403,
+    "question": "Which of the following is a disadvantage of manual unit testing?",
+    "options": [
+      "Faster execution",
+      "Consistent results",
+      "Time-consuming",
+      "Reusable test cases"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 404,
+    "question": "What is the purpose of a testing framework in automated unit testing?",
+    "options": [
+      "To develop test cases",
+      "To perform manual testing",
+      "To perform integration testing",
+      "To perform system testing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 405,
+    "question": "Which of the following statements is true about unit testing?",
+    "options": [
+      "Unit tests should test the entire application",
+      "Unit tests should test the integration of different components",
+      "Unit tests should be performed in an environment with dependencies",
+      "Unit tests should be performed in an isolated environment to ensure a lack of dependencies in the code"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 406,
+    "question": "Which of the following is NOT an advantage of Big Bang Integration Testing?",
+    "options": [
+      "Simple and straightforward approach",
+      "Can be completed quickly",
+      "Good for long projects",
+      "Convenient for small systems"
+    ],
+    "correctAnswer": "C",
+    "topic": "Integration Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 407,
+    "question": "In Bottom-Up Integration Testing, what is used to drive and pass appropriate data to the lower-level modules?",
+    "options": [
+      "Drivers",
+      "Stubs",
+      "Modules",
+      "Test cases"
+    ],
+    "correctAnswer": "A",
+    "topic": "Integration Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 408,
+    "question": "Which of the following is a disadvantage of Top-Down Integration Testing?",
+    "options": [
+      "Needs many Stubs",
+      "Separately debugged module",
+      "Easier isolation of interface errors",
+      "Few or no drivers needed"
+    ],
+    "correctAnswer": "A",
+    "topic": "Integration Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 409,
+    "question": "What is the primary purpose of Bottom-Up Integration Testing?",
+    "options": [
+      "To test each subsystem's interfaces among various modules",
+      "To test high-level modules first",
+      "To test low-level modules first",
+      "To test the entire system at once"
+    ],
+    "correctAnswer": "A",
+    "topic": "Integration Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 410,
+    "question": "Which of the following is NOT an advantage of Mixed Integration Testing?",
+    "options": [
+      "Parallel tests can be performed in top and bottom layers",
+      "It is useful for very large projects with several sub-projects",
+      "It overcomes the shortcomings of Top-Down and Bottom-Up approaches",
+      "It can be used for smaller systems with huge interdependence between modules"
+    ],
+    "correctAnswer": "D",
+    "topic": "Integration Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 411,
+    "question": "Validation Testing ensures that the product:",
+    "options": [
+      "Meets the client's needs",
+      "Is free from bugs",
+      "Passes all test cases",
+      "Follows coding standards"
+    ],
+    "correctAnswer": "A",
+    "topic": "Validation Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 412,
+    "question": "Which type of testing is performed after Integration Testing and before Acceptance Testing?",
+    "options": [
+      "Unit Testing",
+      "System Testing",
+      "Validation Testing",
+      "Performance Testing"
+    ],
+    "correctAnswer": "B",
+    "topic": "System Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 413,
+    "question": "Which of the following is NOT a type of System Testing?",
+    "options": [
+      "Performance Testing",
+      "Load Testing",
+      "Stress Testing",
+      "Unit Testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "System Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 414,
+    "question": "In Object-Oriented Testing Strategies, what is the smallest testable unit?",
+    "options": [
+      "The module",
+      "The class or object",
+      "The operation",
+      "The subprogram"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 415,
+    "question": "Which of the following is NOT a characteristic of Class Testing in the Object-Oriented context?",
+    "options": [
+      "Driven by the operations encapsulated by the class",
+      "Driven by the state behavior of the class",
+      "Focuses on the algorithmic detail of a module",
+      "Focuses on the data that flow across the module interface"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 416,
+    "question": "In Object-Oriented Integration Testing, what is meant by \"thread-based testing\"?",
+    "options": [
+      "Integrating the set of classes required to respond to one input or event for the system",
+      "Testing each class individually",
+      "Integrating classes based on their dependencies",
+      "Integrating classes based on their use of server classes"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 417,
+    "question": "In Object-Oriented Integration Testing, what is meant by \"use-based testing\"?",
+    "options": [
+      "Integrating the set of classes required to respond to one input or event for the system",
+      "Testing each class individually",
+      "Integrating classes based on their dependencies on other classes",
+      "Integrating classes based on their use of server classes"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 418,
+    "question": "What is the purpose of \"cluster testing\" in Object-Oriented Integration Testing?",
+    "options": [
+      "To test the collaborations between a cluster of collaborating classes",
+      "To test each class individually",
+      "To test the threads of the system",
+      "To test the use of server classes"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 419,
+    "question": "Which of the following is an advantage of Bottom-Up Integration Testing?",
+    "options": [
+      "Several disjoint subsystems can be tested simultaneously",
+      "Driver modules must be produced",
+      "It is difficult to observe the test results",
+      "Modules at lower levels are tested inadequately"
+    ],
+    "correctAnswer": "A",
+    "topic": "Integration Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 420,
+    "question": "Which of the following is a disadvantage of Top-Down Integration Testing?",
+    "options": [
+      "Separately debugged module",
+      "Easier isolation of interface errors",
+      "Few or no drivers needed",
+      "Modules at lower level are tested inadequately"
+    ],
+    "correctAnswer": "D",
+    "topic": "Integration Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 421,
+    "question": "What is the primary goal of System Testing?",
+    "options": [
+      "To test individual modules",
+      "To test the overall functionality and performance of the complete system",
+      "To test the integration between modules",
+      "To test the user interface"
+    ],
+    "correctAnswer": "B",
+    "topic": "System Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 422,
+    "question": "In Object-Oriented Testing Strategies, what is the purpose of testing an operation X in the context of each subclass that inherits it?",
+    "options": [
+      "To ensure that the operation works correctly in different contexts",
+      "To test the algorithmic detail of the operation",
+      "To test the data flow across the module interface",
+      "To test the state behavior of the class"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 423,
+    "question": "Which of the following is a disadvantage of using drivers and stubs as replacement operations in Object-Oriented Integration Testing?",
+    "options": [
+      "It is difficult to create drivers and stubs",
+      "It can lead to inaccurate test results",
+      "It is time-consuming",
+      "It should be avoided whenever possible"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 424,
+    "question": "Which of the following is a characteristic of Class Testing in the Object-Oriented context?",
+    "options": [
+      "It focuses on the algorithmic detail of a module",
+      "It focuses on the data that flow across the module interface",
+      "It is driven by the operations encapsulated by the class",
+      "It is driven by the state behavior of the class"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 425,
+    "question": "What is the purpose of Validation Testing?",
+    "options": [
+      "To ensure the product meets the client's needs",
+      "To test the performance of the system",
+      "To test the integration between modules",
+      "To test individual classes"
+    ],
+    "correctAnswer": "A",
+    "topic": "Validation Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 426,
+    "question": "Which type of testing is performed to check the robustness of the system under varying loads?",
+    "options": [
+      "Performance Testing",
+      "Load Testing",
+      "Stress Testing",
+      "Scalability Testing"
+    ],
+    "correctAnswer": "C",
+    "topic": "System Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 427,
+    "question": "In Object-Oriented Testing Strategies, what is the issue with testing an operation X in isolation (traditional unit testing approach)?",
+    "options": [
+      "It may not accurately represent the operation's behavior in different contexts",
+      "It is time-consuming",
+      "It requires the creation of stubs",
+      "It is not possible in the Object-Oriented context"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 428,
+    "question": "Which of the following is NOT a disadvantage of Big Bang Integration Testing?",
+    "options": [
+      "High risk of integration problems",
+      "Difficult to localize errors",
+      "Simple and straightforward approach",
+      "Long and complex debugging efforts"
+    ],
+    "correctAnswer": "C",
+    "topic": "Integration Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 429,
+    "question": "Which type of testing is carried out to determine the behavior of a system or software product under extreme load?",
+    "options": [
+      "Performance Testing",
+      "Load Testing",
+      "Stress Testing",
+      "Scalability Testing"
+    ],
+    "correctAnswer": "B",
+    "topic": "System Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 430,
+    "question": "In Object-Oriented Integration Testing, what is meant by \"independent classes\"?",
+    "options": [
+      "Classes that do not depend on any other classes",
+      "Classes that depend on many other classes",
+      "Classes that are part of the core functionality",
+      "Classes that are not related to the main system"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 431,
+    "question": "Which of the following is a disadvantage of Mixed Integration Testing?",
+    "options": [
+      "It requires a high cost",
+      "It is useful for very large projects",
+      "It overcomes the shortcomings of Top-Down and Bottom-Up approaches",
+      "Parallel tests can be performed in top and bottom layers"
+    ],
+    "correctAnswer": "A",
+    "topic": "Integration Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 432,
+    "question": "Which type of testing is carried out to check the performance of a software application in terms of its capability to scale up or down the number of user request load?",
+    "options": [
+      "Performance Testing",
+      "Load Testing",
+      "Stress Testing",
+      "Scalability Testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "System Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 433,
+    "question": "In Object-Oriented Integration Testing, what is the purpose of \"use-based testing\"?",
+    "options": [
+      "To test the threads of the system",
+      "To test the collaborations between classes",
+      "To test the classes based on their dependencies on other classes",
+      "To test the independent classes first"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 434,
+    "question": "Which of the following is a characteristic of System Testing?",
+    "options": [
+      "It tests individual modules",
+      "It tests the integration between modules",
+      "It tests the overall functionality and performance of the complete system",
+      "It tests the user interface"
+    ],
+    "correctAnswer": "C",
+    "topic": "System Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 435,
+    "question": "Which of the following is NOT a white-box testing technique?",
+    "options": [
+      "Statement coverage",
+      "Branch coverage",
+      "Equivalence partitioning",
+      "Condition coverage"
+    ],
+    "correctAnswer": "C",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 436,
+    "question": "What is the purpose of basis path testing?",
+    "options": [
+      "To test all possible paths in the code",
+      "To test a minimum number of paths to achieve maximum coverage",
+      "To test only the most critical paths",
+      "To test all nested loops in the code"
+    ],
+    "correctAnswer": "B",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 437,
+    "question": "Which of the following is NOT a step in basis path testing?",
+    "options": [
+      "Create a control flow graph",
+      "Calculate cyclomatic complexity",
+      "Find independent paths",
+      "Design test cases for each path and each condition"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 438,
+    "question": "What is the formula to calculate cyclomatic complexity using the number of edges (E) and nodes (N) in a control flow graph?",
+    "options": [
+      "V(G) = E - N + 1",
+      "V(G) = E - N + 2",
+      "V(G) = E + N",
+      "V(G) = E / N"
+    ],
+    "correctAnswer": "B",
+    "topic": "White-Box Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 439,
+    "question": "Which of the following is NOT a type of loop testing?",
+    "options": [
+      "Simple loops",
+      "Nested loops",
+      "Concatenated loops",
+      "Recursive loops"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 440,
+    "question": "In simple loop testing, which of the following test cases is NOT required?",
+    "options": [
+      "Skip the loop entirely",
+      "Only one pass through the loop",
+      "n passes, where n is the loop bound",
+      "n+2 passes, where n is the loop bound"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 441,
+    "question": "Which of the following is NOT a feature of white-box testing?",
+    "options": [
+      "Code coverage analysis",
+      "Identifying logical errors",
+      "Verifying the user interface",
+      "Optimization of code"
+    ],
+    "correctAnswer": "C",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 442,
+    "question": "Which of the following is NOT an advantage of white-box testing?",
+    "options": [
+      "Early detection of defects",
+      "Detection of complex defects",
+      "No need for programming knowledge",
+      "Integration with SDLC"
+    ],
+    "correctAnswer": "C",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 443,
+    "question": "Which of the following is NOT a disadvantage of white-box testing?",
+    "options": [
+      "Overemphasis on internal workings",
+      "Inability to detect missing functionalities",
+      "No need for source code access",
+      "Increased production errors"
+    ],
+    "correctAnswer": "C",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 444,
+    "question": "Which of the following is a tool used for white-box testing?",
+    "options": [
+      "JUnit",
+      "Selenium",
+      "LoadRunner",
+      "Rational Functional Tester"
+    ],
+    "correctAnswer": "A",
+    "topic": "White-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 445,
+    "question": "What is the purpose of multiple condition coverage testing?",
+    "options": [
+      "To test all possible combinations of conditions",
+      "To test only the true or false outcomes of conditions",
+      "To test only the most critical conditions",
+      "To test only the nested conditions"
+    ],
+    "correctAnswer": "A",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 446,
+    "question": "Which of the following is NOT a type of white-box testing technique?",
+    "options": [
+      "Statement coverage",
+      "Branch coverage",
+      "Condition coverage",
+      "Usability testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 447,
+    "question": "What is the advantage of using white-box testing for integration testing?",
+    "options": [
+      "It allows testing of individual components",
+      "It verifies that different components work together as expected",
+      "It tests the user interface",
+      "It tests the external behavior of the system"
+    ],
+    "correctAnswer": "B",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 448,
+    "question": "Which of the following is NOT a tool used for white-box testing?",
+    "options": [
+      "PyUnit",
+      "Sqlmap",
+      "Nmap",
+      "Selenium"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 449,
+    "question": "In nested loop testing, which approach is used?",
+    "options": [
+      "Test the innermost loop first, then work outwards",
+      "Test the outermost loop first, then work inwards",
+      "Test each loop independently",
+      "Test all loops simultaneously"
+    ],
+    "correctAnswer": "A",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 450,
+    "question": "Which of the following is a disadvantage of white-box testing?",
+    "options": [
+      "Inability to detect missing functionalities",
+      "Early detection of defects",
+      "Comprehensive test cases",
+      "Detection of complex defects"
+    ],
+    "correctAnswer": "A",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 451,
+    "question": "What is the purpose of statement coverage testing?",
+    "options": [
+      "To test all statements in the code",
+      "To test all branches in the code",
+      "To test all conditions in the code",
+      "To test all paths in the code"
+    ],
+    "correctAnswer": "A",
+    "topic": "White-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 452,
+    "question": "Which of the following is NOT a step in the process of white-box testing?",
+    "options": [
+      "Input: Requirements, specifications, design documents, source code",
+      "Processing: Performing risk analysis, test planning, and execution",
+      "Output: Preparing final report",
+      "Usability testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 453,
+    "question": "What is the purpose of using control flow graphs in white-box testing?",
+    "options": [
+      "To calculate cyclomatic complexity",
+      "To identify independent paths",
+      "To design test cases",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 454,
+    "question": "In simple loop testing, which test case is used to test the loop bound condition?",
+    "options": [
+      "Skip the loop entirely",
+      "Only one pass through the loop",
+      "n-1 passes, where n is the loop bound",
+      "n+1 passes, where n is the loop bound"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 455,
+    "question": "Which white-box testing technique focuses on testing individual units of code?",
+    "options": [
+      "Statement coverage",
+      "Branch coverage",
+      "Unit testing",
+      "Condition coverage"
+    ],
+    "correctAnswer": "C",
+    "topic": "White-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 456,
+    "question": "What is the purpose of calculating cyclomatic complexity in basis path testing?",
+    "options": [
+      "To find the number of independent paths",
+      "To design test cases for each path",
+      "To create a control flow graph",
+      "Both a) and b)"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 457,
+    "question": "Which of the following is a disadvantage of white-box testing?",
+    "options": [
+      "Early detection of defects",
+      "Comprehensive test cases",
+      "Detection of complex defects",
+      "Bias in testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 458,
+    "question": "What is the purpose of using tools like PyUnit and NUnit in white-box testing?",
+    "options": [
+      "To perform code coverage analysis",
+      "To automate unit testing",
+      "To create control flow graphs",
+      "To calculate cyclomatic complexity"
+    ],
+    "correctAnswer": "B",
+    "topic": "White-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 459,
+    "question": "Which of the following is NOT a feature of white-box testing?",
+    "options": [
+      "Access to the source code",
+      "Knowledge of programming languages",
+      "Identifying logical errors",
+      "Testing user interface"
+    ],
+    "correctAnswer": "D",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 460,
+    "question": "In concatenated loop testing, how are the loops tested?",
+    "options": [
+      "All loops are tested together",
+      "Each loop is tested independently",
+      "Innermost loop is tested first, then work outwards",
+      "Outermost loop is tested first, then work inwards"
+    ],
+    "correctAnswer": "B",
+    "topic": "White-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 461,
+    "question": "Which of the following is NOT a black-box testing technique?",
+    "options": [
+      "Equivalence partitioning",
+      "Boundary value analysis",
+      "Cause-effect graphing",
+      "Basis path testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 462,
+    "question": "In equivalence partitioning, what is the purpose of creating equivalence classes?",
+    "options": [
+      "To identify valid and invalid inputs",
+      "To reduce the number of test cases",
+      "To test boundary values",
+      "Both a) and b)"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 463,
+    "question": "Which of the following is NOT a step in equivalence partitioning?",
+    "options": [
+      "Identification of equivalence classes",
+      "Generating test cases",
+      "Boundary value analysis",
+      "Cause-effect graphing"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 464,
+    "question": "In boundary value analysis, which of the following values should be tested?",
+    "options": [
+      "Minimum valid value",
+      "Maximum valid value",
+      "Just above the maximum valid value",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 465,
+    "question": "What is the purpose of cause-effect graphing?",
+    "options": [
+      "To identify valid and invalid inputs",
+      "To establish a relationship between inputs (causes) and outputs (effects)",
+      "To generate test cases based on boundary values",
+      "To reduce the number of test cases"
+    ],
+    "correctAnswer": "B",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 466,
+    "question": "Which of the following is NOT a step in cause-effect graphing?",
+    "options": [
+      "Identify inputs (causes) and outputs (effects)",
+      "Develop a cause-effect graph",
+      "Transform the graph into a decision table",
+      "Perform boundary value analysis"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 467,
+    "question": "Which of the following is a feature of black-box testing?",
+    "options": [
+      "Discovers missing functions",
+      "Discovers errors in internal code structure",
+      "Requires knowledge of programming languages",
+      "Requires access to source code"
+    ],
+    "correctAnswer": "A",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 468,
+    "question": "Which of the following is NOT an advantage of black-box testing?",
+    "options": [
+      "No need for programming skills",
+      "Tests are executed from the user's perspective",
+      "Test cases are easily reproducible",
+      "Reveals errors in control structure"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 469,
+    "question": "Which of the following is a disadvantage of black-box testing?",
+    "options": [
+      "Difficult to execute test cases with complex inputs",
+      "Reveals the reason for test failure",
+      "Tests all programs in the application",
+      "Works with a small sample space of inputs"
+    ],
+    "correctAnswer": "A",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 470,
+    "question": "Which of the following is NOT a type of compatibility testing?",
+    "options": [
+      "Testing with different processors",
+      "Testing with different machine architectures",
+      "Testing with different operating systems",
+      "Testing with different programming languages"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 471,
+    "question": "In syntax-driven testing, what is the purpose of generating test cases based on grammar rules?",
+    "options": [
+      "To test the syntax of the input",
+      "To test the functionality of the system",
+      "To identify valid and invalid inputs",
+      "To establish a relationship between inputs and outputs"
+    ],
+    "correctAnswer": "A",
+    "topic": "Black-Box Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 472,
+    "question": "Which of the following is NOT a step in requirement-based testing?",
+    "options": [
+      "Validate the requirements given in the SRS",
+      "Identify test cases based on requirements",
+      "Execute test cases",
+      "Perform code coverage analysis"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 473,
+    "question": "Which of the following is a feature of black-box testing?",
+    "options": [
+      "Independent testing",
+      "Testing from a user's perspective",
+      "No knowledge of internal code",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 474,
+    "question": "Which of the following is NOT a black-box testing technique?",
+    "options": [
+      "Equivalence partitioning",
+      "Boundary value analysis",
+      "Cause-effect graphing",
+      "Statement coverage"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 475,
+    "question": "In compatibility testing, which of the following is NOT a parameter that affects compatibility?",
+    "options": [
+      "Processor type",
+      "Machine architecture",
+      "Programming language used",
+      "Backend components like database servers"
+    ],
+    "correctAnswer": "C",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 476,
+    "question": "Which of the following is an advantage of black-box testing?",
+    "options": [
+      "Reveals errors in control structure",
+      "Requires access to source code",
+      "Tests are easily reproducible",
+      "Requires knowledge of programming languages"
+    ],
+    "correctAnswer": "C",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 477,
+    "question": "Which of the following is a disadvantage of black-box testing?",
+    "options": [
+      "Without clear functional specifications, test cases are difficult to implement",
+      "Test cases are easily reproducible",
+      "Reveals errors in control structure",
+      "Discovers missing functions"
+    ],
+    "correctAnswer": "A",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 478,
+    "question": "In equivalence partitioning, which of the following is NOT a valid equivalence class for testing the square root function?",
+    "options": [
+      "Positive integers",
+      "Negative integers",
+      "Non-numeric characters",
+      "Loops"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 479,
+    "question": "Which of the following is a feature of black-box testing?",
+    "options": [
+      "Limited knowledge of the application",
+      "Access to the internal code structure",
+      "Testing based on programming languages",
+      "Reveals errors in control flow"
+    ],
+    "correctAnswer": "A",
+    "topic": "Black-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 480,
+    "question": "In cause-effect graphing, what is the purpose of the decision table?",
+    "options": [
+      "To identify inputs and outputs",
+      "To develop the cause-effect graph",
+      "To convert rules into test cases",
+      "To perform boundary value analysis"
+    ],
+    "correctAnswer": "C",
+    "topic": "Black-Box Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 481,
+    "question": "Which of the following is NOT a criterion for a good test case in black-box testing?",
+    "options": [
+      "Tests the boundary values",
+      "Tests valid and invalid inputs",
+      "Covers all code paths",
+      "Tests from the user's perspective"
+    ],
+    "correctAnswer": "C",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 482,
+    "question": "In compatibility testing, which of the following is NOT a factor that affects compatibility?",
+    "options": [
+      "Processor type",
+      "Machine architecture",
+      "Programming language used",
+      "Backend components like database servers"
+    ],
+    "correctAnswer": "C",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 483,
+    "question": "Which of the following is a disadvantage of black-box testing?",
+    "options": [
+      "Tests are executed from the user's perspective",
+      "Some programs in the application are not tested",
+      "Test cases are easily reproducible",
+      "Discovers missing functions"
+    ],
+    "correctAnswer": "B",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 484,
+    "question": "In equivalence partitioning, which of the following is NOT a valid equivalence class for testing a password validation function?",
+    "options": [
+      "Passwords with minimum length",
+      "Passwords with maximum length",
+      "Passwords with special characters",
+      "Passwords with loops"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 485,
+    "question": "Which of the following is a feature of black-box testing?",
+    "options": [
+      "Requires knowledge of programming languages",
+      "Reveals errors in control structure",
+      "Requirements-based testing",
+      "Access to internal code"
+    ],
+    "correctAnswer": "C",
+    "topic": "Black-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 486,
+    "question": "In cause-effect graphing, what is the purpose of the cause-effect graph?",
+    "options": [
+      "To identify inputs and outputs",
+      "To establish a relationship between inputs and outputs",
+      "To convert rules into test cases",
+      "To perform boundary value analysis"
+    ],
+    "correctAnswer": "B",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 487,
+    "question": "Which of the following is NOT a step in black-box testing?",
+    "options": [
+      "Identification of equivalence classes",
+      "Generating test cases",
+      "Boundary value analysis",
+      "Calculate cyclomatic complexity"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 488,
+    "question": "In syntax-driven testing, which of the following is NOT a valid grammar rule?",
+    "options": [
+      "Identifiers must start with a letter or underscore",
+      "Identifiers can contain digits after the first character",
+      "Identifiers cannot contain special characters",
+      "Identifiers can contain loops"
+    ],
+    "correctAnswer": "D",
+    "topic": "Black-Box Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 489,
+    "question": "Which of the following is an advantage of black-box testing?",
+    "options": [
+      "Reveals errors in control structure",
+      "Requires knowledge of internal code structure",
+      "Easy to automate",
+      "Performs code coverage analysis"
+    ],
+    "correctAnswer": "C",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 490,
+    "question": "In compatibility testing, which of the following is NOT a factor that affects compatibility?",
+    "options": [
+      "Processor type",
+      "Machine architecture",
+      "Programming language used",
+      "Backend components like database servers"
+    ],
+    "correctAnswer": "C",
+    "topic": "Black-Box Testing",
+    "difficulty": "medium"
+  },
+    {
+    "id": 491,
+    "question": "Which of the following is NOT one of the purposes of object-oriented testing?",
+    "options": [
+      "Object interaction validation",
+      "Determining design errors",
+      "Finding integration problems",
+      "Verifying functional requirements"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 492,
+    "question": "Which of the following is NOT an Object-Oriented Testing Technique?",
+    "options": [
+      "Fault-based testing",
+      "Class testing based on method testing",
+      "Random testing",
+      "Use case testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 493,
+    "question": "Which layer of the Object-Oriented Design (OOD) pyramid represents the subsystem that enables software to achieve user requirements?",
+    "options": [
+      "The Subsystem Layer",
+      "The Class and Object Layer",
+      "The Message Layer",
+      "The Responsibilities Layer"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 494,
+    "question": "Which of the following is NOT a step in analyzing and designing an object-oriented system?",
+    "options": [
+      "Create a use case model",
+      "Draw an activity diagram",
+      "Draw an interaction diagram",
+      "Perform code refactoring"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 495,
+    "question": "Which of the following is a stronger form of association that shows the relationship between a whole and its parts in a class diagram?",
+    "options": [
+      "Association",
+      "Dependency",
+      "Aggregation",
+      "Generalization"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 496,
+    "question": "Which of the following testing strategies begins the construction of the system by testing independent classes first, followed by dependent classes?",
+    "options": [
+      "Thread-based testing",
+      "Use-based testing",
+      "Cluster testing",
+      "Validation testing"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 497,
+    "question": "Which of the following is NOT a type of system testing mentioned?",
+    "options": [
+      "Recovery testing",
+      "Security testing",
+      "Stress testing",
+      "Regression testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "System Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 498,
+    "question": "Which of the following is a method of class testing that focuses on reducing the number of test cases required to exercise the class?",
+    "options": [
+      "Random testing",
+      "Partition testing",
+      "State-based partitioning",
+      "Attribute-based partitioning"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 499,
+    "question": "In object-oriented analysis (OOA), which principle states that early models represent the essence of the problem, while later ones provide implementation details?",
+    "options": [
+      "The information domain is modeled",
+      "Behavior is represented",
+      "The function is described",
+      "Data, functional, and behavioral models are divided to uncover greater detail"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "hard"
+  },
+  {
+    "id": 500,
+    "question": "Which of the following is a type of relationship in a class diagram that connects two classes and is always unidirectional in nature?",
+    "options": [
+      "Association",
+      "Dependency",
+      "Aggregation",
+      "Generalization"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 501,
+    "question": "Which of the following testing strategies exercises a cluster of collaborating classes by designing test cases that attempt to uncover errors in the collaborations?",
+    "options": [
+      "Thread-based testing",
+      "Use-based testing",
+      "Cluster testing",
+      "Validation testing"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 502,
+    "question": "Which of the following is a method of class testing that categorizes class operations based on their ability to change the state of the class?",
+    "options": [
+      "Random testing",
+      "Partition testing",
+      "State-based partitioning",
+      "Category-based partitioning"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 503,
+    "question": "Which of the following is NOT an advantage of Object-Oriented Analysis and Design (OOAD)?",
+    "options": [
+      "Reusability",
+      "Scalability",
+      "Maintainability",
+      "Simplicity"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 504,
+    "question": "In object-oriented testing, what is the smallest testable unit?",
+    "options": [
+      "Module",
+      "Method",
+      "Class",
+      "Use case"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 505,
+    "question": "Which of the following is a type of system testing that verifies that protection mechanisms built into the system will protect from unauthorized access?",
+    "options": [
+      "Recovery testing",
+      "Security testing",
+      "Stress testing",
+      "Performance testing"
+    ],
+    "correctAnswer": "B",
+    "topic": "System Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 506,
+    "question": "Which of the following is a disadvantage of Object-Oriented Analysis and Design (OOAD)?",
+    "options": [
+      "Flexibility",
+      "Complexity",
+      "Maintainability",
+      "Scalability"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 507,
+    "question": "In object-oriented design (OOD), which layer represents the data structure and algorithmic design for all the attributes and operations for each object?",
+    "options": [
+      "The Subsystem Layer",
+      "The Class and Object Layer",
+      "The Message Layer",
+      "The Responsibilities Layer"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 508,
+    "question": "Which of the following testing strategies focuses on user-visible actions and user-recognizable output from the system?",
+    "options": [
+      "Integration testing",
+      "Validation testing",
+      "System testing",
+      "Class testing"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 509,
+    "question": "Which of the following is a type of relationship in a class diagram that is used to display an inheritance relationship between two classes?",
+    "options": [
+      "Association",
+      "Dependency",
+      "Aggregation",
+      "Generalization"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 510,
+    "question": "Which of the following is a type of system testing that investigates the run-time performance of the software within the context of an integrated system?",
+    "options": [
+      "Recovery testing",
+      "Security testing",
+      "Stress testing",
+      "Performance testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "System Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 511,
+    "question": "Which method of class testing involves identifying operations applicable to a class, defining constraints on their use, identifying a minimum test sequence, and generating a variety of random test sequences?",
+    "options": [
+      "Random testing",
+      "Partition testing",
+      "State-based partitioning",
+      "Category-based partitioning"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 512,
+    "question": "In object-oriented analysis (OOA), which principle states that the function of the system is described?",
+    "options": [
+      "The information domain is modeled",
+      "Behavior is represented",
+      "The function is described",
+      "Data, functional, and behavioral models are divided to uncover greater detail"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 513,
+    "question": "Which layer of the Object-Oriented Design (OOD) pyramid represents the design details that enable each object to communicate with its partners and establishes internal and external interfaces for the system?",
+    "options": [
+      "The Subsystem Layer",
+      "The Class and Object Layer",
+      "The Message Layer",
+      "The Responsibilities Layer"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 514,
+    "question": "Which type of system testing involves placing an abnormal load on the system?",
+    "options": [
+      "Recovery testing",
+      "Security testing",
+      "Stress testing",
+      "Performance testing"
+    ],
+    "correctAnswer": "C",
+    "topic": "System Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 515,
+    "question": "Which method of class testing categorizes class operations based on the generic function that each performs, such as initialization, computational, queries, and termination operations?",
+    "options": [
+      "Random testing",
+      "Partition testing",
+      "State-based partitioning",
+      "Category-based partitioning"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 516,
+    "question": "In object-oriented analysis (OOA), which principle states that behavior is represented?",
+    "options": [
+      "The information domain is modeled",
+      "Behavior is represented",
+      "The function is described",
+      "Data, functional, and behavioral models are divided to uncover greater detail"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 517,
+    "question": "Which type of relationship in a class diagram is a semantic connection between classes, where each class can send messages to the other in sequence or collaboration diagrams?",
+    "options": [
+      "Association",
+      "Dependency",
+      "Aggregation",
+      "Generalization"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 518,
+    "question": "Which testing strategy involves designing test cases that attempt to uncover errors in the user interaction requirements, based on the use-cases from the analysis model?",
+    "options": [
+      "Integration testing",
+      "Validation testing",
+      "System testing",
+      "Class testing"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 519,
+    "question": "In object-oriented design (OOD), which layer represents the class hierarchies that enable the system to develop using generalization and specialization, as well as representing each object?",
+    "options": [
+      "The Subsystem Layer",
+      "The Class and Object Layer",
+      "The Message Layer",
+      "The Responsibilities Layer"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 520,
+    "question": "Which method of class testing categorizes class operations based on those that use an attribute, those that modify an attribute, and those that do not use or modify the attribute?",
+    "options": [
+      "Random testing",
+      "Partition testing",
+      "State-based partitioning",
+      "Attribute-based partitioning"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 521,
+    "question": "Which of the following is NOT a type of Interaction Diagram in UML?",
+    "options": [
+      "Sequence Diagram",
+      "Collaboration Diagram",
+      "Activity Diagram",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 522,
+    "question": "The main purpose of Interaction Diagrams is to:",
+    "options": [
+      "Capture the static structure of the system",
+      "Capture the dynamic behavior of the system",
+      "Model the use cases",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 523,
+    "question": "In a Sequence Diagram, which of the following represents an object?",
+    "options": [
+      "A vertical dashed line",
+      "A vertical solid line",
+      "A horizontal solid line",
+      "A horizontal dashed line"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 524,
+    "question": "Which of the following diagrams emphasizes the time sequence of messages?",
+    "options": [
+      "Sequence Diagram",
+      "Collaboration Diagram",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 525,
+    "question": "Which of the following diagrams emphasizes the structural organization of objects?",
+    "options": [
+      "Sequence Diagram",
+      "Collaboration Diagram",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 526,
+    "question": "In a Collaboration Diagram, how is the message flow represented?",
+    "options": [
+      "By numbering the messages",
+      "By arrows between objects",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 527,
+    "question": "Which of the following is NOT a step in drawing an Interaction Diagram?",
+    "options": [
+      "Identify objects taking part in the interaction",
+      "Identify message flows among the objects",
+      "Identify the sequence of message flows",
+      "Identify the class diagram"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 528,
+    "question": "Which of the following is NOT a use of Interaction Diagrams?",
+    "options": [
+      "To model the flow of control by time sequence",
+      "To model the flow of control by structural organizations",
+      "For forward engineering",
+      "For database design"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 529,
+    "question": "In a Sequence Diagram, what does a horizontal dashed line represent?",
+    "options": [
+      "An object",
+      "A message",
+      "A lifeline",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 530,
+    "question": "Which of the following statements is TRUE about Interaction Diagrams?",
+    "options": [
+      "A single diagram is sufficient to describe the dynamic aspect of an entire system",
+      "A set of diagrams is used to capture the dynamic aspect of a system as a whole",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 531,
+    "question": "In a Collaboration Diagram, how are objects represented?",
+    "options": [
+      "As rectangles",
+      "As ellipses",
+      "As lines",
+      "As circles"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 532,
+    "question": "Which of the following is NOT represented in a Sequence Diagram?",
+    "options": [
+      "Objects",
+      "Messages",
+      "Lifelines",
+      "Object organization"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 533,
+    "question": "What is the purpose of numbering messages in a Collaboration Diagram?",
+    "options": [
+      "To show the order of message flow",
+      "To indicate the sender and receiver of the message",
+      "To show the method call sequence",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 534,
+    "question": "In a Sequence Diagram, what does a solid horizontal arrow represent?",
+    "options": [
+      "An object",
+      "A message",
+      "A lifeline",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML Diagrams",
+    "difficulty": "easy"
+  },
+  {
+    "id": 535,
+    "question": "Which of the following diagrams is better suited for reverse engineering?",
+    "options": [
+      "Sequence Diagram",
+      "Collaboration Diagram",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "hard"
+  },
+  {
+    "id": 536,
+    "question": "In a Collaboration Diagram, how are messages represented?",
+    "options": [
+      "As arrows between objects",
+      "By numbering",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 537,
+    "question": "Which of the following statements is TRUE about Sequence Diagrams?",
+    "options": [
+      "They show the order of message flow between objects",
+      "They do not show the structural organization of objects",
+      "They are suitable for forward engineering",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 538,
+    "question": "Which of the following is NOT a purpose of Interaction Diagrams?",
+    "options": [
+      "To capture the dynamic behavior of a system",
+      "To describe the message flow in the system",
+      "To describe the structural organization of objects",
+      "To design the user interface"
+    ],
+    "correctAnswer": "D",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 539,
+    "question": "In a Collaboration Diagram, what does a self-loop arrow represent?",
+    "options": [
+      "A message sent from an object to itself",
+      "A recursive function call",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML Diagrams",
+    "difficulty": "hard"
+  },
+  {
+    "id": 540,
+    "question": "Which of the following statements is TRUE about Interaction Diagrams?",
+    "options": [
+      "They are suitable for both forward and reverse engineering",
+      "They are used only during the design phase",
+      "They are used only during the implementation phase",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "UML Diagrams",
+    "difficulty": "medium"
+  },
+  {
+    "id": 541,
+    "question": "Which of the following is NOT one of the 4P's in software project planning?",
+    "options": [
+      "People",
+      "Product",
+      "Process",
+      "Prioritization"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Project Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 542,
+    "question": "Which of the following is responsible for guiding the team members to achieve the project's target and objectives?",
+    "options": [
+      "Team Leader",
+      "Project Manager",
+      "Stakeholders",
+      "Analysts"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Project Management",
+    "difficulty": "easy"
+  },
+  {
+    "id": 543,
+    "question": "What is the primary intent of collecting process metrics?",
+    "options": [
+      "To assess the status of an ongoing project",
+      "To provide a set of process indicators that lead to long-term software process improvement",
+      "To evaluate the project team's ability to control quality",
+      "To track potential risks"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 544,
+    "question": "Which of the following is NOT a factor that has a profound influence on software quality and organizational performance?",
+    "options": [
+      "Skill and motivation of people",
+      "Complexity of the product",
+      "Technology and software engineering methods used",
+      "Software design patterns"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 545,
+    "question": "Which of the following metrics measures the user-friendliness of the software?",
+    "options": [
+      "Reliability",
+      "Performance",
+      "Usability",
+      "Correctness"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 546,
+    "question": "What is the primary purpose of measuring quality metrics at the project level?",
+    "options": [
+      "To measure errors and defects",
+      "To measure code quality",
+      "To measure maintainability",
+      "To measure security"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 547,
+    "question": "Which of the following is NOT a type of software quality metric?",
+    "options": [
+      "Code Quality",
+      "Reliability",
+      "Performance",
+      "Cost Estimation"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 548,
+    "question": "What does the acronym MTBF stand for?",
+    "options": [
+      "Mean Time Between Failures",
+      "Minimum Time Between Failures",
+      "Maximum Time Between Failures",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 549,
+    "question": "Which of the following metrics measures the ease of integrating the software with other required software?",
+    "options": [
+      "Integrity",
+      "Maintainability",
+      "Security",
+      "Correctness"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 550,
+    "question": "Which of the following is NOT a step in the software metrics etiquette?",
+    "options": [
+      "Use common sense and organizational sensitivity when interpreting metrics data",
+      "Provide regular feedback to individuals and teams who collect measures",
+      "Never use metrics to threaten individuals or teams",
+      "Use metrics to appraise individuals"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 551,
+    "question": "What does the acronym MTTC stand for?",
+    "options": [
+      "Maximum Time to Change",
+      "Minimum Time to Change",
+      "Mean Time to Change",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 552,
+    "question": "Which of the following metrics measures the time required to adapt the software to new features or functionality?",
+    "options": [
+      "Maintainability",
+      "Reliability",
+      "Performance",
+      "Usability"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 553,
+    "question": "Which of the following is NOT a determinant for software quality?",
+    "options": [
+      "Development environment",
+      "Business conditions",
+      "Customer characteristics",
+      "Programming language"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 554,
+    "question": "Which of the following metrics measures the degree of service each function provides as per its development?",
+    "options": [
+      "Correctness",
+      "Reliability",
+      "Security",
+      "Integrity"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 555,
+    "question": "What is the purpose of using software metrics etiquette?",
+    "options": [
+      "To ensure metrics are used correctly and ethically",
+      "To improve the software process",
+      "To evaluate the project team's performance",
+      "To measure software quality"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 556,
+    "question": "Which of the following is not a characteristic of a good software metric?",
+    "options": [
+      "Quantitative",
+      "Language-dependent",
+      "Understandable",
+      "Repeatable"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 557,
+    "question": "Which of the following is not a category of software metrics?",
+    "options": [
+      "Product metrics",
+      "Process metrics",
+      "Project metrics",
+      "Performance metrics"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 558,
+    "question": "The function point (FP) metric is used to measure:",
+    "options": [
+      "Code complexity",
+      "System functionality",
+      "Testing effort",
+      "Project schedule"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 559,
+    "question": "Which of the following is not a type of function used in calculating function points?",
+    "options": [
+      "External Inputs (EIs)",
+      "External Outputs (EOs)",
+      "Internal Logical Files (ILFs)",
+      "Database Tables (DBTs)"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 560,
+    "question": "The cyclomatic complexity metric is used to measure:",
+    "options": [
+      "Code readability",
+      "Code maintainability",
+      "Code complexity",
+      "Code efficiency"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 561,
+    "question": "Which of the following is not a testing metric category?",
+    "options": [
+      "Error Discovery Rate",
+      "Defect Fix Rate",
+      "Defect Density",
+      "Customer Satisfaction"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 562,
+    "question": "The metric \"Defect Leakage\" is used to measure:",
+    "options": [
+      "The efficiency of the testing process before UAT",
+      "The efficiency of the testing process after UAT",
+      "The number of defects found in UAT",
+      "The number of defects found after UAT"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 563,
+    "question": "The \"Mean Time to Failure\" metric is commonly used for:",
+    "options": [
+      "Safety-critical systems",
+      "Commercial software systems",
+      "Customer satisfaction",
+      "Project management"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 564,
+    "question": "The \"Problems per User-Month\" (PUM) metric measures:",
+    "options": [
+      "Defects reported by customers",
+      "Non-defect problems reported by customers",
+      "Both defects and non-defect problems reported by customers",
+      "Customer satisfaction"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 565,
+    "question": "Which of the following is not an in-process quality metric?",
+    "options": [
+      "Defect density during machine testing",
+      "Defect arrival pattern during machine testing",
+      "Phase-based defect removal pattern",
+      "Customer satisfaction"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 566,
+    "question": "The \"Backlog Management Index\" (BMI) is used to:",
+    "options": [
+      "Manage the backlog of open and unresolved problems",
+      "Measure customer satisfaction",
+      "Measure fix quality",
+      "Measure fix response time"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 567,
+    "question": "The \"Fix response time\" metric is calculated as:",
+    "options": [
+      "The mean time from problem reporting to problem resolution",
+      "The median time from problem reporting to problem resolution",
+      "The maximum time from problem reporting to problem resolution",
+      "The minimum time from problem reporting to problem resolution"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 568,
+    "question": "Which of the following metrics measures the percentage of fixes that did not fix the reported problem or introduced new defects?",
+    "options": [
+      "Percent delinquent fixes",
+      "Fix quality",
+      "Fix responsiveness",
+      "Backlog Management Index"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 569,
+    "question": "The \"Defect Removal Effectiveness\" metric is calculated for:",
+    "options": [
+      "The entire development process",
+      "The front-end before code integration",
+      "Each phase of the development process",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 570,
+    "question": "Which of the following is not an advantage of using software metrics?",
+    "options": [
+      "Helps identify areas for improvement",
+      "Increases product quality",
+      "Reduces overall time and cost",
+      "Provides accurate performance evaluation of individuals"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+    {
+    "id": 571,
+    "question": "Which of the following is the first activity in software project planning?",
+    "options": [
+      "Resource allocation",
+      "Risk analysis",
+      "Scope definition",
+      "Schedule estimation"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Planning",
+    "difficulty": "medium"
+  },
+  {
+    "id": 572,
+    "question": "The primary objective of software project planning is to provide a framework for managers to make reasonable estimates of:",
+    "options": [
+      "Quality and performance",
+      "Resources, costs, and schedules",
+      "Risk and uncertainties",
+      "Team composition"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Planning",
+    "difficulty": "easy"
+  },
+  {
+    "id": 573,
+    "question": "Software scope describes all the following EXCEPT:",
+    "options": [
+      "Functions",
+      "Performance constraints",
+      "Interfaces",
+      "Team members"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Planning",
+    "difficulty": "easy"
+  },
+  {
+    "id": 574,
+    "question": "In the development resource pyramid, which layer represents the foundational resources required for development?",
+    "options": [
+      "People",
+      "Reusable software components",
+      "Hardware and software tools",
+      "Project management tools"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Planning",
+    "difficulty": "medium"
+  },
+  {
+    "id": 575,
+    "question": "Which metric is used to measure the size of a software project by counting the number of lines in the source code?",
+    "options": [
+      "Function Points (FP)",
+      "Lines of Code (LOC)",
+      "Use Case Points (UCP)",
+      "Story Points"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 576,
+    "question": "In the context of software project estimation, what does FP stand for?",
+    "options": [
+      "Functional Programming",
+      "Future Planning",
+      "Function Points",
+      "Feature Points"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 577,
+    "question": "Which of the following is NOT a component considered in Function Point (FP) estimation?",
+    "options": [
+      "External Inputs (EI)",
+      "Internal Logical Files (ILF)",
+      "System Testing (ST)",
+      "External Outputs (EO)"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 578,
+    "question": "What is the formula to compute the estimated LOC using optimistic, most likely, and pessimistic estimates?",
+    "options": [
+      "(sopt+sm+spess)/3",
+      "(sopt+4×sm+spess)/6",
+      "(sopt×sm×spess)/3",
+      "(sopt+2×sm+spess)/4"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 579,
+    "question": "In the basic COCOMO model, the formula for effort estimation is:",
+    "options": [
+      "E=A+B×X",
+      "E=A×X",
+      "E=A+B×XC",
+      "E=A×X+B"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 580,
+    "question": "Which technique is considered an indirect method for software size estimation?",
+    "options": [
+      "Lines of Code (LOC)",
+      "Function Points (FP)",
+      "Use Case Points (UCP)",
+      "Story Points"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 581,
+    "question": "Which factor is NOT included in the Value Adjustment Factor (VAF) for Function Point calculation?",
+    "options": [
+      "Data communications",
+      "Performance critical",
+      "Team experience",
+      "Online data entry"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 582,
+    "question": "In Function Point analysis, the weight factor for a complex External Output (EO) is:",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 583,
+    "question": "The estimated effort for a software project using LOC-based estimation is calculated as:",
+    "options": [
+      "Total estimated LOC / average productivity in person-months",
+      "Total estimated LOC × average productivity in person-month",
+      "Total estimated LOC / labor rate per month",
+      "Total estimated LOC × cost per line of code"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 584,
+    "question": "In the context of project estimation, what does the acronym KLOC stand for?",
+    "options": [
+      "Knowledge Line of Code",
+      "Kinetic Lines of Code",
+      "Thousand Lines of Code",
+      "Key Lines of Code"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 585,
+    "question": "A software project has an estimated size of 58000 LOC and is developed with an effort of 3 person-years. What is the productivity in person-months?",
+    "options": [
+      "1600 LOC/pm",
+      "5800 LOC/pm",
+      "1600 KLOC",
+      "1.6 KLOC"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 586,
+    "question": "Which of the following activities is part of decomposition techniques for project estimation?",
+    "options": [
+      "Code refactoring",
+      "Scope definition",
+      "Problem-based estimation",
+      "Risk analysis"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Planning",
+    "difficulty": "medium"
+  },
+  {
+    "id": 587,
+    "question": "Which of the following is a direct estimation technique?",
+    "options": [
+      "Function Points (FP)",
+      "Use Case Points (UCP)",
+      "Lines of Code (LOC)",
+      "Story Points"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 588,
+    "question": "What does the acronym COCOMO stand for?",
+    "options": [
+      "Complete Cost Model",
+      "Constructive Cost Model",
+      "Comprehensive Cost Model",
+      "Computational Cost Model"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 589,
+    "question": "In Function Point estimation, which information domain value represents the number of user data inputs?",
+    "options": [
+      "External Inputs (EI)",
+      "External Outputs (EO)",
+      "External Inquiries (EQ)",
+      "Internal Logical Files (ILF)"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 590,
+    "question": "The empirical estimation model formula E=A+B×XC is used to predict effort based on which variable?",
+    "options": [
+      "Project scope",
+      "Resource availability",
+      "LOC or FP",
+      "Team size"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 591,
+    "question": "Which of the following is NOT a step in the software project estimation process?",
+    "options": [
+      "Estimate the size of the development product",
+      "Estimate the schedule in calendar months",
+      "Estimate the team members' skill levels",
+      "Estimate the project cost in agreed currency"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Planning",
+    "difficulty": "medium"
+  },
+  {
+    "id": 592,
+    "question": "Which complexity adjustment factor is NOT considered in Function Point Analysis?",
+    "options": [
+      "Performance critical",
+      "Conversion and installation",
+      "User interface complexity",
+      "Multiple installations"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 593,
+    "question": "Which project type in the COCOMO model typically requires the highest level of complexity and experience?",
+    "options": [
+      "Organic",
+      "Semi-detached",
+      "Embedded",
+      "Hybrid"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 594,
+    "question": "In the basic COCOMO model, what does 'a' represent in the effort estimation equation E = a(KLOC)^b?",
+    "options": [
+      "A constant specific to the project type",
+      "The number of lines of code",
+      "A cost adjustment factor",
+      "The project duration in months"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 595,
+    "question": "What is the formula for calculating the total function points (FP) in Function Point Analysis?",
+    "options": [
+      "FP = Count Total × VAF",
+      "FP = Count Total + VAF",
+      "FP = Count Total / VAF",
+      "FP = Count Total - VAF"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 596,
+    "question": "Which is NOT a factor in the value adjustment factor (VAF) for Function Point Analysis?",
+    "options": [
+      "System requires reliable backup",
+      "High transaction volume",
+      "Multiple screen operations",
+      "Number of lines of code"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 597,
+    "question": "In the COCOMO model, what does EAF stand for?",
+    "options": [
+      "Effort Adjustment Factor",
+      "Effort Allocation Factor",
+      "Estimation Adjustment Factor",
+      "Estimation Allocation Factor"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 598,
+    "question": "Which statement about Lines of Code (LOC) estimation is TRUE?",
+    "options": [
+      "LOC estimation is less accurate with higher decomposition",
+      "LOC is always a more reliable measure than Function Points",
+      "LOC estimates require detailed decomposition for accuracy",
+      "LOC estimates do not consider software complexity"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 599,
+    "question": "Which of the following is NOT a type of project in the COCOMO model?",
+    "options": [
+      "Organic",
+      "Inorganic",
+      "Semi-detached",
+      "Embedded"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 600,
+    "question": "Which phase is NOT explicitly considered in Detailed COCOMO?",
+    "options": [
+      "Planning and requirements",
+      "User acceptance testing",
+      "Detailed design",
+      "Integration and test"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 601,
+    "question": "Which of the following is NOT a basic principle of project scheduling?",
+    "options": [
+      "Compartmentalization",
+      "Interdependency",
+      "Time allocation",
+      "Risk management"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 602,
+    "question": "The critical path in a project schedule represents:",
+    "options": [
+      "The set of activities that can be delayed without affecting the project completion date",
+      "The set of activities that have the most resources allocated",
+      "The set of activities that determine the minimum project duration",
+      "The set of activities that have the highest cost"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 603,
+    "question": "In the Earned Value Analysis, what does the abbreviation SPI stand for?",
+    "options": [
+      "Scheduled Performance Index",
+      "Schedule Performance Indicator",
+      "Schedule Performance Index",
+      "Scheduled Progress Indicator"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 604,
+    "question": "Which of the following techniques is NOT used for duration compression in project scheduling?",
+    "options": [
+      "Fast tracking",
+      "Crashing",
+      "PERT",
+      "Both a and b"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 605,
+    "question": "The Gantt chart is a tool used for:",
+    "options": [
+      "Risk analysis",
+      "Resource allocation",
+      "Schedule visualization",
+      "Cost estimation"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Scheduling",
+    "difficulty": "easy"
+  },
+  {
+    "id": 606,
+    "question": "In the Critical Path Method (CPM), which of the following is NOT a valid assumption?",
+    "options": [
+      "Activity times are deterministic",
+      "Resources are unlimited",
+      "Activities cannot be overlapped",
+      "A network of activities can be constructed"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 607,
+    "question": "Which of the following is NOT a step in the Earned Value Analysis process?",
+    "options": [
+      "Determine the Budgeted Cost of Work Scheduled (BCWS)",
+      "Calculate the Budgeted Cost of Work Performed (BCWP)",
+      "Compute the Actual Cost of Work Performed (ACWP)",
+      "Estimate the probability of project completion"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Scheduling",
+    "difficulty": "hard"
+  },
+  {
+    "id": 608,
+    "question": "In the Program Evaluation and Review Technique (PERT), what does the term 'event' refer to?",
+    "options": [
+      "A specific task or activity",
+      "A milestone or checkpoint",
+      "A project constraint",
+      "A resource allocation"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 609,
+    "question": "Which of the following is a disadvantage of using the task list technique for project scheduling?",
+    "options": [
+      "It is not suitable for large and complex projects",
+      "It does not provide a visual representation",
+      "It cannot handle task dependencies",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 610,
+    "question": "The 'crashing' technique in project scheduling involves:",
+    "options": [
+      "Adding more resources to shorten the project duration",
+      "Overlapping activities to save time",
+      "Prioritizing activities based on their criticality",
+      "Reducing the project scope to meet the deadline"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 611,
+    "question": "In the Earned Value Analysis, what does the Cost Performance Index (CPI) indicate?",
+    "options": [
+      "The efficiency of schedule execution",
+      "The cost efficiency of the project",
+      "The percentage of work completed",
+      "The variance from the planned schedule"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 612,
+    "question": "Which of the following is NOT a step in the process of project scheduling?",
+    "options": [
+      "Identify all required activities",
+      "Break down large activities into smaller tasks",
+      "Determine dependencies between activities",
+      "Perform risk analysis"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 613,
+    "question": "In the Critical Path Method (CPM), what is the purpose of identifying the critical path?",
+    "options": [
+      "To identify the activities that can be delayed without affecting the project duration",
+      "To identify the activities that have the most resources allocated",
+      "To identify the activities that cannot be delayed without affecting the project duration",
+      "To identify the activities that have the highest cost"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 614,
+    "question": "What is the primary advantage of using the Gantt chart for project scheduling?",
+    "options": [
+      "It provides a visual representation of the project schedule",
+      "It allows for resource leveling",
+      "It identifies the critical path",
+      "It calculates the earned value metrics"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Scheduling",
+    "difficulty": "easy"
+  },
+  {
+    "id": 615,
+    "question": "In the Earned Value Analysis, what does the Schedule Variance (SV) represent?",
+    "options": [
+      "The difference between the planned and actual cost",
+      "The difference between the planned and actual schedule",
+      "The percentage of work completed",
+      "The efficiency of resource utilization"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 616,
+    "question": "Which of the following is NOT a step in the Program Evaluation and Review Technique (PERT)?",
+    "options": [
+      "Identify all activities and their dependencies",
+      "Estimate the optimistic, pessimistic, and most likely durations for each activity",
+      "Calculate the critical path",
+      "Perform risk analysis"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Scheduling",
+    "difficulty": "hard"
+  },
+  {
+    "id": 617,
+    "question": "The 'fast tracking' technique in project scheduling involves:",
+    "options": [
+      "Adding more resources to shorten the project duration",
+      "Overlapping activities to save time",
+      "Prioritizing activities based on their criticality",
+      "Reducing the project scope to meet the deadline"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 618,
+    "question": "In the Earned Value Analysis, what does the Budget at Completion (BAC) represent?",
+    "options": [
+      "The total planned cost for the project",
+      "The total actual cost incurred for the project",
+      "The total earned value for the project",
+      "The total cost variance for the project"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 619,
+    "question": "Which of the following is a disadvantage of using the Critical Path Method (CPM) for project scheduling?",
+    "options": [
+      "It assumes that activity durations are deterministic",
+      "It cannot handle project constraints",
+      "It does not provide a visual representation",
+      "It cannot handle resource constraints"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 620,
+    "question": "In the Gantt chart, what do the horizontal bars represent?",
+    "options": [
+      "Activities or tasks",
+      "Resources",
+      "Dependencies",
+      "Milestones"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Scheduling",
+    "difficulty": "easy"
+  },
+  {
+    "id": 621,
+    "question": "In the Earned Value Analysis, what is the purpose of calculating the Percent Complete metric?",
+    "options": [
+      "To determine the percentage of work completed",
+      "To identify the critical path",
+      "To calculate the cost variance",
+      "To assess the schedule performance"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Scheduling",
+    "difficulty": "easy"
+  },
+  {
+    "id": 622,
+    "question": "Which of the following is NOT a benefit of using project scheduling techniques?",
+    "options": [
+      "Improved resource allocation",
+      "Better coordination among team members",
+      "Increased project visibility",
+      "Reduced project risk"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 623,
+    "question": "In the Program Evaluation and Review Technique (PERT), what does the term 'activity' refer to?",
+    "options": [
+      "A specific task or work package",
+      "A milestone or checkpoint",
+      "A project constraint",
+      "A resource allocation"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 624,
+    "question": "In the Critical Path Method (CPM), what is the purpose of identifying the earliest and latest start/finish times for each activity?",
+    "options": [
+      "To determine the critical path",
+      "To allocate resources",
+      "To calculate the project duration",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 625,
+    "question": "Which of the following is NOT a metric used in the Earned Value Analysis?",
+    "options": [
+      "Planned Value (PV)",
+      "Earned Value (EV)",
+      "Actual Cost (AC)",
+      "Risk Exposure (RE)"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 626,
+    "question": "In the Gantt chart, what does the term 'milestone' refer to?",
+    "options": [
+      "A specific task or activity",
+      "A significant event or checkpoint",
+      "A project constraint",
+      "A resource allocation"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Scheduling",
+    "difficulty": "easy"
+  },
+  {
+    "id": 627,
+    "question": "Which of the following is a disadvantage of using the Program Evaluation and Review Technique (PERT) for project scheduling?",
+    "options": [
+      "It assumes that activity durations are deterministic",
+      "It cannot handle project constraints",
+      "It does not provide a visual representation",
+      "It cannot handle resource constraints"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Scheduling",
+    "difficulty": "hard"
+  },
+  {
+    "id": 628,
+    "question": "In the Critical Path Method (CPM), what is the purpose of the 'forward pass' calculation?",
+    "options": [
+      "To identify the critical path",
+      "To determine the earliest start and finish times for each activity",
+      "To allocate resources",
+      "To calculate the project duration"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 629,
+    "question": "Which of the following is a benefit of using the Earned Value Analysis technique?",
+    "options": [
+      "It provides a quantitative measure of project progress",
+      "It allows for early detection of project performance issues",
+      "It facilitates cost and schedule performance tracking",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Scheduling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 630,
+    "question": "Which of the following is an example of a size-oriented metric for software estimation?",
+    "options": [
+      "Function Points (FP)",
+      "Story Points",
+      "Lines of Code (LOC)",
+      "Use Case Points (UCP)"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+    {
+    "id": 631,
+    "question": "Which of the following is NOT a characteristic of a risk?",
+    "options": [
+      "It is an expectation of loss",
+      "It is a potential problem that may or may not occur in the future",
+      "It has already occurred",
+      "It is caused due to lack of information, control, or time"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 632,
+    "question": "Which type of risk is within the control of the project manager?",
+    "options": [
+      "External risk",
+      "Internal risk",
+      "Business risk",
+      "Technical risk"
+    ],
+    "correctAnswer": "B",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 633,
+    "question": "Which of the following is NOT an example of a project risk?",
+    "options": [
+      "Budgetary problems",
+      "Schedule slippage",
+      "Design issues",
+      "Stakeholder issues"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 634,
+    "question": "Which of the following is an example of a technical risk?",
+    "options": [
+      "Market risk",
+      "Strategic risk",
+      "Verification problems",
+      "Budget risks"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 635,
+    "question": "What is the primary objective of a proactive risk strategy?",
+    "options": [
+      "To avoid risk and have a contingency plan",
+      "To correct problems rapidly",
+      "To identify risks after they occur",
+      "To rely on crisis management"
+    ],
+    "correctAnswer": "A",
+    "topic": "Risk Management",
+    "difficulty": "easy"
+  },
+  {
+    "id": 636,
+    "question": "Which of the following is NOT a step in risk projection?",
+    "options": [
+      "Establish a scale for risk likelihood",
+      "Describe the consequences of the risk",
+      "Estimate the impact of the risk",
+      "Implement risk mitigation steps"
+    ],
+    "correctAnswer": "D",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 637,
+    "question": "What is the best strategy for risk mitigation if a software team adopts a proactive approach?",
+    "options": [
+      "Reactive measures",
+      "Risk avoidance",
+      "Risk transfer",
+      "Risk acceptance"
+    ],
+    "correctAnswer": "B",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 638,
+    "question": "Which of the following is NOT a recommended step for risk mitigation in case of high staff turnover?",
+    "options": [
+      "Meet with current staff to determine causes",
+      "Mitigate causes under your control before the project starts",
+      "Assume turnover will occur and develop techniques for continuity",
+      "Dismiss staff members who express dissatisfaction"
+    ],
+    "correctAnswer": "D",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 639,
+    "question": "What is the primary objective of risk monitoring?",
+    "options": [
+      "To identify new risks",
+      "To assess if predicted risks occur and if mitigation steps are effective",
+      "To develop contingency plans",
+      "To avoid risks"
+    ],
+    "correctAnswer": "B",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 640,
+    "question": "Which of the following is NOT a recommended action in risk management and contingency planning?",
+    "options": [
+      "Refocus resources to fully staffed functions",
+      "Initiate knowledge transfer activities for leaving staff",
+      "Terminate the project",
+      "Adjust the project schedule"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 641,
+    "question": "What is the purpose of the Risk Mitigation, Monitoring, and Management (RMMM) plan?",
+    "options": [
+      "To document the risk identification process",
+      "To outline the risk projection methods",
+      "To describe the risk mitigation, monitoring, and management activities",
+      "To prioritize the identified risks"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 642,
+    "question": "Which of the following statements about the Risk Information Sheet (RIS) is NOT correct?",
+    "options": [
+      "It is used to document individual risks",
+      "It is typically maintained in a database system",
+      "It is a mandatory component of the RMMM plan",
+      "It allows for priority ordering and analysis of risks"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "hard"
+  },
+  {
+    "id": 643,
+    "question": "Which of the following is NOT a characteristic of an unpredictable risk, according to Charette's categorization?",
+    "options": [
+      "It is extremely difficult to identify in advance",
+      "It can occur during the project",
+      "It is a known risk that can be uncovered after careful evaluation",
+      "It is a joker in the deck"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "hard"
+  },
+  {
+    "id": 644,
+    "question": "Which of the following is an example of a known risk, according to Charette's categorization?",
+    "options": [
+      "Staff turnover",
+      "Poor communication with the customer",
+      "Unrealistic delivery date",
+      "Dilution of staff effort due to maintenance requests"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 645,
+    "question": "Which of the following is NOT a recommended step in risk identification?",
+    "options": [
+      "Create a risk item checklist",
+      "Examine the project plan and statement of scope",
+      "Identify only generic risks",
+      "Identify product-specific risks"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 646,
+    "question": "Which of the following is NOT a generic subcategory for risk identification?",
+    "options": [
+      "Product size",
+      "Business impact",
+      "Stakeholder characteristics",
+      "Risk mitigation strategies"
+    ],
+    "correctAnswer": "D",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 647,
+    "question": "What is the primary goal of all risk analysis activities?",
+    "options": [
+      "To identify potential risks",
+      "To develop a strategy for dealing with risk",
+      "To monitor the effectiveness of mitigation steps",
+      "To create contingency plans"
+    ],
+    "correctAnswer": "B",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 648,
+    "question": "Which of the following is NOT a recommended step for risk mitigation in case of high staff turnover?",
+    "options": [
+      "Conduct peer reviews of all work",
+      "Assign a backup staff member for every critical technologist",
+      "Terminate underperforming staff members",
+      "Organize project teams for knowledge dispersal"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 649,
+    "question": "Which of the following is NOT an objective of risk monitoring?",
+    "options": [
+      "To assess whether predicted risks occur",
+      "To ensure risk avoidance steps are properly applied",
+      "To collect information for future risk analysis",
+      "To develop new risk mitigation strategies"
+    ],
+    "correctAnswer": "D",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 650,
+    "question": "What is the primary purpose of risk management and contingency planning?",
+    "options": [
+      "To identify potential risks",
+      "To mitigate risks before they occur",
+      "To handle risks that have become a reality",
+      "To prioritize risks based on their impact"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 651,
+    "question": "Which of the following is NOT a product operation factor of software quality?",
+    "options": [
+      "Correctness",
+      "Reliability",
+      "Efficiency",
+      "Maintainability"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 652,
+    "question": "Which of the following factors is related to the ease of making changes required because of changes in the operating environment?",
+    "options": [
+      "Usability",
+      "Flexibility",
+      "Portability",
+      "Interoperability"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 653,
+    "question": "The effort required to locate and fix a fault in a program is related to which software quality factor?",
+    "options": [
+      "Reliability",
+      "Maintainability",
+      "Efficiency",
+      "Testability"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 654,
+    "question": "Which of the following is NOT a product transition factor of software quality?",
+    "options": [
+      "Portability",
+      "Reusability",
+      "Interoperability",
+      "Correctness"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 655,
+    "question": "The ease of testing the program to ensure that it is error-free and meets its specification is related to which software quality factor?",
+    "options": [
+      "Testability",
+      "Maintainability",
+      "Flexibility",
+      "Interoperability"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 656,
+    "question": "Quality Control (QC) is primarily focused on which of the following?",
+    "options": [
+      "Management level actions to improve the chances of success",
+      "Techniques used to assure that a product or service meets requirements or goals",
+      "A formalized system that documents the structure, responsibilities, and procedures",
+      "The overall quality intentions and direction of an organization"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 657,
+    "question": "Which of the following is NOT a component of Software Quality Management (SQM)?",
+    "options": [
+      "Quality Assurance",
+      "Quality Planning",
+      "Quality Execution",
+      "Quality Control"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 658,
+    "question": "The stage of SQM that encourages documentation process standards and mentors standard processes is:",
+    "options": [
+      "Quality Assurance",
+      "Quality Planning",
+      "Quality Control",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 659,
+    "question": "In the Quality Planning stage of SQM, which of the following activities is NOT typically performed?",
+    "options": [
+      "Defining quality attributes to be associated with the project output",
+      "Assigning existing organizational standards to the project",
+      "Release testing of software",
+      "Defining how quality attributes should be assessed"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 660,
+    "question": "Which of the following is NOT an activity typically performed in the Quality Control stage of SQM?",
+    "options": [
+      "Release testing of software",
+      "Examination of software and documentation for non-conformance with standards",
+      "Follow-up review of software to ensure required changes are addressed",
+      "Defining quality attributes to be associated with the project output"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 661,
+    "question": "According to software quality principles, which requirements serve as the foundation from which software quality is measured?",
+    "options": [
+      "Hardware requirements",
+      "Software requirements",
+      "Programmer requirements",
+      "None of the mentioned requirements"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "easy"
+  },
+  {
+    "id": 662,
+    "question": "Which of the following is NOT a part of an SQA plan for a project?",
+    "options": [
+      "Evaluations to be performed",
+      "Amount of technical work",
+      "Audits and reviews to be performed",
+      "Documents to be produced by the SQA group"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 663,
+    "question": "Which of the following is NOT considered an appraisal cost in SQA?",
+    "options": [
+      "Inter-process inspection",
+      "Maintenance",
+      "Quality planning",
+      "Testing"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "hard"
+  },
+  {
+    "id": 664,
+    "question": "What is the primary objective of formal technical reviews?",
+    "options": [
+      "To find errors during the process so that they do not become defects after release",
+      "To find equivalent faults during the process so that they do not become defects after release",
+      "To find failure causes during the process so that they do not become defects after release",
+      "None of the mentioned"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 665,
+    "question": "Which of the following is a product revision factor of software quality?",
+    "options": [
+      "Correctness",
+      "Reliability",
+      "Maintainability",
+      "Integrity"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 666,
+    "question": "What is the primary document of a Quality Management System (QMS)?",
+    "options": [
+      "Quality Policy",
+      "Quality Plan",
+      "Quality Assurance Plan",
+      "Quality Control Plan"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 667,
+    "question": "Which of the following factors is related to the ease of re-using software in a different context?",
+    "options": [
+      "Portability",
+      "Reusability",
+      "Interoperability",
+      "Flexibility"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 668,
+    "question": "Which of the following is NOT a factor related to software quality?",
+    "options": [
+      "Correctness",
+      "Reliability",
+      "Efficiency",
+      "Performance"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 669,
+    "question": "The 'overall quality intentions and direction of an organization with regard to quality' is referred to as:",
+    "options": [
+      "Quality Control",
+      "Quality Assurance",
+      "Quality Management System",
+      "Quality Policy"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 670,
+    "question": "Which of the following is a product operation factor of software quality?",
+    "options": [
+      "Maintainability",
+      "Testability",
+      "Usability",
+      "Flexibility"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 671,
+    "question": "What is the primary goal of Quality Assurance (QA) in Software Quality Management?",
+    "options": [
+      "To directly improve the chances that Quality Control actions will be successful",
+      "To perform release testing of software",
+      "To define quality attributes to be associated with the project output",
+      "To examine software and documentation for non-conformance with standards"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 672,
+    "question": "Which of the following is NOT a responsibility of the Quality Control stage in Software Quality Management?",
+    "options": [
+      "Release testing of software",
+      "Examination of software and documentation for non-conformance with standards",
+      "Follow-up review of software to ensure required changes are addressed",
+      "Defining quality attributes to be associated with the project output"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 673,
+    "question": "Which of the following is a factor related to the effort required to transfer a program from one environment to another system?",
+    "options": [
+      "Portability",
+      "Reusability",
+      "Interoperability",
+      "Flexibility"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 674,
+    "question": "Which of the following is NOT a product transition factor of software quality?",
+    "options": [
+      "Portability",
+      "Reusability",
+      "Interoperability",
+      "Efficiency"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 675,
+    "question": "The effort required to couple a system to another system is related to which software quality factor?",
+    "options": [
+      "Interoperability",
+      "Portability",
+      "Reusability",
+      "Maintainability"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 676,
+    "question": "Which of the following is a responsibility of the Quality Planning stage in Software Quality Management?",
+    "options": [
+      "Release testing of software",
+      "Defining quality attributes to be associated with the project output",
+      "Examination of software and documentation for non-conformance with standards",
+      "Follow-up review of software to ensure required changes are addressed"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 677,
+    "question": "Which of the following is a product operation factor of software quality?",
+    "options": [
+      "Flexibility",
+      "Maintainability",
+      "Integrity",
+      "Testability"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 678,
+    "question": "What is the purpose of a Quality Management System (QMS)?",
+    "options": [
+      "To document the structure, responsibilities, and procedures required to achieve effective quality management",
+      "To perform release testing of software",
+      "To define quality attributes to be associated with the project output",
+      "To examine software and documentation for non-conformance with standards"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 679,
+    "question": "Which of the following is NOT a factor related to the ease of use of the software?",
+    "options": [
+      "Usability",
+      "Portability",
+      "Interoperability",
+      "Flexibility"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 680,
+    "question": "Which of the following is a responsibility of the Quality Assurance stage in Software Quality Management?",
+    "options": [
+      "Release testing of software",
+      "Encouraging documentation process standards",
+      "Defining quality attributes to be associated with the project output",
+      "Examination of software and documentation for non-conformance with standards"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 681,
+    "question": "Which of the following statements about risk appetite is NOT correct?",
+    "options": [
+      "It refers to an organization's willingness to take risks",
+      "It is determined by the potential benefits of risk-taking",
+      "It should be communicated to stakeholders",
+      "It is a technique for risk identification"
+    ],
+    "correctAnswer": "D",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 682,
+    "question": "Which of the following is NOT a recommended method for communicating risk-related information to stakeholders?",
+    "options": [
+      "Regular meetings and progress reports",
+      "Risk dashboards or visualizations",
+      "Withholding information to avoid causing concern",
+      "Transparent and timely communication"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 683,
+    "question": "Why is it important to stay updated on risk management trends and best practices?",
+    "options": [
+      "To identify new risk categories",
+      "To learn about emerging risks and mitigation techniques",
+      "To comply with industry regulations",
+      "To develop contingency plans"
+    ],
+    "correctAnswer": "B",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 684,
+    "question": "Which of the following statements about risk management is NOT correct?",
+    "options": [
+      "It helps organizations achieve their objectives",
+      "It increases the chances of project success",
+      "It eliminates all risks from a project",
+      "It is an ongoing process throughout the project lifecycle"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 685,
+    "question": "Which of the following is NOT a recommended technique for risk prioritization?",
+    "options": [
+      "Assessing the likelihood and potential impact of risks",
+      "Using a risk matrix or heat map",
+      "Relying solely on the project manager's intuition",
+      "Involving stakeholders and subject matter experts"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 686,
+    "question": "Which of the following is NOT a potential consequence of poor risk management?",
+    "options": [
+      "Schedule delays",
+      "Cost overruns",
+      "Quality issues",
+      "Increased productivity"
+    ],
+    "correctAnswer": "D",
+    "topic": "Risk Management",
+    "difficulty": "easy"
+  },
+  {
+    "id": 687,
+    "question": "Which of the following is NOT a recommended step in risk identification?",
+    "options": [
+      "Reviewing lessons learned from previous projects",
+      "Conducting brainstorming sessions with the project team",
+      "Relying solely on historical data",
+      "Involving subject matter experts"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 688,
+    "question": "Which of the following is NOT a recommended practice for risk monitoring?",
+    "options": [
+      "Establishing clear metrics and indicators",
+      "Regular risk review meetings",
+      "Updating risk registers or logs",
+      "Waiting until the end of the project to assess risks"
+    ],
+    "correctAnswer": "D",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 689,
+    "question": "Which of the following is NOT a potential benefit of effective risk management?",
+    "options": [
+      "Improved decision-making",
+      "Enhanced stakeholder confidence",
+      "Better resource allocation",
+      "Guaranteed project success"
+    ],
+    "correctAnswer": "D",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 690,
+    "question": "Which of the following is NOT a recommended action in risk management and contingency planning for high staff turnover?",
+    "options": [
+      "Refocus resources to fully staffed functions",
+      "Initiate knowledge transfer activities for leaving staff",
+      "Terminate the project",
+      "Hire new staff without providing proper onboarding"
+    ],
+    "correctAnswer": "D",
+    "topic": "Risk Management",
+    "difficulty": "medium"
   }
 ]
