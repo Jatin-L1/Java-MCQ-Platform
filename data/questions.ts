@@ -8978,5 +8978,3817 @@ export const questions: Question[] = [
     "correctAnswer": "D",
     "topic": "Risk Management",
     "difficulty": "medium"
+  },
+    {
+    "id": 691,
+    "question": "The most important feature of spiral model is",
+    "options": [
+      "requirement analysis",
+      "risk management",
+      "quality management",
+      "configuration management"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 692,
+    "question": "The worst type of coupling is",
+    "options": [
+      "Data coupling",
+      "control coupling",
+      "stamp coupling",
+      "content coupling"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 693,
+    "question": "IEEE 830-1993 is an IEEE recommended standard for",
+    "options": [
+      "Software requirement specification",
+      "Software design",
+      "Testing",
+      "Both (A) and (B)"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Standards",
+    "difficulty": "medium"
+  },
+  {
+    "id": 694,
+    "question": "One of the fault-based testing techniques is",
+    "options": [
+      "unit testing",
+      "beta testing",
+      "Stress testing",
+      "mutation testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 695,
+    "question": "Changes made to an information system to add the desired but not necessarily the required features is called",
+    "options": [
+      "Preventative maintenance",
+      "Adaptive maintenance",
+      "Corrective maintenance",
+      "Perfective maintenance"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Maintenance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 696,
+    "question": "All the modules of the system are integrated and tested as a complete system in the case of",
+    "options": [
+      "Bottom-up testing",
+      "Top-down testing",
+      "Sandwich testing",
+      "Big-Bang testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "Integration Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 697,
+    "question": "If every requirement stated in the Software Requirement Specification (SRS) has only one interpretation, SRS is said to be",
+    "options": [
+      "correct",
+      "unambiguous",
+      "consistent",
+      "verifiable"
+    ],
+    "correctAnswer": "B",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 698,
+    "question": "A fault simulation testing technique is",
+    "options": [
+      "Mutation testing",
+      "Stress testing",
+      "Black box testing",
+      "White box testing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 699,
+    "question": "Modules X and Y operate on the same input and output data, then the cohesion is",
+    "options": [
+      "Sequential",
+      "Communicational",
+      "Procedural",
+      "Logical"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design Principles",
+    "difficulty": "hard"
+  },
+  {
+    "id": 700,
+    "question": "If the objects focus on the problem domain, then we are concerned with",
+    "options": [
+      "Object-Oriented Analysis",
+      "Object-Oriented Design",
+      "Object-Oriented Analysis & Design",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 701,
+    "question": "SRS is also known as a specification of",
+    "options": [
+      "White box testing",
+      "Stress testing",
+      "Integrated testing",
+      "Black box testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 702,
+    "question": "The model in which the requirements are implemented by category is",
+    "options": [
+      "Evolutionary Development Model",
+      "Waterfall Model",
+      "Prototyping",
+      "Iterative Enhancement Model"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 703,
+    "question": "SRD stands for",
+    "options": [
+      "Software requirements definition",
+      "Structured requirements definition",
+      "Software requirements diagram",
+      "Structured requirements diagram"
+    ],
+    "correctAnswer": "B",
+    "topic": "Requirements Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 704,
+    "question": "A COCOMO model is",
+    "options": [
+      "Common Cost Estimation Model",
+      "Constructive Cost Estimation Model",
+      "Complete Cost Estimation Model",
+      "Comprehensive Cost Estimation Model"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 705,
+    "question": "Which of the following statements is true",
+    "options": [
+      "Abstract data types are the same as classes",
+      "Abstract data types do not allow inheritance",
+      "Classes cannot inherit from the same base class",
+      "Objects have state and behavior"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 706,
+    "question": "The desired level of coupling is",
+    "options": [
+      "No coupling",
+      "Control coupling",
+      "Common coupling",
+      "Data coupling"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 707,
+    "question": "In the spiral model, 'risk analysis' is performed",
+    "options": [
+      "In the first loop",
+      "In the first and second loop",
+      "In every loop",
+      "Before using the spiral model"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 708,
+    "question": "For a well-understood data processing application, it is best to use",
+    "options": [
+      "The waterfall model",
+      "Prototyping model",
+      "The evolutionary model",
+      "The spiral model"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 709,
+    "question": "Coupling and cohesion can be represented using a",
+    "options": [
+      "Cause-effect graph",
+      "Dependence matrix",
+      "Structure chart",
+      "SRS"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design Principles",
+    "difficulty": "hard"
+  },
+  {
+    "id": 710,
+    "question": "The symbol represents",
+    "options": [
+      "Mandatory 1 cardinality",
+      "Mandatory many cardinality",
+      "Optional 0 or 1 cardinality",
+      "Optional zero-many cardinality"
+    ],
+    "correctAnswer": "D",
+    "topic": "Data Modeling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 711,
+    "question": "Each time a defect gets detected and fixed, the reliability of a software product",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains constant",
+      "Cannot say anything"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 712,
+    "question": "Output comparators are used in",
+    "options": [
+      "Static testing of a single module",
+      "Dynamic testing of a single module",
+      "Static testing of single and multiple modules",
+      "Dynamic testing of single and multiple modules"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 713,
+    "question": "The feature of the object-oriented paradigm that helps code reuse is",
+    "options": [
+      "Object",
+      "Class",
+      "Inheritance",
+      "Aggregation"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 714,
+    "question": "The level at which the software uses scarce resources is",
+    "options": [
+      "Reliability",
+      "Efficiency",
+      "Portability",
+      "All of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 715,
+    "question": "If every requirement can be checked by a cost-effective process, then the SRS is",
+    "options": [
+      "Verifiable",
+      "Traceable",
+      "Modifiable",
+      "Complete"
+    ],
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 716,
+    "question": "Modifying the software to match changes in the ever-changing environment is called",
+    "options": [
+      "Adaptive maintenance",
+      "Corrective maintenance",
+      "Perfective maintenance",
+      "Preventive maintenance"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Maintenance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 717,
+    "question": "All activities lying on the critical path have slack time equal to",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "None of above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 718,
+    "question": "Alpha and Beta Testing are forms of",
+    "options": [
+      "Acceptance testing",
+      "Integration testing",
+      "System Testing",
+      "Unit testing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 719,
+    "question": "An object encapsulates",
+    "options": [
+      "Data",
+      "Behavior",
+      "State",
+      "Both Data and behavior"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 720,
+    "question": "In function point analysis, the number of general system characteristics used to rate the system are",
+    "options": [
+      "10",
+      "14",
+      "20",
+      "12"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 721,
+    "question": "Aggregation represents",
+    "options": [
+      "Is_a relationship",
+      "Part_of relationship",
+      "Composed_of relationship",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 722,
+    "question": "If P is risk probability, L is loss, then Risk Exposure (RE) is computed as",
+    "options": [
+      "RE = P/L",
+      "RE = P + L",
+      "RE = P*L",
+      "RE = 2* P *L"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 723,
+    "question": "The number of clauses used in ISO 9001 to specify quality system requirements is",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "28"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "hard"
+  },
+  {
+    "id": 724,
+    "question": "ER model shows the",
+    "options": [
+      "Static view",
+      "Functional view",
+      "Dynamic view",
+      "All the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Data Modeling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 725,
+    "question": "The tools that support different stages of the software development life cycle are called",
+    "options": [
+      "CASE Tools",
+      "CAME tools",
+      "CAQE tools",
+      "CARE tools"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Engineering Tools",
+    "difficulty": "easy"
+  },
+  {
+    "id": 726,
+    "question": "Changes made to the system to reduce the future system failure chances are called",
+    "options": [
+      "Preventive Maintenance",
+      "Adaptive Maintenance",
+      "Corrective Maintenance",
+      "Perfective Maintenance"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Maintenance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 727,
+    "question": "Requirements can be refined using",
+    "options": [
+      "The waterfall model",
+      "Prototyping model",
+      "The evolutionary model",
+      "The spiral model"
+    ],
+    "correctAnswer": "B",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 728,
+    "question": "The model that assumes that effort and development time are functions of product size alone is",
+    "options": [
+      "Basic COCOMO model",
+      "Intermediate COCOMO model",
+      "Detailed COCOMO model",
+      "All the three COCOMO models"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 729,
+    "question": "Structured charts are a product of",
+    "options": [
+      "Requirements gathering",
+      "Requirements analysis",
+      "Design",
+      "Coding"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 730,
+    "question": "The problem that threatens the success of a project but which has not yet happened is a",
+    "options": [
+      "Bug",
+      "Error",
+      "Risk",
+      "Failure"
+    ],
+    "correctAnswer": "C",
+    "topic": "Risk Management",
+    "difficulty": "easy"
+  },
+  {
+    "id": 731,
+    "question": "The main purpose of integration testing is to find",
+    "options": [
+      "Design errors",
+      "Analysis errors",
+      "Procedure errors",
+      "Interface errors"
+    ],
+    "correctAnswer": "D",
+    "topic": "Integration Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 732,
+    "question": "Pseudocode can replace",
+    "options": [
+      "Flowcharts",
+      "Structure charts",
+      "Decision tables",
+      "Cause-effect graphs"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 733,
+    "question": "If a program in its functioning has not met user requirements is some way, then it is",
+    "options": [
+      "An error",
+      "A failure",
+      "A fault",
+      "A defect"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 734,
+    "question": "The testing that focuses on the variables is called",
+    "options": [
+      "Black box testing",
+      "White box testing",
+      "Data variable testing",
+      "Data flow testing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 735,
+    "question": "CASE Tool is",
+    "options": [
+      "Computer-Aided Software Engineering",
+      "Component Aided Software Engineering",
+      "Constructive Aided Software Engineering",
+      "Computer Analysis Software Engineering"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Engineering Tools",
+    "difficulty": "easy"
+  },
+  {
+    "id": 736,
+    "question": "Software consists of",
+    "options": [
+      "Set of instructions + operating procedures",
+      "Programs + documentation + operating procedures",
+      "Programs + hardware manuals",
+      "Set of programs"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Types",
+    "difficulty": "easy"
+  },
+  {
+    "id": 737,
+    "question": "Which is the most important feature of the spiral model?",
+    "options": [
+      "Quality management",
+      "Risk management",
+      "Performance management",
+      "Efficiency management"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 738,
+    "question": "Which phase is not available in the software life cycle?",
+    "options": [
+      "Coding",
+      "Testing",
+      "Maintenance",
+      "Abstraction"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development Lifecycle",
+    "difficulty": "easy"
+  },
+  {
+    "id": 739,
+    "question": "Which is not a step of requirement engineering?",
+    "options": [
+      "Requirements elicitation",
+      "Requirements analysis",
+      "Requirements design",
+      "Requirements documentation"
+    ],
+    "correctAnswer": "C",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 740,
+    "question": "FAST stands for",
+    "options": [
+      "Functional Application Specification Technique",
+      "Fast Application Specification Technique",
+      "Facilitated Application Specification Technique",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 741,
+    "question": "For a function of two variables, boundary value analysis yields",
+    "options": [
+      "4n + 3 test cases",
+      "4n + 1 test cases",
+      "n + 4",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 742,
+    "question": "Site for Alpha Testing is",
+    "options": [
+      "Software Company",
+      "Installation place",
+      "Anywhere",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 743,
+    "question": "Which is not a size metric?",
+    "options": [
+      "LOC",
+      "Function count",
+      "Program length",
+      "Cyclomatic complexity"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 744,
+    "question": "As the reliability increases, failure intensity",
+    "options": [
+      "Decreases",
+      "Increases",
+      "No effect",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 745,
+    "question": "Software deteriorates rather than wears out because",
+    "options": [
+      "Software suffers from exposure to hostile environments",
+      "Defects are more likely to arise after software has been used often",
+      "Multiple change requests introduce errors in component interactions",
+      "Software spare parts become harder to order"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Maintenance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 746,
+    "question": "What are the three generic phases of software engineering?",
+    "options": [
+      "Definition, development, support",
+      "What, how, where",
+      "Programming, debugging, maintenance",
+      "Analysis, design, testing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 747,
+    "question": "The spiral model of software development",
+    "options": [
+      "Ends with the delivery of the software product",
+      "Is more chaotic than the incremental model",
+      "Includes project risks evaluation during each iteration",
+      "All of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 748,
+    "question": "Which of these terms is a level name in the Capability Maturity Model?",
+    "options": [
+      "Ad hoc",
+      "Repeatable",
+      "Reusable",
+      "Organized"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Process",
+    "difficulty": "medium"
+  },
+  {
+    "id": 749,
+    "question": "Which of the items listed below is not one of the software engineering layers?",
+    "options": [
+      "Process",
+      "Manufacturing",
+      "Methods",
+      "Tools"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 750,
+    "question": "Which of the following are advantages of using LOC (lines of code) as a size-oriented metric?",
+    "options": [
+      "LOC is easily computed",
+      "LOC is a language-dependent measure",
+      "LOC is a language-independent measure",
+      "LOC can be computed before a design is completed"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 751,
+    "question": "Top-down approach is used for",
+    "options": [
+      "Development",
+      "Identification of faults",
+      "Testing and validation",
+      "Reverse engineering"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 752,
+    "question": "Which of the following is not an attribute of software engineering?",
+    "options": [
+      "Efficiency",
+      "Scalability",
+      "Dependability",
+      "Usability"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 753,
+    "question": "A key concept of quality control is that all work products",
+    "options": [
+      "Are delivered on time and under budget",
+      "Have complete documentation",
+      "Have measurable specification for process outputs",
+      "Are thoroughly tested before delivery to the customer"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 754,
+    "question": "The ISO quality assurance standard that applies to software engineering is",
+    "options": [
+      "ISO 9000",
+      "ISO 9001",
+      "ISO 9002",
+      "ISO 9003"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 755,
+    "question": "What types of models are created during software requirements analysis?",
+    "options": [
+      "Functional and behavioral",
+      "Algorithmic and data structure",
+      "Architectural and structural",
+      "Usability and reliability"
+    ],
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 756,
+    "question": "What is the normal order of activities in which software testing is organized?",
+    "options": [
+      "Unit, integration, system, validation",
+      "System, integration, unit, validation",
+      "Unit, integration, validation, system",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 757,
+    "question": "Software feasibility is based on which of the following?",
+    "options": [
+      "Business and marketing concerns",
+      "Scope, constraints, market",
+      "Technology, finance, time, resources",
+      "Technical prowess of the developers"
+    ],
+    "correctAnswer": "C",
+    "topic": "Project Planning",
+    "difficulty": "medium"
+  },
+  {
+    "id": 758,
+    "question": "FP-based estimation techniques require problem decomposition based on",
+    "options": [
+      "Information domain values",
+      "Project schedule",
+      "Software functions",
+      "Process activities"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 759,
+    "question": "The software metrics chosen by an organization are driven by the business or technical goals an organization wishes to accomplish",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 760,
+    "question": "The goal of quality assurance is to provide management with the data needed to determine which software engineers are producing the most defects",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 761,
+    "question": "In the context of requirements analysis, partitioning results in the elaboration of data, function, or behavior",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 762,
+    "question": "Units and stubs are not needed for unit testing because the modules are tested independently of one another",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 763,
+    "question": "Software is",
+    "options": [
+      "Superset of programs",
+      "Subset of programs",
+      "Set of programs",
+      "None"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Types",
+    "difficulty": "easy"
+  },
+  {
+    "id": 764,
+    "question": "Which is NOT the part of operating procedure Manuals?",
+    "options": [
+      "User Manuals",
+      "Documentation Manuals",
+      "Operational Manual",
+      "Installation Manual"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Documentation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 765,
+    "question": "Product is",
+    "options": [
+      "Deliverables",
+      "User Expectations",
+      "Organization's effort in development",
+      "None"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 766,
+    "question": "To produce a good quality product, process should be",
+    "options": [
+      "Complex",
+      "Efficient",
+      "Rigorous",
+      "None"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Process",
+    "difficulty": "easy"
+  },
+  {
+    "id": 767,
+    "question": "During software development which factor is most crucial?",
+    "options": [
+      "People",
+      "Product",
+      "Process",
+      "All of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 768,
+    "question": "UML Stands for",
+    "options": [
+      "Uniform modeling language",
+      "Unit Modeling Language",
+      "Unified modeling language",
+      "Universal Modeling Language"
+    ],
+    "correctAnswer": "C",
+    "topic": "UML",
+    "difficulty": "easy"
+  },
+  {
+    "id": 769,
+    "question": "Software Consists of",
+    "options": [
+      "set of instructions + operating system",
+      "Programs + documentation + operating procedure",
+      "Programs + hardware",
+      "Set of programs"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Types",
+    "difficulty": "easy"
+  },
+  {
+    "id": 770,
+    "question": "Software Engineering approach is used to achieve",
+    "options": [
+      "Better performance of hardware",
+      "Error free software",
+      "Reusable software",
+      "Quality software product"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 771,
+    "question": "Which is not a software life cycle model",
+    "options": [
+      "Water fall",
+      "Spiral",
+      "Prototype",
+      "Capability Maturity Model"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development Lifecycle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 772,
+    "question": "Project Risk Factor is considered in",
+    "options": [
+      "Water fall",
+      "Spiral",
+      "Prototype",
+      "Iterative enhancement model"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 773,
+    "question": "If requirements are understandable, easy, defined, which model is best suited",
+    "options": [
+      "Water fall",
+      "Spiral",
+      "Prototype",
+      "None"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 774,
+    "question": "If requirements are frequently changing, which model is best suited",
+    "options": [
+      "Water fall",
+      "Spiral",
+      "Prototype",
+      "RAD"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 775,
+    "question": "Which one is the most important feature of spiral model?",
+    "options": [
+      "Quality management",
+      "Risk Management",
+      "Performance Management",
+      "Efficiency management"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "easy"
+  },
+  {
+    "id": 776,
+    "question": "Statistically, the maximum percentage of errors belong to the following phase of SDLC",
+    "options": [
+      "Coding",
+      "Design",
+      "Specifications",
+      "Installation and maintenance"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Lifecycle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 777,
+    "question": "Most suitable model for new technology that is not well understood is",
+    "options": [
+      "Waterfall model",
+      "RAD Model",
+      "Iterative enhancement model",
+      "Evolutionary development model"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 778,
+    "question": "Which phase is not available in software life cycle?",
+    "options": [
+      "Coding",
+      "Design",
+      "Specifications",
+      "Installation & Maintenance"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development Lifecycle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 779,
+    "question": "The development is supposed to proceed linearly through the phases in",
+    "options": [
+      "Spiral model",
+      "Waterfall model",
+      "Prototyping model",
+      "None"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "easy"
+  },
+  {
+    "id": 780,
+    "question": "Process of generating analysis and design documents is called",
+    "options": [
+      "Inverse Engineering",
+      "Reverse Engineering",
+      "Software Engineering",
+      "Re-Engineering"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 781,
+    "question": "Regression testing is primarily related to",
+    "options": [
+      "functional testing",
+      "data flow testing",
+      "Development testing",
+      "Maintenance Testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 782,
+    "question": "Which one is not a category of maintenance?",
+    "options": [
+      "Corrective maintenance",
+      "Effective maintenance",
+      "Adaptive Maintenance",
+      "Perfective maintenance"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Maintenance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 783,
+    "question": "The maintained initiated by defects in the software is called",
+    "options": [
+      "Corrective maintenance",
+      "Effective maintenance",
+      "Adaptive Maintenance",
+      "Perfective maintenance"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Maintenance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 784,
+    "question": "Patch is known as",
+    "options": [
+      "Emergency fixes",
+      "Routine fixes",
+      "Critical fixes",
+      "None"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Maintenance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 785,
+    "question": "The following software process model can be represented schematically as a series of major technical activities and there associated state?",
+    "options": [
+      "Incremental model",
+      "Component assembly",
+      "Concurrent development model",
+      "All of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 786,
+    "question": "A data model consists of the following information?",
+    "options": [
+      "Data Object",
+      "The attributes that describe data object",
+      "Relationship that connect data object to one another",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Data Modeling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 787,
+    "question": "What is the modality of relationship, if there is no explicit need for relationship to occur?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "four"
+    ],
+    "correctAnswer": "A",
+    "topic": "Data Modeling",
+    "difficulty": "hard"
+  },
+  {
+    "id": 788,
+    "question": "The object relationship pair of data model is represented graphically by using",
+    "options": [
+      "Data flow diagram",
+      "Flow chart",
+      "Entity relationship diagram",
+      "All of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "Data Modeling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 789,
+    "question": "Which architecture provide framework for information needs of a business function?",
+    "options": [
+      "Application architecture",
+      "Technology infrastructure",
+      "Data structure",
+      "All of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Architecture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 790,
+    "question": "Which life cycle mode suggests a systematic, sequential, approach to software development that begins at system level and proceeds through analysis, design, coding and maintenance",
+    "options": [
+      "Waterfall model",
+      "Prototype model",
+      "Sequential model",
+      "RAD model"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+    {
+    "id": 791,
+    "question": "Which s/w package model composes application from prepackaged s/w components",
+    "options": [
+      "Component assembly model",
+      "Concurrent development model",
+      "Incremental model",
+      "None"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 792,
+    "question": "The primary aim of the s/w engg. Is to provide",
+    "options": [
+      "Reliable s/w",
+      "According to requirement a complete s/w",
+      "Cost- effective s/w",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 793,
+    "question": "A good requirement specification should be",
+    "options": [
+      "Unambiguous",
+      "Distinctly specific",
+      "Functional",
+      "None"
+    ],
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 794,
+    "question": "Related to object oriented design of s/w, which of the following is not true",
+    "options": [
+      "Object inherit the properties of a class",
+      "Classes are defined based on attributes of objects",
+      "An object can belongs to two classes",
+      "None"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 795,
+    "question": "Design phase include",
+    "options": [
+      "Data architectural and procedural design only",
+      "Architectural, procedural, and interface design only",
+      "Data, Architectural, and interface design only",
+      "Data, architectural, interface and procedural design only"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 796,
+    "question": "In s/w engineering approach the design phase is",
+    "options": [
+      "Top down",
+      "Bottom up",
+      "Random",
+      "Centre fringing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 797,
+    "question": "Following are the categories of the automated system",
+    "options": [
+      "Online system",
+      "Real time system",
+      "Decision support system",
+      "None"
+    ],
+    "correctAnswer": "D",
+    "topic": "System Types",
+    "difficulty": "medium"
+  },
+  {
+    "id": 798,
+    "question": "The main difference between program testing and system testing is",
+    "options": [
+      "Program testing is more comprehensive that system testing",
+      "System testing focuses on testing the interface between program and program testing focuses on individual programs",
+      "System testing is tough and program testing is easy",
+      "None"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 799,
+    "question": "The largest percentage of total life cycle cost of s/w is",
+    "options": [
+      "Design cost",
+      "Maintenance cost",
+      "Coding cost",
+      "Testing cost"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Lifecycle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 800,
+    "question": "The static system model exhibits which type of relationship?",
+    "options": [
+      "Time cost",
+      "Activity time",
+      "Quantity time",
+      "None"
+    ],
+    "correctAnswer": "B",
+    "topic": "System Modeling",
+    "difficulty": "hard"
+  },
+  {
+    "id": 801,
+    "question": "System implementation phase consists of",
+    "options": [
+      "System checkout",
+      "Pilot run",
+      "Parallel run",
+      "All of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "System Implementation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 802,
+    "question": "The computer programs produced by structural design are",
+    "options": [
+      "Easily maintained",
+      "Easily understood",
+      "Tested in a bottom –up fashion",
+      "a and b only"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 803,
+    "question": "Increase in profits caused by a new system. Select the best fit for this answer",
+    "options": [
+      "Cost/benefit analysis",
+      "Costs",
+      "Regrets",
+      "Benefits"
+    ],
+    "correctAnswer": "A",
+    "topic": "System Analysis",
+    "difficulty": "medium"
+  },
+  {
+    "id": 804,
+    "question": "Determines the organization's economic, technical and operational feasibility of a proposed informative system. Select the best fit for this answer",
+    "options": [
+      "Benefits",
+      "System development life cycle",
+      "System investigation",
+      "Feasibility study"
+    ],
+    "correctAnswer": "D",
+    "topic": "System Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 805,
+    "question": "The technique which is used to totally remove existing system and immediately implementing new system is called",
+    "options": [
+      "Crash conversion",
+      "Phased conversion",
+      "Pilot conversion",
+      "Parallel conversion"
+    ],
+    "correctAnswer": "A",
+    "topic": "System Implementation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 806,
+    "question": "Which of the following is not considered a tool at system design phase?",
+    "options": [
+      "Data flow diagram",
+      "Decision table",
+      "Pie charts",
+      "System flow chart"
+    ],
+    "correctAnswer": "C",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 807,
+    "question": "Coding & testing is done in following manner",
+    "options": [
+      "Adhoc",
+      "Cross sectional",
+      "Bottom up",
+      "Top-down"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 808,
+    "question": "Checking quality of s/w in both simulated and live environments is known as",
+    "options": [
+      "Checking",
+      "Usability",
+      "Validity",
+      "Validation"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 809,
+    "question": "The most creative and challenging phase of system life cycle is",
+    "options": [
+      "Feasibility study",
+      "Maintenance",
+      "Design",
+      "None"
+    ],
+    "correctAnswer": "C",
+    "topic": "System Development Lifecycle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 810,
+    "question": "Which of the following is not a component of object oriented s/w engineering?",
+    "options": [
+      "Process",
+      "Method",
+      "Architecture",
+      "None"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 811,
+    "question": "The largest percentage of total life cycle cost of s/w is",
+    "options": [
+      "Design cost",
+      "Maintenance cost",
+      "Coding cost",
+      "Testing cost"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Lifecycle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 812,
+    "question": "With thorough testing it is possible to remove all defects from a program prior to delivery to the customer",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 813,
+    "question": "Which of the following are characteristics of testable software?",
+    "options": [
+      "observability",
+      "simplicity",
+      "stability",
+      "all of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 814,
+    "question": "The testing technique that requires devising test cases to demonstrate that each program function is operational is called",
+    "options": [
+      "black-box testing",
+      "glass-box testing",
+      "grey-box testing",
+      "white-box testing"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 815,
+    "question": "The testing technique that requires devising test cases to exercise the internal logic of a software module is called",
+    "options": [
+      "behavioral testing",
+      "black-box testing",
+      "grey-box testing",
+      "white-box testing"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 816,
+    "question": "What types of errors are missed by black-box testing and can be uncovered by white-box testing?",
+    "options": [
+      "behavioral errors",
+      "logic errors",
+      "typographical errors",
+      "both B and C"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 817,
+    "question": "Program flow graphs are identical to program flowcharts",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 818,
+    "question": "The cyclomatic complexity metric provides the designer with information regarding the number of",
+    "options": [
+      "cycles in the program",
+      "errors in the program",
+      "independent logic paths in the program",
+      "statements in the program"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 819,
+    "question": "The cyclomatic complexity of a program can be computed directly from a PDL representation of an algorithm without drawing a program flow graph",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 820,
+    "question": "Condition testing is a control structure testing technique where the criteria used to design test cases is that they",
+    "options": [
+      "rely on basis path testing",
+      "exercise the logical conditions in a program module",
+      "select test paths based on the locations and uses of variables",
+      "focus on testing the validity of loop constructs"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 821,
+    "question": "Data flow testing is a control structure testing technique where the criteria used to design test cases is that they",
+    "options": [
+      "rely on basis path testing",
+      "exercise the logical conditions in a program module",
+      "select test paths based on the locations and uses of variables",
+      "focus on testing the validity of loop constructs"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 822,
+    "question": "Loop testing is a control structure testing technique where the criteria used to design test cases is that they",
+    "options": [
+      "rely basis path testing",
+      "exercise the logical conditions in a program module",
+      "select test paths based on the locations and uses of variables",
+      "focus on testing the validity of loop constructs"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 823,
+    "question": "Black-box testing attempts to find errors in which of the following categories",
+    "options": [
+      "incorrect or missing functions",
+      "interface errors",
+      "performance errors",
+      "all of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 824,
+    "question": "Graph-based testing methods can only be used for object-oriented systems",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 825,
+    "question": "Equivalence testing divides the input domain into classes of data from which test cases can be derived to reduce the total number of test cases that must be developed",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 826,
+    "question": "Boundary value analysis can only be used to do white-box testing",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 827,
+    "question": "Comparison testing is typically done to test two competing products as part of customer market analysis prior to product release",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 828,
+    "question": "Orthogonal array testing enables the test designer to maximize the coverage of the test cases devised for relatively small input domains",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 829,
+    "question": "Test case design \"in the small\" for OO software is driven by the algorithmic detail of the individual operations",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 830,
+    "question": "Encapsulation of attributes and operations inside objects makes it easy to obtain object state information during testing",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 831,
+    "question": "Use-cases can provide useful input into the design of black-box and state-based tests of OO software",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 832,
+    "question": "Fault-based testing is best reserved for",
+    "options": [
+      "conventional software testing",
+      "operations and classes that are critical or suspect",
+      "use-case validation",
+      "white-box testing of operator algorithms"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 833,
+    "question": "Testing OO class operations is made more difficult by",
+    "options": [
+      "encapsulation",
+      "inheritance",
+      "polymorphism",
+      "both b and c"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 834,
+    "question": "Scenario-based testing",
+    "options": [
+      "concentrates on actor and software interaction",
+      "misses errors in specifications",
+      "misses errors in subsystem interactions",
+      "both a and b"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 835,
+    "question": "Deep structure testing is not designed to",
+    "options": [
+      "examine object behaviors",
+      "exercise communication mechanisms",
+      "exercise object dependencies",
+      "exercise structure observable by the user"
+    ],
+    "correctAnswer": "D",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 836,
+    "question": "Random order tests are conducted to exercise different class instance life histories",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 837,
+    "question": "Which of these techniques is not useful for partition testing at the class level",
+    "options": [
+      "attribute-based partitioning",
+      "category-based partitioning",
+      "equivalence class partitioning",
+      "state-based partitioning"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 838,
+    "question": "Multiple class testing is too complex to be tested using random test cases",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 839,
+    "question": "Tests derived from behavioral class models should be based on the",
+    "options": [
+      "data flow diagram",
+      "object-relation diagram",
+      "state diagram",
+      "use-case diagram"
+    ],
+    "correctAnswer": "C",
+    "topic": "Object-Oriented Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 840,
+    "question": "Client/server architectures cannot be properly tested because network load is highly variable",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 841,
+    "question": "Real-time applications add a new and potentially difficult element to the testing mix",
+    "options": [
+      "performance",
+      "reliability",
+      "security",
+      "time"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 842,
+    "question": "What is the meaning of COSO?",
+    "options": [
+      "Common Sponsoring Organizations",
+      "Committee Of Sponsoring Organizations",
+      "Committee Of Standard Organizations",
+      "Common Standard Organization"
+    ],
+    "correctAnswer": "B",
+    "topic": "IT Governance",
+    "difficulty": "medium"
+  },
+  {
+    "id": 843,
+    "question": "Which one is not key term used in internal control and security",
+    "options": [
+      "Threat",
+      "Risk Control",
+      "Vulnerability",
+      "Exposure"
+    ],
+    "correctAnswer": "B",
+    "topic": "IT Security",
+    "difficulty": "medium"
+  },
+  {
+    "id": 844,
+    "question": "Management is not responsible for an organization internal control system",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "IT Governance",
+    "difficulty": "easy"
+  },
+  {
+    "id": 845,
+    "question": "Who is ultimate responsible for the internal control system",
+    "options": [
+      "CEO",
+      "Project Manager",
+      "Technical Manager",
+      "Developer"
+    ],
+    "correctAnswer": "A",
+    "topic": "IT Governance",
+    "difficulty": "easy"
+  },
+  {
+    "id": 846,
+    "question": "The sole purpose of the Risk Control is to avoid risk",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Risk Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 847,
+    "question": "Management controls involves limiting access to computer resources",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "IT Security",
+    "difficulty": "medium"
+  },
+  {
+    "id": 848,
+    "question": "Software developed by contractors who are not part of the organization is referred to as in sourcing organizations",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 849,
+    "question": "Which one is not tester responsibilities?",
+    "options": [
+      "Assure the process for contracting software is adequate",
+      "Review the adequacy of the contractors test plan",
+      "Perform acceptance testing on the software",
+      "Assure the ongoing operation and maintenance of the contracted software"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 850,
+    "question": "The software tester may or may not be involved in the actual acceptance testing",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 851,
+    "question": "In the client systems, testing should focus on performance and compatibility",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 852,
+    "question": "A database access applications typically consists of following elements except",
+    "options": [
+      "User Interface code",
+      "Business login code",
+      "Data-access service code",
+      "Data Driven code"
+    ],
+    "correctAnswer": "D",
+    "topic": "Database Applications",
+    "difficulty": "medium"
+  },
+  {
+    "id": 853,
+    "question": "Wireless technologies represent a rapidly emerging area of growth and importance for providing ever-present access to the internet and email",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Mobile Technologies",
+    "difficulty": "easy"
+  },
+  {
+    "id": 854,
+    "question": "Acceptance testing involves procedures for identifying acceptance criteria for interim life cycle products and for accepting them",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 855,
+    "question": "Acceptance testing is designed whether or not the software is \"fit\" for the user to use. The concept of \"fit\" is important in both design and testing. There are four components of \"fit\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 856,
+    "question": "Acceptance testing occurs only at the end point of the development process; it should be an ongoing activity that test both interim and final products",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 857,
+    "question": "Acceptance requirement that a system must meet can be divided into ________ categories",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 858,
+    "question": "_______ categories of testing techniques can be used in acceptance testing",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 859,
+    "question": "_____________ define the objectives of the acceptance activities and a plan for meeting them",
+    "options": [
+      "Project Manager",
+      "IT Manager",
+      "Acceptance Manager",
+      "ICO"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 860,
+    "question": "Software Acceptance testing is the last opportunity for the user to examine the software for functional, interface, performance, and quality features prior to the final acceptance review",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 861,
+    "question": "_________ categories of data will be collected during testing",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 862,
+    "question": "______________ is normally a reverse of the test development process. In other words, it begins at the very lowest level and the results are rolled up to the highest levels",
+    "options": [
+      "Conducting testing",
+      "Resuming testing",
+      "Acceptance testing",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 863,
+    "question": "Which one is called as most common test report?",
+    "options": [
+      "Test Summary Report",
+      "Check List",
+      "Spreadsheet",
+      "Cause-Effect Graphing"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 864,
+    "question": "Verification that the process deliverables/phases are meeting the user's true needs is called as",
+    "options": [
+      "Inspections",
+      "Reviews",
+      "Acceptance testing",
+      "Acceptance criteria"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 865,
+    "question": "_____________ the reporting process is very important because software tools are being upgraded, and manual supporting activities sometimes break down",
+    "options": [
+      "Analyzing",
+      "Monitoring",
+      "Both A & B",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 866,
+    "question": "_______________ report provides information related to a specific project component",
+    "options": [
+      "Individual Project Status Report",
+      "Major Project Status Report",
+      "Both A & B",
+      "None of the Above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 867,
+    "question": "________________ report provides general information about all projects",
+    "options": [
+      "Individual Project Status Report",
+      "Major Project Status Report",
+      "Both A & B",
+      "None of the Above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Project Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 868,
+    "question": "The Project Status Report contains the project activities information and give a history of the project over a 16-month period",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Project Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 869,
+    "question": "The test reports are for use by the testers, the test manager, and the software development team",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 870,
+    "question": "_________ is a risk-oriented activity in which resources should be expended to minimize the major risks",
+    "options": [
+      "Testing",
+      "Development",
+      "Quality Control",
+      "Quality Assurance"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 871,
+    "question": "_______________ measure the characteristics of the documentation and code",
+    "options": [
+      "Process metric",
+      "Product metric",
+      "Software quality metric",
+      "Software metric"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 872,
+    "question": "Software is",
+    "options": [
+      "Superset of programs",
+      "subset of programs",
+      "Set of programs",
+      "none of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Types",
+    "difficulty": "easy"
+  },
+  {
+    "id": 873,
+    "question": "Which is NOT the part of operating procedure manuals?",
+    "options": [
+      "User manuals",
+      "Operational manuals",
+      "Documentation manuals",
+      "Installation manuals"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Documentation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 874,
+    "question": "Which is NOT a software characteristic?",
+    "options": [
+      "Software does not wear out",
+      "Software is flexible",
+      "Software is not manufactured",
+      "Software is always correct"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Characteristics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 875,
+    "question": "Product is",
+    "options": [
+      "Deliverables",
+      "User expectations",
+      "Organization's effort in development",
+      "none of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 876,
+    "question": "To produce a good quality product, process should be",
+    "options": [
+      "Complex",
+      "Efficient",
+      "Rigorous",
+      "none of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Process",
+    "difficulty": "easy"
+  },
+  {
+    "id": 877,
+    "question": "Which is not a product metric?",
+    "options": [
+      "Size",
+      "Reliability",
+      "Productivity",
+      "Functionality"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 878,
+    "question": "Which is NOT a process metric?",
+    "options": [
+      "Productivity",
+      "Functionality",
+      "Quality",
+      "Efficiency"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 879,
+    "question": "Effort is measured in terms of:",
+    "options": [
+      "Person-months",
+      "Rupees",
+      "Persons",
+      "Months"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "easy"
+  },
+  {
+    "id": 880,
+    "question": "UML stands for",
+    "options": [
+      "Uniform modeling language",
+      "Unified modeling language",
+      "Unit modeling language",
+      "Universal modeling language"
+    ],
+    "correctAnswer": "B",
+    "topic": "UML",
+    "difficulty": "easy"
+  },
+  {
+    "id": 881,
+    "question": "An independently deliverable piece of functionality providing access to its services through interface is called",
+    "options": [
+      "Software measurement",
+      "Software composition",
+      "Software measure",
+      "Software component"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Components",
+    "difficulty": "medium"
+  },
+  {
+    "id": 882,
+    "question": "Infrastructure software are covered under",
+    "options": [
+      "Generic products",
+      "Customized products",
+      "Generic and Customized products",
+      "none of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Types",
+    "difficulty": "medium"
+  },
+  {
+    "id": 883,
+    "question": "Management of software development is dependent on",
+    "options": [
+      "People",
+      "product",
+      "Process",
+      "all of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development",
+    "difficulty": "medium"
+  },
+  {
+    "id": 884,
+    "question": "During software development, which factor is most crucial?",
+    "options": [
+      "People",
+      "Product",
+      "Process",
+      "Project"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development",
+    "difficulty": "easy"
+  },
+  {
+    "id": 885,
+    "question": "Program is",
+    "options": [
+      "Subset of software",
+      "super set of software",
+      "Software",
+      "none of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Types",
+    "difficulty": "easy"
+  },
+  {
+    "id": 886,
+    "question": "Milestones are used to",
+    "options": [
+      "Know the cost of the project",
+      "know the status of the project",
+      "Know user expectations",
+      "none of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Project Management",
+    "difficulty": "easy"
+  },
+  {
+    "id": 887,
+    "question": "The term module used during design phase refers to",
+    "options": [
+      "Function",
+      "Procedure",
+      "Sub program",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 888,
+    "question": "Software consists of",
+    "options": [
+      "Set of instructions + operating system",
+      "Programs + documentation + operating procedures",
+      "Programs + hardware manuals",
+      "Set of programs"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Types",
+    "difficulty": "easy"
+  },
+  {
+    "id": 889,
+    "question": "Software engineering approach is used to achieve:",
+    "options": [
+      "Better performance of hardware",
+      "Error free software",
+      "Reusable software",
+      "Quality software product"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 890,
+    "question": "Concept of software engineering is applicable to",
+    "options": [
+      "FORTRAN language only",
+      "Pascal language only",
+      "'C' language only",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 891,
+    "question": "CASE Tool is",
+    "options": [
+      "Computer Aided Software Engineering",
+      "Component Aided Software Engineering",
+      "Constructive Aided Software Engineering",
+      "Computer Analysis Software Engineering"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Engineering Tools",
+    "difficulty": "easy"
+  },
+  {
+    "id": 892,
+    "question": "Spiral Model was developed by",
+    "options": [
+      "Bev Little wood",
+      "Barry Boehm",
+      "Roger Pressman",
+      "Victor Basili"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 893,
+    "question": "Which model is most popular for student's small projects?",
+    "options": [
+      "Waterfall model",
+      "Spiral model",
+      "Quick and fix model",
+      "Prototyping model"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 894,
+    "question": "Which is not a software life cycle model?",
+    "options": [
+      "Waterfall model",
+      "Spiral model",
+      "Prototyping model",
+      "Capability maturity model"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development Lifecycle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 895,
+    "question": "Project risk factor is considered in",
+    "options": [
+      "Waterfall model",
+      "Prototyping model",
+      "Spiral model",
+      "Iterative enhancement model"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 896,
+    "question": "SDLC stands for",
+    "options": [
+      "Software design life cycle",
+      "Software development life cycle",
+      "System development life cycle",
+      "System design life cycle"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Lifecycle",
+    "difficulty": "easy"
+  },
+  {
+    "id": 897,
+    "question": "Build and fix model has",
+    "options": [
+      "3 phases",
+      "1 phase",
+      "2 phases",
+      "4 phases"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 898,
+    "question": "Which of the following is a type of software?",
+    "options": [
+      "System Software",
+      "Embedded Software",
+      "Application",
+      "all of the above"
+    ],
+    "correctAnswer": "D", // Note: Corrected from "A" in the source to "D" based on the option "all of the above"
+    "topic": "Software Types",
+    "difficulty": "easy"
+  },
+  {
+    "id": 899,
+    "question": "Waterfall model is not suitable for",
+    "options": [
+      "small projects",
+      "accommodating change",
+      "complex projects",
+      "none of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 900,
+    "question": "RAD stands for",
+    "options": [
+      "Rapid application development",
+      "Relative application development",
+      "Ready application development",
+      "Repeated application development"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development Models",
+    "difficulty": "easy"
+  },
+  {
+    "id": 901,
+    "question": "RAD model was proposed by",
+    "options": [
+      "Lucent Technologies",
+      "Motorola",
+      "IBM",
+      "Microsoft"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 902,
+    "question": "If requirements are easily understandable and defined, which model is best suited?",
+    "options": [
+      "Waterfall model",
+      "Prototyping model",
+      "Spiral model",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 903,
+    "question": "If requirements are frequently changing, which model is to be selected?",
+    "options": [
+      "Waterfall model",
+      "Prototyping model",
+      "RAD model",
+      "Iterative enhancement model"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 904,
+    "question": "If user participation is available, which model is to be chosen?",
+    "options": [
+      "Waterfall model",
+      "Iterative enhancement model",
+      "Spiral model",
+      "RAD model"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 905,
+    "question": "If limited user participation is available, which model is to be selected?",
+    "options": [
+      "Waterfall model",
+      "Spiral model",
+      "Iterative enhancement model",
+      "any of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 906,
+    "question": "If project is the enhancement of existing system, which model is best suited?",
+    "options": [
+      "Waterfall model",
+      "Prototyping model",
+      "Iterative enhancement model",
+      "Spiral model"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 907,
+    "question": "Which one is the most important feature of spiral model?",
+    "options": [
+      "Quality management",
+      "Risk management",
+      "Performance management",
+      "Efficiency management"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 908,
+    "question": "Most suitable model for new technology that is not well understood is:",
+    "options": [
+      "Waterfall model",
+      "RAD model",
+      "Iterative enhancement model",
+      "Evolutionary development model"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 909,
+    "question": "Statistically, the maximum percentage of errors belong to the following phase of SDLC",
+    "options": [
+      "Coding",
+      "Design",
+      "Specifications",
+      "Installation and maintenance"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Development Lifecycle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 910,
+    "question": "Which phase is not available in software life cycle?",
+    "options": [
+      "Coding",
+      "Testing",
+      "Maintenance",
+      "Abstraction"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Development Lifecycle",
+    "difficulty": "easy"
+  },
+  {
+    "id": 911,
+    "question": "The development is supposed to proceed linearly through the phase in",
+    "options": [
+      "Spiral model",
+      "Waterfall model",
+      "Prototyping model",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Models",
+    "difficulty": "medium"
+  },
+  {
+    "id": 912,
+    "question": "The outcome of construction phase can be treated as:",
+    "options": [
+      "Product release",
+      "Beta release",
+      "Alpha release",
+      "All of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development Lifecycle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 913,
+    "question": "Which one is not a step of requirement engineering?",
+    "options": [
+      "Requirements elicitation",
+      "Requirements analysis",
+      "Requirements design",
+      "Requirements documentation"
+    ],
+    "correctAnswer": "C",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 914,
+    "question": "Requirements elicitation means",
+    "options": [
+      "Gathering of requirements",
+      "Capturing of requirements",
+      "Understanding of requirements",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 915,
+    "question": "SRS stands for",
+    "options": [
+      "Software requirements specification",
+      "System requirements specification",
+      "Systematic requirements specifications",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "id": 916,
+    "question": "SRS document is for",
+    "options": [
+      "\"What\" of a system?",
+      "How to design the system?",
+      "Costing and scheduling of a system",
+      "System's requirement."
+    ],
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 917,
+    "question": "Requirements review process is carried out to",
+    "options": [
+      "Spend time in requirements gathering",
+      "Improve the quality of SRS",
+      "Document the requirements",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 918,
+    "question": "Which one of the statements is not correct during requirements engineering?",
+    "options": [
+      "Requirements are difficult to uncover",
+      "Requirements are subject to change",
+      "Requirements should be consistent",
+      "Requirements are always precisely known."
+    ],
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 919,
+    "question": "Which one is not a type of requirements?",
+    "options": [
+      "Known requirements",
+      "Unknown requirements",
+      "Undreamt requirements",
+      "Complex requirements"
+    ],
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 920,
+    "question": "Which one is not a requirements elicitation technique?",
+    "options": [
+      "Interviews",
+      "The use case approach",
+      "FAST",
+      "Data flow diagram."
+    ],
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 921,
+    "question": "QFD in requirement engineering stands for",
+    "options": [
+      "Quality function design",
+      "Quality factor design",
+      "Quality function development",
+      "Quality function deployment"
+    ],
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 922,
+    "question": "Which is not a type of requirements under quality function deployment?",
+    "options": [
+      "Normal requirements",
+      "Abnormal requirements",
+      "Expected requirements",
+      "Exciting requirements"
+    ],
+    "correctAnswer": "B",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 923,
+    "question": "Use case approach was developed by",
+    "options": [
+      "I. Jacobson and others",
+      "J.D. Musa and others",
+      "B. Littlewood",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 924,
+    "question": "Context diagram explains",
+    "options": [
+      "The overview of the system",
+      "The internal view of the system",
+      "The entities of the system",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 925,
+    "question": "DFD stands for",
+    "options": [
+      "Data Flow design",
+      "Descriptive functional design",
+      "Data flow diagram",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 926,
+    "question": "ERD stands for",
+    "options": [
+      "Entity relationship diagram",
+      "Exit related diagram",
+      "Entity relationship design",
+      "Exit related design"
+    ],
+    "correctAnswer": "A",
+    "topic": "Data Modeling",
+    "difficulty": "easy"
+  },
+  {
+    "id": 927,
+    "question": "Which is not a characteristic of a good SRS?",
+    "options": [
+      "Correct",
+      "Complete",
+      "Consistent",
+      "Brief"
+    ],
+    "correctAnswer": "D",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 928,
+    "question": "Outcome of requirements specification phase is",
+    "options": [
+      "Design Document",
+      "SRS Document",
+      "Test Document",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 929,
+    "question": "The basic concepts of ER model are:",
+    "options": [
+      "Entity and relationship",
+      "Relationships and keys",
+      "Entity, effects and relationship",
+      "Entity, relationship and attribute"
+    ],
+    "correctAnswer": "D",
+    "topic": "Data Modeling",
+    "difficulty": "medium"
+  },
+  {
+    "id": 930,
+    "question": "The DFD depicts",
+    "options": [
+      "Flow of data",
+      "Flow of control",
+      "Both (a) & (b)",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 931,
+    "question": "Product features are related to:",
+    "options": [
+      "Functional requirements",
+      "Non functional requirements",
+      "Interface requirement",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 932,
+    "question": "Which one is a quality attribute?",
+    "options": [
+      "Reliability",
+      "Availability",
+      "Security",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 933,
+    "question": "IEEE standard for SRS is:",
+    "options": [
+      "IEEE Standard 837-1998",
+      "IEEE Standard 830-1998",
+      "IEEE Standard 832-1998",
+      "IEEE Standard 839-1998"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Standards",
+    "difficulty": "medium"
+  },
+  {
+    "id": 934,
+    "question": "Which one is not a functional requirement?",
+    "options": [
+      "Efficiency",
+      "Reliability",
+      "Product features",
+      "Stability"
+    ],
+    "correctAnswer": "C",
+    "topic": "Requirements Engineering",
+    "difficulty": "medium"
+  },
+  {
+    "id": 935,
+    "question": "APIs stand for:",
+    "options": [
+      "Application performance interfaces",
+      "Application programming interfaces",
+      "Application programming integration",
+      "Application performance integration"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Development",
+    "difficulty": "easy"
+  },
+  {
+    "id": 936,
+    "question": "After the finalization of SRS, we may like to estimate",
+    "options": [
+      "Size",
+      "Cost",
+      "Development time",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Project Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 937,
+    "question": "Which one is not a size measure for software",
+    "options": [
+      "LOC",
+      "Function Count",
+      "Cyclomatic Complexity",
+      "Halstead's program length"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 938,
+    "question": "Function count method was developed by",
+    "options": [
+      "B.Beizer",
+      "B.Boehm",
+      "M.halstead",
+      "Alan Albrecht"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 939,
+    "question": "Function point analysis (FPA) method decomposes the system into functional units. The total numbers of functional units are",
+    "options": [
+      "2",
+      "5",
+      "4",
+      "1"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 940,
+    "question": "COCOMO was developed initially by",
+    "options": [
+      "B.W.Bohem",
+      "Gregg Rothermal",
+      "B.Beizer",
+      "Rajiv Gupta"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 941,
+    "question": "Estimation of software development effort for organic software is COCOMO is",
+    "options": [
+      "E=2.4(KLOC)1.05PM",
+      "E=3.4(KLOC)1.06PM",
+      "E=2.0(KLOC)1.05PM",
+      "E-2.4(KLOC)1.07PM"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 942,
+    "question": "Estimation of size for a project is dependent on",
+    "options": [
+      "Cost",
+      "Schedule",
+      "Time",
+      "None of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Project Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 943,
+    "question": "In function point analysis, number of Complexity adjustment factor is",
+    "options": [
+      "10",
+      "20",
+      "14",
+      "12"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 944,
+    "question": "COCOMO-II estimation model is based on",
+    "options": [
+      "Complex approach",
+      "Algorithm approach",
+      "Bottom up approach",
+      "Top down approach"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 945,
+    "question": "Cost estimation for a project may include",
+    "options": [
+      "Software Cost",
+      "Hardware Cost",
+      "Personnel Costs",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Project Management",
+    "difficulty": "medium"
+  },
+  {
+    "id": 946,
+    "question": "In COCOMO model, if project size is typically 2-50 KLOC, then which mode is to be selected?",
+    "options": [
+      "Organic",
+      "Semidetached",
+      "Embedded",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 947,
+    "question": "COCOMO-II was developed at",
+    "options": [
+      "University of Maryland",
+      "University of Southern California",
+      "IBM",
+      "AT & T Bell labs"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 948,
+    "question": "Which one is not a Category of COCOMO-II?",
+    "options": [
+      "End User Programming",
+      "Infrastructure Sector",
+      "Requirement Sector",
+      "System Integration"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Metrics",
+    "difficulty": "hard"
+  },
+  {
+    "id": 949,
+    "question": "Which one is not infrastructure software?",
+    "options": [
+      "Operating system",
+      "Database management system",
+      "Compilers",
+      "Result management system"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Types",
+    "difficulty": "medium"
+  },
+  {
+    "id": 950,
+    "question": "How many stages are in COCOMO-II?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 951,
+    "question": "Which one is not a stage of COCOMO-II?",
+    "options": [
+      "Application Composition estimation model",
+      "Early design estimation model",
+      "Post architecture estimation model",
+      "Comprehensive cost estimation model"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Metrics",
+    "difficulty": "medium"
+  },
+  {
+    "id": 952,
+    "question": "The most desirable form of coupling is",
+    "options": [
+      "Control",
+      "Data",
+      "Common",
+      "Content"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 953,
+    "question": "The worst type of coupling is",
+    "options": [
+      "Content",
+      "Common",
+      "External",
+      "Data coupling"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 954,
+    "question": "The most desirable form of cohesion is",
+    "options": [
+      "Logical cohesion",
+      "Procedural cohesion",
+      "Functional cohesion",
+      "Temporal cohesion"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 955,
+    "question": "The worst type of cohesion is",
+    "options": [
+      "Temporal cohesion",
+      "Coincidental cohesion",
+      "Logical cohesion",
+      "Sequential cohesion"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 956,
+    "question": "Which one is not a strategy for design?",
+    "options": [
+      "Bottom up design",
+      "Top down design",
+      "Embedded design",
+      "Hybrid design"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 957,
+    "question": "Software testing is:",
+    "options": [
+      "The process of demonstrating that errors are not present",
+      "The process of establishing confidence that a program does what it is supposed to do",
+      "The process of executing a program to show it is working as per specifications",
+      "The process of executing a program with the intent of finding errors"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 958,
+    "question": "Software mistakes during coding are known as:",
+    "options": [
+      "Failures",
+      "Defects",
+      "Bugs",
+      "Errors"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 959,
+    "question": "Functional testing is known as:",
+    "options": [
+      "Structural testing",
+      "Behavior testing",
+      "Regression testing",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Testing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 960,
+    "question": "The relationship of data elements in a module is called",
+    "options": [
+      "Coupling",
+      "Cohesion",
+      "Modularity",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 961,
+    "question": "The extent to which different modules are dependent upon each other is called",
+    "options": [
+      "Coupling",
+      "Cohesion",
+      "Modularity",
+      "Stability"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Design Principles",
+    "difficulty": "medium"
+  },
+  {
+    "id": 962,
+    "question": "A system that does not interact with external environment is called",
+    "options": [
+      "Closed system",
+      "Logical system",
+      "Open system",
+      "Hierarchical system"
+    ],
+    "correctAnswer": "A",
+    "topic": "System Types",
+    "difficulty": "medium"
+  },
+  {
+    "id": 963,
+    "question": "Which one is not a phase of the \"bathtub curve\" of hardware reliability",
+    "options": [
+      "Burn-in",
+      "Useful life",
+      "Wear-out",
+      "Test-out"
+    ],
+    "correctAnswer": "D",
+    "topic": "Hardware Reliability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 964,
+    "question": "Software reliability is",
+    "options": [
+      "The probability of failure free operation of a program for a specified time in a specified environment",
+      "The probability of failure of a program for a specified time in a specified environment",
+      "The probability of success of a program for a specified time in any environment",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 965,
+    "question": "Fault is",
+    "options": [
+      "Defect in the program",
+      "Mistake in the program",
+      "Error in the program",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 966,
+    "question": "One fault may lead to",
+    "options": [
+      "One failure",
+      "Two failures",
+      "Many failures",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 967,
+    "question": "Which 'time' unit is not used in reliability studies?",
+    "options": [
+      "Execution time",
+      "Machine time",
+      "Clock time",
+      "Calendar time"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Reliability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 968,
+    "question": "Failure occurrences can be represented as",
+    "options": [
+      "Time to failure",
+      "Time interval between failures",
+      "Failures experienced in a time interval",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Reliability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 969,
+    "question": "As the reliability increases, failure intensity",
+    "options": [
+      "decreases",
+      "increases",
+      "no effect",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Reliability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 970,
+    "question": "Maximum possible value of reliability is",
+    "options": [
+      "100",
+      "10",
+      "1",
+      "0"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Reliability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 971,
+    "question": "Minimum possible value of reliability is",
+    "options": [
+      "100",
+      "10",
+      "1",
+      "0"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Reliability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 972,
+    "question": "Software Quality is",
+    "options": [
+      "Conformance to requirements",
+      "Fitness for the purpose",
+      "Level of satisfaction",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 973,
+    "question": "Defect rate is",
+    "options": [
+      "Number of defects per million lines of source code",
+      "Number of defects per function point",
+      "Number of defects per unit of size of software",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 974,
+    "question": "How many product quality factors have been proposed in McCall quality model?",
+    "options": [
+      "2",
+      "3",
+      "11",
+      "6"
+    ],
+    "correctAnswer": "C", // Note: Changed from "D" to "C" based on research on McCall model
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 975,
+    "question": "Which one is not a product quality factor of McCall quality model?",
+    "options": [
+      "Product revision",
+      "Product operation",
+      "Product specification",
+      "Product transition"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 976,
+    "question": "The second level of quality attributes in McCall quality model are termed as",
+    "options": [
+      "quality criteria",
+      "quality factors",
+      "quality guidelines",
+      "quality specifications"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 977,
+    "question": "Which one is not a level in Boehm software quality model?",
+    "options": [
+      "Primary uses",
+      "Intermediate constructs",
+      "Primitive constructs",
+      "Final constructs"
+    ],
+    "correctAnswer": "D",
+    "topic": "Software Quality",
+    "difficulty": "hard"
+  },
+  {
+    "id": 978,
+    "question": "Which one is not a software quality model?",
+    "options": [
+      "McCall model",
+      "Boehm model",
+      "ISO 9000",
+      "ISO 9126"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Quality",
+    "difficulty": "medium"
+  },
+  {
+    "id": 979,
+    "question": "Basic execution time model was developed by",
+    "options": [
+      "Bev.Littlewood",
+      "J.D.Musa",
+      "R.Pressman",
+      "Victor Baisili"
+    ],
+    "correctAnswer": "B", // Corrected from "D" to "B" based on research
+    "topic": "Software Reliability",
+    "difficulty": "hard"
+  },
+  {
+    "id": 980,
+    "question": "NHPP stands for",
+    "options": [
+      "Non Homogeneous Poisson Process",
+      "Non Heterogeneous Poisson Process",
+      "Non Homogeneous Poisson Product",
+      "Non Heterogeneous Poisson Product"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Reliability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 981,
+    "question": "In Basic execution time model, failure intensity is given by",
+    "options": [
+      "λ(µ)=λ0(1-µ²/V0)",
+      "λ(µ)=λ0(1-µ/V0)",
+      "λ(µ)=λ0(1-V0/µ²)",
+      "λ(µ)=λ0(1- V0/µ)"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Reliability",
+    "difficulty": "hard"
+  },
+  {
+    "id": 982,
+    "question": "In Basic execution time model, additional number of failures required to achieve a failure intensity objective is expressed as",
+    "options": [
+      "0/λ0(λP - λF)",
+      "0/λ0(λF – λP)",
+      "λ0 0(λF – λP)",
+      "λ0/0 (λP - λF)"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Reliability",
+    "difficulty": "hard"
+  },
+  {
+    "id": 983,
+    "question": "In Logarithmic Poisson execution model, 'θ' is known as",
+    "options": [
+      "Failure intensity function parameter",
+      "Failure intensity decay parameter",
+      "Failure intensity measurement",
+      "Failure intensity increment parameter"
+    ],
+    "correctAnswer": "B",
+    "topic": "Software Reliability",
+    "difficulty": "hard"
+  },
+  {
+    "id": 984,
+    "question": "Failure intensity function of Logarithmic Poisson execution model is given as",
+    "options": [
+      "λ(µ)= λ0LN(-θµ)",
+      "λ(µ)= λ0exp(θµ)",
+      "λ(µ)= λ0exp(-θµ)",
+      "λ(µ)= λ0log(-θµ)"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Reliability",
+    "difficulty": "hard"
+  },
+  {
+    "id": 985,
+    "question": "CMM level 1 has",
+    "options": [
+      "6 KPAs",
+      "2 KPAs",
+      "0 KPAs",
+      "None of the above"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Process",
+    "difficulty": "medium"
+  },
+  {
+    "id": 986,
+    "question": "MTBF stands for",
+    "options": [
+      "Mean time between failure",
+      "Maximum time between failures",
+      "Minimum time between failures",
+      "Many time between failures"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Reliability",
+    "difficulty": "easy"
+  },
+  {
+    "id": 987,
+    "question": "CMM model is a technique to",
+    "options": [
+      "Improve the software process",
+      "Automatically develop the software",
+      "Test the software",
+      "All of the above"
+    ],
+    "correctAnswer": "A",
+    "topic": "Software Process",
+    "difficulty": "medium"
+  },
+  {
+    "id": 988,
+    "question": "Total numbers of maturing levels in CMM are",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "correctAnswer": "C",
+    "topic": "Software Process",
+    "difficulty": "medium"
   }
 ]
