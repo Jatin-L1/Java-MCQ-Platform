@@ -4272,5 +4272,2033 @@ export const questions: Question[] = [
     "correctAnswer": "D",
     "topic": "8051 Microcontroller",
     "difficulty": "easy"
+  },
+  {
+    "id": 326,
+    "question": "What is the primary function of an Arduino board?",
+    "options": [
+      "To act as a microprocessor",
+      "To simplify the process of creating control systems",
+      "To store large amounts of data",
+      "To replace a computer entirely"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 327,
+    "question": "Which of the following components is NOT typically found on an Arduino board?",
+    "options": [
+      "Microcontroller chip",
+      "On-board power supply",
+      "USB port for communication with PC",
+      "High-end graphics processor"
+    ],
+    "correctAnswer": "D",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 328,
+    "question": "What is the key advantage of using an Arduino board in system design?",
+    "options": [
+      "It eliminates the need for PCB design and implementation",
+      "It is a high-performance computing platform",
+      "It provides complex software libraries for AI development",
+      "It automatically performs advanced signal processing tasks"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 329,
+    "question": "What type of chip does the Arduino board typically contain?",
+    "options": [
+      "Digital signal processor",
+      "Microcontroller chip",
+      "Graphics processing unit",
+      "Analog-to-digital converter"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 330,
+    "question": "Which of the following is used to communicate between an Arduino board and a PC?",
+    "options": [
+      "Bluetooth",
+      "Wi-Fi",
+      "USB port",
+      "Ethernet cable"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 331,
+    "question": "Why does Arduino simplify control system creation?",
+    "options": [
+      "It provides ready-made software applications",
+      "It offers an easy-to-use programming environment and hardware platform",
+      "It allows for the creation of advanced algorithms",
+      "It automatically generates circuit diagrams for you"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 332,
+    "question": "Which Arduino board is considered the most used and documented?",
+    "options": [
+      "Mega",
+      "LilyPad",
+      "UNO",
+      "Nano"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 333,
+    "question": "The Mega Arduino board is designed for which type of projects?",
+    "options": [
+      "Simple, beginner-level projects",
+      "More complex projects requiring additional I/O pins",
+      "E-textiles and wearable projects",
+      "Projects requiring compact size"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 334,
+    "question": "What is the main feature of the Mega Arduino board?",
+    "options": [
+      "54 digital I/O pins and 16 analog inputs",
+      "Small size for portability",
+      "Compatibility with Bluetooth and Wi-Fi",
+      "Integrated display for user interaction"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 335,
+    "question": "Which Arduino board is designed for e-textiles and wearable projects?",
+    "options": [
+      "UNO",
+      "Mega",
+      "LilyPad",
+      "Nano"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 336,
+    "question": "What is the primary difference between the Nano and UNO boards?",
+    "options": [
+      "The Nano is more complex and has more I/O pins than the UNO",
+      "The Nano is more compact and has similar functionality to the UNO",
+      "The Nano is only for use in wearables",
+      "The UNO has more I/O pins than the Nano"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 337,
+    "question": "Which of the following is the microcontroller used in the Mega board?",
+    "options": [
+      "ATmega328",
+      "ATmega2560",
+      "ATmega32",
+      "ATtiny85"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 338,
+    "question": "What is a key feature of the LilyPad Arduino board?",
+    "options": [
+      "It can be sewn to fabric and connected to power supplies for wearable projects",
+      "It is designed for large-scale industrial projects",
+      "It has more digital and analog I/O pins than the Mega",
+      "It supports high-speed data transfer via USB"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 339,
+    "question": "Which Arduino board is most suitable for small, space-constrained projects?",
+    "options": [
+      "LilyPad",
+      "Mega",
+      "Nano",
+      "UNO"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 340,
+    "question": "How many digital I/O pins are available on the Arduino UNO?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 341,
+    "question": "How many of the digital pins on the Arduino UNO support PWM (Pulse Width Modulation)?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 342,
+    "question": "Which of the following digital pins on the Arduino UNO supports PWM?",
+    "options": [
+      "Pin 2",
+      "Pin 4",
+      "Pin 6",
+      "Pin 12"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 343,
+    "question": "How many analog input pins are available on the Arduino UNO?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 344,
+    "question": "What is the range of analog input pins on the Arduino UNO?",
+    "options": [
+      "A0 to A5",
+      "A0 to A7",
+      "A1 to A6",
+      "A2 to A8"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 345,
+    "question": "Which of the following pins on the Arduino UNO is NOT a digital I/O pin?",
+    "options": [
+      "Pin 0",
+      "Pin 5",
+      "Pin 12",
+      "Pin A4"
+    ],
+    "correctAnswer": "D",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 346,
+    "question": "The analog pins on the Arduino UNO can accept what type of values?",
+    "options": [
+      "Only digital values",
+      "Only PWM values",
+      "Only analog voltage values",
+      "Both digital and analog values"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 347,
+    "question": "Which digital pins on the Arduino UNO are PWM pins?",
+    "options": [
+      "0, 2, 4, 6, 8, 10",
+      "3, 5, 6, 9, 10, 11",
+      "2, 4, 6, 8, 10, 12",
+      "1, 3, 5, 7, 9, 11"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 348,
+    "question": "What does the Reset Button on an Arduino board do?",
+    "options": [
+      "It restarts the Arduino board's power",
+      "It restarts any code that is loaded to the Arduino board",
+      "It resets the microcontroller's internal memory",
+      "It turns the board on and off"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 349,
+    "question": "What is the purpose of the AREF pin on an Arduino board?",
+    "options": [
+      "It connects to a power source for the board",
+      "It is used to set an external reference voltage for analog signals",
+      "It resets the Arduino board",
+      "It acts as a digital input/output pin"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 350,
+    "question": "How many Ground Pins are there on an Arduino board, and what is their function?",
+    "options": [
+      "One, used to provide power",
+      "Two, used for digital inputs",
+      "Several, all working the same to provide a common ground reference",
+      "Only one, used for communication"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 351,
+    "question": "Which pins on the Arduino board are used for Digital Input/Output?",
+    "options": [
+      "Pins A0 to A5",
+      "Pins 0 to 13",
+      "Pins 14 to 20",
+      "Pins 1 to 6"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 352,
+    "question": "What is the function of the PWM pins on the Arduino board?",
+    "options": [
+      "To provide a fixed voltage output",
+      "To simulate analog output using pulse-width modulation",
+      "To transmit data to other devices",
+      "To connect to external analog sensors"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 353,
+    "question": "What is the purpose of the USB Connection on an Arduino board?",
+    "options": [
+      "To power the Arduino board and upload sketches",
+      "To connect external sensors to the board",
+      "To transmit data wirelessly",
+      "To provide a source of backup power"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 354,
+    "question": "What do the TX/RX LEDs indicate on the Arduino board?",
+    "options": [
+      "Transmission and reception of data",
+      "Power status of the board",
+      "The voltage supplied to the board",
+      "Error in the uploaded code"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 355,
+    "question": "Which component on the Arduino board is considered the brains of the board and stores the programs?",
+    "options": [
+      "Power LED",
+      "Voltage Regulator",
+      "ATmega Microcontroller",
+      "Reset Button"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 356,
+    "question": "What does the Power LED Indicator on the Arduino board signify?",
+    "options": [
+      "The Arduino board is receiving power",
+      "The board is actively running a program",
+      "The board is in sleep mode",
+      "There is an error in the code"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 357,
+    "question": "What is the function of the Voltage Regulator on the Arduino board?",
+    "options": [
+      "It converts analog signals to digital",
+      "It adjusts the voltage entering the Arduino board",
+      "It supplies power to the connected peripherals",
+      "It regulates the clock speed of the microcontroller"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 358,
+    "question": "The DC Power Barrel Jack is used for what purpose?",
+    "options": [
+      "To connect the Arduino to external sensors",
+      "To power the Arduino using an external power supply",
+      "To upload code to the Arduino",
+      "To provide data connections between devices"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 359,
+    "question": "Which pin on the Arduino board supplies 3.3V of power?",
+    "options": [
+      "5V Pin",
+      "DC Power Jack",
+      "3.3V Pin",
+      "Ground Pin"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 360,
+    "question": "Which pin on the Arduino board supplies 5V of power?",
+    "options": [
+      "Ground Pin",
+      "5V Pin",
+      "3.3V Pin",
+      "AREF Pin"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 361,
+    "question": "What is the function of the Analog Pins on an Arduino board?",
+    "options": [
+      "To provide digital input and output",
+      "To power external components",
+      "To read signals from analog sensors and convert them to digital values",
+      "To simulate PWM outputs"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 362,
+    "question": "What is the purpose of the Reset Button on an Arduino board?",
+    "options": [
+      "To restart the Arduino board",
+      "To reset the power supply",
+      "To restart the uploaded program",
+      "To power off the Arduino board"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 363,
+    "question": "What does the AREF pin on an Arduino board stand for?",
+    "options": [
+      "Analog Reference",
+      "Analog Reset",
+      "Alternative Reference",
+      "Analog Reset Enable"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 364,
+    "question": "What is the function of the Ground Pin on an Arduino board?",
+    "options": [
+      "To supply power to the board",
+      "To connect the board to an external voltage source",
+      "To complete the electrical circuit by providing a reference ground",
+      "To regulate the voltage input to the board"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 365,
+    "question": "What is the function of the PWM pins on the Arduino board, marked with a (~) symbol?",
+    "options": [
+      "They are used to measure analog input signals",
+      "They simulate analog output signals by modulating the pulse width",
+      "They can only handle digital input signals",
+      "They act as digital output pins only"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 366,
+    "question": "What does the TX/RX section on the Arduino board indicate?",
+    "options": [
+      "The board's temperature and voltage levels",
+      "The status of power supply to the board",
+      "The transmission and reception of serial data",
+      "The analog signal input/output status"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 367,
+    "question": "Which component on the Arduino board is responsible for storing the program code?",
+    "options": [
+      "TX/RX Pins",
+      "ATmega Microcontroller",
+      "Voltage Regulator",
+      "USB Connection"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 368,
+    "question": "What does the Power LED Indicator on the Arduino board signify?",
+    "options": [
+      "The Arduino is receiving power from an external source",
+      "The Arduino has completed uploading code",
+      "The Arduino is in sleep mode",
+      "The Arduino is receiving input from a sensor"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 369,
+    "question": "What is the purpose of the Voltage Regulator on the Arduino board?",
+    "options": [
+      "To convert the digital signals to analog",
+      "To control and regulate the amount of voltage going into the Arduino",
+      "To increase the voltage output from the board",
+      "To handle input-output communication between devices"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 370,
+    "question": "What is the function of the DC Power Barrel Jack on the Arduino board?",
+    "options": [
+      "To provide a direct connection to the computer for programming",
+      "To supply power to the Arduino board from an external power source",
+      "To monitor and measure voltage levels",
+      "To control the power output to connected sensors"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 371,
+    "question": "The 3.3V Pin on the Arduino board supplies:",
+    "options": [
+      "5V of power to external devices",
+      "3.3V of power to external devices",
+      "Both 3.3V and 5V depending on the board version",
+      "3.3V to power the Arduino itself"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 372,
+    "question": "What is the 5V Pin on the Arduino board used for?",
+    "options": [
+      "To supply 5 volts to power external components or sensors",
+      "To output 5 volts for voltage regulation",
+      "To provide power for the ATmega Microcontroller",
+      "To regulate the incoming USB voltage"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 373,
+    "question": "How do the Analog Pins on the Arduino board function?",
+    "options": [
+      "They can output a digital signal based on input data",
+      "They can read the signal from an analog sensor and convert it into a digital value",
+      "They are used exclusively for controlling motors",
+      "They handle serial communication between the board and external devices"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 374,
+    "question": "What is the primary purpose of physical computing?",
+    "options": [
+      "To design interactive objects that communicate with humans",
+      "To build software programs that simulate physical objects",
+      "To create sensors that measure environmental conditions",
+      "To manufacture hardware components for embedded systems"
+    ],
+    "correctAnswer": "A",
+    "topic": "Physical Computing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 375,
+    "question": "Which of the following components is controlled by the software running on a microcontroller in a physical computing system?",
+    "options": [
+      "Actuators",
+      "Sensors",
+      "Outputs",
+      "Both A and B"
+    ],
+    "correctAnswer": "D",
+    "topic": "Physical Computing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 376,
+    "question": "In the context of physical computing, what role do actuators play?",
+    "options": [
+      "They convert physical signals into electrical signals",
+      "They control the output based on sensor inputs",
+      "They collect data from the environment",
+      "They store and process data from sensors"
+    ],
+    "correctAnswer": "B",
+    "topic": "Physical Computing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 377,
+    "question": "Which of the following is an example of an actuator used in physical computing systems?",
+    "options": [
+      "Temperature sensor",
+      "Motor",
+      "Light sensor",
+      "Thermistor"
+    ],
+    "correctAnswer": "B",
+    "topic": "Physical Computing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 378,
+    "question": "In a physical computing system, which component is responsible for receiving data from the environment?",
+    "options": [
+      "Actuator",
+      "Sensor",
+      "Microcontroller",
+      "Output device"
+    ],
+    "correctAnswer": "B",
+    "topic": "Physical Computing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 379,
+    "question": "Which of the following is an example of an output device in a physical computing system?",
+    "options": [
+      "Microphone",
+      "Servo motor",
+      "LED display",
+      "Photocell"
+    ],
+    "correctAnswer": "C",
+    "topic": "Physical Computing",
+    "difficulty": "easy"
+  },
+  {
+    "id": 380,
+    "question": "What is the function of the microcontroller in a physical computing system?",
+    "options": [
+      "To provide power to the actuators",
+      "To control sensors and actuators based on programmed behavior",
+      "To collect environmental data",
+      "To convert analog signals into digital format"
+    ],
+    "correctAnswer": "B",
+    "topic": "Physical Computing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 381,
+    "question": "Which of the following is true about the interaction between inputs and outputs in a physical computing system?",
+    "options": [
+      "Inputs provide data that is processed to control outputs",
+      "Outputs collect data from the environment",
+      "Inputs directly control outputs without any processing",
+      "Inputs and outputs are not connected in a physical computing system"
+    ],
+    "correctAnswer": "A",
+    "topic": "Physical Computing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 382,
+    "question": "Which of the following best describes a sensor in the context of physical computing?",
+    "options": [
+      "A device that provides feedback based on user interaction",
+      "A device that records and processes signals to control outputs",
+      "A device that collects information from the physical world and sends it to the microcontroller",
+      "A device that executes the behavior programmed into the microcontroller"
+    ],
+    "correctAnswer": "C",
+    "topic": "Physical Computing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 383,
+    "question": "In a physical computing system, which part of the system typically interfaces with the human user?",
+    "options": [
+      "Sensors",
+      "Actuators",
+      "Software running on the microcontroller",
+      "Input and output devices"
+    ],
+    "correctAnswer": "B",
+    "topic": "Physical Computing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 384,
+    "question": "Which of the following is a main component of the general architecture of an AVR microcontroller?",
+    "options": [
+      "Analog and digital I/O pins",
+      "Bluetooth module",
+      "Wi-Fi chip",
+      "Camera sensor"
+    ],
+    "correctAnswer": "A",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 385,
+    "question": "In the AVR microcontroller architecture, which component is responsible for storing the program code?",
+    "options": [
+      "Analog I/O pins",
+      "Flash memory",
+      "USB port",
+      "Power supply"
+    ],
+    "correctAnswer": "B",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 386,
+    "question": "What function does the USB port serve in the AVR microcontroller system?",
+    "options": [
+      "Provides power to the microcontroller",
+      "Allows serial communication between the microcontroller and external devices",
+      "Stores program data",
+      "Converts digital signals to analog signals"
+    ],
+    "correctAnswer": "B",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 387,
+    "question": "What types of pins are integrated into the AVR microcontroller for interacting with external devices?",
+    "options": [
+      "Only digital pins",
+      "Only analog pins",
+      "Both analog and digital I/O pins",
+      "Only power supply pins"
+    ],
+    "correctAnswer": "C",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 388,
+    "question": "Where is the program code typically stored in an AVR microcontroller?",
+    "options": [
+      "In the RAM",
+      "In the Flash memory",
+      "In the I/O pins",
+      "In the CPU registers"
+    ],
+    "correctAnswer": "B",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 389,
+    "question": "Which of the following best describes the role of the analog and digital I/O pins in the AVR microcontroller?",
+    "options": [
+      "To connect the microcontroller to a power source",
+      "To store the program code",
+      "To facilitate communication with external devices and sensors",
+      "To provide serial communication with the USB port"
+    ],
+    "correctAnswer": "C",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 390,
+    "question": "Which of the following components is typically integrated within an AVR microcontroller to enable it to communicate with a computer?",
+    "options": [
+      "Flash memory",
+      "USB port",
+      "Voltage regulator",
+      "Oscillator circuit"
+    ],
+    "correctAnswer": "B",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 391,
+    "question": "What type of memory is typically used to store the program in an AVR microcontroller?",
+    "options": [
+      "ROM",
+      "RAM",
+      "Flash memory",
+      "EEPROM"
+    ],
+    "correctAnswer": "C",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 392,
+    "question": "Which of the following is NOT typically a function of the AVR microcontroller's USB port?",
+    "options": [
+      "Serial data transfer",
+      "Program uploading",
+      "Power supply",
+      "Communication with external devices"
+    ],
+    "correctAnswer": "C",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 393,
+    "question": "The AVR microcontroller is most commonly used in which of the following applications?",
+    "options": [
+      "High-performance computing systems",
+      "Embedded systems and physical computing platforms",
+      "Large-scale data storage systems",
+      "Network routing and switching"
+    ],
+    "correctAnswer": "B",
+    "topic": "Microcontrollers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 394,
+    "question": "What is the clock speed of the Arduino UNO (ATmega 328)?",
+    "options": [
+      "12.5 MHz",
+      "16 MHz",
+      "8 MHz",
+      "32 MHz"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 395,
+    "question": "How much Flash program memory is available on the Arduino UNO (ATmega 328)?",
+    "options": [
+      "2 KBytes",
+      "16 KBytes",
+      "32 KBytes",
+      "64 KBytes"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 396,
+    "question": "What is the size of SRAM available on the Arduino UNO (ATmega 328)?",
+    "options": [
+      "1 KByte",
+      "2 KBytes",
+      "4 KBytes",
+      "8 KBytes"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 397,
+    "question": "How many digital input/output pins are available on the Arduino UNO (ATmega 328)?",
+    "options": [
+      "6",
+      "8",
+      "14",
+      "16"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 398,
+    "question": "How many analog input pins are provided by the Arduino UNO (ATmega 328)?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "easy"
+  },
+  {
+    "id": 399,
+    "question": "How many analog output pins (PWM) does the Arduino UNO (ATmega 328) have?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 400,
+    "question": "Which part of the memory on the Arduino UNO (ATmega 328) is used by the bootloader?",
+    "options": [
+      "2 KBytes",
+      "16 KBytes",
+      "32 KBytes",
+      "0.5 KBytes"
+    ],
+    "correctAnswer": "D",
+    "topic": "Arduino",
+    "difficulty": "hard"
+  },
+  {
+    "id": 401,
+    "question": "What is the width of the Arduino UNO (ATmega 328) microcontroller?",
+    "options": [
+      "8-bit",
+      "16-bit",
+      "32-bit",
+      "64-bit"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 402,
+    "question": "Which of the following is true about the Arduino UNO (ATmega 328) Flash program memory?",
+    "options": [
+      "It is completely available for user program storage",
+      "0.5 KBytes of it is used by the bootloader",
+      "It is used for storing the microcontroller's operating system",
+      "It is used for dynamic data storage during program execution"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 403,
+    "question": "Which component in the Arduino UNO (ATmega 328) defines the processing speed of the microcontroller?",
+    "options": [
+      "SRAM",
+      "Flash memory",
+      "Clock speed",
+      "Digital input pins"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 404,
+    "question": "What happens when the Arduino board is powered ON?",
+    "options": [
+      "The main program starts running",
+      "The microcontroller enters an infinite loop",
+      "The setup() function is executed",
+      "The board goes into sleep mode"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 405,
+    "question": "What is the purpose of the setup() function in Arduino programming?",
+    "options": [
+      "It is used to execute code repeatedly during program execution",
+      "It runs once at the beginning to initialize settings, such as pin modes",
+      "It stores global variables",
+      "It is used to turn off the Arduino board"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 406,
+    "question": "What happens when you press the reset button on an Arduino board?",
+    "options": [
+      "The program stops running",
+      "The board enters a power-saving mode",
+      "The setup() function is called again",
+      "The Arduino starts a new program from the bootloader"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino",
+    "difficulty": "medium"
+  },
+  {
+    "id": 407,
+    "question": "Which type of variables are declared and initialized outside of functions and can be accessed globally in the Arduino program?",
+    "options": [
+      "Local variables",
+      "Global variables",
+      "Static variables",
+      "Temporary variables"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 408,
+    "question": "In Arduino, how is the loop() function used in the program?",
+    "options": [
+      "It initializes variables",
+      "It runs once at the beginning",
+      "It contains the main code and runs repeatedly after the setup() function",
+      "It is used to reset the board"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 409,
+    "question": "Which of the following statements is true about global variables in Arduino?",
+    "options": [
+      "Global variables can only be accessed inside the loop() function",
+      "Global variables are declared outside of functions and can be accessed throughout the program",
+      "Global variables must be initialized inside the setup() function",
+      "Global variables are used only for storing data temporarily"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 410,
+    "question": "When does the setup() function in an Arduino program get executed?",
+    "options": [
+      "Once every time the Arduino board is reset",
+      "Continuously after the loop() function starts",
+      "Only after the loop() function finishes",
+      "Only when the Arduino is powered OFF and then ON again"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 411,
+    "question": "How can you make a variable accessible throughout your Arduino program?",
+    "options": [
+      "Declare the variable inside the loop() function",
+      "Declare the variable inside the setup() function",
+      "Declare the variable outside of both setup() and loop()",
+      "Declare the variable as a constant"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 412,
+    "question": "What happens after the setup() function finishes executing in an Arduino program?",
+    "options": [
+      "The program halts and waits for the user to press reset",
+      "The loop() function starts and runs repeatedly",
+      "The Arduino enters sleep mode",
+      "The program resets and re-executes from the setup() function"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 413,
+    "question": "Which of the following statements is true about global variables in Arduino programming?",
+    "options": [
+      "They are only used to store sensor data",
+      "They can be initialized within any function but are accessible only within that function",
+      "They are stored in flash memory and cannot be changed during program execution",
+      "They can be accessed from any function in the program"
+    ],
+    "correctAnswer": "D",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 414,
+    "question": "Which of the following is a key feature of the text editor in the Arduino IDE?",
+    "options": [
+      "It compiles the code automatically",
+      "It contains syntax highlighting and automatic indentation",
+      "It provides a GUI for hardware design",
+      "It automatically uploads the code to the Arduino board"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 415,
+    "question": "What is the role of the toolbar in the Arduino IDE?",
+    "options": [
+      "It allows for real-time debugging of the code",
+      "It provides quick access to common functions like compiling, uploading, and opening files",
+      "It stores and manages libraries used in the code",
+      "It displays the data sent from the Arduino board"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 416,
+    "question": "Which of the following components in the Arduino IDE is responsible for displaying error messages and other outputs during compilation?",
+    "options": [
+      "Text editor",
+      "Toolbar",
+      "Text console",
+      "Serial monitor"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 417,
+    "question": "What is the purpose of the compiler in the Arduino IDE?",
+    "options": [
+      "To upload the code to the Arduino board",
+      "To check the syntax of the code",
+      "To convert the written code into machine code that the microcontroller can execute",
+      "To debug errors in the code"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino IDE",
+    "difficulty": "medium"
+  },
+  {
+    "id": 418,
+    "question": "What function does the Serial Monitor serve in the Arduino IDE?",
+    "options": [
+      "It compiles the code before uploading",
+      "It allows you to debug the program by displaying data sent to/from the Arduino over the COM serial port",
+      "It manages the libraries used in the Arduino code",
+      "It uploads the code to the Arduino board"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 419,
+    "question": "Which part of the Arduino IDE displays real-time data sent by the Arduino board through the COM serial port?",
+    "options": [
+      "Text editor",
+      "Compiler",
+      "Serial Monitor",
+      "Text Console"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 420,
+    "question": "In the Arduino IDE, which component is used to check for errors or output information during the compilation process?",
+    "options": [
+      "Serial Monitor",
+      "Text Console",
+      "Compiler",
+      "Toolbar"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino IDE",
+    "difficulty": "medium"
+  },
+  {
+    "id": 421,
+    "question": "Which of the following is NOT a feature provided by the Arduino IDE?",
+    "options": [
+      "Text editor with syntax highlighting",
+      "Integrated debugger",
+      "Toolbar with common actions like upload and compile",
+      "Serial Monitor for communication and debugging"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino IDE",
+    "difficulty": "medium"
+  },
+  {
+    "id": 422,
+    "question": "What happens when you press the \"Upload\" button in the Arduino IDE?",
+    "options": [
+      "The code is compiled and uploaded to the Arduino board",
+      "The Serial Monitor opens automatically",
+      "The code is compiled but not uploaded",
+      "The code is saved in the IDE's memory but not uploaded"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 423,
+    "question": "What is the primary function of the Serial Monitor in the Arduino IDE?",
+    "options": [
+      "To compile the code for the Arduino",
+      "To monitor and debug data communication between the Arduino and the computer",
+      "To change the settings of the Arduino board",
+      "To provide an interface for writing and editing the code"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 424,
+    "question": "What type of programming language is used for writing programs in Arduino?",
+    "options": [
+      "Proprietary language",
+      "Open source computer programming language",
+      "Assembly language",
+      "Visual programming language"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 425,
+    "question": "The Arduino programming language is derived from which of the following languages?",
+    "options": [
+      "Python",
+      "Java",
+      "C/C++",
+      "Pascal"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+    {
+    "id": 426,
+    "question": "Which of the following best describes the changes made to the C/C++ language in Arduino programming?",
+    "options": [
+      "The language remains identical to C/C++ with no changes",
+      "There are slight simplifications and modifications to make it easier for hardware control",
+      "The language is completely rewritten for embedded systems",
+      "The language supports only high-level programming without hardware control"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 427,
+    "question": "Which of the following data types is NOT typically used in Arduino programming?",
+    "options": [
+      "Integer",
+      "Float",
+      "Long",
+      "String (with no limitations)"
+    ],
+    "correctAnswer": "D",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 428,
+    "question": "Which of the following is an example of a control statement used in Arduino programming?",
+    "options": [
+      "println()",
+      "if, switch/case, while, for",
+      "delay()",
+      "analogWrite()"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 429,
+    "question": "What type of operators are included in the Arduino programming language?",
+    "options": [
+      "Logical and comparison operators",
+      "Mathematical, logical, and comparison operators",
+      "Only mathematical operators",
+      "Only comparison operators"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 430,
+    "question": "In Arduino programming, what is the term used to describe a program?",
+    "options": [
+      "Project",
+      "Circuit",
+      "Sketch",
+      "Code Block"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 431,
+    "question": "Which of the following is a characteristic of the Arduino programming language?",
+    "options": [
+      "It requires complex syntax for hardware interaction",
+      "It is designed to offer simple access to I/O devices",
+      "It only supports object-oriented programming",
+      "It lacks support for data types like integers and floats"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 432,
+    "question": "Which of the following is a common data type in Arduino programming?",
+    "options": [
+      "Byte",
+      "Double",
+      "Character",
+      "String (only for fixed-size strings)"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 433,
+    "question": "Which of the following is true about the Arduino programming environment?",
+    "options": [
+      "It exclusively uses assembly language for all operations",
+      "It includes libraries and functions similar to those in classical programming languages",
+      "It requires no external hardware to run",
+      "It is a purely theoretical language with no practical application"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 434,
+    "question": "What does the pinMode(pin, INPUT/OUTPUT) function do in Arduino programming?",
+    "options": [
+      "It sets the baud rate for serial communication",
+      "It initializes a pin as an input or output",
+      "It reads the state of a digital pin",
+      "It sets the PWM value for a pin"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 435,
+    "question": "What is the purpose of the Serial.begin(9600) function in Arduino?",
+    "options": [
+      "To initiate serial communication with a baud rate of 9600",
+      "To set the speed of the Arduino's clock",
+      "To turn on the serial monitor at 9600 Hz",
+      "To send data to an external sensor"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 436,
+    "question": "Which of the following baud rates is NOT supported by the Serial.begin() function in Arduino?",
+    "options": [
+      "9600",
+      "115200",
+      "57600",
+      "12345"
+    ],
+    "correctAnswer": "D",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 437,
+    "question": "What does the Serial.print(\" \") function do in the Arduino IDE?",
+    "options": [
+      "It prints text to the Arduino board",
+      "It writes text to the serial monitor",
+      "It prints text to the screen on the Arduino board",
+      "It sends the text to a sensor for processing"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 438,
+    "question": "Which of the following functions is used to set the state of a digital pin on the Arduino?",
+    "options": [
+      "analogWrite()",
+      "pinMode()",
+      "digitalWrite()",
+      "digitalRead()"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 439,
+    "question": "What does the digitalRead(pin) function do in Arduino?",
+    "options": [
+      "It sets a digital pin's state to HIGH or LOW",
+      "It reads and returns the state of a digital pin",
+      "It initializes a pin as either input or output",
+      "It sends data through the serial port"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 440,
+    "question": "Which function is used to read the value of an analog pin in Arduino?",
+    "options": [
+      "digitalRead()",
+      "analogWrite()",
+      "analogRead()",
+      "pinMode()"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 441,
+    "question": "What is the purpose of the analogWrite(pin, intValue) function in Arduino?",
+    "options": [
+      "To set an analog pin to HIGH or LOW",
+      "To read an analog value from a pin",
+      "To output a PWM (Pulse Width Modulation) value to a pin",
+      "To turn off PWM output on an analog pin"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 442,
+    "question": "What does the delay(milliseconds) function do in an Arduino program?",
+    "options": [
+      "It pauses the program for a specified amount of time (in milliseconds)",
+      "It reads a value from the serial port after a delay",
+      "It adjusts the speed of the microcontroller",
+      "It waits for user input through the serial monitor"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 443,
+    "question": "Which of the following functions would you use to wait for a specified period in an Arduino program?",
+    "options": [
+      "delay(milliseconds)",
+      "wait(milliseconds)",
+      "pause(milliseconds)",
+      "sleep(milliseconds)"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 444,
+    "question": "What is the purpose of the setup() function in an Arduino sketch?",
+    "options": [
+      "It runs continuously in a loop",
+      "It is used to initialize variables, set pin modes, and start libraries",
+      "It reads input from the serial monitor",
+      "It handles analog signal processing"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 445,
+    "question": "How many times does the setup() function run in an Arduino sketch?",
+    "options": [
+      "Once after each power-up or reset of the Arduino board",
+      "Every time the loop() function is executed",
+      "Continuously during the program's runtime",
+      "Only when an error occurs in the loop() function"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 446,
+    "question": "What is the main purpose of the loop() function in an Arduino sketch?",
+    "options": [
+      "To initialize the system's hardware components",
+      "To read data from the serial monitor",
+      "To run code repeatedly, allowing the program to respond and change dynamically",
+      "To execute setup code only once"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 447,
+    "question": "What happens after the setup() function finishes executing in an Arduino program?",
+    "options": [
+      "The program halts and waits for user input",
+      "The loop() function begins and runs continuously",
+      "The Arduino resets",
+      "The program starts from the beginning of the setup() function"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 448,
+    "question": "Which section of the Arduino sketch allows you to write code that runs repeatedly?",
+    "options": [
+      "setup()",
+      "loop()",
+      "initialize()",
+      "main()"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 449,
+    "question": "What is the relationship between the setup() and loop() functions in an Arduino sketch?",
+    "options": [
+      "The setup() function runs only once, while the loop() function runs repeatedly",
+      "The setup() function runs continuously, while the loop() function runs only once",
+      "Both functions run continuously in parallel",
+      "The setup() function runs repeatedly after the loop() function finishes"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 450,
+    "question": "In the bare minimum Arduino code, where do you typically initialize variables and configure pin modes?",
+    "options": [
+      "Inside the loop() function",
+      "Inside the setup() function",
+      "In a separate initialization function",
+      "In the main() function"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 451,
+    "question": "What is the purpose of the loop() function in an Arduino program?",
+    "options": [
+      "To set up the initial state of the program",
+      "To initialize libraries",
+      "To control the board and allow it to interact with hardware components continuously",
+      "To exit the program after running once"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 452,
+    "question": "Which of the following is true about the execution flow of an Arduino sketch?",
+    "options": [
+      "The setup() function runs continuously while the loop() function runs once",
+      "The setup() function runs once, and then the loop() function runs repeatedly",
+      "The loop() function runs once, and then the setup() function runs repeatedly",
+      "Both setup() and loop() functions run together in parallel"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 453,
+    "question": "What happens if the loop() function contains no code in an Arduino sketch?",
+    "options": [
+      "The program will not compile",
+      "The program will execute the setup() function repeatedly",
+      "The program will run but do nothing repeatedly",
+      "The program will stop execution after setup() finishes"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 454,
+    "question": "Which of the following data types in Arduino is used to store whole numbers?",
+    "options": [
+      "float",
+      "int",
+      "char",
+      "String"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 455,
+    "question": "Which data type would you use to store a value between 0 and 255?",
+    "options": [
+      "long",
+      "byte",
+      "short",
+      "int"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 456,
+    "question": "What is the difference between float and double in Arduino?",
+    "options": [
+      "float has a smaller range than double",
+      "double has more decimal places of precision than float",
+      "double uses less memory than float",
+      "There is no difference between float and double"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 457,
+    "question": "Which of the following data types would you use to store a single character such as 'A' or '1'?",
+    "options": [
+      "int",
+      "char",
+      "String",
+      "bool"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 458,
+    "question": "What is the range of values that a long variable can store in Arduino?",
+    "options": [
+      "-32,768 to 32,767",
+      "-2,147,483,648 to 2,147,483,647",
+      "0 to 255",
+      "0 to 65,535"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 459,
+    "question": "Which of the following data types represents a true/false value in Arduino programming?",
+    "options": [
+      "char",
+      "bool",
+      "int",
+      "float"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 460,
+    "question": "What is the maximum number of elements you can store in an array of int if it is defined as int numbers[5];?",
+    "options": [
+      "255",
+      "32,767",
+      "5",
+      "0"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 461,
+    "question": "Which data type in Arduino is used to store a string of characters?",
+    "options": [
+      "String",
+      "char",
+      "bool",
+      "long"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 462,
+    "question": "Which of the following data types can store decimal numbers in Arduino?",
+    "options": [
+      "int and long",
+      "char and byte",
+      "float and double",
+      "bool and String"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 463,
+    "question": "Which of the following is used to create a custom user-defined data type in Arduino?",
+    "options": [
+      "int",
+      "char",
+      "struct or class",
+      "float"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 464,
+    "question": "What is the range of values that a short variable can store in Arduino?",
+    "options": [
+      "-32,768 to 32,767",
+      "0 to 255",
+      "-2,147,483,648 to 2,147,483,647",
+      "0 to 65,535"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 465,
+    "question": "Which of the following best describes an array in Arduino programming?",
+    "options": [
+      "A single variable that can hold multiple values of the same type",
+      "A variable that can store only one value at a time",
+      "A class used to manage text data",
+      "A data type used to store a single decimal number"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 466,
+    "question": "What is the main advantage of using the String class in Arduino?",
+    "options": [
+      "It is used to store individual characters efficiently",
+      "It allows for dynamic manipulation of text strings in your program",
+      "It is faster than using arrays for storing text",
+      "It automatically handles memory allocation for integers"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 467,
+    "question": "What is the purpose of the bool data type in Arduino?",
+    "options": [
+      "To store integers",
+      "To store floating-point numbers",
+      "To store truth values (either true or false)",
+      "To store characters"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 468,
+    "question": "Which of the following data types uses 1 byte of memory in Arduino?",
+    "options": [
+      "long",
+      "int",
+      "byte",
+      "double"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 469,
+    "question": "What is the primary purpose of the Serial Monitor in Arduino?",
+    "options": [
+      "To program the Arduino board",
+      "To send data from the Arduino to the computer and vice versa",
+      "To control hardware devices",
+      "To monitor CPU usage on the Arduino board"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 470,
+    "question": "Which of the following is true about the Serial.begin(baudRate) function in Arduino?",
+    "options": [
+      "It sets the baud rate for serial communication between the computer and the Arduino",
+      "It sends data to the Serial Monitor at the specified baud rate",
+      "It initializes the Serial Monitor at a fixed baud rate of 9600",
+      "It sets the speed of the Arduino's clock"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 471,
+    "question": "What does the Serial.print(data) function do in Arduino?",
+    "options": [
+      "Sends data followed by a newline character to the Serial Monitor",
+      "Sends data to the Serial Monitor without a newline character",
+      "Initializes the Serial Monitor at the default baud rate",
+      "Reads data from the Serial Monitor"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 472,
+    "question": "What is the purpose of the Serial.println(data) function?",
+    "options": [
+      "Sends data to the Serial Monitor and then prints a newline character",
+      "Initializes serial communication at a baud rate",
+      "Reads data from the Serial Monitor",
+      "Checks the number of bytes available in the serial buffer"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 473,
+    "question": "Which function in Arduino is used to check how many bytes are available to read from the serial buffer?",
+    "options": [
+      "Serial.print()",
+      "Serial.read()",
+      "Serial.available()",
+      "Serial.println()"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 474,
+    "question": "Which of the following is NOT a valid baud rate option for Serial.begin() in Arduino?",
+    "options": [
+      "9600",
+      "115200",
+      "14400",
+      "1000000"
+    ],
+    "correctAnswer": "C",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 475,
+    "question": "What happens when you use the Serial.read() function in Arduino?",
+    "options": [
+      "It writes data to the Serial Monitor",
+      "It reads incoming data from the serial buffer",
+      "It checks if there is data available in the serial buffer",
+      "It sends data to the Arduino via the serial port"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
+  },
+  {
+    "id": 476,
+    "question": "How can you send data from the computer to the Arduino using the Serial Monitor?",
+    "options": [
+      "By typing text in the input field and pressing Enter or clicking the \"Send\" button",
+      "By connecting a serial cable to the computer",
+      "By using the Serial.write() function in the sketch",
+      "By uploading a sketch to the Arduino"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 477,
+    "question": "Which function would you use to initialize serial communication at a baud rate of 115200?",
+    "options": [
+      "Serial.begin(9600)",
+      "Serial.begin(115200)",
+      "Serial.start(115200)",
+      "Serial.setBaud(115200)"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 478,
+    "question": "What will the following code do: Serial.print(\"Hello\")?",
+    "options": [
+      "Send the word \"Hello\" to the Serial Monitor, followed by a newline",
+      "Send the word \"Hello\" to the Serial Monitor, without a newline",
+      "Read the word \"Hello\" from the Serial Monitor",
+      "Initialize serial communication with the word \"Hello\""
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino Programming",
+    "difficulty": "easy"
+  },
+  {
+    "id": 479,
+    "question": "What does the Serial Monitor display?",
+    "options": [
+      "Only the output of the Serial.print() function",
+      "Data sent from the Arduino board via the serial port",
+      "Only text data sent from the computer to the Arduino",
+      "A live view of the Arduino board's memory usage"
+    ],
+    "correctAnswer": "B",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 480,
+    "question": "Which of the following is a common use of the Serial Monitor in Arduino programming?",
+    "options": [
+      "To display sensor data",
+      "To load sketches onto the Arduino board",
+      "To store data in EEPROM",
+      "To update the Arduino firmware"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino IDE",
+    "difficulty": "easy"
+  },
+  {
+    "id": 481,
+    "question": "Which of the following functions is used to send binary data to the Serial Monitor?",
+    "options": [
+      "Serial.write()",
+      "Serial.print()",
+      "Serial.println()",
+      "Serial.read()"
+    ],
+    "correctAnswer": "A",
+    "topic": "Arduino Programming",
+    "difficulty": "medium"
   }
 ]
