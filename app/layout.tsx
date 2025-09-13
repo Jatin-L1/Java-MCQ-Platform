@@ -2,9 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Quiz Master - Interactive Programming Quizzes',
+  description: 'Master programming concepts with 198+ curated MCQ questions. Practice fundamentals, data structures, frameworks, and advanced topics. Get instant feedback and track your progress.',
+  generator: 'Quiz Master',
+  keywords: 'programming quiz, coding practice, MCQ, software development, algorithms, data structures, web frameworks, programming fundamentals',
+  authors: [{ name: 'Jatin Sharma' }],
+  creator: 'Jatin Sharma',
 }
 
 export default function RootLayout({
