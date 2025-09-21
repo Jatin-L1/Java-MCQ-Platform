@@ -1,183 +1,161 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
-import { questions } from "@/data/questions";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, XCircle } from "lucide-react";
+import { Brain, Database, Cloud, Server, Settings, Globe, CheckCircle, BookOpen } from "lucide-react";
+import { getAllUnits } from "@/utils/questionUtils";
 
-export default function QuizPage() {
-  const router = useRouter();
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
-  const [showFeedback, setShowFeedback] = useState(false);
-  const [score, setScore] = useState(0);
-  const [answeredQuestions, setAnsweredQuestions] = useState<Record<number, string>>({});
+const iconMap = {
+  'system-design-fundamentals': Brain,
+  'system-architecture': Settings,
+  'database-design': Database,
+  'scalability-performance': Globe,
+  'cloud-fundamentals': Cloud,
+  'aws-services': Server,
+  'advanced-cloud': Settings,
+  'cloud-architecture': BookOpen
+};
 
-  // Load saved state from localStorage on component mount
-  useEffect(() => {
-    const savedState = localStorage.getItem('quizState');
-    if (savedState) {
-      try {
-        const { currentIndex, userScore, answered } = JSON.parse(savedState);
-        setCurrentQuestionIndex(currentIndex);
-        setScore(userScore);
-        setAnsweredQuestions(answered);
-      } catch (error) {
-        console.error("Failed to parse saved quiz state:", error);
-      }
-    }
-  }, []);
+export default function QuizSelectionPage() {
+  const units = getAllUnits();
 
-  // Save state to localStorage whenever it changes
-  useEffect(() => {
-    const state = {
-      currentIndex: currentQuestionIndex,
-      userScore: score,
-      answered: answeredQuestions
-    };
-    localStorage.setItem('quizState', JSON.stringify(state));
-  }, [currentQuestionIndex, score, answeredQuestions]);
+  // Split units into System Design and Cloud Computing categories
+  const systemDesignUnits = units.slice(0, 4); // First 4 units (IDs 1-200)
+  const cloudComputingUnits = units.slice(4); // Last 4 units (IDs 201-400)
 
-  const currentQuestion = questions[currentQuestionIndex];
-
-  const handleOptionSelect = (option: string) => {
-    if (showFeedback) return; // Prevent changing answer after submission
-    setSelectedOption(option);
-  };
-
-  const handleSubmitAnswer = () => {
-    if (!selectedOption) return;
-
-    // Record this answer
-    const newAnsweredQuestions = { 
-      ...answeredQuestions, 
-      [currentQuestionIndex]: selectedOption 
-    };
-    setAnsweredQuestions(newAnsweredQuestions);
-
-    // Check if correct and update score
-    const isCorrect = selectedOption === currentQuestion.correctAnswer;
-    if (isCorrect) {
-      setScore(score + 1);
-    }
+  const renderUnitCard = (unit: any) => {
+    const IconComponent = iconMap[unit.id as keyof typeof iconMap] || Brain;
     
-    setShowFeedback(true);
-  };
-
-  const handleNextQuestion = () => {
-    const nextIndex = currentQuestionIndex + 1;
-    if (nextIndex < questions.length) {
-      setCurrentQuestionIndex(nextIndex);
-      setSelectedOption(answeredQuestions[nextIndex] || null);
-      setShowFeedback(false);
-    } else {
-      // Quiz completed
-      router.push(`/results?score=${score}&total=${questions.length}`);
-      // Clear saved state when quiz is completed
-      localStorage.removeItem('quizState');
-    }
-  };
-
-  const resetQuiz = () => {
-    // Clear saved state
-    localStorage.removeItem('quizState');
-    setCurrentQuestionIndex(0);
-    setSelectedOption(null);
-    setShowFeedback(false);
-    setScore(0);
-    setAnsweredQuestions({});
+    return (
+      <Card key={unit.id} className="hover:shadow-lg transition-all duration-300 border-l-4 border-l-blue-500">
+        <CardHeader>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <div className="p-2 bg-blue-100 rounded-lg">
+                <IconComponent className="h-6 w-6 text-blue-600" />
+              </div>
+              <div>
+                <CardTitle className="text-lg">{unit.title}</CardTitle>
+                <CardDescription className="text-sm">{unit.description}</CardDescription>
+              </div>
+            </div>
+            <Badge variant="secondary" className="ml-2">
+              {unit.questionCount} Questions
+            </Badge>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between text-sm">
+              <span className="text-gray-600">Difficulty:</span>
+              <Badge variant="outline">{unit.difficulty}</Badge>
+            </div>
+            
+            <div className="flex flex-wrap gap-1">
+              {unit.topics.slice(0, 3).map((topic: string, index: number) => (
+                <Badge key={index} variant="secondary" className="text-xs">
+                  {topic}
+                </Badge>
+              ))}
+              {unit.topics.length > 3 && (
+                <Badge variant="secondary" className="text-xs">
+                  +{unit.topics.length - 3} more
+                </Badge>
+              )}
+            </div>
+            
+            <Link href={`/quiz/${unit.id}`} className="block">
+              <Button className="w-full mt-4">
+                Start Practice
+                <CheckCircle className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </CardContent>
+      </Card>
+    );
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12">
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold text-gray-900">Practice Quiz</h1>
-          <div className="flex items-center space-x-4">
-            <span className="text-sm font-medium text-gray-600">
-              Question {currentQuestionIndex + 1} of {questions.length}
-            </span>
-            <span className="text-sm font-medium text-blue-600">
-              Score: {score}
-            </span>
-            <Button variant="outline" size="sm" onClick={resetQuiz}>
-              Reset Quiz
-            </Button>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Choose Your Learning Path
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Master System Design and Cloud Computing with our comprehensive quiz modules. 
+            Each unit contains 50 carefully crafted questions to test and improve your knowledge.
+          </p>
+        </div>
+
+        {/* System Design Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
+              <Brain className="mr-3 h-8 w-8 text-purple-600" />
+              System Design (Questions 1-200)
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Master the fundamentals of designing scalable, reliable, and efficient systems. 
+              Learn architecture patterns, database design, and performance optimization.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {systemDesignUnits.map(renderUnitCard)}
           </div>
         </div>
 
-        <Card className="shadow-lg">
-          <CardHeader>
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-sm font-medium text-blue-600">
-                {currentQuestion.topic}
-              </span>
-              <span className="text-sm px-2 py-1 bg-gray-100 rounded-full">
-                {currentQuestion.difficulty}
-              </span>
-            </div>
-            <CardTitle className="text-xl">{currentQuestion.question}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {currentQuestion.options.map((option, index) => {
-                const optionKey = String.fromCharCode(65 + index); // A, B, C, D
-                const isSelected = selectedOption === optionKey;
-                const isCorrect = showFeedback && currentQuestion.correctAnswer === optionKey;
-                const isWrong = showFeedback && isSelected && !isCorrect;
+        {/* Cloud Computing Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
+              <Cloud className="mr-3 h-8 w-8 text-blue-600" />
+              Cloud Computing (Questions 201-400)
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Explore cloud computing concepts, AWS services, and enterprise cloud architectures. 
+              Perfect for cloud certification preparation and real-world cloud projects.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {cloudComputingUnits.map(renderUnitCard)}
+          </div>
+        </div>
 
-                return (
-                  <div
-                    key={index}
-                    onClick={() => handleOptionSelect(optionKey)}
-                    className={`p-4 border rounded-lg cursor-pointer flex items-center justify-between transition-colors
-                    ${
-                      isSelected
-                        ? "border-blue-400 bg-blue-50"
-                        : "border-gray-200 hover:border-blue-200"
-                    }
-                    ${isCorrect ? "border-green-400 bg-green-50" : ""}
-                    ${isWrong ? "border-red-400 bg-red-50" : ""}
-                    `}
-                  >
-                    <div className="flex items-center">
-                      <span className="h-6 w-6 rounded-full bg-gray-100 flex items-center justify-center mr-3 text-sm font-medium">
-                        {optionKey}
-                      </span>
-                      <span>{option}</span>
-                    </div>
-                    {showFeedback && (
-                      <>
-                        {isCorrect && <CheckCircle className="text-green-600 h-5 w-5" />}
-                        {isWrong && <XCircle className="text-red-600 h-5 w-5" />}
-                      </>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </CardContent>
-          <CardFooter className="flex justify-between">
-            {!showFeedback ? (
-              <Button
-                onClick={handleSubmitAnswer}
-                disabled={!selectedOption}
-                className="w-full"
-              >
-                Submit Answer
-              </Button>
-            ) : (
-              <Button onClick={handleNextQuestion} className="w-full">
-                {currentQuestionIndex < questions.length - 1
-                  ? "Next Question"
-                  : "See Results"}
-              </Button>
-            )}
-          </CardFooter>
-        </Card>
+        {/* Mock Test Section */}
+        <div className="text-center">
+          <Card className="max-w-2xl mx-auto bg-gradient-to-r from-purple-50 to-blue-50 border-purple-200">
+            <CardHeader>
+              <CardTitle className="text-2xl flex items-center justify-center">
+                <CheckCircle className="mr-3 h-8 w-8 text-purple-600" />
+                Ready for the Challenge?
+              </CardTitle>
+              <CardDescription className="text-lg">
+                Test your knowledge with our comprehensive mock test featuring questions from all units
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div className="flex justify-center space-x-6 text-sm text-gray-600">
+                  <span>• 400 Questions</span>
+                  <span>• Timed Environment</span>
+                  <span>• Performance Analysis</span>
+                </div>
+                <Link href="/mock-test">
+                  <Button size="lg" className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+                    Take Mock Test
+                  </Button>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </div>
   );

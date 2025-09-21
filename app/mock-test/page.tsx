@@ -205,6 +205,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { Clock, Home, AlertTriangle } from "lucide-react";
 
 const QUESTION_TIME = 120; // 2 minutes per question in seconds
 
@@ -324,29 +325,75 @@ export default function MockTestPage() {
 
   if (!testActive) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12">
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">Mock Test</h1>
-          <Card className="shadow-lg p-6 mb-8">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-8">
+            System Design & Cloud Computing Mock Test
+          </h1>
+          <Card className="shadow-2xl border-0 bg-gray-800/80 backdrop-blur-sm p-8 mb-8">
             <CardHeader>
-              <CardTitle>Ready to Test Your Knowledge?</CardTitle>
+              <div className="mx-auto w-20 h-20 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full flex items-center justify-center mb-6 border border-purple-500/20">
+                <Clock className="h-10 w-10 text-purple-400" />
+              </div>
+              <CardTitle className="text-3xl text-white mb-4">Ready to Test Your Knowledge?</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">
-                This mock test simulates real exam conditions:
+              <p className="text-xl text-gray-300 mb-8">
+                This comprehensive mock test simulates real technical interview and certification exam conditions with 400 carefully selected questions.
               </p>
-              <ul className="text-left space-y-2 mb-6 max-w-md mx-auto">
-                <li>• You will have 2 minutes per question</li>
-                <li>• No feedback until the end</li>
-                <li>• Cannot return to previous questions</li>
-                <li>• Your score will be shown at the end</li>
-              </ul>
-              <p>Once you start, the timer will begin immediately.</p>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="p-6 rounded-xl bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20">
+                  <h3 className="text-xl font-bold text-purple-400 mb-4">System Design Questions (1-200)</h3>
+                  <ul className="text-left space-y-2 text-gray-300">
+                    <li>• Architecture patterns & design principles</li>
+                    <li>• Database design & transaction management</li>
+                    <li>• Scalability & performance optimization</li>
+                    <li>• Microservices & distributed systems</li>
+                  </ul>
+                </div>
+                
+                <div className="p-6 rounded-xl bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20">
+                  <h3 className="text-xl font-bold text-blue-400 mb-4">Cloud Computing Questions (201-400)</h3>
+                  <ul className="text-left space-y-2 text-gray-300">
+                    <li>• AWS services & cloud fundamentals</li>
+                    <li>• Cloud architecture & best practices</li>
+                    <li>• Security & networking in the cloud</li>
+                    <li>• Advanced cloud computing concepts</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-xl p-6 mb-8">
+                <h4 className="text-lg font-semibold text-yellow-400 mb-3">⚠️ Mock Test Guidelines</h4>
+                <ul className="text-left space-y-2 text-gray-300 text-sm">
+                  <li>• Each question has a 2-minute time limit</li>
+                  <li>• Questions automatically advance when time expires</li>
+                  <li>• No feedback shown during the test</li>
+                  <li>• Your progress is automatically saved</li>
+                  <li>• Results displayed at completion</li>
+                </ul>
+              </div>
+
+              <div className="text-center space-y-4">
+                <p className="text-gray-300">
+                  <strong className="text-purple-400">400 questions</strong> • Estimated time: <strong className="text-blue-400">13+ hours</strong>
+                </p>
+                <p className="text-sm text-gray-400">
+                  Perfect for technical interview preparation and cloud certification practice
+                </p>
+              </div>
             </CardContent>
             <CardFooter>
-              <Button onClick={startTest} className="w-full">
-                Start Mock Test
-              </Button>
+              <div className="flex gap-4 justify-center w-full">
+                <Button variant="outline" onClick={() => router.push("/")} className="border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white">
+                  <Home className="h-4 w-4 mr-2" />
+                  Back to Home
+                </Button>
+                <Button onClick={startTest} size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
+                  Start Mock Test
+                </Button>
+              </div>
             </CardFooter>
           </Card>
         </div>
@@ -355,36 +402,47 @@ export default function MockTestPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 py-12">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold text-gray-900">Mock Test</h1>
+        <div className="flex justify-between items-center mb-6 bg-gray-800/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-700">
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+            System Design & Cloud Computing Mock Test
+          </h1>
           <div className="flex items-center space-x-4">
-            <span className="text-sm font-medium text-gray-600">
+            <span className="text-sm font-medium text-gray-400">
               Question {currentQuestionIndex + 1} of {questions.length}
             </span>
-            <span className="text-sm font-medium text-orange-600">
+            <span className={`text-sm font-medium ${timeLeft <= 30 ? 'text-red-400' : 'text-orange-400'}`}>
               Time Left: {formatTime(timeLeft)}
             </span>
-            <Button variant="outline" size="sm" onClick={resetTest}>
+            <Button variant="outline" size="sm" onClick={resetTest} className="border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white">
               Abort Test
             </Button>
           </div>
         </div>
 
-        <Card className="shadow-lg">
+        <Card className="shadow-2xl border-0 bg-gray-800/80 backdrop-blur-sm">
           <CardHeader>
             <div className="flex justify-between items-center mb-2">
-              <span className="text-sm font-medium text-blue-600">
+              <span className="text-sm font-medium text-blue-400 px-3 py-1 bg-blue-500/20 rounded-full border border-blue-500/20">
                 {currentQuestion.topic}
               </span>
-              <span className="text-sm px-2 py-1 bg-gray-100 rounded-full">
+              <span className={`text-sm px-3 py-1 rounded-full font-medium border ${
+                currentQuestion.difficulty === 'easy' ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/20' :
+                currentQuestion.difficulty === 'medium' ? 'bg-yellow-500/20 text-yellow-400 border-yellow-500/20' :
+                'bg-red-500/20 text-red-400 border-red-500/20'
+              }`}>
                 {currentQuestion.difficulty}
               </span>
             </div>
-            <CardTitle className="text-xl">{currentQuestion.question}</CardTitle>
+            <CardTitle className="text-xl text-gray-200">{currentQuestion.question}</CardTitle>
             <div className="w-full mt-4">
-              <Progress value={(timeLeft / QUESTION_TIME) * 100} />
+              <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                <div 
+                  className={`h-full transition-all duration-1000 ${timeLeft <= 30 ? 'bg-red-500' : timeLeft <= 60 ? 'bg-yellow-500' : 'bg-emerald-500'}`}
+                  style={{ width: `${(timeLeft / QUESTION_TIME) * 100}%` }}
+                ></div>
+              </div>
             </div>
           </CardHeader>
           <CardContent>
@@ -400,21 +458,24 @@ export default function MockTestPage() {
                     className={`p-4 border rounded-lg cursor-pointer flex items-center transition-colors
                     ${
                       isSelected
-                        ? "border-blue-400 bg-blue-50"
-                        : "border-gray-200 hover:border-blue-200"
+                        ? "border-purple-500 bg-purple-500/10"
+                        : "border-gray-600 hover:border-purple-400 hover:bg-gray-700/50"
                     }`}
                   >
-                    <span className="h-6 w-6 rounded-full bg-gray-100 flex items-center justify-center mr-3 text-sm font-medium">
+                    <span className={`h-8 w-8 rounded-full flex items-center justify-center mr-3 text-sm font-bold transition-colors ${
+                      isSelected ? 'bg-purple-500/20 text-purple-400 border border-purple-500/40' : 
+                      'bg-gray-700 text-gray-400 border border-gray-600'
+                    }`}>
                       {optionKey}
                     </span>
-                    <span>{option}</span>
+                    <span className="text-gray-200">{option}</span>
                   </div>
                 );
               })}
             </div>
           </CardContent>
           <CardFooter>
-            <Button onClick={handleNextQuestion} className="w-full">
+            <Button onClick={handleNextQuestion} className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
               {currentQuestionIndex < questions.length - 1
                 ? "Next Question"
                 : "Finish Test"}
