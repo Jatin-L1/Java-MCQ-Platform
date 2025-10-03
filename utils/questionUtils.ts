@@ -2,21 +2,21 @@ import { Question } from '../data/questions';
 
 export const filterQuestionsByUnit = (questions: Question[], unit: string): Question[] => {
   switch (unit) {
-    case 'system-design-fundamentals':
+    case 'java-fundamentals':
       return questions.filter(q => q.id >= 1 && q.id <= 50);
-    case 'system-architecture':
+    case 'collections-concurrency':
       return questions.filter(q => q.id >= 51 && q.id <= 100);
-    case 'database-design':
+    case 'build-tools-functional':
       return questions.filter(q => q.id >= 101 && q.id <= 150);
-    case 'scalability-performance':
+    case 'database-jdbc':
       return questions.filter(q => q.id >= 151 && q.id <= 200);
-    case 'cloud-fundamentals':
+    case 'spring-ecosystem':
       return questions.filter(q => q.id >= 201 && q.id <= 250);
-    case 'aws-services':
+    case 'spring-boot-data':
       return questions.filter(q => q.id >= 251 && q.id <= 300);
-    case 'advanced-cloud':
+    case 'microservices-cloud':
       return questions.filter(q => q.id >= 301 && q.id <= 350);
-    case 'cloud-architecture':
+    case 'testing-deployment':
       return questions.filter(q => q.id >= 351 && q.id <= 400);
     default:
       return questions;
@@ -25,116 +25,118 @@ export const filterQuestionsByUnit = (questions: Question[], unit: string): Ques
 
 export const getUnitTitle = (unit: string): string => {
   switch (unit) {
-    case 'system-design-fundamentals':
-      return 'System Design Fundamentals: Architecture Patterns, Performance Metrics & Design Principles';
-    case 'system-architecture':
-      return 'System Architecture: Microservices, Monolithic Design & Fault Tolerance';
-    case 'database-design':
-      return 'Database Design: SQL, NoSQL, ACID Properties & Transaction Management';
-    case 'scalability-performance':
-      return 'Scalability & Performance: Load Balancing, Caching & Distributed Systems';
-    case 'cloud-fundamentals':
-      return 'Cloud Computing Fundamentals: Service Models, Deployment Models & Core Concepts';
-    case 'aws-services':
-      return 'AWS Services: EC2, S3, RDS, Lambda & Essential Cloud Services';
-    case 'advanced-cloud':
-      return 'Advanced Cloud Computing: Security, Networking & Advanced AWS Services';
-    case 'cloud-architecture':
-      return 'Cloud Architecture: Enterprise Solutions, Best Practices & Complex Scenarios';
+    case 'java-fundamentals':
+      return 'Java Fundamentals: Exception Handling, Lambda Expressions & Core Features (Lectures 1-8)';
+    case 'collections-concurrency':
+      return 'Collections & Concurrency: Data Structures, Threading & Memory Model (Lectures 9-25)';
+    case 'build-tools-functional':
+      return 'Build Tools & Functional Programming: Maven & High-Order Functions (Lectures 26-34)';
+    case 'database-jdbc':
+      return 'Database Access: JDBC Programming & Data Management (Lectures 35-40)';
+    case 'spring-ecosystem':
+      return 'Spring Framework: Core, IoC, AOP, MVC & Hibernate Integration (Lectures 41-52)';
+    case 'spring-boot-data':
+      return 'Spring Boot & Data: Auto-configuration, Actuators & Spring Data (Lectures 53-62)';
+    case 'microservices-cloud':
+      return 'Microservices Architecture: Spring Cloud Gateway, Config & Circuit Breaker (Lectures 63-67)';
+    case 'testing-deployment':
+      return 'Testing & Web Development: JUnit, JMeter & Spring MVC (Lectures 68-75)';
     default:
-      return 'System Design & Cloud Computing Quiz';
+      return 'Advanced Programming Concepts - Java Enterprise Development';
   }
 };
 
 export const getUnitDescription = (unit: string): string => {
   switch (unit) {
-    case 'system-design-fundamentals':
-      return 'Learn the basics of system design including scalability, reliability, and performance metrics.';
-    case 'system-architecture':
-      return 'Explore different architectural patterns and their trade-offs in large-scale systems.';
-    case 'database-design':
-      return 'Master database concepts, SQL operations, and data management strategies.';
-    case 'scalability-performance':
-      return 'Understand how to build systems that can handle high loads and perform efficiently.';
-    case 'cloud-fundamentals':
-      return 'Get introduced to cloud computing concepts, service models, and deployment strategies.';
-    case 'aws-services':
-      return 'Learn about core AWS services and how to use them effectively in cloud solutions.';
-    case 'advanced-cloud':
-      return 'Dive deep into advanced cloud concepts including security, networking, and specialized services.';
-    case 'cloud-architecture':
-      return 'Master complex cloud architectures and enterprise-level cloud solutions.';
+    case 'java-fundamentals':
+      return 'Master essential Java features including robust exception handling, lambda expressions, annotations, Java modules, Optional API, dependency injection, and comprehensive I/O operations.';
+    case 'collections-concurrency':
+      return 'Deep dive into Java Collections Framework (Array, ArrayList, Set, Map, Queue, Stack, Deque), concurrent programming with threads, virtual threads, synchronization, and Java Memory Model.';
+    case 'build-tools-functional':
+      return 'Learn Maven build automation, project management, dependency resolution, and functional programming paradigms with high-order functions and advanced Stream API techniques.';
+    case 'database-jdbc':
+      return 'Comprehensive database access using JDBC, connection management, prepared statements, transaction handling, and efficient data access patterns for enterprise applications.';
+    case 'spring-ecosystem':
+      return 'Master Spring Framework architecture including IoC container, dependency injection, Spring AOP, Spring MVC, and Hibernate integration with advanced ORM concepts and entity lifecycle management.';
+    case 'spring-boot-data':
+      return 'Advanced Spring Boot development with auto-configuration, custom starters, Spring Boot Actuator for monitoring, embedded servers, and Spring Data modules for JPA, MongoDB, and JDBC.';
+    case 'microservices-cloud':
+      return 'Enterprise microservices architecture using Spring Cloud ecosystem including Gateway, Config Server, Circuit Breaker patterns, service discovery, and OpenFeign for inter-service communication.';
+    case 'testing-deployment':
+      return 'Comprehensive testing strategies with JUnit framework, performance testing with JMeter, Spring MVC web development, servlet programming, and JSP-based enterprise web applications.';
     default:
-      return 'Comprehensive quiz covering system design and cloud computing concepts.';
+      return 'Advanced Programming Concepts covering enterprise Java development, Spring ecosystem, and modern software architecture patterns following industry best practices.';
   }
 };
 
-export const getAllUnits = () => [
-  {
-    id: 'system-design-fundamentals',
-    title: 'System Design Fundamentals',
-    description: 'Architecture patterns, performance metrics & design principles',
-    questionCount: 50,
-    difficulty: 'Beginner to Intermediate',
-    topics: ['Scalability', 'Performance', 'Architecture Patterns', 'Design Principles']
-  },
-  {
-    id: 'system-architecture',
-    title: 'System Architecture',
-    description: 'Microservices, monolithic design & fault tolerance',
-    questionCount: 50,
-    difficulty: 'Intermediate',
-    topics: ['Microservices', 'Monolithic', 'Fault Tolerance', 'High Availability']
-  },
-  {
-    id: 'database-design',
-    title: 'Database Design',
-    description: 'SQL, NoSQL, ACID properties & transaction management',
-    questionCount: 50,
-    difficulty: 'Intermediate',
-    topics: ['SQL', 'NoSQL', 'ACID', 'Transactions', 'Data Modeling']
-  },
-  {
-    id: 'scalability-performance',
-    title: 'Scalability & Performance',
-    description: 'Load balancing, caching & distributed systems',
-    questionCount: 50,
-    difficulty: 'Intermediate to Advanced',
-    topics: ['Load Balancing', 'Caching', 'Distributed Systems', 'Performance Optimization']
-  },
-  {
-    id: 'cloud-fundamentals',
-    title: 'Cloud Computing Fundamentals',
-    description: 'Service models, deployment models & core concepts',
-    questionCount: 50,
-    difficulty: 'Beginner to Intermediate',
-    topics: ['IaaS/PaaS/SaaS', 'Public/Private/Hybrid Cloud', 'Cloud Benefits', 'Basic AWS']
-  },
-  {
-    id: 'aws-services',
-    title: 'AWS Services',
-    description: 'EC2, S3, RDS, Lambda & essential cloud services',
-    questionCount: 50,
-    difficulty: 'Intermediate',
-    topics: ['EC2', 'S3', 'RDS', 'Lambda', 'Load Balancing', 'Auto Scaling']
-  },
-  {
-    id: 'advanced-cloud',
-    title: 'Advanced Cloud Computing',
-    description: 'Security, networking & advanced AWS services',
-    questionCount: 50,
-    difficulty: 'Intermediate to Advanced',
-    topics: ['Cloud Security', 'VPC', 'IAM', 'Advanced Services', 'Cost Optimization']
-  },
-  {
-    id: 'cloud-architecture',
-    title: 'Cloud Architecture',
-    description: 'Enterprise solutions, best practices & complex scenarios',
-    questionCount: 50,
-    difficulty: 'Advanced',
-    topics: ['Enterprise Architecture', 'Best Practices', 'Complex Scenarios', 'Multi-Cloud']
-  }
-];
+export const getAllUnits = () => {
+  return [
+    {
+      id: 'java-fundamentals',
+      title: 'Java Fundamentals',
+      description: 'Core Java features: Exception handling, lambdas, annotations, modules, optionals',
+      questionCount: 50,
+      difficulty: 'Beginner to Intermediate',
+      topics: ['Exception Handling', 'Lambda Expressions', 'Annotations', 'Modules', 'Optional API']
+    },
+    {
+      id: 'collections-concurrency',
+      title: 'Collections & Concurrency',
+      description: 'Java collections framework, threading, synchronization, and memory model',
+      questionCount: 50,
+      difficulty: 'Intermediate',
+      topics: ['Collections Framework', 'Threading', 'Synchronization', 'Memory Model', 'Virtual Threads']
+    },
+    {
+      id: 'build-tools-functional',
+      title: 'Build Tools & Functional Programming',
+      description: 'Maven build automation and functional programming with high-order functions',
+      questionCount: 50,
+      difficulty: 'Intermediate',
+      topics: ['Maven', 'Functional Programming', 'High-Order Functions', 'Stream API', 'Build Automation']
+    },
+    {
+      id: 'database-jdbc',
+      title: 'Database Access & JDBC',
+      description: 'Database connectivity, JDBC programming, and data access patterns',
+      questionCount: 50,
+      difficulty: 'Intermediate',
+      topics: ['JDBC', 'Database Connectivity', 'SQL Programming', 'Connection Pooling', 'Transaction Management']
+    },
+    {
+      id: 'spring-ecosystem',
+      title: 'Spring Framework & Hibernate',
+      description: 'Spring Core, IoC, AOP, MVC architecture, and Hibernate ORM integration',
+      questionCount: 50,
+      difficulty: 'Advanced',
+      topics: ['Spring IoC', 'Dependency Injection', 'Spring AOP', 'Spring MVC', 'Hibernate ORM']
+    },
+    {
+      id: 'spring-boot-data',
+      title: 'Spring Boot & Spring Data',
+      description: 'Auto-configuration, Spring Boot starters, actuators, and Spring Data modules',
+      questionCount: 50,
+      difficulty: 'Advanced',
+      topics: ['Spring Boot Starters', 'Auto-configuration', 'Spring Actuator', 'Spring Data JPA', 'Spring Data MongoDB']
+    },
+    {
+      id: 'microservices-cloud',
+      title: 'Microservices & Spring Cloud',
+      description: 'Microservices architecture patterns with Spring Cloud ecosystem',
+      questionCount: 50,
+      difficulty: 'Expert',
+      topics: ['Spring Cloud Gateway', 'Cloud Config', 'Circuit Breaker', 'Service Discovery', 'OpenFeign']
+    },
+    {
+      id: 'testing-deployment',
+      title: 'Testing & Web Development',
+      description: 'JUnit testing, JMeter performance testing, and Spring MVC web development',
+      questionCount: 50,
+      difficulty: 'Advanced',
+      topics: ['JUnit Testing', 'JMeter', 'Spring MVC', 'Web Development', 'Performance Testing']
+    }
+  ];
+};
 
 export const getTopicsByUnit = (unit: string): string[] => {
   const unitData = getAllUnits().find(u => u.id === unit);

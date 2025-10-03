@@ -9,5598 +9,4267 @@ export interface Question {
 }
 
 export const questions: Question[] = [
+  // Exception Handling (1-5)
   {
-    "id": 1,
-    "question": "What is system design?",
-    "options": [
-      "The process of coding a single module of a software system.",
-      "The process of testing software components.",
-      "The process of designing the architecture and components of a software system to meet specific business requirements.",
-      "A method for maintaining a database."
-    ],
-    "correctAnswer": "C",
-    "explanation": "System design is the process of designing the architecture and components of a software system to meet specific business requirements.",
-    "topic": "System Design Fundamentals",
-    "difficulty": "easy"
+    id: 1,
+    question: "When do exceptions in Java arise in code sequence?",
+    options: ["Run Time", "Compilation Time", "Can Occur Any Time", "None of the mentioned"],
+    correctAnswer: "A",
+    explanation: "Exceptions in Java are run-time errors.",
+    topic: "Exception Handling",
+    difficulty: "easy"
   },
   {
-    "id": 2,
-    "question": "What does horizontal scaling (scaling out) mean in system design?",
-    "options": [
-      "Increasing the processing power (CPU/RAM) of an existing machine.",
-      "Adding additional nodes or machines to handle increased demand.",
-      "Improving code quality to reduce latency.",
-      "Partitioning a database into shards."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Horizontal scaling means adding additional nodes or machines to handle increased demand.",
-    "topic": "Scalability",
-    "difficulty": "medium"
+    id: 2,
+    question: "Which of these keywords is not a part of exception handling?",
+    options: ["try", "finally", "thrown", "catch"],
+    correctAnswer: "C",
+    explanation: "Exception handling is managed via 5 keywords – try, catch, throws, throw and finally.",
+    topic: "Exception Handling",
+    difficulty: "easy"
   },
   {
-    "id": 3,
-    "question": "What does vertical scaling (scaling up) mean in system design?",
-    "options": [
-      "Adding additional machines to distribute load.",
-      "Dividing data across multiple databases.",
-      "Adding more resources (CPU/memory) to the existing machine.",
-      "Increasing network bandwidth only."
-    ],
-    "correctAnswer": "C",
-    "explanation": "Vertical scaling means adding more resources (CPU/memory) to the existing machine.",
-    "topic": "Scalability",
-    "difficulty": "medium"
+    id: 3,
+    question: "Which keyword is used to handle an exception in Java?",
+    options: ["try", "catch", "throw", "finally"],
+    correctAnswer: "B",
+    explanation: "The 'catch' block is used to handle the exception.",
+    topic: "Exception Handling",
+    difficulty: "easy"
   },
   {
-    "id": 4,
-    "question": "Which system design characteristic refers to the delay experienced in processing a request?",
-    "options": [
-      "Throughput",
-      "Latency",
-      "Availability",
-      "Reliability"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Latency refers to the delay experienced in processing a request.",
-    "topic": "Performance Metrics",
-    "difficulty": "easy"
+    id: 4,
+    question: "Which of these is a superclass of all exception types in Java?",
+    options: ["Exception", "RuntimeException", "Throwable", "Error"],
+    correctAnswer: "C",
+    explanation: "Throwable is the superclass of all errors and exceptions in the Java language.",
+    topic: "Exception Handling",
+    difficulty: "medium"
   },
   {
-    "id": 5,
-    "question": "Which system design characteristic refers to the amount of data processed per unit time?",
-    "options": [
-      "Consistency",
-      "Throughput",
-      "Maintainability",
-      "Fault Tolerance"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Throughput refers to the amount of data processed per unit time.",
-    "topic": "Performance Metrics",
-    "difficulty": "easy"
+    id: 5,
+    question: "Which of these is not a checked exception?",
+    options: ["IOException", "SQLException", "ArithmeticException", "ClassNotFoundException"],
+    correctAnswer: "C",
+    explanation: "ArithmeticException is an unchecked exception, as it is derived from RuntimeException.",
+    topic: "Exception Handling",
+    difficulty: "medium"
+  },
+
+  // Lambda Expressions (6-9)
+  {
+    id: 6,
+    question: "Which Java version introduced lambda expressions?",
+    options: ["Java 7", "Java 8", "Java 9", "Java 11"],
+    correctAnswer: "B",
+    explanation: "Lambda expressions were introduced in Java 8.",
+    topic: "Lambda Expressions",
+    difficulty: "easy"
   },
   {
-    "id": 6,
-    "question": "Which practice improves maintainability of a software system?",
-    "options": [
-      "Monolithic codebase with many interdependencies.",
-      "Complex and undocumented modules.",
-      "Modular design with clear documentation.",
-      "Dynamic, unpredictable architecture."
-    ],
-    "correctAnswer": "C",
-    "explanation": "Modular design with clear documentation improves maintainability of a software system.",
-    "topic": "System Design Principles",
-    "difficulty": "medium"
+    id: 7,
+    question: "What is the syntax for a basic lambda expression in Java?",
+    options: ["(parameter) -> expression", "(parameter) => expression", "lambda parameter: expression", "function(parameter) { expression }"],
+    correctAnswer: "A",
+    explanation: "The basic lambda expression syntax is (parameter) -> expression.",
+    topic: "Lambda Expressions",
+    difficulty: "easy"
   },
   {
-    "id": 7,
-    "question": "Which consistency model guarantees that after a write, all subsequent reads will see that write immediately?",
-    "options": [
-      "Weak Consistency",
-      "Eventual Consistency",
-      "Strong Consistency",
-      "Causal Consistency"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Strong consistency guarantees that after a write, all subsequent reads will see that write immediately.",
-    "topic": "Consistency Models",
-    "difficulty": "medium"
+    id: 8,
+    question: "Which functional interface is commonly used with lambda expressions?",
+    options: ["Runnable", "Callable", "Predicate", "All of the above"],
+    correctAnswer: "D",
+    explanation: "All these are functional interfaces commonly used with lambda expressions.",
+    topic: "Lambda Expressions",
+    difficulty: "medium"
+  },
+
+  // Optional (9)
+  {
+    id: 9,
+    question: "What is the purpose of the Optional class in Java?",
+    options: ["To handle exceptions", "To represent nullable values safely", "To perform IO operations", "To enable concurrent programming"],
+    correctAnswer: "B",
+    explanation: "Optional class is used to represent nullable values safely and prevent null pointer exceptions.",
+    topic: "Optional",
+    difficulty: "medium"
+  },
+
+  // Annotations (10)
+  {
+    id: 10,
+    question: "Which annotation is used to suppress compiler warnings in Java?",
+    options: ["@Override", "@Deprecated", "@SuppressWarnings", "@FunctionalInterface"],
+    correctAnswer: "C",
+    explanation: "@SuppressWarnings is used to suppress compiler warnings.",
+    topic: "Annotations",
+    difficulty: "easy"
+  },
+
+  // Collections (11-23)
+  {
+    id: 11,
+    question: "Which interface is at the root of the collection hierarchy?",
+    options: ["List", "Set", "Collection", "Map"],
+    correctAnswer: "C",
+    explanation: "Collection is the root interface in the collection hierarchy.",
+    topic: "Collections",
+    difficulty: "easy"
   },
   {
-    "id": 8,
-    "question": "Which consistency model ensures that if no new updates are made, all replicas will eventually converge to the same state?",
-    "options": [
-      "Strong Consistency",
-      "Eventual Consistency",
-      "Immediate Consistency",
-      "Final Consistency"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Eventual consistency ensures that if no new updates are made, all replicas will eventually converge to the same state.",
-    "topic": "Consistency Models",
-    "difficulty": "medium"
+    id: 12,
+    question: "Which collection allows duplicate elements?",
+    options: ["Set", "List", "Map", "TreeSet"],
+    correctAnswer: "B",
+    explanation: "List allows duplicate elements and maintains insertion order.",
+    topic: "Collections",
+    difficulty: "easy"
   },
   {
-    "id": 9,
-    "question": "Which consistency model provides no guarantee of immediate consistency or eventual convergence?",
-    "options": [
-      "Weak Consistency",
-      "Eventual Consistency",
-      "Strong Consistency",
-      "Transactional Consistency"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Weak consistency provides no guarantee of immediate consistency or eventual convergence.",
-    "topic": "Consistency Models",
-    "difficulty": "medium"
+    id: 13,
+    question: "Which of these is not a part of Java Collection framework?",
+    options: ["ArrayList", "Vector", "Hashtable", "Array"],
+    correctAnswer: "D",
+    explanation: "Array is not part of the Java Collection framework.",
+    topic: "Collections",
+    difficulty: "easy"
   },
   {
-    "id": 10,
-    "question": "What does the CAP theorem state for distributed systems?",
-    "options": [
-      "A system can guarantee all three: consistency, availability, and partition tolerance simultaneously.",
-      "A system can guarantee any two out of consistency, availability, and partition tolerance.",
-      "A system can only guarantee consistency and availability, but not partition tolerance.",
-      "It applies only to non-distributed systems."
-    ],
-    "correctAnswer": "B",
-    "explanation": "The CAP theorem states that a system can guarantee any two out of consistency, availability, and partition tolerance.",
-    "topic": "CAP Theorem",
-    "difficulty": "hard"
+    id: 14,
+    question: "What is the difference between ArrayList and Array?",
+    options: ["ArrayList is resizable, Array is fixed size", "Array is resizable, ArrayList is fixed size", "Both are same", "None of the above"],
+    correctAnswer: "A",
+    explanation: "ArrayList can grow and shrink dynamically, while arrays have fixed size.",
+    topic: "Collections",
+    difficulty: "medium"
   },
   {
-    "id": 11,
-    "question": "Which statement correctly describes the difference between performance and scalability?",
-    "options": [
-      "Performance focuses on handling increased load; scalability focuses on optimizing response time.",
-      "Performance focuses on optimizing speed and responsiveness; scalability focuses on handling increased load.",
-      "Performance and scalability are the same.",
-      "Performance requires horizontal scaling; scalability requires vertical scaling."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Performance focuses on optimizing speed and responsiveness; scalability focuses on handling increased load.",
-    "topic": "Performance vs Scalability",
-    "difficulty": "medium"
+    id: 15,
+    question: "Which collection does not allow null values?",
+    options: ["ArrayList", "LinkedList", "TreeSet", "HashMap"],
+    correctAnswer: "C",
+    explanation: "TreeSet does not allow null values as it needs to compare elements for sorting.",
+    topic: "Collections",
+    difficulty: "medium"
   },
   {
-    "id": 12,
-    "question": "Which of the following best describes latency and throughput?",
-    "options": [
-      "Latency is the number of operations per second; throughput is the delay per operation.",
-      "Latency is measured in bytes; throughput is measured in seconds.",
-      "Latency is the delay (time) for a request; throughput is the amount of data processed per time.",
-      "Latency and throughput are identical metrics."
-    ],
-    "correctAnswer": "C",
-    "explanation": "Latency is the delay (time) for a request; throughput is the amount of data processed per time.",
-    "topic": "Performance Metrics",
-    "difficulty": "medium"
+    id: 16,
+    question: "Which interface provides LIFO (Last In First Out) operations?",
+    options: ["Queue", "Deque", "Stack", "List"],
+    correctAnswer: "C",
+    explanation: "Stack provides LIFO operations with push() and pop() methods.",
+    topic: "Collections",
+    difficulty: "medium"
   },
   {
-    "id": 13,
-    "question": "What does availability mean in system design?",
-    "options": [
-      "All requests are guaranteed to see the latest write.",
-      "Every request receives a (possibly stale) response, even under failure.",
-      "The system never has downtime even if all servers fail.",
-      "System always processes requests in order."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Availability means every request receives a (possibly stale) response, even under failure.",
-    "topic": "System Reliability",
-    "difficulty": "medium"
+    id: 17,
+    question: "Which method is used to iterate over a collection?",
+    options: ["iterator()", "listIterator()", "forEach()", "All of the above"],
+    correctAnswer: "D",
+    explanation: "All these methods can be used to iterate over collections.",
+    topic: "Collections",
+    difficulty: "easy"
   },
   {
-    "id": 14,
-    "question": "Which system design characteristic focuses on minimal downtime and fault-free operation?",
-    "options": [
-      "Scalability",
-      "Reliability",
-      "Security",
-      "Latency"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Reliability focuses on minimal downtime and fault-free operation.",
-    "topic": "System Reliability",
-    "difficulty": "easy"
+    id: 18,
+    question: "Which collection maintains insertion order?",
+    options: ["HashSet", "TreeSet", "LinkedHashSet", "Set"],
+    correctAnswer: "C",
+    explanation: "LinkedHashSet maintains insertion order while providing Set semantics.",
+    topic: "Collections",
+    difficulty: "medium"
   },
   {
-    "id": 15,
-    "question": "Which best describes functional vs non-functional requirements?",
-    "options": [
-      "Functional: how the system should perform; Non-functional: what tasks it should do.",
-      "Functional: the business requirements; Non-functional: user interface design.",
-      "Functional: what the system should do (features); Non-functional: how the system should be (performance, reliability).",
-      "Functional and non-functional are interchangeable terms."
-    ],
-    "correctAnswer": "C",
-    "explanation": "Functional requirements describe what the system should do (features); Non-functional requirements describe how the system should be (performance, reliability).",
-    "topic": "Requirements Engineering",
-    "difficulty": "medium"
+    id: 19,
+    question: "Which of these classes implement the Map interface?",
+    options: ["HashMap", "TreeMap", "LinkedHashMap", "All of the above"],
+    correctAnswer: "D",
+    explanation: "HashMap, TreeMap, and LinkedHashMap all implement the Map interface.",
+    topic: "Collections",
+    difficulty: "easy"
   },
   {
-    "id": 16,
-    "question": "Which of the following best describes low-level design (LLD) in software architecture?",
-    "options": [
-      "It outlines the overall system architecture and major components.",
-      "It specifies database schemas only.",
-      "It covers how each part of the system is implemented internally.",
-      "It deals exclusively with network topology."
-    ],
-    "correctAnswer": "C",
-    "explanation": "Low-level design covers how each part of the system is implemented internally.",
-    "topic": "System Design Phases",
-    "difficulty": "medium"
+    id: 20,
+    question: "Which method removes and returns the head of the queue?",
+    options: ["poll()", "remove()", "Both poll() and remove()", "peek()"],
+    correctAnswer: "C",
+    explanation: "Both poll() and remove() methods remove and return the head of the queue.",
+    topic: "Collections",
+    difficulty: "medium"
+  },
+
+  // Concurrency (21-24)
+  {
+    id: 21,
+    question: "What is the purpose of the volatile keyword in Java?",
+    options: ["To make variables thread-safe", "To ensure visibility of changes across threads", "To synchronize methods", "To create immutable objects"],
+    correctAnswer: "B",
+    explanation: "volatile ensures that changes to a variable are visible to all threads.",
+    topic: "Concurrency",
+    difficulty: "medium"
   },
   {
-    "id": 17,
-    "question": "Which of the following best describes high-level design (HLD)?",
-    "options": [
-      "It details the code of individual classes.",
-      "It outlines the overall architecture of the system, including major components and data flows.",
-      "It focuses on database table schemas.",
-      "It specifies the encryption algorithms to be used."
-    ],
-    "correctAnswer": "B",
-    "explanation": "High-level design outlines the overall architecture of the system, including major components and data flows.",
-    "topic": "System Design Phases",
-    "difficulty": "medium"
+    id: 22,
+    question: "Which method is used to start a thread in Java?",
+    options: ["run()", "start()", "execute()", "init()"],
+    correctAnswer: "B",
+    explanation: "The start() method is used to start a new thread.",
+    topic: "Concurrency",
+    difficulty: "easy"
   },
   {
-    "id": 18,
-    "question": "Which architecture pattern describes an application built as a single unified unit?",
-    "options": [
-      "Microservices Architecture",
-      "Monolithic Architecture",
-      "Event-Driven Architecture",
-      "Layered Architecture"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Monolithic architecture describes an application built as a single unified unit.",
-    "topic": "Architecture Patterns",
-    "difficulty": "easy"
+    id: 23,
+    question: "What is synchronization in Java?",
+    options: ["A way to control thread access to shared resources", "A method to create threads", "A technique to improve performance", "A way to handle exceptions"],
+    correctAnswer: "A",
+    explanation: "Synchronization controls access to shared resources to prevent thread interference.",
+    topic: "Concurrency",
+    difficulty: "medium"
   },
   {
-    "id": 19,
-    "question": "Which architecture pattern is characterized by a collection of small, independently deployable services?",
-    "options": [
-      "Monolithic Architecture",
-      "Event-Driven Architecture",
-      "Microservices Architecture",
-      "Layered Architecture"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Microservices architecture is characterized by a collection of small, independently deployable services.",
-    "topic": "Architecture Patterns",
-    "difficulty": "easy"
+    id: 24,
+    question: "Which keyword is used for synchronization in Java?",
+    options: ["sync", "synchronized", "volatile", "atomic"],
+    correctAnswer: "B",
+    explanation: "The synchronized keyword is used for synchronization in Java.",
+    topic: "Concurrency",
+    difficulty: "easy"
+  },
+
+  // Virtual Threads (25)
+  {
+    id: 25,
+    question: "Virtual threads were introduced in which Java version?",
+    options: ["Java 17", "Java 19", "Java 21", "Java 11"],
+    correctAnswer: "B",
+    explanation: "Virtual threads were introduced as a preview feature in Java 19.",
+    topic: "Virtual Threads",
+    difficulty: "hard"
+  },
+
+  // Maven (26-30)
+  {
+    id: 26,
+    question: "What is the default Maven directory structure for Java source files?",
+    options: ["src/java", "src/main/java", "java/src", "main/src/java"],
+    correctAnswer: "B",
+    explanation: "Maven follows the convention src/main/java for source files.",
+    topic: "Maven",
+    difficulty: "easy"
   },
   {
-    "id": 20,
-    "question": "Which architecture paradigm involves system components communicating by producing and responding to events?",
-    "options": [
-      "Layered Architecture",
-      "Microservices Architecture",
-      "Event-Driven Architecture",
-      "Client-Server Architecture"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Event-Driven Architecture involves system components communicating by producing and responding to events.",
-    "topic": "Architecture Patterns",
-    "difficulty": "medium"
+    id: 27,
+    question: "Which file contains Maven project configuration?",
+    options: ["build.xml", "pom.xml", "maven.xml", "config.xml"],
+    correctAnswer: "B",
+    explanation: "pom.xml (Project Object Model) contains Maven project configuration.",
+    topic: "Maven",
+    difficulty: "easy"
   },
   {
-    "id": 21,
-    "question": "According to CAP theorem, if a system chooses to be CP (Consistency & Partition tolerance), which guarantee is weakened?",
-    "options": [
-      "Consistency",
-      "Availability",
-      "Partition Tolerance",
-      "None, all are maintained"
-    ],
-    "correctAnswer": "B",
-    "explanation": "If a system chooses CP, availability is weakened as the system may become unavailable during network partitions to maintain consistency.",
-    "topic": "CAP Theorem",
-    "difficulty": "hard"
+    id: 28,
+    question: "What command is used to compile a Maven project?",
+    options: ["mvn build", "mvn compile", "mvn make", "mvn run"],
+    correctAnswer: "B",
+    explanation: "mvn compile is used to compile a Maven project.",
+    topic: "Maven",
+    difficulty: "easy"
   },
   {
-    "id": 22,
-    "question": "According to CAP theorem, if a system chooses to prioritize Availability and Partition tolerance (AP), which aspect is compromised?",
-    "options": [
-      "Performance",
-      "Fault tolerance",
-      "Consistency",
-      "Latency"
-    ],
-    "correctAnswer": "C",
-    "explanation": "If a system chooses AP, consistency is compromised as the system remains available during partitions but data may be inconsistent.",
-    "topic": "CAP Theorem",
-    "difficulty": "hard"
+    id: 29,
+    question: "Which Maven phase runs tests?",
+    options: ["compile", "test", "package", "install"],
+    correctAnswer: "B",
+    explanation: "The test phase runs the unit tests.",
+    topic: "Maven",
+    difficulty: "easy"
   },
   {
-    "id": 23,
-    "question": "Which type of consistency model guarantees eventual convergence of data if updates stop?",
-    "options": [
-      "Strong Consistency",
-      "Eventual Consistency",
-      "Weak Consistency",
-      "Transactional Consistency"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Eventual consistency guarantees eventual convergence of data if updates stop.",
-    "topic": "Consistency Models",
-    "difficulty": "medium"
+    id: 30,
+    question: "What is Maven's default packaging type?",
+    options: ["war", "ear", "jar", "zip"],
+    correctAnswer: "C",
+    explanation: "Maven's default packaging type is jar.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+
+  // Functional Programming (31-34)
+  {
+    id: 31,
+    question: "What is a pure function in functional programming?",
+    options: ["A function with no parameters", "A function that always returns the same output for the same input and has no side effects", "A function that modifies global state", "A function that uses loops"],
+    correctAnswer: "B",
+    explanation: "A pure function has no side effects and always produces the same output for the same input.",
+    topic: "Functional Programming",
+    difficulty: "medium"
   },
   {
-    "id": 24,
-    "question": "What system design practice improves code maintainability?",
-    "options": [
-      "Writing a single large monolithic class.",
-      "Modular design with well-organized, documented code.",
-      "Avoiding documentation entirely.",
-      "Using global variables everywhere."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Modular design with well-organized, documented code improves maintainability.",
-    "topic": "System Design Principles",
-    "difficulty": "medium"
+    id: 32,
+    question: "What is a higher-order function?",
+    options: ["A function with high complexity", "A function that takes other functions as arguments or returns them", "A function that runs faster", "A function with many parameters"],
+    correctAnswer: "B",
+    explanation: "Higher-order functions can take functions as parameters or return functions.",
+    topic: "Functional Programming",
+    difficulty: "medium"
   },
   {
-    "id": 25,
-    "question": "Which approach is used to ensure software is automatically built, tested, and deployed upon code changes?",
-    "options": [
-      "Manual deployment",
-      "Continuous Integration/Continuous Deployment (CI/CD) pipeline",
-      "Ad-hoc scripting",
+    id: 33,
+    question: "What does the map function do?",
+    options: ["Creates a new map", "Applies a function to each element and returns a new collection", "Sorts elements", "Filters elements"],
+    correctAnswer: "B",
+    explanation: "map transforms each element by applying a function and returns a new collection.",
+    topic: "Functional Programming",
+    difficulty: "medium"
+  },
+  {
+    id: 34,
+    question: "What is currying in functional programming?",
+    options: ["A way to cook functions", "Transforming a function with multiple arguments into a series of functions with single arguments", "A way to optimize functions", "A debugging technique"],
+    correctAnswer: "B",
+    explanation: "Currying transforms a function that takes multiple arguments into a series of functions each taking a single argument.",
+    topic: "Functional Programming",
+    difficulty: "hard"
+  },
+
+  // JDBC (35-39)
+  {
+    id: 35,
+    question: "What does JDBC stand for?",
+    options: ["Java Database Connectivity", "Java Data Base Connection", "Java Database Connection", "Java Direct Base Connection"],
+    correctAnswer: "A",
+    explanation: "JDBC stands for Java Database Connectivity.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 36,
+    question: "Which interface is used to execute SQL queries in JDBC?",
+    options: ["Connection", "Statement", "ResultSet", "DriverManager"],
+    correctAnswer: "B",
+    explanation: "Statement interface is used to execute SQL queries.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 37,
+    question: "Which method is used to establish a database connection?",
+    options: ["DriverManager.getConnection()", "Connection.connect()", "Database.connect()", "JDBC.connect()"],
+    correctAnswer: "A",
+    explanation: "DriverManager.getConnection() is used to establish a database connection.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 38,
+    question: "Which interface represents the result of a database query?",
+    options: ["Statement", "Connection", "ResultSet", "PreparedStatement"],
+    correctAnswer: "C",
+    explanation: "ResultSet interface represents the result of a database query.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 39,
+    question: "What is the advantage of PreparedStatement over Statement?",
+    options: ["Better performance", "Prevents SQL injection", "Supports parameterized queries", "All of the above"],
+    correctAnswer: "D",
+    explanation: "PreparedStatement offers better performance, prevents SQL injection, and supports parameterized queries.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+
+  // Spring Core (40-43)
+  {
+    id: 40,
+    question: "What is the Spring Framework?",
+    options: ["A web framework", "An application framework and inversion of control container", "A database framework", "A testing framework"],
+    correctAnswer: "B",
+    explanation: "Spring is an application framework that provides inversion of control container.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 41,
+    question: "What does IoC stand for in Spring?",
+    options: ["Internet of Code", "Inversion of Control", "Integration of Components", "Input Output Control"],
+    correctAnswer: "B",
+    explanation: "IoC stands for Inversion of Control, a core principle of Spring.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 42,
+    question: "Which annotation is used for dependency injection in Spring?",
+    options: ["@Inject", "@Autowired", "@Resource", "All of the above"],
+    correctAnswer: "D",
+    explanation: "All these annotations can be used for dependency injection in Spring.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+
+  // Spring AOP (43)
+  {
+    id: 43,
+    question: "What does AOP stand for?",
+    options: ["Aspect Oriented Programming", "Application Object Programming", "Abstract Object Programming", "Advanced Object Programming"],
+    correctAnswer: "A",
+    explanation: "AOP stands for Aspect Oriented Programming.",
+    topic: "Spring AOP",
+    difficulty: "medium"
+  },
+
+  // Spring MVC (44)
+  {
+    id: 44,
+    question: "Which annotation is used to create a REST controller in Spring?",
+    options: ["@Controller", "@RestController", "@RequestMapping", "@Component"],
+    correctAnswer: "B",
+    explanation: "@RestController is specifically used for REST controllers.",
+    topic: "Spring MVC",
+    difficulty: "easy"
+  },
+
+  // Spring Bean Scope (45)
+  {
+    id: 45,
+    question: "What is the default scope of a Spring bean?",
+    options: ["prototype", "singleton", "request", "session"],
+    correctAnswer: "B",
+    explanation: "The default scope of a Spring bean is singleton.",
+    topic: "Spring Bean Scope",
+    difficulty: "easy"
+  },
+
+  // Spring Configuration (46)
+  {
+    id: 46,
+    question: "Which annotation is used to define a Spring configuration class?",
+    options: ["@Configuration", "@Component", "@Service", "@Repository"],
+    correctAnswer: "A",
+    explanation: "@Configuration annotation is used to define configuration classes.",
+    topic: "Spring Configuration",
+    difficulty: "easy"
+  },
+
+  // Hibernate (47-51)
+  {
+    id: 47,
+    question: "Which of the following is not a core interface of Hibernate?",
+    options: ["Configuration", "Criteria", "SessionManagement", "Session"],
+    correctAnswer: "C",
+    explanation: "SessionManagement is not a core interface of Hibernate.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 48,
+    question: "SessionFactory is a thread-safe object.",
+    options: ["TRUE", "FALSE"],
+    correctAnswer: "A",
+    explanation: "SessionFactory is a thread-safe object that can be accessed by multiple threads.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 49,
+    question: "Which method returns a proxy object in Hibernate?",
+    options: ["get()", "load()", "find()", "retrieve()"],
+    correctAnswer: "B",
+    explanation: "load() method returns a proxy object in Hibernate.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 50,
+    question: "Which method always hits the database in Hibernate?",
+    options: ["load()", "get()", "Both", "Neither"],
+    correctAnswer: "B",
+    explanation: "get() method always hits the database in Hibernate.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 51,
+    question: "What are the states of an object in Hibernate?",
+    options: ["Transient, Persistent, Detached", "New, Modified, Deleted", "Active, Inactive, Removed", "Created, Updated, Destroyed"],
+    correctAnswer: "A",
+    explanation: "Hibernate objects have three states: Transient, Persistent, and Detached.",
+    topic: "Hibernate Entity Lifecycle",
+    difficulty: "medium"
+  },
+
+  // Hibernate Transactions (52)
+  {
+    id: 52,
+    question: "Which annotation is used to mark a method as transactional in Hibernate?",
+    options: ["@Transaction", "@Transactional", "@Tx", "@TransactionScope"],
+    correctAnswer: "B",
+    explanation: "@Transactional annotation is used to mark methods as transactional.",
+    topic: "Hibernate Transactions",
+    difficulty: "easy"
+  },
+
+  // Spring Boot (53-56)
+  {
+    id: 53,
+    question: "What is the primary feature of Spring Boot?",
+    options: ["Simplifies data access", "Automates code generation", "Simplifies project setup", "Enhances UI design"],
+    correctAnswer: "C",
+    explanation: "Spring Boot's primary feature is simplifying project setup with auto-configuration.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 54,
+    question: "What does the @SpringBootApplication annotation do?",
+    options: ["Enables JDBC", "Configures a web application", "Combines @Configuration, @EnableAutoConfiguration, and @ComponentScan", "Starts a Spring context"],
+    correctAnswer: "C",
+    explanation: "@SpringBootApplication combines three important annotations.",
+    topic: "Spring Boot",
+    difficulty: "medium"
+  },
+  {
+    id: 55,
+    question: "What are Spring Boot Starters?",
+    options: ["Dependency descriptors", "Configuration files", "Test utilities", "Database connections"],
+    correctAnswer: "A",
+    explanation: "Spring Boot Starters are dependency descriptors that simplify adding dependencies.",
+    topic: "Spring Boot Starters",
+    difficulty: "easy"
+  },
+  {
+    id: 56,
+    question: "What is the advantage of Spring Boot Actuator?",
+    options: ["Managing app profiles", "Enhancing app security", "Monitoring and managing app", "Application logging"],
+    correctAnswer: "C",
+    explanation: "Spring Boot Actuator provides monitoring and management capabilities.",
+    topic: "Spring Boot Actuator",
+    difficulty: "medium"
+  },
+
+  // Spring Boot AutoConfiguration (57)
+  {
+    id: 57,
+    question: "How does Spring Boot auto-configuration work?",
+    options: ["By scanning classpath and configuring beans automatically", "By reading XML files", "By manual configuration", "By environment variables"],
+    correctAnswer: "A",
+    explanation: "Spring Boot auto-configuration works by scanning the classpath and configuring beans automatically.",
+    topic: "Spring Boot AutoConfiguration",
+    difficulty: "medium"
+  },
+
+  // Embedded Server (58)
+  {
+    id: 58,
+    question: "Which embedded servers does Spring Boot support?",
+    options: ["Tomcat", "Jetty", "Undertow", "All of the above"],
+    correctAnswer: "D",
+    explanation: "Spring Boot supports Tomcat, Jetty, and Undertow as embedded servers.",
+    topic: "Embedded Server",
+    difficulty: "easy"
+  },
+
+  // Spring Data JPA (59-60)
+  {
+    id: 59,
+    question: "What is Spring Data JPA?",
+    options: ["A database", "A framework that simplifies JPA usage", "An ORM tool", "A query language"],
+    correctAnswer: "B",
+    explanation: "Spring Data JPA simplifies the use of JPA for data access.",
+    topic: "Spring Data JPA",
+    difficulty: "easy"
+  },
+  {
+    id: 60,
+    question: "Which annotation is used to mark a class as a JPA repository?",
+    options: ["@Repository", "@JpaRepository", "@Entity", "@Table"],
+    correctAnswer: "A",
+    explanation: "@Repository annotation is used to mark JPA repository classes.",
+    topic: "Spring Data JPA",
+    difficulty: "easy"
+  },
+
+  // Spring Data MongoDB (61)
+  {
+    id: 61,
+    question: "Which template class is used for MongoDB operations in Spring Data?",
+    options: ["MongoTemplate", "MongoOperations", "MongoDbTemplate", "MongoClient"],
+    correctAnswer: "A",
+    explanation: "MongoTemplate is the main template class for MongoDB operations.",
+    topic: "Spring Data MongoDB",
+    difficulty: "medium"
+  },
+
+  // Spring Data JDBC (62)
+  {
+    id: 62,
+    question: "What is the main difference between Spring Data JPA and Spring Data JDBC?",
+    options: ["JPA uses ORM, JDBC is simpler without ORM complexity", "JDBC is faster", "JPA is newer", "No difference"],
+    correctAnswer: "A",
+    explanation: "Spring Data JDBC is simpler and doesn't have the complexity of ORM that JPA has.",
+    topic: "Spring Data JDBC",
+    difficulty: "medium"
+  },
+
+  // Microservices (63)
+  {
+    id: 63,
+    question: "Which of the following is a primary advantage of using microservices?",
+    options: ["Centralized data management", "Scalability", "Simplified deployment", "Reduced network calls"],
+    correctAnswer: "B",
+    explanation: "One of the primary advantages of microservices is scalability.",
+    topic: "Microservices",
+    difficulty: "medium"
+  },
+
+  // Spring Cloud Gateway (64)
+  {
+    id: 64,
+    question: "What is the purpose of Spring Cloud Gateway?",
+    options: ["Service discovery", "API gateway and routing", "Configuration management", "Circuit breaking"],
+    correctAnswer: "B",
+    explanation: "Spring Cloud Gateway provides API gateway functionality and routing.",
+    topic: "Spring Cloud Gateway",
+    difficulty: "medium"
+  },
+
+  // Spring Cloud Config (65)
+  {
+    id: 65,
+    question: "What is the primary purpose of Spring Cloud Config Server?",
+    options: ["Service discovery", "Centralized configuration management", "Load balancing", "Circuit breaking"],
+    correctAnswer: "B",
+    explanation: "Spring Cloud Config Server provides centralized configuration management.",
+    topic: "Spring Cloud Config",
+    difficulty: "medium"
+  },
+
+  // Circuit Breaker (66)
+  {
+    id: 66,
+    question: "Which pattern helps prevent system failures from cascading?",
+    options: ["Singleton", "Circuit Breaker", "Observer", "Factory"],
+    correctAnswer: "B",
+    explanation: "Circuit Breaker pattern helps prevent cascading failures.",
+    topic: "Circuit Breaker",
+    difficulty: "medium"
+  },
+
+  // Spring Cloud OpenFeign (67)
+  {
+    id: 67,
+    question: "What is Spring Cloud OpenFeign used for?",
+    options: ["Service discovery", "Declarative REST clients", "Configuration management", "Load balancing"],
+    correctAnswer: "B",
+    explanation: "Spring Cloud OpenFeign is used for creating declarative REST clients.",
+    topic: "Spring Cloud OpenFeign",
+    difficulty: "medium"
+  },
+
+  // Service Discovery (68)
+  {
+    id: 68,
+    question: "For service discovery in Spring Boot microservices, which tool is commonly used?",
+    options: ["Eureka", "Zookeeper", "Consul", "All of the above"],
+    correctAnswer: "D",
+    explanation: "Eureka, Zookeeper, and Consul can all be used for service discovery.",
+    topic: "Service Discovery",
+    difficulty: "medium"
+  },
+
+  // Java 8 Features (69-73)
+  {
+    id: 69,
+    question: "Which of the following is not introduced with Java 8?",
+    options: ["Stream API", "Serialization", "Spliterator", "Lambda Expression"],
+    correctAnswer: "B",
+    explanation: "Serialization was introduced in earlier versions of Java, not Java 8.",
+    topic: "Java 8 Features",
+    difficulty: "medium"
+  },
+  {
+    id: 70,
+    question: "What are the two types of Streams offered by Java 8?",
+    options: ["sequential and parallel", "sequential and random", "parallel and random", "random and synchronized"],
+    correctAnswer: "A",
+    explanation: "Java 8 provides sequential and parallel streams for processing collections.",
+    topic: "Java 8 Features",
+    difficulty: "easy"
+  },
+  {
+    id: 71,
+    question: "Which method is used to create an infinite stream?",
+    options: ["Stream.infinite()", "Stream.generate()", "Stream.iterate()", "Both Stream.generate() and Stream.iterate()"],
+    correctAnswer: "D",
+    explanation: "Both Stream.generate() and Stream.iterate() can create infinite streams.",
+    topic: "Java 8 Features",
+    difficulty: "medium"
+  },
+  {
+    id: 72,
+    question: "Which functional interface returns a boolean value?",
+    options: ["Consumer", "Supplier", "Function", "Predicate"],
+    correctAnswer: "D",
+    explanation: "Predicate functional interface returns a boolean value based on some condition.",
+    topic: "Java 8 Features",
+    difficulty: "easy"
+  },
+  {
+    id: 73,
+    question: "What is the use of the Supplier functional interface?",
+    options: ["To consume values", "To supply values without taking any input", "To transform values", "To test conditions"],
+    correctAnswer: "B",
+    explanation: "Supplier functional interface provides values without taking any input parameters.",
+    topic: "Java 8 Features",
+    difficulty: "medium"
+  },
+
+  // Method References (74)
+  {
+    id: 74,
+    question: "Which symbol is used to define a method reference in Java?",
+    options: ["->", "::", "=>", "//"],
+    correctAnswer: "B",
+    explanation: "The :: (double colon) operator is used for method references in Java 8.",
+    topic: "Method References",
+    difficulty: "easy"
+  },
+
+  // Stream API (75-76)
+  {
+    id: 75,
+    question: "Which method in Stream API is used to perform a reduction?",
+    options: ["reduce()", "accumulate()", "collect()", "gather()"],
+    correctAnswer: "A",
+    explanation: "The reduce() method performs a reduction on stream elements using an associative accumulation function.",
+    topic: "Stream API",
+    difficulty: "medium"
+  },
+  {
+    id: 76,
+    question: "Which of the following is a terminal operation?",
+    options: ["map()", "filter()", "forEach()", "peek()"],
+    correctAnswer: "C",
+    explanation: "forEach() is a terminal operation that consumes the stream.",
+    topic: "Stream API",
+    difficulty: "medium"
+  },
+
+  // Maven Build Lifecycle (77-78)
+  {
+    id: 77,
+    question: "Which lifecycle phase packages the compiled source code?",
+    options: ["compile", "install", "package", "validate"],
+    correctAnswer: "C",
+    explanation: "The package phase takes compiled code and packages it into distributable format like JAR.",
+    topic: "Maven Build Lifecycle",
+    difficulty: "easy"
+  },
+  {
+    id: 78,
+    question: "What are the three built-in build lifecycles in Maven?",
+    options: ["Clean, Build, Deploy", "Clean, Default, Site", "Validate, Compile, Test", "Build, Package, Install"],
+    correctAnswer: "B",
+    explanation: "Maven has three built-in lifecycles: Clean (project cleaning), Default (project deployment), Site (documentation).",
+    topic: "Maven Build Lifecycle",
+    difficulty: "medium"
+  },
+
+  // Maven Plugins (79)
+  {
+    id: 79,
+    question: "Which Maven plugin is used for compiling Java sources?",
+    options: ["maven-compile-plugin", "maven-compiler-plugin", "maven-java-plugin", "maven-source-plugin"],
+    correctAnswer: "B",
+    explanation: "The maven-compiler-plugin is used to compile Java source files.",
+    topic: "Maven Plugins",
+    difficulty: "easy"
+  },
+
+  // Maven Repository (80)
+  {
+    id: 80,
+    question: "Which of the following is NOT a type of Maven repository?",
+    options: ["Local", "Central", "Remote", "Global"],
+    correctAnswer: "D",
+    explanation: "Maven has Local, Central, and Remote repositories. There's no Global repository type.",
+    topic: "Maven Repository",
+    difficulty: "easy"
+  },
+
+  // Maven Directory Structure (81)
+  {
+    id: 81,
+    question: "In which directory are resource files placed by default?",
+    options: ["src/resources", "src/main/resources", "resources/main", "main/resources"],
+    correctAnswer: "B",
+    explanation: "Maven follows standard directory layout with resources in src/main/resources.",
+    topic: "Maven Directory Structure",
+    difficulty: "easy"
+  },
+
+  // Spring MVC (82-88)
+  {
+    id: 82,
+    question: "Which annotation is used to create a Spring MVC controller class?",
+    options: ["@Component", "@Service", "@Controller", "@Repository"],
+    correctAnswer: "C",
+    explanation: "@Controller annotation indicates that a class is a Spring MVC controller.",
+    topic: "Spring MVC",
+    difficulty: "easy"
+  },
+  {
+    id: 83,
+    question: "Which of the following handles HTTP requests in Spring MVC?",
+    options: ["HandlerMapping", "DispatcherServlet", "ViewResolver", "Controller"],
+    correctAnswer: "B",
+    explanation: "DispatcherServlet is responsible for dispatching incoming HTTP requests to appropriate controllers.",
+    topic: "Spring MVC",
+    difficulty: "medium"
+  },
+  {
+    id: 84,
+    question: "Which annotation binds a method parameter to a named attribute?",
+    options: ["@RequestParam", "@PathVariable", "@ModelAttribute", "@RequestBody"],
+    correctAnswer: "C",
+    explanation: "@ModelAttribute binds a method parameter to a named attribute.",
+    topic: "Spring MVC",
+    difficulty: "medium"
+  },
+  {
+    id: 85,
+    question: "How can you handle exceptions in Spring MVC?",
+    options: ["@ExceptionHandler", "@ErrorHandler", "@HandleException", "@CatchException"],
+    correctAnswer: "A",
+    explanation: "@ExceptionHandler annotation is used to handle exceptions in Spring MVC.",
+    topic: "Spring MVC",
+    difficulty: "medium"
+  },
+  {
+    id: 86,
+    question: "What does the @ResponseBody annotation do?",
+    options: ["Reads request body", "Writes return value to HTTP response body", "Maps request parameters", "Handles file uploads"],
+    correctAnswer: "B",
+    explanation: "@ResponseBody tells controller that return value should be written directly to HTTP response body.",
+    topic: "Spring MVC",
+    difficulty: "medium"
+  },
+  {
+    id: 87,
+    question: "Which annotation indicates a method should handle HTTP POST requests?",
+    options: ["@PostMapping", "@RequestMapping", "@Post", "@HandlePost"],
+    correctAnswer: "A",
+    explanation: "@PostMapping is a shortcut for @RequestMapping(method = RequestMethod.POST).",
+    topic: "Spring MVC",
+    difficulty: "easy"
+  },
+  {
+    id: 88,
+    question: "How do you access request parameters in a controller method?",
+    options: ["@RequestParam", "@Param", "@Parameter", "@RequestParameter"],
+    correctAnswer: "A",
+    explanation: "@RequestParam annotation binds request parameter value to method parameter.",
+    topic: "Spring MVC",
+    difficulty: "easy"
+  },
+
+  // Collections Advanced (89-92)
+  {
+    id: 89,
+    question: "Which collection provides constant time performance for basic operations?",
+    options: ["ArrayList", "LinkedList", "HashMap", "TreeMap"],
+    correctAnswer: "C",
+    explanation: "HashMap provides constant time O(1) performance for basic operations like get and put.",
+    topic: "Collections Advanced",
+    difficulty: "medium"
+  },
+  {
+    id: 90,
+    question: "Which collection is synchronized in Java?",
+    options: ["ArrayList", "HashMap", "Vector", "HashSet"],
+    correctAnswer: "C",
+    explanation: "Vector is synchronized and thread-safe, unlike ArrayList.",
+    topic: "Collections Advanced",
+    difficulty: "medium"
+  },
+  {
+    id: 91,
+    question: "Which method is used to sort a collection?",
+    options: ["Collections.sort()", "Collection.sort()", "Arrays.sort()", "List.sort()"],
+    correctAnswer: "A",
+    explanation: "Collections.sort() is used to sort collections like Lists.",
+    topic: "Collections Advanced",
+    difficulty: "easy"
+  },
+  {
+    id: 92,
+    question: "What is the difference between fail-fast and fail-safe iterators?",
+    options: ["No difference", "Fail-fast throws exception on modification, fail-safe doesn't", "Fail-safe is faster", "Fail-fast works only with Lists"],
+    correctAnswer: "B",
+    explanation: "Fail-fast iterators throw ConcurrentModificationException if collection is modified during iteration.",
+    topic: "Collections Advanced",
+    difficulty: "hard"
+  },
+
+  // Hibernate Advanced (93-96)
+  {
+    id: 93,
+    question: "What is the purpose of Hibernate Configuration file?",
+    options: ["Define entity mappings", "Configure database connection and Hibernate properties", "Define queries", "Handle transactions"],
+    correctAnswer: "B",
+    explanation: "Hibernate configuration file contains database connection and Hibernate-specific properties.",
+    topic: "Hibernate Advanced",
+    difficulty: "medium"
+  },
+  {
+    id: 94,
+    question: "What is HQL?",
+    options: ["Hibernate Query Language", "HTML Query Language", "HTTP Query Language", "Hybrid Query Language"],
+    correctAnswer: "A",
+    explanation: "HQL stands for Hibernate Query Language, used for database queries in Hibernate.",
+    topic: "Hibernate Advanced",
+    difficulty: "easy"
+  },
+  {
+    id: 95,
+    question: "Which annotation is used to mark a class as Hibernate entity?",
+    options: ["@Entity", "@Table", "@Hibernate", "@Persistent"],
+    correctAnswer: "A",
+    explanation: "@Entity annotation marks a class as a Hibernate entity.",
+    topic: "Hibernate Advanced",
+    difficulty: "easy"
+  },
+  {
+    id: 96,
+    question: "What is the difference between get() and load() methods?",
+    options: ["No difference", "get() returns proxy, load() hits database", "load() returns proxy, get() hits database", "Both are same"],
+    correctAnswer: "C",
+    explanation: "load() returns proxy object while get() always hits the database.",
+    topic: "Hibernate Advanced",
+    difficulty: "medium"
+  },
+
+  // Spring Boot Advanced (97-99)
+  {
+    id: 97,
+    question: "What is the purpose of @ConditionalOnProperty annotation?",
+    options: ["Define properties", "Conditionally enable beans based on property", "Read properties", "Validate properties"],
+    correctAnswer: "B",
+    explanation: "@ConditionalOnProperty conditionally enables or disables beans based on property values.",
+    topic: "Spring Boot Advanced",
+    difficulty: "hard"
+  },
+  {
+    id: 98,
+    question: "Which Spring Boot starter is used for web applications?",
+    options: ["spring-boot-starter-web", "spring-boot-starter-mvc", "spring-boot-starter-http", "spring-boot-starter-rest"],
+    correctAnswer: "A",
+    explanation: "spring-boot-starter-web is used for building web applications including RESTful services.",
+    topic: "Spring Boot Advanced",
+    difficulty: "easy"
+  },
+  {
+    id: 99,
+    question: "What is the purpose of @Profile annotation?",
+    options: ["Performance profiling", "Specify which beans should be loaded in different environments", "Security profiling", "Memory profiling"],
+    correctAnswer: "B",
+    explanation: "@Profile annotation conditionally loads beans based on active profiles.",
+    topic: "Spring Boot Advanced",
+    difficulty: "medium"
+  },
+
+  // I/O Operations (100-101)
+  {
+    id: 100,
+    question: "Which class is used for reading character streams in Java?",
+    options: ["FileInputStream", "FileReader", "BufferedInputStream", "DataInputStream"],
+    correctAnswer: "B",
+    explanation: "FileReader is used for reading character streams from files.",
+    topic: "I/O Operations",
+    difficulty: "easy"
+  },
+  {
+    id: 101,
+    question: "What does Files.lines(Path path) do in Java 8?",
+    options: ["Reads filenames", "Reads all lines as Stream", "Counts lines", "Creates files"],
+    correctAnswer: "B",
+    explanation: "Files.lines() reads all lines from a file as a Stream in Java 8.",
+    topic: "I/O Operations",
+    difficulty: "medium"
+  },
+
+  // File Operations (102)
+  {
+    id: 102,
+    question: "Which package contains NIO.2 file operations?",
+    options: ["java.io", "java.nio", "java.nio.file", "java.util.file"],
+    correctAnswer: "C",
+    explanation: "java.nio.file package contains NIO.2 file operations introduced in Java 7.",
+    topic: "File Operations",
+    difficulty: "medium"
+  },
+
+  // Maven (Build Tools) (103-112)
+  {
+    id: 103,
+    question: "Which Maven phase packages the compiled code into a JAR/WAR?",
+    options: ["compile", "package", "install", "verify"],
+    correctAnswer: "B",
+    explanation: "The package phase takes compiled code and packages it into distributable format like JAR/WAR.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+  {
+    id: 104,
+    question: "Which file defines a project's coordinates and dependencies?",
+    options: ["settings.xml", "pom.xml", "toolchains.xml", "effective-pom.xml"],
+    correctAnswer: "B",
+    explanation: "pom.xml (Project Object Model) defines project coordinates, dependencies, and build configuration.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+  {
+    id: 105,
+    question: "What does mvn install do (in addition to packaging)?",
+    options: ["Deploys to remote repo", "Installs artifact to local repo", "Runs integration tests only", "Cleans target directory"],
+    correctAnswer: "B",
+    explanation: "mvn install packages the project and installs the artifact to the local repository.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+  {
+    id: 106,
+    question: "Where do you set repository credentials globally?",
+    options: ["pom.xml", "settings.xml", "parent POM", "profiles.xml"],
+    correctAnswer: "B",
+    explanation: "Global repository credentials are configured in settings.xml file.",
+    topic: "Maven",
+    difficulty: "medium"
+  },
+  {
+    id: 107,
+    question: "What manages versions for child modules without declaring them as dependencies?",
+    options: ["<dependencies>", "<dependencyManagement>", "<build>", "<reporting>"],
+    correctAnswer: "B",
+    explanation: "<dependencyManagement> manages versions for child modules without declaring them as dependencies.",
+    topic: "Maven",
+    difficulty: "medium"
+  },
+  {
+    id: 108,
+    question: "What's a SNAPSHOT version?",
+    options: ["A release build", "A mutable development version", "A BOM only", "A site version"],
+    correctAnswer: "B",
+    explanation: "SNAPSHOT versions are mutable development versions that can change during development.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+  {
+    id: 109,
+    question: "Which scope makes dependency available only at test compile/runtime?",
+    options: ["provided", "runtime", "system", "test"],
+    correctAnswer: "D",
+    explanation: "Test scope makes dependencies available only during test compilation and runtime.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+  {
+    id: 110,
+    question: "\"Effective POM\" means:",
+    options: ["Super POM only", "Parent POM only", "Resolved merge of super, parents, and current POM", "Child module overrides only"],
+    correctAnswer: "C",
+    explanation: "Effective POM is the resolved merge of super POM, parent POMs, and current POM.",
+    topic: "Maven",
+    difficulty: "medium"
+  },
+  {
+    id: 111,
+    question: "Multi-module build order is based on:",
+    options: ["Alphabetical names", "<modules> order + dependency graph", "Declared packaging", "Profiles order"],
+    correctAnswer: "B",
+    explanation: "Maven determines build order based on modules declaration and dependency graph.",
+    topic: "Maven",
+    difficulty: "medium"
+  },
+  {
+    id: 112,
+    question: "A BOM is typically imported using scope:",
+    options: ["compile", "runtime", "import", "provided"],
+    correctAnswer: "C",
+    explanation: "BOM (Bill of Materials) is imported using import scope for dependency management.",
+    topic: "Maven",
+    difficulty: "medium"
+  },
+
+  // Functional Programming (Higher-Order Functions) (113-122)
+  {
+    id: 113,
+    question: "A higher-order function:",
+    options: ["Only returns primitives", "Takes/returns functions", "Is a constructor", "Is a class method only"],
+    correctAnswer: "B",
+    explanation: "Higher-order functions take other functions as parameters or return functions.",
+    topic: "Functional Programming",
+    difficulty: "medium"
+  },
+  {
+    id: 114,
+    question: "In Java, a function type is represented by:",
+    options: ["Runnable only", "Functional interfaces (e.g., Function<T,R>)", "Abstract classes", "Records"],
+    correctAnswer: "B",
+    explanation: "Function types in Java are represented by functional interfaces like Function<T,R>.",
+    topic: "Functional Programming",
+    difficulty: "easy"
+  },
+  {
+    id: 115,
+    question: "Function<A,B>.andThen(C) composes:",
+    options: ["C then A", "A then B then C", "B then A", "A then C ignoring B"],
+    correctAnswer: "B",
+    explanation: "andThen() composes functions sequentially: first applies A→B, then applies the result to C.",
+    topic: "Functional Programming",
+    difficulty: "medium"
+  },
+  {
+    id: 116,
+    question: "Predicate<T>'s negate() returns:",
+    options: ["Always true", "Opposite predicate", "Always false", "A consumer"],
+    correctAnswer: "B",
+    explanation: "negate() returns a predicate that represents the logical negation of the original predicate.",
+    topic: "Functional Programming",
+    difficulty: "easy"
+  },
+  {
+    id: 117,
+    question: "Which is true about pure functions?",
+    options: ["Depend on global state", "No side effects; same input ⇒ same output", "Must be static", "Must throw no exceptions"],
+    correctAnswer: "B",
+    explanation: "Pure functions have no side effects and always return the same output for the same input.",
+    topic: "Functional Programming",
+    difficulty: "medium"
+  },
+  {
+    id: 118,
+    question: "map vs flatMap:",
+    options: ["Both return nested structures", "map flattens; flatMap maps", "map transforms; flatMap transforms + flattens", "They're identical"],
+    correctAnswer: "C",
+    explanation: "map transforms elements, while flatMap transforms and flattens nested structures.",
+    topic: "Functional Programming",
+    difficulty: "medium"
+  },
+  {
+    id: 119,
+    question: "A closure:",
+    options: ["Cannot capture variables", "Captures effectively-final vars from enclosing scope", "Only works in static contexts", "Requires reflection"],
+    correctAnswer: "B",
+    explanation: "Closures capture effectively final variables from their enclosing scope.",
+    topic: "Functional Programming",
+    difficulty: "hard"
+  },
+  {
+    id: 120,
+    question: "Currying transforms:",
+    options: ["Many args → one arg at a time", "One arg → many", "Primitives → objects", "Lambdas → methods"],
+    correctAnswer: "A",
+    explanation: "Currying transforms a function with multiple arguments into functions taking one argument at a time.",
+    topic: "Functional Programming",
+    difficulty: "hard"
+  },
+  {
+    id: 121,
+    question: "Supplier<T>:",
+    options: ["Consumes T", "Produces T with no args", "Tests T", "Transforms T→R"],
+    correctAnswer: "B",
+    explanation: "Supplier<T> is a functional interface that produces values of type T without taking arguments.",
+    topic: "Functional Programming",
+    difficulty: "easy"
+  },
+  {
+    id: 122,
+    question: "Immutability helps by:",
+    options: ["Increasing shared mutable state", "Reducing need for equals/hashCode", "Avoiding race conditions & easing reasoning", "Disabling GC"],
+    correctAnswer: "C",
+    explanation: "Immutability helps avoid race conditions and makes code easier to reason about.",
+    topic: "Functional Programming",
+    difficulty: "medium"
+  },
+
+  // JDBC Advanced (123-132)
+  {
+    id: 123,
+    question: "Preferred for pooling and JNDI:",
+    options: ["DriverManager", "DataSource", "Statement", "Savepoint"],
+    correctAnswer: "B",
+    explanation: "DataSource is preferred for connection pooling and JNDI lookups over DriverManager.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 124,
+    question: "Prevent SQL injection:",
+    options: ["Statement", "PreparedStatement", "ResultSet", "CallableStatement only"],
+    correctAnswer: "B",
+    explanation: "PreparedStatement prevents SQL injection by using parameterized queries.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 125,
+    question: "Batch updates use:",
+    options: ["addBatch() + executeBatch()", "executeQuery()", "clearWarnings()", "getMetaData()"],
+    correctAnswer: "A",
+    explanation: "Batch updates use addBatch() to add statements and executeBatch() to execute them.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 126,
+    question: "Default auto-commit:",
+    options: ["true", "false", "depends on driver", "not supported"],
+    correctAnswer: "A",
+    explanation: "By default, JDBC connections have auto-commit set to true.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 127,
+    question: "Scrollable, read-only result set type:",
+    options: ["TYPE_FORWARD_ONLY", "TYPE_SCROLL_SENSITIVE", "TYPE_SCROLL_INSENSITIVE", "CONCUR_UPDATABLE"],
+    correctAnswer: "C",
+    explanation: "TYPE_SCROLL_INSENSITIVE allows scrolling but is read-only and insensitive to changes.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 128,
+    question: "Concurrency for updating rows:",
+    options: ["CONCUR_READ_ONLY", "CONCUR_UPDATABLE", "TYPE_SCROLL_SENSITIVE", "TYPE_FORWARD_ONLY"],
+    correctAnswer: "B",
+    explanation: "CONCUR_UPDATABLE concurrency mode allows updating rows in the result set.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 129,
+    question: "Use savepoints to:",
+    options: ["Change isolation", "Partially roll back", "Close connections", "Fetch metadata"],
+    correctAnswer: "B",
+    explanation: "Savepoints allow partial rollback within a transaction.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 130,
+    question: "Try-with-resources ensures:",
+    options: ["Autocommit off", "Automatic close of JDBC resources", "Statement caching", "Connection pooling"],
+    correctAnswer: "B",
+    explanation: "Try-with-resources automatically closes JDBC resources like connections, statements, and result sets.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 131,
+    question: "Isolation levels are set on:",
+    options: ["Statement", "ResultSet", "Connection", "DriverManager"],
+    correctAnswer: "C",
+    explanation: "Transaction isolation levels are set on the Connection object.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 132,
+    question: "Fetch size hint:",
+    options: ["Statement.setFetchSize(int)", "Connection.setFetchSize(int)", "ResultSet.setFetchSize(int)", "DriverManager.setFetchSize(int)"],
+    correctAnswer: "A",
+    explanation: "Statement.setFetchSize(int) provides a hint about the number of rows to fetch.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+
+  // Spring Core Advanced (133-144)
+  {
+    id: 133,
+    question: "IoC means:",
+    options: ["Objects create dependencies", "Container creates/injects dependencies", "No dependencies", "Static factories only"],
+    correctAnswer: "B",
+    explanation: "IoC (Inversion of Control) means the container creates and injects dependencies instead of objects creating them.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 134,
+    question: "Default Spring bean scope:",
+    options: ["prototype", "request", "singleton", "session"],
+    correctAnswer: "C",
+    explanation: "The default Spring bean scope is singleton - one instance per container.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 135,
+    question: "Which stereotype triggers component scanning?",
+    options: ["@Bean", "@Component/@Service/@Repository/@Controller", "@Configuration", "@EnableAutoConfiguration"],
+    correctAnswer: "B",
+    explanation: "Stereotype annotations like @Component, @Service, @Repository, @Controller trigger component scanning.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 136,
+    question: "@Configuration classes by default:",
+    options: ["Are not proxied", "Are proxied (CGLIB) to enforce singleton @Bean methods", "Require XML", "Disable DI"],
+    correctAnswer: "B",
+    explanation: "@Configuration classes are proxied by CGLIB to enforce singleton behavior of @Bean methods.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+  {
+    id: 137,
+    question: "AOP \"pointcut\" is:",
+    options: ["The code to run", "Where to run (expression selecting join points)", "The woven class", "The advisor's order"],
+    correctAnswer: "B",
+    explanation: "A pointcut is an expression that selects join points where advice should be applied.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+  {
+    id: 138,
+    question: "JDK proxy limitation:",
+    options: ["Final classes only", "Interfaces only (methods on interface)", "Requires XML AOP", "Works with private methods"],
+    correctAnswer: "B",
+    explanation: "JDK proxies work only with interfaces and can only proxy methods declared on the interface.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+  {
+    id: 139,
+    question: "Self-invocation with proxies:",
+    options: ["Works always", "Skips advice (same instance call)", "Throws exception", "Requires @Primary"],
+    correctAnswer: "B",
+    explanation: "Self-invocation skips advice because it's a direct call on the same instance, bypassing the proxy.",
+    topic: "Spring Core",
+    difficulty: "hard"
+  },
+  {
+    id: 140,
+    question: "MVC: Which handles web requests?",
+    options: ["@Service", "@Controller / @RestController", "@Repository", "BeanPostProcessor"],
+    correctAnswer: "B",
+    explanation: "@Controller and @RestController annotations mark classes that handle web requests.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 141,
+    question: "Bean lifecycle callback interface:",
+    options: ["InitializingBean / DisposableBean", "Closeable", "InvocationHandler", "ReflectionUtils"],
+    correctAnswer: "A",
+    explanation: "InitializingBean and DisposableBean are lifecycle callback interfaces for initialization and destruction.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+  {
+    id: 142,
+    question: "Resolve multiple candidates of same type with:",
+    options: ["@Autowired only", "@Qualifier or @Primary", "@Lazy only", "@Scope"],
+    correctAnswer: "B",
+    explanation: "@Qualifier specifies which bean to inject, @Primary marks the preferred bean when multiple candidates exist.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+  {
+    id: 143,
+    question: "Property externalization is read via:",
+    options: ["Environment/PropertySources", "BeanFactoryPostProcessor only", "AOP", "DispatcherServlet"],
+    correctAnswer: "A",
+    explanation: "Properties are externalized and read via Environment and PropertySources.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+  {
+    id: 144,
+    question: "Prototype scope caveat:",
+    options: ["Container manages full lifecycle incl. destroy", "Container creates only; destroy not called automatically", "Not injectable", "Singleton by default after first use"],
+    correctAnswer: "B",
+    explanation: "For prototype scope, the container only creates beans; destroy callbacks are not called automatically.",
+    topic: "Spring Core",
+    difficulty: "hard"
+  },
+
+  // Hibernate Advanced (145-154)
+  {
+    id: 145,
+    question: "Entity states include:",
+    options: ["static, final, transient", "transient, persistent, detached, removed", "open, closed", "proxied, unproxied only"],
+    correctAnswer: "B",
+    explanation: "Hibernate entity states are: transient, persistent, detached, and removed.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 146,
+    question: "Owning side of bidirectional relation:",
+    options: ["Side with mappedBy", "Side without mappedBy", "Always many-to-many", "Repository side"],
+    correctAnswer: "B",
+    explanation: "The owning side of a bidirectional relationship is the side without mappedBy attribute.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 147,
+    question: "Default fetch type per JPA spec:",
+    options: ["*ToOne = LAZY, *ToMany = EAGER", "*ToOne = EAGER, *ToMany = LAZY", "Both LAZY", "Both EAGER"],
+    correctAnswer: "B",
+    explanation: "JPA default: @OneToOne/@ManyToOne are EAGER, @OneToMany/@ManyToMany are LAZY.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 148,
+    question: "Cascade that deletes children with parent removal:",
+    options: ["Cascade.PERSIST", "Cascade.MERGE", "orphanRemoval=true (optionally with REMOVE)", "Cascade.DETACH only"],
+    correctAnswer: "C",
+    explanation: "orphanRemoval=true deletes child entities when they're removed from the parent collection.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 149,
+    question: "First-level cache lives in:",
+    options: ["Session (per session)", "SessionFactory (global)", "Database", "Second-level cache"],
+    correctAnswer: "A",
+    explanation: "First-level cache is per Session and automatically manages entity instances within that session.",
+    topic: "Hibernate",
+    difficulty: "easy"
+  },
+  {
+    id: 150,
+    question: "Dirty checking triggers update:",
+    options: ["Only on manual flush", "On flush/commit if managed entity changed", "Never", "Only with @Transactional(readOnly=true)"],
+    correctAnswer: "B",
+    explanation: "Dirty checking automatically triggers updates on flush/commit when managed entities have changed.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 151,
+    question: "Optimistic locking uses:",
+    options: ["Row locks", "Version/timestamp to detect conflicts", "Database triggers", "Serializable isolation only"],
+    correctAnswer: "B",
+    explanation: "Optimistic locking uses version fields or timestamps to detect concurrent modification conflicts.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 152,
+    question: "N+1 problem occurs when:",
+    options: ["Using pagination", "Accessing LAZY collections repeatedly without fetch join", "Using DTOs", "Using Criteria API"],
+    correctAnswer: "B",
+    explanation: "N+1 problem occurs when accessing lazy collections in a loop, causing additional queries for each access.",
+    topic: "Hibernate",
+    difficulty: "hard"
+  },
+  {
+    id: 153,
+    question: "GenerationType.IDENTITY means:",
+    options: ["Sequence table", "Database identity/auto-increment", "UUID only", "Application assigned"],
+    correctAnswer: "B",
+    explanation: "IDENTITY generation type uses database identity columns or auto-increment features.",
+    topic: "Hibernate",
+    difficulty: "easy"
+  },
+  {
+    id: 154,
+    question: "Flush mode default:",
+    options: ["COMMIT", "MANUAL", "AUTO", "NEVER"],
+    correctAnswer: "C",
+    explanation: "The default flush mode is AUTO, which flushes before queries and on commit.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+
+  // Spring Boot Advanced (155-164)
+  {
+    id: 155,
+    question: "Starters are:",
+    options: ["Parent POMs", "Opinionated dependency bundles", "Build plugins", "Profiles"],
+    correctAnswer: "B",
+    explanation: "Spring Boot starters are opinionated dependency bundles that simplify dependency management.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 156,
+    question: "Auto-config is controlled by:",
+    options: ["@EnableAutoConfiguration / spring.factories (internally) + conditions", "@Controller", "beans.xml", "@Repository"],
+    correctAnswer: "A",
+    explanation: "Auto-configuration is controlled by @EnableAutoConfiguration with conditions defined in spring.factories.",
+    topic: "Spring Boot",
+    difficulty: "medium"
+  },
+  {
+    id: 157,
+    question: "To exclude an auto-config:",
+    options: ["Delete dependency", "@SpringBootApplication(exclude=…)", "@DisableAutoConfig", "Cannot exclude"],
+    correctAnswer: "B",
+    explanation: "Use @SpringBootApplication(exclude=...) or @EnableAutoConfiguration(exclude=...) to exclude auto-configurations.",
+    topic: "Spring Boot",
+    difficulty: "medium"
+  },
+  {
+    id: 158,
+    question: "Actuator web-exposed by default:",
+    options: ["All endpoints", "None", "Only health and info", "Only metrics"],
+    correctAnswer: "C",
+    explanation: "By default, only health and info actuator endpoints are exposed over web.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 159,
+    question: "Change HTTP port:",
+    options: ["server.port=8081", "spring.port=8081", "management.port=8081 only", "web.port=8081"],
+    correctAnswer: "A",
+    explanation: "Use server.port property to change the HTTP port of the embedded server.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 160,
+    question: "Embedded server default:",
+    options: ["Jetty", "Netty", "Tomcat", "Undertow"],
+    correctAnswer: "C",
+    explanation: "Tomcat is the default embedded server in Spring Boot web applications.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 161,
+    question: "Externalized config priority (higher wins):",
+    options: ["application.properties over env vars", "Env vars over application.properties", "Random order", "YAML never supported"],
+    correctAnswer: "B",
+    explanation: "Environment variables have higher priority than application.properties in Spring Boot's configuration hierarchy.",
+    topic: "Spring Boot",
+    difficulty: "medium"
+  },
+  {
+    id: 162,
+    question: "Run method without web server:",
+    options: ["spring.main.web-application-type=none", "Remove actuator", "server.none=true", "Must write a CLI"],
+    correctAnswer: "A",
+    explanation: "Set spring.main.web-application-type=none to run Spring Boot without starting a web server.",
+    topic: "Spring Boot",
+    difficulty: "medium"
+  },
+  {
+    id: 163,
+    question: "View auto-restart in dev:",
+    options: ["spring-boot-devtools", "actuator only", "test starter", "profile \"restart\""],
+    correctAnswer: "A",
+    explanation: "spring-boot-devtools provides automatic restart capabilities during development.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 164,
+    question: "Show autoconfig report (why beans matched/skipped):",
+    options: ["/actuator/beans only", "--debug flag or debug=true", "/actuator/env only", "mvn site"],
+    correctAnswer: "B",
+    explanation: "Use --debug flag or debug=true property to show auto-configuration report.",
+    topic: "Spring Boot",
+    difficulty: "medium"
+  },
+
+  // Spring Security (165-174)
+  {
+    id: 165,
+    question: "Authentication vs Authorization:",
+    options: ["Who you are vs what you can do", "What you can do vs who you are", "Both same", "Only passwords"],
+    correctAnswer: "A",
+    explanation: "Authentication verifies who you are, Authorization determines what you can do.",
+    topic: "Spring Security",
+    difficulty: "easy"
+  },
+  {
+    id: 166,
+    question: "Password storage should use:",
+    options: ["Plain text", "NoOpPasswordEncoder", "BCrypt/Argon2", "Base64"],
+    correctAnswer: "C",
+    explanation: "Passwords should be stored using strong hashing algorithms like BCrypt or Argon2.",
+    topic: "Spring Security",
+    difficulty: "easy"
+  },
+  {
+    id: 167,
+    question: "Stateless JWT APIs typically:",
+    options: ["Enable sessions", "Disable/ignore CSRF tokens", "Require form login", "Use JSESSIONID"],
+    correctAnswer: "B",
+    explanation: "Stateless JWT APIs typically disable CSRF protection since they don't use sessions.",
+    topic: "Spring Security",
+    difficulty: "medium"
+  },
+  {
+    id: 168,
+    question: "SecurityFilterChain bean config:",
+    options: ["Replaces WebSecurityConfigurerAdapter (new style)", "Deprecated", "For method security only", "For OAuth2 only"],
+    correctAnswer: "A",
+    explanation: "SecurityFilterChain bean configuration is the new style replacing WebSecurityConfigurerAdapter.",
+    topic: "Spring Security",
+    difficulty: "medium"
+  },
+  {
+    id: 169,
+    question: "Roles vs authorities:",
+    options: ["Identical", "ROLE_* is a convention for roles; authorities are arbitrary strings", "Roles cannot be mapped", "Authorities must start with ROLE_"],
+    correctAnswer: "B",
+    explanation: "ROLE_ prefix is a convention for roles, while authorities can be any arbitrary strings.",
+    topic: "Spring Security",
+    difficulty: "medium"
+  },
+  {
+    id: 170,
+    question: "OAuth2 roles:",
+    options: ["Client, Resource Server, Authorization Server", "Client & Database only", "Basic and Digest", "JWT and JWE"],
+    correctAnswer: "A",
+    explanation: "OAuth2 defines three main roles: Client, Resource Server, and Authorization Server.",
+    topic: "Spring Security",
+    difficulty: "medium"
+  },
+  {
+    id: 171,
+    question: "Resource server validates JWT via:",
+    options: ["Introspection or public key (JWK)", "Database only", "Sessions", "Cookies only"],
+    correctAnswer: "A",
+    explanation: "Resource servers validate JWTs via token introspection or using public keys (JWK).",
+    topic: "Spring Security",
+    difficulty: "medium"
+  },
+  {
+    id: 172,
+    question: "Method security annotation:",
+    options: ["@Secured/@PreAuthorize", "@Autowired", "@Transactional", "@Async"],
+    correctAnswer: "A",
+    explanation: "@Secured and @PreAuthorize are annotations used for method-level security.",
+    topic: "Spring Security",
+    difficulty: "easy"
+  },
+  {
+    id: 173,
+    question: "To store users programmatically:",
+    options: ["In UserDetailsService", "In PasswordEncoder", "In OncePerRequestFilter", "In HandlerInterceptor"],
+    correctAnswer: "A",
+    explanation: "UserDetailsService is used to store and retrieve user details programmatically.",
+    topic: "Spring Security",
+    difficulty: "easy"
+  },
+  {
+    id: 174,
+    question: "Adding OAuth2 login in Spring Boot usually needs:",
+    options: ["spring-security-oauth (legacy)", "spring-boot-starter-oauth2-client + config", "JDBC only", "Actuator only"],
+    correctAnswer: "B",
+    explanation: "OAuth2 login requires spring-boot-starter-oauth2-client dependency plus configuration.",
+    topic: "Spring Security",
+    difficulty: "medium"
+  },
+
+  // Spring Data Advanced (175-184)
+  {
+    id: 175,
+    question: "Query derivation example:",
+    options: ["findByEmailAndStatus", "getUser", "searchAnything", "lookup"],
+    correctAnswer: "A",
+    explanation: "findByEmailAndStatus is an example of Spring Data query derivation from method names.",
+    topic: "Spring Data",
+    difficulty: "easy"
+  },
+  {
+    id: 176,
+    question: "Pagination interface:",
+    options: ["ListableRepository", "PagingAndSortingRepository / Pageable", "MapRepository", "SliceableOnly"],
+    correctAnswer: "B",
+    explanation: "PagingAndSortingRepository and Pageable provide pagination support in Spring Data.",
+    topic: "Spring Data",
+    difficulty: "easy"
+  },
+  {
+    id: 177,
+    question: "Custom JPQL:",
+    options: ["@Query(\"select u from User u where…\")", "@NativeQuery", "@JPQLQuery", "@DeriveQuery"],
+    correctAnswer: "A",
+    explanation: "@Query annotation is used to define custom JPQL queries in Spring Data JPA.",
+    topic: "Spring Data",
+    difficulty: "easy"
+  },
+  {
+    id: 178,
+    question: "Projection to interface:",
+    options: ["Not supported", "Use interface-based projections", "Only DTO constructors", "Only native SQL"],
+    correctAnswer: "B",
+    explanation: "Spring Data supports interface-based projections for returning partial data.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+  {
+    id: 179,
+    question: "Spring Data JDBC vs JPA:",
+    options: ["JDBC supports lazy proxies", "JDBC focuses on aggregates; no lazy, no proxies", "JDBC always EAGER + joins graph automatically", "Identical behavior"],
+    correctAnswer: "B",
+    explanation: "Spring Data JDBC is simpler, focusing on aggregates without lazy loading or proxies.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+  {
+    id: 180,
+    question: "MongoDB doc mapping:",
+    options: ["@Entity", "@Document and @Id", "@Table", "@Column"],
+    correctAnswer: "B",
+    explanation: "MongoDB documents are mapped using @Document and @Id annotations.",
+    topic: "Spring Data",
+    difficulty: "easy"
+  },
+  {
+    id: 181,
+    question: "Upsert in MongoTemplate:",
+    options: ["update().upsert()", "insertOrUpdate()", "saveOrUpdate()", "merge()"],
+    correctAnswer: "A",
+    explanation: "MongoTemplate supports upsert operations using update().upsert() pattern.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+  {
+    id: 182,
+    question: "Indexing a Mongo field:",
+    options: ["@Indexed", "@Index (JPA)", "@MongoKey", "@Constraint"],
+    correctAnswer: "A",
+    explanation: "@Indexed annotation is used to create indexes on MongoDB fields.",
+    topic: "Spring Data",
+    difficulty: "easy"
+  },
+  {
+    id: 183,
+    question: "Specifications (JPA) live in:",
+    options: ["JpaSpecificationExecutor", "CrudRepository only", "MongoRepository", "JdbcAggregateTemplate"],
+    correctAnswer: "A",
+    explanation: "JPA Specifications are used with JpaSpecificationExecutor for dynamic queries.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+  {
+    id: 184,
+    question: "Transaction demarcation default:",
+    options: ["Repository auto-TX always", "Use @Transactional on service layer", "Only at controller", "Mongo doesn't support any TX"],
+    correctAnswer: "B",
+    explanation: "Best practice is to use @Transactional at the service layer for transaction demarcation.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+
+  // Microservices (185-194)
+  {
+    id: 185,
+    question: "Spring Cloud Gateway routes are defined via:",
+    options: ["Controllers", "Predicates & Filters (YAML/Java DSL)", "JPA entities", "Servlet filters only"],
+    correctAnswer: "B",
+    explanation: "Spring Cloud Gateway routes are defined using predicates and filters in YAML or Java DSL.",
+    topic: "Microservices",
+    difficulty: "medium"
+  },
+  {
+    id: 186,
+    question: "Path-based routing uses predicate:",
+    options: ["Host", "Path", "Method", "Header"],
+    correctAnswer: "B",
+    explanation: "Path predicate is used for path-based routing in Spring Cloud Gateway.",
+    topic: "Microservices",
+    difficulty: "easy"
+  },
+  {
+    id: 187,
+    question: "Centralized external config server provides:",
+    options: ["Per-service code", "Config properties from Git/SVN and live refresh", "Only env vars", "Only YAML merging"],
+    correctAnswer: "B",
+    explanation: "Spring Cloud Config Server provides centralized configuration from Git/SVN with live refresh capabilities.",
+    topic: "Microservices",
+    difficulty: "medium"
+  },
+  {
+    id: 188,
+    question: "Refreshing properties at runtime commonly needs:",
+    options: ["/actuator/refresh (+ @RefreshScope)", "Restart app", "Delete config", "Change profile only"],
+    correctAnswer: "A",
+    explanation: "Runtime property refresh uses /actuator/refresh endpoint with @RefreshScope annotation.",
+    topic: "Microservices",
+    difficulty: "medium"
+  },
+  {
+    id: 189,
+    question: "Circuit breaker states:",
+    options: ["Closed → Open → Half-Open", "On → Off", "Idle → Busy", "Red → Green"],
+    correctAnswer: "A",
+    explanation: "Circuit breaker has three states: Closed (normal), Open (failing), Half-Open (testing).",
+    topic: "Microservices",
+    difficulty: "medium"
+  },
+  {
+    id: 190,
+    question: "Resilience4j annotation:",
+    options: ["@HystrixCommand", "@CircuitBreaker(name=\"x\", fallbackMethod=\"y\")", "@Breaker", "@Retryable only"],
+    correctAnswer: "B",
+    explanation: "Resilience4j uses @CircuitBreaker annotation with name and fallbackMethod parameters.",
+    topic: "Microservices",
+    difficulty: "medium"
+  },
+  {
+    id: 191,
+    question: "Feign enables HTTP clients by:",
+    options: ["Implementing interfaces annotated with @FeignClient", "Extending JpaRepository", "Using JdbcTemplate", "Adding controllers"],
+    correctAnswer: "A",
+    explanation: "Feign creates HTTP clients by implementing interfaces annotated with @FeignClient.",
+    topic: "Microservices",
+    difficulty: "easy"
+  },
+  {
+    id: 192,
+    question: "Timeouts for Feign:",
+    options: ["Unconfigurable", "Via feign.client.config.default.connectTimeout/readTimeout or spring.cloud.openfeign…", "Only via code", "Actuator only"],
+    correctAnswer: "B",
+    explanation: "Feign timeouts are configured via feign.client.config properties or spring.cloud.openfeign properties.",
+    topic: "Microservices",
+    difficulty: "hard"
+  },
+  {
+    id: 193,
+    question: "Propagating auth to downstream from Gateway:",
+    options: ["Drop headers", "Pass/validate JWT in Authorization: Bearer", "Cookies always", "Session replication"],
+    correctAnswer: "B",
+    explanation: "Authentication is typically propagated using JWT tokens in Authorization Bearer headers.",
+    topic: "Microservices",
+    difficulty: "medium"
+  },
+  {
+    id: 194,
+    question: "Discovery + Gateway load-balancing uses:",
+    options: ["Spring Cloud LoadBalancer/Eureka (or other)", "JDBC", "Kafka", "Only Nginx"],
+    correctAnswer: "A",
+    explanation: "Spring Cloud Gateway uses Spring Cloud LoadBalancer with service discovery like Eureka.",
+    topic: "Microservices",
+    difficulty: "medium"
+  },
+
+  // Additional questions to reach closer to 200 for System Design section
+  {
+    id: 195,
+    question: "What is the primary benefit of using design patterns?",
+    options: ["Faster code execution", "Reusable solutions to common problems", "Reduced memory usage", "Automatic testing"],
+    correctAnswer: "B",
+    explanation: "Design patterns provide reusable solutions to commonly occurring problems in software design.",
+    topic: "Design Patterns",
+    difficulty: "easy"
+  },
+  {
+    id: 196,
+    question: "Which pattern ensures a class has only one instance?",
+    options: ["Factory", "Singleton", "Builder", "Observer"],
+    correctAnswer: "B",
+    explanation: "Singleton pattern ensures a class has only one instance and provides global access to it.",
+    topic: "Design Patterns",
+    difficulty: "easy"
+  },
+  {
+    id: 197,
+    question: "What is the main purpose of the Factory pattern?",
+    options: ["Create objects without specifying exact class", "Ensure single instance", "Observe state changes", "Build complex objects"],
+    correctAnswer: "A",
+    explanation: "Factory pattern creates objects without specifying the exact class to create.",
+    topic: "Design Patterns",
+    difficulty: "easy"
+  },
+  {
+    id: 198,
+    question: "Observer pattern is used for:",
+    options: ["Creating objects", "Dependency notification", "Data validation", "Memory management"],
+    correctAnswer: "B",
+    explanation: "Observer pattern defines a dependency between objects so that when one changes, dependents are notified.",
+    topic: "Design Patterns",
+    difficulty: "medium"
+  },
+  {
+    id: 199,
+    question: "What does the Builder pattern help with?",
+    options: ["Singleton creation", "Complex object construction", "Event handling", "Data access"],
+    correctAnswer: "B",
+    explanation: "Builder pattern helps construct complex objects step by step.",
+    topic: "Design Patterns",
+    difficulty: "medium"
+  },
+  {
+    id: 200,
+    question: "Which principle suggests classes should be open for extension but closed for modification?",
+    options: ["Single Responsibility", "Open/Closed", "Liskov Substitution", "Interface Segregation"],
+    correctAnswer: "B",
+    explanation: "Open/Closed Principle states that software entities should be open for extension but closed for modification.",
+    topic: "SOLID Principles",
+    difficulty: "medium"
+  },
+
+  // Cloud Computing Section (201-400)
+  // Java Core Concepts (201-213)
+  {
+    id: 201,
+    question: "Which of the following statements is correct about the keywords final, finally, and finalize in Java?",
+    options: [
+      "final is a block that always executes, finally makes a variable constant, finalize is used for garbage collection",
+      "final makes a variable constant, finally is a block that always executes, finalize is a method called before garbage collection",
+      "final prevents method overrides, finally makes a method final, finalize is the same as finally",
+      "final, finally, and finalize are all synonyms and serve the same purpose"
+    ],
+    correctAnswer: "B",
+    explanation: "final makes variables constant/methods non-overridable, finally is always executed, finalize is called before GC.",
+    topic: "Java Core",
+    difficulty: "medium"
+  },
+  {
+    id: 202,
+    question: "Which of these is NOT a keyword used in Java exception handling?",
+    options: ["try", "catch", "thrown", "finally"],
+    correctAnswer: "C",
+    explanation: "The correct keyword is 'throws', not 'thrown'. The keywords are try, catch, throw, throws, and finally.",
+    topic: "Exception Handling",
+    difficulty: "easy"
+  },
+  {
+    id: 203,
+    question: "Which keyword must be used to start a block of code that monitors for exceptions?",
+    options: ["try", "catch", "throw", "finally"],
+    correctAnswer: "A",
+    explanation: "The 'try' keyword starts a block that monitors for exceptions.",
+    topic: "Exception Handling",
+    difficulty: "easy"
+  },
+  {
+    id: 204,
+    question: "Which keyword is used to handle an exception that has been thrown within a try block?",
+    options: ["throw", "finally", "retry", "catch"],
+    correctAnswer: "D",
+    explanation: "The 'catch' keyword is used to handle exceptions thrown in a try block.",
+    topic: "Exception Handling",
+    difficulty: "easy"
+  },
+  {
+    id: 205,
+    question: "Which keyword in Java is used to manually trigger an exception?",
+    options: ["throw", "throws", "new", "try"],
+    correctAnswer: "A",
+    explanation: "The 'throw' keyword is used to manually trigger/throw an exception.",
+    topic: "Exception Handling",
+    difficulty: "easy"
+  },
+  {
+    id: 206,
+    question: "In Java, which block of code is always executed, regardless of whether an exception is thrown or caught?",
+    options: ["catch", "final", "finally", "end"],
+    correctAnswer: "C",
+    explanation: "The 'finally' block always executes, whether an exception occurs or not.",
+    topic: "Exception Handling",
+    difficulty: "easy"
+  },
+  {
+    id: 207,
+    question: "Which annotation is used to indicate that an interface is intended to be a functional interface?",
+    options: ["@FunctionInterface", "@FunctionalInterface", "@Lambda", "@Interface"],
+    correctAnswer: "B",
+    explanation: "@FunctionalInterface indicates an interface is intended for lambda expressions (single abstract method).",
+    topic: "Functional Programming",
+    difficulty: "easy"
+  },
+  {
+    id: 208,
+    question: "What is the purpose of the Optional class in Java?",
+    options: [
+      "To provide a way to represent optional values that may or may not be present",
+      "To throw exceptions if a value is not present",
+      "To create a list of possible values",
+      "To mark a method as optional"
+    ],
+    correctAnswer: "A",
+    explanation: "Optional provides a container for values that may or may not be present, avoiding null references.",
+    topic: "Java 8 Features",
+    difficulty: "medium"
+  },
+  {
+    id: 209,
+    question: "Which of the following best describes \"dependency injection\"?",
+    options: [
+      "A pattern where a class provides its own dependencies internally",
+      "A feature that injects dependencies into code by bytecode manipulation",
+      "A design pattern where an external source provides the required dependencies to a class",
+      "A way to encrypt dependencies"
+    ],
+    correctAnswer: "C",
+    explanation: "Dependency injection is a pattern where dependencies are provided by an external source rather than created internally.",
+    topic: "Design Patterns",
+    difficulty: "medium"
+  },
+  {
+    id: 210,
+    question: "Which Java package contains the core classes for file and stream-based I/O operations?",
+    options: ["java.nio", "java.util", "java.io", "java.text"],
+    correctAnswer: "C",
+    explanation: "java.io package contains core classes for input/output operations including File, InputStream, OutputStream.",
+    topic: "I/O Operations",
+    difficulty: "easy"
+  },
+  {
+    id: 211,
+    question: "In the Java module system (introduced in Java 9), which keyword is used to define a module?",
+    options: ["package", "module", "import", "requires"],
+    correctAnswer: "B",
+    explanation: "The 'module' keyword is used to define a module in module-info.java file.",
+    topic: "Java 9 Features",
+    difficulty: "medium"
+  },
+  {
+    id: 212,
+    question: "Which feature introduced in Java 8 allows you to pass behavior as a parameter to methods?",
+    options: ["Collections", "Lambdas (lambda expressions)", "Multithreading", "Generics"],
+    correctAnswer: "B",
+    explanation: "Lambda expressions allow passing behavior (code) as parameters to methods.",
+    topic: "Lambda Expressions",
+    difficulty: "easy"
+  },
+  {
+    id: 213,
+    question: "Which Java collection class preserves elements in insertion order and allows at most one null key/value?",
+    options: ["HashMap", "TreeMap", "TreeSet", "LinkedHashMap"],
+    correctAnswer: "D",
+    explanation: "LinkedHashMap maintains insertion order and allows one null key and multiple null values.",
+    topic: "Collections",
+    difficulty: "medium"
+  },
+
+  // Collections Framework (214-225)
+  {
+    id: 214,
+    question: "A List in Java accesses any element by its:",
+    options: ["key", "index", "value", "position"],
+    correctAnswer: "B",
+    explanation: "List interface provides indexed access to elements using get(index) method.",
+    topic: "Collections",
+    difficulty: "easy"
+  },
+  {
+    id: 215,
+    question: "Which of the following collection classes allows duplicate elements?",
+    options: ["ArrayList", "HashSet", "LinkedHashSet", "TreeSet"],
+    correctAnswer: "A",
+    explanation: "ArrayList (List implementation) allows duplicate elements, while Set implementations don't.",
+    topic: "Collections",
+    difficulty: "easy"
+  },
+  {
+    id: 216,
+    question: "Which class in the Java Collections Framework is implemented using a balanced tree?",
+    options: ["HashMap", "LinkedList", "TreeMap", "ArrayList"],
+    correctAnswer: "C",
+    explanation: "TreeMap is implemented using a red-black tree (balanced binary search tree).",
+    topic: "Collections",
+    difficulty: "medium"
+  },
+  {
+    id: 217,
+    question: "Which collection class maintains insertion order of elements and allows null elements?",
+    options: ["HashSet", "LinkedHashSet", "TreeSet", "PriorityQueue"],
+    correctAnswer: "B",
+    explanation: "LinkedHashSet maintains insertion order and allows null elements, unlike TreeSet.",
+    topic: "Collections",
+    difficulty: "medium"
+  },
+  {
+    id: 218,
+    question: "Which statement about the Collection interface is NOT true?",
+    options: [
+      "Collection is the root interface of the Java Collections Framework",
+      "Collection extends the Iterable interface",
+      "Collection provides methods to access elements by index",
+      "Collection can represent groups of objects"
+    ],
+    correctAnswer: "C",
+    explanation: "Collection interface doesn't provide indexed access; that's specific to List interface.",
+    topic: "Collections",
+    difficulty: "medium"
+  },
+  {
+    id: 219,
+    question: "Which collection interface in Java does NOT allow duplicate elements?",
+    options: ["List", "Queue", "Set", "Deque"],
+    correctAnswer: "C",
+    explanation: "Set interface defines collections that cannot contain duplicate elements.",
+    topic: "Collections",
+    difficulty: "easy"
+  },
+  {
+    id: 220,
+    question: "You need to store elements in a collection that guarantees no duplicate entries. Which should you use?",
+    options: ["ArrayList", "HashSet", "LinkedList", "PriorityQueue"],
+    correctAnswer: "B",
+    explanation: "HashSet implements Set interface which guarantees no duplicate elements.",
+    topic: "Collections",
+    difficulty: "easy"
+  },
+  {
+    id: 221,
+    question: "Which collection type preserves the insertion order of key-value pairs?",
+    options: ["HashMap", "TreeMap", "LinkedHashMap", "HashSet"],
+    correctAnswer: "C",
+    explanation: "LinkedHashMap maintains the insertion order of key-value pairs.",
+    topic: "Collections",
+    difficulty: "medium"
+  },
+  {
+    id: 222,
+    question: "Which of the following is NOT an interface in the Java Collections Framework?",
+    options: ["List", "Set", "ArrayList", "Collection"],
+    correctAnswer: "C",
+    explanation: "ArrayList is a concrete class that implements List interface, not an interface itself.",
+    topic: "Collections",
+    difficulty: "easy"
+  },
+  {
+    id: 223,
+    question: "Which interface declares the core methods common to all Java collection classes?",
+    options: ["List", "Set", "Collection", "Map"],
+    correctAnswer: "C",
+    explanation: "Collection interface is the root interface that declares core methods like add(), remove(), size().",
+    topic: "Collections",
+    difficulty: "easy"
+  },
+  {
+    id: 224,
+    question: "Which of the following methods is NOT defined in the Collection interface?",
+    options: ["add", "remove", "get", "size"],
+    correctAnswer: "C",
+    explanation: "get() method is specific to List interface for indexed access, not in Collection interface.",
+    topic: "Collections",
+    difficulty: "medium"
+  },
+  {
+    id: 225,
+    question: "Which of the following classes does NOT implement the Map interface?",
+    options: ["HashMap", "TreeMap", "LinkedHashMap", "ArrayList"],
+    correctAnswer: "D",
+    explanation: "ArrayList implements List interface, not Map interface.",
+    topic: "Collections",
+    difficulty: "easy"
+  },
+
+  // Concurrency and Threading (226-231)
+  {
+    id: 226,
+    question: "What does declaring a variable as volatile do in Java?",
+    options: [
+      "Ensures atomicity of operations on the variable",
+      "Keeps a local copy of the variable in each thread",
+      "Forces reads/writes to go directly to main memory for visibility",
+      "Automatically synchronizes access to the variable"
+    ],
+    correctAnswer: "C",
+    explanation: "volatile ensures visibility by forcing reads/writes to main memory, but doesn't guarantee atomicity.",
+    topic: "Concurrency",
+    difficulty: "medium"
+  },
+  {
+    id: 227,
+    question: "Which keyword in Java ensures that only one thread at a time can execute a block of code?",
+    options: ["synchronized", "volatile", "transient", "atomic"],
+    correctAnswer: "A",
+    explanation: "synchronized keyword provides mutual exclusion, allowing only one thread to execute the code block.",
+    topic: "Concurrency",
+    difficulty: "easy"
+  },
+  {
+    id: 228,
+    question: "Which method should be called to start the execution of a new thread in Java?",
+    options: ["run()", "start()", "execute()", "invoke()"],
+    correctAnswer: "B",
+    explanation: "start() method creates a new thread and calls the run() method in that new thread.",
+    topic: "Concurrency",
+    difficulty: "easy"
+  },
+  {
+    id: 229,
+    question: "Which method causes the current thread to wait until the specified thread terminates?",
+    options: ["suspend()", "wait()", "sleep()", "join()"],
+    correctAnswer: "D",
+    explanation: "join() method causes the current thread to wait until the thread on which it's called terminates.",
+    topic: "Concurrency",
+    difficulty: "medium"
+  },
+  {
+    id: 230,
+    question: "What is a key benefit of using virtual threads (Project Loom) in Java?",
+    options: [
+      "They are implemented using OS-level native threads",
+      "They allow creating many more threads than platform threads with minimal overhead",
+      "They do not support concurrent execution",
+      "They can only be used with the ExecutorService"
+    ],
+    correctAnswer: "B",
+    explanation: "Virtual threads are lightweight and allow creating millions of threads with minimal overhead.",
+    topic: "Virtual Threads",
+    difficulty: "hard"
+  },
+
+  // Maven Build Tool (231-234)
+  {
+    id: 231,
+    question: "What is Maven primarily used for in Java projects?",
+    options: ["Code formatting", "Dependency injection", "Project build and management", "Version control"],
+    correctAnswer: "C",
+    explanation: "Maven is a build automation and project management tool for Java projects.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+  {
+    id: 232,
+    question: "In a Maven project, what is the core configuration file called?",
+    options: ["mvn.xml", "pom.xml", "project.xml", "build.xml"],
+    correctAnswer: "B",
+    explanation: "pom.xml (Project Object Model) is the core configuration file in Maven projects.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+  {
+    id: 233,
+    question: "Which Maven command removes the target/ directory and its contents?",
+    options: ["mvn delete", "mvn remove", "mvn clean", "mvn reset"],
+    correctAnswer: "C",
+    explanation: "mvn clean removes the target directory and all compiled files.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+  {
+    id: 234,
+    question: "Which Maven command compiles the code and installs the artifact into the local repository?",
+    options: ["mvn clean compile", "mvn test package", "mvn clean install", "mvn package verify"],
+    correctAnswer: "C",
+    explanation: "mvn clean install cleans, compiles, tests, packages, and installs the artifact to local repository.",
+    topic: "Maven",
+    difficulty: "easy"
+  },
+
+  // Lambda Expressions and Functional Programming (235-239)
+  {
+    id: 235,
+    question: "Can a Java lambda expression have a body with multiple statements?",
+    options: [
+      "No, it can only be a single expression",
+      "Yes, if the statements are enclosed in curly braces",
+      "Yes, but it cannot contain any return statement",
+      "No, it cannot contain any curly braces"
+    ],
+    correctAnswer: "B",
+    explanation: "Lambda expressions can have multiple statements when enclosed in curly braces { }.",
+    topic: "Lambda Expressions",
+    difficulty: "medium"
+  },
+  {
+    id: 236,
+    question: "Which functional interface in Java returns a boolean result?",
+    options: ["Function", "Predicate", "Consumer", "Supplier"],
+    correctAnswer: "B",
+    explanation: "Predicate<T> functional interface has test() method that returns boolean.",
+    topic: "Functional Programming",
+    difficulty: "easy"
+  },
+  {
+    id: 237,
+    question: "In Java, which symbol is used to create a method reference?",
+    options: ["->", "::", "=>", "@@"],
+    correctAnswer: "B",
+    explanation: "The :: (double colon) operator is used for method references in Java.",
+    topic: "Method References",
+    difficulty: "easy"
+  },
+  {
+    id: 238,
+    question: "What is the use of the Supplier functional interface in Java?",
+    options: [
+      "It accepts a single argument and returns a boolean",
+      "It returns a result without taking any arguments",
+      "It accepts two arguments and returns a result",
+      "It represents an operation that does not return a value"
+    ],
+    correctAnswer: "B",
+    explanation: "Supplier<T> provides values without taking any input arguments.",
+    topic: "Functional Programming",
+    difficulty: "easy"
+  },
+  {
+    id: 239,
+    question: "Which annotation indicates that an interface is intended to be a functional interface?",
+    options: ["@LambdaInterface", "@FunctionalInterface", "@Interface", "@ServiceInterface"],
+    correctAnswer: "B",
+    explanation: "@FunctionalInterface annotation marks interfaces intended for lambda expressions.",
+    topic: "Functional Programming",
+    difficulty: "easy"
+  },
+
+  // JDBC Database Connectivity (240-248)
+  {
+    id: 240,
+    question: "What is the main purpose of JDBC (Java Database Connectivity) in Java?",
+    options: [
+      "To manage user authentication",
+      "To connect and execute operations on a database",
+      "To enhance file I/O operations",
+      "To optimize network connections"
+    ],
+    correctAnswer: "B",
+    explanation: "JDBC provides Java API for connecting to and executing operations on databases.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 241,
+    question: "Which JDBC method is used to establish a connection to the database?",
+    options: [
+      "DriverManager.connect()",
+      "DriverManager.openConnection()",
+      "DriverManager.getConnection()",
+      "DriverManager.newConnection()"
+    ],
+    correctAnswer: "C",
+    explanation: "DriverManager.getConnection() is the standard method to establish database connections.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 242,
+    question: "In JDBC, which interface represents a connection to the database?",
+    options: ["Connection", "Statement", "ResultSet", "DataSource"],
+    correctAnswer: "A",
+    explanation: "Connection interface represents a session with a specific database.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 243,
+    question: "Which JDBC class or interface is used for executing precompiled SQL statements with parameters?",
+    options: ["Statement", "PreparedStatement", "CallableStatement", "ResultSet"],
+    correctAnswer: "B",
+    explanation: "PreparedStatement is used for precompiled SQL statements with parameters.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 244,
+    question: "What exception does JDBC most commonly throw for database access errors?",
+    options: ["IOException", "SQLException", "DatabaseException", "DataAccessException"],
+    correctAnswer: "B",
+    explanation: "SQLException is the standard exception thrown for database access errors in JDBC.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+  {
+    id: 245,
+    question: "Which JDBC interface is used to call stored procedures in the database?",
+    options: ["Statement", "PreparedStatement", "CallableStatement", "ResultSet"],
+    correctAnswer: "C",
+    explanation: "CallableStatement is used to execute stored procedures in the database.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 246,
+    question: "Arrange the basic JDBC operations in the correct order:",
+    options: [
+      "Create Statement → Connect → Execute Query → Close Connection",
+      "Connect → Create Statement → Execute Query → Close Connection",
+      "Connect → Execute Query → Create Statement → Close Connection",
+      "Execute Query → Connect → Create Statement → Close Connection"
+    ],
+    correctAnswer: "B",
+    explanation: "Correct order: Connect to database, create statement, execute query, close connection.",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 247,
+    question: "What will this code print if the database connects successfully?\n\nConnection con = DriverManager.getConnection(dbURL, user, pass);\nif (con != null) {\n    System.out.println(\"Connection Successful\");\n}",
+    options: ["Connection Failed", "Exception Thrown", "Connection Successful", "No output"],
+    correctAnswer: "C",
+    explanation: "If connection is successful, con will not be null, so it prints 'Connection Successful'.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+
+  // Spring Framework Core (248-253)
+  {
+    id: 248,
+    question: "Which of the following is not a true statement about Spring Core concepts?",
+    options: [
+      "The Spring Core module provides the IoC container and bean management",
+      "The Spring Core module can be used with modules like MVC and AOP",
+      "The Spring Core module is not required to build a Spring MVC application",
+      "Spring Core supports dependency injection out of the box"
+    ],
+    correctAnswer: "C",
+    explanation: "Spring Core is required for Spring MVC as it provides the fundamental IoC container.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+  {
+    id: 249,
+    question: "Spring's IoC container can inject which types of dependencies?",
+    options: [
+      "Primitive types (e.g., int, float)",
+      "Collection types (e.g., List, Map)",
+      "Custom reference types (objects)",
+      "All of the above"
+    ],
+    correctAnswer: "D",
+    explanation: "Spring IoC can inject primitive types, collections, and custom objects.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 250,
+    question: "What is the default scope of a Spring bean if no scope is specified?",
+    options: ["singleton", "prototype", "request", "session"],
+    correctAnswer: "A",
+    explanation: "Singleton is the default scope for Spring beans (one instance per container).",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 251,
+    question: "How can you implement dependency injection in Spring?",
+    options: [
+      "Only by using XML configuration",
+      "Only by using annotations",
+      "By using XML configuration or annotations (both ways)",
+      "Spring does not support dependency injection"
+    ],
+    correctAnswer: "C",
+    explanation: "Spring supports both XML-based and annotation-based dependency injection.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 252,
+    question: "What does the @Autowired annotation in Spring do?",
+    options: [
+      "Marks a method to be run after bean creation",
+      "Marks a variable to be injected with a Spring-managed bean by type",
+      "Marks a class for component-scanning",
+      "Defines the scope of a Spring bean"
+    ],
+    correctAnswer: "B",
+    explanation: "@Autowired enables automatic dependency injection by type.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 253,
+    question: "Which interface should generally be used to get all features of a bean container including internationalization?",
+    options: ["BeanFactory", "ApplicationContext", "BeanWrapper", "BeanDefinition"],
+    correctAnswer: "B",
+    explanation: "ApplicationContext provides advanced features like internationalization and event publication.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+
+  // Hibernate and JPA (254-264)
+  {
+    id: 254,
+    question: "Which of these is not an object state in Hibernate?",
+    options: ["Attached (or managed)", "Detached", "Persistent", "Transient"],
+    correctAnswer: "A",
+    explanation: "The correct state is 'Persistent' or 'Managed', not 'Attached'. States are: transient, persistent, detached, removed.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 255,
+    question: "Is SessionFactory in Hibernate thread-safe?",
+    options: ["Yes, it is thread-safe", "No, it is not thread-safe", "It depends on configuration", "Only after initialization"],
+    correctAnswer: "A",
+    explanation: "SessionFactory is thread-safe and can be shared among multiple threads.",
+    topic: "Hibernate",
+    difficulty: "easy"
+  },
+  {
+    id: 256,
+    question: "In JPA/Hibernate, which annotation is used to mark a class as a persistent entity?",
+    options: ["@Entity", "@Table", "@Persistent", "@HibernateEntity"],
+    correctAnswer: "A",
+    explanation: "@Entity annotation marks a class as a JPA entity that can be persisted to database.",
+    topic: "Hibernate",
+    difficulty: "easy"
+  },
+  {
+    id: 257,
+    question: "Which annotation is used to define a many-to-one relationship in Hibernate or JPA?",
+    options: ["@OneToMany", "@ManyToOne", "@ManyToMany", "@OneToOne"],
+    correctAnswer: "B",
+    explanation: "@ManyToOne annotation defines a many-to-one relationship between entities.",
+    topic: "Hibernate",
+    difficulty: "easy"
+  },
+  {
+    id: 258,
+    question: "What is the default fetch type for a @OneToMany association in JPA/Hibernate?",
+    options: ["EAGER", "LAZY", "NONE", "DEFAULT"],
+    correctAnswer: "B",
+    explanation: "@OneToMany associations are LAZY by default to avoid loading large collections unnecessarily.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+
+  // Spring Boot (259-264)
+  {
+    id: 259,
+    question: "What is the primary purpose of Spring Boot starters?",
+    options: [
+      "To provide project templates",
+      "To offer built-in tutorials",
+      "To simplify dependency and configuration management (Maven/Gradle)",
+      "To expose application metrics"
+    ],
+    correctAnswer: "C",
+    explanation: "Spring Boot starters are opinionated dependency descriptors that simplify dependency management.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 260,
+    question: "Which annotation is equivalent to @Configuration, @EnableAutoConfiguration, and @ComponentScan combined?",
+    options: ["@SpringBootConfiguration", "@EnableWebMvc", "@SpringBootApplication", "@AutoConfigure"],
+    correctAnswer: "C",
+    explanation: "@SpringBootApplication combines @Configuration, @EnableAutoConfiguration, and @ComponentScan.",
+    topic: "Spring Boot",
+    difficulty: "medium"
+  },
+  {
+    id: 261,
+    question: "Which embedded web server is included by default in a Spring Boot web application?",
+    options: ["Jetty", "Tomcat", "Undertow", "GlassFish"],
+    correctAnswer: "B",
+    explanation: "Tomcat is the default embedded web server in Spring Boot web applications.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 262,
+    question: "To enable Actuator endpoints in a Spring Boot application, you need to include which dependency?",
+    options: [
+      "spring-boot-starter-web",
+      "spring-boot-starter-actuator",
+      "spring-boot-starter-security",
+      "spring-boot-starter-mail"
+    ],
+    correctAnswer: "B",
+    explanation: "spring-boot-starter-actuator dependency enables actuator endpoints for monitoring.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 263,
+    question: "What does Spring Boot's auto-configuration feature do?",
+    options: [
+      "It automatically detects and configures beans based on classpath settings",
+      "It replaces the need for any configuration at all",
+      "It only works when running on a cloud platform",
+      "It disables user-defined beans"
+    ],
+    correctAnswer: "A",
+    explanation: "Auto-configuration automatically configures beans based on classpath and existing beans.",
+    topic: "Spring Boot",
+    difficulty: "medium"
+  },
+
+  // Spring Data (264-269)
+  {
+    id: 264,
+    question: "Which of the following is not a Spring Data module?",
+    options: ["Spring Data JPA", "Spring Data MongoDB", "Spring Data Hibernate", "Spring Data Redis"],
+    correctAnswer: "C",
+    explanation: "There's no Spring Data Hibernate - Spring Data JPA works with Hibernate as JPA provider.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+  {
+    id: 265,
+    question: "Which annotation is used to mark a Spring Data repository interface?",
+    options: ["@Repository", "@Service", "@Controller", "@Component"],
+    correctAnswer: "A",
+    explanation: "@Repository annotation marks data access components and enables exception translation.",
+    topic: "Spring Data",
+    difficulty: "easy"
+  },
+  {
+    id: 266,
+    question: "Which of the following is NOT a valid prefix for query methods in Spring Data repositories?",
+    options: ["findById", "findByFirstName", "countByLastName", "removeByAge"],
+    correctAnswer: "D",
+    explanation: "removeByAge is not a valid query method prefix - use deleteBy or removeBy for deletion.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+  {
+    id: 267,
+    question: "Which of the following is NOT a valid return type for repository methods in Spring Data?",
+    options: ["void", "Iterable", "List", "Optional"],
+    correctAnswer: "A",
+    explanation: "void is not typically used as return type for query methods - it's used for delete operations.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+  {
+    id: 268,
+    question: "Which statement about Spring Data repositories is NOT true?",
+    options: [
+      "They can be defined for both entities and value objects",
+      "They provide basic CRUD operations by default",
+      "Custom query methods can be defined using method names",
+      "They can only be used with relational databases"
+    ],
+    correctAnswer: "D",
+    explanation: "Spring Data supports various databases including NoSQL databases like MongoDB, Redis, etc.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+
+  // Spring Cloud and Microservices (269-274)
+  {
+    id: 269,
+    question: "What is Spring Cloud Gateway used for?",
+    options: [
+      "Storing configuration properties",
+      "Service discovery",
+      "Routing and filtering requests in a microservice architecture (API Gateway)",
+      "Circuit breaking"
+    ],
+    correctAnswer: "C",
+    explanation: "Spring Cloud Gateway provides API gateway functionality for routing and filtering requests.",
+    topic: "Spring Cloud",
+    difficulty: "medium"
+  },
+  {
+    id: 270,
+    question: "What is Spring Cloud Config used for?",
+    options: [
+      "Centralized storage and serving of application configuration properties",
+      "Authenticating microservices",
+      "Providing a service registry",
+      "Testing microservices performance"
+    ],
+    correctAnswer: "A",
+    explanation: "Spring Cloud Config provides centralized configuration management for microservices.",
+    topic: "Spring Cloud",
+    difficulty: "medium"
+  },
+  {
+    id: 271,
+    question: "What is the Spring Cloud Circuit Breaker feature used for?",
+    options: [
+      "Encrypting configuration data",
+      "Providing a resilient mechanism to handle service failures gracefully (fallback)",
+      "Scaling containers",
+      "Managing distributed transactions"
+    ],
+    correctAnswer: "B",
+    explanation: "Circuit Breaker provides resilience patterns with fallback mechanisms for service failures.",
+    topic: "Spring Cloud",
+    difficulty: "medium"
+  },
+  {
+    id: 272,
+    question: "Which annotation is used to define a Feign client interface in Spring Cloud OpenFeign?",
+    options: ["@RestClient", "@WebClient", "@FeignClient", "@LoadBalanced"],
+    correctAnswer: "C",
+    explanation: "@FeignClient annotation is used to define declarative REST clients.",
+    topic: "Spring Cloud",
+    difficulty: "easy"
+  },
+  {
+    id: 273,
+    question: "Which statement about Spring Cloud OpenFeign is true?",
+    options: [
+      "It is used for asynchronous messaging between services",
+      "It allows defining HTTP clients via annotated interfaces and integrates with Ribbon/Eureka",
+      "It only works with XML configuration",
+      "It is a database connectivity tool"
+    ],
+    correctAnswer: "B",
+    explanation: "OpenFeign creates HTTP clients through annotated interfaces with service discovery integration.",
+    topic: "Spring Cloud",
+    difficulty: "medium"
+  },
+
+  // Advanced Collections (274-280)
+  {
+    id: 274,
+    question: "In the Java Collections Framework, which class implements a last-in-first-out (LIFO) stack?",
+    options: ["LinkedList", "Vector", "Stack", "ArrayDeque"],
+    correctAnswer: "C",
+    explanation: "Stack class implements LIFO operations, though ArrayDeque is preferred for stack operations.",
+    topic: "Collections Advanced",
+    difficulty: "easy"
+  },
+  {
+    id: 275,
+    question: "Which interface represents a double-ended queue in Java?",
+    options: ["List", "Set", "Deque", "Queue"],
+    correctAnswer: "C",
+    explanation: "Deque interface allows insertion and removal at both ends of the queue.",
+    topic: "Collections Advanced",
+    difficulty: "medium"
+  },
+  {
+    id: 276,
+    question: "Which functional interface represents an operation that takes an argument and returns no result?",
+    options: ["Predicate<T>", "Consumer<T>", "Function<T, R>", "Supplier<T>"],
+    correctAnswer: "B",
+    explanation: "Consumer<T> accepts one argument and returns no result (void operation).",
+    topic: "Functional Programming",
+    difficulty: "easy"
+  },
+  {
+    id: 277,
+    question: "Which functional interface accepts two arguments and returns no result?",
+    options: ["BiFunction<T, U, R>", "BiConsumer<T, U>", "BiPredicate<T, U>", "BiSupplier<T, U>"],
+    correctAnswer: "B",
+    explanation: "BiConsumer<T, U> accepts two arguments and returns no result.",
+    topic: "Functional Programming",
+    difficulty: "easy"
+  },
+  {
+    id: 278,
+    question: "Which Java collection is thread-safe by default?",
+    options: ["ArrayList", "Vector", "HashSet", "LinkedList"],
+    correctAnswer: "B",
+    explanation: "Vector is synchronized and thread-safe, unlike ArrayList.",
+    topic: "Collections Advanced",
+    difficulty: "medium"
+  },
+
+  // Advanced JDBC (279-285)
+  {
+    id: 279,
+    question: "Which method of Statement is used to execute data manipulation statements like INSERT, UPDATE, or DELETE?",
+    options: ["executeQuery()", "executeUpdate()", "execute()", "executeInsert()"],
+    correctAnswer: "B",
+    explanation: "executeUpdate() is used for DML statements that modify data (INSERT, UPDATE, DELETE).",
+    topic: "JDBC",
+    difficulty: "medium"
+  },
+  {
+    id: 280,
+    question: "Which class is used to manage JDBC drivers and connections in Java?",
+    options: ["Driver", "DriverManager", "DriverLoader", "DataSource"],
+    correctAnswer: "B",
+    explanation: "DriverManager manages JDBC drivers and creates database connections.",
+    topic: "JDBC",
+    difficulty: "easy"
+  },
+
+  // Spring Advanced Concepts (281-295)
+  {
+    id: 281,
+    question: "Which interface in Spring provides advanced features like internationalization and event propagation?",
+    options: ["BeanFactory", "ApplicationContext", "BeanWrapper", "BeanDefinition"],
+    correctAnswer: "B",
+    explanation: "ApplicationContext extends BeanFactory with additional enterprise features.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+  {
+    id: 282,
+    question: "Which annotation is a specialization of @Component for data access classes?",
+    options: ["@Service", "@Controller", "@Repository", "@ComponentScan"],
+    correctAnswer: "C",
+    explanation: "@Repository is specialized for data access objects and enables exception translation.",
+    topic: "Spring Core",
+    difficulty: "easy"
+  },
+  {
+    id: 283,
+    question: "Which Session method in Hibernate will persist a transient instance to the database?",
+    options: ["merge()", "save()", "persist()", "update()"],
+    correctAnswer: "C",
+    explanation: "persist() makes a transient instance persistent (managed) in the current session.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 284,
+    question: "Which default fetch type is used for @ManyToOne associations in JPA/Hibernate?",
+    options: ["LAZY", "EAGER", "MANUAL", "BATCH"],
+    correctAnswer: "B",
+    explanation: "@ManyToOne associations are EAGER by default in JPA specification.",
+    topic: "Hibernate",
+    difficulty: "medium"
+  },
+  {
+    id: 285,
+    question: "Which interface in Spring Data JPA provides CRUD operations and JPA-specific methods?",
+    options: ["CrudRepository", "JpaRepository", "PagingAndSortingRepository", "MongoRepository"],
+    correctAnswer: "B",
+    explanation: "JpaRepository extends PagingAndSortingRepository and adds JPA-specific methods.",
+    topic: "Spring Data",
+    difficulty: "medium"
+  },
+  {
+    id: 286,
+    question: "Which interface should you extend to create a MongoDB repository in Spring Data MongoDB?",
+    options: ["JpaRepository", "MongoRepository", "CrudRepository", "ReactiveMongoRepository"],
+    correctAnswer: "B",
+    explanation: "MongoRepository is the specific interface for MongoDB operations in Spring Data.",
+    topic: "Spring Data",
+    difficulty: "easy"
+  },
+  {
+    id: 287,
+    question: "What is the purpose of a service registry such as Eureka in microservices?",
+    options: [
+      "Distributing configuration properties",
+      "Keeping track of service instances and enabling service discovery",
+      "Managing database transactions",
+      "Handling client-side caching"
+    ],
+    correctAnswer: "B",
+    explanation: "Service registry maintains a list of available service instances for discovery.",
+    topic: "Microservices",
+    difficulty: "medium"
+  },
+  {
+    id: 288,
+    question: "What is Spring Cloud Circuit Breaker's default implementation library?",
+    options: ["Hystrix", "Resilience4j", "RxJava", "None, it is application-server dependent"],
+    correctAnswer: "B",
+    explanation: "Resilience4j is the default circuit breaker implementation in recent Spring Cloud versions.",
+    topic: "Spring Cloud",
+    difficulty: "medium"
+  },
+
+  // Testing Frameworks (289-292)
+  {
+    id: 289,
+    question: "Which annotation represents JUnit 5's annotation to denote a test method?",
+    options: ["@Test", "@Before", "@TestCase", "@RunTest"],
+    correctAnswer: "A",
+    explanation: "@Test annotation marks methods as test methods in JUnit 5.",
+    topic: "Testing",
+    difficulty: "easy"
+  },
+  {
+    id: 290,
+    question: "What is Apache JMeter typically used for in software testing?",
+    options: ["Unit testing", "Integration testing", "Performance and load testing", "Security testing"],
+    correctAnswer: "C",
+    explanation: "JMeter is primarily used for performance and load testing of applications.",
+    topic: "Testing",
+    difficulty: "easy"
+  },
+
+  // Spring MVC (291-295)
+  {
+    id: 291,
+    question: "Which annotation is used in Spring MVC to indicate that a class is a web controller?",
+    options: ["@RestController", "@Component", "@Controller", "@WebService"],
+    correctAnswer: "C",
+    explanation: "@Controller marks a class as a Spring MVC controller for handling web requests.",
+    topic: "Spring MVC",
+    difficulty: "easy"
+  },
+  {
+    id: 292,
+    question: "Which JSP-related technology can be used with Spring MVC to render server-side views?",
+    options: [
+      "JSTL (JavaServer Pages Standard Tag Library)",
+      "JSPX only",
+      "No server-side rendering is possible",
+      "Only Thymeleaf"
+    ],
+    correctAnswer: "A",
+    explanation: "JSTL can be used with JSP pages for server-side rendering in Spring MVC.",
+    topic: "Spring MVC",
+    difficulty: "medium"
+  },
+  {
+    id: 293,
+    question: "In Spring Boot, which annotation is needed to bind externalized configuration to a class?",
+    options: ["@ConfigurationProperties", "@Value", "@Config", "@ExternalConfig"],
+    correctAnswer: "A",
+    explanation: "@ConfigurationProperties binds external configuration properties to a Java class.",
+    topic: "Spring Boot",
+    difficulty: "medium"
+  },
+  {
+    id: 294,
+    question: "What does the spring.profiles.active property do in a Spring Boot application?",
+    options: [
+      "Specifies which Spring profile(s) to enable",
+      "Sets the active database profile only",
+      "Activates the actuator endpoints",
+      "Defines the logging level"
+    ],
+    correctAnswer: "A",
+    explanation: "spring.profiles.active determines which Spring profiles are active in the application.",
+    topic: "Spring Boot",
+    difficulty: "easy"
+  },
+  {
+    id: 295,
+    question: "Which of the following is not a type of Spring bean scope?",
+    options: ["prototype", "singleton", "transient", "session"],
+    correctAnswer: "C",
+    explanation: "transient is not a Spring bean scope. Valid scopes include singleton, prototype, request, session.",
+    topic: "Spring Core",
+    difficulty: "medium"
+  },
+  {
+    id: 296,
+    question: "What is Spring Cloud OpenFeign mainly used for in microservices?",
+    options: [
+      "Declarative REST client for calling other services",
+      "Database connectivity",
+      "Caching data across services",
+      "Service discovery"
+    ],
+    correctAnswer: "A",
+    explanation: "OpenFeign provides declarative REST clients for inter-service communication.",
+    topic: "Spring Cloud",
+    difficulty: "medium"
+  },
+  {
+    id: 297,
+    question: "In JPA, which annotation is used to mark a field as the primary key of an entity?",
+    options: ["@Column", "@Id", "@Key", "@PrimaryKey"],
+    correctAnswer: "B",
+    explanation: "@Id annotation marks a field as the primary key of a JPA entity.",
+    topic: "JPA",
+    difficulty: "easy"
+  },
+  {
+    id: 298,
+    question: "What is Spring Batch mainly designed for?",
+    options: [
+      "Building batch processing jobs for large-scale data tasks",
+      "Real-time web applications",
+      "Microservice orchestration",
+      "Client-side caching"
+    ],
+    correctAnswer: "A",
+    explanation: "Spring Batch is designed for processing large volumes of data in batch jobs.",
+    topic: "Spring Batch",
+    difficulty: "medium"
+  },
+  {
+    id: 299,
+    question: "What does JUnit stand for, and what is it used for?",
+    options: [
+      "Java User Interface Testing; for GUI tests",
+      "Just Unit; for writing and running unit tests in Java",
+      "Java Unity; for integrating services",
       "None of the above"
     ],
-    "correctAnswer": "B",
-    "explanation": "CI/CD pipeline ensures software is automatically built, tested, and deployed upon code changes.",
-    "topic": "DevOps Practices",
-    "difficulty": "medium"
-  },
-  {
-    "id": 26,
-    "question": "Which of the following best describes functional vs non-functional requirements?",
-    "options": [
-      "Functional requirements describe how the system should perform.",
-      "Functional requirements describe what the system should do; non-functional describe how it should perform (e.g., performance, security).",
-      "They are the same concept.",
-      "Non-functional requirements include features and operations."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Functional requirements describe what the system should do; non-functional requirements describe how it should perform.",
-    "topic": "Requirements Engineering",
-    "difficulty": "medium"
-  },
-  {
-    "id": 27,
-    "question": "Which is NOT an example of a functional requirement?",
-    "options": [
-      "User can log into the system.",
-      "System shall respond to queries within 2 seconds.",
-      "System must be available 99.9% of the time.",
-      "Inventory updates when new items are added."
-    ],
-    "correctAnswer": "C",
-    "explanation": "System availability is a non-functional requirement related to reliability.",
-    "topic": "Requirements Engineering",
-    "difficulty": "medium"
-  },
-  {
-    "id": 28,
-    "question": "What is horizontal scaling?",
-    "options": [
-      "Adding more machines to a system.",
-      "Upgrading CPU on a machine.",
-      "Reducing latency.",
-      "Increasing concurrency."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Horizontal scaling involves adding more machines to a system.",
-    "topic": "Scalability",
-    "difficulty": "easy"
-  },
-  {
-    "id": 29,
-    "question": "What is vertical scaling?",
-    "options": [
-      "Adding more machines.",
-      "Upgrading resources of an existing machine (CPU/memory).",
-      "Splitting a database table.",
-      "Lowering response time."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Vertical scaling involves upgrading resources of an existing machine (CPU/memory).",
-    "topic": "Scalability",
-    "difficulty": "easy"
-  },
-  {
-    "id": 30,
-    "question": "Which architecture is typically easier to deploy in parts and update independently?",
-    "options": [
-      "Monolithic",
-      "Layered",
-      "Microservices",
-      "None of these"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Microservices architecture allows independent deployment and updates of individual services.",
-    "topic": "Architecture Patterns",
-    "difficulty": "medium"
-  },
-  {
-    "id": 31,
-    "question": "What is a key disadvantage of microservices compared to a monolith?",
-    "options": [
-      "Harder to scale independently",
-      "More complex to manage many independent services",
-      "No network overhead",
-      "All code must be in one language"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Microservices are more complex to manage due to the distributed nature of many independent services.",
-    "topic": "Architecture Patterns",
-    "difficulty": "medium"
-  },
-  {
-    "id": 32,
-    "question": "Which scenario would violate the Isolation property of transactions?",
-    "options": [
-      "Two transactions updating different tables concurrently.",
-      "One transaction reading uncommitted data from another (dirty read).",
-      "A transaction failing mid-way and rolling back.",
-      "All transactions running serially."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Dirty reads violate isolation as one transaction sees uncommitted changes from another.",
-    "topic": "ACID Properties",
-    "difficulty": "hard"
-  },
-  {
-    "id": 33,
-    "question": "What does the 'C' in ACID stand for, and what does it ensure?",
-    "options": [
-      "Consistency; it ensures data remains in a valid state respecting all constraints.",
-      "Compression; it ensures data is compressed for storage.",
-      "Concurrency; it ensures multiple transactions can run.",
-      "Centralization; it ensures data is centralized."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Consistency ensures data remains in a valid state respecting all constraints.",
-    "topic": "ACID Properties",
-    "difficulty": "medium"
-  },
-  {
-    "id": 34,
-    "question": "What does Atomicity ensure in database transactions?",
-    "options": [
-      "Transactions can commit partially.",
-      "All operations in a transaction are completed, or none are applied.",
-      "Only one transaction runs at a time.",
-      "Data is stored atomically in memory."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Atomicity ensures all operations in a transaction are completed, or none are applied.",
-    "topic": "ACID Properties",
-    "difficulty": "medium"
-  },
-  {
-    "id": 35,
-    "question": "What does Durability ensure after a transaction commits?",
-    "options": [
-      "Changes are temporary.",
-      "Changes are permanently saved and not lost even if the system crashes.",
-      "Changes are available only in memory.",
-      "Changes can be rolled back anytime."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Durability ensures changes are permanently saved and not lost even if the system crashes.",
-    "topic": "ACID Properties",
-    "difficulty": "medium"
-  },
-  {
-    "id": 36,
-    "question": "What does BASE stand for in NoSQL databases?",
-    "options": [
-      "Basic Availability, Single-State, Eventually Consistent.",
-      "Basically Available, Soft state, Eventually consistent.",
-      "Binary ACID, Standards Enforced.",
-      "Backup Available, Sequential Execution."
-    ],
-    "correctAnswer": "B",
-    "explanation": "BASE stands for Basically Available, Soft state, Eventually consistent.",
-    "topic": "NoSQL Principles",
-    "difficulty": "medium"
-  },
-  {
-    "id": 37,
-    "question": "What does a savepoint in a database transaction do?",
-    "options": [
-      "Commits the entire transaction.",
-      "Marks a point within a transaction that you can rollback to without aborting the entire transaction.",
-      "Creates a save for backup.",
-      "Ends the transaction."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A savepoint marks a point within a transaction that you can rollback to without aborting the entire transaction.",
-    "topic": "Database Transactions",
-    "difficulty": "medium"
-  },
-  {
-    "id": 38,
-    "question": "What is a correlated subquery?",
-    "options": [
-      "A subquery executed only once.",
-      "A subquery that references columns from the outer query and runs for each row.",
-      "A subquery in the ORDER BY clause.",
-      "A non-existent SQL feature."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A correlated subquery references columns from the outer query and runs for each row.",
-    "topic": "Database Queries",
-    "difficulty": "hard"
-  },
-  {
-    "id": 39,
-    "question": "What is a nested (non-correlated) subquery?",
-    "options": [
-      "A query inside another where the inner query runs once and its result is used by the outer query.",
-      "A query that references the outer query.",
-      "A join operation by another name.",
-      "A query in a stored procedure."
-    ],
-    "correctAnswer": "A",
-    "explanation": "A nested subquery runs once and its result is used by the outer query.",
-    "topic": "Database Queries",
-    "difficulty": "medium"
-  },
-  {
-    "id": 40,
-    "question": "Which architecture uses asynchronous event passing between components?",
-    "options": [
-      "Monolithic",
-      "Layered",
-      "Event-Driven",
-      "Client-Server"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Event-Driven architecture uses asynchronous event passing between components.",
-    "topic": "Architecture Patterns",
-    "difficulty": "medium"
-  },
-  {
-    "id": 41,
-    "question": "Which approach prioritizes a system's ability to serve requests even if some data might be stale?",
-    "options": [
-      "CP (Consistency + Partition tolerance)",
-      "AP (Availability + Partition tolerance)",
-      "CA (Consistency + Availability)",
-      "AC (Atomicity + Consistency)"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AP systems prioritize availability and partition tolerance, potentially serving stale data.",
-    "topic": "CAP Theorem",
-    "difficulty": "hard"
-  },
-  {
-    "id": 42,
-    "question": "Which CAP combination focuses on serving every request (even if data is not fully consistent)?",
-    "options": [
-      "CA",
-      "CP",
-      "AP",
-      "None"
-    ],
-    "correctAnswer": "C",
-    "explanation": "AP (Availability + Partition tolerance) focuses on serving every request even if data is not fully consistent.",
-    "topic": "CAP Theorem",
-    "difficulty": "medium"
-  },
-  {
-    "id": 43,
-    "question": "What is a monolithic application?",
-    "options": [
-      "Multiple small services.",
-      "A single large application where all components are interwoven.",
-      "A database cluster.",
-      "A cloud microservice."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A monolithic application is a single large application where all components are interwoven.",
-    "topic": "Architecture Patterns",
-    "difficulty": "easy"
-  },
-  {
-    "id": 44,
-    "question": "What is the main idea of a microservices architecture?",
-    "options": [
-      "One huge deployable unit.",
-      "Services are independent, small, and communicate over a network.",
-      "Database sharding.",
-      "Shared disk architecture."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Microservices architecture consists of independent, small services that communicate over a network.",
-    "topic": "Architecture Patterns",
-    "difficulty": "medium"
-  },
-  {
-    "id": 45,
-    "question": "Which of the following does not describe high-level design (HLD)?",
-    "options": [
-      "High-level architecture overview.",
-      "Detailed class and method implementations.",
-      "Core components and data flow.",
-      "Overall system modules."
-    ],
-    "correctAnswer": "B",
-    "explanation": "HLD does not include detailed class and method implementations - that's part of low-level design.",
-    "topic": "System Design Phases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 46,
-    "question": "Which of the following does not describe low-level design (LLD)?",
-    "options": [
-      "Detailed class design and algorithms.",
-      "Database schema details.",
-      "Sequence diagrams of interactions.",
-      "Hardware rack placement."
-    ],
-    "correctAnswer": "D",
-    "explanation": "Hardware rack placement is part of physical infrastructure, not low-level design.",
-    "topic": "System Design Phases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 47,
-    "question": "What is fault tolerance in system design?",
-    "options": [
-      "Graceful handling of failures without complete system crash.",
-      "Guaranteed 100% uptime.",
-      "Fixing bugs in code.",
-      "Disabling error logging."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Fault tolerance is the graceful handling of failures without complete system crash.",
-    "topic": "System Reliability",
-    "difficulty": "medium"
-  },
-  {
-    "id": 48,
-    "question": "Which property ensures that a system can continue operating even if some components fail?",
-    "options": [
-      "Latency",
-      "Fault Tolerance",
-      "Security",
-      "Throughput"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Fault tolerance ensures that a system can continue operating even if some components fail.",
-    "topic": "System Reliability",
-    "difficulty": "easy"
-  },
-  {
-    "id": 49,
-    "question": "What is a typical strategy to improve system availability?",
-    "options": [
-      "Removing redundancies.",
-      "Adding redundancy (e.g., replication, failover).",
-      "Using outdated hardware.",
-      "Disabling automatic restarts."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Adding redundancy through replication and failover improves system availability.",
-    "topic": "System Reliability",
-    "difficulty": "medium"
-  },
-  {
-    "id": 50,
-    "question": "What is the difference between data persistence and latency?",
-    "options": [
-      "Persistence refers to saving data long-term; latency refers to response time.",
-      "Persistence is the same as throughput.",
-      "Persistence means system availability.",
-      "Latency means data accuracy."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Persistence refers to saving data long-term; latency refers to response time.",
-    "topic": "System Design Concepts",
-    "difficulty": "easy"
-  },
-  {
-    "id": 51,
-    "question": "What is a database?",
-    "options": [
-      "A programming language for data.",
-      "An organized collection of data managed by a database management system.",
-      "A user interface for data entry.",
-      "A network protocol for data transfer."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A database is an organized collection of data managed by a database management system.",
-    "topic": "Database Fundamentals",
-    "difficulty": "easy"
-  },
-  {
-    "id": 52,
-    "question": "Which of the following is NOT a common database model?",
-    "options": [
-      "Relational Model",
-      "Network Model",
-      "Hierarchical Model",
-      "Bitmap Model"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Bitmap Model is not a common database model. The main models are Relational, Network, and Hierarchical.",
-    "topic": "Database Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 53,
-    "question": "Which database schema level provides a high-level overview of the structure without technical details?",
-    "options": [
-      "Physical Schema",
-      "Logical Schema",
-      "Conceptual Schema",
-      "External Schema"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Conceptual schema provides a high-level overview without technical implementation details.",
-    "topic": "Database Schema",
-    "difficulty": "medium"
-  },
-  {
-    "id": 54,
-    "question": "What is the purpose of a physical database schema?",
-    "options": [
-      "To define tables and relationships without implementation detail.",
-      "To specify how data is stored on disk (file structures, indexes).",
-      "To model business requirements.",
-      "To encrypt data before storage."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Physical schema specifies how data is stored on disk including file structures and indexes.",
-    "topic": "Database Schema",
-    "difficulty": "medium"
-  },
-  {
-    "id": 55,
-    "question": "Which key uniquely identifies each record in a table and cannot contain NULL values?",
-    "options": [
-      "Foreign Key",
-      "Candidate Key",
-      "Primary Key",
-      "Super Key"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Primary key uniquely identifies each record in a table and cannot contain NULL values.",
-    "topic": "Database Keys",
-    "difficulty": "easy"
-  },
-  {
-    "id": 56,
-    "question": "What is a super key?",
-    "options": [
-      "A minimal set of columns that uniquely identify a row.",
-      "A set of columns (possibly with extras) that uniquely identify a row.",
-      "The primary key of another table.",
-      "A temporary key for queries."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A super key is a set of columns (possibly with extras) that uniquely identify a row.",
-    "topic": "Database Keys",
-    "difficulty": "medium"
-  },
-  {
-    "id": 57,
-    "question": "What is a candidate key?",
-    "options": [
-      "Any key chosen as primary key.",
-      "A key with redundant columns.",
-      "A minimal set of columns that uniquely identify a record.",
-      "A foreign key with unique constraint."
-    ],
-    "correctAnswer": "C",
-    "explanation": "A candidate key is a minimal set of columns that uniquely identify a record.",
-    "topic": "Database Keys",
-    "difficulty": "medium"
-  },
-  {
-    "id": 58,
-    "question": "What is an alternate key?",
-    "options": [
-      "The chosen primary key of a table.",
-      "A candidate key not selected as the primary key.",
-      "A composite key for indexing.",
-      "A foreign key with unique index."
-    ],
-    "correctAnswer": "B",
-    "explanation": "An alternate key is a candidate key not selected as the primary key.",
-    "topic": "Database Keys",
-    "difficulty": "medium"
-  },
-  {
-    "id": 59,
-    "question": "What is a foreign key?",
-    "options": [
-      "A key that uniquely identifies a row in the same table.",
-      "An attribute referring to the primary key in another table.",
-      "Any multi-column key.",
-      "A synonym for primary key."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A foreign key is an attribute referring to the primary key in another table.",
-    "topic": "Database Keys",
-    "difficulty": "easy"
-  },
-  {
-    "id": 60,
-    "question": "Which SQL constraint limits the range of allowed values in a column?",
-    "options": [
-      "PRIMARY KEY",
-      "UNIQUE",
-      "CHECK",
-      "NOT NULL"
-    ],
-    "correctAnswer": "C",
-    "explanation": "CHECK constraint limits the range of allowed values in a column.",
-    "topic": "SQL Constraints",
-    "difficulty": "medium"
-  },
-  {
-    "id": 61,
-    "question": "Which SQL constraint ensures all values in a column are distinct?",
-    "options": [
-      "FOREIGN KEY",
-      "UNIQUE",
-      "CHECK",
-      "NOT NULL"
-    ],
-    "correctAnswer": "B",
-    "explanation": "UNIQUE constraint ensures all values in a column are distinct.",
-    "topic": "SQL Constraints",
-    "difficulty": "easy"
-  },
-  {
-    "id": 62,
-    "question": "What is the effect of the SQL NOT NULL constraint on a column?",
-    "options": [
-      "Automatically indexes the column.",
-      "Enforces that the column cannot accept NULL values.",
-      "Ensures values are unique.",
-      "Limits values to a range."
-    ],
-    "correctAnswer": "B",
-    "explanation": "NOT NULL constraint enforces that the column cannot accept NULL values.",
-    "topic": "SQL Constraints",
-    "difficulty": "easy"
-  },
-  {
-    "id": 63,
-    "question": "Which condition must a table satisfy to be in First Normal Form (1NF)?",
-    "options": [
-      "Every non-key attribute depends on the entire primary key.",
-      "No multi-valued attributes; all columns are atomic.",
-      "There are no transitive dependencies.",
-      "Primary key is composite."
-    ],
-    "correctAnswer": "B",
-    "explanation": "1NF requires no multi-valued attributes; all columns must be atomic.",
-    "topic": "Database Normalization",
-    "difficulty": "medium"
-  },
-  {
-    "id": 64,
-    "question": "Which condition must be met for a table to be in Second Normal Form (2NF)?",
-    "options": [
-      "It is in 1NF and no non-key attribute is partially dependent on a composite key.",
-      "It has no repeating groups.",
-      "It satisfies 3NF.",
-      "It only has a single-column key."
-    ],
-    "correctAnswer": "A",
-    "explanation": "2NF requires 1NF and no partial dependencies on composite keys.",
-    "topic": "Database Normalization",
-    "difficulty": "medium"
-  },
-  {
-    "id": 65,
-    "question": "Third Normal Form (3NF) requires that a table is in 2NF and what additional condition?",
-    "options": [
-      "No partial dependencies.",
-      "No transitive dependencies among non-key attributes.",
-      "Each non-key attribute depends on another non-key attribute.",
-      "The primary key is composite."
-    ],
-    "correctAnswer": "B",
-    "explanation": "3NF requires 2NF and no transitive dependencies among non-key attributes.",
-    "topic": "Database Normalization",
-    "difficulty": "medium"
-  },
-  {
-    "id": 66,
-    "question": "What rule does Boyce-Codd Normal Form (BCNF) impose beyond 3NF?",
-    "options": [
-      "No partial dependencies.",
-      "For every functional dependency X → Y, X must be a superkey.",
-      "Every non-key attribute must depend on all attributes of a composite key.",
-      "Each table must have exactly two columns."
-    ],
-    "correctAnswer": "B",
-    "explanation": "BCNF requires that for every functional dependency X → Y, X must be a superkey.",
-    "topic": "Database Normalization",
-    "difficulty": "hard"
-  },
-  {
-    "id": 67,
-    "question": "If there is a functional dependency A → B in a table, what does it mean?",
-    "options": [
-      "A is a candidate key for B.",
-      "The values of A uniquely determine the values of B.",
-      "B is always numeric.",
-      "The table must be denormalized."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Functional dependency A → B means the values of A uniquely determine the values of B.",
-    "topic": "Database Theory",
-    "difficulty": "medium"
-  },
-  {
-    "id": 68,
-    "question": "Which SQL command category is used for defining, altering, and deleting database structures like tables?",
-    "options": [
-      "DML",
-      "DCL",
-      "DDL",
-      "TCL"
-    ],
-    "correctAnswer": "C",
-    "explanation": "DDL (Data Definition Language) is used for defining, altering, and deleting database structures.",
-    "topic": "SQL Categories",
-    "difficulty": "easy"
-  },
-  {
-    "id": 69,
-    "question": "Which SQL command category is primarily used to retrieve data from the database?",
-    "options": [
-      "DCL",
-      "DQL",
-      "DML",
-      "DDL"
-    ],
-    "correctAnswer": "B",
-    "explanation": "DQL (Data Query Language) is primarily used to retrieve data from the database.",
-    "topic": "SQL Categories",
-    "difficulty": "easy"
-  },
-  {
-    "id": 70,
-    "question": "Which SQL command category includes GRANT and REVOKE statements?",
-    "options": [
-      "DDL",
-      "DML",
-      "DCL",
-      "TCL"
-    ],
-    "correctAnswer": "C",
-    "explanation": "DCL (Data Control Language) includes GRANT and REVOKE statements for access control.",
-    "topic": "SQL Categories",
-    "difficulty": "medium"
-  },
-  {
-    "id": 71,
-    "question": "Which SQL command category includes COMMIT and ROLLBACK?",
-    "options": [
-      "DML",
-      "DDL",
-      "TCL",
-      "DQL"
-    ],
-    "correctAnswer": "C",
-    "explanation": "TCL (Transaction Control Language) includes COMMIT and ROLLBACK statements.",
-    "topic": "SQL Categories",
-    "difficulty": "medium"
-  },
-  {
-    "id": 72,
-    "question": "Which SQL keyword is used to remove duplicate rows from the result set?",
-    "options": [
-      "UNION",
-      "DISTINCT",
-      "JOIN",
-      "UNIQUE"
-    ],
-    "correctAnswer": "B",
-    "explanation": "DISTINCT keyword is used to remove duplicate rows from the result set.",
-    "topic": "SQL Operations",
-    "difficulty": "easy"
-  },
-  {
-    "id": 73,
-    "question": "What does the SQL UNIQUE constraint ensure?",
-    "options": [
-      "All values in a column are unique.",
-      "Values are not NULL.",
-      "Column values satisfy a range.",
-      "Each column has a primary key."
-    ],
-    "correctAnswer": "A",
-    "explanation": "UNIQUE constraint ensures all values in a column are unique.",
-    "topic": "SQL Constraints",
-    "difficulty": "easy"
-  },
-  {
-    "id": 74,
-    "question": "Which SQL statement would you use to permanently remove a table and all its data?",
-    "options": [
-      "DELETE TABLE table_name;",
-      "DROP TABLE table_name;",
-      "TRUNCATE table_name;",
-      "ERASE table_name;"
-    ],
-    "correctAnswer": "B",
-    "explanation": "DROP TABLE permanently removes a table and all its data.",
-    "topic": "SQL DDL",
-    "difficulty": "easy"
-  },
-  {
-    "id": 75,
-    "question": "Which SQL statement adds a new column to an existing table?",
-    "options": [
-      "UPDATE TABLE … ADD COLUMN …;",
-      "ALTER TABLE … ADD COLUMN …;",
-      "INSERT INTO … ADD COLUMN …;",
-      "MODIFY TABLE … ADD COLUMN …;"
-    ],
-    "correctAnswer": "B",
-    "explanation": "ALTER TABLE … ADD COLUMN is used to add a new column to an existing table.",
-    "topic": "SQL DDL",
-    "difficulty": "medium"
-  },
-  {
-    "id": 76,
-    "question": "Which of the following is the correct order of phases in the database design lifecycle?",
-    "options": [
-      "Logical Design → Physical Design → Requirement Analysis",
-      "Requirement Analysis → Logical Design → Physical Design",
-      "Physical Design → Logical Design → Requirement Analysis",
-      "Implementation → Testing → Maintenance"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct order is Requirement Analysis → Logical Design → Physical Design.",
-    "topic": "Database Design",
-    "difficulty": "medium"
-  },
-  {
-    "id": 77,
-    "question": "What is the main purpose of database normalization?",
-    "options": [
-      "Increase redundancy for backups.",
-      "Reduce data redundancy and prevent anomalies.",
-      "Speed up queries at the cost of integrity.",
-      "Combine tables for performance."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Database normalization reduces data redundancy and prevents anomalies.",
-    "topic": "Database Normalization",
-    "difficulty": "medium"
-  },
-  {
-    "id": 78,
-    "question": "Which SQL command is used to add new records to a table?",
-    "options": [
-      "INSERT INTO table_name …",
-      "UPDATE table_name …",
-      "DELETE FROM table_name …",
-      "SELECT * FROM table_name;"
-    ],
-    "correctAnswer": "A",
-    "explanation": "INSERT INTO is used to add new records to a table.",
-    "topic": "SQL DML",
-    "difficulty": "easy"
-  },
-  {
-    "id": 79,
-    "question": "What does the SQL CREATE command do?",
-    "options": [
-      "Inserts data into a table.",
-      "Defines or adds new database objects (e.g., CREATE TABLE creates a table).",
-      "Deletes a database object.",
-      "Updates data."
-    ],
-    "correctAnswer": "B",
-    "explanation": "CREATE command defines or adds new database objects like tables, indexes, etc.",
-    "topic": "SQL DDL",
-    "difficulty": "easy"
-  },
-  {
-    "id": 80,
-    "question": "What is the effect of the SQL TRUNCATE command on a table?",
-    "options": [
-      "Deletes all rows and resets identity counters.",
-      "Deletes specified rows only.",
-      "Alters table structure.",
-      "Creates a new table."
-    ],
-    "correctAnswer": "A",
-    "explanation": "TRUNCATE deletes all rows and resets identity counters.",
-    "topic": "SQL DML",
-    "difficulty": "medium"
-  },
-  {
-    "id": 81,
-    "question": "Which SQL command is used to permanently apply changes made during a transaction?",
-    "options": [
-      "ROLLBACK",
-      "SAVEPOINT",
-      "COMMIT",
-      "BEGIN"
-    ],
-    "correctAnswer": "C",
-    "explanation": "COMMIT permanently applies changes made during a transaction.",
-    "topic": "SQL TCL",
-    "difficulty": "easy"
-  },
-  {
-    "id": 82,
-    "question": "Which of the following ensures atomicity in a transaction?",
-    "options": [
-      "Using COMMIT and ROLLBACK to treat operations as a single unit.",
-      "Saving changes automatically.",
-      "Running queries one by one.",
-      "Always using serial execution."
-    ],
-    "correctAnswer": "A",
-    "explanation": "COMMIT and ROLLBACK ensure atomicity by treating operations as a single unit.",
-    "topic": "Database Transactions",
-    "difficulty": "medium"
-  },
-  {
-    "id": 83,
-    "question": "What does a CHECK constraint do?",
-    "options": [
-      "Ensures a column has no duplicate values.",
-      "Limits the values in a column to a specified condition.",
-      "Automatically increments a number.",
-      "Defines a foreign key."
-    ],
-    "correctAnswer": "B",
-    "explanation": "CHECK constraint limits the values in a column to a specified condition.",
-    "topic": "SQL Constraints",
-    "difficulty": "medium"
-  },
-  {
-    "id": 84,
-    "question": "Which of the following SQL commands is a DCL (Data Control Language) command?",
-    "options": [
-      "GRANT",
-      "DELETE",
-      "CREATE",
-      "ALTER"
-    ],
-    "correctAnswer": "A",
-    "explanation": "GRANT is a DCL command used for access control.",
-    "topic": "SQL Categories",
-    "difficulty": "medium"
-  },
-  {
-    "id": 85,
-    "question": "What is a correlated subquery?",
-    "options": [
-      "A query that executes once for the entire outer query.",
-      "A subquery that uses values from the outer query and runs per outer row.",
-      "A subquery with no relation to the outer query.",
-      "A deprecated SQL feature."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A correlated subquery uses values from the outer query and runs for each outer row.",
-    "topic": "SQL Subqueries",
-    "difficulty": "hard"
-  },
-  {
-    "id": 86,
-    "question": "What is a nested (non-correlated) subquery?",
-    "options": [
-      "A query in the HAVING clause.",
-      "A query inside another query that runs once and feeds its result to the outer query.",
-      "A subquery in ORDER BY.",
-      "A function call inside a SELECT."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A nested subquery runs once and feeds its result to the outer query.",
-    "topic": "SQL Subqueries",
-    "difficulty": "medium"
-  },
-  {
-    "id": 87,
-    "question": "Which of the following is a Data Query Language (DQL) command?",
-    "options": [
-      "INSERT",
-      "UPDATE",
-      "SELECT",
-      "DROP"
-    ],
-    "correctAnswer": "C",
-    "explanation": "SELECT is a DQL command used to query data.",
-    "topic": "SQL Categories",
-    "difficulty": "easy"
-  },
-  {
-    "id": 88,
-    "question": "Which of the following is a Data Manipulation Language (DML) command?",
-    "options": [
-      "CREATE",
-      "ALTER",
-      "INSERT",
-      "GRANT"
-    ],
-    "correctAnswer": "C",
-    "explanation": "INSERT is a DML command used to manipulate data.",
-    "topic": "SQL Categories",
-    "difficulty": "easy"
-  },
-  {
-    "id": 89,
-    "question": "What is database replication?",
-    "options": [
-      "Dividing data into shards.",
-      "Copying and maintaining the same data in multiple locations.",
-      "Encrypting the database.",
-      "Sharding partitions."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Database replication is copying and maintaining the same data in multiple locations.",
-    "topic": "Database Distribution",
-    "difficulty": "medium"
-  },
-  {
-    "id": 90,
-    "question": "What is database sharding?",
-    "options": [
-      "Copying the entire database to backups.",
-      "Partitioning a database by splitting data across multiple servers.",
-      "Encrypting data at rest.",
-      "Merging multiple tables."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Database sharding is partitioning a database by splitting data across multiple servers.",
-    "topic": "Database Distribution",
-    "difficulty": "medium"
-  },
-  {
-    "id": 91,
-    "question": "Which scenario best suits replication over sharding?",
-    "options": [
-      "Managing very large datasets by partitioning (sharding).",
-      "Improving read availability and redundancy (replication).",
-      "Combining multiple databases.",
-      "Reducing data consistency."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Replication is better for improving read availability and redundancy.",
-    "topic": "Database Distribution",
-    "difficulty": "medium"
-  },
-  {
-    "id": 92,
-    "question": "Which is a feature of SQL databases as opposed to NoSQL?",
-    "options": [
-      "Schema-less design.",
-      "ACID compliance (strict transactional consistency).",
-      "Eventual consistency model.",
-      "Only key-value data model."
-    ],
-    "correctAnswer": "B",
-    "explanation": "SQL databases feature ACID compliance with strict transactional consistency.",
-    "topic": "SQL vs NoSQL",
-    "difficulty": "medium"
-  },
-  {
-    "id": 93,
-    "question": "Which is a feature of NoSQL databases (compared to SQL)?",
-    "options": [
-      "Fixed schema requirement.",
-      "ACID transactions on every operation.",
-      "Flexible (schema-less) data models.",
-      "Only tabular data storage."
-    ],
-    "correctAnswer": "C",
-    "explanation": "NoSQL databases feature flexible, schema-less data models.",
-    "topic": "SQL vs NoSQL",
-    "difficulty": "medium"
-  },
-  {
-    "id": 94,
-    "question": "Which scaling approach is more naturally associated with NoSQL databases?",
-    "options": [
-      "Vertical scaling by upgrading hardware.",
-      "Horizontal scaling across multiple servers.",
-      "No scaling needed for NoSQL.",
-      "Cloud-only scaling."
-    ],
-    "correctAnswer": "B",
-    "explanation": "NoSQL databases are designed for horizontal scaling across multiple servers.",
-    "topic": "Database Scaling",
-    "difficulty": "medium"
-  },
-  {
-    "id": 95,
-    "question": "For which scenario would NoSQL typically be chosen over SQL?",
-    "options": [
-      "Banking systems with strict transactions.",
-      "Systems with highly variable unstructured data and need for horizontal scalability.",
-      "Systems requiring complex JOIN operations.",
-      "Applications with small, fixed schema."
-    ],
-    "correctAnswer": "B",
-    "explanation": "NoSQL is chosen for systems with variable unstructured data needing horizontal scalability.",
-    "topic": "SQL vs NoSQL",
-    "difficulty": "medium"
-  },
-  {
-    "id": 96,
-    "question": "What is a database backup?",
-    "options": [
-      "A process to normalize tables.",
-      "A copy of the database data used to protect against data loss.",
-      "An index rebuild operation.",
-      "A transaction commit."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A database backup is a copy of the database data used to protect against data loss.",
-    "topic": "Database Administration",
-    "difficulty": "easy"
-  },
-  {
-    "id": 97,
-    "question": "What is database recovery?",
-    "options": [
-      "Sharding data across servers.",
-      "Reconstructing the database after data loss using backups.",
-      "Encrypting the database.",
-      "Running ANALYZE on tables."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Database recovery is reconstructing the database after data loss using backups.",
-    "topic": "Database Administration",
-    "difficulty": "medium"
-  },
-  {
-    "id": 98,
-    "question": "Which SQL clause is used to combine rows from two queries into one result set?",
-    "options": [
-      "JOIN",
-      "UNION",
-      "MERGE",
-      "GROUP BY"
-    ],
-    "correctAnswer": "B",
-    "explanation": "UNION is used to combine rows from two queries into one result set.",
-    "topic": "SQL Operations",
-    "difficulty": "medium"
-  },
-  {
-    "id": 99,
-    "question": "Which type of index is typically used for full-text searching?",
-    "options": [
-      "B-tree index",
-      "Bitmap index",
-      "Full-text index",
-      "Hash index"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Full-text index is specifically designed for full-text searching.",
-    "topic": "Database Indexing",
-    "difficulty": "medium"
-  },
-  {
-    "id": 100,
-    "question": "Which SQL function returns the number of rows?",
-    "options": [
-      "SUM()",
-      "COUNT()",
-      "AVG()",
-      "MAX()"
-    ],
-    "correctAnswer": "B",
-    "explanation": "COUNT() function returns the number of rows in a result set.",
-    "topic": "SQL Functions",
-    "difficulty": "easy"
-  },
-  {
-    "id": 101,
-    "question": "What is referential integrity?",
-    "options": [
-      "Each table must have a primary key.",
-      "Foreign key values must match primary key values or be NULL.",
-      "Data must be encrypted.",
-      "All tables must be normalized."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Referential integrity ensures that foreign key values match primary key values or are NULL.",
-    "topic": "Database Integrity",
-    "difficulty": "medium"
-  },
-  {
-    "id": 102,
-    "question": "Which of the following is a transaction control command?",
-    "options": [
-      "BEGIN TRANSACTION;",
-      "COMMIT;",
-      "ROLLBACK;",
-      "All of the above."
-    ],
-    "correctAnswer": "D",
-    "explanation": "BEGIN TRANSACTION, COMMIT, and ROLLBACK are all transaction control commands.",
-    "topic": "SQL TCL",
-    "difficulty": "easy"
-  },
-  {
-    "id": 103,
-    "question": "Which transaction property is violated if one transaction reads data written by another uncommitted transaction?",
-    "options": [
-      "Atomicity",
-      "Consistency",
-      "Isolation",
-      "Durability"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Isolation is violated when one transaction reads uncommitted data from another transaction (dirty read).",
-    "topic": "ACID Properties",
-    "difficulty": "hard"
-  },
-  {
-    "id": 104,
-    "question": "Which SQL clause is used to filter groups after aggregation?",
-    "options": [
-      "WHERE",
-      "HAVING",
-      "GROUP BY",
-      "ORDER BY"
-    ],
-    "correctAnswer": "B",
-    "explanation": "HAVING clause is used to filter groups after aggregation.",
-    "topic": "SQL Clauses",
-    "difficulty": "medium"
-  },
-  {
-    "id": 105,
-    "question": "What is data denormalization?",
-    "options": [
-      "Converting data to a normalized form.",
-      "Introducing redundancy to speed up reads.",
-      "Encrypting the database.",
-      "Splitting tables further."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Denormalization introduces redundancy to speed up read operations.",
-    "topic": "Database Design",
-    "difficulty": "medium"
-  },
-  {
-    "id": 106,
-    "question": "Which of the following is a NoSQL wide-column store?",
-    "options": [
-      "MongoDB",
-      "Cassandra",
-      "Redis",
-      "Neo4j"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Cassandra is a NoSQL wide-column store database.",
-    "topic": "NoSQL Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 107,
-    "question": "Which of the following is a NoSQL key-value store?",
-    "options": [
-      "MySQL",
-      "Redis",
-      "Cassandra",
-      "PostgreSQL"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Redis is a NoSQL key-value store database.",
-    "topic": "NoSQL Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 108,
-    "question": "Which type of NoSQL database is optimized for relationship queries?",
-    "options": [
-      "Key-Value",
-      "Document",
-      "Graph",
-      "Columnar"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Graph databases are optimized for relationship queries.",
-    "topic": "NoSQL Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 109,
-    "question": "What is a join operation in SQL?",
-    "options": [
-      "Combining data from two or more tables based on related columns.",
-      "Storing data in a joined format.",
-      "Deleting duplicate rows.",
-      "Summing values."
-    ],
-    "correctAnswer": "A",
-    "explanation": "A join operation combines data from two or more tables based on related columns.",
-    "topic": "SQL Operations",
-    "difficulty": "easy"
-  },
-  {
-    "id": 110,
-    "question": "Which SQL clause groups rows that have the same values?",
-    "options": [
-      "GROUP BY",
-      "ORDER BY",
-      "HAVING",
-      "UNION"
-    ],
-    "correctAnswer": "A",
-    "explanation": "GROUP BY clause groups rows that have the same values.",
-    "topic": "SQL Clauses",
-    "difficulty": "easy"
-  },
-  {
-    "id": 111,
-    "question": "Which SQL clause filters the results of a GROUP BY?",
-    "options": [
-      "WHERE",
-      "HAVING",
-      "ORDER BY",
-      "LIMIT"
-    ],
-    "correctAnswer": "B",
-    "explanation": "HAVING clause filters the results of a GROUP BY operation.",
-    "topic": "SQL Clauses",
-    "difficulty": "medium"
-  },
-  {
-    "id": 112,
-    "question": "What is two-phase locking (2PL)?",
-    "options": [
-      "A method to optimize queries.",
-      "A concurrency control mechanism ensuring serializability.",
-      "A backup strategy.",
-      "An encryption method."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Two-phase locking is a concurrency control mechanism ensuring serializability.",
-    "topic": "Database Concurrency",
-    "difficulty": "hard"
-  },
-  {
-    "id": 113,
-    "question": "Which SQL command allows defining a column default value?",
-    "options": [
-      "NOT NULL",
-      "DEFAULT",
-      "CHECK",
-      "UNIQUE"
-    ],
-    "correctAnswer": "B",
-    "explanation": "DEFAULT command allows defining a column default value.",
-    "topic": "SQL DDL",
-    "difficulty": "easy"
-  },
-  {
-    "id": 114,
-    "question": "Which isolation level prevents dirty reads and non-repeatable reads?",
-    "options": [
-      "READ UNCOMMITTED",
-      "READ COMMITTED",
-      "REPEATABLE READ",
-      "SERIALIZABLE"
-    ],
-    "correctAnswer": "D",
-    "explanation": "SERIALIZABLE isolation level prevents dirty reads, non-repeatable reads, and phantom reads.",
-    "topic": "Database Isolation",
-    "difficulty": "hard"
-  },
-  {
-    "id": 115,
-    "question": "What does the SQL clause ORDER BY name ASC do?",
-    "options": [
-      "Sorts results by name in ascending order.",
-      "Filters rows where name is 'ASC'.",
-      "Limits results to rows with name 'ASC'.",
-      "Reverses the table."
-    ],
-    "correctAnswer": "A",
-    "explanation": "ORDER BY name ASC sorts results by name in ascending order.",
-    "topic": "SQL Clauses",
-    "difficulty": "easy"
-  },
-  {
-    "id": 116,
-    "question": "Which SQL statement would you use to change a table's structure?",
-    "options": [
-      "ALTER TABLE",
-      "UPDATE TABLE",
-      "MODIFY TABLE",
-      "CHANGE TABLE"
-    ],
-    "correctAnswer": "A",
-    "explanation": "ALTER TABLE is used to change a table's structure.",
-    "topic": "SQL DDL",
-    "difficulty": "easy"
-  },
-  {
-    "id": 117,
-    "question": "What does the term row lock mean?",
-    "options": [
-      "Locking the entire table.",
-      "Locking a single row in a table to prevent concurrent updates.",
-      "Locking the database.",
-      "A locked cursor."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Row lock means locking a single row in a table to prevent concurrent updates.",
-    "topic": "Database Locking",
-    "difficulty": "medium"
-  },
-  {
-    "id": 118,
-    "question": "Which of the following is an example of a composite primary key?",
-    "options": [
-      "A primary key that allows NULLs.",
-      "A key composed of multiple columns combined to uniquely identify a row.",
-      "A foreign key used as a primary key.",
-      "A key that uses only one column."
-    ],
-    "correctAnswer": "B",
-    "explanation": "A composite primary key is composed of multiple columns combined to uniquely identify a row.",
-    "topic": "Database Keys",
-    "difficulty": "medium"
-  },
-  {
-    "id": 119,
-    "question": "Which SQL clause is used to limit the number of rows returned?",
-    "options": [
-      "LIMIT (or TOP)",
-      "WHERE",
-      "ORDER BY",
-      "GROUP BY"
-    ],
-    "correctAnswer": "A",
-    "explanation": "LIMIT (MySQL) or TOP (SQL Server) clause is used to limit the number of rows returned.",
-    "topic": "SQL Clauses",
-    "difficulty": "easy"
-  },
-  {
-    "id": 120,
-    "question": "Which NoSQL model is ideal for storing hierarchical or tree-structured data?",
-    "options": [
-      "Key-Value Store",
-      "Document Store (e.g., MongoDB)",
-      "Wide-Column Store",
-      "Graph Database"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Document stores like MongoDB are ideal for storing hierarchical or tree-structured data.",
-    "topic": "NoSQL Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 121,
-    "question": "What is a materialized view in a database?",
-    "options": [
-      "A virtual table with no physical storage.",
-      "A stored procedure.",
-      "A table that contains the result of a query (stored physically).",
-      "A backup copy of a view."
-    ],
-    "correctAnswer": "C",
-    "explanation": "A materialized view is a table that contains the result of a query and is stored physically.",
-    "topic": "Database Views",
-    "difficulty": "medium"
-  },
-  {
-    "id": 122,
-    "question": "Which SQL command would you use to start a new transaction explicitly?",
-    "options": [
-      "BEGIN TRANSACTION;",
-      "START;",
-      "OPEN TRANSACTION;",
-      "None (auto-managed)."
-    ],
-    "correctAnswer": "A",
-    "explanation": "BEGIN TRANSACTION is used to start a new transaction explicitly.",
-    "topic": "SQL TCL",
-    "difficulty": "easy"
-  },
-  {
-    "id": 123,
-    "question": "Which of the following SQL commands is a Data Control Language (DCL) command?",
-    "options": [
-      "REVOKE",
-      "DROP",
-      "GRANT",
-      "Both A and C"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Both REVOKE and GRANT are DCL commands for access control.",
-    "topic": "SQL Categories",
-    "difficulty": "medium"
-  },
-  {
-    "id": 124,
-    "question": "What does index fragmentation refer to?",
-    "options": [
-      "A measure of query execution time.",
-      "Gaps in index pages due to frequent insert/delete.",
-      "Splitting index into multiple columns.",
-      "Encrypting index data."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Index fragmentation refers to gaps in index pages due to frequent insert/delete operations.",
-    "topic": "Database Indexing",
-    "difficulty": "medium"
-  },
-  {
-    "id": 125,
-    "question": "Which scenario would most likely require database sharding?",
-    "options": [
-      "Moderate data size on one server.",
-      "Massive data volume that exceeds one server's capacity.",
-      "Low read/write requirements.",
-      "Only read-only access."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Database sharding is required when data volume exceeds one server's capacity.",
-    "topic": "Database Scaling",
-    "difficulty": "medium"
-  },
-  {
-    "id": 126,
-    "question": "Which is an example of denormalization?",
-    "options": [
-      "Breaking a table into more tables.",
-      "Combining related tables or adding redundant columns to speed up queries.",
-      "Removing indexes.",
-      "Enforcing stricter constraints."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Denormalization involves combining related tables or adding redundant columns to speed up queries.",
-    "topic": "Database Design",
-    "difficulty": "medium"
-  },
-  {
-    "id": 127,
-    "question": "Which is NOT a typical ACID property?",
-    "options": [
-      "Atomicity",
-      "Invisibility",
-      "Consistency",
-      "Durability"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Invisibility is not an ACID property. ACID stands for Atomicity, Consistency, Isolation, and Durability.",
-    "topic": "ACID Properties",
-    "difficulty": "easy"
-  },
-  {
-    "id": 128,
-    "question": "What is the purpose of the SQL EXPLAIN command?",
-    "options": [
-      "Formats the output in a human-readable way.",
-      "Shows the query execution plan.",
-      "Explains constraints.",
-      "It is a joke and does nothing."
-    ],
-    "correctAnswer": "B",
-    "explanation": "EXPLAIN command shows the query execution plan.",
-    "topic": "SQL Performance",
-    "difficulty": "medium"
-  },
-  {
-    "id": 129,
-    "question": "What is the difference between a clustered and non-clustered index?",
-    "options": [
-      "Clustered index is built on computed columns.",
-      "Clustered index defines physical data order; non-clustered is separate.",
-      "Non-clustered cannot be unique.",
-      "They are the same."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Clustered index defines physical data order; non-clustered index is separate from data storage.",
-    "topic": "Database Indexing",
-    "difficulty": "hard"
-  },
-  {
-    "id": 130,
-    "question": "What is an example of a wide-column store NoSQL database?",
-    "options": [
-      "MySQL",
-      "Cassandra",
-      "MongoDB",
-      "Oracle"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Cassandra is an example of a wide-column store NoSQL database.",
-    "topic": "NoSQL Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 131,
-    "question": "Which of the following SQL clauses can contain a subquery?",
-    "options": [
-      "SELECT, FROM, WHERE, HAVING (all of these)",
-      "Only WHERE clause",
-      "Only SELECT clause",
-      "Only JOIN clause"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Subqueries can be used in SELECT, FROM, WHERE, and HAVING clauses.",
-    "topic": "SQL Subqueries",
-    "difficulty": "medium"
-  },
-  {
-    "id": 132,
-    "question": "What is referential integrity in a relational database?",
-    "options": [
-      "Ensuring each primary key is unique.",
-      "Ensuring foreign key values match primary key values or are NULL.",
-      "Ensuring no nulls in any column.",
-      "Ensuring data is encrypted."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Referential integrity ensures foreign key values match primary key values or are NULL.",
-    "topic": "Database Integrity",
-    "difficulty": "medium"
-  },
-  {
-    "id": 133,
-    "question": "Which SQL function would you use to concatenate values from multiple rows into one string?",
-    "options": [
-      "GROUP_CONCAT (MySQL) or STRING_AGG (PostgreSQL)",
-      "CONCAT_WS",
-      "MULTI_CONCAT",
-      "None, SQL cannot do this."
-    ],
-    "correctAnswer": "A",
-    "explanation": "GROUP_CONCAT (MySQL) or STRING_AGG (PostgreSQL) concatenates values from multiple rows.",
-    "topic": "SQL Functions",
-    "difficulty": "medium"
-  },
-  {
-    "id": 134,
-    "question": "What is a database cursor?",
-    "options": [
-      "A pointer for iterating through query results row by row.",
-      "A graphical element in GUIs.",
-      "A type of index.",
-      "A trigger."
-    ],
-    "correctAnswer": "A",
-    "explanation": "A database cursor is a pointer for iterating through query results row by row.",
-    "topic": "Database Operations",
-    "difficulty": "medium"
-  },
-  {
-    "id": 135,
-    "question": "What is a serializable isolation level?",
-    "options": [
-      "Lowest level, allowing most concurrency.",
-      "Highest isolation, transactions appear to run sequentially.",
-      "Same as read uncommitted.",
-      "For reading only."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Serializable is the highest isolation level where transactions appear to run sequentially.",
-    "topic": "Database Isolation",
-    "difficulty": "hard"
-  },
-  {
-    "id": 136,
-    "question": "Which command is used to give a user access permissions in SQL?",
-    "options": [
-      "SET PERMISSIONS",
-      "GRANT",
-      "ALLOW",
-      "UPDATE USER"
-    ],
-    "correctAnswer": "B",
-    "explanation": "GRANT command is used to give a user access permissions in SQL.",
-    "topic": "SQL Security",
-    "difficulty": "easy"
-  },
-  {
-    "id": 137,
-    "question": "Which SQL clause is used to remove duplicate results?",
-    "options": [
-      "GROUP BY",
-      "HAVING",
-      "DISTINCT",
-      "LIMIT"
-    ],
-    "correctAnswer": "C",
-    "explanation": "DISTINCT clause is used to remove duplicate results.",
-    "topic": "SQL Operations",
-    "difficulty": "easy"
-  },
-  {
-    "id": 138,
-    "question": "What is the function of a transaction log?",
-    "options": [
-      "To store data redundantly.",
-      "To record all changes for recovery purposes.",
-      "To optimize queries.",
-      "To lock tables."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Transaction log records all changes for recovery purposes.",
-    "topic": "Database Recovery",
-    "difficulty": "medium"
-  },
-  {
-    "id": 139,
-    "question": "Which of the following is a characteristic of OLAP (Online Analytical Processing)?",
-    "options": [
-      "Highly normalized schema.",
-      "Read-heavy, denormalized star schema.",
-      "Write-heavy transactional operations.",
-      "No indexes."
-    ],
-    "correctAnswer": "B",
-    "explanation": "OLAP systems are characterized by read-heavy operations with denormalized star schema.",
-    "topic": "Database Systems",
-    "difficulty": "medium"
-  },
-  {
-    "id": 140,
-    "question": "Which is a vertically scalable database solution?",
-    "options": [
-      "Adding more nodes to a database cluster.",
-      "Moving to a bigger server with more RAM/CPU.",
-      "Partitioning tables across servers.",
-      "Changing database engine."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Vertical scaling involves moving to a bigger server with more RAM/CPU.",
-    "topic": "Database Scaling",
-    "difficulty": "easy"
-  },
-  {
-    "id": 141,
-    "question": "Which SQL clause sorts the result set by one or more columns?",
-    "options": [
-      "WHERE",
-      "ORDER BY",
-      "GROUP BY",
-      "LIMIT"
-    ],
-    "correctAnswer": "B",
-    "explanation": "ORDER BY clause sorts the result set by one or more columns.",
-    "topic": "SQL Clauses",
-    "difficulty": "easy"
-  },
-  {
-    "id": 142,
-    "question": "Which SQL command would you use to modify data in existing rows?",
-    "options": [
-      "INSERT",
-      "UPDATE",
-      "DELETE",
-      "ALTER"
-    ],
-    "correctAnswer": "B",
-    "explanation": "UPDATE command is used to modify data in existing rows.",
-    "topic": "SQL DML",
-    "difficulty": "easy"
-  },
-  {
-    "id": 143,
-    "question": "What is an index in a database primarily used for?",
-    "options": [
-      "Encrypting data.",
-      "Improving search performance by enabling quick lookups.",
-      "Generating random numbers.",
-      "Creating backup copies."
-    ],
-    "correctAnswer": "B",
-    "explanation": "An index is primarily used for improving search performance by enabling quick lookups.",
-    "topic": "Database Indexing",
-    "difficulty": "easy"
-  },
-  {
-    "id": 144,
-    "question": "Which of the following is NOT a NoSQL database category?",
-    "options": [
-      "Key-Value Store",
-      "Document Store",
-      "Relational Store",
-      "Graph Database"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Relational Store is not a NoSQL category; it's a traditional SQL database model.",
-    "topic": "NoSQL Databases",
-    "difficulty": "easy"
-  },
-  {
-    "id": 145,
-    "question": "Why are ACID properties important in transactional databases?",
-    "options": [
-      "They ensure reliable and consistent transaction processing.",
-      "They make queries faster.",
-      "They limit database size.",
-      "They enforce read-only mode."
-    ],
-    "correctAnswer": "A",
-    "explanation": "ACID properties ensure reliable and consistent transaction processing.",
-    "topic": "ACID Properties",
-    "difficulty": "medium"
-  },
-  {
-    "id": 146,
-    "question": "Which SQL keyword is used to apply conditions to the rows being selected (filtering)?",
-    "options": [
-      "WHERE",
-      "HAVING",
-      "GROUP BY",
-      "ORDER BY"
-    ],
-    "correctAnswer": "A",
-    "explanation": "WHERE keyword is used to apply conditions for filtering rows.",
-    "topic": "SQL Clauses",
-    "difficulty": "easy"
-  },
-  {
-    "id": 147,
-    "question": "Which SQL clause would you use to combine two tables by a related column in a query?",
-    "options": [
-      "WHERE",
-      "JOIN",
-      "GROUP BY",
-      "HAVING"
-    ],
-    "correctAnswer": "B",
-    "explanation": "JOIN clause is used to combine two tables by a related column.",
-    "topic": "SQL Operations",
-    "difficulty": "easy"
-  },
-  {
-    "id": 148,
-    "question": "What is an example of a time when you would use a correlated subquery?",
-    "options": [
-      "When the subquery result is independent of the outer query.",
-      "When the subquery needs to refer to the outer query's current row.",
-      "When querying only one table.",
-      "Correlated subqueries are deprecated."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Correlated subqueries are used when the subquery needs to refer to the outer query's current row.",
-    "topic": "SQL Subqueries",
-    "difficulty": "hard"
-  },
-  {
-    "id": 149,
-    "question": "Which of the following SQL statements is used to change a user's password?",
-    "options": [
-      "ALTER USER",
-      "GRANT",
-      "REVOKE",
-      "CREATE USER"
-    ],
-    "correctAnswer": "A",
-    "explanation": "ALTER USER statement is used to change a user's password.",
-    "topic": "SQL Security",
-    "difficulty": "medium"
-  },
-  {
-    "id": 150,
-    "question": "What is a deadlock in databases?",
-    "options": [
-      "When two transactions wait indefinitely for each other's locks.",
-      "When a transaction commits successfully.",
-      "When the database is fully locked for no reason.",
-      "When all indexes are rebuilt."
-    ],
-    "correctAnswer": "A",
-    "explanation": "A deadlock occurs when two transactions wait indefinitely for each other's locks.",
-    "topic": "Database Concurrency",
-    "difficulty": "medium"
-  },
-  {
-    "id": 151,
-    "question": "Which of the following improves data availability in a distributed database?",
-    "options": [
-      "Single-point storage.",
-      "Replication across nodes.",
-      "Only caching data.",
-      "Keeping a single backup offline."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Replication across nodes improves data availability in distributed databases.",
-    "topic": "Database Distribution",
-    "difficulty": "medium"
-  },
-  {
-    "id": 152,
-    "question": "Which is a benefit of using stored procedures?",
-    "options": [
-      "Automatically encrypts all data.",
-      "Reduces network traffic by executing code on the database server.",
-      "Ensures ACID compliance.",
-      "Makes all queries faster by default."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Stored procedures reduce network traffic by executing code on the database server.",
-    "topic": "Database Programming",
-    "difficulty": "medium"
-  },
-  {
-    "id": 153,
-    "question": "Which SQL command could be used to explain a query plan?",
-    "options": [
-      "EXPLAIN",
-      "ANALYZE",
-      "DEBUG",
-      "DESCRIBE"
-    ],
-    "correctAnswer": "A",
-    "explanation": "EXPLAIN command is used to show query execution plans.",
-    "topic": "SQL Performance",
-    "difficulty": "medium"
-  },
-  {
-    "id": 154,
-    "question": "What is a primary disadvantage of shared-disk architecture?",
-    "options": [
-      "Only one database can exist.",
-      "I/O contention on shared storage.",
-      "No redundancy is possible.",
-      "It is impossible to scale."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Shared-disk architecture suffers from I/O contention on shared storage.",
-    "topic": "Database Architecture",
-    "difficulty": "medium"
-  },
-  {
-    "id": 155,
-    "question": "Which database normalization form is concerned with eliminating multivalued dependencies?",
-    "options": [
-      "3NF",
-      "4NF",
-      "BCNF",
-      "2NF"
-    ],
-    "correctAnswer": "B",
-    "explanation": "4NF (Fourth Normal Form) is concerned with eliminating multivalued dependencies.",
-    "topic": "Database Normalization",
-    "difficulty": "hard"
-  },
-  {
-    "id": 156,
-    "question": "What is a SQL injection attack?",
-    "options": [
-      "An attacker physically injecting data.",
-      "Maliciously crafted SQL queries to manipulate a database.",
-      "A way to speed up query execution.",
-      "Encrypting the database."
-    ],
-    "correctAnswer": "B",
-    "explanation": "SQL injection is an attack using maliciously crafted SQL queries to manipulate a database.",
-    "topic": "Database Security",
-    "difficulty": "medium"
-  },
-  {
-    "id": 157,
-    "question": "Which is NOT a common technique for database backup?",
-    "options": [
-      "Full backup",
-      "Incremental backup",
-      "Mirroring data",
-      "Full-text backup"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Full-text backup is not a common database backup technique.",
-    "topic": "Database Administration",
-    "difficulty": "medium"
-  },
-  {
-    "id": 158,
-    "question": "Which database model is most suitable for storing time-series sensor data?",
-    "options": [
-      "Relational",
-      "Key-Value",
-      "Time-Series",
-      "Graph"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Time-series databases are specifically designed for storing time-series sensor data.",
-    "topic": "Database Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 159,
-    "question": "Which option is NOT a valid transaction outcome?",
-    "options": [
-      "Commit",
-      "Rollback",
-      "Partial commit",
-      "Abort"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Partial commit is not a valid transaction outcome due to atomicity requirements.",
-    "topic": "Database Transactions",
-    "difficulty": "medium"
-  },
-  {
-    "id": 160,
-    "question": "What is the purpose of the SQL HAVING clause?",
-    "options": [
-      "Filter individual rows.",
-      "Filter aggregated groups.",
-      "Combine tables.",
-      "Limit results."
-    ],
-    "correctAnswer": "B",
-    "explanation": "HAVING clause is used to filter aggregated groups after GROUP BY.",
-    "topic": "SQL Clauses",
-    "difficulty": "medium"
-  },
-  {
-    "id": 161,
-    "question": "Which of the following isolation levels can prevent phantom reads?",
-    "options": [
-      "READ COMMITTED",
-      "REPEATABLE READ",
-      "SERIALIZABLE",
-      "READ UNCOMMITTED"
-    ],
-    "correctAnswer": "C",
-    "explanation": "SERIALIZABLE isolation level can prevent phantom reads.",
-    "topic": "Database Isolation",
-    "difficulty": "hard"
-  },
-  {
-    "id": 162,
-    "question": "Which of the following would most likely indicate an availability issue in system design?",
-    "options": [
-      "Elevated response times under load.",
-      "Frequent error 503 (Service Unavailable) responses.",
-      "Slow query execution.",
-      "High data inconsistency."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Frequent 503 Service Unavailable responses indicate availability issues.",
-    "topic": "System Reliability",
-    "difficulty": "medium"
-  },
-  {
-    "id": 163,
-    "question": "What does the SQL clause GROUP_CONCAT (MySQL) or STRING_AGG (PostgreSQL) do?",
-    "options": [
-      "Concatenates strings from multiple rows into a single result.",
-      "Splits a string into multiple rows.",
-      "Encrypts a group of columns.",
-      "No such function exists."
-    ],
-    "correctAnswer": "A",
-    "explanation": "GROUP_CONCAT/STRING_AGG concatenates strings from multiple rows into a single result.",
-    "topic": "SQL Functions",
-    "difficulty": "medium"
-  },
-  {
-    "id": 164,
-    "question": "What is the advantage of using prepared statements?",
-    "options": [
-      "Slows down execution.",
-      "Avoids SQL injection and can reuse execution plans.",
-      "Eliminates the need for indexes.",
-      "Requires no database connection."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Prepared statements avoid SQL injection and can reuse execution plans for better performance.",
-    "topic": "Database Security",
-    "difficulty": "medium"
-  },
-  {
-    "id": 165,
-    "question": "Which NoSQL database type is optimized for analytical queries on very large data sets?",
-    "options": [
-      "Key-Value",
-      "Document",
-      "Columnar (wide-column)",
-      "Graph"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Columnar (wide-column) databases are optimized for analytical queries on large datasets.",
-    "topic": "NoSQL Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 166,
-    "question": "What does \"eventual consistency\" imply in a distributed system?",
-    "options": [
-      "Immediate consistency is guaranteed.",
-      "If no new updates occur, all replicas converge over time.",
-      "Consistency is never achieved.",
-      "It only applies to financial data."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Eventual consistency means all replicas converge over time if no new updates occur.",
-    "topic": "Consistency Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 167,
-    "question": "Which SQL command would be used to start a read-only transaction in some databases?",
-    "options": [
-      "BEGIN TRANSACTION READ ONLY;",
-      "START READ ONLY;",
-      "READ TRANSACTION;",
-      "SET TRANSACTION READ ONLY;"
-    ],
-    "correctAnswer": "D",
-    "explanation": "SET TRANSACTION READ ONLY is used to start a read-only transaction.",
-    "topic": "SQL TCL",
-    "difficulty": "medium"
-  },
-  {
-    "id": 168,
-    "question": "What is the outcome if two concurrent transactions deadlock?",
-    "options": [
-      "Both commit.",
-      "Both abort and roll back.",
-      "One is chosen as victim and rolled back.",
-      "They merge into one."
-    ],
-    "correctAnswer": "C",
-    "explanation": "In a deadlock, one transaction is chosen as victim and rolled back.",
-    "topic": "Database Concurrency",
-    "difficulty": "medium"
-  },
-  {
-    "id": 169,
-    "question": "Which is an example of a System Design trade-off?",
-    "options": [
-      "Choosing consistency over availability.",
-      "Always using more servers for trivial tasks.",
-      "Only writing clean code.",
-      "Ignoring performance."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Choosing consistency over availability is a classic system design trade-off from CAP theorem.",
-    "topic": "System Design Trade-offs",
-    "difficulty": "medium"
-  },
-  {
-    "id": 170,
-    "question": "Which database index might slow down write operations the most?",
-    "options": [
-      "No index.",
-      "Single index on primary key.",
-      "Several secondary indexes (more indexes mean slower writes).",
-      "Partitioned table."
-    ],
-    "correctAnswer": "C",
-    "explanation": "Multiple secondary indexes slow down write operations as all indexes need to be updated.",
-    "topic": "Database Indexing",
-    "difficulty": "medium"
-  },
-  {
-    "id": 171,
-    "question": "What happens during an SQL deadlock?",
-    "options": [
-      "One transaction is aborted and rolled back.",
-      "All transactions are committed.",
-      "The database crashes immediately.",
-      "Nothing; deadlock is a myth."
-    ],
-    "correctAnswer": "A",
-    "explanation": "During a deadlock, one transaction is chosen as victim and aborted/rolled back.",
-    "topic": "Database Concurrency",
-    "difficulty": "medium"
-  },
-  {
-    "id": 172,
-    "question": "Which consistency model does the BASE acronym relate to?",
-    "options": [
-      "Strong consistency.",
-      "Eventual consistency (NoSQL).",
-      "Full ACID compliance.",
-      "Real-time consistency."
-    ],
-    "correctAnswer": "B",
-    "explanation": "BASE (Basically Available, Soft state, Eventually consistent) relates to eventual consistency in NoSQL.",
-    "topic": "NoSQL Principles",
-    "difficulty": "medium"
-  },
-  {
-    "id": 173,
-    "question": "Which SQL isolation level allows dirty reads?",
-    "options": [
-      "READ UNCOMMITTED",
-      "READ COMMITTED",
-      "REPEATABLE READ",
-      "SERIALIZABLE"
-    ],
-    "correctAnswer": "A",
-    "explanation": "READ UNCOMMITTED isolation level allows dirty reads.",
-    "topic": "Database Isolation",
-    "difficulty": "medium"
-  },
-  {
-    "id": 174,
-    "question": "Which SQL command is used to rename a table?",
-    "options": [
-      "RENAME TABLE old_name TO new_name;",
-      "ALTER TABLE old_name RENAME TO new_name;",
-      "UPDATE TABLE new_name;",
-      "Both A and B (depending on SQL dialect)."
-    ],
-    "correctAnswer": "D",
-    "explanation": "Both RENAME TABLE and ALTER TABLE RENAME TO can be used depending on SQL dialect.",
-    "topic": "SQL DDL",
-    "difficulty": "medium"
-  },
-  {
-    "id": 175,
-    "question": "What is query caching?",
-    "options": [
-      "Storing frequently accessed queries and results to speed up retrieval.",
-      "Keeping queries in memory for logging.",
-      "A type of index.",
-      "Limiting query size."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Query caching stores frequently accessed queries and results to speed up retrieval.",
-    "topic": "Database Performance",
-    "difficulty": "medium"
-  },
-  {
-    "id": 176,
-    "question": "Which SQL clause combines the result of two SELECT statements (removing duplicates)?",
-    "options": [
-      "JOIN",
-      "UNION",
-      "INTERSECT",
-      "ALL"
-    ],
-    "correctAnswer": "B",
-    "explanation": "UNION combines the result of two SELECT statements and removes duplicates.",
-    "topic": "SQL Operations",
-    "difficulty": "easy"
-  },
-  {
-    "id": 177,
-    "question": "Which NoSQL model is best for JSON document storage and retrieval?",
-    "options": [
-      "Key-Value Store",
-      "Wide-Column Store",
-      "Document Store (e.g., MongoDB)",
-      "Relational Store"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Document stores like MongoDB are best for JSON document storage and retrieval.",
-    "topic": "NoSQL Databases",
-    "difficulty": "easy"
-  },
-  {
-    "id": 178,
-    "question": "In databases, what is a hotspot?",
-    "options": [
-      "A single point of failure.",
-      "A node with maximum resources.",
-      "A location (or shard) receiving disproportionally high traffic or load.",
-      "A backup server."
-    ],
-    "correctAnswer": "C",
-    "explanation": "A hotspot is a location or shard receiving disproportionally high traffic or load.",
-    "topic": "Database Performance",
-    "difficulty": "medium"
-  },
-  {
-    "id": 179,
-    "question": "Which of the following is a typical use case for an OLTP (Online Transaction Processing) system?",
-    "options": [
-      "Data warehousing.",
-      "Real-time transaction processing (e.g., banking).",
-      "Scientific computations.",
-      "Log aggregation."
-    ],
-    "correctAnswer": "B",
-    "explanation": "OLTP systems are used for real-time transaction processing like banking systems.",
-    "topic": "Database Systems",
-    "difficulty": "medium"
-  },
-  {
-    "id": 180,
-    "question": "Which NoSQL feature allows storing different attributes in each record?",
-    "options": [
-      "Fixed schema",
-      "Flexible schema (schema-less)",
-      "ACID transactions",
-      "Tabular format"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Flexible schema (schema-less) allows storing different attributes in each record.",
-    "topic": "NoSQL Databases",
-    "difficulty": "easy"
-  },
-  {
-    "id": 181,
-    "question": "Which system design goal does caching typically improve?",
-    "options": [
-      "Availability",
-      "Latency (response time)",
-      "Consistency",
-      "Security"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Caching typically improves latency by reducing response time.",
-    "topic": "System Performance",
-    "difficulty": "easy"
-  },
-  {
-    "id": 182,
-    "question": "What is the main purpose of horizontal partitioning (sharding)?",
-    "options": [
-      "Improve write/read scalability by distributing load.",
-      "Backup data across servers.",
-      "Encrypt data.",
-      "Merge databases."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Horizontal partitioning (sharding) improves scalability by distributing load across servers.",
-    "topic": "Database Scaling",
-    "difficulty": "medium"
-  },
-  {
-    "id": 183,
-    "question": "Which of the following is NOT a benefit of database normalization?",
-    "options": [
-      "Reduced redundancy.",
-      "Prevents update anomalies.",
-      "Simpler table structure.",
-      "Improved data consistency."
-    ],
-    "correctAnswer": "C",
-    "explanation": "Normalization typically makes table structure more complex, not simpler.",
-    "topic": "Database Normalization",
-    "difficulty": "medium"
-  },
-  {
-    "id": 184,
-    "question": "Which SQL statement lists the tables in a database (in many SQL systems)?",
-    "options": [
-      "SELECT * FROM tables;",
-      "SHOW TABLES;",
-      "LIST TABLES;",
-      "DESCRIBE ALL;"
-    ],
-    "correctAnswer": "B",
-    "explanation": "SHOW TABLES lists the tables in a database in many SQL systems.",
-    "topic": "SQL Commands",
-    "difficulty": "easy"
-  },
-  {
-    "id": 185,
-    "question": "Which of the following is an example of an ACID property scenario?",
-    "options": [
-      "Transaction fails and no partial change is made (Atomicity).",
-      "All clients always see the latest write (Strong Consistency).",
-      "Transaction speed is always the same.",
-      "Data is backed up every minute."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Transaction failing with no partial changes is an example of Atomicity.",
-    "topic": "ACID Properties",
-    "difficulty": "medium"
-  },
-  {
-    "id": 186,
-    "question": "What is a many-to-many relationship in databases?",
-    "options": [
-      "One record in Table A relates to many in Table B, and vice versa.",
-      "One record in Table A relates to one in Table B.",
-      "Many tables relate to one central table.",
-      "Many columns in the same table."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Many-to-many relationship means one record in Table A relates to many in Table B, and vice versa.",
-    "topic": "Database Relationships",
-    "difficulty": "medium"
-  },
-  {
-    "id": 187,
-    "question": "Which of the following is NOT a normal form above 1NF?",
-    "options": [
-      "2NF",
-      "3NF",
-      "6NF",
-      "4NF"
-    ],
-    "correctAnswer": "C",
-    "explanation": "6NF is not a standard normal form. Common forms are 1NF, 2NF, 3NF, BCNF, 4NF, 5NF.",
-    "topic": "Database Normalization",
-    "difficulty": "medium"
-  },
-  {
-    "id": 188,
-    "question": "Which SQL function is used to get the current date and time?",
-    "options": [
-      "GETDATE() (SQL Server) / NOW() (MySQL)",
-      "CURRENT_TIMESTAMP",
-      "SYSDATE",
-      "All of the above (depending on SQL dialect)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Different SQL dialects use different functions for current date/time.",
-    "topic": "SQL Functions",
-    "difficulty": "medium"
-  },
-  {
-    "id": 189,
-    "question": "What is a transactional savepoint used for?",
-    "options": [
-      "To mark a specific point in a transaction to which you can roll back without aborting the whole transaction.",
-      "To permanently commit.",
-      "To encrypt data.",
-      "To isolate tables."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Savepoint marks a point in a transaction for partial rollback without aborting the whole transaction.",
-    "topic": "Database Transactions",
-    "difficulty": "medium"
-  },
-  {
-    "id": 190,
-    "question": "Which NoSQL database uses tables, rows, and columns but without fixed schemas?",
-    "options": [
-      "Redis",
-      "Cassandra",
-      "PostgreSQL",
-      "Neo4j"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Cassandra uses tables, rows, and columns but without fixed schemas (wide-column store).",
-    "topic": "NoSQL Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 191,
-    "question": "Which of the following is NOT a typical component of a CI/CD pipeline?",
-    "options": [
-      "Version Control (e.g., git).",
-      "Automated Testing.",
-      "Continuous Integration server.",
-      "Manual Deployment by ssh."
-    ],
-    "correctAnswer": "D",
-    "explanation": "Manual deployment by ssh is not typical in CI/CD pipelines which focus on automation.",
-    "topic": "DevOps Practices",
-    "difficulty": "medium"
-  },
-  {
-    "id": 192,
-    "question": "Which of the following best describes failover in system design?",
-    "options": [
-      "Gracefully handling user errors.",
-      "Automatically switching to a redundant component after failure.",
-      "Encrypting data in transit.",
-      "Increasing resource allocation."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Failover is automatically switching to a redundant component after failure.",
-    "topic": "System Reliability",
-    "difficulty": "medium"
-  },
-  {
-    "id": 193,
-    "question": "What is an example of eventual consistency in CAP?",
-    "options": [
-      "All nodes reflect the last write immediately.",
-      "All nodes eventually see the same data if no new updates come.",
-      "Nodes never agree on data.",
-      "The system stays offline."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Eventual consistency means all nodes eventually see the same data if no new updates occur.",
-    "topic": "CAP Theorem",
-    "difficulty": "medium"
-  },
-  {
-    "id": 194,
-    "question": "Which SQL clause is used to define the schema of a table?",
-    "options": [
-      "CREATE TABLE",
-      "ALTER TABLE",
-      "UPDATE",
-      "INSERT"
-    ],
-    "correctAnswer": "A",
-    "explanation": "CREATE TABLE clause is used to define the schema of a table.",
-    "topic": "SQL DDL",
-    "difficulty": "easy"
-  },
-  {
-    "id": 195,
-    "question": "What is database mirroring?",
-    "options": [
-      "Running the database on two different machines in active/passive mode for high availability.",
-      "Using a mirror formula for queries.",
-      "Duplicating tables within the same database.",
-      "Generating visual reflections."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Database mirroring runs the database on two machines in active/passive mode for high availability.",
-    "topic": "Database High Availability",
-    "difficulty": "medium"
-  },
-  {
-    "id": 196,
-    "question": "Which of the following indicates a violation of atomicity?",
-    "options": [
-      "Half of a transaction's changes are saved, the other half are not, after a crash.",
-      "All or none of a transaction's operations occur.",
-      "No transactions can run concurrently.",
-      "Transactions are saved instantly."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Partial transaction completion violates atomicity which requires all-or-nothing behavior.",
-    "topic": "ACID Properties",
-    "difficulty": "medium"
-  },
-  {
-    "id": 197,
-    "question": "Which SQL clause can be used to add conditions on aggregated data?",
-    "options": [
-      "WHERE",
-      "HAVING",
-      "ORDER BY",
-      "LIMIT"
-    ],
-    "correctAnswer": "B",
-    "explanation": "HAVING clause is used to add conditions on aggregated data after GROUP BY.",
-    "topic": "SQL Clauses",
-    "difficulty": "medium"
-  },
-  {
-    "id": 198,
-    "question": "Which NoSQL database model is represented by MongoDB?",
-    "options": [
-      "Graph",
-      "Document",
-      "Wide-Column",
-      "Key-Value"
-    ],
-    "correctAnswer": "B",
-    "explanation": "MongoDB is a document-based NoSQL database.",
-    "topic": "NoSQL Databases",
-    "difficulty": "easy"
-  },
-  {
-    "id": 199,
-    "question": "Which SQL keyword is used to temporarily select only a portion of query results?",
-    "options": [
-      "LIMIT (MySQL) or TOP (SQL Server)",
-      "PARTITION",
-      "SEGMENT",
-      "RANGE"
-    ],
-    "correctAnswer": "A",
-    "explanation": "LIMIT (MySQL) or TOP (SQL Server) is used to select only a portion of query results.",
-    "topic": "SQL Clauses",
-    "difficulty": "easy"
-  },
-  {
-    "id": 200,
-    "question": "What is a primary advantage of horizontal scaling over vertical scaling?",
-    "options": [
-      "It's always cheaper.",
-      "It avoids a single point of failure by using multiple machines.",
-      "It requires no architecture changes.",
-      "It guarantees immediate consistency."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Horizontal scaling avoids single point of failure by distributing load across multiple machines.",
-    "topic": "Scalability",
-    "difficulty": "medium"
-  },
-  {
-    "id": 201,
-    "question": "Cloud computing allows users to store and access data and applications over the ____ (instead of a local computer's hard drive):",
-    "options": [
-      "Internet",
-      "Local Network",
-      "USB Drive",
-      "Personal Server"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Cloud computing allows users to store and access data and applications over the Internet instead of local storage.",
-    "topic": "Cloud Computing Fundamentals",
-    "difficulty": "easy"
-  },
-  {
-    "id": 202,
-    "question": "Which characteristic of cloud computing refers to the ability to quickly provision and release computing resources on demand?",
-    "options": [
-      "On-demand self-service",
-      "Broad network access",
-      "Resource pooling",
-      "Resilient computing"
-    ],
-    "correctAnswer": "A",
-    "explanation": "On-demand self-service allows users to quickly provision and release computing resources as needed.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "easy"
-  },
-  {
-    "id": 203,
-    "question": "In cloud computing, \"broad network access\" means services are available _____:",
-    "options": [
-      "Over the internet via standard devices",
-      "Only on private networks",
-      "Through telephone lines",
-      "Only within data centers"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Broad network access means cloud services are available over the internet via standard devices.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "easy"
-  },
-  {
-    "id": 204,
-    "question": "Which of the following is NOT an advantage of cloud computing?",
-    "options": [
-      "Scalability",
-      "High availability",
-      "High upfront hardware cost",
-      "Pay-per-use pricing model"
-    ],
-    "correctAnswer": "C",
-    "explanation": "High upfront hardware cost is not an advantage; cloud computing reduces upfront costs.",
-    "topic": "Cloud Computing Benefits",
-    "difficulty": "easy"
-  },
-  {
-    "id": 205,
-    "question": "Which of these is a disadvantage of cloud computing as mentioned in industry discussions?",
-    "options": [
-      "High initial capital expenditure",
-      "Vendor lock-in",
-      "Unlimited data security",
-      "Lack of internet access"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Vendor lock-in is a common disadvantage where users become dependent on a specific cloud provider.",
-    "topic": "Cloud Computing Challenges",
-    "difficulty": "medium"
-  },
-  {
-    "id": 206,
-    "question": "On-demand self-service in cloud computing means:",
-    "options": [
-      "Users can provision resources themselves without human intervention.",
-      "The cloud provider must manually provision all resources.",
-      "Users must request resources through a lengthy approval process.",
-      "Resources are pre-allocated in fixed amounts."
-    ],
-    "correctAnswer": "A",
-    "explanation": "On-demand self-service allows users to provision resources automatically without human intervention.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "easy"
-  },
-  {
-    "id": 207,
-    "question": "Which of these is a common characteristic of cloud computing for billing and monitoring purposes?",
-    "options": [
-      "Multi-tenancy",
-      "Measured service",
-      "Resilient computing",
-      "Sustainability"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Measured service enables billing and monitoring based on actual resource usage.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "medium"
-  },
-  {
-    "id": 208,
-    "question": "Cloud computing typically offers which pricing model?",
-    "options": [
-      "Pay-per-use",
-      "Fixed price per year only",
-      "One-time payment",
-      "Free for life"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Cloud computing typically uses a pay-per-use pricing model where users pay for consumed resources.",
-    "topic": "Cloud Computing Pricing",
-    "difficulty": "easy"
-  },
-  {
-    "id": 209,
-    "question": "In a public cloud deployment model, who owns and manages the infrastructure?",
-    "options": [
-      "The customer's organization",
-      "A cloud service provider",
-      "A government agency",
-      "The local IT department"
-    ],
-    "correctAnswer": "B",
-    "explanation": "In public cloud, the cloud service provider owns and manages the infrastructure.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 210,
-    "question": "In a private cloud deployment model, the cloud infrastructure is used exclusively by:",
-    "options": [
-      "Multiple unrelated organizations",
-      "A single organization",
-      "The general public",
-      "A community of users with common concerns"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Private cloud infrastructure is used exclusively by a single organization.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 211,
-    "question": "What type of cloud is formed by combining public and private clouds?",
-    "options": [
-      "Community cloud",
-      "Hybrid cloud",
-      "Multi-cloud",
-      "Distributed cloud"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Hybrid cloud combines public and private cloud environments.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 212,
-    "question": "A cloud deployment model where a group of organizations share infrastructure with common concerns is called:",
-    "options": [
-      "Public cloud",
-      "Private cloud",
-      "Hybrid cloud",
-      "Community cloud"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Community cloud is shared by organizations with common concerns or requirements.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 213,
-    "question": "Which cloud service model provides virtualized computing resources like servers and storage over the internet?",
-    "options": [
-      "SaaS",
-      "PaaS",
-      "IaaS",
-      "None of the above"
-    ],
-    "correctAnswer": "C",
-    "explanation": "IaaS (Infrastructure as a Service) provides virtualized computing resources like servers and storage.",
-    "topic": "Cloud Service Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 214,
-    "question": "Software as a Service (SaaS) provides:",
-    "options": [
-      "Virtual machines and storage for user control",
-      "Complete software applications accessible over the internet",
-      "A platform for developing and deploying applications",
-      "Only infrastructure components"
-    ],
-    "correctAnswer": "B",
-    "explanation": "SaaS provides complete software applications accessible over the internet.",
-    "topic": "Cloud Service Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 215,
-    "question": "Which of the following is an example of a SaaS application?",
-    "options": [
-      "Amazon EC2 (Infrastructure)",
-      "AWS Elastic Beanstalk (Platform)",
-      "Google Docs (software over the internet)",
-      "VMware ESXi (virtualization software)"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Google Docs is a SaaS application providing software functionality over the internet.",
-    "topic": "Cloud Service Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 216,
-    "question": "Platform as a Service (PaaS) primarily provides:",
-    "options": [
-      "Application software to end users",
-      "Infrastructure components only",
-      "Development and deployment tools and runtime environment",
-      "Networking and storage without compute"
-    ],
-    "correctAnswer": "C",
-    "explanation": "PaaS provides development and deployment tools and runtime environment for applications.",
-    "topic": "Cloud Service Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 217,
-    "question": "What is AWS EC2?",
-    "options": [
-      "A software application for word processing",
-      "A platform service to develop applications",
-      "Elastic Compute Cloud, providing on-demand scalable virtual servers",
-      "A database service for storing structured data"
-    ],
-    "correctAnswer": "C",
-    "explanation": "AWS EC2 (Elastic Compute Cloud) provides on-demand scalable virtual servers.",
-    "topic": "AWS Services",
-    "difficulty": "easy"
-  },
-  {
-    "id": 218,
-    "question": "What is an Amazon Machine Image (AMI)?",
-    "options": [
-      "A static IP address in AWS",
-      "A load balancing service",
-      "A template that contains software configuration to launch an EC2 instance",
-      "A monitoring dashboard"
-    ],
-    "correctAnswer": "C",
-    "explanation": "An AMI is a template containing software configuration to launch EC2 instances.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 219,
-    "question": "What is an Elastic IP address in AWS?",
-    "options": [
-      "A virtual server",
-      "A public static IPv4 address assigned to your AWS account",
-      "A DNS service",
-      "A type of storage volume"
-    ],
-    "correctAnswer": "B",
-    "explanation": "An Elastic IP is a public static IPv4 address assigned to your AWS account.",
-    "topic": "AWS Networking",
-    "difficulty": "medium"
-  },
-  {
-    "id": 220,
-    "question": "Elastic Load Balancing in AWS is used to:",
-    "options": [
-      "Secure your AWS account",
-      "Distribute incoming traffic across multiple instances",
-      "Store objects in the cloud",
-      "Manage user identities"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Elastic Load Balancing distributes incoming traffic across multiple instances for high availability.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 221,
-    "question": "Amazon S3 is primarily used for:",
-    "options": [
-      "Object storage in buckets",
-      "Relational database services",
-      "Virtual machine hosting",
-      "Networking"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon S3 is primarily used for object storage in containers called buckets.",
-    "topic": "AWS Storage",
-    "difficulty": "easy"
-  },
-  {
-    "id": 222,
-    "question": "In Amazon S3, data is stored as:",
-    "options": [
-      "Files on virtual hard drives",
-      "Objects in buckets",
-      "Tables in a relational database",
-      "Streams only"
-    ],
-    "correctAnswer": "B",
-    "explanation": "In Amazon S3, data is stored as objects within containers called buckets.",
-    "topic": "AWS Storage",
-    "difficulty": "easy"
-  },
-  {
-    "id": 223,
-    "question": "What is Amazon EBS used for?",
-    "options": [
-      "Hosting serverless functions",
-      "Block-level storage volumes for EC2 instances",
-      "Object storage for large files",
-      "Monitoring resources"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon EBS provides block-level storage volumes for EC2 instances.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
-  },
-  {
-    "id": 224,
-    "question": "Amazon RDS is a service for:",
-    "options": [
-      "Scaling virtual servers",
-      "Relational database management in the cloud",
-      "Distributed caching",
-      "NoSQL data storage"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon RDS is a managed relational database service in the cloud.",
-    "topic": "AWS Databases",
-    "difficulty": "easy"
-  },
-  {
-    "id": 225,
-    "question": "Amazon DynamoDB is:",
-    "options": [
-      "A fully managed NoSQL database service",
-      "A serverless compute service",
+    correctAnswer: "B",
+    explanation: "JUnit is a framework for writing and running unit tests in Java applications.",
+    topic: "Testing",
+    difficulty: "easy"
+  },
+  {
+    id: 300,
+    question: "What type of testing is Apache JMeter typically used for?",
+    options: ["Unit Testing", "Integration Testing", "Performance and Load Testing", "End-to-End Testing"],
+    correctAnswer: "C",
+    explanation: "Apache JMeter is primarily used for performance and load testing of applications.",
+    topic: "Testing",
+    difficulty: "easy"
+  },
+
+  // Cloud Computing Section (301-400)
+  // Cloud Fundamentals (301-320)
+  {
+    id: 301,
+    question: "What is cloud computing?",
+    options: [
+      "A type of internet connection",
+      "On-demand delivery of IT resources over the internet with pay-as-you-go pricing",
+      "A weather prediction system",
+      "A type of database"
+    ],
+    correctAnswer: "B",
+    explanation: "Cloud computing provides on-demand access to computing resources over the internet with flexible pricing.",
+    topic: "Cloud Fundamentals",
+    difficulty: "easy"
+  },
+  {
+    id: 302,
+    question: "Which of the following is NOT a cloud service model?",
+    options: ["IaaS", "PaaS", "SaaS", "DaaS"],
+    correctAnswer: "D",
+    explanation: "The three main cloud service models are IaaS (Infrastructure), PaaS (Platform), and SaaS (Software) as a Service.",
+    topic: "Cloud Fundamentals",
+    difficulty: "easy"
+  },
+  {
+    id: 303,
+    question: "What does IaaS stand for?",
+    options: [
+      "Internet as a Service",
+      "Infrastructure as a Service",
+      "Integration as a Service",
+      "Information as a Service"
+    ],
+    correctAnswer: "B",
+    explanation: "IaaS (Infrastructure as a Service) provides virtualized computing infrastructure over the internet.",
+    topic: "Cloud Fundamentals",
+    difficulty: "easy"
+  },
+  {
+    id: 304,
+    question: "Which cloud deployment model is owned and operated by a single organization?",
+    options: ["Public Cloud", "Private Cloud", "Hybrid Cloud", "Community Cloud"],
+    correctAnswer: "B",
+    explanation: "Private cloud is dedicated to a single organization and can be located on-premises or hosted externally.",
+    topic: "Cloud Fundamentals",
+    difficulty: "easy"
+  },
+  {
+    id: 305,
+    question: "What is the main advantage of cloud computing's elasticity?",
+    options: [
+      "Fixed resource allocation",
+      "Ability to scale resources up or down based on demand",
+      "Reduced security",
+      "Higher costs"
+    ],
+    correctAnswer: "B",
+    explanation: "Elasticity allows automatic scaling of resources based on demand, optimizing costs and performance.",
+    topic: "Cloud Fundamentals",
+    difficulty: "medium"
+  },
+  {
+    id: 306,
+    question: "Which of the following is a characteristic of cloud computing?",
+    options: ["On-demand self-service", "Broad network access", "Resource pooling", "All of the above"],
+    correctAnswer: "D",
+    explanation: "Cloud computing characteristics include on-demand self-service, broad network access, and resource pooling.",
+    topic: "Cloud Fundamentals",
+    difficulty: "easy"
+  },
+  {
+    id: 307,
+    question: "What does PaaS provide to developers?",
+    options: [
+      "Only hardware infrastructure",
+      "A platform for developing, running, and managing applications",
+      "Only software applications",
+      "Only network services"
+    ],
+    correctAnswer: "B",
+    explanation: "PaaS provides a complete platform for application development, deployment, and management.",
+    topic: "Cloud Fundamentals",
+    difficulty: "medium"
+  },
+  {
+    id: 308,
+    question: "Which cloud service model gives users the most control over the operating system?",
+    options: ["SaaS", "PaaS", "IaaS", "FaaS"],
+    correctAnswer: "C",
+    explanation: "IaaS provides the most control, including access to virtual machines and operating systems.",
+    topic: "Cloud Fundamentals",
+    difficulty: "medium"
+  },
+  {
+    id: 309,
+    question: "What is a hybrid cloud?",
+    options: [
+      "A combination of public and private clouds",
+      "A cloud that changes providers",
+      "A cloud with mixed storage types",
+      "A cloud with multiple applications"
+    ],
+    correctAnswer: "A",
+    explanation: "Hybrid cloud combines public and private cloud environments with orchestration between them.",
+    topic: "Cloud Fundamentals",
+    difficulty: "easy"
+  },
+  {
+    id: 310,
+    question: "Which of the following is NOT a benefit of cloud computing?",
+    options: ["Cost savings", "Scalability", "Increased capital expenditure", "Global reach"],
+    correctAnswer: "C",
+    explanation: "Cloud computing typically reduces capital expenditure by converting it to operational expenditure.",
+    topic: "Cloud Fundamentals",
+    difficulty: "easy"
+  },
+
+  // AWS Services (311-350)
+  {
+    id: 311,
+    question: "What does EC2 stand for in AWS?",
+    options: [
+      "Elastic Compute Cloud",
+      "Extended Cloud Computing",
+      "Electronic Commerce Cloud",
+      "Efficient Computing Cluster"
+    ],
+    correctAnswer: "A",
+    explanation: "EC2 (Elastic Compute Cloud) provides resizable compute capacity in the cloud.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 312,
+    question: "Which AWS service is used for object storage?",
+    options: ["EBS", "S3", "EFS", "Glacier"],
+    correctAnswer: "B",
+    explanation: "S3 (Simple Storage Service) is AWS's object storage service for storing and retrieving data.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 313,
+    question: "What is Amazon RDS?",
+    options: [
+      "A content delivery network",
+      "A relational database service",
+      "A load balancer",
+      "A monitoring service"
+    ],
+    correctAnswer: "B",
+    explanation: "RDS (Relational Database Service) is a managed database service for relational databases.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 314,
+    question: "Which AWS service provides a content delivery network (CDN)?",
+    options: ["Route 53", "CloudFront", "VPC", "Direct Connect"],
+    correctAnswer: "B",
+    explanation: "CloudFront is AWS's content delivery network service for fast content delivery globally.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 315,
+    question: "What is the purpose of AWS IAM?",
+    options: [
+      "Infrastructure monitoring",
+      "Identity and Access Management",
+      "Internet connection management",
+      "Image processing"
+    ],
+    correctAnswer: "B",
+    explanation: "IAM (Identity and Access Management) controls access to AWS resources and services.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 316,
+    question: "Which AWS service is used for serverless computing?",
+    options: ["EC2", "Lambda", "ECS", "Batch"],
+    correctAnswer: "B",
+    explanation: "Lambda allows running code without provisioning or managing servers (serverless computing).",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+  {
+    id: 317,
+    question: "What does VPC stand for in AWS?",
+    options: [
+      "Virtual Private Cloud",
+      "Very Powerful Computing",
+      "Verified Public Cloud",
+      "Virtual Processing Center"
+    ],
+    correctAnswer: "A",
+    explanation: "VPC (Virtual Private Cloud) provides isolated network environments within AWS.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 318,
+    question: "Which AWS service is used for monitoring and observability?",
+    options: ["CloudWatch", "CloudTrail", "Config", "Inspector"],
+    correctAnswer: "A",
+    explanation: "CloudWatch provides monitoring, metrics, and alerting for AWS resources and applications.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 319,
+    question: "What is Amazon EBS?",
+    options: [
+      "Elastic Block Store - block storage for EC2",
+      "Elastic Bean Stalk - application deployment",
+      "Elastic Buffer Service - data buffering",
+      "Elastic Backup Service - data backup"
+    ],
+    correctAnswer: "A",
+    explanation: "EBS (Elastic Block Store) provides persistent block storage for EC2 instances.",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+  {
+    id: 320,
+    question: "Which AWS service helps manage containerized applications?",
+    options: ["Lambda", "ECS", "RDS", "S3"],
+    correctAnswer: "B",
+    explanation: "ECS (Elastic Container Service) is a container orchestration service for Docker containers.",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+  {
+    id: 321,
+    question: "What is AWS Auto Scaling used for?",
+    options: [
+      "Automatically adjusting resource capacity based on demand",
+      "Automatically backing up data",
+      "Automatically updating software",
+      "Automatically encrypting data"
+    ],
+    correctAnswer: "A",
+    explanation: "Auto Scaling automatically adjusts the number of EC2 instances based on demand.",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+  {
+    id: 322,
+    question: "Which AWS service provides DNS and domain registration?",
+    options: ["CloudFront", "Route 53", "Direct Connect", "API Gateway"],
+    correctAnswer: "B",
+    explanation: "Route 53 is AWS's scalable DNS and domain name registration service.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 323,
+    question: "What is Amazon DynamoDB?",
+    options: [
       "A relational database",
-      "A machine learning platform"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon DynamoDB is a fully managed NoSQL database service.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 226,
-    "question": "Amazon Redshift is designed for:",
-    "options": [
-      "Storing static websites",
-      "Big data analytics and data warehousing",
-      "Managing virtual networks",
-      "Content distribution"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Redshift is designed for big data analytics and data warehousing.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 227,
-    "question": "Which of the following is an example of a real-world application of cloud computing?",
-    "options": [
-      "On-demand video streaming (e.g., Netflix)",
-      "Desktop word processor only",
-      "Local-only file storage",
-      "Single-user offline games"
-    ],
-    "correctAnswer": "A",
-    "explanation": "On-demand video streaming services like Netflix are excellent examples of cloud computing applications.",
-    "topic": "Cloud Computing Applications",
-    "difficulty": "easy"
-  },
-  {
-    "id": 228,
-    "question": "Cloud-based e-learning platforms for students are an example of cloud computing in:",
-    "options": [
-      "Education sector",
-      "Manufacturing",
-      "Agriculture",
-      "Automotive"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Cloud-based e-learning platforms demonstrate cloud computing application in the education sector.",
-    "topic": "Cloud Computing Applications",
-    "difficulty": "easy"
-  },
-  {
-    "id": 229,
-    "question": "An example of cloud computing in healthcare (medical field) is:",
-    "options": [
-      "Electronic health records accessible via the cloud",
-      "Writing prescriptions on paper",
-      "Using only local hospital servers",
-      "None of these"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Electronic health records accessible via the cloud is a common healthcare application of cloud computing.",
-    "topic": "Cloud Computing Applications",
-    "difficulty": "easy"
-  },
-  {
-    "id": 230,
-    "question": "Which of the following is NOT a Cloud data lifecycle phase?",
-    "options": [
-      "Generation of data",
-      "Storage of data",
-      "Data encryption policy creation",
-      "Destruction of data"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Data encryption policy creation is not a phase in the cloud data lifecycle.",
-    "topic": "Cloud Data Management",
-    "difficulty": "medium"
-  },
-  {
-    "id": 231,
-    "question": "The first phase in the cloud data lifecycle (as a concept) is:",
-    "options": [
-      "Data Transformation",
-      "Data Generation/Collection",
-      "Data Archival",
-      "Data Deletion"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Data Generation/Collection is the first phase in the cloud data lifecycle.",
-    "topic": "Cloud Data Management",
-    "difficulty": "medium"
-  },
-  {
-    "id": 232,
-    "question": "Which AWS service allows you to automatically increase or decrease EC2 instances based on demand?",
-    "options": [
-      "Amazon EC2 itself",
-      "AWS Auto Scaling",
-      "Amazon RDS",
-      "Amazon S3"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS Auto Scaling automatically adjusts EC2 instances based on demand.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 233,
-    "question": "Which of these is NOT an AWS service model type?",
-    "options": [
-      "Infrastructure as a Service (IaaS)",
-      "Platform as a Service (PaaS)",
-      "Software as a Service (SaaS)",
-      "Hardware as a Service (HaaS)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Hardware as a Service (HaaS) is not a standard cloud service model type.",
-    "topic": "Cloud Service Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 234,
-    "question": "Public cloud, private cloud, and hybrid cloud are examples of:",
-    "options": [
-      "Service models",
-      "Deployment models",
-      "Data storage types",
-      "Encryption protocols"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Public, private, and hybrid clouds are examples of cloud deployment models.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 235,
-    "question": "Which of the following cloud deployment models provides the greatest level of control and security for an organization?",
-    "options": [
-      "Public cloud",
-      "Private cloud",
-      "Community cloud",
-      "Hybrid cloud"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Private cloud provides the greatest level of control and security for an organization.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 236,
-    "question": "Which service model would let a company avoid managing the operating system and middleware for their application?",
-    "options": [
-      "IaaS",
-      "PaaS",
-      "SaaS",
-      "DaaS (Desktop as a Service)"
-    ],
-    "correctAnswer": "C",
-    "explanation": "SaaS allows companies to avoid managing operating systems and middleware entirely.",
-    "topic": "Cloud Service Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 237,
-    "question": "Which cloud characteristic involves multiple customers sharing the same resources?",
-    "options": [
-      "Multi-tenancy",
-      "Resiliency",
-      "Customization",
-      "Sustainability"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Multi-tenancy involves multiple customers sharing the same cloud resources.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "medium"
-  },
-  {
-    "id": 238,
-    "question": "Which statement is true about AWS Regions?",
-    "options": [
-      "All regions are physically adjacent",
-      "Each region is independent and isolated",
-      "Regions are used to specify user permissions",
-      "There is only one global region"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Each AWS region is independent and isolated from other regions.",
-    "topic": "AWS Infrastructure",
-    "difficulty": "medium"
-  },
-  {
-    "id": 239,
-    "question": "What does the \"pay-per-use\" model in cloud computing refer to?",
-    "options": [
-      "Paying a fixed monthly fee regardless of usage",
-      "Paying only for the computing resources actually used",
-      "Free usage for first year",
-      "Purchasing all required hardware upfront"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Pay-per-use model means paying only for the computing resources actually consumed.",
-    "topic": "Cloud Computing Pricing",
-    "difficulty": "easy"
-  },
-  {
-    "id": 240,
-    "question": "AWS Elastic Beanstalk is an example of which cloud service model?",
-    "options": [
-      "IaaS",
-      "PaaS",
-      "SaaS",
-      "None of the above"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS Elastic Beanstalk is a Platform as a Service (PaaS) offering.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 241,
-    "question": "Amazon S3 provides what type of data storage?",
-    "options": [
-      "Block storage",
-      "File storage",
-      "Object storage",
-      "Database storage"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Amazon S3 provides object storage for storing and retrieving data.",
-    "topic": "AWS Storage",
-    "difficulty": "easy"
-  },
-  {
-    "id": 242,
-    "question": "True or False: In AWS, an Elastic IP address can be associated with an EC2 instance to give it a static public IP.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "explanation": "True. Elastic IP addresses can be associated with EC2 instances to provide static public IP addresses.",
-    "topic": "AWS Networking",
-    "difficulty": "easy"
-  },
-  {
-    "id": 243,
-    "question": "Which AWS service is designed for long-term archival of data (e.g., seldom accessed data)?",
-    "options": [
-      "Amazon S3 Standard",
-      "Amazon S3 Glacier",
-      "Amazon DynamoDB",
-      "Amazon Redshift"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon S3 Glacier is designed for long-term archival of infrequently accessed data.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
-  },
-  {
-    "id": 244,
-    "question": "Which of the following is NOT typically a benefit of using cloud computing?",
-    "options": [
-      "Increased IT agility",
-      "Reduced capital expenditure",
-      "Guaranteed 100% data security",
-      "Easy scalability"
-    ],
-    "correctAnswer": "C",
-    "explanation": "100% data security cannot be guaranteed in any system, including cloud computing.",
-    "topic": "Cloud Computing Benefits",
-    "difficulty": "medium"
-  },
-  {
-    "id": 245,
-    "question": "Multi-cloud refers to:",
-    "options": [
-      "Using multiple cloud service providers simultaneously",
-      "A mix of public and private cloud",
-      "A cloud deployment for educational institutions",
-      "Using cloud services only for backup"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Multi-cloud refers to using multiple cloud service providers simultaneously.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 246,
-    "question": "Which AWS service automatically handles distributing incoming traffic to multiple EC2 instances?",
-    "options": [
-      "Amazon Route 53",
-      "AWS Lambda",
-      "Amazon CloudFront",
-      "Elastic Load Balancing"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Elastic Load Balancing automatically distributes incoming traffic across multiple EC2 instances.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 247,
-    "question": "Which cloud model allows organizations to use both on-premises infrastructure and public cloud resources in combination?",
-    "options": [
-      "Public cloud",
-      "Private cloud",
-      "Hybrid cloud",
-      "Community cloud"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Hybrid cloud combines on-premises infrastructure with public cloud resources.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 248,
-    "question": "Amazon RDS supports which types of databases?",
-    "options": [
-      "Only NoSQL databases",
-      "Relational databases like MySQL, PostgreSQL, etc.",
-      "Key-value stores only",
-      "Only Redshift"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon RDS supports various relational databases including MySQL, PostgreSQL, Oracle, and SQL Server.",
-    "topic": "AWS Databases",
-    "difficulty": "easy"
-  },
-  {
-    "id": 249,
-    "question": "Which AWS database is best suited for document or key-value data with low latency?",
-    "options": [
-      "Amazon RDS",
-      "Amazon DynamoDB",
-      "Amazon Redshift",
-      "Amazon Aurora"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon DynamoDB is best suited for document or key-value data with low latency requirements.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 250,
-    "question": "Which AWS database service is specifically built for petabyte-scale data warehousing?",
-    "options": [
-      "Amazon Aurora",
-      "Amazon RDS",
-      "Amazon Redshift",
-      "Amazon DynamoDB"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Amazon Redshift is specifically built for petabyte-scale data warehousing and analytics.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 251,
-    "question": "In cloud computing, \"resource pooling\" refers to:",
-    "options": [
-      "Grouping similar jobs together",
-      "Sharing computing resources among many users dynamically",
-      "Saving backup copies of resources",
-      "A service for gathering data"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Resource pooling refers to sharing computing resources among many users dynamically.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "medium"
-  },
-  {
-    "id": 252,
-    "question": "The primary benefit of auto-scaling EC2 instances is to:",
-    "options": [
-      "Reduce security vulnerabilities",
-      "Adjust capacity based on demand",
-      "Manage user permissions",
-      "Secure network traffic"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Auto-scaling primarily adjusts capacity based on demand to optimize performance and costs.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 253,
-    "question": "The cloud service model that provides hardware and software tools (e.g., IDE, libraries) for application development is:",
-    "options": [
-      "IaaS",
-      "PaaS",
-      "SaaS",
-      "DaaS (Container as a Service)"
-    ],
-    "correctAnswer": "B",
-    "explanation": "PaaS provides hardware and software tools for application development including IDEs and libraries.",
-    "topic": "Cloud Service Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 254,
-    "question": "Which AWS concept is an example of SaaS?",
-    "options": [
-      "AWS WorkSpaces",
-      "Amazon EC2",
-      "Amazon S3",
-      "Google Workspace (though not AWS)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Google Workspace is an example of SaaS, though it's not an AWS service.",
-    "topic": "Cloud Service Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 255,
-    "question": "What does S3 stand for in AWS?",
-    "options": [
-      "Simple Storage Service",
-      "Simple Search Service",
-      "Scalable Server Service",
-      "Secure Storage System"
-    ],
-    "correctAnswer": "A",
-    "explanation": "S3 stands for Simple Storage Service in AWS.",
-    "topic": "AWS Services",
-    "difficulty": "easy"
-  },
-  {
-    "id": 256,
-    "question": "Which of these AWS services is used for object storage?",
-    "options": [
-      "Amazon S3",
-      "Amazon EBS",
-      "Amazon EFS",
-      "Amazon VPC"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon S3 is the AWS service used for object storage.",
-    "topic": "AWS Storage",
-    "difficulty": "easy"
-  },
-  {
-    "id": 257,
-    "question": "Which cloud deployment model would be most suitable for a university and other educational institutions sharing infrastructure?",
-    "options": [
-      "Public cloud",
-      "Private cloud",
-      "Community cloud",
-      "Hybrid cloud"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Community cloud is most suitable for organizations with common concerns like educational institutions.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 258,
-    "question": "AWS Lambda is an example of which cloud computing concept?",
-    "options": [
-      "Function as a Service (FaaS)",
-      "Container orchestration",
-      "Serverless computing",
-      "All of the above"
-    ],
-    "correctAnswer": "C",
-    "explanation": "AWS Lambda is primarily an example of serverless computing, which includes FaaS concepts.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 259,
-    "question": "Which of the following is true about Amazon EC2 Auto Scaling?",
-    "options": [
-      "It requires manual adjustment of instance count.",
-      "It automatically adjusts the number of instances based on load.",
-      "It only works with Amazon RDS.",
-      "It is only used for networking."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon EC2 Auto Scaling automatically adjusts the number of instances based on load and demand.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 260,
-    "question": "Which AWS service provides a fully managed data warehouse solution?",
-    "options": [
-      "Amazon DynamoDB",
-      "Amazon Redshift",
-      "Amazon RDS",
-      "Amazon Athena"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Redshift provides a fully managed data warehouse solution.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 261,
-    "question": "A bucket in Amazon S3 is:",
-    "options": [
-      "A virtual server",
-      "A container for storing objects",
-      "A type of database table",
-      "A network resource"
-    ],
-    "correctAnswer": "B",
-    "explanation": "A bucket in Amazon S3 is a container for storing objects (files and data).",
-    "topic": "AWS Storage",
-    "difficulty": "easy"
-  },
-  {
-    "id": 262,
-    "question": "In AWS, which component acts as a firewall to control inbound and outbound traffic to instances?",
-    "options": [
-      "AWS WAF",
-      "Security group",
-      "Internet gateway",
-      "Network ACL"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Security groups act as virtual firewalls to control inbound and outbound traffic to EC2 instances.",
-    "topic": "AWS Security",
-    "difficulty": "medium"
-  },
-  {
-    "id": 263,
-    "question": "Which AWS offering is used to manage DNS records for domains?",
-    "options": [
-      "Amazon VPC",
-      "Amazon Route 53",
-      "AWS CloudFront",
-      "AWS SQS"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Route 53 is AWS's DNS service for managing domain records.",
-    "topic": "AWS Networking",
-    "difficulty": "medium"
-  },
-  {
-    "id": 264,
-    "question": "Amazon Aurora is a type of:",
-    "options": [
-      "NoSQL database",
-      "Relational database compatible with MySQL and PostgreSQL",
-      "Object storage",
-      "Analytics service"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Aurora is a relational database compatible with MySQL and PostgreSQL.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 265,
-    "question": "The cloud characteristic that ensures resources are available even if one part fails is:",
-    "options": [
-      "Rapid elasticity",
-      "Resilient computing",
-      "Sustainability",
-      "Measured service"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Resilient computing ensures resources remain available even if components fail.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "medium"
-  },
-  {
-    "id": 266,
-    "question": "Amazon Simple Notification Service (SNS) primarily deals with:",
-    "options": [
-      "Sending alerts and notifications",
-      "Object storage",
-      "Virtual machine management",
-      "Relational databases"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon SNS is primarily used for sending alerts and notifications.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 267,
-    "question": "Which one of these is not a core component of cloud computing architecture (front-end/back-end)?",
-    "options": [
-      "Client Infrastructure",
-      "Cloud Applications",
-      "Cloud Infrastructure",
-      "Blockchain network"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Blockchain network is not a core component of traditional cloud computing architecture.",
-    "topic": "Cloud Computing Architecture",
-    "difficulty": "medium"
-  },
-  {
-    "id": 268,
-    "question": "Which AWS database service is most appropriate for transaction processing on relational data?",
-    "options": [
-      "Amazon RDS",
-      "Amazon Redshift",
-      "Amazon S3",
-      "Amazon EMR"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon RDS is most appropriate for transaction processing on relational data.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 269,
-    "question": "Cloud computing is often called a \"utility\" because:",
-    "options": [
-      "It is always free",
-      "Users pay only for what they use, like electricity",
-      "It cannot be measured",
-      "It doesn't use Internet"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Cloud computing is called a utility because users pay only for what they consume, similar to electricity.",
-    "topic": "Cloud Computing Fundamentals",
-    "difficulty": "easy"
-  },
-  {
-    "id": 270,
-    "question": "Which of the following best describes a cloud bursting scenario?",
-    "options": [
-      "Running two clouds in parallel",
-      "Using on-premises resources and bursting into the cloud during peak demand",
-      "Data replication across multiple clouds",
-      "Canceling cloud services abruptly"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Cloud bursting involves using on-premises resources and extending to cloud during peak demand.",
-    "topic": "Cloud Computing Concepts",
-    "difficulty": "medium"
-  },
-  {
-    "id": 271,
-    "question": "Who first proposed the idea that computing could be delivered as a utility service over a network?",
-    "options": [
-      "Tim Berners-Lee",
-      "John McCarthy (1961)",
-      "Vint Cerf",
-      "Steve Jobs"
-    ],
-    "correctAnswer": "B",
-    "explanation": "John McCarthy first proposed the idea of computing as a utility service over a network in 1961.",
-    "topic": "Cloud Computing History",
-    "difficulty": "hard"
-  },
-  {
-    "id": 272,
-    "question": "The term \"Software as a Service (SaaS)\" applies to which of the following?",
-    "options": [
-      "On-premises database software",
-      "Web-based applications hosted in the cloud",
-      "A virtual server instance",
-      "A private network infrastructure"
-    ],
-    "correctAnswer": "B",
-    "explanation": "SaaS applies to web-based applications hosted in the cloud and accessible over the internet.",
-    "topic": "Cloud Service Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 273,
-    "question": "What does the AWS EC2 instance type define?",
-    "options": [
-      "The software applications installed",
-      "The hardware configuration (CPU, memory, etc.) for the instance",
-      "The geographic region of deployment",
-      "The network protocol used"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS EC2 instance type defines the hardware configuration including CPU, memory, storage, and network capacity.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 274,
-    "question": "In AWS, which of these is an example of an Amazon EC2 instance type family?",
-    "options": [
-      "m5.large",
-      "ebs-ssd.medium",
-      "s3.object.t2",
-      "rds.t3"
-    ],
-    "correctAnswer": "A",
-    "explanation": "m5.large is an example of an Amazon EC2 instance type specifying the instance family and size.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 275,
-    "question": "Which AWS service can automatically replace an unhealthy EC2 instance in a group?",
-    "options": [
-      "Amazon CloudWatch",
-      "AWS Auto Scaling",
-      "Amazon SNS",
-      "AWS Config"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS Auto Scaling can automatically replace unhealthy EC2 instances in an Auto Scaling group.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 276,
-    "question": "Which characteristic of cloud computing refers to the provider's ability to charge based on measured usage?",
-    "options": [
-      "Resilient computing",
-      "Multi-tenancy",
-      "Measured service",
-      "Virtualization"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Measured service refers to the cloud provider's ability to charge based on measured resource usage.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "medium"
-  },
-  {
-    "id": 277,
-    "question": "What is a key feature of a hybrid cloud environment?",
-    "options": [
-      "Resources are owned by no one.",
-      "Combines on-premises and public cloud infrastructure",
-      "Uses multiple public clouds only.",
-      "Only community-shared resources."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Hybrid cloud combines on-premises infrastructure with public cloud resources.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 278,
-    "question": "Which of the following is true about scalability in cloud computing?",
-    "options": [
-      "It allows resources to be scaled up or down quickly according to demand",
-      "Resources always stay at peak capacity.",
-      "Users must manually purchase hardware to scale.",
-      "It only applies to storage capacity."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Scalability in cloud computing allows resources to be scaled up or down quickly based on demand.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "medium"
-  },
-  {
-    "id": 279,
-    "question": "Which AWS service provides block-level storage volumes for EC2 that persist independently of instance life?",
-    "options": [
-      "Amazon S3",
-      "Amazon EBS",
-      "Amazon Glacier",
-      "Amazon DynamoDB"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon EBS provides block-level storage volumes that persist independently of EC2 instance lifecycle.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
-  },
-  {
-    "id": 280,
-    "question": "When using AWS, what is an Elastic Load Balancer (ELB) mainly used for?",
-    "options": [
-      "Encrypting data in transit",
-      "Distributing network traffic across multiple instances",
-      "Monitoring CPU usage",
-      "Assigning static IPs"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Elastic Load Balancer is mainly used for distributing network traffic across multiple instances.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 281,
-    "question": "What is one possible disadvantage of public cloud services?",
-    "options": [
-      "Reduced scalability",
-      "Lack of custom security controls",
-      "High initial investment",
-      "Strong integration with legacy systems"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Public cloud services may have limitations in providing custom security controls compared to private clouds.",
-    "topic": "Cloud Computing Challenges",
-    "difficulty": "medium"
-  },
-  {
-    "id": 282,
-    "question": "In IaaS, who is responsible for managing the operating system?",
-    "options": [
-      "AWS (or cloud provider)",
-      "The user (customer)",
-      "It is not applicable",
-      "Third-party consultants"
-    ],
-    "correctAnswer": "B",
-    "explanation": "In IaaS, the user (customer) is responsible for managing the operating system and applications.",
-    "topic": "Cloud Service Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 283,
-    "question": "Which of the following is NOT a feature of AWS Auto Scaling?",
-    "options": [
-      "Scaling compute capacity in response to demand",
-      "Replacing unhealthy instances",
-      "Automating application code deployment",
-      "Maintaining desired instance count during spikes"
-    ],
-    "correctAnswer": "C",
-    "explanation": "AWS Auto Scaling does not automate application code deployment; it focuses on scaling infrastructure.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 284,
-    "question": "Which is an example of a PaaS offering on AWS?",
-    "options": [
-      "Amazon RDS",
-      "AWS Lambda",
-      "AWS Elastic Beanstalk",
-      "Amazon EC2"
-    ],
-    "correctAnswer": "C",
-    "explanation": "AWS Elastic Beanstalk is a Platform as a Service (PaaS) offering for deploying applications.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 285,
-    "question": "Which of these services is considered serverless on AWS?",
-    "options": [
-      "Amazon EC2",
-      "AWS Lambda",
-      "Amazon S3",
-      "Amazon Aurora"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS Lambda is considered a serverless service where you don't manage servers.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 286,
-    "question": "The AWS shared responsibility model states that AWS manages:",
-    "options": [
-      "Data and applications",
-      "Security of the cloud (hardware, OS patching, etc.)",
-      "User access permissions",
-      "Encryption keys for customer data"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS manages security of the cloud including hardware, infrastructure, and OS patching.",
-    "topic": "AWS Security",
-    "difficulty": "medium"
-  },
-  {
-    "id": 287,
-    "question": "Amazon S3 Standard-Infrequent Access (Standard-IA) is best used for:",
-    "options": [
-      "Frequently accessed data",
-      "Infrequently accessed data with rapid access requirements",
-      "Long-term archive only",
-      "Running database instances"
-    ],
-    "correctAnswer": "B",
-    "explanation": "S3 Standard-IA is designed for infrequently accessed data that still needs rapid access when required.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
-  },
-  {
-    "id": 288,
-    "question": "What does \"cloud bursting\" refer to?",
-    "options": [
-      "Sending data bursts through a VPN",
-      "Dynamically moving workload from private cloud to public cloud during peak demand",
-      "Data replication across multiple clouds",
-      "Breaking a cloud into smaller regions"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Cloud bursting refers to dynamically extending workloads from private to public cloud during peak demand.",
-    "topic": "Cloud Computing Concepts",
-    "difficulty": "medium"
-  },
-  {
-    "id": 289,
-    "question": "What is the difference between IaaS, PaaS, and SaaS in terms of user control?",
-    "options": [
-      "SaaS gives the user full control over infrastructure.",
-      "IaaS gives the user control over OS and applications, SaaS does not.",
-      "PaaS requires the user to manage hardware.",
-      "There is no difference."
-    ],
-    "correctAnswer": "B",
-    "explanation": "IaaS gives users control over OS and applications, while SaaS provides complete applications without user control over infrastructure.",
-    "topic": "Cloud Service Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 290,
-    "question": "In cloud computing, what is \"elasticity\"?",
-    "options": [
-      "The ability to adapt and change configurations",
-      "The ability to scale resources up and down automatically",
-      "The capability to integrate with Elastic Search",
-      "The cost of cloud services over time"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Elasticity in cloud computing refers to the ability to scale resources up and down automatically based on demand.",
-    "topic": "Cloud Computing Characteristics",
-    "difficulty": "medium"
-  },
-  {
-    "id": 291,
-    "question": "Which AWS service is used for object-level data archiving and retrieval?",
-    "options": [
-      "Amazon Redshift",
-      "Amazon S3 Glacier",
-      "Amazon EFS",
-      "Amazon CloudFront"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon S3 Glacier is used for object-level data archiving and long-term storage.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
-  },
-  {
-    "id": 292,
-    "question": "Which of the following is NOT a common cloud service deployment model?",
-    "options": [
-      "Public cloud",
-      "Private cloud",
-      "Community cloud",
-      "Personal cloud"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Personal cloud is not a standard cloud deployment model. The common models are public, private, community, and hybrid.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 293,
-    "question": "Which AWS service provides a managed NoSQL database with single-digit millisecond response times?",
-    "options": [
-      "Amazon RDS",
-      "Amazon Redshift",
-      "Amazon DynamoDB",
-      "Amazon ElastiCache"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Amazon DynamoDB provides managed NoSQL database with single-digit millisecond response times.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 294,
-    "question": "\"Infrastructure as Code\" (IaC) in cloud computing refers to:",
-    "options": [
-      "Writing code to manage application logic only",
-      "Managing and provisioning infrastructure through machine-readable definition files",
-      "Automated code compilation",
-      "A deprecated cloud practice"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Infrastructure as Code refers to managing and provisioning infrastructure through machine-readable definition files.",
-    "topic": "Cloud Computing Concepts",
-    "difficulty": "medium"
-  },
-  {
-    "id": 295,
-    "question": "If an organization wants full administrative control over their cloud environment, which model is most appropriate?",
-    "options": [
-      "Public cloud",
-      "Private cloud",
-      "Community cloud",
-      "Hybrid cloud"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Private cloud provides the most administrative control over the cloud environment.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "medium"
-  },
-  {
-    "id": 296,
-    "question": "Which AWS concept refers to billing customers based on resource consumption over time?",
-    "options": [
-      "Reserved Instances only",
-      "Elastic pricing model",
-      "Pay-as-you-go pricing",
-      "Subscription model"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Pay-as-you-go pricing bills customers based on actual resource consumption over time.",
-    "topic": "Cloud Computing Pricing",
-    "difficulty": "medium"
-  },
-  {
-    "id": 297,
-    "question": "What is a \"bucket policy\" in Amazon S3?",
-    "options": [
-      "A rule for EC2 instances",
-      "A set of permissions attached to an S3 bucket to manage access",
-      "A retention policy for backups",
-      "A network security feature"
-    ],
-    "correctAnswer": "B",
-    "explanation": "A bucket policy is a set of permissions attached to an S3 bucket to manage access control.",
-    "topic": "AWS Security",
-    "difficulty": "medium"
-  },
-  {
-    "id": 298,
-    "question": "In AWS, where are AMIs specific to?",
-    "options": [
-      "Region, OS, architecture, and root device type",
-      "Only the OS",
-      "Only instance type",
-      "Only AWS account ID"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AMIs are specific to the region, operating system, architecture, and root device type.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 299,
-    "question": "Which best describes the term \"pay-per-use\" cloud model?",
-    "options": [
-      "Users pay a flat rate regardless of usage",
-      "Users are billed only for the resources and time they consume",
-      "Vendors pay users for usage",
-      "Billing is not available in cloud models"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Pay-per-use model means users are billed only for the resources and time they actually consume.",
-    "topic": "Cloud Computing Pricing",
-    "difficulty": "easy"
-  },
-  {
-    "id": 300,
-    "question": "A company needs a scalable database that can automatically replicate across multiple Availability Zones for high availability. Which AWS service should they consider?",
-    "options": [
-      "Amazon RDS with Multi-AZ",
-      "Amazon DynamoDB (global tables option)",
-      "Amazon Redshift",
-      "Amazon EC2 with local storage"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon RDS with Multi-AZ provides automatic replication across multiple Availability Zones for high availability.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 301,
-    "question": "Which of the following statements about AWS Regions and Availability Zones (AZs) is true?",
-    "options": [
-      "AZs are completely isolated from each other with no private connectivity.",
-      "AZs within a Region are connected by low-latency links.",
-      "A Region always contains exactly two AZs.",
-      "Data stored in one AZ is automatically accessible from any other Region."
-    ],
-    "correctAnswer": "B",
-    "explanation": "AZs within a Region are connected by low-latency links and are designed to provide high availability and fault tolerance.",
-    "topic": "AWS Infrastructure",
-    "difficulty": "medium"
-  },
-  {
-    "id": 302,
-    "question": "What is Amazon CloudFront?",
-    "options": [
-      "A managed NoSQL database",
-      "A global content delivery network (CDN) service",
-      "An identity and access management service",
-      "A monitoring dashboard service"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon CloudFront is a global content delivery network (CDN) service that delivers content with low latency.",
-    "topic": "AWS Services",
-    "difficulty": "easy"
-  },
-  {
-    "id": 303,
-    "question": "AWS IAM is used for:",
-    "options": [
-      "Managing compute resources",
-      "Provisioning virtual networks",
-      "Managing user access and permissions within AWS",
-      "Data encryption on S3"
-    ],
-    "correctAnswer": "C",
-    "explanation": "AWS IAM (Identity and Access Management) is used for managing user access and permissions within AWS.",
-    "topic": "AWS Security",
-    "difficulty": "easy"
-  },
-  {
-    "id": 304,
-    "question": "True or False: Amazon S3 automatically distributes its data across multiple Availability Zones.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "explanation": "True. Amazon S3 automatically replicates data across multiple Availability Zones for durability and availability.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
-  },
-  {
-    "id": 305,
-    "question": "Which AWS service is used for serverless event bus (routing events between sources and targets)?",
-    "options": [
-      "Amazon SNS",
-      "AWS EventBridge",
-      "Amazon CloudWatch",
-      "AWS Batch"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS EventBridge is a serverless event bus service for routing events between sources and targets.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 306,
-    "question": "Which cloud model type typically requires the least technical expertise from the consumer?",
-    "options": [
-      "IaaS",
-      "PaaS",
-      "SaaS",
-      "CaaS (Container as a Service)"
-    ],
-    "correctAnswer": "C",
-    "explanation": "SaaS requires the least technical expertise as the provider manages everything except the application usage.",
-    "topic": "Cloud Service Models",
-    "difficulty": "easy"
-  },
-  {
-    "id": 307,
-    "question": "What is \"vertical scaling\" in cloud computing?",
-    "options": [
-      "Increasing the number of machines",
-      "Increasing the power (CPU, RAM) of a single machine",
-      "Scaling storage but not compute",
-      "Using more cloud regions"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Vertical scaling means increasing the power (CPU, RAM) of a single machine.",
-    "topic": "Cloud Computing Concepts",
-    "difficulty": "easy"
-  },
-  {
-    "id": 308,
-    "question": "What is \"horizontal scaling\" in cloud computing?",
-    "options": [
-      "Increasing the power of a single machine",
-      "Adding more machines (instances) to distribute load",
-      "Scaling storage only",
-      "Improving network bandwidth"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Horizontal scaling means adding more machines (instances) to distribute load across multiple systems.",
-    "topic": "Cloud Computing Concepts",
-    "difficulty": "easy"
-  },
-  {
-    "id": 309,
-    "question": "In AWS, which feature allows running containers without managing servers or clusters?",
-    "options": [
-      "Amazon ECS",
-      "Amazon EKS",
-      "AWS Fargate",
-      "AWS Batch"
-    ],
-    "correctAnswer": "C",
-    "explanation": "AWS Fargate is a serverless compute engine that allows running containers without managing servers or clusters.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 310,
-    "question": "What is a VPC in AWS?",
-    "options": [
-      "Virtual Private Cloud, a logically isolated network for AWS resources",
-      "Volume Provisioning Controller",
-      "Video Processing Cloud",
-      "Very Private Cluster"
-    ],
-    "correctAnswer": "A",
-    "explanation": "VPC stands for Virtual Private Cloud, providing a logically isolated network section for AWS resources.",
-    "topic": "AWS Networking",
-    "difficulty": "easy"
-  },
-  {
-    "id": 311,
-    "question": "Which of the following best describes Amazon Aurora?",
-    "options": [
-      "A cold storage service",
-      "A fully managed relational database compatible with MySQL/PostgreSQL",
-      "A container orchestration service",
-      "A machine learning service"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Aurora is a fully managed relational database compatible with MySQL and PostgreSQL.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 312,
-    "question": "Amazon Redshift best describes:",
-    "options": [
-      "A distributed key-value store",
-      "A fully managed data warehousing service",
-      "A streaming data service",
-      "A content delivery network"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Redshift is a fully managed data warehousing service for analytics workloads.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
-  },
-  {
-    "id": 313,
-    "question": "AWS CloudFormation is used for:",
-    "options": [
-      "Monitoring resource usage",
-      "Automatically provisioning and managing stacks of AWS resources via templates",
-      "Encrypting data",
-      "Subscribing to cloud resources"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS CloudFormation automatically provisions and manages AWS resources using infrastructure-as-code templates.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 314,
-    "question": "Which of the following is an example of Platform as a Service (PaaS) in AWS?",
-    "options": [
-      "Amazon EC2",
-      "Amazon S3",
-      "AWS Elastic Beanstalk",
-      "Amazon SQS"
-    ],
-    "correctAnswer": "C",
-    "explanation": "AWS Elastic Beanstalk is a PaaS offering that handles deployment and management of applications.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 315,
-    "question": "Which of these AWS services is used for caching in-memory data?",
-    "options": [
-      "Amazon ElastiCache",
-      "Amazon QLDB",
-      "Amazon Kinesis",
-      "AWS Glue"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon ElastiCache is a managed in-memory caching service supporting Redis and Memcached.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 316,
-    "question": "In AWS billing, what is a \"Reserved Instance\"?",
-    "options": [
-      "Instance reserved for system use",
-      "A discounted pricing model for EC2 when committing to a fixed term",
-      "A special type of AMI",
-      "A spot instance"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Reserved Instances provide discounted pricing when you commit to using EC2 for a fixed term (1 or 3 years).",
-    "topic": "AWS Pricing",
-    "difficulty": "medium"
-  },
-  {
-    "id": 317,
-    "question": "AWS Identity and Access Management (IAM) primarily handles:",
-    "options": [
-      "Encrypting storage volumes",
-      "Managing user identities, roles, and permissions",
-      "Backing up databases",
-      "Automating infrastructure"
-    ],
-    "correctAnswer": "B",
-    "explanation": "IAM primarily manages user identities, roles, and permissions for AWS resources.",
-    "topic": "AWS Security",
-    "difficulty": "easy"
-  },
-  {
-    "id": 318,
-    "question": "Which of these is NOT a storage class in Amazon S3?",
-    "options": [
-      "Standard",
-      "Infrequent Access (IA)",
-      "Glacier",
-      "Transactional (not a real S3 class)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Transactional is not a real S3 storage class. Valid classes include Standard, IA, Glacier, etc.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
-  },
-  {
-    "id": 319,
-    "question": "Which AWS service is designed for orchestration of complex workflows and stateful serverless processes?",
-    "options": [
-      "AWS Step Functions",
-      "AWS S3",
-      "Amazon RDS",
-      "AWS Direct Connect"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS Step Functions orchestrates complex workflows and coordinates multiple AWS services in serverless applications.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 320,
-    "question": "What is the main benefit of AWS multi-AZ deployments?",
-    "options": [
-      "Lower cost",
+      "A NoSQL database",
+      "A data warehouse",
+      "A file storage system"
+    ],
+    correctAnswer: "B",
+    explanation: "DynamoDB is a fully managed NoSQL database service that provides fast performance.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 324,
+    question: "Which AWS service is used for API management?",
+    options: ["Lambda", "API Gateway", "CloudFront", "Route 53"],
+    correctAnswer: "B",
+    explanation: "API Gateway enables creation, deployment, and management of REST and WebSocket APIs.",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+  {
+    id: 325,
+    question: "What does AWS SNS provide?",
+    options: [
+      "Simple Notification Service - pub/sub messaging",
+      "Simple Network Service - networking",
+      "Secure Node Service - security",
+      "Smart Navigation Service - routing"
+    ],
+    correctAnswer: "A",
+    explanation: "SNS (Simple Notification Service) provides publish/subscribe messaging and mobile notifications.",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+  {
+    id: 326,
+    question: "Which AWS service is used for message queuing?",
+    options: ["SNS", "SQS", "SES", "SWF"],
+    correctAnswer: "B",
+    explanation: "SQS (Simple Queue Service) provides reliable, scalable message queuing.",
+    topic: "AWS Services",
+    difficulty: "easy"
+  },
+  {
+    id: 327,
+    question: "What is AWS Elastic Beanstalk?",
+    options: [
+      "A storage service",
+      "A platform service for deploying applications",
+      "A database service",
+      "A monitoring service"
+    ],
+    correctAnswer: "B",
+    explanation: "Elastic Beanstalk is a PaaS that makes it easy to deploy and manage applications.",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+  {
+    id: 328,
+    question: "Which AWS service provides data warehousing capabilities?",
+    options: ["RDS", "DynamoDB", "Redshift", "Neptune"],
+    correctAnswer: "C",
+    explanation: "Redshift is AWS's data warehousing service for analytics and business intelligence.",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+  {
+    id: 329,
+    question: "What is AWS CloudFormation used for?",
+    options: [
+      "Infrastructure as Code - managing AWS resources",
+      "Cloud monitoring",
+      "Data backup",
+      "Network security"
+    ],
+    correctAnswer: "A",
+    explanation: "CloudFormation allows defining AWS infrastructure using code templates.",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+  {
+    id: 330,
+    question: "Which AWS service provides machine learning capabilities?",
+    options: ["SageMaker", "Comprehend", "Rekognition", "All of the above"],
+    correctAnswer: "D",
+    explanation: "AWS offers multiple ML services: SageMaker for ML development, Comprehend for NLP, Rekognition for image analysis.",
+    topic: "AWS Services",
+    difficulty: "medium"
+  },
+
+  // Cloud Security (331-350)
+  {
+    id: 331,
+    question: "What is the shared responsibility model in cloud computing?",
+    options: [
+      "Cloud provider is responsible for everything",
+      "Customer is responsible for everything",
+      "Responsibilities are shared between cloud provider and customer",
+      "No one is responsible"
+    ],
+    correctAnswer: "C",
+    explanation: "In the shared responsibility model, security responsibilities are divided between the cloud provider and customer.",
+    topic: "Cloud Security",
+    difficulty: "medium"
+  },
+  {
+    id: 332,
+    question: "In AWS shared responsibility model, who is responsible for patching the guest OS?",
+    options: ["AWS", "Customer", "Both", "Neither"],
+    correctAnswer: "B",
+    explanation: "Customers are responsible for managing and patching the guest operating system in EC2 instances.",
+    topic: "Cloud Security",
+    difficulty: "medium"
+  },
+  {
+    id: 333,
+    question: "Which AWS service helps with compliance and governance?",
+    options: ["CloudTrail", "Config", "Inspector", "All of the above"],
+    correctAnswer: "D",
+    explanation: "CloudTrail, Config, and Inspector all help with different aspects of compliance and governance.",
+    topic: "Cloud Security",
+    difficulty: "medium"
+  },
+  {
+    id: 334,
+    question: "What does encryption at rest mean?",
+    options: [
+      "Data is encrypted while being transmitted",
+      "Data is encrypted while stored on disk",
+      "Data is never encrypted",
+      "Data is compressed"
+    ],
+    correctAnswer: "B",
+    explanation: "Encryption at rest refers to encrypting data when it's stored on disk or in databases.",
+    topic: "Cloud Security",
+    difficulty: "easy"
+  },
+  {
+    id: 335,
+    question: "Which AWS service manages encryption keys?",
+    options: ["IAM", "KMS", "CloudHSM", "Both B and C"],
+    correctAnswer: "D",
+    explanation: "Both KMS (Key Management Service) and CloudHSM provide encryption key management capabilities.",
+    topic: "Cloud Security",
+    difficulty: "medium"
+  },
+  {
+    id: 336,
+    question: "What is a security group in AWS?",
+    options: [
+      "A group of users",
+      "A virtual firewall for EC2 instances",
+      "A storage container",
+      "A monitoring tool"
+    ],
+    correctAnswer: "B",
+    explanation: "Security groups act as virtual firewalls controlling inbound and outbound traffic to EC2 instances.",
+    topic: "Cloud Security",
+    difficulty: "easy"
+  },
+  {
+    id: 337,
+    question: "Which principle should be followed for IAM permissions?",
+    options: [
+      "Give maximum permissions",
+      "Principle of least privilege",
+      "Give no permissions",
+      "Give random permissions"
+    ],
+    correctAnswer: "B",
+    explanation: "Principle of least privilege means granting only the minimum permissions necessary to perform tasks.",
+    topic: "Cloud Security",
+    difficulty: "medium"
+  },
+  {
+    id: 338,
+    question: "What is multi-factor authentication (MFA)?",
+    options: [
+      "Using multiple passwords",
+      "Using multiple authentication factors for verification",
+      "Using multiple user accounts",
+      "Using multiple devices"
+    ],
+    correctAnswer: "B",
+    explanation: "MFA requires multiple authentication factors (something you know, have, or are) for enhanced security.",
+    topic: "Cloud Security",
+    difficulty: "easy"
+  },
+  {
+    id: 339,
+    question: "Which AWS service provides DDoS protection?",
+    options: ["WAF", "Shield", "GuardDuty", "Both A and B"],
+    correctAnswer: "D",
+    explanation: "Both AWS WAF and Shield provide DDoS protection, with Shield offering automatic protection.",
+    topic: "Cloud Security",
+    difficulty: "medium"
+  },
+  {
+    id: 340,
+    question: "What is the purpose of network ACLs in AWS?",
+    options: [
+      "Instance-level firewall",
+      "Subnet-level firewall",
+      "Application-level security",
+      "Database security"
+    ],
+    correctAnswer: "B",
+    explanation: "Network ACLs (Access Control Lists) provide subnet-level firewall rules.",
+    topic: "Cloud Security",
+    difficulty: "medium"
+  },
+
+  // Cloud Architecture and Best Practices (341-370)
+  {
+    id: 341,
+    question: "What is the benefit of using multiple Availability Zones?",
+    options: [
+      "Reduced costs",
+      "High availability and fault tolerance",
+      "Faster performance",
+      "Easier management"
+    ],
+    correctAnswer: "B",
+    explanation: "Multiple AZs provide high availability and fault tolerance by distributing resources across data centers.",
+    topic: "Cloud Architecture",
+    difficulty: "medium"
+  },
+  {
+    id: 342,
+    question: "What is a microservices architecture?",
+    options: [
+      "A single large application",
+      "Small, loosely coupled services",
+      "A type of database",
+      "A monitoring tool"
+    ],
+    correctAnswer: "B",
+    explanation: "Microservices architecture breaks applications into small, independent, loosely coupled services.",
+    topic: "Cloud Architecture",
+    difficulty: "medium"
+  },
+  {
+    id: 343,
+    question: "What does the term 'stateless' mean in cloud applications?",
+    options: [
+      "Applications that don't work",
+      "Applications that don't store session state locally",
+      "Applications without databases",
+      "Applications without users"
+    ],
+    correctAnswer: "B",
+    explanation: "Stateless applications don't store session state locally, enabling better scalability and reliability.",
+    topic: "Cloud Architecture",
+    difficulty: "medium"
+  },
+  {
+    id: 344,
+    question: "Which design pattern helps handle failures gracefully in distributed systems?",
+    options: ["Singleton", "Circuit Breaker", "Observer", "Factory"],
+    correctAnswer: "B",
+    explanation: "Circuit Breaker pattern prevents cascading failures by detecting and handling service failures.",
+    topic: "Cloud Architecture",
+    difficulty: "hard"
+  },
+  {
+    id: 345,
+    question: "What is the purpose of a load balancer?",
+    options: [
+      "Store data",
+      "Distribute incoming requests across multiple servers",
+      "Monitor applications",
+      "Encrypt data"
+    ],
+    correctAnswer: "B",
+    explanation: "Load balancers distribute incoming traffic across multiple servers to ensure availability and performance.",
+    topic: "Cloud Architecture",
+    difficulty: "easy"
+  },
+  {
+    id: 346,
+    question: "What is auto-scaling in cloud computing?",
+    options: [
+      "Manual resource adjustment",
+      "Automatic adjustment of resources based on demand",
+      "Fixed resource allocation",
+      "Resource reduction only"
+    ],
+    correctAnswer: "B",
+    explanation: "Auto-scaling automatically adjusts computing resources based on current demand and predefined policies.",
+    topic: "Cloud Architecture",
+    difficulty: "easy"
+  },
+  {
+    id: 347,
+    question: "Which caching strategy improves application performance?",
+    options: ["Write-through", "Write-behind", "Cache-aside", "All of the above"],
+    correctAnswer: "D",
+    explanation: "All mentioned caching strategies can improve performance depending on the use case.",
+    topic: "Cloud Architecture",
+    difficulty: "medium"
+  },
+  {
+    id: 348,
+    question: "What is the purpose of API versioning?",
+    options: [
+      "To confuse developers",
+      "To maintain backward compatibility while evolving APIs",
+      "To increase complexity",
+      "To reduce performance"
+    ],
+    correctAnswer: "B",
+    explanation: "API versioning allows evolution of APIs while maintaining backward compatibility for existing clients.",
+    topic: "Cloud Architecture",
+    difficulty: "medium"
+  },
+  {
+    id: 349,
+    question: "What is a CDN (Content Delivery Network)?",
+    options: [
+      "A type of database",
+      "A network of distributed servers that deliver content based on geographic location",
+      "A security service",
+      "A monitoring tool"
+    ],
+    correctAnswer: "B",
+    explanation: "CDN is a geographically distributed network of servers that delivers content closer to users.",
+    topic: "Cloud Architecture",
+    difficulty: "easy"
+  },
+  {
+    id: 350,
+    question: "What is the benefit of using containerization?",
+    options: [
+      "Application portability and consistency",
+      "Increased resource usage",
+      "Complex deployment",
+      "Vendor lock-in"
+    ],
+    correctAnswer: "A",
+    explanation: "Containerization provides application portability, consistency, and efficient resource utilization.",
+    topic: "Cloud Architecture",
+    difficulty: "medium"
+  },
+
+  // DevOps and Cloud (351-380)
+  {
+    id: 351,
+    question: "What is Infrastructure as Code (IaC)?",
+    options: [
+      "Writing application code",
+      "Managing infrastructure through code and automation",
+      "Manual infrastructure setup",
+      "Database programming"
+    ],
+    correctAnswer: "B",
+    explanation: "IaC manages and provisions infrastructure through machine-readable code rather than manual processes.",
+    topic: "DevOps",
+    difficulty: "medium"
+  },
+  {
+    id: 352,
+    question: "Which of the following is a CI/CD tool?",
+    options: ["Jenkins", "GitLab CI", "GitHub Actions", "All of the above"],
+    correctAnswer: "D",
+    explanation: "Jenkins, GitLab CI, and GitHub Actions are all popular CI/CD (Continuous Integration/Continuous Deployment) tools.",
+    topic: "DevOps",
+    difficulty: "easy"
+  },
+  {
+    id: 353,
+    question: "What does Docker provide?",
+    options: [
+      "Virtual machines",
+      "Container platform for application packaging",
+      "Database management",
+      "Load balancing"
+    ],
+    correctAnswer: "B",
+    explanation: "Docker provides containerization platform for packaging applications with their dependencies.",
+    topic: "DevOps",
+    difficulty: "easy"
+  },
+  {
+    id: 354,
+    question: "What is Kubernetes?",
+    options: [
+      "A programming language",
+      "A container orchestration platform",
+      "A database",
+      "A monitoring tool"
+    ],
+    correctAnswer: "B",
+    explanation: "Kubernetes is an open-source container orchestration platform for managing containerized applications.",
+    topic: "DevOps",
+    difficulty: "medium"
+  },
+  {
+    id: 355,
+    question: "What is the purpose of blue-green deployment?",
+    options: [
+      "To use different colors in UI",
+      "To enable zero-downtime deployments",
+      "To reduce costs",
+      "To improve security"
+    ],
+    correctAnswer: "B",
+    explanation: "Blue-green deployment enables zero-downtime deployments by maintaining two identical production environments.",
+    topic: "DevOps",
+    difficulty: "medium"
+  },
+  {
+    id: 356,
+    question: "What is monitoring in cloud environments used for?",
+    options: [
+      "Tracking application performance and health",
+      "Writing code",
+      "Managing databases",
+      "Creating user interfaces"
+    ],
+    correctAnswer: "A",
+    explanation: "Monitoring tracks application performance, health, and infrastructure metrics in cloud environments.",
+    topic: "DevOps",
+    difficulty: "easy"
+  },
+  {
+    id: 357,
+    question: "Which practice involves automatically testing code changes?",
+    options: [
+      "Continuous Integration",
+      "Continuous Deployment",
+      "Continuous Monitoring",
+      "Continuous Planning"
+    ],
+    correctAnswer: "A",
+    explanation: "Continuous Integration involves automatically building and testing code changes when they're committed.",
+    topic: "DevOps",
+    difficulty: "easy"
+  },
+  {
+    id: 358,
+    question: "What is the purpose of configuration management tools?",
+    options: [
+      "To manage application configurations and infrastructure state",
+      "To write application code",
+      "To design user interfaces",
+      "To create databases"
+    ],
+    correctAnswer: "A",
+    explanation: "Configuration management tools automate the configuration and management of infrastructure and applications.",
+    topic: "DevOps",
+    difficulty: "medium"
+  },
+  {
+    id: 359,
+    question: "What is GitOps?",
+    options: [
+      "A type of database",
+      "Using Git repositories as the source of truth for infrastructure and application deployment",
+      "A monitoring tool",
+      "A programming language"
+    ],
+    correctAnswer: "B",
+    explanation: "GitOps uses Git repositories as the single source of truth for declarative infrastructure and applications.",
+    topic: "DevOps",
+    difficulty: "hard"
+  },
+  {
+    id: 360,
+    question: "What is the benefit of automated testing in CI/CD pipelines?",
+    options: [
+      "Slower development",
+      "Early detection of bugs and consistent quality",
+      "Increased manual work",
+      "Higher costs"
+    ],
+    correctAnswer: "B",
+    explanation: "Automated testing in CI/CD enables early bug detection and maintains consistent code quality.",
+    topic: "DevOps",
+    difficulty: "medium"
+  },
+
+  // Cloud Cost Optimization (361-380)
+  {
+    id: 361,
+    question: "Which AWS pricing model offers the biggest discount for long-term commitment?",
+    options: ["On-Demand", "Reserved Instances", "Spot Instances", "Dedicated Hosts"],
+    correctAnswer: "B",
+    explanation: "Reserved Instances offer significant discounts (up to 75%) for 1-3 year commitments.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "medium"
+  },
+  {
+    id: 362,
+    question: "What are Spot Instances in AWS?",
+    options: [
+      "High-priority instances",
+      "Unused EC2 capacity available at reduced cost",
+      "Dedicated physical servers",
+      "Free tier instances"
+    ],
+    correctAnswer: "B",
+    explanation: "Spot Instances use unused EC2 capacity at up to 90% discount but can be terminated by AWS.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "medium"
+  },
+  {
+    id: 363,
+    question: "Which practice helps optimize cloud storage costs?",
+    options: [
+      "Using lifecycle policies to move data to cheaper storage classes",
+      "Keeping all data in premium storage",
+      "Duplicating all data",
+      "Never deleting old data"
+    ],
+    correctAnswer: "A",
+    explanation: "Lifecycle policies automatically move data to appropriate storage classes based on access patterns.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "medium"
+  },
+  {
+    id: 364,
+    question: "What is the purpose of AWS Cost Explorer?",
+    options: [
+      "To explore new AWS services",
+      "To visualize and analyze AWS costs and usage",
+      "To explore storage options",
+      "To explore networking options"
+    ],
+    correctAnswer: "B",
+    explanation: "Cost Explorer helps visualize, understand, and manage AWS costs and usage over time.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "easy"
+  },
+  {
+    id: 365,
+    question: "Which AWS service helps set up billing alerts?",
+    options: ["CloudWatch", "Billing Dashboard", "Cost Explorer", "All of the above"],
+    correctAnswer: "D",
+    explanation: "CloudWatch alarms, Billing Dashboard, and Cost Explorer all help monitor and alert on costs.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "easy"
+  },
+  {
+    id: 366,
+    question: "What is rightsizing in cloud cost optimization?",
+    options: [
+      "Making all instances the same size",
+      "Matching instance types and sizes to workload requirements",
+      "Using the largest instances available",
+      "Using only the smallest instances"
+    ],
+    correctAnswer: "B",
+    explanation: "Rightsizing involves selecting the most cost-effective instance types and sizes for workloads.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "medium"
+  },
+  {
+    id: 367,
+    question: "Which storage class in S3 is most cost-effective for long-term archival?",
+    options: ["Standard", "Standard-IA", "Glacier", "Glacier Deep Archive"],
+    correctAnswer: "D",
+    explanation: "Glacier Deep Archive is the lowest-cost storage class for long-term archival with retrieval times of 12+ hours.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "medium"
+  },
+  {
+    id: 368,
+    question: "What is the benefit of using Reserved Instances?",
+    options: [
       "Higher performance",
-      "Fault tolerance and high availability",
-      "Increased storage capacity"
+      "Significant cost savings for predictable workloads",
+      "More features",
+      "Better security"
     ],
-    "correctAnswer": "C",
-    "explanation": "Multi-AZ deployments provide fault tolerance and high availability by replicating resources across multiple Availability Zones.",
-    "topic": "AWS Architecture",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Reserved Instances provide substantial cost savings for steady-state, predictable workloads.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "easy"
   },
   {
-    "id": 321,
-    "question": "In a cloud context, what is a \"tenant\"?",
-    "options": [
-      "A security mechanism",
-      "A user or organization that shares resources with others on the cloud",
-      "A type of storage unit",
-      "An AWS service name"
-    ],
-    "correctAnswer": "B",
-    "explanation": "A tenant is a user or organization that shares cloud resources with others in a multi-tenant environment.",
-    "topic": "Cloud Computing Concepts",
-    "difficulty": "medium"
+    id: 369,
+    question: "Which AWS service can automatically optimize costs by shutting down unused resources?",
+    options: ["Auto Scaling", "Lambda", "Instance Scheduler", "All of the above"],
+    correctAnswer: "C",
+    explanation: "AWS Instance Scheduler can automatically start and stop EC2 and RDS instances based on schedules.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "medium"
   },
   {
-    "id": 322,
-    "question": "What does AWS CloudTrail provide?",
-    "options": [
-      "Data storage",
-      "Log of API calls and user activity for an account",
-      "Database performance insights",
-      "DNS management"
+    id: 370,
+    question: "What is the AWS Free Tier?",
+    options: [
+      "A paid service",
+      "Limited free usage of AWS services for new accounts",
+      "Premium support",
+      "Advanced features only"
     ],
-    "correctAnswer": "B",
-    "explanation": "AWS CloudTrail provides logging and auditing of API calls and user activity across your AWS account.",
-    "topic": "AWS Security",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "AWS Free Tier provides limited free usage of many AWS services for 12 months for new accounts.",
+    topic: "Cloud Cost Optimization",
+    difficulty: "easy"
+  },
+
+  // Emerging Cloud Technologies (371-400)
+  {
+    id: 371,
+    question: "What is serverless computing?",
+    options: [
+      "Computing without any servers",
+      "Running code without managing servers",
+      "Using only physical servers",
+      "Expensive computing model"
+    ],
+    correctAnswer: "B",
+    explanation: "Serverless computing allows running code without provisioning or managing servers.",
+    topic: "Emerging Technologies",
+    difficulty: "medium"
   },
   {
-    "id": 323,
-    "question": "Which is true about Amazon Elastic Container Service (ECS)?",
-    "options": [
-      "It is a container service that requires self-managed EC2 instances by default",
-      "It is a managed Kubernetes service",
-      "It cannot integrate with other AWS services",
-      "It only runs on-premises"
-    ],
-    "correctAnswer": "A",
-    "explanation": "ECS is a container orchestration service that can run on self-managed EC2 instances or serverless Fargate.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
+    id: 372,
+    question: "Which AWS service represents serverless computing?",
+    options: ["EC2", "Lambda", "RDS", "S3"],
+    correctAnswer: "B",
+    explanation: "AWS Lambda is the primary serverless computing service that runs code in response to events.",
+    topic: "Emerging Technologies",
+    difficulty: "easy"
   },
   {
-    "id": 324,
-    "question": "The concept of \"loose coupling\" in cloud systems typically means:",
-    "options": [
-      "Components depend heavily on each other",
-      "Components have minimal dependencies and can scale independently",
-      "Everything is on a single server",
-      "Using outdated APIs"
+    id: 373,
+    question: "What is edge computing?",
+    options: [
+      "Computing at data center edges",
+      "Processing data closer to where it's generated",
+      "Computing on network edges only",
+      "A type of database"
     ],
-    "correctAnswer": "B",
-    "explanation": "Loose coupling means components have minimal dependencies and can operate and scale independently.",
-    "topic": "Cloud Architecture",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Edge computing processes data closer to its source to reduce latency and bandwidth usage.",
+    topic: "Emerging Technologies",
+    difficulty: "medium"
   },
   {
-    "id": 325,
-    "question": "Amazon SQS and Amazon SNS are used for:",
-    "options": [
-      "Relational database",
-      "Message queuing and notifications",
-      "Block storage",
-      "Real-time streaming"
+    id: 374,
+    question: "What is the Internet of Things (IoT) in cloud context?",
+    options: [
+      "Internet for things only",
+      "Connected devices that generate and share data via cloud services",
+      "A social network",
+      "A type of storage"
     ],
-    "correctAnswer": "B",
-    "explanation": "SQS provides message queuing and SNS provides notification services for decoupling applications.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "IoT refers to connected devices that collect and share data through cloud services.",
+    topic: "Emerging Technologies",
+    difficulty: "easy"
   },
   {
-    "id": 326,
-    "question": "Which AWS storage option would you choose for a file system accessible by multiple EC2 instances?",
-    "options": [
-      "Amazon EBS",
-      "Amazon EFS",
-      "Amazon S3",
-      "Amazon Glacier"
+    id: 375,
+    question: "What is artificial intelligence as a service (AIaaS)?",
+    options: [
+      "AI that works as a service technician",
+      "Cloud-based AI capabilities offered as services",
+      "AI for customer service only",
+      "Artificial service intelligence"
     ],
-    "correctAnswer": "B",
-    "explanation": "Amazon EFS (Elastic File System) provides a shared file system accessible by multiple EC2 instances.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "AIaaS provides AI capabilities through cloud services without requiring expertise in AI development.",
+    topic: "Emerging Technologies",
+    difficulty: "medium"
   },
   {
-    "id": 327,
-    "question": "What AWS service would you use to set up a private connection between your data center and AWS?",
-    "options": [
-      "AWS VPN",
-      "AWS Direct Connect",
-      "Amazon Route 53",
-      "Amazon VPC Peering"
+    id: 376,
+    question: "What is machine learning in the cloud?",
+    options: [
+      "Teaching machines to use cloud",
+      "Cloud-based services for building and deploying ML models",
+      "Learning about machines",
+      "Cloud storage for machines"
     ],
-    "correctAnswer": "B",
-    "explanation": "AWS Direct Connect provides a dedicated private connection between your data center and AWS.",
-    "topic": "AWS Networking",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Cloud ML services provide tools and infrastructure for developing, training, and deploying ML models.",
+    topic: "Emerging Technologies",
+    difficulty: "medium"
   },
   {
-    "id": 328,
-    "question": "Which term describes the approach of running workloads in multiple different clouds (AWS, Azure, GCP) at the same time?",
-    "options": [
-      "Hybrid cloud",
-      "Multi-cloud",
-      "Edge computing",
-      "Community cloud"
+    id: 377,
+    question: "What is a cloud-native application?",
+    options: [
+      "An application born in the cloud",
+      "An application designed specifically for cloud environments",
+      "An application that only runs locally",
+      "A native mobile application"
     ],
-    "correctAnswer": "B",
-    "explanation": "Multi-cloud refers to using multiple cloud providers simultaneously for different workloads or redundancy.",
-    "topic": "Cloud Deployment Models",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Cloud-native applications are designed to take full advantage of cloud computing characteristics.",
+    topic: "Emerging Technologies",
+    difficulty: "medium"
   },
   {
-    "id": 329,
-    "question": "Which AWS service can store JSON, key-value, and document data natively?",
-    "options": [
-      "Amazon Aurora",
-      "Amazon RDS",
-      "Amazon DynamoDB",
-      "Amazon Timestream"
+    id: 378,
+    question: "What is quantum computing in the cloud?",
+    options: [
+      "Very fast regular computing",
+      "Access to quantum computing capabilities via cloud services",
+      "Computing with quantum mechanics books",
+      "A type of cloud storage"
     ],
-    "correctAnswer": "C",
-    "explanation": "Amazon DynamoDB is a NoSQL database that natively supports JSON, key-value, and document data models.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Cloud quantum computing provides access to quantum computing resources through cloud platforms.",
+    topic: "Emerging Technologies",
+    difficulty: "hard"
   },
   {
-    "id": 330,
-    "question": "Amazon Kinesis is primarily used for:",
-    "options": [
-      "Real-time streaming data processing",
-      "Batch data warehousing",
-      "Traditional web hosting",
-      "Physical data transfer"
+    id: 379,
+    question: "What is blockchain as a service (BaaS)?",
+    options: [
+      "Banking as a service",
+      "Cloud-based blockchain infrastructure and tools",
+      "Block storage service",
+      "Backup as a service"
     ],
-    "correctAnswer": "A",
-    "explanation": "Amazon Kinesis is primarily used for real-time streaming data ingestion and processing.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "BaaS provides blockchain infrastructure and development tools through cloud services.",
+    topic: "Emerging Technologies",
+    difficulty: "hard"
   },
   {
-    "id": 331,
-    "question": "AWS Step Functions are used to:",
-    "options": [
-      "Orchestrate serverless workflows and microservices",
-      "Secure user credentials",
-      "Accelerate graphics rendering",
-      "Manage virtual servers"
+    id: 380,
+    question: "What is the benefit of using cloud-based analytics services?",
+    options: [
+      "Process and analyze large datasets without managing infrastructure",
+      "Only for small datasets",
+      "Requires extensive hardware setup",
+      "Limited scalability"
     ],
-    "correctAnswer": "A",
-    "explanation": "AWS Step Functions orchestrate serverless workflows and coordinate multiple AWS services and microservices.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
+    correctAnswer: "A",
+    explanation: "Cloud analytics services provide scalable data processing and analysis without infrastructure management.",
+    topic: "Emerging Technologies",
+    difficulty: "medium"
+  },
+
+  // Final Cloud Computing Topics (381-400)
+  {
+    id: 381,
+    question: "What is multi-cloud strategy?",
+    options: [
+      "Using multiple cloud providers",
+      "Using only one cloud provider",
+      "Using multiple applications",
+      "Using multiple databases"
+    ],
+    correctAnswer: "A",
+    explanation: "Multi-cloud strategy involves using services from multiple cloud providers to avoid vendor lock-in.",
+    topic: "Cloud Strategy",
+    difficulty: "medium"
   },
   {
-    "id": 332,
-    "question": "Which AWS feature allows fine-grained IAM permissions on AWS resources?",
-    "options": [
-      "Tags",
-      "Roles and policies",
-      "Security groups",
-      "EC2 instance metadata"
+    id: 382,
+    question: "What is cloud migration?",
+    options: [
+      "Moving birds to cloud",
+      "Moving applications and data from on-premises to cloud",
+      "Moving cloud to on-premises",
+      "Moving between offices"
     ],
-    "correctAnswer": "B",
-    "explanation": "IAM roles and policies provide fine-grained permissions control for AWS resources and users.",
-    "topic": "AWS Security",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Cloud migration is the process of moving applications, data, and infrastructure to cloud environments.",
+    topic: "Cloud Strategy",
+    difficulty: "easy"
   },
   {
-    "id": 333,
-    "question": "Which AWS service provides a high-speed file storage service in the cloud for use with POSIX file system interfaces?",
-    "options": [
-      "Amazon EBS",
-      "Amazon EFS",
-      "Amazon S3",
-      "Amazon Glacier"
+    id: 383,
+    question: "What is vendor lock-in in cloud computing?",
+    options: [
+      "Physical locks on servers",
+      "Dependence on a single cloud provider's proprietary technologies",
+      "Locking out vendors",
+      "Security locks"
     ],
-    "correctAnswer": "B",
-    "explanation": "Amazon EFS provides high-speed file storage with POSIX file system interfaces for multiple EC2 instances.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Vendor lock-in occurs when migration from one cloud provider becomes difficult due to proprietary dependencies.",
+    topic: "Cloud Strategy",
+    difficulty: "medium"
   },
   {
-    "id": 334,
-    "question": "True or False: In AWS, data stored in S3 is automatically replicated across multiple Availability Zones.",
-    "options": [
-      "True",
-      "False"
+    id: 384,
+    question: "What is disaster recovery in the cloud?",
+    options: [
+      "Preventing natural disasters",
+      "Strategies and services for recovering from system failures",
+      "Weather prediction",
+      "Insurance services"
     ],
-    "correctAnswer": "A",
-    "explanation": "True. Amazon S3 automatically replicates data across multiple Availability Zones for durability and availability.",
-    "topic": "AWS Storage",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Cloud disaster recovery provides strategies and services for business continuity during system failures.",
+    topic: "Cloud Strategy",
+    difficulty: "medium"
   },
   {
-    "id": 335,
-    "question": "AWS offers \"Reserved Instances\" primarily to:",
-    "options": [
-      "Reserve IP addresses",
-      "Reduce costs for predictable usage of EC2",
-      "Store long-term backups",
-      "Launch instances faster"
+    id: 385,
+    question: "What is cloud governance?",
+    options: [
+      "Government regulations for cloud",
+      "Policies and processes for managing cloud resources",
+      "Cloud service management",
+      "Cloud provider management"
     ],
-    "correctAnswer": "B",
-    "explanation": "Reserved Instances offer significant cost savings for predictable EC2 usage with term commitments.",
-    "topic": "AWS Pricing",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Cloud governance establishes policies and processes for managing cloud usage, security, and compliance.",
+    topic: "Cloud Strategy",
+    difficulty: "medium"
   },
   {
-    "id": 336,
-    "question": "What does the Amazon RDS Multi-AZ feature provide?",
-    "options": [
-      "Encryption of data at rest",
-      "Automatic replication of data to a standby in another Availability Zone for failover",
-      "Read-only replicas in other Regions",
-      "Performance optimization"
+    id: 386,
+    question: "What is the purpose of cloud service level agreements (SLAs)?",
+    options: [
+      "Legal documents only",
+      "Define expected service quality and availability guarantees",
+      "Marketing materials",
+      "Pricing information"
     ],
-    "correctAnswer": "B",
-    "explanation": "RDS Multi-AZ provides automatic replication to a standby instance in another AZ for high availability and failover.",
-    "topic": "AWS Databases",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "SLAs define the expected level of service quality, availability, and performance guarantees.",
+    topic: "Cloud Strategy",
+    difficulty: "medium"
   },
   {
-    "id": 337,
-    "question": "Which AWS pricing option can give you the lowest cost for instance usage if you can be flexible with start/stop times?",
-    "options": [
-      "On-Demand Instances",
-      "Reserved Instances",
-      "Spot Instances",
-      "Savings Plans"
+    id: 387,
+    question: "What is cloud elasticity?",
+    options: [
+      "Physical flexibility of servers",
+      "Ability to quickly scale resources up or down based on demand",
+      "Rubber-like properties",
+      "Stretching capabilities"
     ],
-    "correctAnswer": "C",
-    "explanation": "Spot Instances offer the lowest cost but can be interrupted when AWS needs the capacity back.",
-    "topic": "AWS Pricing",
-    "difficulty": "medium"
+    correctAnswer: "B",
+    explanation: "Cloud elasticity enables automatic and rapid scaling of resources based on changing demand.",
+    topic: "Cloud Fundamentals",
+    difficulty: "medium"
   },
   {
-    "id": 338,
-    "question": "Amazon Athena is used for:",
-    "options": [
-      "Running relational databases",
-      "Querying data in S3 using SQL",
-      "Monitoring AWS resources",
-      "Hosting containerized applications"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Athena is a serverless service for querying data stored in S3 using standard SQL.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 339,
-    "question": "Which AWS service is a managed search service (like Elasticsearch)?",
-    "options": [
-      "Amazon Kendra",
-      "Amazon OpenSearch Service",
-      "Amazon Neptune",
-      "Amazon Redshift"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon OpenSearch Service (formerly Elasticsearch Service) is a managed search and analytics service.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 340,
-    "question": "In AWS, a \"Load Balancer\" can distribute traffic across which of the following?",
-    "options": [
-      "EC2 instances only",
-      "EC2 instances and Lambda functions",
-      "RDS databases",
-      "IAM users"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS Load Balancers can distribute traffic across EC2 instances, Lambda functions, and other targets.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 341,
-    "question": "Which of the following is NOT a benefit of cloud storage?",
-    "options": [
-      "High scalability",
-      "Accessibility from anywhere",
-      "Automatic hardware maintenance for the user",
-      "No need to manage hardware infrastructure"
-    ],
-    "correctAnswer": "C",
-    "explanation": "While cloud providers maintain hardware, 'automatic hardware maintenance for the user' is misleading - users still need to manage their applications and data.",
-    "topic": "Cloud Computing Benefits",
-    "difficulty": "medium"
-  },
-  {
-    "id": 342,
-    "question": "What is Amazon SageMaker used for?",
-    "options": [
-      "Building and deploying machine learning models",
-      "Database migration",
-      "Video streaming",
-      "IoT device management"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon SageMaker is a fully managed service for building, training, and deploying machine learning models.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 343,
-    "question": "In AWS IAM, a \"role\" is used to:",
-    "options": [
-      "Assign permissions to AWS services or users",
-      "Create a new AWS account",
-      "Backup data",
-      "Monitor performance"
-    ],
-    "correctAnswer": "A",
-    "explanation": "IAM roles are used to assign permissions to AWS services, applications, or users temporarily.",
-    "topic": "AWS Security",
-    "difficulty": "medium"
-  },
-  {
-    "id": 344,
-    "question": "Which AWS tool helps visualize the architecture and cost estimate of AWS resources in a diagram?",
-    "options": [
-      "AWS X-Ray",
-      "AWS Pricing Calculator",
-      "AWS CloudFormation Designer",
-      "AWS Simple Icons set"
-    ],
-    "correctAnswer": "C",
-    "explanation": "AWS CloudFormation Designer helps visualize CloudFormation templates and architecture diagrams.",
-    "topic": "AWS Tools",
-    "difficulty": "medium"
-  },
-  {
-    "id": 345,
-    "question": "What does Amazon CloudWatch do?",
-    "options": [
-      "Provides monitoring and observability of AWS resources and applications",
-      "Encrypts data at rest",
-      "Manages DNS entries",
-      "Distributes content globally"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon CloudWatch provides monitoring, logging, and observability for AWS resources and applications.",
-    "topic": "AWS Services",
-    "difficulty": "easy"
-  },
-  {
-    "id": 346,
-    "question": "Which AWS certification is intended for individuals in security roles?",
-    "options": [
-      "AWS Certified Solutions Architect – Associate",
-      "AWS Certified Security – Specialty",
-      "AWS Certified Developer – Associate",
-      "AWS Certified SysOps Administrator – Associate"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS Certified Security – Specialty is specifically designed for individuals working in security roles.",
-    "topic": "AWS Certifications",
-    "difficulty": "easy"
-  },
-  {
-    "id": 347,
-    "question": "Which of the following is NOT a type of load balancer in AWS?",
-    "options": [
-      "Application Load Balancer",
-      "Network Load Balancer",
-      "Internet Load Balancer",
-      "Classic Load Balancer"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Internet Load Balancer is not a real AWS load balancer type. AWS offers Application, Network, and Classic Load Balancers.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 348,
-    "question": "Which of these AWS services would you use to automate text-to-speech and speech-to-text conversions?",
-    "options": [
-      "Amazon Polly",
-      "Amazon Comprehend",
-      "Amazon Transcribe",
-      "Amazon Lex"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon Polly provides text-to-speech, while Amazon Transcribe provides speech-to-text services.",
-    "topic": "AWS AI/ML Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 349,
-    "question": "AWS Global Accelerator is a service that:",
-    "options": [
-      "Accelerates database queries",
-      "Improves global application availability and performance using static IP addresses and the AWS global network",
-      "Accelerates the launch of EC2 instances",
-      "Speeds up AWS CLI commands"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS Global Accelerator improves application performance using anycast IP addresses and the AWS global network.",
-    "topic": "AWS Services",
-    "difficulty": "medium"
-  },
-  {
-    "id": 350,
-    "question": "What does VPC peering allow?",
-    "options": [
-      "Direct network connectivity between two VPCs in the same or different AWS accounts",
-      "Peer-to-peer communication between two users",
-      "Automatic scaling of VPC resources",
-      "Managed database replication"
-    ],
-    "correctAnswer": "A",
-    "explanation": "VPC peering enables direct network connectivity between two VPCs, allowing resources to communicate as if they're in the same network.",
-    "topic": "AWS Networking",
-    "difficulty": "medium"
-  },
-  {
-    "id": 351,
-    "question": "In the cloud data lifecycle, which phase addresses controlling where and for how long data is archived and retained?",
-    "options": [
-      "Generation of the information",
-      "Storage of data",
-      "Archival",
-      "Destruction of data"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The archival phase of the cloud data lifecycle addresses controlling where and for how long data is archived and retained.",
-    "topic": "Cloud Data Management",
-    "difficulty": "hard"
-  },
-  {
-    "id": 352,
-    "question": "Which of the following AWS RDS features allows read-scaling for high-throughput applications?",
-    "options": [
-      "Multi-AZ deployments",
-      "Read Replicas",
-      "Standby instances",
-      "Elastic cache integration"
-    ],
-    "correctAnswer": "B",
-    "explanation": "RDS Read Replicas allow read-scaling by creating read-only copies of your database for high-throughput applications.",
-    "topic": "AWS Databases",
-    "difficulty": "hard"
-  },
-  {
-    "id": 353,
-    "question": "During which phase of the data lifecycle should the organization ensure proper encryption of data in transit over public networks?",
-    "options": [
-      "Generation of the information",
-      "Transfer of the data",
-      "Transformation of data",
-      "Archival"
-    ],
-    "correctAnswer": "B",
-    "explanation": "During the transfer phase, organizations must ensure proper encryption of data in transit over public networks.",
-    "topic": "Cloud Data Security",
-    "difficulty": "hard"
-  },
-  {
-    "id": 354,
-    "question": "Which AWS offering provides a fully managed, petabyte-scale data warehouse?",
-    "options": [
-      "Amazon RDS for Aurora",
-      "Amazon Redshift",
-      "Amazon DynamoDB",
-      "Amazon Neptune"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Redshift provides a fully managed, petabyte-scale data warehouse service for analytics workloads.",
-    "topic": "AWS Databases",
-    "difficulty": "hard"
-  },
-  {
-    "id": 355,
-    "question": "What is a primary advantage of virtualization in cloud computing?",
-    "options": [
-      "It prevents multi-tenancy",
-      "It abstracts hardware to allow multiple virtual machines on one physical server",
-      "It only applies to storage",
-      "It is unrelated to cloud computing"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Virtualization abstracts hardware resources, allowing multiple virtual machines to run on one physical server, enabling efficient resource utilization.",
-    "topic": "Cloud Computing Concepts",
-    "difficulty": "hard"
-  },
-  {
-    "id": 356,
-    "question": "A cloud application is designed so that failure of any single component does not cause system failure. This describes:",
-    "options": [
-      "Multitenancy",
-      "Elasticity",
-      "Loose coupling and resiliency",
-      "On-demand service"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Loose coupling and resiliency ensure that failure of any single component does not cause overall system failure.",
-    "topic": "Cloud Architecture",
-    "difficulty": "hard"
-  },
-  {
-    "id": 357,
-    "question": "Amazon Redshift is built to handle:",
-    "options": [
-      "Online Transaction Processing (OLTP)",
-      "Online Analytical Processing (OLAP)",
-      "NoSQL document storage",
-      "GPU-accelerated workloads"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Redshift is designed for OLAP (Online Analytical Processing) workloads and data warehousing.",
-    "topic": "AWS Databases",
-    "difficulty": "hard"
-  },
-  {
-    "id": 358,
-    "question": "What best describes the relationship between virtualization and cloud computing?",
-    "options": [
-      "Virtualization is a technology that cloud computing often relies on to provide resource pooling and isolation.",
-      "Virtualization and cloud computing are unrelated.",
-      "Cloud computing is a subset of virtualization.",
-      "Virtualization is required for edge computing only."
-    ],
-    "correctAnswer": "A",
-    "explanation": "Virtualization is a foundational technology that cloud computing relies on for resource pooling, isolation, and multi-tenancy.",
-    "topic": "Cloud Computing Concepts",
-    "difficulty": "hard"
-  },
-  {
-    "id": 359,
-    "question": "Which of the following AWS services can facilitate a hybrid cloud connection (private link) between on-premises network and AWS?",
-    "options": [
-      "AWS Direct Connect",
-      "Amazon Aurora",
-      "Amazon CloudWatch",
-      "AWS Elastic Beanstalk"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS Direct Connect provides a dedicated private connection between on-premises networks and AWS for hybrid cloud architectures.",
-    "topic": "AWS Networking",
-    "difficulty": "hard"
-  },
-  {
-    "id": 360,
-    "question": "What happens to data on an EC2 instance store volume if the instance is stopped?",
-    "options": [
-      "It is automatically backed up to S3.",
-      "It is deleted/erased.",
-      "It remains intact for 7 days.",
-      "It is converted to an EBS snapshot."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Instance store volumes are ephemeral storage - data is lost when the instance is stopped or terminated.",
-    "topic": "AWS Storage",
-    "difficulty": "hard"
-  },
-  {
-    "id": 361,
-    "question": "Which AWS storage option is suitable for low-latency, frequent access file shares across multiple instances?",
-    "options": [
-      "Amazon EBS",
-      "Amazon S3 Standard",
-      "Amazon EFS",
-      "Amazon Glacier"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Amazon EFS provides low-latency, shared file storage accessible across multiple EC2 instances simultaneously.",
-    "topic": "AWS Storage",
-    "difficulty": "hard"
-  },
-  {
-    "id": 362,
-    "question": "AWS CloudTrail helps with:",
-    "options": [
-      "Monitoring network traffic",
-      "Logging and auditing API calls in your AWS account",
-      "Encrypting data at rest",
-      "Automatic scaling of EC2 instances"
-    ],
-    "correctAnswer": "B",
-    "explanation": "AWS CloudTrail provides comprehensive logging and auditing of API calls and user activity across your AWS account.",
-    "topic": "AWS Security",
-    "difficulty": "hard"
-  },
-  {
-    "id": 363,
-    "question": "In the shared responsibility model, which of these is AWS NOT responsible for?",
-    "options": [
-      "Physical security of data centers",
-      "Patching the hypervisor and host OS",
-      "Configuring security groups",
-      "Managing the virtualization layer"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Configuring security groups is a customer responsibility in the AWS shared responsibility model.",
-    "topic": "AWS Security",
-    "difficulty": "hard"
-  },
-  {
-    "id": 364,
-    "question": "If an application requires a relational database with cross-region replication and Aurora Serverless option, which AWS service is appropriate?",
-    "options": [
-      "Amazon RDS for MySQL",
-      "Amazon DynamoDB",
-      "Amazon Aurora Global Database",
-      "Amazon Redshift"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Amazon Aurora Global Database provides cross-region replication with Aurora Serverless capabilities.",
-    "topic": "AWS Databases",
-    "difficulty": "hard"
-  },
-  {
-    "id": 365,
-    "question": "Which AWS service can be used to centrally manage billing and usage for multiple AWS accounts?",
-    "options": [
-      "AWS Organizations",
-      "AWS IAM",
-      "AWS CloudFormation",
-      "AWS Trusted Advisor"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS Organizations provides centralized management of billing, policies, and compliance across multiple AWS accounts.",
-    "topic": "AWS Management",
-    "difficulty": "hard"
-  },
-  {
-    "id": 366,
-    "question": "What is an AWS \"Spot Instance\"?",
-    "options": [
-      "An instance with no downtime guarantee",
-      "A spare EC2 instance offered at a lower price that can be reclaimed by AWS when needed",
-      "An instance that must run continuously",
-      "A free tier instance type"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Spot Instances are spare EC2 capacity offered at reduced prices but can be interrupted when AWS needs the capacity.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 367,
-    "question": "Amazon S3 versioning allows you to:",
-    "options": [
-      "Store multiple variants of an object in the same bucket",
-      "Increase bucket storage automatically",
-      "Encrypt objects at rest",
-      "Restrict access to a bucket"
-    ],
-    "correctAnswer": "A",
-    "explanation": "S3 versioning allows storing multiple variants of the same object in a bucket, enabling recovery from accidental deletions or modifications.",
-    "topic": "AWS Storage",
-    "difficulty": "hard"
-  },
-  {
-    "id": 368,
-    "question": "Which AWS construct provides a logically isolated section of the AWS Cloud?",
-    "options": [
-      "Amazon EC2",
-      "Virtual Private Cloud (VPC)",
-      "AWS IAM",
-      "AWS Lambda"
-    ],
-    "correctAnswer": "B",
-    "explanation": "VPC (Virtual Private Cloud) provides a logically isolated section of AWS where you can launch resources in a defined virtual network.",
-    "topic": "AWS Networking",
-    "difficulty": "hard"
-  },
-  {
-    "id": 369,
-    "question": "AWS Fargate is a service for:",
-    "options": [
-      "Running containers without managing servers",
-      "Managing NoSQL databases",
-      "Distributing content globally",
-      "Large-scale analytics"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS Fargate is a serverless compute engine for containers, allowing you to run containers without managing servers or clusters.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 370,
-    "question": "A multi-tenant cloud environment means:",
-    "options": [
-      "A single customer uses all resources.",
-      "Multiple customers share the same infrastructure securely.",
-      "Resources are dedicated to one tenant per region.",
-      "There are multiple physical tenants in the data center."
-    ],
-    "correctAnswer": "B",
-    "explanation": "Multi-tenancy means multiple customers securely share the same physical infrastructure while maintaining logical separation.",
-    "topic": "Cloud Computing Concepts",
-    "difficulty": "hard"
-  },
-  {
-    "id": 371,
-    "question": "Which of the following is a key difference between horizontal and vertical scaling?",
-    "options": [
-      "Horizontal adds more servers, vertical adds more power to a server",
-      "Horizontal is AWS only, vertical is Azure only",
+    id: 388,
+    question: "What is the difference between scalability and elasticity?",
+    options: [
       "They are the same",
-      "Horizontal can only scale storage"
+      "Scalability is manual, elasticity is automatic",
+      "Scalability is for storage, elasticity is for compute",
+      "No difference"
     ],
-    "correctAnswer": "A",
-    "explanation": "Horizontal scaling adds more servers/instances, while vertical scaling increases the power (CPU/RAM) of existing servers.",
-    "topic": "Scalability",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Scalability can be manual or planned, while elasticity implies automatic and dynamic scaling.",
+    topic: "Cloud Fundamentals",
+    difficulty: "hard"
   },
   {
-    "id": 372,
-    "question": "AWS Security Token Service (STS) is used for:",
-    "options": [
-      "Issuing temporary security credentials for AWS services",
-      "Storing encryption keys",
-      "Managing IAM roles",
-      "Logging user activity"
+    id: 389,
+    question: "What is cloud bursting?",
+    options: [
+      "Cloud servers exploding",
+      "Automatically scaling from private to public cloud during peak demand",
+      "Sudden cloud outages",
+      "Cloud storage overflow"
     ],
-    "correctAnswer": "A",
-    "explanation": "AWS STS provides temporary, limited-privilege credentials for accessing AWS resources securely.",
-    "topic": "AWS Security",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud bursting extends private cloud capacity to public cloud during demand spikes.",
+    topic: "Cloud Architecture",
+    difficulty: "hard"
   },
   {
-    "id": 373,
-    "question": "Amazon Simple Queue Service (SQS) is a:",
-    "options": [
-      "Push notification service",
-      "Message queuing service that decouples components",
-      "Database migration service",
-      "File storage service"
+    id: 390,
+    question: "What is the purpose of cloud monitoring?",
+    options: [
+      "Watching clouds in the sky",
+      "Tracking performance, availability, and security of cloud resources",
+      "Monitoring weather",
+      "Watching videos"
     ],
-    "correctAnswer": "B",
-    "explanation": "Amazon SQS is a message queuing service that enables decoupling of application components through asynchronous communication.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud monitoring tracks the performance, availability, and security of cloud infrastructure and applications.",
+    topic: "Cloud Operations",
+    difficulty: "easy"
   },
   {
-    "id": 374,
-    "question": "Which AWS storage class is lowest-cost for long-term archival (with retrieval time in hours)?",
-    "options": [
-      "S3 Standard",
-      "S3 Glacier Deep Archive",
-      "S3 One Zone-IA",
-      "S3 Intelligent-Tiering"
+    id: 391,
+    question: "What is cloud orchestration?",
+    options: [
+      "Musical performances in cloud",
+      "Automated coordination and management of cloud services and workflows",
+      "Cloud service pricing",
+      "Cloud service documentation"
     ],
-    "correctAnswer": "B",
-    "explanation": "S3 Glacier Deep Archive offers the lowest cost for long-term archival with retrieval times of 12+ hours.",
-    "topic": "AWS Storage",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud orchestration automates the coordination and management of complex cloud services and workflows.",
+    topic: "Cloud Operations",
+    difficulty: "medium"
   },
   {
-    "id": 375,
-    "question": "AWS Kinesis Data Streams is designed for:",
-    "options": [
-      "Real-time streaming data ingestion",
-      "Static website hosting",
-      "Traditional backup storage",
-      "Container orchestration"
+    id: 392,
+    question: "What is the benefit of using cloud APIs?",
+    options: [
+      "They are expensive",
+      "Programmatic access to cloud services and automation",
+      "They are complex",
+      "They are slow"
     ],
-    "correctAnswer": "A",
-    "explanation": "AWS Kinesis Data Streams is designed for real-time ingestion and processing of streaming data at scale.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud APIs enable programmatic access to cloud services, enabling automation and integration.",
+    topic: "Cloud Development",
+    difficulty: "easy"
   },
   {
-    "id": 376,
-    "question": "Amazon EMR is typically used for:",
-    "options": [
-      "Running Hadoop/Spark big data processing on AWS",
-      "Relational databases",
-      "Web hosting",
-      "Video streaming"
+    id: 393,
+    question: "What is cloud-first strategy?",
+    options: [
+      "Always choose cloud over on-premises for new initiatives",
+      "Cloud is the last option",
+      "Only use public cloud",
+      "Avoid cloud completely"
     ],
-    "correctAnswer": "A",
-    "explanation": "Amazon EMR (Elastic MapReduce) is used for running big data frameworks like Hadoop and Spark on AWS.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
+    correctAnswer: "A",
+    explanation: "Cloud-first strategy prioritizes cloud solutions for new projects and initiatives.",
+    topic: "Cloud Strategy",
+    difficulty: "medium"
   },
   {
-    "id": 377,
-    "question": "Amazon Aurora is compatible with which database engines?",
-    "options": [
-      "MySQL and PostgreSQL",
-      "Oracle and DB2",
-      "SQL Server and Sybase",
-      "MongoDB and Cassandra"
+    id: 394,
+    question: "What is the role of cloud architects?",
+    options: [
+      "Building physical structures",
+      "Designing cloud infrastructure and solutions",
+      "Drawing blueprints",
+      "Construction management"
     ],
-    "correctAnswer": "A",
-    "explanation": "Amazon Aurora is compatible with MySQL and PostgreSQL database engines with enhanced performance and availability.",
-    "topic": "AWS Databases",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud architects design and plan cloud infrastructure, services, and solutions for organizations.",
+    topic: "Cloud Roles",
+    difficulty: "medium"
   },
   {
-    "id": 378,
-    "question": "What AWS feature allows time-based or event-based automation of actions (like shutting down EC2 at night)?",
-    "options": [
-      "AWS CloudWatch Events (EventBridge)",
-      "AWS Auto Scaling",
-      "AWS Config",
-      "AWS CloudTrail"
+    id: 395,
+    question: "What is cloud resource tagging used for?",
+    options: [
+      "Decorating resources",
+      "Organizing, tracking, and managing cloud resources",
+      "Pricing resources",
+      "Securing resources"
     ],
-    "correctAnswer": "A",
-    "explanation": "AWS CloudWatch Events (now EventBridge) enables time-based or event-based automation of AWS resources.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Resource tagging helps organize, track costs, manage, and govern cloud resources effectively.",
+    topic: "Cloud Management",
+    difficulty: "easy"
   },
   {
-    "id": 379,
-    "question": "AWS Config is used for:",
-    "options": [
-      "Continuous monitoring of resource configuration changes for compliance",
-      "Configuring network ACLs",
-      "Managing container clusters",
-      "Streaming analytics"
+    id: 396,
+    question: "What is the purpose of cloud automation?",
+    options: [
+      "Making cloud slower",
+      "Reducing manual tasks and improving consistency",
+      "Increasing complexity",
+      "Reducing reliability"
     ],
-    "correctAnswer": "A",
-    "explanation": "AWS Config continuously monitors and records AWS resource configurations and evaluates them against compliance rules.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud automation reduces manual tasks, improves consistency, and increases operational efficiency.",
+    topic: "Cloud Operations",
+    difficulty: "easy"
   },
   {
-    "id": 380,
-    "question": "A \"resource policy\" in AWS is:",
-    "options": [
-      "A policy that you attach to an AWS resource to control access",
-      "A health check",
-      "A type of EC2 instance",
-      "An encryption key"
+    id: 397,
+    question: "What is cloud capacity planning?",
+    options: [
+      "Planning cloud storage space",
+      "Forecasting and planning for future resource needs",
+      "Planning office capacity",
+      "Planning network capacity only"
     ],
-    "correctAnswer": "A",
-    "explanation": "A resource policy is attached directly to AWS resources (like S3 buckets) to define who can access the resource and how.",
-    "topic": "AWS Security",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud capacity planning involves forecasting future resource requirements to ensure adequate capacity.",
+    topic: "Cloud Management",
+    difficulty: "medium"
   },
   {
-    "id": 381,
-    "question": "AWS Billing alerts are set up using:",
-    "options": [
-      "Amazon SNS and CloudWatch",
-      "Amazon RDS",
-      "AWS Lambda",
-      "AWS IAM"
+    id: 398,
+    question: "What is the benefit of cloud standardization?",
+    options: [
+      "Increased complexity",
+      "Consistency, interoperability, and reduced vendor lock-in",
+      "Higher costs",
+      "Reduced functionality"
     ],
-    "correctAnswer": "A",
-    "explanation": "AWS billing alerts are configured using CloudWatch billing metrics and SNS notifications to monitor costs.",
-    "topic": "AWS Billing",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud standardization promotes consistency, interoperability, and reduces dependency on specific vendors.",
+    topic: "Cloud Strategy",
+    difficulty: "medium"
   },
   {
-    "id": 382,
-    "question": "AWS SSM (Systems Manager) is often used for:",
-    "options": [
-      "Automated patching and configuration of EC2 instances",
-      "High-performance computing",
-      "Game server hosting",
-      "Content delivery"
+    id: 399,
+    question: "What is cloud resource optimization?",
+    options: [
+      "Making resources slower",
+      "Maximizing efficiency and minimizing costs of cloud resources",
+      "Using more resources",
+      "Ignoring resource usage"
     ],
-    "correctAnswer": "A",
-    "explanation": "AWS Systems Manager provides automated patching, configuration management, and operational tasks for EC2 instances.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud resource optimization focuses on maximizing efficiency while minimizing costs and waste.",
+    topic: "Cloud Management",
+    difficulty: "medium"
   },
   {
-    "id": 383,
-    "question": "If you require an AWS service for sending SMS or email messages to multiple subscribers, you should use:",
-    "options": [
-      "Amazon S3",
-      "Amazon SNS",
-      "Amazon SES",
-      "Amazon SWF"
+    id: 400,
+    question: "What is the future trend of cloud computing?",
+    options: [
+      "Declining adoption",
+      "Increased adoption with edge computing, AI/ML integration, and sustainability focus",
+      "Replacement by on-premises",
+      "Becoming more expensive"
     ],
-    "correctAnswer": "B",
-    "explanation": "Amazon SNS (Simple Notification Service) is designed for sending messages to multiple subscribers via SMS, email, or other endpoints.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 384,
-    "question": "Amazon CloudWatch Logs is used to:",
-    "options": [
-      "Stream and store log files from AWS resources",
-      "Improve network speed",
-      "Deploy cloud infrastructure",
-      "Analyze large datasets"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon CloudWatch Logs collects, monitors, and stores log files from AWS resources and applications.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 385,
-    "question": "AWS Service that provides a managed Git-compatible repository is:",
-    "options": [
-      "AWS CodeCommit",
-      "AWS CodeBuild",
-      "AWS CodeDeploy",
-      "AWS CodePipeline"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS CodeCommit is a fully managed Git-compatible source control service for hosting private repositories.",
-    "topic": "AWS Developer Tools",
-    "difficulty": "hard"
-  },
-  {
-    "id": 386,
-    "question": "Which AWS IoT service provides message brokering between devices and AWS?",
-    "options": [
-      "AWS IoT Core",
-      "Amazon MQ",
-      "AWS Greengrass",
-      "AWS IoT Analytics"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS IoT Core provides secure, bi-directional communication between IoT devices and AWS services.",
-    "topic": "AWS IoT Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 387,
-    "question": "What is the AWS Well-Architected Framework used for?",
-    "options": [
-      "Guidelines to build secure, high-performing, resilient and efficient infrastructure in the cloud",
-      "Designing on-premise data centers",
-      "Visualizing AWS costs",
-      "Automating deployments"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The AWS Well-Architected Framework provides best practices for building secure, high-performing, resilient, and efficient cloud infrastructure.",
-    "topic": "AWS Best Practices",
-    "difficulty": "hard"
-  },
-  {
-    "id": 388,
-    "question": "AWS Personal Health Dashboard provides:",
-    "options": [
-      "Personalized and timely information about AWS service events that may affect you",
-      "Health monitoring for EC2 instances",
-      "Medical records storage",
-      "Health check for your code"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS Personal Health Dashboard provides personalized information about AWS service events and planned maintenance affecting your resources.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 389,
-    "question": "Which of the following is a multi-region, multi-master database service?",
-    "options": [
-      "Amazon RDS",
-      "Amazon Aurora Global Database",
-      "Amazon DynamoDB global tables",
-      "AWS Database Migration Service"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Amazon DynamoDB global tables provide multi-region, multi-master replication with automatic failover capabilities.",
-    "topic": "AWS Databases",
-    "difficulty": "hard"
-  },
-  {
-    "id": 390,
-    "question": "AWS CloudTrail Insights are used for:",
-    "options": [
-      "Automatically detecting unusual API activity in your AWS account",
-      "Predictive scaling for EC2",
-      "Database replication",
-      "Real-time analytics"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS CloudTrail Insights automatically detects unusual API activity patterns in your AWS account for security analysis.",
-    "topic": "AWS Security",
-    "difficulty": "hard"
-  },
-  {
-    "id": 391,
-    "question": "The AWS Nitro System is related to:",
-    "options": [
-      "Next-generation infrastructure for EC2 instances (security and performance)",
-      "Improved networking for RDS",
-      "Data transfer acceleration",
-      "Machine learning optimization"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The AWS Nitro System is next-generation infrastructure providing enhanced security and performance for EC2 instances.",
-    "topic": "AWS Infrastructure",
-    "difficulty": "hard"
-  },
-  {
-    "id": 392,
-    "question": "AWS Trusted Advisor provides:",
-    "options": [
-      "Recommendations on cost optimization, security, fault tolerance and performance",
-      "Automated backups",
-      "Identity and access management",
-      "Content distribution"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS Trusted Advisor provides real-time recommendations to optimize AWS infrastructure for cost, security, performance, and fault tolerance.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 393,
-    "question": "Which AWS database service uses a node-based data model with edges and vertices?",
-    "options": [
-      "Amazon Neptune",
-      "Amazon ElastiCache",
-      "Amazon Aurora",
-      "Amazon RDS"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Amazon Neptune is a graph database service that uses nodes (vertices) and relationships (edges) to store and query connected data.",
-    "topic": "AWS Databases",
-    "difficulty": "hard"
-  },
-  {
-    "id": 394,
-    "question": "AWS Lambda functions can be triggered by:",
-    "options": [
-      "Amazon S3 events",
-      "API Gateway calls",
-      "DynamoDB streams",
-      "All of the above"
-    ],
-    "correctAnswer": "D",
-    "explanation": "AWS Lambda functions can be triggered by various AWS services including S3 events, API Gateway calls, DynamoDB streams, and many others.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 395,
-    "question": "AWS Cost Explorer helps you:",
-    "options": [
-      "Visualize and manage your AWS costs and usage over time",
-      "Encrypt S3 buckets",
-      "Schedule EC2 instances",
-      "Create IAM policies"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS Cost Explorer provides visualization and analysis tools to understand and manage your AWS costs and usage patterns over time.",
-    "topic": "AWS Billing",
-    "difficulty": "hard"
-  },
-  {
-    "id": 396,
-    "question": "AWS Auto Scaling groups can scale based on:",
-    "options": [
-      "CPU utilization",
-      "Network traffic",
-      "Custom metrics (via CloudWatch)",
-      "All of the above"
-    ],
-    "correctAnswer": "D",
-    "explanation": "AWS Auto Scaling can scale based on various metrics including CPU utilization, network traffic, custom CloudWatch metrics, and more.",
-    "topic": "AWS Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 397,
-    "question": "VPC peering cannot be used to:",
-    "options": [
-      "Connect VPCs within a single AWS region",
-      "Connect VPCs across different AWS accounts",
-      "Connect on-premises network to AWS directly",
-      "Route traffic privately between VPCs"
-    ],
-    "correctAnswer": "C",
-    "explanation": "VPC peering connects VPCs to each other but cannot directly connect on-premises networks to AWS - that requires VPN or Direct Connect.",
-    "topic": "AWS Networking",
-    "difficulty": "hard"
-  },
-  {
-    "id": 398,
-    "question": "AWS Secrets Manager is designed to:",
-    "options": [
-      "Store and rotate database credentials, API keys, and other secrets",
-      "Backup secrets in S3",
-      "Manage encryption keys",
-      "Publish secrets to the public"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS Secrets Manager helps store, retrieve, and rotate database credentials, API keys, and other secrets securely.",
-    "topic": "AWS Security",
-    "difficulty": "hard"
-  },
-  {
-    "id": 399,
-    "question": "Which AWS service can deliver analytics on real-time streaming video feeds?",
-    "options": [
-      "Amazon Rekognition",
-      "Amazon Kinesis Video Streams",
-      "Amazon Transcribe",
-      "Amazon Bedrock"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Amazon Kinesis Video Streams enables real-time processing and analytics of streaming video data.",
-    "topic": "AWS Media Services",
-    "difficulty": "hard"
-  },
-  {
-    "id": 400,
-    "question": "AWS Elemental MediaConvert is a service for:",
-    "options": [
-      "Converting live video streams to multiple formats on the cloud",
-      "Database schema conversions",
-      "Converting objects to JSON",
-      "Encrypting storage volumes"
-    ],
-    "correctAnswer": "A",
-    "explanation": "AWS Elemental MediaConvert is a file-based video transcoding service for converting video content to multiple formats.",
-    "topic": "AWS Media Services",
-    "difficulty": "hard"
+    correctAnswer: "B",
+    explanation: "Cloud computing continues growing with trends toward edge computing, AI/ML integration, and sustainable practices.",
+    topic: "Cloud Future",
+    difficulty: "medium"
   }
 ]

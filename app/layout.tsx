@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Quiz Master - Interactive Programming Quizzes',
-  description: 'Master programming concepts with 198+ curated MCQ questions. Practice fundamentals, data structures, frameworks, and advanced topics. Get instant feedback and track your progress.',
-  generator: 'Quiz Master',
-  keywords: 'programming quiz, coding practice, MCQ, software development, algorithms, data structures, web frameworks, programming fundamentals',
+  title: 'System Design & Cloud Master - Interactive Learning Platform',
+  description: 'Master System Design and Cloud Computing with 400+ carefully curated questions. Practice architecture patterns, AWS services, scalability concepts, and cloud best practices. Perfect for technical interviews and cloud certifications.',
+  generator: 'System Design & Cloud Master',
+  keywords: 'system design, cloud computing, AWS, microservices, scalability, distributed systems, cloud architecture, technical interviews, cloud certification, system architecture',
   authors: [{ name: 'Jatin Sharma' }],
   creator: 'Jatin Sharma',
 }
