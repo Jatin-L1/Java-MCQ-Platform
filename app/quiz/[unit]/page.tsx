@@ -61,6 +61,32 @@ export default function QuizPage() {
 
   const currentQuestion = unitQuestions[currentQuestionIndex];
   
+  // Safety check to prevent errors when currentQuestion is undefined
+  if (!currentQuestion) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 py-12">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <Card className="shadow-2xl border-0 bg-gray-800/80 backdrop-blur-sm p-8">
+            <CardHeader>
+              <CardTitle className="text-2xl text-white mb-4">No Questions Available</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-300 mb-6">
+                No questions found for this unit. Please try a different unit or check back later.
+              </p>
+              <Link href="/quiz">
+                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
+                  <Home className="mr-2 h-4 w-4" />
+                  Back to Quiz Selection
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    );
+  }
+  
   const handleOptionSelect = (option: string) => {
     if (showFeedback) return; // Prevent changing answer after submission
     setSelectedOption(option);
@@ -133,9 +159,9 @@ export default function QuizPage() {
     };
     
     const getPerformanceMessage = () => {
-      if (percentage >= 80) return "🎉 Excellent! You've mastered this System Design & Cloud Computing topic!";
-      if (percentage >= 60) return "👍 Good job! Keep practicing to improve further.";
-      return "📚 Keep studying! More practice will help you excel.";
+      if (percentage >= 80) return "🎉 Excellent! You've mastered this DSA topic for the ADI exam!";
+      if (percentage >= 60) return "👍 Good job! Keep practicing to improve your DSA skills further.";
+      return "📚 Keep studying! More DSA practice will help you excel in the ADI exam.";
     };
 
     return (
@@ -205,7 +231,7 @@ export default function QuizPage() {
               <h1 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                 {unitTitle}
               </h1>
-              <p className="text-sm text-gray-400">System Design & Cloud Computing</p>
+              <p className="text-sm text-gray-400">Data Structures & Algorithms - ADI Exam</p>
             </div>
           </div>
           <div className="flex items-center space-x-4">
@@ -243,14 +269,14 @@ export default function QuizPage() {
           <CardHeader className="pb-4">
             <div className="flex justify-between items-center mb-4">
               <span className="text-sm font-medium px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-400 rounded-full border border-blue-500/20">
-                {currentQuestion.topic}
+                {currentQuestion.topic || 'General'}
               </span>
               <span className={`text-sm px-3 py-1 rounded-full font-medium border ${
-                currentQuestion.difficulty === 'easy' ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/20' :
-                currentQuestion.difficulty === 'medium' ? 'bg-yellow-500/20 text-yellow-400 border-yellow-500/20' :
+                (currentQuestion.difficulty || 'medium') === 'easy' ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/20' :
+                (currentQuestion.difficulty || 'medium') === 'medium' ? 'bg-yellow-500/20 text-yellow-400 border-yellow-500/20' :
                 'bg-red-500/20 text-red-400 border-red-500/20'
               }`}>
-                {currentQuestion.difficulty}
+                {currentQuestion.difficulty || 'medium'}
               </span>
             </div>
             <CardTitle className="text-xl leading-relaxed text-gray-200">

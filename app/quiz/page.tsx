@@ -11,7 +11,6 @@ import { getAllUnits } from "@/utils/questionUtils";
 const iconMap = {
   'complexity-analysis': Calculator,
   'recursion-iteration': ArrowUpDown,
-  'problem-solving': Brain,
   'number-theory': Calculator,
   'brute-force-greedy': Zap,
   'divide-conquer-dp': TreePine,
@@ -25,9 +24,9 @@ export default function QuizSelectionPage() {
   const units = getAllUnits();
 
   // Split units into categories for better organization
-  const fundamentalUnits = units.slice(0, 4); // Complexity, Recursion, Problem-solving, Number Theory
-  const algorithmicUnits = units.slice(4, 8); // Advanced algorithmic paradigms
-  const advancedUnits = units.slice(8); // Data structures and sorting
+  const fundamentalUnits = units.slice(0, 3); // Complexity, Recursion, Number Theory
+  const algorithmicUnits = units.slice(3, 7); // Advanced algorithmic paradigms
+  const advancedUnits = units.slice(7); // Data structures and sorting
 
   const renderUnitCard = (unit: any) => {
     const IconComponent = iconMap[unit.id as keyof typeof iconMap] || Brain;
@@ -103,7 +102,7 @@ export default function QuizSelectionPage() {
               Fundamental Concepts
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Build strong foundations with complexity analysis, recursion concepts, problem-solving techniques, and mathematical algorithms.
+              Build strong foundations with complexity analysis, recursion concepts, and mathematical algorithms including number theory.
             </p>
           </div>
           

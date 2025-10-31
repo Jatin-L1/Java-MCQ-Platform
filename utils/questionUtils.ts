@@ -1,4 +1,4 @@
-import { Question } from '../data/questions';
+import type { Question } from '../data/questions';
 
 export const filterQuestionsByUnit = (questions: Question[], unit: string): Question[] => {
   switch (unit) {
@@ -6,10 +6,8 @@ export const filterQuestionsByUnit = (questions: Question[], unit: string): Ques
       return questions.filter(q => q.topic === 'Complexity Analysis' || q.topic === 'Space Complexity' || q.topic === 'Asymptotic Analysis');
     case 'recursion-iteration':
       return questions.filter(q => q.topic === 'Iterative vs Recursive Approaches');
-    case 'problem-solving':
-      return questions.filter(q => q.topic === 'Problem-Solving Techniques');
     case 'number-theory':
-      return questions.filter(q => q.topic === 'Number Theory' || q.topic === 'Prime Factorization' || q.topic === 'GCD of Two Numbers' || q.topic === 'Distribute in Circle');
+      return questions.filter(q => q.topic === 'Prime Factorization' || q.topic === 'GCD of Two Numbers' || q.topic === 'Distribute in Circle');
     case 'brute-force-greedy':
       return questions.filter(q => q.topic === 'Brute Force Algorithms' || q.topic === 'Greedy Algorithms');
     case 'divide-conquer-dp':
@@ -33,8 +31,6 @@ export const getUnitTitle = (unit: string): string => {
       return 'Complexity Analysis & Big-O Notation: Time and Space Complexity Fundamentals';
     case 'recursion-iteration':
       return 'Recursion vs Iteration: Comparative Analysis and Implementation Strategies';
-    case 'problem-solving':
-      return 'Problem-Solving Techniques: Algorithmic Thinking and Pattern Recognition';
     case 'number-theory':
       return 'Number Theory & Mathematical Algorithms: Prime Numbers, GCD, and Distribution';
     case 'brute-force-greedy':
@@ -60,8 +56,6 @@ export const getUnitDescription = (unit: string): string => {
       return 'Master fundamental concepts of algorithm analysis including Big-O notation, time complexity, space complexity, best/worst/average case scenarios, and asymptotic behavior understanding.';
     case 'recursion-iteration':
       return 'Compare and contrast recursive vs iterative approaches, understand when to use each method, analyze performance implications, and master implementation strategies for various problems.';
-    case 'problem-solving':
-      return 'Develop systematic problem-solving techniques, learn to identify patterns, break down complex problems, and apply structured thinking approaches for algorithmic challenges.';
     case 'number-theory':
       return 'Explore mathematical algorithms including prime number generation, factorization techniques, GCD calculation methods, modular arithmetic, and circular distribution problems.';
     case 'brute-force-greedy':
@@ -100,26 +94,18 @@ export const getAllUnits = () => {
       topics: ['Recursive Algorithms', 'Iterative Solutions', 'Performance Analysis', 'Stack Overflow', 'Tail Recursion']
     },
     {
-      id: 'problem-solving',
-      title: 'Problem-Solving Techniques',
-      description: 'Systematic approaches to algorithmic problem solving and pattern recognition',
-      questionCount: 15,
-      difficulty: 'Beginner to Intermediate',
-      topics: ['Problem Decomposition', 'Pattern Recognition', 'Algorithmic Thinking', 'Solution Strategies', 'Code Optimization']
-    },
-    {
       id: 'number-theory',
       title: 'Number Theory & Mathematical Algorithms',
       description: 'Prime numbers, factorization, GCD algorithms, and mathematical problem solving',
       questionCount: 15,
       difficulty: 'Intermediate',
-      topics: ['Prime Numbers', 'Factorization', 'GCD Algorithms', 'Modular Arithmetic', 'Mathematical Optimization']
+      topics: ['Prime Numbers', 'Factorization', 'GCD Algorithms', 'Modular Arithmetic', 'Circle Distribution']
     },
     {
       id: 'brute-force-greedy',
       title: 'Brute Force & Greedy Algorithms',
       description: 'Exhaustive search methods and greedy optimization strategies',
-      questionCount: 20,
+      questionCount: 31,
       difficulty: 'Intermediate',
       topics: ['Exhaustive Search', 'Greedy Choice', 'Local Optimization', 'Algorithm Correctness', 'Efficiency Trade-offs']
     },
