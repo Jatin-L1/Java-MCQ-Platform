@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'System Design & Cloud Master - Interactive Learning Platform',
-  description: 'Master System Design and Cloud Computing with 400+ carefully curated questions. Practice architecture patterns, AWS services, scalability concepts, and cloud best practices. Perfect for technical interviews and cloud certifications.',
-  generator: 'System Design & Cloud Master',
-  keywords: 'system design, cloud computing, AWS, microservices, scalability, distributed systems, cloud architecture, technical interviews, cloud certification, system architecture',
+  title: 'ADI Exam Preparation - Data Structures & Algorithms Practice Platform',
+  description: 'Master Data Structures and Algorithms with 149 comprehensive questions for ADI exam preparation. Practice complexity analysis, algorithmic paradigms, problem-solving techniques, and advanced DSA concepts.',
+  generator: 'ADI Exam Preparation Platform',
+  keywords: 'ADI exam, data structures, algorithms, complexity analysis, recursion, dynamic programming, greedy algorithms, DSA practice, technical interviews, algorithmic thinking',
   authors: [{ name: 'Jatin Sharma' }],
   creator: 'Jatin Sharma',
 }

@@ -5,37 +5,40 @@ import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Brain, Database, Cloud, Server, Settings, Globe, CheckCircle, BookOpen } from "lucide-react";
+import { Brain, Code, Zap, Calculator, TreePine, ArrowUpDown, CheckCircle, BookOpen } from "lucide-react";
 import { getAllUnits } from "@/utils/questionUtils";
 
 const iconMap = {
-  'system-design-fundamentals': Brain,
-  'system-architecture': Settings,
-  'database-design': Database,
-  'scalability-performance': Globe,
-  'cloud-fundamentals': Cloud,
-  'aws-services': Server,
-  'advanced-cloud': Settings,
-  'cloud-architecture': BookOpen
+  'complexity-analysis': Calculator,
+  'recursion-iteration': ArrowUpDown,
+  'problem-solving': Brain,
+  'number-theory': Calculator,
+  'brute-force-greedy': Zap,
+  'divide-conquer-dp': TreePine,
+  'backtracking-randomized': Code,
+  'two-pointer-sliding': ArrowUpDown,
+  'data-structures': TreePine,
+  'sorting-algorithms': ArrowUpDown
 };
 
 export default function QuizSelectionPage() {
   const units = getAllUnits();
 
-  // Split units into System Design and Cloud Computing categories
-  const systemDesignUnits = units.slice(0, 4); // First 4 units (IDs 1-200)
-  const cloudComputingUnits = units.slice(4); // Last 4 units (IDs 201-400)
+  // Split units into categories for better organization
+  const fundamentalUnits = units.slice(0, 4); // Complexity, Recursion, Problem-solving, Number Theory
+  const algorithmicUnits = units.slice(4, 8); // Advanced algorithmic paradigms
+  const advancedUnits = units.slice(8); // Data structures and sorting
 
   const renderUnitCard = (unit: any) => {
     const IconComponent = iconMap[unit.id as keyof typeof iconMap] || Brain;
     
     return (
-      <Card key={unit.id} className="hover:shadow-lg transition-all duration-300 border-l-4 border-l-blue-500">
+      <Card key={unit.id} className="hover:shadow-lg transition-all duration-300 border-l-4 border-l-purple-500">
         <CardHeader>
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="p-2 bg-blue-100 rounded-lg">
-                <IconComponent className="h-6 w-6 text-blue-600" />
+              <div className="p-2 bg-purple-100 rounded-lg">
+                <IconComponent className="h-6 w-6 text-purple-600" />
               </div>
               <div>
                 <CardTitle className="text-lg">{unit.title}</CardTitle>
@@ -80,51 +83,66 @@ export default function QuizSelectionPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-100 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Choose Your Learning Path
+            ADI Exam - DSA Practice Modules
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Master System Design and Cloud Computing with our comprehensive quiz modules. 
-            Each unit contains 50 carefully crafted questions to test and improve your knowledge.
+            Master Data Structures and Algorithms with our comprehensive quiz modules. 
+            149 carefully crafted questions covering all essential DSA concepts for ADI exam preparation.
           </p>
         </div>
 
-        {/* System Design Section */}
+        {/* Fundamental Concepts Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
               <Brain className="mr-3 h-8 w-8 text-purple-600" />
-              System Design (Questions 1-200)
+              Fundamental Concepts
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Master the fundamentals of designing scalable, reliable, and efficient systems. 
-              Learn architecture patterns, database design, and performance optimization.
+              Build strong foundations with complexity analysis, recursion concepts, problem-solving techniques, and mathematical algorithms.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
-            {systemDesignUnits.map(renderUnitCard)}
+            {fundamentalUnits.map(renderUnitCard)}
           </div>
         </div>
 
-        {/* Cloud Computing Section */}
+        {/* Algorithmic Paradigms Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
-              <Cloud className="mr-3 h-8 w-8 text-blue-600" />
-              Cloud Computing (Questions 201-400)
+              <Code className="mr-3 h-8 w-8 text-blue-600" />
+              Algorithmic Paradigms
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore cloud computing concepts, AWS services, and enterprise cloud architectures. 
-              Perfect for cloud certification preparation and real-world cloud projects.
+              Master advanced algorithmic techniques including greedy algorithms, dynamic programming, backtracking, and optimization strategies.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
-            {cloudComputingUnits.map(renderUnitCard)}
+            {algorithmicUnits.map(renderUnitCard)}
+          </div>
+        </div>
+
+        {/* Advanced Topics Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
+              <TreePine className="mr-3 h-8 w-8 text-emerald-600" />
+              Data Structures & Advanced Techniques
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Explore data structures, tree algorithms, sorting techniques, and advanced problem-solving patterns for comprehensive DSA mastery.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {advancedUnits.map(renderUnitCard)}
           </div>
         </div>
 
@@ -134,22 +152,22 @@ export default function QuizSelectionPage() {
             <CardHeader>
               <CardTitle className="text-2xl flex items-center justify-center">
                 <CheckCircle className="mr-3 h-8 w-8 text-purple-600" />
-                Ready for the Challenge?
+                Ready for the ADI Challenge?
               </CardTitle>
               <CardDescription className="text-lg">
-                Test your knowledge with our comprehensive mock test featuring questions from all units
+                Test your DSA knowledge with our comprehensive ADI mock test featuring questions from all topics
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="flex justify-center space-x-6 text-sm text-gray-600">
-                  <span>• 400 Questions</span>
+                  <span>• 149 DSA Questions</span>
                   <span>• Timed Environment</span>
-                  <span>• Performance Analysis</span>
+                  <span>• Detailed Explanations</span>
                 </div>
                 <Link href="/mock-test">
                   <Button size="lg" className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-                    Take Mock Test
+                    Take ADI Mock Test
                   </Button>
                 </Link>
               </div>
