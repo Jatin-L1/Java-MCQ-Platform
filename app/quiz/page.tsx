@@ -9,24 +9,21 @@ import { Brain, Code, Zap, Calculator, TreePine, ArrowUpDown, CheckCircle, BookO
 import { getAllUnits } from "@/utils/questionUtils";
 
 const iconMap = {
-  'complexity-analysis': Calculator,
-  'recursion-iteration': ArrowUpDown,
-  'number-theory': Calculator,
-  'brute-force-greedy': Zap,
-  'divide-conquer-dp': TreePine,
-  'backtracking-randomized': Code,
-  'two-pointer-sliding': ArrowUpDown,
-  'data-structures': TreePine,
-  'sorting-algorithms': ArrowUpDown
+  'docker-fundamentals': BookOpen,
+  'docker-architecture': TreePine,
+  'docker-images': Code,
+  'dockerfile': Calculator,
+  'docker-commands': Zap,
+  'docker-volumes': ArrowUpDown
 };
 
 export default function QuizSelectionPage() {
   const units = getAllUnits();
 
   // Split units into categories for better organization
-  const fundamentalUnits = units.slice(0, 3); // Complexity, Recursion, Number Theory
-  const algorithmicUnits = units.slice(3, 7); // Advanced algorithmic paradigms
-  const advancedUnits = units.slice(7); // Data structures and sorting
+  const fundamentalUnits = units.slice(0, 3); // Docker Fundamentals, Architecture, Images
+  const algorithmicUnits = units.slice(3); // Dockerfile, Commands, Volumes
+  const advancedUnits: any[] = []; // Not needed for Docker quiz
 
   const renderUnitCard = (unit: any) => {
     const IconComponent = iconMap[unit.id as keyof typeof iconMap] || Brain;
@@ -86,12 +83,26 @@ export default function QuizSelectionPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            ADI Exam - DSA Practice Modules
+            Docker Quiz - Practice Modules
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Master Data Structures and Algorithms with our comprehensive quiz modules. 
-            149 carefully crafted questions covering all essential DSA concepts for ADI exam preparation.
+            Master Docker and containerization with our comprehensive quiz modules. 
+            15 carefully crafted questions covering all essential Docker concepts.
           </p>
+          
+          {/* Practice All Questions Button */}
+          <div className="mt-8">
+            <Link href="/quiz/all">
+              <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg">
+                <Brain className="mr-3 h-6 w-6" />
+                Practice All 15 Questions Together
+              </Button>
+            </Link>
+          </div>
+          
+          <div className="mt-6 text-gray-500">
+            <p>Or practice by specific topics below:</p>
+          </div>
         </div>
 
         {/* Fundamental Concepts Section */}
@@ -99,10 +110,10 @@ export default function QuizSelectionPage() {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
               <Brain className="mr-3 h-8 w-8 text-purple-600" />
-              Fundamental Concepts
+              Docker Fundamentals
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Build strong foundations with complexity analysis, recursion concepts, and mathematical algorithms including number theory.
+              Build strong foundations with Docker basics, architecture, and image management concepts.
             </p>
           </div>
           
@@ -111,37 +122,20 @@ export default function QuizSelectionPage() {
           </div>
         </div>
 
-        {/* Algorithmic Paradigms Section */}
+        {/* Advanced Docker Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
               <Code className="mr-3 h-8 w-8 text-blue-600" />
-              Algorithmic Paradigms
+              Advanced Docker
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Master advanced algorithmic techniques including greedy algorithms, dynamic programming, backtracking, and optimization strategies.
+              Master Dockerfile instructions, essential CLI commands, and persistent data management with Docker volumes.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
             {algorithmicUnits.map(renderUnitCard)}
-          </div>
-        </div>
-
-        {/* Advanced Topics Section */}
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
-              <TreePine className="mr-3 h-8 w-8 text-emerald-600" />
-              Data Structures & Advanced Techniques
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore data structures, tree algorithms, sorting techniques, and advanced problem-solving patterns for comprehensive DSA mastery.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {advancedUnits.map(renderUnitCard)}
           </div>
         </div>
 
@@ -160,13 +154,13 @@ export default function QuizSelectionPage() {
             <CardContent>
               <div className="space-y-4">
                 <div className="flex justify-center space-x-6 text-sm text-gray-600">
-                  <span>• 149 DSA Questions</span>
+                  <span>• 15 Docker Questions</span>
                   <span>• Timed Environment</span>
                   <span>• Detailed Explanations</span>
                 </div>
                 <Link href="/mock-test">
                   <Button size="lg" className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-                    Take ADI Mock Test
+                    Take Docker Mock Test
                   </Button>
                 </Link>
               </div>

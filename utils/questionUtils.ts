@@ -2,24 +2,18 @@ import type { Question } from '../data/questions';
 
 export const filterQuestionsByUnit = (questions: Question[], unit: string): Question[] => {
   switch (unit) {
-    case 'complexity-analysis':
-      return questions.filter(q => q.topic === 'Complexity Analysis' || q.topic === 'Space Complexity' || q.topic === 'Asymptotic Analysis');
-    case 'recursion-iteration':
-      return questions.filter(q => q.topic === 'Iterative vs Recursive Approaches');
-    case 'number-theory':
-      return questions.filter(q => q.topic === 'Prime Factorization' || q.topic === 'GCD of Two Numbers' || q.topic === 'Distribute in Circle');
-    case 'brute-force-greedy':
-      return questions.filter(q => q.topic === 'Brute Force Algorithms' || q.topic === 'Greedy Algorithms');
-    case 'divide-conquer-dp':
-      return questions.filter(q => q.topic === 'Divide and Conquer' || q.topic === 'Dynamic Programming');
-    case 'backtracking-randomized':
-      return questions.filter(q => q.topic === 'Backtracking' || q.topic === 'Randomized Algorithms');
-    case 'two-pointer-sliding':
-      return questions.filter(q => q.topic === 'Two-Pointer Technique' || q.topic === 'Sliding Window Technique');
-    case 'data-structures':
-      return questions.filter(q => q.topic === 'Data Structures' || q.topic === 'Tree Data Structures' || q.topic === 'Java Collections');
-    case 'sorting-algorithms':
-      return questions.filter(q => q.topic === 'Sorting Algorithms' || q.topic === 'Java Fundamentals');
+    case 'docker-fundamentals':
+      return questions.filter(q => q.topic === 'Docker Fundamentals');
+    case 'docker-architecture':
+      return questions.filter(q => q.topic === 'Docker Architecture' || q.topic === 'Docker Components');
+    case 'docker-images':
+      return questions.filter(q => q.topic === 'Docker Images' || q.topic === 'Docker Registry');
+    case 'dockerfile':
+      return questions.filter(q => q.topic === 'Dockerfile');
+    case 'docker-commands':
+      return questions.filter(q => q.topic === 'Docker Commands');
+    case 'docker-volumes':
+      return questions.filter(q => q.topic === 'Docker Volumes');
     default:
       return questions;
   }
@@ -27,127 +21,91 @@ export const filterQuestionsByUnit = (questions: Question[], unit: string): Ques
 
 export const getUnitTitle = (unit: string): string => {
   switch (unit) {
-    case 'complexity-analysis':
-      return 'Complexity Analysis & Big-O Notation: Time and Space Complexity Fundamentals';
-    case 'recursion-iteration':
-      return 'Recursion vs Iteration: Comparative Analysis and Implementation Strategies';
-    case 'number-theory':
-      return 'Number Theory & Mathematical Algorithms: Prime Numbers, GCD, and Distribution';
-    case 'brute-force-greedy':
-      return 'Brute Force & Greedy Algorithms: Basic to Advanced Problem-Solving Approaches';
-    case 'divide-conquer-dp':
-      return 'Divide & Conquer and Dynamic Programming: Advanced Algorithmic Paradigms';
-    case 'backtracking-randomized':
-      return 'Backtracking & Randomized Algorithms: Exploration and Probabilistic Methods';
-    case 'two-pointer-sliding':
-      return 'Two-Pointer & Sliding Window Techniques: Efficient Array and String Processing';
-    case 'data-structures':
-      return 'Data Structures & Trees: Fundamental Storage and Organization Concepts';
-    case 'sorting-algorithms':
-      return 'Sorting Algorithms & Collections: Ordering and Java Framework Integration';
+    case 'docker-fundamentals':
+      return 'Docker Fundamentals: Introduction to Containerization';
+    case 'docker-architecture':
+      return 'Docker Architecture: Components and System Design';
+    case 'docker-images':
+      return 'Docker Images & Registry: Image Management and Distribution';
+    case 'dockerfile':
+      return 'Dockerfile: Building Custom Container Images';
+    case 'docker-commands':
+      return 'Docker Commands: Essential CLI Operations';
+    case 'docker-volumes':
+      return 'Docker Volumes: Persistent Data Management';
     default:
-      return 'Data Structures & Algorithms - ADI Exam Preparation';
+      return 'Docker Quiz - Container Technology Assessment';
   }
 };
 
 export const getUnitDescription = (unit: string): string => {
   switch (unit) {
-    case 'complexity-analysis':
-      return 'Master fundamental concepts of algorithm analysis including Big-O notation, time complexity, space complexity, best/worst/average case scenarios, and asymptotic behavior understanding.';
-    case 'recursion-iteration':
-      return 'Compare and contrast recursive vs iterative approaches, understand when to use each method, analyze performance implications, and master implementation strategies for various problems.';
-    case 'number-theory':
-      return 'Explore mathematical algorithms including prime number generation, factorization techniques, GCD calculation methods, modular arithmetic, and circular distribution problems.';
-    case 'brute-force-greedy':
-      return 'Learn brute force methodology for exhaustive search solutions and greedy algorithm principles for optimal local choice strategies in various computational problems.';
-    case 'divide-conquer-dp':
-      return 'Master advanced paradigms: divide and conquer for problem decomposition and dynamic programming for optimal substructure and overlapping subproblems optimization.';
-    case 'backtracking-randomized':
-      return 'Understand backtracking algorithms for constraint satisfaction and exploration of solution spaces, plus randomized algorithms for probabilistic problem-solving approaches.';
-    case 'two-pointer-sliding':
-      return 'Master efficient array and string processing techniques using two-pointer methods for sorted arrays and sliding window techniques for substring and subarray problems.';
-    case 'data-structures':
-      return 'Comprehensive coverage of fundamental data structures including trees, binary trees, tree traversals, and their applications in solving complex algorithmic problems.';
-    case 'sorting-algorithms':
-      return 'Deep understanding of various sorting algorithms, their complexity analysis, practical applications, and integration with Java Collections Framework for efficient data processing.';
+    case 'docker-fundamentals':
+      return 'Learn the basics of Docker including its history, programming language, virtualization type, and core advantages for modern application development.';
+    case 'docker-architecture':
+      return 'Understand Docker\'s architecture including Docker Daemon, Docker Client, Docker Host, and how these components work together to manage containers.';
+    case 'docker-images':
+      return 'Master Docker images, registries like Docker Hub, and learn how to pull, manage, and distribute containerized applications effectively.';
+    case 'dockerfile':
+      return 'Deep dive into Dockerfile instructions including FROM, RUN, COPY, ADD, CMD, and ENTRYPOINT to build custom container images from scratch.';
+    case 'docker-commands':
+      return 'Practice essential Docker CLI commands for pulling images, running containers, executing commands, and managing Docker volumes and resources.';
+    case 'docker-volumes':
+      return 'Explore Docker volumes for persistent data storage, learn volume management commands, and understand how to maintain data across container lifecycles.';
     default:
-      return 'Comprehensive Data Structures & Algorithms preparation covering fundamental concepts, advanced techniques, and practical problem-solving skills for technical assessments.';
+      return 'Comprehensive Docker quiz covering containerization fundamentals, architecture, image management, Dockerfile syntax, CLI commands, and persistent storage.';
   }
 };
 
 export const getAllUnits = () => {
   return [
     {
-      id: 'complexity-analysis',
-      title: 'Complexity Analysis',
-      description: 'Big-O notation, time and space complexity, asymptotic analysis fundamentals',
-      questionCount: 25,
+      id: 'docker-fundamentals',
+      title: 'Docker Fundamentals',
+      description: 'Introduction to Docker, its history, programming language, and core concepts',
+      questionCount: 2,
+      difficulty: 'Beginner',
+      topics: ['Docker History', 'Go Language', 'Containerization Basics', 'Docker Philosophy']
+    },
+    {
+      id: 'docker-architecture',
+      title: 'Docker Architecture',
+      description: 'Understanding Docker components and system design',
+      questionCount: 2,
+      difficulty: 'Intermediate',
+      topics: ['OS-level Virtualization', 'Docker Daemon', 'Docker Components', 'Container Management']
+    },
+    {
+      id: 'docker-images',
+      title: 'Docker Images & Registry',
+      description: 'Working with Docker images and registries',
+      questionCount: 3,
       difficulty: 'Beginner to Intermediate',
-      topics: ['Big-O Notation', 'Time Complexity', 'Space Complexity', 'Asymptotic Analysis', 'Best/Worst Case']
+      topics: ['Docker Hub', 'Image Templates', 'Docker Pull', 'Image Distribution']
     },
     {
-      id: 'recursion-iteration',
-      title: 'Recursion vs Iteration',
-      description: 'Comparative analysis of recursive and iterative approaches to problem solving',
-      questionCount: 25,
-      difficulty: 'Intermediate',
-      topics: ['Recursive Algorithms', 'Iterative Solutions', 'Performance Analysis', 'Stack Overflow', 'Tail Recursion']
-    },
-    {
-      id: 'number-theory',
-      title: 'Number Theory & Mathematical Algorithms',
-      description: 'Prime numbers, factorization, GCD algorithms, and mathematical problem solving',
-      questionCount: 15,
-      difficulty: 'Intermediate',
-      topics: ['Prime Numbers', 'Factorization', 'GCD Algorithms', 'Modular Arithmetic', 'Circle Distribution']
-    },
-    {
-      id: 'brute-force-greedy',
-      title: 'Brute Force & Greedy Algorithms',
-      description: 'Exhaustive search methods and greedy optimization strategies',
-      questionCount: 31,
-      difficulty: 'Intermediate',
-      topics: ['Exhaustive Search', 'Greedy Choice', 'Local Optimization', 'Algorithm Correctness', 'Efficiency Trade-offs']
-    },
-    {
-      id: 'divide-conquer-dp',
-      title: 'Divide & Conquer and Dynamic Programming',
-      description: 'Advanced algorithmic paradigms for complex problem decomposition',
-      questionCount: 25,
-      difficulty: 'Advanced',
-      topics: ['Problem Decomposition', 'Merge Strategies', 'Optimal Substructure', 'Memoization', 'Bottom-up Approach']
-    },
-    {
-      id: 'backtracking-randomized',
-      title: 'Backtracking & Randomized Algorithms',
-      description: 'Constraint satisfaction and probabilistic algorithmic approaches',
-      questionCount: 15,
-      difficulty: 'Advanced',
-      topics: ['Constraint Satisfaction', 'Solution Space Exploration', 'Probabilistic Algorithms', 'Monte Carlo Methods', 'Randomization']
-    },
-    {
-      id: 'two-pointer-sliding',
-      title: 'Two-Pointer & Sliding Window',
-      description: 'Efficient array and string processing techniques for optimization problems',
-      questionCount: 24,
+      id: 'dockerfile',
+      title: 'Dockerfile',
+      description: 'Writing Dockerfiles to build custom container images',
+      questionCount: 3,
       difficulty: 'Intermediate to Advanced',
-      topics: ['Two-Pointer Technique', 'Sliding Window', 'Array Processing', 'String Algorithms', 'Optimization Techniques']
+      topics: ['FROM Instruction', 'ADD vs COPY', 'CMD vs ENTRYPOINT', 'Image Building']
     },
     {
-      id: 'data-structures',
-      title: 'Data Structures & Trees',
-      description: 'Fundamental data structures, tree concepts, and traversal algorithms',
-      questionCount: 10,
-      difficulty: 'Beginner to Advanced',
-      topics: ['Tree Structures', 'Binary Trees', 'Tree Traversal', 'Data Organization', 'Structural Algorithms']
-    },
-    {
-      id: 'sorting-algorithms',
-      title: 'Sorting & Collections',
-      description: 'Sorting algorithms analysis and Java Collections Framework integration',
-      questionCount: 5,
+      id: 'docker-commands',
+      title: 'Docker Commands',
+      description: 'Essential Docker CLI commands and operations',
+      questionCount: 3,
       difficulty: 'Intermediate',
-      topics: ['Sorting Algorithms', 'Complexity Analysis', 'Java Collections', 'Performance Comparison', 'Algorithm Selection']
+      topics: ['docker pull', 'docker exec', 'docker volume ls', 'CLI Operations']
+    },
+    {
+      id: 'docker-volumes',
+      title: 'Docker Volumes',
+      description: 'Managing persistent data with Docker volumes',
+      questionCount: 2,
+      difficulty: 'Intermediate',
+      topics: ['Volume Management', 'Persistent Storage', 'Data Persistence', 'Volume Commands']
     }
   ];
 };

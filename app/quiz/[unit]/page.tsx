@@ -16,8 +16,9 @@ export default function QuizPage() {
   const router = useRouter();
   const unitParam = params.unit as string;
   
-  const unitQuestions = filterQuestionsByUnit(questions, unitParam);
-  const unitTitle = getUnitTitle(unitParam);
+  // If unit is "all", show all questions, otherwise filter by unit
+  const unitQuestions = unitParam === 'all' ? questions : filterQuestionsByUnit(questions, unitParam);
+  const unitTitle = unitParam === 'all' ? 'Docker Quiz - All Questions' : getUnitTitle(unitParam);
   
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);

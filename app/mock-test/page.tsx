@@ -207,7 +207,7 @@ export default function MockTestPage() {
       <div className="max-w-4xl mx-auto px-4">
         <div className="flex justify-between items-center mb-6 bg-gray-800/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-700">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-            ADI Exam - DSA Mock Test
+            Docker Quiz - Mock Test
           </h1>
           <div className="flex items-center space-x-4">
             <span className="text-sm font-medium text-gray-400">
