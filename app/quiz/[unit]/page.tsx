@@ -325,6 +325,23 @@ export default function QuizPage() {
                 );
               })}
             </div>
+
+            {/* Explanation Section */}
+            {showFeedback && currentQuestion.explanation && (
+              <div className={`mt-6 p-4 rounded-lg border ${
+                selectedOption === currentQuestion.correctAnswer 
+                  ? 'bg-emerald-500/10 border-emerald-500/30' 
+                  : 'bg-blue-500/10 border-blue-500/30'
+              }`}>
+                <h4 className="text-sm font-semibold text-gray-300 mb-2 flex items-center">
+                  <Brain className="h-4 w-4 mr-2 text-purple-400" />
+                  Explanation:
+                </h4>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {currentQuestion.explanation}
+                </p>
+              </div>
+            )}
           </CardContent>
           <CardFooter className="flex justify-between">
             {!showFeedback ? (
@@ -340,6 +357,7 @@ export default function QuizPage() {
                 {currentQuestionIndex < unitQuestions.length - 1
                   ? "Next Question"
                   : "See Results"}
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             )}
           </CardFooter>

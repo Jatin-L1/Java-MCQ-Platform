@@ -5,25 +5,28 @@ import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Brain, Code, Zap, Calculator, TreePine, ArrowUpDown, CheckCircle, BookOpen } from "lucide-react";
+import { Brain, Code, Zap, Calculator, TreePine, ArrowUpDown, CheckCircle, BookOpen, Hash, Network, Layers } from "lucide-react";
 import { getAllUnits } from "@/utils/questionUtils";
 
 const iconMap = {
-  'docker-fundamentals': BookOpen,
-  'docker-architecture': TreePine,
-  'docker-images': Code,
-  'dockerfile': Calculator,
-  'docker-commands': Zap,
-  'docker-volumes': ArrowUpDown
+  'complexity-analysis': Calculator,
+  'advanced-techniques': Zap,
+  'backtracking': Code,
+  'trees': TreePine,
+  'heaps': Layers,
+  'greedy': ArrowUpDown,
+  'dynamic-programming': BookOpen,
+  'graphs': Network,
+  'hashing': Hash
 };
 
 export default function QuizSelectionPage() {
   const units = getAllUnits();
 
   // Split units into categories for better organization
-  const fundamentalUnits = units.slice(0, 3); // Docker Fundamentals, Architecture, Images
-  const algorithmicUnits = units.slice(3); // Dockerfile, Commands, Volumes
-  const advancedUnits: any[] = []; // Not needed for Docker quiz
+  const fundamentalUnits = units.slice(0, 3); // Complexity, Techniques, Backtracking
+  const dataStructureUnits = units.slice(3, 6); // Trees, Heaps, Greedy
+  const advancedUnits = units.slice(6); // DP, Graphs, Hashing
 
   const renderUnitCard = (unit: any) => {
     const IconComponent = iconMap[unit.id as keyof typeof iconMap] || Brain;
@@ -83,11 +86,11 @@ export default function QuizSelectionPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Docker Quiz - Practice Modules
+            Advanced Data Structures - Practice Modules
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Master Docker and containerization with our comprehensive quiz modules. 
-            15 carefully crafted questions covering all essential Docker concepts.
+            Master Advanced Data Structures with our comprehensive quiz modules. 
+            400+ PYQ-style questions covering Complexity Analysis, Advanced Techniques, Trees, Heaps, Greedy, DP, Graphs, Hashing, and more.
           </p>
           
           {/* Practice All Questions Button */}
@@ -95,7 +98,7 @@ export default function QuizSelectionPage() {
             <Link href="/quiz/all">
               <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg">
                 <Brain className="mr-3 h-6 w-6" />
-                Practice All 15 Questions Together
+                Practice All 400 Questions Together
               </Button>
             </Link>
           </div>
@@ -110,10 +113,10 @@ export default function QuizSelectionPage() {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
               <Brain className="mr-3 h-8 w-8 text-purple-600" />
-              Docker Fundamentals
+              Fundamentals & Analysis
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Build strong foundations with Docker basics, architecture, and image management concepts.
+              Build strong foundations with complexity analysis, advanced techniques, and backtracking algorithms.
             </p>
           </div>
           
@@ -122,20 +125,37 @@ export default function QuizSelectionPage() {
           </div>
         </div>
 
-        {/* Advanced Docker Section */}
+        {/* Data Structures Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
               <Code className="mr-3 h-8 w-8 text-blue-600" />
-              Advanced Docker
+              Core Data Structures
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Master Dockerfile instructions, essential CLI commands, and persistent data management with Docker volumes.
+              Master essential data structures including trees, heaps, and greedy algorithm strategies.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
-            {algorithmicUnits.map(renderUnitCard)}
+            {dataStructureUnits.map(renderUnitCard)}
+          </div>
+        </div>
+
+        {/* Advanced Algorithms Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
+              <Zap className="mr-3 h-8 w-8 text-green-600" />
+              Advanced Algorithms
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Tackle advanced topics including dynamic programming, graph algorithms, and hashing techniques.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {advancedUnits.map(renderUnitCard)}
           </div>
         </div>
 
@@ -154,13 +174,13 @@ export default function QuizSelectionPage() {
             <CardContent>
               <div className="space-y-4">
                 <div className="flex justify-center space-x-6 text-sm text-gray-600">
-                  <span>• 15 Docker Questions</span>
+                  <span>• 400 Questions</span>
                   <span>• Timed Environment</span>
                   <span>• Detailed Explanations</span>
                 </div>
                 <Link href="/mock-test">
                   <Button size="lg" className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-                    Take Docker Mock Test
+                    Take ADI Mock Test
                   </Button>
                 </Link>
               </div>

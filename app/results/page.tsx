@@ -28,11 +28,11 @@ export default function ResultsPage() {
   
   const getScoreMessage = () => {
     if (percentage === null) return "";
-    if (percentage >= 90) return "🎉 Outstanding! You've mastered System Design & Cloud Computing concepts!";
-    if (percentage >= 80) return "💪 Excellent work! You're ready for technical interviews and cloud certifications!";
+    if (percentage >= 90) return "🎉 Outstanding! You've mastered Advanced Data Structures concepts!";
+    if (percentage >= 80) return "💪 Excellent work! You're ready for technical interviews and DSA challenges!";
     if (percentage >= 70) return "👍 Good job! You have a solid foundation. Focus on areas for improvement.";
     if (percentage >= 60) return "📈 You're making progress! Keep practicing to strengthen your knowledge.";
-    return "🚀 Great start! Every cloud expert began as a beginner. Keep learning!";
+    return "🚀 Great start! Every DSA expert began as a beginner. Keep learning!";
   };
 
   const getPerformanceLevel = () => {
@@ -49,21 +49,21 @@ export default function ResultsPage() {
   const getRecommendations = () => {
     if (percentage === null) return [];
     if (percentage >= 80) return [
-      "Practice advanced scenarios and edge cases",
-      "Focus on system design trade-offs",
-      "Explore emerging cloud technologies",
+      "Practice advanced algorithms and edge cases",
+      "Focus on time/space complexity optimization",
+      "Explore advanced graph and tree algorithms",
       "Prepare for senior-level technical interviews"
     ];
     if (percentage >= 60) return [
-      "Review fundamental concepts you missed",
-      "Practice more cloud architecture patterns",
-      "Study AWS services in depth",
-      "Focus on scalability and performance topics"
+      "Review fundamental DSA concepts you missed",
+      "Practice more tree and graph problems",
+      "Study dynamic programming patterns in depth",
+      "Focus on greedy algorithms and sorting techniques"
     ];
     return [
-      "Start with system design fundamentals",
-      "Learn core cloud computing concepts",
-      "Practice basic AWS services",
+      "Start with basic data structures fundamentals",
+      "Learn core algorithm analysis concepts",
+      "Practice recursion and tree traversals",
       "Build hands-on projects to reinforce learning"
     ];
   };
@@ -81,7 +81,7 @@ export default function ResultsPage() {
             <CardTitle className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
               {isMockTest ? "Mock Test Complete!" : "Quiz Completed!"}
             </CardTitle>
-            <p className="text-gray-400">System Design & Cloud Computing Assessment</p>
+            <p className="text-gray-400">Advanced Data Structures Assessment</p>
           </CardHeader>
           <CardContent className="space-y-8">
             <div>

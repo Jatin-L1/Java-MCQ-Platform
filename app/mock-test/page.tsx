@@ -129,7 +129,7 @@ export default function MockTestPage() {
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-8">
-            ADI Exam - DSA Mock Test
+            ADI Exam - Full Mock Test
           </h1>
           <Card className="shadow-2xl border-0 bg-gray-800/80 backdrop-blur-sm p-8 mb-8">
             <CardHeader>
@@ -140,7 +140,7 @@ export default function MockTestPage() {
             </CardHeader>
             <CardContent>
               <p className="text-xl text-gray-300 mb-8">
-                This comprehensive ADI mock test simulates real exam conditions with 149 carefully selected Data Structures and Algorithms questions.
+                This comprehensive ADI mock test simulates real exam conditions with 400 carefully crafted Data Structures and Algorithms questions.
               </p>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">

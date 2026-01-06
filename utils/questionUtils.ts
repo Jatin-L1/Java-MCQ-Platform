@@ -2,18 +2,24 @@ import type { Question } from '../data/questions';
 
 export const filterQuestionsByUnit = (questions: Question[], unit: string): Question[] => {
   switch (unit) {
-    case 'docker-fundamentals':
-      return questions.filter(q => q.topic === 'Docker Fundamentals');
-    case 'docker-architecture':
-      return questions.filter(q => q.topic === 'Docker Architecture' || q.topic === 'Docker Components');
-    case 'docker-images':
-      return questions.filter(q => q.topic === 'Docker Images' || q.topic === 'Docker Registry');
-    case 'dockerfile':
-      return questions.filter(q => q.topic === 'Dockerfile');
-    case 'docker-commands':
-      return questions.filter(q => q.topic === 'Docker Commands');
-    case 'docker-volumes':
-      return questions.filter(q => q.topic === 'Docker Volumes');
+    case 'complexity-analysis':
+      return questions.filter(q => q.topic === 'Complexity' || q.topic === 'Time Complexity' || q.topic === 'Space Complexity');
+    case 'advanced-techniques':
+      return questions.filter(q => q.topic === 'Techniques' || q.topic === 'Two Pointers' || q.topic === 'Sliding Window');
+    case 'backtracking':
+      return questions.filter(q => q.topic === 'Backtracking');
+    case 'trees':
+      return questions.filter(q => q.topic === 'Trees' || q.topic === 'Binary Trees' || q.topic === 'BST' || q.topic === 'AVL');
+    case 'heaps':
+      return questions.filter(q => q.topic === 'Heaps' || q.topic === 'Priority Queue');
+    case 'greedy':
+      return questions.filter(q => q.topic === 'Greedy');
+    case 'dynamic-programming':
+      return questions.filter(q => q.topic === 'DP' || q.topic === 'Dynamic Programming');
+    case 'graphs':
+      return questions.filter(q => q.topic === 'Graphs' || q.topic === 'BFS' || q.topic === 'DFS');
+    case 'hashing':
+      return questions.filter(q => q.topic === 'Hashing' || q.topic === 'Hash Tables');
     default:
       return questions;
   }
@@ -21,91 +27,127 @@ export const filterQuestionsByUnit = (questions: Question[], unit: string): Ques
 
 export const getUnitTitle = (unit: string): string => {
   switch (unit) {
-    case 'docker-fundamentals':
-      return 'Docker Fundamentals: Introduction to Containerization';
-    case 'docker-architecture':
-      return 'Docker Architecture: Components and System Design';
-    case 'docker-images':
-      return 'Docker Images & Registry: Image Management and Distribution';
-    case 'dockerfile':
-      return 'Dockerfile: Building Custom Container Images';
-    case 'docker-commands':
-      return 'Docker Commands: Essential CLI Operations';
-    case 'docker-volumes':
-      return 'Docker Volumes: Persistent Data Management';
+    case 'complexity-analysis':
+      return 'Complexity Analysis: Time & Space Complexity Fundamentals';
+    case 'advanced-techniques':
+      return 'Advanced Techniques: Greedy, DP, Divide & Conquer';
+    case 'backtracking':
+      return 'Backtracking: Permutations, Combinations & Constraint Problems';
+    case 'trees':
+      return 'Trees: BST, AVL, Traversals & Tree Algorithms';
+    case 'heaps':
+      return 'Heaps: Priority Queues & Heap Operations';
+    case 'greedy':
+      return 'Greedy Algorithms: Optimization & Strategy Problems';
+    case 'dynamic-programming':
+      return 'Dynamic Programming: Memoization & Tabulation';
+    case 'graphs':
+      return 'Graphs: BFS, DFS, Shortest Paths & Connectivity';
+    case 'hashing':
+      return 'Hashing: Hash Tables, Collision Handling & Applications';
     default:
-      return 'Docker Quiz - Container Technology Assessment';
+      return 'ADI Quiz - Advanced Data Structures & Algorithms';
   }
 };
 
 export const getUnitDescription = (unit: string): string => {
   switch (unit) {
-    case 'docker-fundamentals':
-      return 'Learn the basics of Docker including its history, programming language, virtualization type, and core advantages for modern application development.';
-    case 'docker-architecture':
-      return 'Understand Docker\'s architecture including Docker Daemon, Docker Client, Docker Host, and how these components work together to manage containers.';
-    case 'docker-images':
-      return 'Master Docker images, registries like Docker Hub, and learn how to pull, manage, and distribute containerized applications effectively.';
-    case 'dockerfile':
-      return 'Deep dive into Dockerfile instructions including FROM, RUN, COPY, ADD, CMD, and ENTRYPOINT to build custom container images from scratch.';
-    case 'docker-commands':
-      return 'Practice essential Docker CLI commands for pulling images, running containers, executing commands, and managing Docker volumes and resources.';
-    case 'docker-volumes':
-      return 'Explore Docker volumes for persistent data storage, learn volume management commands, and understand how to maintain data across container lifecycles.';
+    case 'complexity-analysis':
+      return 'Master time and space complexity analysis including Big-O notation, Master theorem, amortized analysis, and complexity of common algorithms.';
+    case 'advanced-techniques':
+      return 'Learn advanced problem-solving techniques including greedy approaches, dynamic programming fundamentals, divide and conquer, two pointers, and sliding window.';
+    case 'backtracking':
+      return 'Explore backtracking algorithms for permutations, combinations, subsets, N-Queens, Sudoku solver, and pruning strategies for optimization.';
+    case 'trees':
+      return 'Deep dive into tree data structures including BST operations, AVL rotations, tree traversals (inorder, preorder, postorder), LCA, and tree diameter.';
+    case 'heaps':
+      return 'Understand heap data structures, min/max heaps, heapify operations, priority queues, and applications like finding median in a stream.';
+    case 'greedy':
+      return 'Practice greedy algorithms including fractional knapsack, interval scheduling, Dijkstra\'s shortest path, Prim\'s and Kruskal\'s MST algorithms.';
+    case 'dynamic-programming':
+      return 'Master DP concepts including 0/1 knapsack, LCS, matrix chain multiplication, TSP, overlapping subproblems, and optimal substructure.';
+    case 'graphs':
+      return 'Explore graph algorithms including BFS, DFS, cycle detection, topological sorting, connected components, bipartite checking, and Union-Find.';
+    case 'hashing':
+      return 'Learn hash table operations, collision handling (chaining, open addressing, double hashing), load factor, rehashing, and hash table applications.';
     default:
-      return 'Comprehensive Docker quiz covering containerization fundamentals, architecture, image management, Dockerfile syntax, CLI commands, and persistent storage.';
+      return 'Comprehensive ADI quiz covering advanced data structures, algorithms, complexity analysis, and problem-solving techniques for technical interviews.';
   }
 };
 
 export const getAllUnits = () => {
   return [
     {
-      id: 'docker-fundamentals',
-      title: 'Docker Fundamentals',
-      description: 'Introduction to Docker, its history, programming language, and core concepts',
-      questionCount: 2,
-      difficulty: 'Beginner',
-      topics: ['Docker History', 'Go Language', 'Containerization Basics', 'Docker Philosophy']
-    },
-    {
-      id: 'docker-architecture',
-      title: 'Docker Architecture',
-      description: 'Understanding Docker components and system design',
-      questionCount: 2,
-      difficulty: 'Intermediate',
-      topics: ['OS-level Virtualization', 'Docker Daemon', 'Docker Components', 'Container Management']
-    },
-    {
-      id: 'docker-images',
-      title: 'Docker Images & Registry',
-      description: 'Working with Docker images and registries',
-      questionCount: 3,
+      id: 'complexity-analysis',
+      title: 'Complexity Analysis',
+      description: 'Time & Space Complexity, Big-O, Master Theorem',
+      questionCount: 20,
       difficulty: 'Beginner to Intermediate',
-      topics: ['Docker Hub', 'Image Templates', 'Docker Pull', 'Image Distribution']
+      topics: ['Big-O Notation', 'Time Complexity', 'Space Complexity', 'Master Theorem', 'Amortized Analysis']
     },
     {
-      id: 'dockerfile',
-      title: 'Dockerfile',
-      description: 'Writing Dockerfiles to build custom container images',
-      questionCount: 3,
+      id: 'advanced-techniques',
+      title: 'Advanced Techniques',
+      description: 'Greedy, DP basics, Divide & Conquer, Two Pointers',
+      questionCount: 20,
+      difficulty: 'Intermediate',
+      topics: ['Greedy Approach', 'DP Fundamentals', 'Divide & Conquer', 'Two Pointers', 'Sliding Window']
+    },
+    {
+      id: 'backtracking',
+      title: 'Backtracking',
+      description: 'Permutations, Combinations, N-Queens, Sudoku',
+      questionCount: 25,
       difficulty: 'Intermediate to Advanced',
-      topics: ['FROM Instruction', 'ADD vs COPY', 'CMD vs ENTRYPOINT', 'Image Building']
+      topics: ['Permutations', 'Combinations', 'Subsets', 'N-Queens', 'Sudoku Solver', 'Pruning']
     },
     {
-      id: 'docker-commands',
-      title: 'Docker Commands',
-      description: 'Essential Docker CLI commands and operations',
-      questionCount: 3,
-      difficulty: 'Intermediate',
-      topics: ['docker pull', 'docker exec', 'docker volume ls', 'CLI Operations']
+      id: 'trees',
+      title: 'Trees',
+      description: 'BST, AVL, Traversals, Tree Algorithms',
+      questionCount: 30,
+      difficulty: 'Intermediate to Advanced',
+      topics: ['BST Operations', 'AVL Rotations', 'Tree Traversals', 'LCA', 'Tree Diameter', 'Binary Trees']
     },
     {
-      id: 'docker-volumes',
-      title: 'Docker Volumes',
-      description: 'Managing persistent data with Docker volumes',
-      questionCount: 2,
+      id: 'heaps',
+      title: 'Heaps',
+      description: 'Priority Queues, Heapify, Heap Operations',
+      questionCount: 18,
       difficulty: 'Intermediate',
-      topics: ['Volume Management', 'Persistent Storage', 'Data Persistence', 'Volume Commands']
+      topics: ['Min Heap', 'Max Heap', 'Heapify', 'Priority Queue', 'Heap Sort', 'Median Stream']
+    },
+    {
+      id: 'greedy',
+      title: 'Greedy Algorithms',
+      description: 'Optimization problems, MST, Shortest Paths',
+      questionCount: 22,
+      difficulty: 'Advanced',
+      topics: ['Fractional Knapsack', 'Interval Scheduling', 'Dijkstra', 'Prim\'s MST', 'Kruskal\'s MST', 'Huffman Coding']
+    },
+    {
+      id: 'dynamic-programming',
+      title: 'Dynamic Programming',
+      description: 'Memoization, Tabulation, Classic DP Problems',
+      questionCount: 25,
+      difficulty: 'Advanced',
+      topics: ['0/1 Knapsack', 'LCS', 'LIS', 'MCM', 'TSP', 'Memoization', 'Tabulation']
+    },
+    {
+      id: 'graphs',
+      title: 'Graphs',
+      description: 'BFS, DFS, Shortest Paths, MST, Connectivity',
+      questionCount: 25,
+      difficulty: 'Intermediate to Advanced',
+      topics: ['BFS', 'DFS', 'Topological Sort', 'Cycle Detection', 'Connected Components', 'Union-Find', 'Bipartite']
+    },
+    {
+      id: 'hashing',
+      title: 'Hashing',
+      description: 'Hash Tables, Collision Handling, Applications',
+      questionCount: 15,
+      difficulty: 'Intermediate',
+      topics: ['Hash Functions', 'Collision Resolution', 'Chaining', 'Open Addressing', 'Load Factor', 'Perfect Hashing']
     }
   ];
 };
