@@ -5,39 +5,25 @@ import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Brain, Code, Zap, Calculator, TreePine, ArrowUpDown, CheckCircle, BookOpen, Hash, Network, Layers } from "lucide-react";
+import { Brain, CheckCircle, Cloud, Layers, Network, Shield, Server } from "lucide-react";
 import { getAllUnits } from "@/utils/questionUtils";
+import { questions } from "@/data/questions";
 
-const iconMap = {
-  'complexity-analysis': Calculator,
-  'advanced-techniques': Zap,
-  'backtracking': Code,
-  'trees': TreePine,
-  'heaps': Layers,
-  'greedy': ArrowUpDown,
-  'dynamic-programming': BookOpen,
-  'graphs': Network,
-  'hashing': Hash
-};
+const iconPalette = [Cloud, Server, Shield, Layers, Network, Brain];
 
 export default function QuizSelectionPage() {
   const units = getAllUnits();
 
-  // Split units into categories for better organization
-  const fundamentalUnits = units.slice(0, 3); // Complexity, Techniques, Backtracking
-  const dataStructureUnits = units.slice(3, 6); // Trees, Heaps, Greedy
-  const advancedUnits = units.slice(6); // DP, Graphs, Hashing
-
-  const renderUnitCard = (unit: any) => {
-    const IconComponent = iconMap[unit.id as keyof typeof iconMap] || Brain;
+  const renderUnitCard = (unit: any, index: number) => {
+    const IconComponent = iconPalette[index % iconPalette.length];
     
     return (
-      <Card key={unit.id} className="hover:shadow-lg transition-all duration-300 border-l-4 border-l-purple-500">
+      <Card key={unit.id} className="hover:shadow-xl transition-all duration-300 border border-slate-200 bg-white/90 backdrop-blur">
         <CardHeader>
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="p-2 bg-purple-100 rounded-lg">
-                <IconComponent className="h-6 w-6 text-purple-600" />
+              <div className="p-2 bg-cyan-100 rounded-lg">
+                <IconComponent className="h-6 w-6 text-cyan-700" />
               </div>
               <div>
                 <CardTitle className="text-lg">{unit.title}</CardTitle>
@@ -56,19 +42,6 @@ export default function QuizSelectionPage() {
               <Badge variant="outline">{unit.difficulty}</Badge>
             </div>
             
-            <div className="flex flex-wrap gap-1">
-              {unit.topics.slice(0, 3).map((topic: string, index: number) => (
-                <Badge key={index} variant="secondary" className="text-xs">
-                  {topic}
-                </Badge>
-              ))}
-              {unit.topics.length > 3 && (
-                <Badge variant="secondary" className="text-xs">
-                  +{unit.topics.length - 3} more
-                </Badge>
-              )}
-            </div>
-            
             <Link href={`/quiz/${unit.id}`} className="block">
               <Button className="w-full mt-4">
                 Start Practice
@@ -82,105 +55,55 @@ export default function QuizSelectionPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-100 py-12">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_10%_20%,#60a5fa33,transparent_30%),radial-gradient(circle_at_85%_15%,#22d3ee29,transparent_30%),linear-gradient(140deg,#e0f2fe,#f8fafc_50%,#f0f9ff)] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Advanced Data Structures - Practice Modules
+          <h1 className="text-4xl font-bold text-slate-900 mb-4">
+            Cloud Quiz Practice Modules
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Master Advanced Data Structures with our comprehensive quiz modules. 
-            400+ PYQ-style questions covering Complexity Analysis, Advanced Techniques, Trees, Heaps, Greedy, DP, Graphs, Hashing, and more.
+            Choose a specific topic or solve everything in one run. Built for fast practice, instant feedback, and clear progress.
           </p>
           
-          {/* Practice All Questions Button */}
           <div className="mt-8">
             <Link href="/quiz/all">
-              <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg">
+              <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white shadow-lg">
                 <Brain className="mr-3 h-6 w-6" />
-                Practice All 400 Questions Together
+                Practice All {questions.length} Questions
               </Button>
             </Link>
           </div>
           
-          <div className="mt-6 text-gray-500">
-            <p>Or practice by specific topics below:</p>
+          <div className="mt-6 text-gray-500 text-sm">
+            <p>{units.length} topics available</p>
           </div>
         </div>
 
-        {/* Fundamental Concepts Section */}
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
-              <Brain className="mr-3 h-8 w-8 text-purple-600" />
-              Fundamentals & Analysis
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Build strong foundations with complexity analysis, advanced techniques, and backtracking algorithms.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {fundamentalUnits.map(renderUnitCard)}
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {units.map((unit, index) => renderUnitCard(unit, index))}
         </div>
 
-        {/* Data Structures Section */}
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
-              <Code className="mr-3 h-8 w-8 text-blue-600" />
-              Core Data Structures
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Master essential data structures including trees, heaps, and greedy algorithm strategies.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {dataStructureUnits.map(renderUnitCard)}
-          </div>
-        </div>
-
-        {/* Advanced Algorithms Section */}
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center">
-              <Zap className="mr-3 h-8 w-8 text-green-600" />
-              Advanced Algorithms
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Tackle advanced topics including dynamic programming, graph algorithms, and hashing techniques.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {advancedUnits.map(renderUnitCard)}
-          </div>
-        </div>
-
-        {/* Mock Test Section */}
         <div className="text-center">
-          <Card className="max-w-2xl mx-auto bg-gradient-to-r from-purple-50 to-blue-50 border-purple-200">
+          <Card className="max-w-2xl mx-auto bg-gradient-to-r from-cyan-50 to-blue-50 border-cyan-200">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center justify-center">
-                <CheckCircle className="mr-3 h-8 w-8 text-purple-600" />
-                Ready for the ADI Challenge?
+                <CheckCircle className="mr-3 h-8 w-8 text-cyan-700" />
+                Ready for a Full Mock?
               </CardTitle>
               <CardDescription className="text-lg">
-                Test your DSA knowledge with our comprehensive ADI mock test featuring questions from all topics
+                Simulate test pressure with a timed run across all topics
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="flex justify-center space-x-6 text-sm text-gray-600">
-                  <span>• 400 Questions</span>
+                  <span>• {questions.length} Questions</span>
                   <span>• Timed Environment</span>
                   <span>• Detailed Explanations</span>
                 </div>
                 <Link href="/mock-test">
-                  <Button size="lg" className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-                    Take ADI Mock Test
+                  <Button size="lg" className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700">
+                    Start Mock Test
                   </Button>
                 </Link>
               </div>

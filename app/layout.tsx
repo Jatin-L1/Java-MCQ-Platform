@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ADI Exam Preparation - Data Structures & Algorithms Practice Platform',
-  description: 'Master Data Structures and Algorithms with 149 comprehensive questions for ADI exam preparation. Practice complexity analysis, algorithmic paradigms, problem-solving techniques, and advanced DSA concepts.',
-  generator: 'ADI Exam Preparation Platform',
-  keywords: 'ADI exam, data structures, algorithms, complexity analysis, recursion, dynamic programming, greedy algorithms, DSA practice, technical interviews, algorithmic thinking',
+  title: 'Cloud Quiz Platform - Practice and Mock Tests',
+  description: 'Practice cloud computing concepts with topic-wise quizzes, instant feedback, and full timed mock tests.',
+  generator: 'Cloud Quiz Platform',
+  keywords: 'cloud computing quiz, AWS practice, IAM, EC2, S3, networking, virtualization, mock test',
   authors: [{ name: 'Jatin Sharma' }],
   creator: 'Jatin Sharma',
 }

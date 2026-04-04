@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Home, RotateCcw, Trophy, Target, Brain, Cloud } from "lucide-react";
+import { CheckCircle, Home, RotateCcw, Trophy, Target, Brain, Cloud, Medal } from "lucide-react";
 
 export default function ResultsPage() {
   const searchParams = useSearchParams();
@@ -22,17 +22,41 @@ export default function ResultsPage() {
     if (scoreParam) setScore(parseInt(scoreParam));
     if (totalParam) setTotal(parseInt(totalParam));
     if (mode === "mock") setIsMockTest(true);
+
+    if (scoreParam && totalParam && mode === "mock") {
+      const parsedScore = parseInt(scoreParam);
+      const parsedTotal = parseInt(totalParam);
+      const percentageValue = Math.round((parsedScore / parsedTotal) * 100);
+      const previous = localStorage.getItem("mockLeaderboard");
+      const entries = previous ? JSON.parse(previous) : [];
+
+      entries.push({
+        score: parsedScore,
+        total: parsedTotal,
+        percentage: percentageValue,
+        createdAt: new Date().toISOString()
+      });
+
+      const sorted = entries
+        .sort((a: any, b: any) => {
+          if (b.percentage !== a.percentage) return b.percentage - a.percentage;
+          return b.score - a.score;
+        })
+        .slice(0, 20);
+
+      localStorage.setItem("mockLeaderboard", JSON.stringify(sorted));
+    }
   }, [searchParams]);
 
   const percentage = score !== null && total !== null ? Math.round((score / total) * 100) : null;
   
   const getScoreMessage = () => {
     if (percentage === null) return "";
-    if (percentage >= 90) return "🎉 Outstanding! You've mastered Advanced Data Structures concepts!";
-    if (percentage >= 80) return "💪 Excellent work! You're ready for technical interviews and DSA challenges!";
-    if (percentage >= 70) return "👍 Good job! You have a solid foundation. Focus on areas for improvement.";
-    if (percentage >= 60) return "📈 You're making progress! Keep practicing to strengthen your knowledge.";
-    return "🚀 Great start! Every DSA expert began as a beginner. Keep learning!";
+    if (percentage >= 90) return "Outstanding. You have strong command over cloud concepts.";
+    if (percentage >= 80) return "Excellent work. You're highly test-ready.";
+    if (percentage >= 70) return "Good job. Your foundation is solid, with room to refine.";
+    if (percentage >= 60) return "You are progressing well. Keep practicing to improve accuracy.";
+    return "Great start. Stay consistent and review weak areas.";
   };
 
   const getPerformanceLevel = () => {
@@ -81,7 +105,7 @@ export default function ResultsPage() {
             <CardTitle className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
               {isMockTest ? "Mock Test Complete!" : "Quiz Completed!"}
             </CardTitle>
-            <p className="text-gray-400">Advanced Data Structures Assessment</p>
+              <p className="text-gray-400">Cloud Computing Assessment</p>
           </CardHeader>
           <CardContent className="space-y-8">
             <div>
@@ -140,6 +164,12 @@ export default function ResultsPage() {
               <Link href={isMockTest ? "/quiz" : "/mock-test"}>
                 <Button variant="outline" className="w-full sm:w-auto px-8 py-3 border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white">
                   {isMockTest ? "Practice Mode" : "Mock Test"}
+                </Button>
+              </Link>
+              <Link href="/leaderboard">
+                <Button variant="outline" className="w-full sm:w-auto px-8 py-3 border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white">
+                  <Medal className="mr-2 h-5 w-5" />
+                  Leaderboard
                 </Button>
               </Link>
             </div>

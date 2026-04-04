@@ -18,7 +18,7 @@ export default function QuizPage() {
   
   // If unit is "all", show all questions, otherwise filter by unit
   const unitQuestions = unitParam === 'all' ? questions : filterQuestionsByUnit(questions, unitParam);
-  const unitTitle = unitParam === 'all' ? 'Docker Quiz - All Questions' : getUnitTitle(unitParam);
+  const unitTitle = unitParam === 'all' ? 'All Topics Practice' : getUnitTitle(unitParam);
   
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -106,7 +106,7 @@ export default function QuizPage() {
     // Check if correct and update score
     const isCorrect = selectedOption === currentQuestion.correctAnswer;
     if (isCorrect) {
-      setScore(score + 1);
+      setScore((prev) => prev + 1);
     }
     
     setShowFeedback(true);
@@ -160,9 +160,9 @@ export default function QuizPage() {
     };
     
     const getPerformanceMessage = () => {
-      if (percentage >= 80) return "🎉 Excellent! You've mastered this DSA topic for the ADI exam!";
-      if (percentage >= 60) return "👍 Good job! Keep practicing to improve your DSA skills further.";
-      return "📚 Keep studying! More DSA practice will help you excel in the ADI exam.";
+      if (percentage >= 80) return "Excellent work. Your cloud fundamentals look strong.";
+      if (percentage >= 60) return "Good progress. Keep practicing to sharpen consistency.";
+      return "Strong start. Keep going and review missed topics for a big jump.";
     };
 
     return (
@@ -232,7 +232,7 @@ export default function QuizPage() {
               <h1 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                 {unitTitle}
               </h1>
-              <p className="text-sm text-gray-400">Data Structures & Algorithms - ADI Exam</p>
+              <p className="text-sm text-gray-400">Cloud Computing Practice Mode</p>
             </div>
           </div>
           <div className="flex items-center space-x-4">

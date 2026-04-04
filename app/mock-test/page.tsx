@@ -17,6 +17,9 @@ export default function MockTestPage() {
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
   const [timeLeft, setTimeLeft] = useState(QUESTION_TIME);
   const [testActive, setTestActive] = useState(false);
+  const totalQuestions = questions.length;
+  const estimatedMinutes = totalQuestions * 2;
+  const estimatedHours = (estimatedMinutes / 60).toFixed(1);
 
   // Load saved state from localStorage on component mount
   useEffect(() => {
@@ -129,44 +132,44 @@ export default function MockTestPage() {
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-8">
-            ADI Exam - Full Mock Test
+            Cloud Computing - Full Mock Test
           </h1>
           <Card className="shadow-2xl border-0 bg-gray-800/80 backdrop-blur-sm p-8 mb-8">
             <CardHeader>
               <div className="mx-auto w-20 h-20 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full flex items-center justify-center mb-6 border border-purple-500/20">
                 <Clock className="h-10 w-10 text-purple-400" />
               </div>
-              <CardTitle className="text-3xl text-white mb-4">Ready to Test Your DSA Knowledge?</CardTitle>
+              <CardTitle className="text-3xl text-white mb-4">Ready to Test Your Cloud Knowledge?</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-xl text-gray-300 mb-8">
-                This comprehensive ADI mock test simulates real exam conditions with 400 carefully crafted Data Structures and Algorithms questions.
+                This timed mock test simulates exam conditions using your full cloud question bank.
               </p>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="p-6 rounded-xl bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20">
-                  <h3 className="text-xl font-bold text-purple-400 mb-4">Fundamental Concepts</h3>
+                  <h3 className="text-xl font-bold text-purple-400 mb-4">Core Cloud Concepts</h3>
                   <ul className="text-left space-y-2 text-gray-300">
-                    <li>• Complexity analysis & Big-O notation</li>
-                    <li>• Recursion vs iterative approaches</li>
-                    <li>• Problem-solving techniques</li>
-                    <li>• Number theory & mathematical algorithms</li>
+                    <li>• Cloud architecture and deployment models</li>
+                    <li>• Virtualization and shared responsibility</li>
+                    <li>• IAM and access control</li>
+                    <li>• AWS service fundamentals</li>
                   </ul>
                 </div>
                 
                 <div className="p-6 rounded-xl bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20">
-                  <h3 className="text-xl font-bold text-blue-400 mb-4">Advanced Algorithms</h3>
+                  <h3 className="text-xl font-bold text-blue-400 mb-4">Hands-on Services</h3>
                   <ul className="text-left space-y-2 text-gray-300">
-                    <li>• Greedy & dynamic programming</li>
-                    <li>• Backtracking & randomized algorithms</li>
-                    <li>• Two-pointer & sliding window techniques</li>
-                    <li>• Data structures & sorting algorithms</li>
+                    <li>• Compute, storage, and networking</li>
+                    <li>• Containers and orchestration</li>
+                    <li>• Security controls and policies</li>
+                    <li>• High availability and scaling</li>
                   </ul>
                 </div>
               </div>
               
               <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-xl p-6 mb-8">
-                <h4 className="text-lg font-semibold text-yellow-400 mb-3">⚠️ ADI Mock Test Guidelines</h4>
+                <h4 className="text-lg font-semibold text-yellow-400 mb-3">Mock Test Guidelines</h4>
                 <ul className="text-left space-y-2 text-gray-300 text-sm">
                   <li>• Each question has a 2-minute time limit</li>
                   <li>• Questions automatically advance when time expires</li>
@@ -178,10 +181,10 @@ export default function MockTestPage() {
 
               <div className="text-center space-y-4">
                 <p className="text-gray-300">
-                  <strong className="text-purple-400">149 DSA questions</strong> • Estimated time: <strong className="text-blue-400">5 hours</strong>
+                  <strong className="text-purple-400">{totalQuestions} questions</strong> • Estimated time: <strong className="text-blue-400">{estimatedHours} hours</strong>
                 </p>
                 <p className="text-sm text-gray-400">
-                  Perfect for ADI exam preparation and technical interview practice
+                  Great for revision, speed drills, and readiness checks
                 </p>
               </div>
             </CardContent>
@@ -192,7 +195,7 @@ export default function MockTestPage() {
                   Back to Home
                 </Button>
                 <Button onClick={startTest} size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-                  Start ADI Mock Test
+                  Start Mock Test
                 </Button>
               </div>
             </CardFooter>
@@ -207,11 +210,11 @@ export default function MockTestPage() {
       <div className="max-w-4xl mx-auto px-4">
         <div className="flex justify-between items-center mb-6 bg-gray-800/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-700">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Docker Quiz - Mock Test
+            Cloud Quiz - Mock Test
           </h1>
           <div className="flex items-center space-x-4">
             <span className="text-sm font-medium text-gray-400">
-              Question {currentQuestionIndex + 1} of {questions.length}
+              Question {currentQuestionIndex + 1} of {totalQuestions}
             </span>
             <span className={`text-sm font-medium ${timeLeft <= 30 ? 'text-red-400' : 'text-orange-400'}`}>
               Time Left: {formatTime(timeLeft)}
