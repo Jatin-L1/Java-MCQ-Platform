@@ -4208,5 +4208,1545 @@ export const questions: Question[] = [
     "explanation": "The correct answer is Level traversal. Tags: BFS Shortest Path.",
     "topic": "Graphs",
     "difficulty": "easy"
+  },
+  {
+    "question": "What does Big O notation represent in algorithm analysis?",
+    "options": [
+      "Best-case complexity",
+      "Average-case complexity",
+      "Worst-case complexity",
+      "All of the above"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Worst-case complexity",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 301
+  },
+  {
+    "question": "Which of the following is NOT an asymptotic notation used to describe algorithm complexity?",
+    "options": [
+      "O (Big O)",
+      "Θ (Theta)",
+      "σ (Sigma)",
+      "Ω (Omega)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is σ (Sigma)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 302
+  },
+  {
+    "question": "Which asymptotic notation represents the tight bound of an algorithm's complexity?",
+    "options": [
+      "ω (Omega)",
+      "Ω (Omega)",
+      "Θ (Theta)",
+      "O (Big O)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Θ (Theta)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 303
+  },
+  {
+    "question": "What does Ω (Omega) notation represent?",
+    "options": [
+      "Lower bound complexity",
+      "Average-case complexity",
+      "Worst-case complexity",
+      "None of these"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Lower bound complexity",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 304
+  },
+  {
+    "question": "If an algorithm's time complexity is O(n^2), which of the following statements is true?",
+    "options": [
+      "The algorithm runs in polynomial time.",
+      "The algorithm runs in linear time.",
+      "The algorithm runs in exponential time.",
+      "The algorithm runs in logarithmic time."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is The algorithm runs in polynomial time.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 305
+  },
+  {
+    "question": "Which of the following is true regarding the relationship between O (Big O) and Θ (Theta) notation?",
+    "options": [
+      "O and Θ are equivalent",
+      "Θ is a subset of O",
+      "There is no relationship between O and Θ",
+      "O is a subset of Θ"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Θ is a subset of O",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 306
+  },
+  {
+    "question": "What does o (little o) notation represent?",
+    "options": [
+      "Upper bound complexity",
+      "Lower bound complexity",
+      "Tight bound complexity",
+      "Exact complexity"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Upper bound complexity",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 307
+  },
+  {
+    "question": "Which notation is used to represent the best-case time complexity of an algorithm?",
+    "options": [
+      "Ω (Omega)",
+      "Θ (Theta)",
+      "O (Big O)",
+      "None of the above"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Ω (Omega)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 308
+  },
+  {
+    "question": "If an algorithm's time complexity is O(log n), what can be said about its efficiency?",
+    "options": [
+      "It grows linearly with the input size.",
+      "It grows polynomially with the input size.",
+      "It grows exponentially with the input size.",
+      "It grows logarithmically with the input size."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is It grows logarithmically with the input size.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 309
+  },
+  {
+    "question": "Which of the following notations represents the upper bound complexity of an algorithm?",
+    "options": [
+      "Ω (Omega)",
+      "ω (Omega)",
+      "Θ (Theta)",
+      "O (Big O)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is O (Big O)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 310
+  },
+  {
+    "question": "What is the space complexity of an algorithm?",
+    "options": [
+      "The time required by the algorithm to execute",
+      "The amount of memory required by the algorithm to execute",
+      "The efficiency of the algorithm",
+      "The number of steps required by the algorithm to execute"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is The amount of memory required by the algorithm to execute",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 311
+  },
+  {
+    "question": "Which of the following is NOT true about the Big O notation?",
+    "options": [
+      "It describes the worst-case scenario of an algorithm.",
+      "It represents the upper bound of an algorithm's time complexity.",
+      "It is often used to compare the efficiency of algorithms.",
+      "It provides an exact measure of the running time of an algorithm."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is It provides an exact measure of the running time of an algorithm.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 312
+  },
+  {
+    "question": "Which notation is used to represent the average-case time complexity of an algorithm?",
+    "options": [
+      "Θ (Theta)",
+      "None of the above",
+      "Ω (Omega)",
+      "O (Big O)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Θ (Theta)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 313
+  },
+  {
+    "question": "What does it mean if an algorithm's time complexity is O(1)?",
+    "options": [
+      "It runs in exponential time.",
+      "It runs in constant time regardless of input size.",
+      "It runs in logarithmic time.",
+      "It runs in linear time."
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is It runs in constant time regardless of input size.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 314
+  },
+  {
+    "question": "Which of the following asymptotic notations represents an upper bound but not necessarily the tightest bound?",
+    "options": [
+      "Θ (Theta)",
+      "o (little o)",
+      "O (Big O)",
+      "Ω (Omega)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is O (Big O)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 315
+  },
+  {
+    "question": "What does Θ (Theta) notation represent?",
+    "options": [
+      "Average-case complexity",
+      "Worst-case complexity",
+      "Best-case complexity",
+      "Tight bound complexity"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Tight bound complexity",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 316
+  },
+  {
+    "question": "If an algorithm's time complexity is O(2^n), what can be said about its efficiency?",
+    "options": [
+      "It grows linearly with the input size.",
+      "It grows polynomially with the input size.",
+      "It grows exponentially with the input size.",
+      "It grows logarithmically with the input size."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is It grows exponentially with the input size.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 317
+  },
+  {
+    "question": "Which of the following notations represents the lower bound complexity of an algorithm?",
+    "options": [
+      "Θ (Theta)",
+      "Ω (Omega)",
+      "O (Big O)",
+      "ω (Omega)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Ω (Omega)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 318
+  },
+  {
+    "question": "What does it mean if an algorithm's space complexity is O(n)?",
+    "options": [
+      "It uses constant space.",
+      "It uses linear space.",
+      "It uses exponential space.",
+      "It uses logarithmic space."
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is It uses linear space.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 319
+  },
+  {
+    "question": "What is the time complexity of the best-case scenario often used for?",
+    "options": [
+      "It represents the most efficient scenario.",
+      "It represents the typical behavior of the algorithm.",
+      "It represents the worst possible performance of the algorithm.",
+      "It represents the average performance of the algorithm."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is It represents the most efficient scenario.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 320
+  },
+  {
+    "question": "Which notation is used to represent the average-case space complexity of an algorithm?",
+    "options": [
+      "Θ (Theta)",
+      "O (Big O)",
+      "None of the above",
+      "Ω (Omega)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Θ (Theta)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 321
+  },
+  {
+    "question": "If an algorithm's time complexity is O(n!), what can be said about its efficiency?",
+    "options": [
+      "It grows factorially with the input size.",
+      "It grows logarithmically with the input size.",
+      "It grows exponentially with the input size.",
+      "It grows linearly with the input size."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is It grows factorially with the input size.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 322
+  },
+  {
+    "question": "Which notation is used to represent the worse and best-case time complexity of an algorithm?",
+    "options": [
+      "Both a and b",
+      "Θ (Theta)",
+      "O (Big O)",
+      "Ω (Omega)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Both a and b",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 323
+  },
+  {
+    "question": "Which of the following statements about space complexity is correct?",
+    "options": [
+      "Space complexity measures the number of operations performed by an algorithm.",
+      "Space complexity measures the amount of input data required by an algorithm.",
+      "Space complexity measures the amount of memory required by an algorithm.",
+      "Space complexity measures the time required by an algorithm to execute."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Space complexity measures the amount of memory required by an algorithm.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 324
+  },
+  {
+    "question": "What does it mean if an algorithm's time complexity is O(log log n)?",
+    "options": [
+      "It grows exponentially with the input size.",
+      "It grows linearly with the input size.",
+      "It grows doubly logarithmically with the input size.",
+      "It grows logarithmically with the input size."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is It grows doubly logarithmically with the input size.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 325
+  },
+  {
+    "question": "Which of the following statements regarding the relationship between Ω (Omega) and ω (omega) notations is true?",
+    "options": [
+      "Ω and ω are equivalent.",
+      "ω is a subset of Ω.",
+      "Ω is a subset of ω.",
+      "There is no relationship between Ω and ω."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Ω is a subset of ω.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 326
+  },
+  {
+    "question": "If an algorithm's space complexity is O(1), what can be said about its memory usage?",
+    "options": [
+      "It uses logarithmic memory.",
+      "It uses linear memory.",
+      "It uses constant memory regardless of input size.",
+      "It uses exponential memory."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is It uses constant memory regardless of input size.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 327
+  },
+  {
+    "question": "Which of the following notations represents the lower bound but not necessarily the tightest bound?",
+    "options": [
+      "Ω (Omega)",
+      "Θ (Theta)",
+      "O (Big O)",
+      "o (little o)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Ω (Omega)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 328
+  },
+  {
+    "question": "What is the relationship between Ω (Omega) and O (Big O) notations?",
+    "options": [
+      "O is a subset of Ω.",
+      "Ω is a subset of O.",
+      "Ω and O are equivalent.",
+      "There is no relationship between Ω and O."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is There is no relationship between Ω and O.",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 329
+  },
+  {
+    "question": "What is an array?",
+    "options": [
+      "A tree-like data structure",
+      "A linear data structure",
+      "A non-linear data structure",
+      "A hierarchical data structure"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is A linear data structure",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 330
+  },
+  {
+    "question": "Which of the following best describes the representation of linear arrays in memory?",
+    "options": [
+      "Contiguous allocation",
+      "Random allocation",
+      "Sparse allocation",
+      "Linked allocation"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Contiguous allocation",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 331
+  },
+  {
+    "question": "In a one-dimensional array, if the array elements are stored at contiguous memory locations, what is the formula to access the ith element?",
+    "options": [
+      "base_address - i",
+      "base_address + i",
+      "base_address * i",
+      "base_address / i"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is base_address + i",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 332
+  },
+  {
+    "question": "What is the time complexity of accessing an element in an array given its index?",
+    "options": [
+      "O(n^2)",
+      "O(n)",
+      "O(1)",
+      "O(log n)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is O(1)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 333
+  },
+  {
+    "question": "Which traversal technique is used to visit each element of an array exactly once?",
+    "options": [
+      "Breadth-First Traversal",
+      "Linear Traversal",
+      "Pre-order Traversal",
+      "Depth-First Traversal"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Linear Traversal",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 334
+  },
+  {
+    "question": "What is the worst-case time complexity of linearly traversing an array of size n?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n^2)",
+      "O(n)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is O(n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 335
+  },
+  {
+    "question": "What is the process of adding an element to the end of an array called?",
+    "options": [
+      "Appending",
+      "Deletion",
+      "Insertion",
+      "Concatenation"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Appending",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 336
+  },
+  {
+    "question": "What is the time complexity of appending an element to the end of an array with n elements, assuming sufficient space is available?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is O(1)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 337
+  },
+  {
+    "question": "Which of the following is an advantage of using arrays for storage?",
+    "options": [
+      "Efficient random access",
+      "Dynamic resizing",
+      "Recursive traversal",
+      "Automatic memory management"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Efficient random access",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 338
+  },
+  {
+    "question": "In an array with n elements, if an element is to be inserted at the kth position (0 <= k <= n), what is the worst-case time complexity?",
+    "options": [
+      "O(n^2)",
+      "O(1)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is O(n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 339
+  },
+  {
+    "question": "What is the process of removing an element from an array called?",
+    "options": [
+      "Extraction",
+      "Removal",
+      "Deletion",
+      "Displacement"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Deletion",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 340
+  },
+  {
+    "question": "What is the time complexity of deleting an element from the end of an array with n elements?",
+    "options": [
+      "O(log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(1)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is O(1)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 341
+  },
+  {
+    "question": "Which of the following is a disadvantage of using arrays for storage?",
+    "options": [
+      "Recursive traversal",
+      "Inefficient random access",
+      "Automatic memory management",
+      "Dynamic resizing"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Dynamic resizing",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 342
+  },
+  {
+    "question": "Which of the following traversal techniques is commonly used for searching elements in an array?",
+    "options": [
+      "Linear traversal",
+      "Pre-order traversal",
+      "In-order traversal",
+      "Post-order traversal"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Linear traversal",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 343
+  },
+  {
+    "question": "What is the index of the last element in an array with n elements?",
+    "options": [
+      "n",
+      "n+1",
+      "n/2",
+      "n-1"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is n-1",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 344
+  },
+  {
+    "question": "What is the primary disadvantage of using static arrays?",
+    "options": [
+      "Inefficient random access",
+      "Dynamic resizing",
+      "Automatic memory management",
+      "Fixed size"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Fixed size",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 345
+  },
+  {
+    "question": "Which of the following operations can be performed efficiently on a sorted array?",
+    "options": [
+      "Appending",
+      "Deletion",
+      "Insertion",
+      "Searching"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Searching",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 346
+  },
+  {
+    "question": "What is the primary advantage of using dynamic arrays over static arrays?",
+    "options": [
+      "Fixed size",
+      "Efficient random access",
+      "Automatic memory management",
+      "Dynamic resizing"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Dynamic resizing",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 347
+  },
+  {
+    "question": "Which of the following is an example of a linear data structure?",
+    "options": [
+      "Array",
+      "Heap",
+      "Hash table",
+      "Binary tree"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Array",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 348
+  },
+  {
+    "question": "What is the time complexity of searching for an element in an unsorted array with n elements?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n^2)",
+      "O(n)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is O(n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 349
+  },
+  {
+    "question": "In a two-dimensional array, what does the first index represent?",
+    "options": [
+      "Depth",
+      "Row",
+      "Height",
+      "Column"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Row",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 350
+  },
+  {
+    "question": "What is the time complexity of inserting an element at the beginning of an array with n elements?",
+    "options": [
+      "O(n)",
+      "O(n^2)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is O(n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 351
+  },
+  {
+    "question": "Which of the following is an advantage of using arrays over linked lists?",
+    "options": [
+      "Constant time access to elements",
+      "Efficient insertion and deletion",
+      "Dynamic resizing",
+      "Automatic memory management"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Constant time access to elements",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 352
+  },
+  {
+    "question": "In a sparse array, what is the ratio of non-zero elements to the total number of elements?",
+    "options": [
+      "Greater than 1",
+      "Equal to 1",
+      "Cannot be determined",
+      "Less than 1"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Less than 1",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 353
+  },
+  {
+    "question": "Which of the following is not a valid method to traverse an array?",
+    "options": [
+      "Linear traversal",
+      "Reverse traversal",
+      "Depth-first traversal",
+      "Breadth-first traversal"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Breadth-first traversal",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 354
+  },
+  {
+    "question": "What is the time complexity of appending an element to a dynamic array that needs resizing?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is O(n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 355
+  },
+  {
+    "question": "Which of the following is a disadvantage of using arrays over linked lists?",
+    "options": [
+      "Inefficient insertion and deletion",
+      "Dynamic resizing",
+      "Fixed size",
+      "Efficient random access"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Fixed size",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 356
+  },
+  {
+    "question": "Which of the following statements is true about multidimensional arrays?",
+    "options": [
+      "All dimensions must be of the same size.",
+      "Each dimension can have a different size.",
+      "Multidimensional arrays are always dynamically resizable.",
+      "Multidimensional arrays cannot be implemented in programming languages."
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Each dimension can have a different size.",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 357
+  },
+  {
+    "question": "What is the time complexity of deleting an element from the middle of an array with n elements?",
+    "options": [
+      "O(log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(1)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is O(n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 358
+  },
+  {
+    "question": "Which data structure is most suitable for implementing a stack?",
+    "options": [
+      "Array",
+      "Linked list",
+      "Queue",
+      "Heap"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Linked list",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 359
+  },
+  {
+    "question": "What is the time complexity of binary search in the worst-case scenario?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n^2)",
+      "O(1)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is O(log n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 360
+  },
+  {
+    "question": "Which search algorithm requires the elements to be in sorted order?",
+    "options": [
+      "Neither",
+      "Linear Search",
+      "Binary Search",
+      "Both"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Binary Search",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 361
+  },
+  {
+    "question": "In which search algorithm, the elements can be in any order?",
+    "options": [
+      "Neither",
+      "Both",
+      "Binary Search",
+      "Linear Search"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Linear Search",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 362
+  },
+  {
+    "question": "What is the best-case time complexity of linear search?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n^2)",
+      "O(n)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is O(1)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 363
+  },
+  {
+    "question": "In binary search, at each step, the search range is reduced by approximately what factor?",
+    "options": [
+      "0.5",
+      "2",
+      "4",
+      "0.25"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is 2",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 364
+  },
+  {
+    "question": "Which of the following data structures is most suitable for binary search?",
+    "options": [
+      "Linked List",
+      "Queue",
+      "Array",
+      "Stack"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Array",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 365
+  },
+  {
+    "question": "Which search algorithm is not applicable for unsorted arrays?",
+    "options": [
+      "Binary Search",
+      "Neither",
+      "Both",
+      "Linear Search"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Binary Search",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 366
+  },
+  {
+    "question": "What is the space complexity of binary search?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n^2)",
+      "O(n)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is O(1)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 367
+  },
+  {
+    "question": "Which of the following is not a requirement for binary search to work correctly?",
+    "options": [
+      "Elements must be integers",
+      "Elements must be unique",
+      "Elements must be comparable",
+      "Elements must be sorted"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Elements must be integers",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 368
+  },
+  {
+    "question": "What is the primary advantage of binary search over linear search?",
+    "options": [
+      "Simplicity",
+      "Suitable for unsorted arrays",
+      "Requires less memory",
+      "Lower time complexity"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Lower time complexity",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 369
+  },
+  {
+    "question": "In which case does linear search perform better than binary search?",
+    "options": [
+      "When the array is large",
+      "When the array is sorted",
+      "When the array is small",
+      "When the array contains duplicate elements"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is When the array is large",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 370
+  },
+  {
+    "question": "What is the worst-case scenario for binary search when the target element is not present in the array?",
+    "options": [
+      "It goes into an infinite loop",
+      "It returns a random index",
+      "It returns -1",
+      "It continues until the array is exhausted"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is It continues until the array is exhausted",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 371
+  },
+  {
+    "question": "Binary search can be implemented recursively or iteratively. Which one is preferred and why?",
+    "options": [
+      "Recursively, for better performance",
+      "Recursively, for better memory usage",
+      "Iteratively, for better memory usage",
+      "Iteratively, for better performance"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Iteratively, for better performance",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 372
+  },
+  {
+    "question": "In binary search, how many comparisons are made in the worst-case scenario for an array of size 16?",
+    "options": [
+      "12",
+      "16",
+      "4",
+      "8"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is 4",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 373
+  },
+  {
+    "question": "Which search algorithm is more suitable for searching through a phonebook?",
+    "options": [
+      "Linear Search",
+      "Neither",
+      "Binary Search",
+      "Both"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Linear Search",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 374
+  },
+  {
+    "question": "Which of the following statements is true about the time complexity of linear search?",
+    "options": [
+      "It is always O(log n)",
+      "It is always O(n^2)",
+      "It can be O(1) in the best case",
+      "It is always O(n)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is It is always O(n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 375
+  },
+  {
+    "question": "In binary search, what is the purpose of sorting the array?",
+    "options": [
+      "Sorting is not necessary",
+      "To reduce memory usage",
+      "To make the algorithm easier to implement",
+      "To reduce the number of comparisons"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is To reduce the number of comparisons",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 376
+  },
+  {
+    "question": "Which search algorithm exhibits a linear growth in time complexity with the size of the input?",
+    "options": [
+      "Linear Search",
+      "Both",
+      "Binary Search",
+      "Neither"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Linear Search",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 377
+  },
+  {
+    "question": "In binary search, what happens if the array is not sorted?",
+    "options": [
+      "The algorithm fails",
+      "The time complexity becomes O(n)",
+      "It still works correctly",
+      "The time complexity becomes O(log n)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is The algorithm fails",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 378
+  },
+  {
+    "question": "Which search algorithm is more suitable for searching through a sorted list of names?",
+    "options": [
+      "Neither",
+      "Both",
+      "Linear Search",
+      "Binary Search"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Binary Search",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 379
+  },
+  {
+    "question": "In binary search, the array is repeatedly divided into two halves. What is the time complexity of this operation?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is O(log n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 380
+  },
+  {
+    "question": "In binary search, how many comparisons are made in the worst-case scenario for an array of size 32?",
+    "options": [
+      "6",
+      "8",
+      "7",
+      "5"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is 5",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 381
+  },
+  {
+    "question": "Which search algorithm is used by most modern databases for searching through indexes?",
+    "options": [
+      "Both",
+      "Neither",
+      "Binary Search",
+      "Linear Search"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Binary Search",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 382
+  },
+  {
+    "question": "In binary search, after each comparison, what is the next step?",
+    "options": [
+      "Check if the element is found",
+      "Move to the next element",
+      "Update the search range",
+      "Divide the array into two halves"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Update the search range",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 383
+  },
+  {
+    "question": "In binary search, if the target element is found, what is the time complexity?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is O(1)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 384
+  },
+  {
+    "question": "Which search algorithm is more suitable for searching through a large dataset with random access capability?",
+    "options": [
+      "Neither",
+      "Both",
+      "Binary Search",
+      "Linear Search"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Binary Search",
+    "topic": "Searching Algorithms",
+    "difficulty": "medium",
+    "id": 385
+  },
+  {
+    "question": "In binary search, if the array contains duplicate elements, which occurrence of the target element will be returned?",
+    "options": [
+      "Random occurrence",
+      "Last occurrence",
+      "Any occurrence",
+      "First occurrence"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Any occurrence",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 386
+  },
+  {
+    "question": "In binary search, what happens if the array contains floating-point numbers?",
+    "options": [
+      "The algorithm fails",
+      "It still works correctly",
+      "The time complexity becomes O(n)",
+      "The time complexity becomes O(log n)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is The algorithm fails",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 387
+  },
+  {
+    "question": "Which search algorithm is preferred for finding an element in a small array?",
+    "options": [
+      "It depends on the distribution of elements",
+      "Binary Search",
+      "Linear Search",
+      "Both perform equally well"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Linear Search",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 388
+  },
+  {
+    "question": "What is the size of the following character array: `char str[10];`?",
+    "options": [
+      "11",
+      "Compiler dependent",
+      "10",
+      "9"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is 10",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 389
+  },
+  {
+    "question": "Which of the following statements correctly initializes a character array with the string \"Hello\"?",
+    "options": [
+      "`char str[5] = \"Hello\";`",
+      "`char str[] = {'H', 'e', 'l', 'l', 'o', '\\0'};`",
+      "`char str[] = \"Hello\";`",
+      "`char str[6] = \"Hello\";`"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is `char str[] = \"Hello\";`",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 390
+  },
+  {
+    "question": "What does the function `strlen()` return?",
+    "options": [
+      "Length of the character array",
+      "Length of the string including the null character",
+      "Length of the string excluding the null character",
+      "Index of the null character in the string"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Length of the string excluding the null character",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 391
+  },
+  {
+    "question": "Which of the following functions is used to compare two strings?",
+    "options": [
+      "`strlen()`",
+      "`strcat()`",
+      "`strcpy()`",
+      "`strcmp()`"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is `strcmp()`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 392
+  },
+  {
+    "question": "How do you access the third character in the string `char str[] = \"Hello\";`?",
+    "options": [
+      "`str[4]`",
+      "`str[2]`",
+      "`str[3]`",
+      "`str[2]`"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is `str[2]`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 393
+  },
+  {
+    "question": "Which of the following functions can be used to convert a string to uppercase?",
+    "options": [
+      "`toupper()`",
+      "`strlwr()`",
+      "`strupr()`",
+      "`tolower()`"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is `strupr()`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 394
+  },
+  {
+    "question": "In C language, strings are terminated by which character?",
+    "options": [
+      "Space (' ')",
+      "Period (.)",
+      "Null character ('\\0')",
+      "Comma (,)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Null character ('\\0')",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 395
+  },
+  {
+    "question": "Which of the following sorting algorithms is commonly used to sort character arrays?",
+    "options": [
+      "Insertion Sort",
+      "Quick Sort",
+      "Selection Sort",
+      "Bubble Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Quick Sort",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 396
+  },
+  {
+    "question": "Which of the following is the correct syntax to declare a character pointer in C?",
+    "options": [
+      "`char &ptr;`",
+      "`char *ptr;`",
+      "`char ptr[];`",
+      "`char **ptr;`"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is `char *ptr;`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 397
+  },
+  {
+    "question": "What is the ASCII value of the character 'A'?",
+    "options": [
+      "67",
+      "66",
+      "64",
+      "65"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is 65",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 398
+  },
+  {
+    "question": "How do you dynamically allocate memory for a character array in C?",
+    "options": [
+      "`char *str = malloc(10);`",
+      "`char str[10]; malloc(str);`",
+      "`char *str[10];`",
+      "`char str[] = malloc(10 * sizeof(char));`"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is `char *str = malloc(10);`",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 399
+  },
+  {
+    "question": "Which function is used to copy one string to another in C?",
+    "options": [
+      "`memcpy()`",
+      "`strcpy()`",
+      "`strncpy()`",
+      "`strcat()`"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is `strcpy()`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 400
+  },
+  {
+    "question": "How do you find the length of a string stored in a character array `str`?",
+    "options": [
+      "`strlen(str)`",
+      "`str.len()`",
+      "`len(str)`",
+      "`str.length()`"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is `strlen(str)`",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 401
+  },
+  {
+    "question": "What is the time complexity of sorting a character array using Quick Sort?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is O(n log n)",
+    "topic": "Algorithm Complexity",
+    "difficulty": "medium",
+    "id": 402
+  },
+  {
+    "question": "Which of the following functions is used to convert a string to a long integer in C?",
+    "options": [
+      "`strtol()`",
+      "`strtod()`",
+      "`sprintf()`",
+      "`atoi()`"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is `strtol()`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 403
+  },
+  {
+    "question": "Which of the following functions is used to find the first occurrence of a character in a string?",
+    "options": [
+      "`strchr()`",
+      "`strrchr()`",
+      "`strstr()`",
+      "`strtok()`"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is `strchr()`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 404
+  },
+  {
+    "question": "Which of the following is used to compare a part of two strings in C?",
+    "options": [
+      "`strxfrm()`",
+      "`strcoll()`",
+      "`strcmp()`",
+      "`strncmp()`"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is `strncmp()`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 405
+  },
+  {
+    "question": "What does the function `strtok()` do?",
+    "options": [
+      "Compares two strings",
+      "Concatenates two strings",
+      "Tokenizes a string",
+      "Copies one string to another"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Tokenizes a string",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 406
+  },
+  {
+    "question": "Which of the following functions is used to convert a character to lowercase in C?",
+    "options": [
+      "`toupper()`",
+      "`tolower()`",
+      "`strupr()`",
+      "`strlwr()`"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is `tolower()`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 407
+  },
+  {
+    "question": "How do you declare a two-dimensional character array in C?",
+    "options": [
+      "`char arr[rows][cols];`",
+      "`char *arr[][];`",
+      "`char arr[][] = {};`",
+      "`char arr[][];`"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is `char arr[rows][cols];`",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "id": 408
+  },
+  {
+    "question": "Which of the following functions is used to reverse a string in C?",
+    "options": [
+      "There is no built-in function for reversing a string in C",
+      "`strnrev()`",
+      "`strrev()`",
+      "`reverse()`"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is There is no built-in function for reversing a string in C",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 409
+  },
+  {
+    "question": "Which of the following functions is used to find the last occurrence of a character in a string?",
+    "options": [
+      "`strtok()`",
+      "`strrchr()`",
+      "`strstr()`",
+      "`strchr()`"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is `strrchr()`",
+    "topic": "Strings",
+    "difficulty": "medium",
+    "id": 410
   }
 ];

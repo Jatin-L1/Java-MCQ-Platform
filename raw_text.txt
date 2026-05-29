@@ -1,0 +1,1004 @@
+1. What does Big O notation represent in algorithm analysis?
+a) Best-case complexity
+b) Worst-case complexity
+c) Average-case complexity
+d) All of the above
+**Correct Answer: b) Worst-case complexity**
+2. Which of the following is NOT an asymptotic notation used to describe algorithm complexity?
+a) Ω (Omega)
+b) σ (Sigma)
+c) O (Big O)
+d) Θ (Theta)
+**Correct Answer: b) σ (Sigma)**
+3. Which asymptotic notation represents the tight bound of an algorithm's complexity?
+a) O (Big O)
+b) Ω (Omega)
+c) Θ (Theta)
+d) ω (Omega)
+**Correct Answer: c) Θ (Theta)**
+4. What does Ω (Omega) notation represent?
+a) Lower bound complexity
+b) Average-case complexity
+c) Worst-case complexity
+d) None of these
+**Correct Answer: a) Lower bound complexity**
+5. If an algorithm's time complexity is O(n^2), which of the following statements is true?
+a) The algorithm runs in linear time.
+b) The algorithm runs in logarithmic time.
+c) The algorithm runs in polynomial time.
+d) The algorithm runs in exponential time.
+**Correct Answer: c) The algorithm runs in polynomial time.**
+6. What does ω (Omega) notation represent?
+a) Best-case complexity
+b) Average-case complexity
+c) Worst-case complexity
+d) Lower bound complexity
+**Correct Answer: d) Lower bound complexity**
+7. Which of the following is true regarding the relationship between O (Big O) and Θ (Theta) notation?
+a) O is a subset of Θ
+b) Θ is a subset of O
+c) O and Θ are equivalent
+d) There is no relationship between O and Θ
+**Correct Answer: b) Θ is a subset of O**
+8. What does o (little o) notation represent?
+a) Lower bound complexity
+b) Tight bound complexity
+c) Upper bound complexity
+d) Exact complexity
+**Correct Answer: c) Upper bound complexity**
+9. Which notation is used to represent the best-case time complexity of an algorithm?
+a) O (Big O)
+b) Ω (Omega)
+c) Θ (Theta)
+d) None of the above
+**Correct Answer: b) Ω (Omega)**
+10. If an algorithm's time complexity is O(log n), what can be said about its efficiency?
+a) It grows logarithmically with the input size.
+b) It grows linearly with the input size.
+c) It grows exponentially with the input size.
+d) It grows polynomially with the input size.
+**Correct Answer: a) It grows logarithmically with the input size.**
+11. Which of the following notations represents the upper bound complexity of an algorithm?
+a) Ω (Omega)
+b) Θ (Theta)
+c) O (Big O)
+d) ω (Omega)
+**Correct Answer: c) O (Big O)**
+12. What is the space complexity of an algorithm?
+a) The time required by the algorithm to execute
+b) The amount of memory required by the algorithm to execute
+c) The number of steps required by the algorithm to execute
+d) The efficiency of the algorithm
+**Correct Answer: b) The amount of memory required by the algorithm to execute**
+13. Which of the following is NOT true about the Big O notation?
+a) It represents the upper bound of an algorithm's time complexity.
+b) It provides an exact measure of the running time of an algorithm.
+c) It describes the worst-case scenario of an algorithm.
+d) It is often used to compare the efficiency of algorithms.
+**Correct Answer: b) It provides an exact measure of the running time of an algorithm.**
+14. Which notation is used to represent the average-case time complexity of an algorithm?
+a) O (Big O)
+b) Ω (Omega)
+c) Θ (Theta)
+d) None of the above
+**Correct Answer: c) Θ (Theta)**
+15. What does it mean if an algorithm's time complexity is O(1)?
+a) It runs in constant time regardless of input size.
+b) It runs in linear time.
+c) It runs in logarithmic time.
+d) It runs in exponential time.
+**Correct Answer: a) It runs in constant time regardless of input size.**
+16. Which of the following asymptotic notations represents an upper bound but not necessarily the tightest bound?
+a) O (Big O)
+b) Ω (Omega)
+c) Θ (Theta)
+d) o (little o)
+**Correct Answer: a) O (Big O)**
+17. What does Θ (Theta) notation represent?
+a) Best-case complexity
+b) Average-case complexity
+c) Worst-case complexity
+d) Tight bound complexity
+**Correct Answer: d) Tight bound complexity**
+18. If an algorithm's time complexity is O(2^n), what can be said about its efficiency?
+a) It grows logarithmically with the input size.
+b) It grows linearly with the input size.
+c) It grows exponentially with the input size.
+d) It grows polynomially with the input size.
+**Correct Answer: c) It grows exponentially with the input size.**
+19. Which of the following notations represents the lower bound complexity of an algorithm?
+a) O (Big O)
+b) Ω (Omega)
+c) Θ (Theta)
+d) ω (Omega)
+**Correct Answer: b) Ω (Omega)**
+20. What does it mean if an algorithm's space complexity is O(n)?
+a) It uses constant space.
+b) It uses linear space.
+c) It uses logarithmic space.
+d) It uses exponential space.
+**Correct Answer: b) It uses linear space.**
+21. What is the time complexity of the best-case scenario often used for?
+a) It represents the typical behavior of the algorithm.
+b) It represents the most efficient scenario.
+c) It represents the worst possible performance of the algorithm.
+d) It represents the average performance of the algorithm.
+**Correct Answer: b) It represents the most efficient scenario.**
+22. Which notation is used to represent the average-case space complexity of an algorithm?
+a) O (Big O)
+b) Ω (Omega)
+c) Θ (Theta)
+d) None of the above
+**Correct Answer: c) Θ (Theta)**
+23. If an algorithm's time complexity is O(n!), what can be said about its efficiency?
+a) It grows logarithmically with the input size.
+b) It grows linearly with the input size.
+c) It grows factorially with the input size.
+d) It grows exponentially with the input size.
+**Correct Answer: c) It grows factorially with the input size.**
+24. Which notation is used to represent the worse and best-case time complexity of an algorithm?
+a) O (Big O)
+b) Ω (Omega)
+c) Θ (Theta)
+d) Both a and b
+**Correct Answer: d) Both a and b**
+25. Which of the following statements about space complexity is correct?
+a) Space complexity measures the number of operations performed by an algorithm.
+b) Space complexity measures the amount of input data required by an algorithm.
+c) Space complexity measures the amount of memory required by an algorithm.
+d) Space complexity measures the time required by an algorithm to execute.
+**Correct Answer: c) Space complexity measures the amount of memory required by an algorithm.**
+26. What does it mean if an algorithm's time complexity is O(log log n)?
+a) It grows doubly logarithmically with the input size.
+b) It grows logarithmically with the input size.
+c) It grows linearly with the input size.
+d) It grows exponentially with the input size.
+**Correct Answer: a) It grows doubly logarithmically with the input size.**
+27. Which of the following statements regarding the relationship between Ω (Omega) and ω (omega) notations is true?
+a) Ω is a subset of ω.
+b) ω is a subset of Ω.
+c) Ω and ω are equivalent.
+d) There is no relationship between Ω and ω.
+**Correct Answer: a) Ω is a subset of ω.**
+28. If an algorithm's space complexity is O(1), what can be said about its memory usage?
+a) It uses constant memory regardless of input size.
+b) It uses linear memory.
+c) It uses logarithmic memory.
+d) It uses exponential memory.
+**Correct Answer: a) It uses constant memory regardless of input size.**
+29. Which of the following notations represents the lower bound but not necessarily the tightest bound?
+a) O (Big O)
+b) Ω (Omega)
+c) Θ (Theta)
+d) o (little o)
+**Correct Answer: b) Ω (Omega)**
+30. What is the relationship between Ω (Omega) and O (Big O) notations?
+a) Ω is a subset of O.
+b) O is a subset of Ω.
+c) Ω and O are equivalent.
+d) There is no relationship between Ω and O.
+**Correct Answer: d) There is no relationship between Ω and O.**
+1. What is an array?
+A) A linear data structure
+B) A non-linear data structure
+C) A hierarchical data structure
+D) A tree-like data structure
+**Correct Answer: A) A linear data structure**
+2. Which of the following best describes the representation of linear arrays in memory?
+A) Contiguous allocation
+B) Linked allocation
+C) Random allocation
+D) Sparse allocation
+**Correct Answer: A) Contiguous allocation**
+3. In a one-dimensional array, if the array elements are stored at contiguous memory locations, what is the formula to access the ith element?
+A) base_address + i
+B) base_address - i
+C) base_address * i
+D) base_address / i
+**Correct Answer: A) base_address + i**
+4. What is the time complexity of accessing an element in an array given its index?
+A) O(1)
+B) O(n)
+C) O(log n)
+D) O(n^2)
+**Correct Answer: A) O(1)**
+5. Which traversal technique is used to visit each element of an array exactly once?
+A) Depth-First Traversal
+B) Breadth-First Traversal
+C) Pre-order Traversal
+D) Linear Traversal
+**Correct Answer: D) Linear Traversal**
+6. What is the worst-case time complexity of linearly traversing an array of size n?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+7. What is the process of adding an element to the end of an array called?
+A) Insertion
+B) Deletion
+C) Appending
+D) Concatenation
+**Correct Answer: C) Appending**
+8. What is the time complexity of appending an element to the end of an array with n elements, assuming sufficient space is available?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: A) O(1)**
+9. Which of the following is an advantage of using arrays for storage?
+A) Dynamic resizing
+B) Efficient random access
+C) Automatic memory management
+D) Recursive traversal
+**Correct Answer: B) Efficient random access**
+10. In an array with n elements, if an element is to be inserted at the kth position (0 <= k <= n), what is the worst-case time complexity?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+11. What is the process of removing an element from an array called?
+A) Extraction
+B) Deletion
+C) Removal
+D) Displacement
+**Correct Answer: B) Deletion**
+12. What is the time complexity of deleting an element from the end of an array with n elements?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: A) O(1)**
+13. Which of the following is a disadvantage of using arrays for storage?
+A) Dynamic resizing
+B) Inefficient random access
+C) Automatic memory management
+D) Recursive traversal
+**Correct Answer: A) Dynamic resizing**
+14. Which of the following traversal techniques is commonly used for searching elements in an array?
+A) In-order traversal
+B) Pre-order traversal
+C) Post-order traversal
+D) Linear traversal
+**Correct Answer: D) Linear traversal**
+15. What is the index of the last element in an array with n elements?
+A) n
+B) n-1
+C) n+1
+D) n/2
+**Correct Answer: B) n-1**
+16. What is the primary disadvantage of using static arrays?
+A) Fixed size
+B) Inefficient random access
+C) Automatic memory management
+D) Dynamic resizing
+**Correct Answer: A) Fixed size**
+17. Which of the following operations can be performed efficiently on a sorted array?
+A) Insertion
+B) Deletion
+C) Searching
+D) Appending
+**Correct Answer: C) Searching**
+18. What is the primary advantage of using dynamic arrays over static arrays?
+A) Fixed size
+B) Efficient random access
+C) Automatic memory management
+D) Dynamic resizing
+**Correct Answer: D) Dynamic resizing**
+19. Which of the following is an example of a linear data structure?
+A) Array
+B) Binary tree
+C) Heap
+D) Hash table
+**Correct Answer: A) Array**
+20. What is the time complexity of searching for an element in an unsorted array with n elements?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+21. In a two-dimensional array, what does the first index represent?
+A) Column
+B) Row
+C) Depth
+D) Height
+**Correct Answer: B) Row**
+22. What is the time complexity of inserting an element at the beginning of an array with n elements?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+23. Which of the following is an advantage of using arrays over linked lists?
+A) Dynamic resizing
+B) Efficient insertion and deletion
+C) Constant time access to elements
+D) Automatic memory management
+**Correct Answer: C) Constant time access to elements**
+24. In a sparse array, what is the ratio of non-zero elements to the total number of elements?
+A) Less than 1
+B) Equal to 1
+C) Greater than 1
+D) Cannot be determined
+**Correct Answer: A) Less than 1**
+25. Which of the following is not a valid method to traverse an array?
+A) Linear traversal
+B) Reverse traversal
+C) Depth-first traversal
+D) Breadth-first traversal
+**Correct Answer: D) Breadth-first traversal**
+26. What is the time complexity of appending an element to a dynamic array that needs resizing?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+27. Which of the following is a disadvantage of using arrays over linked lists?
+A) Fixed size
+B) Dynamic resizing
+C) Efficient random access
+D) Inefficient insertion and deletion
+    
+    **Correct Answer: A) Fixed size**
+    
+28. Which of the following statements is true about multidimensional arrays?
+A) All dimensions must be of the same size.
+B) Each dimension can have a different size.
+C) Multidimensional arrays cannot be implemented in programming languages.
+D) Multidimensional arrays are always dynamically resizable.
+**Correct Answer: B) Each dimension can have a different size.**
+29. What is the time complexity of deleting an element from the middle of an array with n elements?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+30. Which data structure is most suitable for implementing a stack?
+A) Array
+B) Linked list
+C) Queue
+D) Heap
+**Correct Answer: B) Linked list**
+
+Sure, here are 30 multiple-choice questions (MCQs) on the topic of arrays along with their correct solutions:
+
+1. What is an array?
+A) A linear data structure
+B) A non-linear data structure
+C) A hierarchical data structure
+D) A tree-like data structure
+**Correct Answer: A) A linear data structure**
+2. Which of the following best describes the representation of linear arrays in memory?
+A) Contiguous allocation
+B) Linked allocation
+C) Random allocation
+D) Sparse allocation
+**Correct Answer: A) Contiguous allocation**
+3. In a one-dimensional array, if the array elements are stored at contiguous memory locations, what is the formula to access the ith element?
+A) base_address + i
+B) base_address - i
+C) base_address * i
+D) base_address / i
+**Correct Answer: A) base_address + i**
+4. What is the time complexity of accessing an element in an array given its index?
+A) O(1)
+B) O(n)
+C) O(log n)
+D) O(n^2)
+**Correct Answer: A) O(1)**
+5. Which traversal technique is used to visit each element of an array exactly once?
+A) Depth-First Traversal
+B) Breadth-First Traversal
+C) Pre-order Traversal
+D) Linear Traversal
+**Correct Answer: D) Linear Traversal**
+6. What is the worst-case time complexity of linearly traversing an array of size n?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+7. What is the process of adding an element to the end of an array called?
+A) Insertion
+B) Deletion
+C) Appending
+D) Concatenation
+**Correct Answer: C) Appending**
+8. What is the time complexity of appending an element to the end of an array with n elements, assuming sufficient space is available?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: A) O(1)**
+9. Which of the following is an advantage of using arrays for storage?
+A) Dynamic resizing
+B) Efficient random access
+C) Automatic memory management
+D) Recursive traversal
+**Correct Answer: B) Efficient random access**
+10. In an array with n elements, if an element is to be inserted at the kth position (0 <= k <= n), what is the worst-case time complexity?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+11. What is the process of removing an element from an array called?
+A) Extraction
+B) Deletion
+C) Removal
+D) Displacement
+**Correct Answer: B) Deletion**
+12. What is the time complexity of deleting an element from the end of an array with n elements?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: A) O(1)**
+13. Which of the following is a disadvantage of using arrays for storage?
+A) Dynamic resizing
+B) Inefficient random access
+C) Automatic memory management
+D) Recursive traversal
+**Correct Answer: A) Dynamic resizing**
+14. Which of the following traversal techniques is commonly used for searching elements in an array?
+A) In-order traversal
+B) Pre-order traversal
+C) Post-order traversal
+D) Linear traversal
+**Correct Answer: D) Linear traversal**
+15. What is the index of the last element in an array with n elements?
+A) n
+B) n-1
+C) n+1
+D) n/2
+**Correct Answer: B) n-1**
+16. What is the primary disadvantage of using static arrays?
+A) Fixed size
+B) Inefficient random access
+C) Automatic memory management
+D) Dynamic resizing
+**Correct Answer: A) Fixed size**
+17. Which of the following operations can be performed efficiently on a sorted array?
+A) Insertion
+B) Deletion
+C) Searching
+D) Appending
+**Correct Answer: C) Searching**
+18. What is the primary advantage of using dynamic arrays over static arrays?
+A) Fixed size
+B) Efficient random access
+C) Automatic memory management
+D) Dynamic resizing
+**Correct Answer: D) Dynamic resizing**
+19. Which of the following is an example of a linear data structure?
+A) Array
+B) Binary tree
+C) Heap
+D) Hash table
+**Correct Answer: A) Array**
+20. What is the time complexity of searching for an element in an unsorted array with n elements?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+21. In a two-dimensional array, what does the first index represent?
+A) Column
+B) Row
+C) Depth
+D) Height
+**Correct Answer: B) Row**
+22. What is the time complexity of inserting an element at the beginning of an array with n elements?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+23. Which of the following is an advantage of using arrays over linked lists?
+A) Dynamic resizing
+B) Efficient insertion and deletion
+C) Constant time access to elements
+D) Automatic memory management
+**Correct Answer: C) Constant time access to elements**
+24. In a sparse array, what is the ratio of non-zero elements to the total number of elements?
+A) Less than 1
+B) Equal to 1
+C) Greater than 1
+D) Cannot be determined
+**Correct Answer: A) Less than 1**
+25. Which of the following is not a valid method to traverse an array?
+A) Linear traversal
+B) Reverse traversal
+C) Depth-first traversal
+D) Breadth-first traversal
+**Correct Answer: D) Breadth-first traversal**
+26. What is the time complexity of appending an element to a dynamic array that needs resizing?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+**Correct Answer: C) O(n)**
+27. Which of the following is a disadvantage of using arrays over linked lists?
+A) Fixed size
+B) Dynamic resizing
+C) Efficient random access
+D) Inefficient insertion and
+1. What is the time complexity of linear search in the worst-case scenario?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+    
+    **Correct Answer: C) O(n)**
+    
+2. What is the time complexity of binary search in the worst-case scenario?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+    
+    **Correct Answer: B) O(log n)**
+    
+3. Which search algorithm requires the elements to be in sorted order?
+A) Linear Search
+B) Binary Search
+C) Both
+D) Neither
+    
+    **Correct Answer: B) Binary Search**
+    
+4. In which search algorithm, the elements can be in any order?
+A) Linear Search
+B) Binary Search
+C) Both
+D) Neither
+    
+    **Correct Answer: A) Linear Search**
+    
+5. What is the best-case time complexity of linear search?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+    
+    **Correct Answer: A) O(1)**
+    
+6. In binary search, at each step, the search range is reduced by approximately what factor?
+A) 2
+B) 4
+C) 0.5
+D) 0.25
+    
+    **Correct Answer: A) 2**
+    
+7. Which of the following data structures is most suitable for binary search?
+A) Array
+B) Linked List
+C) Stack
+D) Queue
+    
+    **Correct Answer: A) Array**
+    
+8. Which search algorithm is not applicable for unsorted arrays?
+A) Linear Search
+B) Binary Search
+C) Both
+D) Neither
+    
+    **Correct Answer: B) Binary Search**
+    
+9. What is the space complexity of binary search?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+    
+    **Correct Answer: A) O(1)**
+    
+10. Which of the following is not a requirement for binary search to work correctly?
+A) Elements must be comparable
+B) Elements must be sorted
+C) Elements must be unique
+D) Elements must be integers
+    
+    **Correct Answer: D) Elements must be integers**
+    
+11. What is the primary advantage of binary search over linear search?
+A) Simplicity
+B) Lower time complexity
+C) Requires less memory
+D) Suitable for unsorted arrays
+    
+    **Correct Answer: B) Lower time complexity**
+    
+12. In which case does linear search perform better than binary search?
+A) When the array is small
+B) When the array is sorted
+C) When the array is large
+D) When the array contains duplicate elements
+    
+    **Correct Answer: C) When the array is large**
+    
+13. What is the worst-case scenario for binary search when the target element is not present in the array?
+A) It returns -1
+B) It goes into an infinite loop
+C) It continues until the array is exhausted
+D) It returns a random index
+    
+    **Correct Answer: C) It continues until the array is exhausted**
+    
+14. Binary search can be implemented recursively or iteratively. Which one is preferred and why?
+A) Recursively, for better performance
+B) Iteratively, for better memory usage
+C) Recursively, for better memory usage
+D) Iteratively, for better performance
+    
+    **Correct Answer: D) Iteratively, for better performance**
+    
+15. In binary search, how many comparisons are made in the worst-case scenario for an array of size 16?
+A) 4
+B) 8
+C) 12
+D) 16
+    
+    **Correct Answer: A) 4**
+    
+16. Which search algorithm is more suitable for searching through a phonebook?
+A) Linear Search
+B) Binary Search
+C) Both
+D) Neither
+    
+    **Correct Answer: A) Linear Search**
+    
+17. Which of the following statements is true about the time complexity of linear search?
+A) It is always O(n)
+B) It can be O(1) in the best case
+C) It is always O(log n)
+D) It is always O(n^2)
+    
+    **Correct Answer: A) It is always O(n)**
+    
+18. In binary search, what is the purpose of sorting the array?
+A) To reduce memory usage
+B) To reduce the number of comparisons
+C) To make the algorithm easier to implement
+D) Sorting is not necessary
+    
+    **Correct Answer: B) To reduce the number of comparisons**
+    
+19. Which search algorithm exhibits a linear growth in time complexity with the size of the input?
+A) Linear Search
+B) Binary Search
+C) Both
+D) Neither
+    
+    **Correct Answer: A) Linear Search**
+    
+20. In binary search, what happens if the array is not sorted?
+A) The algorithm fails
+B) It still works correctly
+C) The time complexity becomes O(n)
+D) The time complexity becomes O(log n)
+    
+    **Correct Answer: A) The algorithm fails**
+    
+21. Which search algorithm is more suitable for searching through a sorted list of names?
+A) Linear Search
+B) Binary Search
+C) Both
+D) Neither
+    
+    **Correct Answer: B) Binary Search**
+    
+22. In binary search, the array is repeatedly divided into two halves. What is the time complexity of this operation?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+    
+    **Correct Answer: B) O(log n)**
+    
+23. In binary search, how many comparisons are made in the worst-case scenario for an array of size 32?
+A) 5
+B) 6
+C) 7
+D) 8
+    
+    **Correct Answer: A) 5**
+    
+24. Which search algorithm is used by most modern databases for searching through indexes?
+A) Linear Search
+B) Binary Search
+C) Both
+D) Neither
+    
+    **Correct Answer: B) Binary Search**
+    
+25. In binary search, after each comparison, what is the next step?
+A) Check if the element is found
+B) Update the search range
+C) Divide the array into two halves
+D) Move to the next element
+    
+    **Correct Answer: B) Update the search range**
+    
+26. In binary search, if the target element is found, what is the time complexity?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+    
+    **Correct Answer: A) O(1)**
+    
+27. Which search algorithm is more suitable for searching through a large dataset with random access capability?
+A) Linear Search
+B) Binary Search
+C) Both
+D) Neither
+    
+    **Correct Answer: B) Binary Search**
+    
+28. In binary search, if the array contains duplicate elements, which occurrence of the target element will be returned?
+A) First occurrence
+B) Last occurrence
+C) Any occurrence
+D) Random occurrence
+    
+    **Correct Answer: C) Any occurrence**
+    
+29. In binary search, what happens if the array contains floating-point numbers?
+A) The algorithm fails
+B) It still works correctly
+C) The time complexity becomes O(n)
+D) The time complexity becomes O(log n)
+    
+    **Correct Answer: A) The algorithm fails**
+    
+30. Which search algorithm is preferred for finding an element in a small array?
+A) Linear Search
+B) Binary Search
+C) Both perform equally well
+D) It depends on the distribution of elements
+    
+    **Correct Answer: A) Linear Search**
+    1. What is the size of the following character array: `char str[10];`?
+A) 10
+B) 11
+C) 9
+D) Compiler dependent
+**Correct Answer: A) 10**
+2. Which of the following statements correctly initializes a character array with the string "Hello"?
+A) `char str[5] = "Hello";`
+B) `char str[] = "Hello";`
+C) `char str[] = {'H', 'e', 'l', 'l', 'o', '\0'};`
+D) `char str[6] = "Hello";`
+    
+    **Correct Answer: B) `char str[] = "Hello";`**
+    
+3. What does the function `strlen()` return?
+A) Length of the character array
+B) Length of the string excluding the null character
+C) Length of the string including the null character
+D) Index of the null character in the string
+**Correct Answer: B) Length of the string excluding the null character**
+4. Which of the following functions is used to compare two strings?
+A) `strcmp()`
+B) `strcat()`
+C) `strcpy()`
+D) `strlen()`**Correct Answer: A) `strcmp()`**
+5. How do you access the third character in the string `char str[] = "Hello";`?
+A) `str[2]`
+B) `str[3]`
+C) `str[2]`
+D) `str[4]`**Correct Answer: A) `str[2]`**
+6. Which of the following functions can be used to convert a string to uppercase?
+A) `toupper()`
+B) `tolower()`
+C) `strlwr()`
+D) `strupr()`**Correct Answer: D) `strupr()`**
+7. In C language, strings are terminated by which character?
+A) Period (.)
+B) Comma (,)
+C) Null character ('\0')
+D) Space (' ')
+**Correct Answer: C) Null character ('\0')**
+8. What is the output of the following code snippet?
+    
+    ```c
+    char str1[] = "hello";
+    char str2[] = "world";
+    strcat(str1, str2);
+    printf("%s", str1);
+    
+    ```
+    
+    A) hello
+    B) world
+    C) helloworld
+    D) Compiler Error
+    **Correct Answer: D) Compiler Error**
+    
+9. Which of the following sorting algorithms is commonly used to sort character arrays?
+A) Quick Sort
+B) Bubble Sort
+C) Insertion Sort
+D) Selection Sort
+**Correct Answer: A) Quick Sort**
+10. Which of the following is the correct syntax to declare a character pointer in C?
+A) `char *ptr;`
+B) `char ptr[];`
+C) `char &ptr;`
+D) `char **ptr;`**Correct Answer: A) `char *ptr;`**
+11. What is the ASCII value of the character 'A'?
+A) 64
+B) 65
+C) 66
+D) 67
+**Correct Answer: B) 65**
+12. How do you dynamically allocate memory for a character array in C?
+A) `char str[] = malloc(10 * sizeof(char));`
+B) `char *str = malloc(10);`
+C) `char *str[10];`
+D) `char str[10]; malloc(str);`**Correct Answer: B) `char *str = malloc(10);`**
+13. What is the output of the following code snippet?
+    
+    ```c
+    char str[] = "abcdef";
+    printf("%c", str[6]);
+    
+    ```
+    
+    A) Undefined behavior
+    B) Compiler Error
+    C) a
+    D) Null character
+    **Correct Answer: A) Undefined behavior**
+    
+14. Which function is used to copy one string to another in C?
+A) `strcpy()`
+B) `strncpy()`
+C) `strcat()`
+D) `memcpy()`**Correct Answer: A) `strcpy()`**
+15. How do you find the length of a string stored in a character array `str`?
+A) `len(str)`
+B) `str.length()`
+C) `strlen(str)`
+D) `str.len()`**Correct Answer: C) `strlen(str)`**
+16. What is the time complexity of sorting a character array using Quick Sort?
+A) O(n)
+B) O(n^2)
+C) O(log n)
+D) O(n log n)
+**Correct Answer: D) O(n log n)**
+17. Which of the following functions is used to convert a string to a long integer in C?
+A) `strtol()`
+B) `atoi()`
+C) `sprintf()`
+D) `strtod()`**Correct Answer: A) `strtol()`**
+18. What is the output of the following code snippet?
+    
+    ```c
+    char str1[] = "hello";
+    char str2[6];
+    strcpy(str2, str1);
+    printf("%s", str2);
+    
+    ```
+    
+    A) hello
+    B) hell
+    C) Undefined behavior
+    D) Compiler Error
+    **Correct Answer: A) hello**
+    
+
+1. Which of the following functions is used to find the first occurrence of a character in a string?
+A) `strchr()`
+B) `strrchr()`
+C) `strstr()`
+D) `strtok()`**Correct Answer: A) `strchr()`**
+2. What is the output of the following code snippet?
+    
+    ```c
+    char str[] = "Hello";
+    printf("%d", sizeof(str));
+    
+    ```
+    
+    A) 5
+    B) 6
+    C) 11
+    D) Compiler Error
+    **Correct Answer: C) 6**
+    
+3. Which of the following is used to compare a part of two strings in C?
+A) `strncmp()`
+B) `strcmp()`
+C) `strcoll()`
+D) `strxfrm()`**Correct Answer: A) `strncmp()`**
+4. What does the function `strtok()` do?
+A) Compares two strings
+B) Tokenizes a string
+C) Concatenates two strings
+D) Copies one string to another
+**Correct Answer: B) Tokenizes a string**
+5. What is the output of the following code snippet?
+    
+    ```c
+    char str[] = "Hello";
+    printf("%c", str[5]);
+    
+    ```
+    
+    A) Null character
+    B) Undefined behavior
+    C) Compiler Error
+    D) 'o'
+    **Correct Answer: A) Null character**
+    
+6. Which of the following functions is used to convert a character to lowercase in C?
+A) `tolower()`
+B) `toupper()`
+C) `strlwr()`
+D) `strupr()`**Correct Answer: A) `tolower()`**
+7. What is the output of the following code snippet?
+    
+    ```c
+    char str[] = "abc";
+    str[0] = 'x';
+    printf("%s", str);
+    
+    ```
+    
+    A) xbc
+    B) abc
+    C) Undefined behavior
+    D) Compiler Error
+    **Correct Answer: A) xbc**
+    
+8. How do you declare a two-dimensional character array in C?
+A) `char arr[][];`
+B) `char arr[][] = {};`
+C) `char arr[rows][cols];`
+D) `char *arr[][];`**Correct Answer: C) `char arr[rows][cols];`**
+9. Which of the following functions is used to reverse a string in C?
+A) `strrev()`
+B) `reverse()`
+C) `strnrev()`
+D) There is no built-in function for reversing a string in C
+**Correct Answer: D) There is no built-in function for reversing a string in C**
+10. What is the output of the following code snippet?
+    
+    ```c
+    char str1[] = "abc";
+    char str2[] = "def";
+    printf("%d", strcmp(str1, str2));
+    
+    ```
+    
+    A) -3
+    B) 0
+    C) 3
+    D) Compiler Error
+    **Correct Answer: C) 3**
+    
+11. Which of the following functions is used to find the last occurrence of a character in a string?
+A) `strchr()`
+B) `strrchr()`
+C) `strstr()`
+D) `strtok()`**Correct Answer: B) `strrchr()`**
+12. What is the output of the following code snippet?
+    
+    ```c
+    char str[] = "Hello";
+    printf("%c", str[strlen(str) - 1]);
+    
+    ```
+    
+    A) o
+    B) l
+    C) Undefined behavior
+    D) Compiler Error
+    **Correct Answer: A) o**
