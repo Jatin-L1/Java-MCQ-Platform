@@ -5748,5 +5748,2581 @@ export const questions: Question[] = [
     "topic": "Strings",
     "difficulty": "medium",
     "id": 410
+  },
+  {
+    "question": "Which sorting algorithm has the worst-case time complexity of O(n^2)?",
+    "options": [
+      "Quick Sort",
+      "Insertion Sort",
+      "Selection Sort",
+      "Merge Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 411
+  },
+  {
+    "question": "Which sorting algorithm uses the divide-and-conquer strategy?",
+    "options": [
+      "Merge Sort",
+      "Quick Sort",
+      "Selection Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Merge Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 412
+  },
+  {
+    "question": "In which sorting technique does the array gradually become sorted as each element is processed?",
+    "options": [
+      "Selection Sort",
+      "Merge Sort",
+      "Quick Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 413
+  },
+  {
+    "question": "Which sorting algorithm has the best-case time complexity of O(n log n)?",
+    "options": [
+      "Merge Sort",
+      "Insertion Sort",
+      "Selection Sort",
+      "Quick Sort"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Merge Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 414
+  },
+  {
+    "question": "Which sorting technique is not suitable for large datasets due to its quadratic time complexity?",
+    "options": [
+      "Quick Sort",
+      "Selection Sort",
+      "Insertion Sort",
+      "Merge Sort"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 415
+  },
+  {
+    "question": "Which sorting algorithm works by repeatedly finding the minimum element from the unsorted part and putting it at the beginning?",
+    "options": [
+      "Selection Sort",
+      "Merge Sort",
+      "Insertion Sort",
+      "Quick Sort"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Selection Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 416
+  },
+  {
+    "question": "Which sorting technique is known for its stability?",
+    "options": [
+      "Selection Sort",
+      "Merge Sort",
+      "Quick Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Merge Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 417
+  },
+  {
+    "question": "Which sorting algorithm is known for its in-place sorting nature?",
+    "options": [
+      "Insertion Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Selection Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Quick Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 418
+  },
+  {
+    "question": "Which sorting algorithm exhibits the worst-case time complexity of O(n log n) but with a worst-case space complexity of O(n)?",
+    "options": [
+      "Insertion Sort",
+      "Selection Sort",
+      "Quick Sort",
+      "Merge Sort"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Merge Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 419
+  },
+  {
+    "question": "Which sorting algorithm uses a pivot element for partitioning the array?",
+    "options": [
+      "Selection Sort",
+      "Quick Sort",
+      "Insertion Sort",
+      "Merge Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Quick Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 420
+  },
+  {
+    "question": "Which sorting technique is known for its simplicity and efficiency on small datasets?",
+    "options": [
+      "Selection Sort",
+      "Merge Sort",
+      "Insertion Sort",
+      "Quick Sort"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 421
+  },
+  {
+    "question": "Which sorting algorithm has the average-case time complexity of O(n^2)?",
+    "options": [
+      "Quick Sort",
+      "Insertion Sort",
+      "Merge Sort",
+      "Selection Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 422
+  },
+  {
+    "question": "Which sorting algorithm typically uses recursion?",
+    "options": [
+      "Selection Sort",
+      "Merge Sort",
+      "Insertion Sort",
+      "Quick Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Merge Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 423
+  },
+  {
+    "question": "Which sorting algorithm is based on the concept of partitioning?",
+    "options": [
+      "Insertion Sort",
+      "Merge Sort",
+      "Quick Sort",
+      "Selection Sort"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Quick Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 424
+  },
+  {
+    "question": "Which sorting algorithm has the best space complexity?",
+    "options": [
+      "Selection Sort",
+      "Merge Sort",
+      "Quick Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Selection Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 425
+  },
+  {
+    "question": "Which sorting algorithm can be easily implemented in a linked list?",
+    "options": [
+      "Insertion Sort",
+      "Merge Sort",
+      "Quick Sort",
+      "Selection Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Merge Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 426
+  },
+  {
+    "question": "Which sorting algorithm is considered an adaptive sorting algorithm?",
+    "options": [
+      "Selection Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 427
+  },
+  {
+    "question": "Which sorting algorithm is not a comparison-based sorting algorithm?",
+    "options": [
+      "Insertion Sort",
+      "Radix Sort",
+      "Merge Sort",
+      "Quick Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Radix Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 428
+  },
+  {
+    "question": "Which sorting algorithm has the highest worst-case time complexity?",
+    "options": [
+      "Insertion Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Selection Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Quick Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 429
+  },
+  {
+    "question": "Which sorting technique is suitable for sorting small arrays efficiently?",
+    "options": [
+      "Merge Sort",
+      "Selection Sort",
+      "Quick Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 430
+  },
+  {
+    "question": "Which sorting algorithm works by dividing the array into two halves, sorting each half, and then merging them?",
+    "options": [
+      "Insertion Sort",
+      "Selection Sort",
+      "Merge Sort",
+      "Quick Sort"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Merge Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 431
+  },
+  {
+    "question": "Which sorting algorithm has a time complexity of O(n^2) for the worst case and average case?",
+    "options": [
+      "Quick Sort",
+      "Selection Sort",
+      "Insertion Sort",
+      "Merge Sort"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Selection Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 432
+  },
+  {
+    "question": "Which sorting algorithm exhibits a time complexity of O(n log n) on average but can degrade to O(n^2) in the worst case?",
+    "options": [
+      "Quick Sort",
+      "Insertion Sort",
+      "Merge Sort",
+      "Selection Sort"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Quick Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 433
+  },
+  {
+    "question": "Which sorting algorithm is efficient for almost sorted arrays?",
+    "options": [
+      "Merge Sort",
+      "Selection Sort",
+      "Quick Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 434
+  },
+  {
+    "question": "Which sorting algorithm divides the array into two parts: sorted and unsorted, and repeatedly inserts elements from the unsorted part into the sorted part?",
+    "options": [
+      "Selection Sort",
+      "Merge Sort",
+      "Quick Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 435
+  },
+  {
+    "question": "Which sorting technique always finds the correct position for the current element and inserts it there?",
+    "options": [
+      "Merge Sort",
+      "Selection Sort",
+      "Insertion Sort",
+      "Quick Sort"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Insertion Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 436
+  },
+  {
+    "question": "Which sorting algorithm does not use additional storage space?",
+    "options": [
+      "Merge Sort",
+      "Insertion Sort",
+      "Selection Sort",
+      "Quick Sort"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Selection Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 437
+  },
+  {
+    "question": "Which sorting algorithm performs well even when all elements are identical?",
+    "options": [
+      "Merge Sort",
+      "Selection Sort",
+      "Quick Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Quick Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 438
+  },
+  {
+    "question": "Which sorting algorithm works by repeatedly dividing the array into smaller subarrays and then sorting them?",
+    "options": [
+      "Merge Sort",
+      "Insertion Sort",
+      "Quick Sort",
+      "Selection Sort"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Merge Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 439
+  },
+  {
+    "question": "Which sorting algorithm is not stable?",
+    "options": [
+      "Merge Sort",
+      "Selection Sort",
+      "Insertion Sort",
+      "Quick Sort"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Quick Sort",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 440
+  },
+  {
+    "question": "Which bitwise operator is used to perform a left shift operation?",
+    "options": [
+      "|",
+      ">>",
+      "<<",
+      "&"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is <<",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 441
+  },
+  {
+    "question": "What is the result of the bitwise AND operation between 5 (101) and 3 (011)?",
+    "options": [
+      "7 (111)",
+      "5 (101)",
+      "3 (011)",
+      "1 (001)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is 1 (001)",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 442
+  },
+  {
+    "question": "What is the value of 12 & 9?",
+    "options": [
+      "9",
+      "0",
+      "8",
+      "12"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is 8",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 443
+  },
+  {
+    "question": "Which bitwise operator is used to perform a bitwise OR operation?",
+    "options": [
+      "~",
+      "|",
+      "^",
+      "&"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is |",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 444
+  },
+  {
+    "question": "In C++, which header file contains the definition for the `bitset` class?",
+    "options": [
+      "<vector>",
+      "<algorithm>",
+      "<bitset>",
+      "<iostream>"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is <bitset>",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 445
+  },
+  {
+    "question": "Which of the following is not a bitwise operator in C++?",
+    "options": [
+      "&",
+      "^",
+      "&&",
+      "|"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is &&",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 446
+  },
+  {
+    "question": "What is the binary representation of 10 in 8-bit two's complement format?",
+    "options": [
+      "00001010",
+      "01010",
+      "11110110",
+      "001010"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is 11110110",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 447
+  },
+  {
+    "question": "How many bits are required to represent 16 unique values using bitmasking?",
+    "options": [
+      "16",
+      "8",
+      "32",
+      "4"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is 4",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 448
+  },
+  {
+    "question": "Which bitwise operator is used to perform a bitwise XOR operation?",
+    "options": [
+      "&",
+      "|",
+      "~",
+      "^"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is ^",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 449
+  },
+  {
+    "question": "What is the value of 1 << 3?",
+    "options": [
+      "16",
+      "4",
+      "2",
+      "8"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is 8",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 450
+  },
+  {
+    "question": "In C++, which container from the STL is typically used to implement a stack?",
+    "options": [
+      "vector",
+      "stack",
+      "list",
+      "queue"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is stack",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 451
+  },
+  {
+    "question": "What is the complexity of finding an element in a set using the STL's set container?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is O(log n)",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 452
+  },
+  {
+    "question": "Which algorithm from the STL is used to sort elements in ascending order?",
+    "options": [
+      "reverse()",
+      "merge()",
+      "sort()",
+      "shuffle()"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is sort()",
+    "topic": "Sorting Algorithms",
+    "difficulty": "medium",
+    "id": 453
+  },
+  {
+    "question": "Which of the following is not a valid bitwise operation?",
+    "options": [
+      "Bitwise NOR",
+      "Bitwise NAND",
+      "Bitwise XOR",
+      "Bitwise AND"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Bitwise NOR",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 454
+  },
+  {
+    "question": "What does the bitwise left shift operator (<<) do?",
+    "options": [
+      "Moves the bits to the left by a specified number of positions",
+      "Inverts all the bits",
+      "Performs a logical AND operation",
+      "Moves the bits to the right by a specified number of positions"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Moves the bits to the left by a specified number of positions",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 455
+  },
+  {
+    "question": "Which STL container allows duplicate elements?",
+    "options": [
+      "list",
+      "map",
+      "set",
+      "vector"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is vector",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 456
+  },
+  {
+    "question": "In C++, what does the STL's `map` container store?",
+    "options": [
+      "Unique keys and their corresponding values",
+      "Only values, without corresponding keys",
+      "Keys and values in a sorted order",
+      "Only keys, without corresponding values"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Unique keys and their corresponding values",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 457
+  },
+  {
+    "question": "How many bits are used to represent the decimal number 255 in binary?",
+    "options": [
+      "16",
+      "64",
+      "8",
+      "32"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is 8",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 458
+  },
+  {
+    "question": "What is the value of ~5 in binary?",
+    "options": [
+      "1010",
+      "101",
+      "0101",
+      "010"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is 010",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 459
+  },
+  {
+    "question": "Which bitwise operation can be used to toggle a specific bit in a bit sequence?",
+    "options": [
+      "Bitwise NOT",
+      "Bitwise OR",
+      "Bitwise AND",
+      "Bitwise XOR"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Bitwise XOR",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 460
+  },
+  {
+    "question": "Which STL algorithm is used to find the minimum element in a container?",
+    "options": [
+      "minimum_element()",
+      "find_min()",
+      "min()",
+      "min_element()"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is min_element()",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 461
+  },
+  {
+    "question": "In C++, which algorithm from the STL is used to find the first occurrence of an element in a container?",
+    "options": [
+      "search()",
+      "find_first_of()",
+      "find()",
+      "find_first()"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is find()",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 462
+  },
+  {
+    "question": "Which of the following is a bitwise operator in C++?",
+    "options": [
+      "?",
+      "%",
+      ":",
+      "~"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is ~",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 463
+  },
+  {
+    "question": "What is the result of the bitwise XOR operation between 15 (1111) and 7 (0111)?",
+    "options": [
+      "15",
+      "8",
+      "0",
+      "7"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is 8",
+    "topic": "Bit Manipulation",
+    "difficulty": "medium",
+    "id": 464
+  },
+  {
+    "question": "Which STL container is typically used to implement a FIFO (First-In-First-Out) queue?",
+    "options": [
+      "stack",
+      "deque",
+      "queue",
+      "list"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is queue",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 465
+  },
+  {
+    "question": "In C++, which algorithm from the STL is used to find the maximum element in a container?",
+    "options": [
+      "max()",
+      "find_max()",
+      "maximum_element()",
+      "max_element()"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is max_element()",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 466
+  },
+  {
+    "question": "What is recursion?",
+    "options": [
+      "A method of solving problems by breaking them down into smaller, similar subproblems",
+      "A programming technique that uses loops to solve problems",
+      "A technique to solve problems using arrays",
+      "A method of solving problems by using dynamic programming"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is A method of solving problems by breaking them down into smaller, similar subproblems",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 467
+  },
+  {
+    "question": "What is the base case in recursion?",
+    "options": [
+      "The average case in the problem",
+      "The largest case in the problem",
+      "The smallest case in the problem",
+      "The most complex case in the problem"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is The smallest case in the problem",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 468
+  },
+  {
+    "question": "What happens if there is no base case in a recursive function?",
+    "options": [
+      "The program runs indefinitely",
+      "The program runs with incorrect output",
+      "The program gives a compilation error",
+      "The program crashes"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is The program runs indefinitely",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 469
+  },
+  {
+    "question": "Which of the following is NOT true about recursion?",
+    "options": [
+      "Recursion is often used to solve problems with a natural recursive structure",
+      "Recursion can always be replaced by iteration",
+      "Recursion leads to more elegant and concise code in certain cases",
+      "Recursion uses more memory compared to iteration"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Recursion can always be replaced by iteration",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 470
+  },
+  {
+    "question": "What is tail recursion?",
+    "options": [
+      "A type of recursion where the function does not call itself",
+      "A type of recursion where the recursive call is the last thing done by the function",
+      "A type of recursion where the recursive call is the first thing done by the function",
+      "A type of recursion where there is no base case"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is A type of recursion where the recursive call is the last thing done by the function",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 471
+  },
+  {
+    "question": "Which of the following is NOT a characteristic of a problem suitable for recursion?",
+    "options": [
+      "The problem can be divided into smaller, similar subproblems",
+      "The problem can be represented as a tree or a graph",
+      "The problem can be solved using iteration",
+      "The problem has a base case"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is The problem can be solved using iteration",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 472
+  },
+  {
+    "question": "What is a stack overflow error?",
+    "options": [
+      "An error that occurs when the program runs out of memory for the call stack",
+      "An error that occurs when a recursive function calls itself too many times",
+      "An error that occurs when the stack data structure is used incorrectly",
+      "An error that occurs when there is a bug in the program"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is An error that occurs when the program runs out of memory for the call stack",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 473
+  },
+  {
+    "question": "Which data structure is commonly used to implement recursion?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Linked List",
+      "Array"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Stack",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 474
+  },
+  {
+    "question": "What is backtracking?",
+    "options": [
+      "A method of solving problems using dynamic programming",
+      "A method of solving problems by breaking them down into smaller, similar subproblems",
+      "A technique to solve problems using arrays",
+      "A method of solving problems by trying all possible options and discarding those that do not work"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is A method of solving problems by trying all possible options and discarding those that do not work",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 475
+  },
+  {
+    "question": "When is backtracking used?",
+    "options": [
+      "When the problem has multiple solutions and we need to find one or more of them",
+      "When the problem can be solved using iteration",
+      "When the problem can be divided into smaller, similar subproblems",
+      "When the problem has a base case"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is When the problem has multiple solutions and we need to find one or more of them",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 476
+  },
+  {
+    "question": "Which of the following is NOT an application of backtracking?",
+    "options": [
+      "Generating all permutations of a set",
+      "Sudoku solving",
+      "Finding the factorial of a number",
+      "N-Queens problem"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Finding the factorial of a number",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 477
+  },
+  {
+    "question": "In backtracking, what is pruning?",
+    "options": [
+      "The process of solving subproblems before solving the main problem",
+      "The process of iterating through all possible solutions",
+      "The process of eliminating certain options that are known not to lead to a solution",
+      "The process of selecting the best option at each step"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is The process of eliminating certain options that are known not to lead to a solution",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 478
+  },
+  {
+    "question": "What is the time complexity of backtracking algorithms in the worst-case scenario?",
+    "options": [
+      "O(2^n)",
+      "O(n!)",
+      "O(1)",
+      "O(n)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is O(2^n)",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 479
+  },
+  {
+    "question": "Which of the following is a disadvantage of backtracking?",
+    "options": [
+      "It may take exponential time",
+      "It always finds the optimal solution",
+      "It is difficult to implement",
+      "It requires a lot of memory"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is It may take exponential time",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 480
+  },
+  {
+    "question": "How is backtracking different from brute force?",
+    "options": [
+      "Backtracking does not consider all possible solutions",
+      "Backtracking always finds the optimal solution",
+      "Backtracking generates all possible solutions and selects the best one",
+      "Backtracking eliminates certain options that are known not to lead to a solution"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Backtracking eliminates certain options that are known not to lead to a solution",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 481
+  },
+  {
+    "question": "What is the primary purpose of a base case in recursion?",
+    "options": [
+      "To prevent infinite recursion",
+      "To handle error conditions",
+      "To make the code more efficient",
+      "To improve code readability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is To prevent infinite recursion",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 482
+  },
+  {
+    "question": "Which of the following is NOT a step involved in designing a recursive algorithm?",
+    "options": [
+      "Analyzing the time complexity",
+      "Identifying the base case",
+      "Writing the recursive function",
+      "Dividing the problem into smaller subproblems"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Analyzing the time complexity",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 483
+  },
+  {
+    "question": "Which of the following is an example of a problem that can be solved using backtracking?",
+    "options": [
+      "Sudoku solving",
+      "Finding the shortest path in a graph",
+      "Finding the minimum element in an array",
+      "Sorting an array"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Sudoku solving",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 484
+  },
+  {
+    "question": "Which of the following statements is true about recursive functions?",
+    "options": [
+      "Recursive functions cannot call themselves",
+      "Recursive functions are always more efficient than iterative functions",
+      "Recursive functions always have a base case",
+      "Recursive functions use a stack to keep track of function calls"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Recursive functions use a stack to keep track of function calls",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 485
+  },
+  {
+    "question": "In a recursive function, what happens during the \"unwinding\" phase?",
+    "options": [
+      "The base case is reached",
+      "The function returns to the previous level of recursion",
+      "The function calls itself again",
+      "The stack overflows"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is The function returns to the previous level of recursion",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 486
+  },
+  {
+    "question": "Which of the following statements about recursion is true?",
+    "options": [
+      "Recursion can only be implemented using loops",
+      "Recursion is always the best solution for a problem",
+      "Recursion is less efficient than iteration in all scenarios",
+      "Recursion can lead to clearer and more concise code in some cases"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Recursion can lead to clearer and more concise code in some cases",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 487
+  },
+  {
+    "question": "What is the purpose of the \"visited\" array in backtracking algorithms?",
+    "options": [
+      "To track the recursive calls made by the algorithm",
+      "To store the final solution",
+      "To keep track of which nodes have been visited in a graph traversal",
+      "To prevent the algorithm from visiting the same state multiple times"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is To prevent the algorithm from visiting the same state multiple times",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 488
+  },
+  {
+    "question": "Which of the following is NOT a common approach to implementing backtracking?",
+    "options": [
+      "Using a stack",
+      "Using a queue",
+      "Using iteration",
+      "Using recursion"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Using a queue",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 489
+  },
+  {
+    "question": "What is memoization?",
+    "options": [
+      "A technique used to optimize memory usage in recursive algorithms",
+      "A technique used to visualize recursive calls",
+      "A technique used to store and reuse previously computed results to avoid redundant calculations",
+      "A technique used to prevent stack overflow errors"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is A technique used to store and reuse previously computed results to avoid redundant calculations",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 490
+  },
+  {
+    "question": "Which of the following is NOT a step in backtracking?",
+    "options": [
+      "Pruning",
+      "Backtracking",
+      "Moving forward",
+      "Making a choice"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Moving forward",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 491
+  },
+  {
+    "question": "Which of the following best describes the concept of \"depth-first search\" in backtracking?",
+    "options": [
+      "Exploring all possible solutions starting from the root node",
+      "Exploring all possible solutions level by level",
+      "Exploring all possible solutions by making a series of choices and backtracking when necessary",
+      "Exploring all possible solutions using a queue"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Exploring all possible solutions by making a series of choices and backtracking when necessary",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 492
+  },
+  {
+    "question": "In backtracking, when do we know that we have found a solution?",
+    "options": [
+      "When we reach a leaf node in the search tree",
+      "When we reach the end of the search space",
+      "When we reach the maximum depth of recursion",
+      "When we reach a node that satisfies the problem constraints"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is When we reach a node that satisfies the problem constraints",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 493
+  },
+  {
+    "question": "Which of the following is a key difference between recursion and iteration?",
+    "options": [
+      "Recursion involves solving problems by breaking them down into smaller, similar subproblems, while iteration involves repetitive execution of a set of instructions",
+      "Recursion always uses less memory than iteration",
+      "Recursion is always easier to implement than iteration",
+      "Recursion always runs faster than iteration"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Recursion involves solving problems by breaking them down into smaller, similar subproblems, while iteration involves repetitive execution of a set of instructions",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 494
+  },
+  {
+    "question": "What is the main advantage of using recursion over iteration?",
+    "options": [
+      "Recursion uses less memory than iteration",
+      "Recursion can lead to clearer and more concise code in some cases",
+      "Recursion always leads to faster code execution",
+      "Recursion allows for easier debugging"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Recursion can lead to clearer and more concise code in some cases",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 495
+  },
+  {
+    "question": "Which of the following best describes a backtracking algorithm?",
+    "options": [
+      "An algorithm that explores all possible solutions by making a series of choices and backtracking when necessary",
+      "An algorithm that iterates through all possible solutions without backtracking",
+      "An algorithm that solves problems by breaking them down into smaller, similar subproblems",
+      "An algorithm that stores and reuses previously computed results to avoid redundant calculations"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is An algorithm that explores all possible solutions by making a series of choices and backtracking when necessary",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 496
+  },
+  {
+    "question": "Which of the following is NOT a characteristic of recursion?",
+    "options": [
+      "It involves breaking a problem into smaller, similar subproblems",
+      "It always leads to more efficient algorithms compared to iteration",
+      "It requires a base case to terminate the recursion",
+      "It can be used to solve problems that can be divided into smaller instances of the same problem"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is It always leads to more efficient algorithms compared to iteration",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 497
+  },
+  {
+    "question": "Which of the following data structures is typically used to implement recursion?",
+    "options": [
+      "Linked list",
+      "Array",
+      "Queue",
+      "Stack"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Stack",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 498
+  },
+  {
+    "question": "What is the time complexity of a recursive algorithm with T(n) = T(n-1) + O(1)?",
+    "options": [
+      "O(n)",
+      "O(n!)",
+      "O(log n)",
+      "O(2^n)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is O(n)",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 499
+  },
+  {
+    "question": "Which of the following is true about tail recursion?",
+    "options": [
+      "It always requires an extra stack space",
+      "It is less efficient than non-tail recursion",
+      "It cannot be optimized by compilers",
+      "It involves recursive function calls as the last operation in the function"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is It involves recursive function calls as the last operation in the function",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 500
+  },
+  {
+    "question": "What is the process of reducing a problem into smaller subproblems called?",
+    "options": [
+      "Recursion",
+      "Backtracking",
+      "Divide and conquer",
+      "Memoization"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Divide and conquer",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 501
+  },
+  {
+    "question": "Which of the following is a characteristic of backtracking algorithms?",
+    "options": [
+      "They backtrack from a solution space when a solution is found to be invalid",
+      "They guarantee finding the optimal solution",
+      "They require a base case to terminate",
+      "They store all possible solutions before selecting the best one"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is They backtrack from a solution space when a solution is found to be invalid",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 502
+  },
+  {
+    "question": "In backtracking, what is the purpose of the \"pruning\" step?",
+    "options": [
+      "To merge branches of the search tree",
+      "To remove invalid branches from the search tree",
+      "To optimize the search process",
+      "To add new branches to the search tree"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To remove invalid branches from the search tree",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 503
+  },
+  {
+    "question": "Which of the following problems can be efficiently solved using backtracking?",
+    "options": [
+      "Calculating the factorial of a number",
+      "Sorting an array",
+      "Finding the shortest path in a graph",
+      "Generating all permutations of a set"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Generating all permutations of a set",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 504
+  },
+  {
+    "question": "Which of the following is a disadvantage of recursive algorithms?",
+    "options": [
+      "They always consume less memory",
+      "They cannot be optimized for performance",
+      "They are harder to debug",
+      "They cannot handle tree-like data structures"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is They are harder to debug",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 505
+  },
+  {
+    "question": "In the context of recursion, what is a stack overflow?",
+    "options": [
+      "When the stack data structure becomes empty",
+      "When the stack exceeds its memory limit",
+      "When the base case is not reached",
+      "When the recursive function returns an incorrect value"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is When the stack exceeds its memory limit",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 506
+  },
+  {
+    "question": "Which of the following problems can be solved efficiently using backtracking?",
+    "options": [
+      "Implementing binary search",
+      "Generating all possible combinations of a set",
+      "Finding the maximum element in an array",
+      "Sorting a linked list"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Generating all possible combinations of a set",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 507
+  },
+  {
+    "question": "What is the time complexity of generating all subsets of a set using recursion?",
+    "options": [
+      "O(2^n)",
+      "O(log n)",
+      "O(n^2)",
+      "O(n!)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is O(2^n)",
+    "topic": "C++ STL",
+    "difficulty": "medium",
+    "id": 508
+  },
+  {
+    "question": "In backtracking, what does the \"back\" step involve?",
+    "options": [
+      "Returning to the initial state of the problem",
+      "Moving forward in the search space",
+      "Rejecting a solution and moving to the next one",
+      "Moving backward in the search space to explore other options"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Moving backward in the search space to explore other options",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 509
+  },
+  {
+    "question": "Which of the following is NOT a common application of backtracking?",
+    "options": [
+      "Knight's tour problem",
+      "N-Queens problem",
+      "Sorting algorithms",
+      "Sudoku solving"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Sorting algorithms",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 510
+  },
+  {
+    "question": "In recursion, what happens during the \"divide\" step?",
+    "options": [
+      "The problem size remains unchanged",
+      "The problem is broken down into smaller subproblems",
+      "Solutions are combined to form the final result",
+      "The base case is checked"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is The problem is broken down into smaller subproblems",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 511
+  },
+  {
+    "question": "Which of the following statements about recursion is false?",
+    "options": [
+      "Recursion can simplify the implementation of certain algorithms",
+      "Recursion always requires more memory than iteration",
+      "Recursion can be used to implement tree traversal algorithms",
+      "Recursion can lead to stack overflow errors"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Recursion always requires more memory than iteration",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 512
+  },
+  {
+    "question": "What is the main drawback of using recursion to solve a problem?",
+    "options": [
+      "It requires more memory than iteration",
+      "It cannot handle problems with overlapping subproblems",
+      "It is harder to understand compared to iteration",
+      "It always leads to infinite loops"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is It requires more memory than iteration",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 513
+  },
+  {
+    "question": "In backtracking, what does the \"tracking\" step involve?",
+    "options": [
+      "Following a specific path in the search space",
+      "Backing up to explore other options",
+      "Discarding invalid solutions",
+      "Maintaining a record of all solutions found so far"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Following a specific path in the search space",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 514
+  },
+  {
+    "question": "Which of the following problems cannot be efficiently solved using backtracking?",
+    "options": [
+      "Generating all permutations of a set",
+      "Finding the shortest path in a graph",
+      "Finding the maximum element in an array",
+      "Solving the Tower of Hanoi problem"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Finding the shortest path in a graph",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 515
+  },
+  {
+    "question": "In backtracking, what is the purpose of the \"dead end\" condition?",
+    "options": [
+      "To backtrack when a solution is found",
+      "To prune the search space when a solution is not possible",
+      "To ensure that all solutions are explored",
+      "To stop the algorithm when the base case is reached"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To prune the search space when a solution is not possible",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 516
+  },
+  {
+    "question": "Which of the following is NOT a common technique to optimize recursive algorithms?",
+    "options": [
+      "Dynamic programming",
+      "Memoization",
+      "Branch and bound",
+      "Backtracking"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Backtracking",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 517
+  },
+  {
+    "question": "In recursion, what is meant by the \"merge\" step?",
+    "options": [
+      "Returning the final result",
+      "Combining solutions from smaller subproblems",
+      "Adding new branches to the search tree",
+      "Breaking down the problem into smaller subproblems"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Combining solutions from smaller subproblems",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 518
+  },
+  {
+    "question": "What is the main advantage of using backtracking over brute force?",
+    "options": [
+      "Backtracking explores the entire solution space",
+      "Backtracking requires less memory",
+      "Backtracking efficiently prunes the search space",
+      "Backtracking always guarantees finding the optimal solution"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Backtracking efficiently prunes the search space",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 519
+  },
+  {
+    "question": "Which of the following is a characteristic of recursive functions?",
+    "options": [
+      "They always require a base case to terminate",
+      "They cannot handle problems with overlapping subproblems",
+      "They call themselves directly or indirectly",
+      "They always use a loop to iterate through the solution space"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is They call themselves directly or indirectly",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 520
+  },
+  {
+    "question": "What is the primary reason for using backtracking algorithms?",
+    "options": [
+      "They handle problems with a large solution space",
+      "They can solve problems with dynamic programming techniques",
+      "They always provide the most efficient solution",
+      "They are easier to implement than other algorithms"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is They handle problems with a large solution space",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 521
+  },
+  {
+    "question": "Which of the following statements is true about recursion?",
+    "options": [
+      "Recursion is less susceptible to stack overflow errors",
+      "Recursion can only be used with tree-like data structures",
+      "Recursion can lead to clearer and more concise code in some cases",
+      "Recursion is always more efficient than iteration"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Recursion can lead to clearer and more concise code in some cases",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "medium",
+    "id": 522
+  },
+  {
+    "question": "Which of the following statements correctly uses the ternary operator in C++?",
+    "options": [
+      "int x = (a > b) ? a ? b;",
+      "int x = (a > b) ? a : b;",
+      "int x = (a > b) (a : b);",
+      "int x = a > b ? (a, b);"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is int x = (a > b) ? a : b;",
+    "topic": "C++ Basics",
+    "difficulty": "medium",
+    "id": 523
+  },
+  {
+    "question": "Which of the following is true about the `switch` statement in C++?",
+    "options": [
+      "The switch statement must always have a default case.",
+      "The switch statement can handle floating-point variables.",
+      "The break statement is optional after each case.",
+      "The case labels must be constant expressions."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is The case labels must be constant expressions.",
+    "topic": "C++ Basics",
+    "difficulty": "medium",
+    "id": 524
+  },
+  {
+    "question": "What is the main advantage of using the `switch` statement over `if-else` chains?",
+    "options": [
+      "Switch statements are more flexible.",
+      "Switch statements can handle complex conditions more effectively.",
+      "Switch statements are easier to debug.",
+      "Switch statements provide better performance in certain scenarios."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Switch statements provide better performance in certain scenarios.",
+    "topic": "C++ Basics",
+    "difficulty": "medium",
+    "id": 525
+  },
+  {
+    "question": "Which of the following is not a valid loop control statement in C++?",
+    "options": [
+      "foreach",
+      "do-while",
+      "for",
+      "while"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is foreach",
+    "topic": "C++ Basics",
+    "difficulty": "medium",
+    "id": 526
+  },
+  {
+    "question": "Which of the following is true about the `while` loop in C++?",
+    "options": [
+      "The while loop is identical to the do-while loop.",
+      "The while loop checks the condition before executing the loop body.",
+      "The while loop checks the condition at the end of the loop.",
+      "The while loop always executes at least once."
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is The while loop checks the condition before executing the loop body.",
+    "topic": "C++ Basics",
+    "difficulty": "medium",
+    "id": 527
+  },
+  {
+    "question": "What is the correct syntax to declare a function pointer that points to a function returning `int` and taking two `int` arguments?",
+    "options": [
+      "int (*func)(int, int);",
+      "int *func(int, int);",
+      "int func*(int, int);",
+      "int func(int*, int*);"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is int (*func)(int, int);",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 528
+  },
+  {
+    "question": "Which of the following statements is true about function overloading in C++?",
+    "options": [
+      "Functions can be overloaded if they have the same name but different parameter lists.",
+      "Functions cannot be overloaded in C++.",
+      "Functions can only be overloaded if they have different return types.",
+      "Functions can only be overloaded if they have different names."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Functions can be overloaded if they have the same name but different parameter lists.",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 529
+  },
+  {
+    "question": "What is the purpose of the `inline` keyword in function definitions?",
+    "options": [
+      "To make the function a friend of a class",
+      "To suggest to the compiler to replace the function call with the function code",
+      "To declare the function in multiple files",
+      "To increase the visibility of the function"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To suggest to the compiler to replace the function call with the function code",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 530
+  },
+  {
+    "question": "Which of the following is true about recursive functions in C++?",
+    "options": [
+      "Recursive functions cannot have a return type.",
+      "Recursive functions must always have a base case.",
+      "Recursive functions cannot be overloaded.",
+      "Recursive functions are always more efficient than iterative solutions."
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Recursive functions must always have a base case.",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 531
+  },
+  {
+    "question": "Which keyword is used to define a class in C++?",
+    "options": [
+      "object",
+      "class",
+      "void",
+      "struct"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is class",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 532
+  },
+  {
+    "question": "In C++, what is the access specifier used for private members of a class?",
+    "options": [
+      "protected",
+      "friend",
+      "public",
+      "private"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is private",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 533
+  },
+  {
+    "question": "Which of the following is true about object-oriented programming?",
+    "options": [
+      "Inheritance allows a class to inherit properties and behavior from another class.",
+      "Polymorphism ensures that a function can perform different tasks based on the object calling it.",
+      "Encapsulation hides the implementation details.",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is All of the above",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 534
+  },
+  {
+    "question": "What is dynamic memory allocation in C++?",
+    "options": [
+      "Memory allocated during runtime",
+      "Memory allocated during compilation",
+      "Memory allocated during linking",
+      "Memory allocated during preprocessing"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Memory allocated during runtime",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 535
+  },
+  {
+    "question": "Which operator is used to dynamically allocate memory in C++?",
+    "options": [
+      "new",
+      "alloc",
+      "malloc",
+      "allocate"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is new",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 536
+  },
+  {
+    "question": "In C++, what is a pointer?",
+    "options": [
+      "A data type used for integer values",
+      "A keyword to define a class",
+      "A variable that stores the address of another variable",
+      "A variable that stores the value of another variable"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is A variable that stores the address of another variable",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 537
+  },
+  {
+    "question": "What does the `delete` operator do in C++?",
+    "options": [
+      "Initializes memory",
+      "Copies memory",
+      "Deallocates memory",
+      "Allocates memory"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Deallocates memory",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 538
+  },
+  {
+    "question": "What is the result of dereferencing a null pointer in C++?",
+    "options": [
+      "Runtime error",
+      "Segmentation fault",
+      "Compilation error",
+      "Undefined behavior"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Segmentation fault",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 539
+  },
+  {
+    "question": "What is the difference between `delete` and `delete[]` in C++?",
+    "options": [
+      "There is no difference",
+      "delete[] is used to deallocate memory allocated for arrays",
+      "delete is used to deallocate memory allocated for arrays",
+      "delete is used to deallocate memory allocated for single objects"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is delete[] is used to deallocate memory allocated for arrays",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 540
+  },
+  {
+    "question": "What is a memory leak in C++?",
+    "options": [
+      "Memory allocated is not freed after use",
+      "Memory is not allocated",
+      "Memory allocated is freed after use",
+      "Memory is deallocated before use"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Memory allocated is not freed after use",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 541
+  },
+  {
+    "question": "What is the purpose of the `this` pointer in C++?",
+    "options": [
+      "To store the address of the next object",
+      "To store the address of the parent object",
+      "To store the address of the previous object",
+      "To store the address of the current object"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is To store the address of the current object",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 542
+  },
+  {
+    "question": "What does the `nullptr` keyword represent in C++?",
+    "options": [
+      "A pointer to a character",
+      "A pointer to a float",
+      "A null pointer",
+      "A pointer to an integer"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is A null pointer",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 543
+  },
+  {
+    "question": "What is a dangling pointer in C++?",
+    "options": [
+      "A pointer that points to a valid memory location",
+      "A pointer that points to the next object",
+      "A pointer that points to the current object",
+      "A pointer that points to a memory location that has been deallocated"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is A pointer that points to a memory location that has been deallocated",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 544
+  },
+  {
+    "question": "Which of the following operators is used to access members of an object through a pointer in C++?",
+    "options": [
+      "::",
+      "*",
+      "->",
+      "."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is ->",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 545
+  },
+  {
+    "question": "What does the `new` operator return if memory allocation fails?",
+    "options": [
+      "nullptr",
+      "0",
+      "Throws an exception",
+      "-1"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is nullptr",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 546
+  },
+  {
+    "question": "Which of the following statements is true about smart pointers in C++?",
+    "options": [
+      "They are less efficient than raw pointers",
+      "They automatically deallocate memory when it is no longer needed",
+      "They are used for manual memory management",
+      "They do not support polymorphism"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is They automatically deallocate memory when it is no longer needed",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 547
+  },
+  {
+    "question": "What is the purpose of the `virtual destructor` in C++?",
+    "options": [
+      "To ensure that derived class objects are correctly deallocated",
+      "To allow dynamic allocation of objects",
+      "To prevent memory leaks",
+      "To enable polymorphism"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is To ensure that derived class objects are correctly deallocated",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 548
+  },
+  {
+    "question": "What is the role of a move constructor in C++?",
+    "options": [
+      "It creates a deep copy of an object",
+      "It transfers ownership of resources from one object to another",
+      "It moves an object to a different memory location",
+      "It initializes an object with another object of the same type"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is It transfers ownership of resources from one object to another",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 549
+  },
+  {
+    "question": "Which of the following is true about the `const` keyword in C++?",
+    "options": [
+      "It can be used to specify constant pointers",
+      "It can be used to define constant member functions",
+      "It can be used to declare constant variables",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is All of the above",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 550
+  },
+  {
+    "question": "In C++, what is the difference between `delete` and `delete[]` when deallocating memory?",
+    "options": [
+      "delete deallocates memory allocated for single objects, while delete[] deallocates memory allocated for arrays.",
+      "They both deallocate memory in the same way.",
+      "delete[] deallocates memory allocated for single objects, while delete deallocates memory allocated for arrays.",
+      "delete and delete[] are not used for memory deallocation."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is delete deallocates memory allocated for single objects, while delete[] deallocates memory allocated for arrays.",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 551
+  },
+  {
+    "question": "Which of the following statements about memory allocation in C++ is true?",
+    "options": [
+      "Memory allocated using new must be deallocated using free.",
+      "Memory allocated using malloc is automatically deallocated when it goes out of scope.",
+      "Memory allocated using malloc must be deallocated using delete.",
+      "Memory allocated using new is automatically deallocated when it goes out of scope."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Memory allocated using malloc must be deallocated using delete.",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 552
+  },
+  {
+    "question": "In C++, what is the purpose of the `#include` directive?",
+    "options": [
+      "To include header files",
+      "To include standard input-output library",
+      "To include user-defined functions",
+      "To define preprocessor macros"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is To include header files",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 553
+  },
+  {
+    "question": "Which of the following is true about the `main()` function in C++?",
+    "options": [
+      "It can accept any number of arguments.",
+      "It must be declared as static.",
+      "It must return an integer value.",
+      "It must be defined within a class."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is It must return an integer value.",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 554
+  },
+  {
+    "question": "What does the `return` statement do in a C++ program?",
+    "options": [
+      "Returns control to the calling function",
+      "All of the above",
+      "Exits the program execution",
+      "Returns a value to the calling function"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Returns a value to the calling function",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 555
+  },
+  {
+    "question": "In C++, what is the correct syntax to declare a global constant variable?",
+    "options": [
+      "int PI = const 3.14;",
+      "const int PI = 3.14;",
+      "PI = const int 3.14;",
+      "int const PI = 3.14;"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is const int PI = 3.14;",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 556
+  },
+  {
+    "question": "What is the purpose of the `::` operator in C++?",
+    "options": [
+      "To define scope resolution",
+      "To access class members",
+      "All of the above",
+      "To access global variables"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is To define scope resolution",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 557
+  },
+  {
+    "question": "Which of the following is true about function prototypes in C++?",
+    "options": [
+      "They are used to define the body of a function.",
+      "They are optional if the function definition is before the main function.",
+      "They are required for all functions.",
+      "They are used to declare the return type and parameters of a function."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is They are used to declare the return type and parameters of a function.",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 558
+  },
+  {
+    "question": "What is the purpose of the `cin` object in C++?",
+    "options": [
+      "To define classes",
+      "To read input from the console",
+      "To perform arithmetic operations",
+      "To display output on the console"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To read input from the console",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 559
+  },
+  {
+    "question": "Which of the following is true about comments in C++?",
+    "options": [
+      "All of the above",
+      "They are used to document the code for better understanding.",
+      "They can be used to temporarily disable code.",
+      "They are ignored by the compiler."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is All of the above",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 560
+  },
+  {
+    "question": "What is the purpose of the `static` keyword in C++?",
+    "options": [
+      "To define a function outside of a class",
+      "To specify that a variable is shared among all instances of a class",
+      "To declare a constant variable",
+      "To declare a variable with a fixed value"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To specify that a variable is shared among all instances of a class",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 561
+  },
+  {
+    "question": "What does the `break` statement do in a C++ program?",
+    "options": [
+      "Terminates the loop and transfers control to a labeled statement",
+      "Terminates the loop and transfers control to the statement following the loop",
+      "Terminates the loop and transfers control to the next iteration",
+      "Terminates the loop and transfers control to the beginning of the loop"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Terminates the loop and transfers control to the statement following the loop",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 562
+  },
+  {
+    "question": "In C++, what is the purpose of the `extern` keyword?",
+    "options": [
+      "To declare a function as external",
+      "To define a variable as static",
+      "To specify the access level of a class member",
+      "To declare a global variable as external"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is To declare a global variable as external",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 563
+  },
+  {
+    "question": "Which of the following statements is true about the `do-while` loop in C++?",
+    "options": [
+      "It always executes at least once.",
+      "It can only be used for iteration over arrays.",
+      "It is rarely used in practice.",
+      "It is equivalent to the while loop."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is It always executes at least once.",
+    "topic": "C++ Basics",
+    "difficulty": "medium",
+    "id": 564
+  },
+  {
+    "question": "What is the purpose of the `sizeof` operator in C++?",
+    "options": [
+      "To calculate the sum of elements in an array",
+      "To determine the size of a variable or data type",
+      "To find the address of a variable",
+      "To allocate memory dynamically"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To determine the size of a variable or data type",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 565
+  },
+  {
+    "question": "What is the time complexity for searching an element in a doubly linked list of size \\( n \\)?",
+    "options": [
+      "\\( O(1) \\)",
+      "\\( O(n) \\)",
+      "\\( O(\\log n) \\)",
+      "\\( O(n^2) \\)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is \\( O(n) \\)",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 566
+  },
+  {
+    "question": "In a doubly linked list, how many pointers does each node contain?",
+    "options": [
+      "Two",
+      "Four",
+      "Three",
+      "One"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Two",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 567
+  },
+  {
+    "question": "Which operation is NOT supported by a doubly linked list?",
+    "options": [
+      "Insertion at the beginning",
+      "Traversal",
+      "Deletion at the end",
+      "Random access"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Random access",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 568
+  },
+  {
+    "question": "What is the time complexity of inserting a node at the end of a circular linked list?",
+    "options": [
+      "\\( O(\\log n) \\)",
+      "\\( O(n^2) \\)",
+      "\\( O(n) \\)",
+      "\\( O(1) \\)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is \\( O(1) \\)",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 569
+  },
+  {
+    "question": "Which of the following is NOT an advantage of circular linked lists?",
+    "options": [
+      "Sequential access",
+      "Efficient memory usage",
+      "Constant time insertion and deletion at the beginning and end",
+      "Easy implementation of algorithms like round-robin scheduling"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Sequential access",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 570
+  },
+  {
+    "question": "What is the advantage of using a doubly linked list over a singly linked list?",
+    "options": [
+      "Faster insertion and deletion operations",
+      "Ability to traverse in both directions",
+      "Lower memory consumption",
+      "Simplicity in implementation"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Ability to traverse in both directions",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 571
+  },
+  {
+    "question": "In a circular linked list, which pointer of the last node points to the first node?",
+    "options": [
+      "Next",
+      "Previous",
+      "None",
+      "Both Next and Previous"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Next",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 572
+  },
+  {
+    "question": "What is the space complexity of a circular linked list with \\( n \\) nodes?",
+    "options": [
+      "\\( O(\\log n) \\)",
+      "\\( O(1) \\)",
+      "\\( O(n) \\)",
+      "\\( O(n^2) \\)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is \\( O(n) \\)",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 573
+  },
+  {
+    "question": "Which operation in a circular linked list requires traversal of the entire list?",
+    "options": [
+      "Insertion at the end",
+      "Deletion at the beginning",
+      "Insertion at the beginning",
+      "Deletion at the end"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Deletion at the end",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 574
+  },
+  {
+    "question": "What is the time complexity of deleting the first node in a doubly linked list?",
+    "options": [
+      "\\( O(n^2) \\)",
+      "\\( O(1) \\)",
+      "\\( O(n) \\)",
+      "\\( O(\\log n) \\)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is \\( O(1) \\)",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 575
+  },
+  {
+    "question": "Which data structure is NOT typically used to implement a circular linked list?",
+    "options": [
+      "Singly linked list",
+      "Doubly linked list",
+      "Dynamic array",
+      "Array"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Array",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 576
+  },
+  {
+    "question": "What is the time complexity of traversing a circular linked list starting from any arbitrary node?",
+    "options": [
+      "\\( O(n^2) \\)",
+      "\\( O(1) \\)",
+      "\\( O(n) \\)",
+      "\\( O(\\log n) \\)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is \\( O(n) \\)",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 577
+  },
+  {
+    "question": "In a doubly linked list, which pointer of the first node points to NULL?",
+    "options": [
+      "Previous",
+      "Next",
+      "None",
+      "Both Next and Previous"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Previous",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 578
+  },
+  {
+    "question": "Which operation is more efficient in a circular linked list compared to a doubly linked list?",
+    "options": [
+      "Insertion at the beginning",
+      "Traversal",
+      "Deletion at the end",
+      "Random access"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Insertion at the beginning",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 579
+  },
+  {
+    "question": "Which operation in a doubly linked list requires traversal of the entire list?",
+    "options": [
+      "Insertion at the beginning",
+      "Insertion at the end",
+      "Deletion at the beginning",
+      "Deletion at the end"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Deletion at the beginning",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 580
+  },
+  {
+    "question": "What is the space complexity of a doubly linked list with \\( n \\) nodes?",
+    "options": [
+      "\\( O(1) \\)",
+      "\\( O(n^2) \\)",
+      "\\( O(\\log n) \\)",
+      "\\( O(n) \\)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is \\( O(n) \\)",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 581
+  },
+  {
+    "question": "Which of the following operations can be performed efficiently in both circular and doubly linked lists?",
+    "options": [
+      "Insertion at the end",
+      "Traversal",
+      "Random access",
+      "Deletion at the beginning"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Traversal",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 582
+  },
+  {
+    "question": "In a circular linked list, which operation can be performed in constant time regardless of the list size?",
+    "options": [
+      "Deletion at the end",
+      "Deletion at the beginning",
+      "Insertion at the beginning",
+      "Traversal"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Insertion at the beginning",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 583
+  },
+  {
+    "question": "Which of the following is an application of circular linked lists?",
+    "options": [
+      "Binary search trees",
+      "Stacks",
+      "Undo functionality in text editors",
+      "Queues"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Undo functionality in text editors",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 584
+  },
+  {
+    "question": "In a circular doubly linked list with \\( n \\) nodes, what is the time complexity of reversing the list?",
+    "options": [
+      "\\( O(n) \\)",
+      "\\( O(1) \\)",
+      "\\( O(n^2) \\)",
+      "\\( O(\\log n) \\)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is \\( O(n) \\)",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 585
+  },
+  {
+    "question": "Which operation in a circular linked list has the highest time complexity?",
+    "options": [
+      "Deletion at the end",
+      "Insertion at the end",
+      "Deletion at the beginning",
+      "Insertion at the beginning"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Insertion at the end",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 586
+  },
+  {
+    "question": "Which of the following statements about circular linked lists is FALSE?",
+    "options": [
+      "They are always doubly linked.",
+      "They have a NULL pointer at the end.",
+      "They can be used to implement queues.",
+      "They can have a constant time complexity for certain operations."
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is They have a NULL pointer at the end.",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 587
+  },
+  {
+    "question": "In a circular linked list, if the last node's pointer points to the first node itself, what kind of circular linked list is it?",
+    "options": [
+      "Normal circular linked list",
+      "Doubly circular linked list",
+      "Circular linked list with sentinel node",
+      "Singularly circular linked list"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Circular linked list with sentinel node",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 588
+  },
+  {
+    "question": "Which of the following operations can be performed more efficiently in a doubly linked list compared to a circular linked list?",
+    "options": [
+      "Insertion at the beginning",
+      "Insertion at the end",
+      "Deletion at the beginning",
+      "Traversal"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Insertion at the end",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 589
+  },
+  {
+    "question": "In a circular doubly linked list, if all the nodes contain unique data values, what is the time complexity of searching for a specific element?",
+    "options": [
+      "\\( O(1) \\)",
+      "\\( O(\\log n) \\)",
+      "\\( O(n) \\)",
+      "\\( O(n^2) \\)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is \\( O(n) \\)",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 590
+  },
+  {
+    "question": "Which of the following data structures can be used to efficiently implement undo functionality in text editors?",
+    "options": [
+      "Singly linked list",
+      "Circular linked list",
+      "Binary search tree",
+      "Doubly linked list"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Doubly linked list",
+    "topic": "Computer Science",
+    "difficulty": "medium",
+    "id": 591
+  },
+  {
+    "question": "In a circular linked list, if the head pointer points to the last node, what kind of circular linked list is it?",
+    "options": [
+      "Normal circular linked list",
+      "Circular linked list with sentinel node",
+      "Doubly circular linked list",
+      "Singularly circular linked list"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Singularly circular linked list",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 592
+  },
+  {
+    "question": "Which of the following operations can be performed in constant time in both circular and doubly linked lists?",
+    "options": [
+      "Insertion at the beginning",
+      "Deletion at the beginning",
+      "Traversal",
+      "Deletion at the end"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Insertion at the beginning",
+    "topic": "Linked Lists",
+    "difficulty": "medium",
+    "id": 593
+  },
+  {
+    "question": "What is the maximum number of pointers that a node in a circular doubly linked list with \\( n \\) nodes can have?",
+    "options": [
+      "4",
+      "3",
+      "1",
+      "2"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is 3",
+    "topic": "C++ Concepts",
+    "difficulty": "medium",
+    "id": 594
   }
 ];
