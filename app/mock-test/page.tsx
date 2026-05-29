@@ -194,8 +194,13 @@ export default function MockTestPage() {
                   <Home className="h-4 w-4 mr-2" />
                   Back to Home
                 </Button>
+                {Object.keys(userAnswers).length > 0 && (
+                  <Button onClick={resetTest} variant="outline" size="lg" className="border-red-600/50 text-red-400 hover:bg-red-500/10 hover:text-red-300">
+                    Restart Test
+                  </Button>
+                )}
                 <Button onClick={startTest} size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-                  Start Mock Test
+                  {Object.keys(userAnswers).length > 0 ? "Resume Test" : "Start Mock Test"}
                 </Button>
               </div>
             </CardFooter>
