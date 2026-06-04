@@ -11,8318 +11,13582 @@ export interface Question {
 export const questions: Question[] = [
   {
     "id": 1,
-    "question": "Which operator is used for concatenating Strings in Java?",
+    "question": "Your company wants to build a global content delivery platform that serves video to users in different continents with minimal delay. Which of the following is the most critical first step in the system design process?",
     "options": [
-      "&",
-      "++'",
-      "+'",
-      ","
+      "Choosing the database technology",
+      "Establishing performance and availability requirements (SLAs)",
+      "Designing the UI mockups",
+      "Deciding on a programming language"
     ],
-    "correctAnswer": "C",
-    "explanation": "The `+` operator is used for concatenating (joining) Strings in Java.",
-    "topic": "String",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Establishing performance and availability requirements (SLAs)",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
   },
   {
     "id": 2,
-    "question": "What is the difference between `default` and `static` methods in interfaces in Java?",
+    "question": "A startup needs to design a booking system that must scale from 1,000 to 1 million daily users rapidly. The product manager has given vague requirements. What is the best way to proceed?",
     "options": [
-      "`default` methods can be overridden by implementing classes, `static` methods cannot.",
-      "`default` methods can access instance variables, `static` methods cannot.",
-      "`static` methods can be overridden by implementing classes, `default` methods cannot.",
-      "`static` methods can access interface constants, `default` methods cannot."
+      "Begin by implementing all features to attract users quickly",
+      "Design for the peak scale immediately to avoid future rework",
+      "Gather and clarify core use cases, define prioritised requirements, then iterate with capacity planning",
+      "Outsource the entire system to a third-party provider"
     ],
-    "correctAnswer": "D",
-    "explanation": "`static` methods in interfaces can access other `static` members including constants defined in the interface, while `default` methods cannot access or modify static fields or constants.",
-    "topic": "Abstract and Inteface",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Gather and clarify core use cases, define prioritised requirements, then iterate with capacity planning",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
   },
   {
     "id": 3,
-    "question": "How can you restrict a method from being overridden?",
+    "question": "You are designing a messaging service. The business wants 'eventual delivery' but also needs to know if messages failed. Which design trade-off should you clarify in requirements?",
     "options": [
-      "By declaring it final",
-      "By declaring it abstract",
-      "By declaring it static",
-      "By declaring it private"
-    ],
-    "correctAnswer": "A",
-    "explanation": "Declaring a method final prevents it from being overridden.",
-    "topic": "OOPS",
-    "difficulty": "easy"
-  },
-  {
-    "id": 4,
-    "question": "Which block must be used with try to handle exceptions?",
-    "options": [
-      "catch",
-      "throws",
-      "finally",
-      "throw"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The catch block follows the try block and handles exceptions.",
-    "topic": "Exception Handling",
-    "difficulty": "easy"
-  },
-  {
-    "id": 5,
-    "question": "Which of the following is a correct generic class definition?",
-    "options": [
-      "class MyClass<?> {}",
-      "class MyClass<T> {}",
-      "class MyClass<> {}",
-      "class MyClass[] {}"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct way to define a generic class is using angle brackets <> with a type parameter, e.g., class MyClass<T>.",
-    "topic": "Generics",
-    "difficulty": "easy"
-  },
-  {
-    "id": 6,
-    "question": "What is the main benefit of inheritance?",
-    "options": [
-      "Faster execution",
-      "Improved performance",
-      "Code reuse",
-      "Better readability"
+      "Consistency versus partition tolerance",
+      "Latency versus throughput",
+      "Availability versus exact-once delivery guarantees",
+      "Vertical scaling versus horizontal scaling"
     ],
     "correctAnswer": "C",
-    "explanation": "The main benefit of inheritance is code reuse.",
-    "topic": "Inheritence",
-    "difficulty": "easy"
-  },
-  {
-    "id": 7,
-    "question": "Which of the following classes is used for handling byte streams in Java?",
-    "options": [
-      "OutputStream",
-      "InputStream",
-      "Reader",
-      "Writer"
-    ],
-    "correctAnswer": "B",
-    "explanation": "`InputStream` and `OutputStream` are used for handling byte streams, whereas `Reader` and `Writer` are used for character streams",
-    "topic": "IO Stream",
-    "difficulty": "easy"
-  },
-  {
-    "id": 8,
-    "question": "What is the correct way to declare a variable in Java?",
-    "options": [
-      "int 1x=10;",
-      "int x=10;",
-      "x int=10;",
-      "int x=10;"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Variable names must start with a letter or underscore, not a digit.",
-    "topic": "Java Basics",
-    "difficulty": "easy"
-  },
-  {
-    "id": 9,
-    "question": "How do you create a jagged array in Java?",
-    "options": [
-      "int[][] jaggedArray = new int[][3];",
-      "int[][] jaggedArray = {{1, 2}, {3, 4, 5}, {6}};",
-      "int[][] jaggedArray = new int[3][];",
-      "Both a and b"
-    ],
-    "correctAnswer": "D",
-    "explanation": "You can create a jagged array by either declaring an array of arrays without specifying the second dimension, or by directly initializing with different-sized subarrays.",
-    "topic": "Arrays",
-    "difficulty": "easy"
-  },
-  {
-    "id": 10,
-    "question": "How do you declare a 3D array in Java?",
-    "options": [
-      "int[][] array3D[];",
-      "int[][][] array3D;",
-      "int array3D[][][];",
-      "All of the above"
-    ],
-    "correctAnswer": "D",
-    "explanation": "In Java, you can declare a 3D array using any of these syntaxes: int[][][] array3D, int array3D[][][], or int[][] array3D[].",
-    "topic": "Arrays",
-    "difficulty": "easy"
-  },
-  {
-    "id": 11,
-    "question": "What happens if you try to access an array element outside its bounds?",
-    "options": [
-      "It returns 0",
-      "It throws an ArrayIndexOutOfBoundsException",
-      "It wraps around to the beginning of the array",
-      "It returns null"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Attempting to access an array element outside its bounds will result in an ArrayIndexOutOfBoundsException at runtime.",
-    "topic": "Arrays",
-    "difficulty": "easy"
-  },
-  {
-    "id": 12,
-    "question": "Which class in Java implements the List interface and uses a resizable array?",
-    "options": [
-      "Stack",
-      "ArrayList",
-      "LinkedList",
-      "Vector"
-    ],
-    "correctAnswer": "B",
-    "explanation": "`ArrayList` implements the `List` interface using a dynamic array. It allows fast random access to elements based on index.",
-    "topic": "Collection FrameWork",
-    "difficulty": "easy"
-  },
-  {
-    "id": 13,
-    "question": "What does the `>>>` operator do in Java?",
-    "options": [
-      "Right shift with zero fill",
-      "Right shift with sign extension",
-      "Left shift with sign extension",
-      "Left shift with zero fill"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The `>>>` operator performs a right shift on its left operand and fills the leftmost bits with zero, regardless of the sign bit.",
-    "topic": "Bitwise Operator",
-    "difficulty": "easy"
-  },
-  {
-    "id": 14,
-    "question": "Which interface is used to execute SQL queries in JDBC?",
-    "options": [
-      "Connection",
-      "PreparedStatement",
-      "ResultSet",
-      "Statement"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The Statement interface in JDBC is used to execute SQL queries against the database.",
-    "topic": "JDBC",
-    "difficulty": "easy"
-  },
-  {
-    "id": 15,
-    "question": "How do you call a parent class constructor from a subclass?",
-    "options": [
-      "base()",
-      "super()",
-      "this()",
-      "parent()"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The super() keyword is used to call a parent class constructor.",
-    "topic": "Inheritence",
-    "difficulty": "easy"
-  },
-  {
-    "id": 16,
-    "question": "What is the primary purpose of multithreading?",
-    "options": [
-      "To use more memory",
-      "To increase code complexity",
-      "To make use of multiple processors",
-      "To handle multiple tasks concurrently"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Multithreading allows multiple tasks to run concurrently, improving the efficiency of programs by making use of idle CPU time.",
-    "topic": "Mutiithreading",
-    "difficulty": "easy"
-  },
-  {
-    "id": 17,
-    "question": "What is the main purpose of a constructor?",
-    "options": [
-      "To destroy objects",
-      "To compare objects",
-      "To initialize objects",
-      "To perform I/O operations"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The main purpose of a constructor is to initialize objects.",
-    "topic": "OOPS",
-    "difficulty": "easy"
-  },
-  {
-    "id": 18,
-    "question": "How do you declare a method that can be accessed without creating an instance of the class?",
-    "options": [
-      "static void method()",
-      "final void method()",
-      "abstract void method()",
-      "void method()"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The static keyword allows a method to be accessed without creating an instance of the class.",
-    "topic": "OOPS",
-    "difficulty": "easy"
-  },
-  {
-    "id": 19,
-    "question": "What is the correct syntax for a while loop in Java?",
-    "options": [
-      "while condition { }",
-      "while { condition }",
-      "while (condition);",
-      "while (condition) { }"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct syntax for a while loop includes parentheses around the condition and curly braces for the code block.",
-    "topic": "Control Statement",
-    "difficulty": "easy"
-  },
-  {
-    "id": 20,
-    "question": "Can a constructor be inherited?",
-    "options": [
-      "Only static constructors",
-      "Yes",
-      "Only private constructors",
-      "No"
-    ],
-    "correctAnswer": "D",
-    "explanation": "Constructors cannot be inherited in Java.",
-    "topic": "Inheritence",
-    "difficulty": "easy"
-  },
-  {
-    "id": 21,
-    "question": "Can a generic class have multiple type parameters?",
-    "options": [
-      "Yes",
-      "Only two parameters",
-      "Only three parameters",
-      "No"
-    ],
-    "correctAnswer": "A",
-    "explanation": "A generic class can have multiple type parameters, e.g., class MyClass<T, U>.",
-    "topic": "Generics",
-    "difficulty": "easy"
-  },
-  {
-    "id": 22,
-    "question": "Can interfaces be generic in Java?",
-    "options": [
-      "Only in JDK 11",
-      "Yes",
-      "Only in JDK 10",
-      "No"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Interfaces can be generic in Java, allowing type parameters.",
-    "topic": "Generics",
-    "difficulty": "easy"
-  },
-  {
-    "id": 23,
-    "question": "In Java, can an abstract class extend another abstract class?",
-    "options": [
-      "No, abstract classes cannot extend other abstract classes.",
-      "Yes, but it can only extend one abstract class at a time.",
-      "Yes, and it must implement all abstract methods of the superclass.",
-      "Yes, and it inherits the abstract methods without implementing them."
-    ],
-    "correctAnswer": "C",
-    "explanation": "Abstract classes in Java can extend other abstract classes, but if they do, they must provide implementations for all inherited abstract methods unless the subclass itself is abstract.",
-    "topic": "Abstract and Inteface",
-    "difficulty": "easy"
-  },
-  {
-    "id": 24,
-    "question": "Which of the following is a correct way to create an empty String object in Java?",
-    "options": [
-      "`String str = \"\";`",
-      "`String str;`",
-      "`String str = null;`",
-      "`String str = new String();`"
-    ],
-    "correctAnswer": "A",
-    "explanation": "`\"\"` represents an empty String literal in Java.",
-    "topic": "Strings",
+    "explanation": "The correct answer is Availability versus exact-once delivery guarantees",
+    "topic": "Fundamentals of System Design",
     "difficulty": "hard"
   },
   {
-    "id": 25,
-    "question": "Which method is used to extract a substring from a String in Java?",
+    "id": 4,
+    "question": "During the design of an e-commerce checkout, the team realizes different stakeholders have conflicting priorities (speed, data accuracy, auditability). What structured approach best helps reconcile and prioritize these during design?",
     "options": [
-      "`subString()`",
-      "`substring()`",
-      "`extract()`",
-      "`slice()`"
+      "Implement all options and let users choose",
+      "Rely on engineering intuition",
+      "Document non-functional requirements, assign weights, and apply decision matrix for trade-offs",
+      "Ignore non-critical stakeholders"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Document non-functional requirements, assign weights, and apply decision matrix for trade-offs",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "question": "You inherit a legacy system with no design docs. Before making changes, which of the following should you do first to avoid breaking existing behavior?",
+    "options": [
+      "Refactor immediately for modern stack",
+      "Write a full test suite and capture current system behavior",
+      "Replace the database",
+      "Add a new UI theme"
     ],
     "correctAnswer": "B",
-    "explanation": "The `substring()` method extracts a substring from the specified begin index to the end of the String.",
-    "topic": "Strings",
+    "explanation": "The correct answer is Write a full test suite and capture current system behavior",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "question": "A team is designing a high-throughput analytics pipeline and assumes all data will arrive in order. Later, they discover out-of-order delivery from sources. What design principle did they violate?",
+    "options": [
+      "Fail-safe defaults",
+      "Designing for expected happy path only instead of real-world variability",
+      "KISS (keep it simple)",
+      "Modular decomposition"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Designing for expected happy path only instead of real-world variability",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "question": "While sketching the high-level architecture for a social network, you decide to postpone capacity planning until after launch. What risk does this decision introduce?",
+    "options": [
+      "Overengineered security",
+      "Cost overruns due to unnecessary early scaling",
+      "Unexpected outages or inability to handle sudden growth",
+      "Improved agility"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Unexpected outages or inability to handle sudden growth",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "question": "Your product requires integration with third-party payment providers. At design time, you model these as a tightly coupled module. Later you need to swap providers quickly. What design flaw is evident?",
+    "options": [
+      "Violation of single responsibility",
+      "Lack of abstraction leading to low flexibility",
+      "Insufficient throughput planning",
+      "Over-specification of consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Lack of abstraction leading to low flexibility",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "question": "A global SaaS application is experiencing downtime when one of its regional datacenters fails. The system was designed with a single active region and a cold standby. What change would improve availability with minimal user-visible impact?",
+    "options": [
+      "Switch to a monolithic architecture",
+      "Implement active-active replication across regions",
+      "Decrease logging verbosity",
+      "Upgrade the database version"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Implement active-active replication across regions",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "question": "An API service using a single load balancer becomes unavailable during peak traffic despite autoscaling backend instances. Which single point of failure is causing reduced availability?",
+    "options": [
+      "Backend instances",
+      "Load balancer",
+      "Client application",
+      "Database schema"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Load balancer",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "question": "Your system uses a distributed cache for session data. If the cache goes down, all users are logged out. What pattern improves availability of session storage?",
+    "options": [
+      "Couple session directly with UI",
+      "Use sticky sessions only",
+      "Fallback to a persistent store with graceful degradation",
+      "Remove sessions entirely"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Fallback to a persistent store with graceful degradation",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "question": "The SLAs require 99.99% uptime. You designed the system with a single database replica in one zone. During a zone outage user writes fail. Which availability strategy was underutilized?",
+    "options": [
+      "Caching",
+      "Read replicas",
+      "Multi-zone redundancy",
+      "Sharding"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Multi-zone redundancy",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "question": "Your microservices architecture uses synchronous calls between services. A downstream service outage causes upstream services to fail. Which improvement increases overall system availability?",
+    "options": [
+      "Increase timeout values indefinitely",
+      "Switch to batch processing only",
+      "Introduce circuit breakers and fallback mechanisms",
+      "Remove service boundaries"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Introduce circuit breakers and fallback mechanisms",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "question": "A distributed system loses availability during network partition, but the design prioritizes consistency. Which consistency/availability trade-off model does this reflect?",
+    "options": [
+      "BASE over ACID",
+      "CAP theorem choosing consistency over availability",
+      "Eventual consistency",
+      "CQRS pattern"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is CAP theorem choosing consistency over availability",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "question": "To meet high availability for a critical payment gateway, the team deploys redundant service instances and uses health checks with automatic failover. What else should they add to detect degraded availability before full failure?",
+    "options": [
+      "Better UI design",
+      "Real-time latency and error rate monitoring with alerting",
+      "Disable logging to reduce noise",
+      "Increase batch job frequency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Real-time latency and error rate monitoring with alerting",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "question": "A region-wide outage affects your user authentication service, causing login failures globally. What is the best mitigation to preserve availability of authentication?",
+    "options": [
+      "Have a secondary, geographically separated authentication cluster with eventual sync",
+      "Require users to reset passwords every time",
+      "Disable authentication temporarily",
+      "Use single-factor authentication only"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Have a secondary, geographically separated authentication cluster with eventual sync",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "question": "A batch job pipeline sporadically fails due to transient network errors. Users complain about inconsistent results. Which design change improves reliability without human intervention?",
+    "options": [
+      "Add manual retry instructions in documentation",
+      "Implement exponential backoff with retries and idempotent processing",
+      "Run the job less frequently",
+      "Ignore failures if they are rare"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Implement exponential backoff with retries and idempotent processing",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "question": "Your service randomly returns inconsistent data due to partial updates across services. Which pattern helps ensure multi-step updates are reliable?",
+    "options": [
+      "Two-phase commit or sagas for distributed transactions",
+      "Use client-side caching only",
+      "Increase load balancer timeout",
+      "Throttle users manually"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Two-phase commit or sagas for distributed transactions",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "question": "A database occasionally returns stale reads causing business logic errors. Which approach improves data reliability for read-after-write scenarios?",
+    "options": [
+      "Disable caching globally",
+      "Use read-your-writes consistency or session consistency guarantees",
+      "Limit users to one request per minute",
+      "Move the database to a slower region"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Use read-your-writes consistency or session consistency guarantees",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "question": "Your application crashes when a dependent third-party service is down. What strategy reduces the impact on your system’s reliability?",
+    "options": [
+      "Fail open without notifications",
+      "Implement graceful degradation with cached fallback data",
+      "Shut down the entire application",
+      "Remove dependency entirely"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Implement graceful degradation with cached fallback data",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 21,
+    "question": "A microservice occasionally deadlocks due to shared resource contention. Which approach improves reliability of concurrent access?",
+    "options": [
+      "Introduce optimistic concurrency control or proper locking with timeouts",
+      "Disable concurrency completely",
+      "Increase hardware specs only",
+      "Log and ignore deadlocks"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Introduce optimistic concurrency control or proper locking with timeouts",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "question": "Your distributed system fails to recover cleanly after a crash because partial state was persisted inconsistently. What addition ensures reliable recovery?",
+    "options": [
+      "Disable persistence",
+      "Use write-ahead logs and checkpointing",
+      "Increase system uptime expectations",
+      "Keep data only in memory"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Use write-ahead logs and checkpointing",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
+  },
+  {
+    "id": 23,
+    "question": "To measure reliability over time, which metric gives insight into the proportion of successful transactions versus failures in the recent period?",
+    "options": [
+      "Error budget burn rate",
+      "CPU utilization",
+      "UI response time",
+      "Number of developers"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Error budget burn rate",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "question": "A database is hitting resource limits during traffic spikes. The team increases the machine CPU and RAM (vertical scaling), but gains are limited. What intrinsic limitation are they facing?",
+    "options": [
+      "Network partition tolerance",
+      "Single-node bottleneck and diminishing returns (scale-up ceiling)",
+      "Data normalization issues",
+      "Increased consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Single-node bottleneck and diminishing returns (scale-up ceiling)",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "question": "You choose vertical scaling for your cache layer to reduce latency. Traffic doubles unexpectedly. Why might performance not double as well?",
+    "options": [
+      "Because of Amdahl’s Law and shared contention on internal resources",
+      "Because vertical scaling reduces throughput",
+      "Because network latency increases automatically",
+      "Because storage is irrelevant"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Because of Amdahl’s Law and shared contention on internal resources",
+    "topic": "Fundamentals of System Design",
     "difficulty": "hard"
   },
   {
     "id": 26,
-    "question": "Which method is used to convert all characters in a String to lowercase?",
+    "question": "A finance platform uses a single powerful server for transaction processing. During peak, lock contention prevents further gains. Which scaling move is advisable next?",
     "options": [
-      "`caseLower()`",
-      "`toLowerCase()`",
-      "`lowerCase()`",
-      "`toLower()`"
+      "Add more CPU to the existing server",
+      "Refactor to partition workload and move toward horizontal scaling",
+      "Decrease transaction logging",
+      "Disable auditing"
     ],
     "correctAnswer": "B",
-    "explanation": "The `toLowerCase()` method converts all characters in a String to lowercase.",
-    "topic": "Strings",
+    "explanation": "The correct answer is Refactor to partition workload and move toward horizontal scaling",
+    "topic": "Fundamentals of System Design",
     "difficulty": "hard"
   },
   {
     "id": 27,
-    "question": "Which of the following statements is true about Java packages?",
+    "question": "You’re running a single-instance search index on a beefy machine. Users demand more throughput. What is a downside of continuing to only scale vertically?",
     "options": [
-      "A class can belong to only one package.",
-      "Packages are used for code optimization purposes only.",
-      "All classes within a package must have the same access modifier.",
-      "Two classes in the same package can have the same name."
+      "Improved fault tolerance",
+      "Higher cost curve and potential single point of failure",
+      "Automatic sharding",
+      "Simplified consistency"
     ],
-    "correctAnswer": "A",
-    "explanation": "In Java, each class can belong to only one package. Packages are used to organize classes and prevent naming conflicts.",
-    "topic": "Abstract and Inteface",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Higher cost curve and potential single point of failure",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
   },
   {
     "id": 28,
-    "question": "Which of the following cannot be marked as `final` in Java?",
+    "question": "A critical logging pipeline is vertically scaled to handle bursts, but the system occasionally stalls when GC pauses spike. What kind of problem is this illustrating?",
     "options": [
-      "Constructor",
-      "Interface",
-      "Method",
-      "Abstract class"
+      "Distributed deadlock",
+      "Resource contention and saturation at single node causing unpredictable latency",
+      "Improper API versioning",
+      "Network partitioning issues"
     ],
     "correctAnswer": "B",
-    "explanation": "Interfaces in Java cannot be marked as `final` because they are meant to be implemented by other classes.",
-    "topic": "Abstract and Inteface",
+    "explanation": "The correct answer is Resource contention and saturation at single node causing unpredictable latency",
+    "topic": "Fundamentals of System Design",
     "difficulty": "hard"
   },
   {
     "id": 29,
-    "question": "Which statement can be used to skip the current iteration of a loop?",
+    "question": "When vertical scaling is exhausted, what architectural shift usually follows to handle further growth?",
     "options": [
-      "continue",
-      "skip",
-      "return",
-      "break"
+      "Monolithization",
+      "Horizontal partitioning (sharding) and distributed design",
+      "Reducing feature set",
+      "Moving to a desktop app"
     ],
-    "correctAnswer": "A",
-    "explanation": "The continue statement is used to skip the rest of the current iteration and move to the next iteration of a loop.",
-    "topic": "Control Statement",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontal partitioning (sharding) and distributed design",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
   },
   {
     "id": 30,
-    "question": "What happens if a superclass and subclass have a static method with the same name and signature?",
+    "question": "An online retailer adds more application servers behind a load balancer but sees user sessions lost between requests. What must be addressed to scale horizontally correctly?",
     "options": [
-      "The subclass method hides the superclass method",
-      "The superclass method is called",
-      "Runtime error",
-      "Compile-time error"
+      "Sticky sessions or shared session store",
+      "Increasing vertical specs of each server",
+      "Reducing database size",
+      "Shutting down extra servers during off-peak"
     ],
     "correctAnswer": "A",
-    "explanation": "The subclass method hides the superclass method.",
-    "topic": "Multithreading",
-    "difficulty": "hard"
+    "explanation": "The correct answer is Sticky sessions or shared session store",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
   },
   {
     "id": 31,
-    "question": "Which of the following statements is used to exit from a loop in Java?",
+    "question": "Your search service scales horizontally but each instance queries the database directly causing contention. Which pattern decouples scaling concerns?",
     "options": [
-      "break",
-      "exit",
-      "terminate",
-      "stop"
+      "Client-side rendering",
+      "Introduce read replicas or a caching layer in front of the database",
+      "Disable search features",
+      "Single-threaded processing"
     ],
-    "correctAnswer": "A",
-    "explanation": "break statement is used to exit from a loop.",
-    "topic": "Java Basics",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Introduce read replicas or a caching layer in front of the database",
+    "topic": "Fundamentals of System Design",
     "difficulty": "hard"
   },
   {
     "id": 32,
-    "question": "Which method is called to handle an exception in Java?",
+    "question": "As traffic grows, new stateless service instances are spun up but service discovery becomes inconsistent. What service design aspect must be added?",
     "options": [
-      "processException",
-      "handleException",
-      "exceptionHandle",
-      "getMessage"
+      "Hardcode IPs of instances",
+      "Dynamic service registry with health checks",
+      "Disable autoscaling",
+      "Use a single instance only"
     ],
-    "correctAnswer": "A",
-    "explanation": "The catch block is used to handle exceptions in Java.",
-    "topic": "Exception Handling",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Dynamic service registry with health checks",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
   },
   {
     "id": 33,
-    "question": "Which keyword is used to implement decision-making in Java?",
+    "question": "During a DDoS attack, more instances are scaled out but request amplification overwhelms the origin. What complementary design improves scalability under hostile load?",
     "options": [
-      "for",
-      "switch",
-      "case",
-      "while"
+      "Rate limiting and edge throttling",
+      "Disable autoscaling",
+      "Force synchronous calls",
+      "Increase session timeouts"
     ],
-    "correctAnswer": "B",
-    "explanation": "The switch statement is used for decision-making based on multiple possible values of an expression.",
-    "topic": "Control Statement",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Rate limiting and edge throttling",
+    "topic": "Fundamentals of System Design",
     "difficulty": "hard"
   },
   {
     "id": 34,
-    "question": "Which of the following is true about constructors in Java?",
+    "question": "Your horizontally scaled service has inconsistent configuration across instances causing bugs. What process ensures uniformity when scaling out?",
     "options": [
-      "They can be abstract",
-      "They can be inherited",
-      "They can be overloaded",
-      "They must have a return type"
+      "Manual copying of configs",
+      "Immutable infrastructure and configuration management",
+      "Hardcode values in code",
+      "Restart only one instance at a time"
     ],
-    "correctAnswer": "C",
-    "explanation": "Constructors can be overloaded to allow multiple ways of object initialization.",
-    "topic": "OOPs",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Immutable infrastructure and configuration management",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
   },
   {
     "id": 35,
-    "question": "What is the purpose of the `StringBuffer` class in Java?",
+    "question": "You need to scale a write-heavy leaderboard service. Horizontal scaling of the database is challenging due to strong consistency needs. Which approach balances scale and correctness?",
     "options": [
-      "To represent fixed-size sequences of characters.",
-      "To create mutable sequences of characters with synchronized operations.",
-      "To handle formatted output of characters.",
-      "To create immutable sequences of characters."
+      "Use eventual consistency without versioning",
+      "Partition users and aggregate leaderboards with periodic reconciliation",
+      "Use a single master write node only",
+      "Limit the number of users manually"
     ],
     "correctAnswer": "B",
-    "explanation": "`StringBuffer` in Java is used to create mutable sequences of characters, and it is synchronized, making it thread-safe for use in multi-threaded environments.",
-    "topic": "String",
+    "explanation": "The correct answer is Partition users and aggregate leaderboards with periodic reconciliation",
+    "topic": "Fundamentals of System Design",
     "difficulty": "hard"
   },
   {
     "id": 36,
-    "question": "What is the purpose of the wildcard ? in Java generics?",
+    "question": "A critical service becomes hard to update because logic is tangled across modules. Which design principle would most improve maintainability going forward?",
     "options": [
-      "To represent a superclass",
-      "To represent an interface",
-      "To represent any type",
-      "To represent a subclass"
+      "Tight coupling",
+      "Single responsibility and modular separation",
+      "Obfuscation",
+      "Performance tuning first"
     ],
-    "correctAnswer": "C",
-    "explanation": "The wildcard ? represents an unknown type in generics, allowing more flexibility.",
-    "topic": "Generics",
-    "difficulty": "hard"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Single responsibility and modular separation",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
   },
   {
     "id": 37,
-    "question": "Can you handle Error in a catch block in Java?",
+    "question": "During onboarding, new engineers spend weeks understanding the codebase because of poor documentation and no clear interfaces. What immediate change would improve maintainability?",
     "options": [
-      "Only in finally",
-      "Only in try",
-      "No",
-      "Yes"
+      "Add comprehensive API contracts and inline high-level README summaries",
+      "Remove all comments from code",
+      "Merge all modules into one file",
+      "Delay onboarding"
     ],
-    "correctAnswer": "D",
-    "explanation": "Error is a subclass of Throwable and can be caught like any other exception.",
-    "topic": "Exception Handling",
-    "difficulty": "hard"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Add comprehensive API contracts and inline high-level README summaries",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "medium"
   },
   {
     "id": 38,
-    "question": "Can an interface extend multiple interfaces in Java?",
+    "question": "A subsystem fails when a shared utility is updated because many services depend on its internal behavior. What practice would help avoid this in the future?",
     "options": [
-      "Yes, using the `extends` keyword.",
-      "No, interfaces cannot extend other interfaces.",
-      "No, interfaces can only extend one interface.",
-      "Yes, but only if all extended interfaces are `default`."
+      "Encapsulate utility behind stable, versioned interfaces and use semantic versioning",
+      "Allow everyone to edit utility directly",
+      "Copy the utility into each service",
+      "Ignore backward compatibility"
     ],
     "correctAnswer": "A",
-    "explanation": "Interfaces in Java can extend multiple other interfaces using the `extends` keyword, allowing for multiple inheritance of type.",
-    "topic": "Abstract and Interface",
+    "explanation": "The correct answer is Encapsulate utility behind stable, versioned interfaces and use semantic versioning",
+    "topic": "Fundamentals of System Design",
     "difficulty": "hard"
   },
   {
     "id": 39,
-    "question": "What will be the output of the following code? public class Test { int x; public Test() { x = 5; } public static void main(String[] args) { Test t = new Test(); System.out.println(t.x); } }",
+    "question": "Frequent production bugs stem from developers modifying shared state without understanding side effects. Which practice would most reduce this risk?",
     "options": [
-      "0",
-      "Runtime error",
-      "5",
-      "Compilation error"
+      "Introduce code ownership and better automated testing with mocks/stubs",
+      "Eliminate tests to speed development",
+      "Disable peer reviews",
+      "Centralize all state into one global variable"
     ],
-    "correctAnswer": "C",
-    "explanation": "The constructor initializes x to 5, which is then printed.",
-    "topic": "OOPS",
-    "difficulty": "medium"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Introduce code ownership and better automated testing with mocks/stubs",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
   },
   {
     "id": 40,
-    "question": "What is the output of the following code? int[][] matrix = {{1, 2}, {3, 4}, {5, 6}}; System.out.println(matrix[1][1]);",
+    "question": "Refactoring is avoided because there is no measurement of its risk. What addition to the development process improves maintainability confidence?",
     "options": [
-      "1",
-      "3",
-      "2",
-      "4"
+      "Implement automated regression test suites and canary deployments",
+      "Remove all automated tests",
+      "Deploy changes directly to production",
+      "Have developers guess impact manually"
     ],
-    "correctAnswer": "D",
-    "explanation": "In the 2D array, matrix[1] refers to the second row {3, 4}, and [1] refers to the second element in that row, which is 4.",
-    "topic": "Arrays",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Implement automated regression test suites and canary deployments",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 41,
-    "question": "What will be the output of the following code: int x = 5; System.out.println(x++);",
+    "question": "You notice repeated logic in multiple services for input validation. What refactor increases maintainability?",
     "options": [
-      "5",
-      "4",
-      "Error",
-      "6"
+      "Duplicate the logic further for speed",
+      "Extract common validation into shared library with clear contract",
+      "Remove validation",
+      "Hardcode values client-side"
     ],
-    "correctAnswer": "A",
-    "explanation": "The x++ operator is post-increment; it returns the value before incrementing.",
-    "topic": "Java Basics",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Extract common validation into shared library with clear contract",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 42,
-    "question": "What is the value of the expression 10 + 20 + \"30\" + 40 in Java?",
+    "question": "Your distributed cache sometimes returns stale values, leading to user confusion. The system was designed for high availability. Which consistency model was likely sacrificed?",
     "options": [
-      "30",
-      "100",
-      "303040",
-      "10203040"
+      "Eventual consistency",
+      "Read-your-writes consistency",
+      "Session consistency",
+      "Strong consistency"
     ],
     "correctAnswer": "D",
-    "explanation": "The numbers are added first, then concatenated with the string.",
-    "topic": "Java Basics",
+    "explanation": "The correct answer is Strong consistency",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 43,
-    "question": "Which bitwise operator is used to check if a number is odd or even efficiently?",
+    "question": "An online document editor allows multiple users to edit but sometimes later edits override earlier ones unexpectedly. What technique would help maintain consistency while allowing concurrent edits?",
     "options": [
-      "^",
-      "&",
-      "~",
-      "|"
+      "Last write wins without transformation",
+      "Operational Transformation or CRDTs",
+      "Disable concurrent edits",
+      "Use separate documents per user"
     ],
     "correctAnswer": "B",
-    "explanation": "To check if a number is odd or even, use `num & 1`. If the result is `1`, the number is odd; if `0`, the number is even.",
-    "topic": "Bitwise Operator",
-    "difficulty": "medium"
+    "explanation": "The correct answer is Operational Transformation or CRDTs",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
   },
   {
     "id": 44,
-    "question": "Which bitwise operator is used to check if two numbers are equal in Java?",
+    "question": "A banking system processes withdrawal and balance checks. Sometimes a user sees their balance before a recent withdrawal due to replication lag. Which improvement increases read consistency?",
     "options": [
-      "|",
-      "^",
-      "Operator ==",
-      "&"
+      "Use eventual consistency for reads",
+      "Implement read-after-write consistency for that user session",
+      "Duplicate the withdrawal logic",
+      "Make all operations asynchronous without ordering"
     ],
-    "correctAnswer": "C",
-    "explanation": "Unlike other bitwise operators, the `==` operator in Java checks for equality between two values, regardless of their bit representation.",
-    "topic": "Bitwise Operator",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Implement read-after-write consistency for that user session",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 45,
-    "question": "Which bitwise operator is used to toggle specific bits in a number to their opposite values?",
+    "question": "To ensure global strong consistency across geo-distributed writes, the team introduces high write latencies. What trade-off are they accepting per CAP theorem?",
     "options": [
-      "~",
-      "^",
-      "|",
-      "&"
+      "Availability for consistency",
+      "Partition tolerance for availability",
+      "Throughput for latency",
+      "Maintainability for scalability"
     ],
-    "correctAnswer": "B",
-    "explanation": "The bitwise XOR (`^`) operator can be used to toggle specific bits to their opposite values because `a ^ 1` flips the bit.",
-    "topic": "Bitwise Operator",
-    "difficulty": "medium"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Availability for consistency",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
   },
   {
     "id": 46,
-    "question": "Which class represents a mutable sequence of characters in Java?",
+    "question": "A distributed shopping cart system allows cart updates on one region to appear later in another. Business requires users to always see their own recent modifications when they return. What consistency guarantee should be added?",
     "options": [
-      "`CharArray`",
-      "`StringBuilder`",
-      "`StringBuffer`",
-      "`String`"
+      "Eventual consistency only",
+      "Session consistency",
+      "No consistency",
+      "Write unavailability during replication"
     ],
     "correctAnswer": "B",
-    "explanation": "StringBuilder` is mutable and is used when there is a need to modify Strings frequently.",
-    "topic": "Strings",
+    "explanation": "The correct answer is Session consistency",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 47,
-    "question": "What will be the output of the following code? for (int i = 0; i < 5; i++) { System.out.print(i + \" \"); }",
+    "question": "Team A wants to prioritize availability under network partition; Team B demands strong consistency for some critical reads. What pattern can satisfy both for different use cases?",
     "options": [
-      "0 1 2 3 4",
-      "0 1 2 3 4 5",
-      "1 2 3 4",
-      "1 2 3 4 5"
+      "Use single global lock",
+      "Read-your-writes consistency selectively with fallback to eventual for less-critical data",
+      "Drop consistency entirely",
+      "Disable partition tolerance"
     ],
-    "correctAnswer": "A",
-    "explanation": "The for loop starts with i = 0 and continues while i < 5, printing numbers from 0 to 4.",
-    "topic": "Control Statement",
-    "difficulty": "medium"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Read-your-writes consistency selectively with fallback to eventual for less-critical data",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
   },
   {
     "id": 48,
-    "question": "Which keyword is used to define a generic constructor in Java?",
+    "question": "A microservice fails and causes its dependent services to cascade failure. What mechanism would isolate and contain faults?",
     "options": [
-      "<T>",
-      "class",
-      "method",
-      "constructor"
+      "Increase logging level",
+      "Introduce circuit breakers and bulkheads",
+      "Use synchronous tight coupling",
+      "Disable retries"
     ],
-    "correctAnswer": "A",
-    "explanation": "A generic constructor is defined using the <> syntax before the constructor name, e.g., <T> MyClass(T value).",
-    "topic": "Generics",
-    "difficulty": "medium"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Introduce circuit breakers and bulkheads",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
   },
   {
     "id": 49,
-    "question": "What is method overriding?",
+    "question": "A critical service is deployed without redundancy. During failure, traffic is dropped entirely. Which design change most directly adds fault tolerance?",
     "options": [
-      "Defining a method with the same name and same parameters in a subclass",
-      "Defining a method with the same name but different parameters",
-      "Calling a method",
-      "Hiding a method"
+      "Add a secondary failover instance with health checks",
+      "Reduce feature scope",
+      "Increase media assets",
+      "Consolidate logs"
     ],
     "correctAnswer": "A",
-    "explanation": "Method overriding allows a subclass to provide a specific implementation of a method already defined in its superclass.",
-    "topic": "Multithreading",
+    "explanation": "The correct answer is Add a secondary failover instance with health checks",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 50,
-    "question": "What are the major challenges in handling transactions across multiple databases using JDBC?",
+    "question": "Your distributed queue sometimes loses messages when a worker crashes mid-processing. What design feature adds fault tolerance here?",
     "options": [
-      "Ensuring atomicity and consistency across databases.",
-      "Managing distributed transaction failures.",
-      "All of the above",
-      "Coordinating rollback operations across multiple databases."
+      "Use at-most-once delivery",
+      "Implement persistent queue with acknowledgment and retry semantics",
+      "Disable visibility timeouts",
+      "Process messages only during low load"
     ],
-    "correctAnswer": "C",
-    "explanation": "Handling transactions across multiple databases involves ensuring atomicity, consistency, managing failures, and coordinating rollback operations, presenting significant challenges.",
-    "topic": "JDBC",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Implement persistent queue with acknowledgment and retry semantics",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 51,
-    "question": "Which of the following cannot have an implementation in Java?",
+    "question": "A database shard failure causes data loss in your analytics system. What measure could have reduced impact?",
     "options": [
-      "Concrete class",
-      "Method",
-      "Interface",
-      "Abstract class"
+      "Single-point replication",
+      "Regular backups and cross-region replication",
+      "Increased query complexity",
+      "UI caching"
     ],
-    "correctAnswer": "C",
-    "explanation": "Interfaces cannot have method implementations; they only declare method signatures.",
-    "topic": "Abstract and Interface",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Regular backups and cross-region replication",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 52,
-    "question": "What is the purpose of the `ConcurrentHashMap` class in Java?",
+    "question": "To simulate outages and validate fault tolerance, the engineering team introduces random service terminations in production-like environment. What practice is this?",
     "options": [
-      "It allows null elements.",
-      "It maintains elements in sorted order.",
-      "It allows concurrent access and modification of elements.",
-      "It ensures unique elements in the collection."
+      "Load testing",
+      "Chaos engineering",
+      "Unit testing",
+      "Code review"
     ],
-    "correctAnswer": "C",
-    "explanation": "`ConcurrentHashMap` is designed for concurrent access by multiple threads without the need for external synchronization.",
-    "topic": "Collection FrameWork",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Chaos engineering",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 53,
-    "question": "Which keyword is used to define a method in a class?",
+    "question": "An e-commerce site experiences high page load time because the recommendation service takes 300ms per call. Which technique reduces perceived latency for users?",
     "options": [
-      "method",
-      "void",
-      "func",
-      "def"
+      "Synchronous blocking calls on every page load",
+      "Client-side prefetching and caching recommendations",
+      "Dropping recommendations entirely",
+      "Adding more form fields"
     ],
     "correctAnswer": "B",
-    "explanation": "Methods are defined using return types, with void indicating no return value.",
-    "topic": "OOPs",
+    "explanation": "The correct answer is Client-side prefetching and caching recommendations",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 54,
-    "question": "Which Java class is used for reading serialized objects from a file?",
+    "question": "A geodistributed application suffers from 150ms round-trip latency for user requests due to long distances. What architectural change best reduces worst-case latency?",
     "options": [
-      "ObjectInputStream",
-      "Deserializer",
-      "ObjectReader",
-      "DataInputStream"
+      "Centralize all logic in one region",
+      "Introduce regional edge caching and read replicas closer to users",
+      "Increase database normalization",
+      "Batch all user requests"
     ],
-    "correctAnswer": "A",
-    "explanation": "`ObjectInputStream` is used for reading serialized objects from a file in Java.",
-    "topic": "IO Stream",
-    "difficulty": "medium"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Introduce regional edge caching and read replicas closer to users",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
   },
   {
     "id": 55,
-    "question": "What is the type of inheritance where a class is derived from more than one class?",
+    "question": "Your analytics dashboard loads slowly because it performs expensive aggregation on every request. What optimization reduces latency without sacrificing correctness?",
     "options": [
-      "Multilevel inheritance",
-      "Single inheritance",
-      "Hierarchical inheritance",
-      "Multiple inheritance"
+      "Precompute results and serve from materialized views",
+      "Remove dashboard features",
+      "Do nothing and wait",
+      "Require manual refresh"
     ],
-    "correctAnswer": "D",
-    "explanation": "Multiple inheritance refers to a class being derived from more than one base class.",
-    "topic": "Inheritence",
-    "difficulty": "medium"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Precompute results and serve from materialized views",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
   },
   {
     "id": 56,
-    "question": "What happens if a thread calls `notify()` on an object, but no thread is waiting on that object?",
+    "question": "Your synchronous microservice chain introduces cumulative latency. Which pattern helps reduce end-to-end latency under load?",
     "options": [
-      "The notify() call is ignored",
-      "An IllegalMonitorStateException is thrown",
-      "The JVM crashes",
-      "The thread that called `notify()` is terminated"
+      "Convert some calls to asynchronous event-driven communication with eventual consistency",
+      "Increase synchronous retries",
+      "Add more layers",
+      "Block user requests"
     ],
     "correctAnswer": "A",
-    "explanation": "If no thread is waiting on the object's monitor, the `notify()` call has no effect.",
-    "topic": "Mutiithreading",
-    "difficulty": "medium"
+    "explanation": "The correct answer is Convert some calls to asynchronous event-driven communication with eventual consistency",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
   },
   {
     "id": 57,
-    "question": "Which keyword is used to explicitly throw an exception in Java?",
+    "question": "A service returns critical data but takes too long because it always waits for fresh data. What trade-off can reduce latency while still providing timely results?",
     "options": [
-      "catch",
-      "exception",
-      "throws",
-      "throw"
+      "Use stale-while-revalidate caching strategy",
+      "Only serve stale data without updates",
+      "Double the polling frequency",
+      "Drop data validation"
     ],
-    "correctAnswer": "D",
-    "explanation": "The throw keyword is used to explicitly throw an exception.",
-    "topic": "Exception Handling",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Use stale-while-revalidate caching strategy",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 58,
-    "question": "What is the superclass of all exception classes in Java?",
+    "question": "Your order ingestion system can process 100 orders/sec but upstream spikes push 500 orders/sec, causing a backlog. What design change increases throughput resilience?",
     "options": [
-      "Throwable",
-      "Error",
-      "Runtime",
-      "Exception"
+      "Implement write buffering with backpressure and horizontal scaling of workers",
+      "Reject all incoming orders",
+      "Throttle UI refresh rate",
+      "Decrease order size"
     ],
     "correctAnswer": "A",
-    "explanation": "Throwable is the superclass of all exception classes in Java.",
-    "topic": "Exception Handling",
-    "difficulty": "medium"
+    "explanation": "The correct answer is Implement write buffering with backpressure and horizontal scaling of workers",
+    "topic": "Fundamentals of System Design",
+    "difficulty": "hard"
   },
   {
     "id": 59,
-    "question": "What is the purpose of a generic method in Java?",
+    "question": "You measured peak throughput of a service and find CPU is underutilized while latency spikes. What bottleneck is likely limiting throughput?",
     "options": [
-      "To define a method",
-      "To override methods",
-      "To accept any type parameter",
-      "To handle multiple exceptions"
+      "Network I/O or serialization overhead",
+      "Insufficient CPU",
+      "Too many developers",
+      "Database schema complexity only"
     ],
-    "correctAnswer": "C",
-    "explanation": "A generic method can accept any type parameter, making the method more flexible and reusable.",
-    "topic": "Generics",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Network I/O or serialization overhead",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 60,
-    "question": "What is the purpose of the finally block in exception handling?",
+    "question": "A logging ingestion pipeline processes logs individually, limiting throughput. What change significantly increases throughput?",
     "options": [
-      "To skip exceptions",
-      "To throw exceptions",
-      "To ensure code always executes",
-      "To execute code before catching exceptions"
+      "Batch log entries and process in bulk",
+      "Process each log with synchronous acknowledgment",
+      "Discard half the logs",
+      "Store logs on client side"
     ],
-    "correctAnswer": "C",
-    "explanation": "The finally block ensures that code within it executes regardless of whether an exception is thrown or not.",
-    "topic": "Exception Handling",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Batch log entries and process in bulk",
+    "topic": "Fundamentals of System Design",
     "difficulty": "medium"
   },
   {
     "id": 61,
-    "question": "PriorityQueue in Java is implemented using:",
+    "question": "A system uses aggressive in-memory caching to speed up responses, but it becomes hard to scale when load increases. What trade-off is being illustrated?",
     "options": [
-      "Tree",
-      "Graph",
-      "Heap",
-      "Stack"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Heap. Tags: heap.",
-    "topic": "Heap",
-    "difficulty": "easy"
-  },
-  {
-    "id": 62,
-    "question": "Time complexity of search in balanced BST?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(n). Tags: tree.",
-    "topic": "Tree",
-    "difficulty": "easy"
-  },
-  {
-    "id": 63,
-    "question": "Height of a binary tree with single node?",
-    "options": [
-      "1",
-      "0",
-      "n",
-      "-1"
+      "Optimizing for scalability at cost of performance",
+      "Optimizing for performance at cost of scalability",
+      "Eliminating fault tolerance",
+      "Improving consistency without impact"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 0. Tags: tree.",
-    "topic": "Tree",
-    "difficulty": "easy"
-  },
-  {
-    "id": 64,
-    "question": "Preorder traversal:",
-    "options": [
-      "LRN",
-      "LNR",
-      "RLN",
-      "NLR"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is NLR. Tags: tree.",
-    "topic": "Tree",
-    "difficulty": "easy"
-  },
-  {
-    "id": 65,
-    "question": "Postorder traversal:",
-    "options": [
-      "LNR",
-      "NLR",
-      "LRN",
-      "RNL"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is LRN. Tags: tree.",
-    "topic": "Tree",
-    "difficulty": "easy"
-  },
-  {
-    "id": 66,
-    "question": "Inorder traversal of BST gives:",
-    "options": [
-      "Reverse order",
-      "Sorted order",
-      "Random",
-      "Level order"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Sorted order. Tags: tree.",
-    "topic": "Tree",
-    "difficulty": "easy"
-  },
-  {
-    "id": 67,
-    "question": "Heap is:",
-    "options": [
-      "BST",
-      "Graph",
-      "Stack",
-      "Complete Binary Tree"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Complete Binary Tree. Tags: heap.",
-    "topic": "Heap",
-    "difficulty": "easy"
-  },
-  {
-    "id": 68,
-    "question": "Prime sieve complexity:",
-    "options": [
-      "O(n)",
-      "O(n log log n)",
-      "O(n²)",
-      "O(log n)"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is O(n log log n). Tags: prime seieve.",
-    "topic": "Prime Seieve",
-    "difficulty": "easy"
-  },
-  {
-    "id": 69,
-    "question": "what is the  output?\r\nint x = 5;\r\nSystem.out.println(x & 1);",
-    "options": [
-      "5",
-      "1",
-      "Error",
-      "0"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 0. Tags: bit-masking.",
-    "topic": "Bit-masking",
-    "difficulty": "easy"
-  },
-  {
-    "id": 70,
-    "question": "what is the  output?\r\nint n = 4;\r\nSystem.out.println(1<<n);",
-    "options": [
-      "16",
-      "8",
-      "4",
-      "2"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is 16. Tags: bit-masking.",
-    "topic": "Bit-masking",
-    "difficulty": "easy"
-  },
-  {
-    "id": 71,
-    "question": "What is the postfix form of A+B*C?",
-    "options": [
-      "AB+C*",
-      "ABC+*",
-      "ABC*+",
-      "A+BC*"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is ABC*+. Tags: stack.",
-    "topic": "Stack",
-    "difficulty": "easy"
-  },
-  {
-    "id": 72,
-    "question": "A full binary tree is one where:",
-    "options": [
-      "Tree has minimum height",
-      "All leaves are at same level",
-      "Every node has 0 or 2 children",
-      "Every node has exactly 2 children"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Every node has 0 or 2 children. Tags: bst.",
-    "topic": "BST",
-    "difficulty": "easy"
-  },
-  {
-    "id": 73,
-    "question": "Which traversal is used to delete a tree (freeing memory)?",
-    "options": [
-      "Postorder",
-      "Inorder",
-      "Level order",
-      "Preorder"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Postorder. Tags: bst.",
-    "topic": "BST",
-    "difficulty": "easy"
-  },
-  {
-    "id": 74,
-    "question": "What is the average case time complexity of BST insertion?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is O(log n). Tags: bst.",
-    "topic": "BST",
-    "difficulty": "easy"
-  },
-  {
-    "id": 75,
-    "question": "Successor of a node in BST (node with next greater value) is:",
-    "options": [
-      "Right child always",
-      "Parent of node",
-      "Rightmost node in left subtree",
-      "Leftmost node in right subtree"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Leftmost node in right subtree. Tags: bst.",
-    "topic": "BST",
-    "difficulty": "easy"
-  },
-  {
-    "id": 76,
-    "question": "A binary heap is stored in an array. For node at index i, its left child is at:",
-    "options": [
-      "i-1",
-      "2i",
-      "2i+1",
-      "2i+2"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 2i+1. Tags: heap.",
-    "topic": "Heap",
-    "difficulty": "easy"
-  },
-  {
-    "id": 77,
-    "question": "For node at index i in a 1-indexed heap array, its parent is at:",
-    "options": [
-      "(i-1)/2",
-      "2i",
-      "i/2",
-      "i-1"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is i/2. Tags: heap.",
-    "topic": "Heap",
-    "difficulty": "easy"
-  },
-  {
-    "id": 78,
-    "question": "What are the two key properties required for a problem to be solvable by DP?",
-    "options": [
-      "Greedy choice and local optimality",
-      "Divide and conquer and recursion",
-      "Optimal substructure and overlapping subproblems",
-      "Backtracking and pruning"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Optimal substructure and overlapping subproblems. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
-    "difficulty": "easy"
-  },
-  {
-    "id": 79,
-    "question": "What is tabulation in DP?",
-    "options": [
-      "Top-down approach with recursion",
-      "Using hash maps for memoization",
-      "Greedy table filling",
-      "Bottom-up approach filling table iteratively"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Bottom-up approach filling table iteratively. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
-    "difficulty": "easy"
-  },
-  {
-    "id": 80,
-    "question": "What does the dp state dp[i][w] represent in 0/1 knapsack?",
-    "options": [
-      "Maximum value using first w items with capacity i",
-      "Minimum weight using i items",
-      "Total items selected",
-      "Maximum value using first i items with capacity w"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Maximum value using first i items with capacity w. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
-    "difficulty": "easy"
-  },
-  {
-    "id": 81,
-    "question": "What is a max-heap?",
-    "options": [
-      "Heap where root is minimum",
-      "Heap where every parent is greater than or equal to its children",
-      "Sorted descending array",
-      "Heap with maximum height"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Heap where every parent is greater than or equal to its children. Tags: heap.",
-    "topic": "Heap",
-    "difficulty": "easy"
-  },
-  {
-    "id": 82,
-    "question": "What is heapify operation?",
-    "options": [
-      "Sorting a heap",
-      "Deleting all elements",
-      "Restoring heap property after insertion or deletion",
-      "Building a heap from scratch"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Restoring heap property after insertion or deletion. Tags: heap.",
-    "topic": "Heap",
-    "difficulty": "easy"
-  },
-  {
-    "id": 83,
-    "question": "What is the time complexity of Fibonacci using simple recursion without DP?",
-    "options": [
-      "O(n)",
-      "O(n²)",
-      "O(2^n)",
-      "O(n log n)"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is O(2^n). Tags: dyanamic pogramming.",
-    "topic": "Dyanamic Pogramming",
-    "difficulty": "easy"
-  },
-  {
-    "id": 84,
-    "question": "What is the time complexity of Fibonacci using DP?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(2^n)",
-      "O(n²)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is O(n). Tags: dyanamic pogramming.",
-    "topic": "Dyanamic Pogramming",
-    "difficulty": "easy"
-  },
-  {
-    "id": 85,
-    "question": "What is tabulation in DP?",
-    "options": [
-      "Bottom-up approach filling a table iteratively from smallest subproblems",
-      "Creating a table of random values",
-      "Top-down recursive approach",
-      "Sorting data in a table"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Bottom-up approach filling a table iteratively from smallest subproblems. Tags: dyanamic pogramming.",
-    "topic": "Dyanamic Pogramming",
-    "difficulty": "easy"
-  },
-  {
-    "id": 86,
-    "question": "In activity selection problem, we sort activities by:",
-    "options": [
-      "Finish time",
-      "Duration",
-      "Priority",
-      "Start time"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Finish time. Tags: greedy.",
-    "topic": "Greedy",
-    "difficulty": "easy"
-  },
-  {
-    "id": 87,
-    "question": "What is the time complexity of activity selection problem after sorting?",
-    "options": [
-      "O(log n)",
-      "O(n log n) for sorting + O(n) for selection",
-      "O(n²)",
-      "O(n)"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is O(n log n) for sorting + O(n) for selection. Tags: greedy.",
-    "topic": "Greedy",
-    "difficulty": "easy"
-  },
-  {
-    "id": 88,
-    "question": "What is the result of 5 AND 3 (bitwise)?",
-    "options": [
-      "6",
-      "7",
-      "1",
-      "8"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 1. Tags: bit-masking.",
-    "topic": "Bit-masking",
-    "difficulty": "easy"
-  },
-  {
-    "id": 89,
-    "question": "What is the result of left shift (n << 1)?",
-    "options": [
-      "n * 2",
-      "n / 2",
-      "n - 1",
-      "n + 1"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is n * 2. Tags: bit-masking.",
-    "topic": "Bit-masking",
-    "difficulty": "easy"
-  },
-  {
-    "id": 90,
-    "question": "What is the result of right shift (n >> 1)?",
-    "options": [
-      "n / 2",
-      "n - 1",
-      "n + 1",
-      "n * 2"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is n / 2. Tags: bit-masking.",
-    "topic": "Bit-masking",
-    "difficulty": "easy"
-  },
-  {
-    "id": 91,
-    "question": "When does method overloading is determined?",
-    "options": [
-      "At execution time",
-      "At compile time",
-      "At coding time",
-      "At run time"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is At compile time. Tags: Polymorphism.",
-    "topic": "polmorphism",
-    "difficulty": "easy"
-  },
-  {
-    "id": 92,
-    "question": "Method Overloading occurs when",
-    "options": [
-      "Same method name with same parameters",
-      "Different classes",
-      "Different method names",
-      "Same method name with different parameters"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Same method name with different parameters. Tags: Polymorphism.",
-    "topic": "polmorphism",
-    "difficulty": "easy"
-  },
-  {
-    "id": 93,
-    "question": "Which concept of Java is achieved by combining methods and attribute into a class?",
-    "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Abstraction",
-      "Inheritance"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Encapsulation. Tags: Encapsulation.",
-    "topic": "encpsulation",
-    "difficulty": "easy"
-  },
-  {
-    "id": 94,
-    "question": "Which keyword is used in Java to inherit a class?",
-    "options": [
-      "extends",
-      "implements",
-      "inherits",
-      "super"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is extends. Tags: Inheritance.",
-    "topic": "inhritance",
-    "difficulty": "easy"
-  },
-  {
-    "id": 95,
-    "question": "What is an \"abstract class\" in Java?",
-    "options": [
-      "A class that cannot be instantiated and must be inherited",
-      "A final class that cannot be extended",
-      "A class without any implementation",
-      "A class that can only contain abstract methods"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is A class that cannot be instantiated and must be inherited. Tags: Abstraction.",
-    "topic": "absraction",
-    "difficulty": "easy"
-  },
-  {
-    "id": 96,
-    "question": "Rabin-Karp has a worst case complexity of O(nm) due to:",
-    "options": [
-      "Slow hashing",
-      "String comparison at every step",
-      "Large alphabet size",
-      "Hash collisions causing repeated full comparisons"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Hash collisions causing repeated full comparisons. Tags: Rabin-Karp.",
-    "topic": "rabin-karp",
-    "difficulty": "easy"
-  },
-  {
-    "id": 97,
-    "question": "In KMP, if a mismatch occurs at pattern index j, we set j to:",
-    "options": [
-      "j - 1",
-      "j + 1",
-      "0",
-      "lps[j-1]"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is lps[j-1]. Tags: KMP.",
-    "topic": "kmp",
-    "difficulty": "easy"
-  },
-  {
-    "id": 98,
-    "question": "In the Sieve of Eratosthenes, why do we start marking multiples from p²",
-    "options": [
-      "Multiples below p² are even",
-      "To reduce array size",
-      "p² is always prime",
-      "All smaller multiples of p are already marked by previous primes"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is All smaller multiples of p are already marked by previous primes. Tags: Prime Sieve.",
-    "topic": "prime sieve",
-    "difficulty": "easy"
-  },
-  {
-    "id": 99,
-    "question": "What is the output of Kadane's algorithm on array [-2, -3, -1, -4]?",
-    "options": [
-      "-1",
-      "-10",
-      "-2",
-      "0"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is -1. Tags: Kadane's.",
-    "topic": "kadane's",
-    "difficulty": "easy"
-  },
-  {
-    "id": 100,
-    "question": "Using a prefix sum array, the sum of elements from index l to r can be computed in:",
-    "options": [
-      "O(log n)",
-      "O(r - l)",
-      "O(n)",
-      "O(1)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(1). Tags: KMP.",
-    "topic": "kmp",
-    "difficulty": "easy"
-  },
-  {
-    "id": 101,
-    "question": "Dynamic binding happens at:",
-    "options": [
-      "Edit time",
-      "Compile time",
-      "Link time",
-      "Run time"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Run time. Tags: Dynamic Blinding.",
-    "topic": "dynamic blinding",
-    "difficulty": "easy"
-  },
-  {
-    "id": 102,
-    "question": "Message passing means:",
-    "options": [
-      "Object communicates with another object",
-      "Function return",
-      "Variable declaration",
-      "Memory allocation"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Object communicates with another object. Tags: Message Passing.",
-    "topic": "message passing",
-    "difficulty": "easy"
-  },
-  {
-    "id": 103,
-    "question": "Copy constructor receives parameter of type:",
-    "options": [
-      "Integer",
-      "Same class object reference",
-      "String",
-      "Float"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Same class object reference. Tags: Copy constructor.",
-    "topic": "copy constructor",
-    "difficulty": "easy"
-  },
-  {
-    "id": 104,
-    "question": "Method overriding requires:",
-    "options": [
-      "Encapsulation",
-      "Inheritance",
-      "Polymorphism",
-      "Abstraction"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Inheritance. Tags: Destructor.",
-    "topic": "desructor",
-    "difficulty": "easy"
-  },
-  {
-    "id": 105,
-    "question": "Order of destructor execution:",
-    "options": [
-      "Derived → Base",
-      "Base → Derived",
-      "Random",
-      "Parallel"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Derived → Base. Tags: Destructor.",
-    "topic": "desructor",
-    "difficulty": "easy"
-  },
-  {
-    "id": 106,
-    "question": "Deep copy avoids:",
-    "options": [
-      "Shared memory issues",
-      "Memory allocation",
-      "Duplicate objects",
-      "Constructors"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Shared memory issues. Tags: Deep Copy.",
-    "topic": "deep copy",
-    "difficulty": "easy"
-  },
-  {
-    "id": 107,
-    "question": "Abstract class can have:",
-    "options": [
-      "Only constructors",
-      "Both abstract and concrete methods",
-      "Only abstract methods",
-      "Only variables"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Both abstract and concrete methods. Tags: Abstraction.",
-    "topic": "absraction",
+    "explanation": "The correct answer is Optimizing for performance at cost of scalability",
+    "topic": "Comparison",
     "difficulty": "medium"
   },
   {
-    "id": 108,
-    "question": "Late binding is also called:",
+    "id": 62,
+    "question": "Your initial design tuned a monolith for low latency. When user base grew tenfold, you hit a wall and have to rearchitect. What would have addressed long-term scalability earlier?",
     "options": [
-      "Early binding",
-      "Dynamic binding",
-      "Static binding",
-      "Compile binding"
+      "Early decomposition into microservices with horizontal scaling in mind",
+      "Use a bigger single machine only",
+      "Avoid monitoring",
+      "Disable logging for speed"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Early decomposition into microservices with horizontal scaling in mind",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 63,
+    "question": "A database index improves query speed (performance) but slows down writes as data grows. What common design tension does this represent?",
+    "options": [
+      "Latency vs Availability",
+      "Performance (read) vs Scalability (write)",
+      "Consistency vs Partition tolerance",
+      "Modularity vs Coupling"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Dynamic binding. Tags: Dynamic Blinding.",
-    "topic": "dynamic blinding",
+    "explanation": "The correct answer is Performance (read) vs Scalability (write)",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 64,
+    "question": "A streaming platform batches messages to increase throughput but users complain about delay in fresher content. Which trade-off is happening?",
+    "options": [
+      "Latency increasing to gain higher throughput",
+      "Availability decreasing for consistency",
+      "Scalability reducing performance",
+      "Maintainability vs modularity"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Latency increasing to gain higher throughput",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 65,
+    "question": "To minimize round-trip delay for interactive queries, you limit concurrent requests per user, reducing aggregate throughput. What design choice did you make?",
+    "options": [
+      "Favoring throughput over latency",
+      "Favoring latency over throughput",
+      "Choosing eventual consistency",
+      "Sacrificing availability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Favoring latency over throughput",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 66,
+    "question": "During a network partition, your user profile service continues serving reads but occasionally returns slightly outdated info. Which guarantee was chosen?",
+    "options": [
+      "Consistency over availability",
+      "Availability over strict consistency",
+      "Partition tolerance dropped",
+      "Throughput increased"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Availability over strict consistency",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 67,
+    "question": "A financial application requires every transaction read to reflect the latest write even under partition, accepting downtime during network issues. Which CAP trade-off is it making?",
+    "options": [
+      "Availability over consistency",
+      "Consistency over availability",
+      "Partition tolerance over everything",
+      "Scalability over reliability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Consistency over availability",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 68,
+    "question": "You have a large codebase with services tightly interwoven, so changes ripple unpredictably. Which design change most improves maintainability?",
+    "options": [
+      "Break the system into well-defined modules with clear interfaces",
+      "Merge all modules into a single file for simplicity",
+      "Hide all architecture documentation",
+      "Reduce code comments"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Break the system into well-defined modules with clear interfaces",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 69,
+    "question": "A team struggles to test components independently because business logic and data access are mixed. Which refactor aligns with modular design?",
+    "options": [
+      "Introduce separation of concerns and layer abstraction",
+      "Increase coupling for performance",
+      "Use global state everywhere",
+      "Eliminate interfaces"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Introduce separation of concerns and layer abstraction",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 70,
+    "question": "You inherit a system with long functions doing multiple things, making bugs frequent. Which principle would most directly reduce complexity?",
+    "options": [
+      "Single Responsibility Principle (SRP)",
+      "YAGNI (You Aren't Gonna Need It)",
+      "Premature optimization",
+      "Copy-paste coding"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Single Responsibility Principle (SRP)",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 71,
+    "question": "The team uses ambiguous variable names and unclear logic. Which clean code practice would immediately help new developers understand code faster?",
+    "options": [
+      "Use descriptive naming and small functions",
+      "Obfuscate logic to prevent misuse",
+      "Remove all comments and documentation",
+      "Write everything in a single line"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Use descriptive naming and small functions",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 72,
+    "question": "A feature requires multiple scattered changes; developers keep breaking unrelated parts. Which principle would help isolate changes?",
+    "options": [
+      "Encapsulation and modularization",
+      "Global state sharing",
+      "Hardcoding values",
+      "Duplicating logic"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Encapsulation and modularization",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 73,
+    "question": "A team manually deploys code and often introduces regressions. What CI/CD practice would prevent this?",
+    "options": [
+      "Automated testing with gated merges and continuous deployment",
+      "Deploy directly from developer laptops",
+      "Avoid version control",
+      "Increase manual approval steps with no automation"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Automated testing with gated merges and continuous deployment",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 74,
+    "question": "After each merge, code is automatically built, tested, and deployed to staging, but production rollout is delayed for weeks. What pipeline improvement shortens time to production safely?",
+    "options": [
+      "Introduce canary deployments with automated rollback on anomalies",
+      "Skip staging entirely",
+      "Deploy only monthly",
+      "Disable automated tests in production"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Introduce canary deployments with automated rollback on anomalies",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 75,
+    "question": "Your real-time chat application delays delivery to maintain ordering, but high volume causes slowness. What optimization can retain ordering while improving throughput?",
+    "options": [
+      "Partition chats and use per-partition ordering with parallelism",
+      "Drop ordering completely",
+      "Serialize all traffic through one node",
+      "Throttle all users equally"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Partition chats and use per-partition ordering with parallelism",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 76,
+    "question": "A distributed key-value store allows stale reads during partitions to stay available. Later it reconciles updates. Which consistency model is in effect?",
+    "options": [
+      "Strong consistency",
+      "Eventual consistency",
+      "Immediate consistency",
+      "No consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Eventual consistency",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 77,
+    "question": "An application routes traffic through a centralized cache for speed, but it becomes the bottleneck as user count grows. What principle was overlooked?",
+    "options": [
+      "Avoid early scaling",
+      "Design for distributed caching to enable scalability",
+      "Use a single thread",
+      "Ignore monitoring"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Design for distributed caching to enable scalability",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 78,
+    "question": "A legacy module has nested conditionals making it hard to reason about. Which refactor aligns with clean code to improve readability?",
+    "options": [
+      "Replace nested conditionals with strategy or polymorphism",
+      "Add more comments inside the nested blocks",
+      "Compress into one line",
+      "Hide logic behind magic strings"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Replace nested conditionals with strategy or polymorphism",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 79,
+    "question": "Deployments frequently fail live because last-minute changes bypass the pipeline. What enforcement prevents this?",
+    "options": [
+      "Require all deployments to go through automated pipeline with signed artifacts",
+      "Allow developers to push directly to prod",
+      "Remove version control",
+      "Disable rollbacks"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Require all deployments to go through automated pipeline with signed artifacts",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 80,
+    "question": "A monolithic service is hard to test because a small change requires spinning up entire stack. What modular decomposition improves this?",
+    "options": [
+      "Split into independent services with clear contracts and test each in isolation",
+      "Combine more layers into one",
+      "Remove interface boundaries",
+      "Reduce test coverage"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Split into independent services with clear contracts and test each in isolation",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 81,
+    "question": "Your API is highly optimized for single-request latency but cannot handle concurrent spikes. What strategy helps improve scalability without sacrificing critical performance?",
+    "options": [
+      "Introduce request queuing with priority and auto-scaling of worker pools",
+      "Remove all optimization",
+      "Limit user base artificially",
+      "Use a slower language runtime"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Introduce request queuing with priority and auto-scaling of worker pools",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 82,
+    "question": "In a video conferencing system, you must choose between sending every frame (high throughput) or dropping some to keep latency low. What is this trade-off?",
+    "options": [
+      "Availability vs Consistency",
+      "Latency vs Throughput",
+      "Modularity vs Performance",
+      "Reliability vs Fault Tolerance"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Latency vs Throughput",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 83,
+    "question": "Your client display shows slightly stale stock prices but never fails to show anything. What design choice does this reflect?",
+    "options": [
+      "Strict consistency with downtime",
+      "Availability prioritized over immediate consistency",
+      "No partition tolerance",
+      "High latency preference"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Availability prioritized over immediate consistency",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 84,
+    "question": "Repeated logic exists in several modules causing maintenance burden. What principle eliminates this duplication?",
+    "options": [
+      "DRY (Don't Repeat Yourself)",
+      "YAGNI",
+      "Premature optimization",
+      "God object pattern"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is DRY (Don't Repeat Yourself)",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 85,
+    "question": "A bug introduced in staging goes to production because the test suite does not run on feature branches. What improvement ensures this does not recur?",
+    "options": [
+      "Run full CI pipeline including tests on every feature branch before merge",
+      "Only test on main branch",
+      "Remove tests",
+      "Deploy untested code during weekends"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Run full CI pipeline including tests on every feature branch before merge",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 86,
+    "question": "Your microservice uses expensive CPU-bound computation for each request. To scale, you decide to cache results. What are you trading off?",
+    "options": [
+      "Staleness (consistency) for performance and effective scalability",
+      "Latency for throughput",
+      "Availability for consistency",
+      "Modularity for reliability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Staleness (consistency) for performance and effective scalability",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 87,
+    "question": "A telemetry ingestion service batches for throughput; clients want real-time metrics. What hybrid approach helps both?",
+    "options": [
+      "Send critical metrics immediately and batch the rest",
+      "Only batch everything",
+      "Delay all metrics by fixed window",
+      "Drop non-critical metrics entirely"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Send critical metrics immediately and batch the rest",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 88,
+    "question": "You need to roll back a feature but cannot isolate its changes because modules are interdependent. What design principle would prevent this entanglement?",
+    "options": [
+      "Loose coupling and clear interface boundaries",
+      "Tight coupling for speed",
+      "Store everything in global variables",
+      "Avoid unit tests"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Loose coupling and clear interface boundaries",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 89,
+    "question": "You find a function with 200 lines and nested logic. What clean code recommendation applies?",
+    "options": [
+      "Refactor into smaller functions with descriptive names",
+      "Add more comments instead of refactoring",
+      "Leave it as-is",
+      "Obfuscate it further"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Refactor into smaller functions with descriptive names",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 90,
+    "question": "Deployments cause regressions because there is no rollback mechanism. What pipeline feature directly addresses this?",
+    "options": [
+      "Blue-green or canary deployments with automatic rollback",
+      "Manual deployment only",
+      "Single environment for all",
+      "Disable monitoring"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Blue-green or canary deployments with automatic rollback",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 91,
+    "question": "You build a messaging queue that always accepts writes during partitions even if some messages may duplicate later. Which CAP property did you prioritize?",
+    "options": [
+      "Consistency over availability",
+      "Availability over consistency",
+      "Partition tolerance removed",
+      "Throughput over latency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Availability over consistency",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 92,
+    "question": "A system that scales horizontally by adding more nodes also increases coordination overhead, reducing per-node performance. What phenomenon is this?",
+    "options": [
+      "Amdahl’s Law / diminishing returns due to synchronization overhead",
+      "CAP theorem violation",
+      "Single responsibility breach",
+      "Code smell"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Amdahl’s Law / diminishing returns due to synchronization overhead",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 93,
+    "question": "Your system introduces small delays per request to batch more efficiently, dramatically increasing total processed data. Which goal was favored?",
+    "options": [
+      "Latency over throughput",
+      "Throughput over latency",
+      "Consistency over availability",
+      "Maintainability over modularity"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Throughput over latency",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 94,
+    "question": "Developers avoid touching certain modules because changes have unknown side effects. Which practice would reduce this fear and improve maintainability?",
+    "options": [
+      "Introduce comprehensive test harnesses and clear module contracts",
+      "Hide modules from team",
+      "Remove documentation",
+      "Lock code permanently"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Introduce comprehensive test harnesses and clear module contracts",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 95,
+    "question": "A function has deep nesting and many branches. Which refactor reduces complexity while preserving behavior?",
+    "options": [
+      "Apply early returns and extract helper functions",
+      "Add more nested ifs",
+      "Hardcode values",
+      "Duplicate the function"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Apply early returns and extract helper functions",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 96,
+    "question": "A feature branch is merged without running its tests due to lack of enforcement. Which gating mechanism should be applied?",
+    "options": [
+      "Require passing CI checks before merge (branch protection)",
+      "Merge first, test later",
+      "Disable tests on feature branches",
+      "Use manual approvals only"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Require passing CI checks before merge (branch protection)",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 97,
+    "question": "You choose a complex algorithm for minimal latency per request, but CPU usage skyrockets under load making it hard to support many concurrent users. What could help balance both?",
+    "options": [
+      "Introduce adaptive algorithms or degrade gracefully under load",
+      "Remove concurrency completely",
+      "Fix the algorithm regardless of cost",
+      "Add forced delays"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Introduce adaptive algorithms or degrade gracefully under load",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 98,
+    "question": "Developers copy-paste similar logic across services to accelerate delivery. What principle is violated, and what's the correct remedy?",
+    "options": [
+      "Violates DRY; extract shared logic into a common library",
+      "Violates KISS; make logic more complex",
+      "Violates YAGNI; remove the logic",
+      "Violates SOLID; merge services"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Violates DRY; extract shared logic into a common library",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 99,
+    "question": "Deployments are unpredictable because configuration changes live only in prod. Which best practice avoids this?",
+    "options": [
+      "Store configuration as code alongside application and promote through pipeline",
+      "Edit prod config manually",
+      "Embed configs in binary only",
+      "Avoid config versioning"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Store configuration as code alongside application and promote through pipeline",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 100,
+    "question": "A globally distributed datastore accepts writes in any region and later reconciles conflicts, occasionally showing divergent data briefly. What model does this represent?",
+    "options": [
+      "Strong consistency",
+      "Eventual consistency with conflict resolution",
+      "Immediate consistency",
+      "No partition tolerance"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Eventual consistency with conflict resolution",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 101,
+    "question": "A payment gateway batches transactions to reduce load but some users experience delay in confirmation. What design optimization can reduce perceived latency while keeping batching?",
+    "options": [
+      "Acknowledge receipt immediately and process batch asynchronously",
+      "Stop batching entirely",
+      "Disable acknowledgments",
+      "Increase batch size indefinitely"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Acknowledge receipt immediately and process batch asynchronously",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 102,
+    "question": "A module’s internal implementation leaks into multiple clients, making replacements risky. Which abstraction principle would fix this?",
+    "options": [
+      "Define a clear interface and hide implementation details (encapsulation)",
+      "Expose all internals to clients",
+      "Copy code into clients",
+      "Avoid versioning"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Define a clear interface and hide implementation details (encapsulation)",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 103,
+    "question": "Team uses magic numbers scattered through code making changes error-prone. What practice improves maintainability?",
+    "options": [
+      "Replace magic numbers with named constants",
+      "Use more magic numbers",
+      "Hide numbers in comments only",
+      "Remove all numbers"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Replace magic numbers with named constants",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 104,
+    "question": "Testing is skipped on weekends causing accumulating bugs. What scheduling improvement ensures continuous quality?",
+    "options": [
+      "Ensure pipeline triggers on every commit including weekends with automated test runs",
+      "Disable weekend work",
+      "Merge without tests",
+      "Manual testing only"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Ensure pipeline triggers on every commit including weekends with automated test runs",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 105,
+    "question": "Your system caches aggressively per node, improving latency but causing inconsistent state across the cluster. What architectural pattern can reconcile data freshness and scalability?",
+    "options": [
+      "Cache invalidation with versioning and distributed coherence protocols",
+      "Disable caching",
+      "Consistency over availability always",
+      "Use a single node"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Cache invalidation with versioning and distributed coherence protocols",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 106,
+    "question": "During a partition, your search index still serves queries but some results are slightly outdated. Which CAP decision was made?",
+    "options": [
+      "Sacrificing availability",
+      "Sacrificing consistency",
+      "Removing partition tolerance",
+      "Improving throughput"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Sacrificing consistency",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 107,
+    "question": "A new feature requires changes across 7 modules, leading to coordination cost. What design improvement reduces coupling?",
+    "options": [
+      "Introduce a shared service or domain-specific API to encapsulate cross-cutting logic",
+      "Copy logic into each module again",
+      "Drop the feature",
+      "Disable code reviews"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Introduce a shared service or domain-specific API to encapsulate cross-cutting logic",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 108,
+    "question": "Developers frequently commit large changes mixing refactor and feature code making reviews hard. What practice separates concerns for clarity?",
+    "options": [
+      "Separate refactors from feature additions in different commits/PRs",
+      "Merge everything into one big PR",
+      "Avoid PRs altogether",
+      "Use unclear commit messages"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Separate refactors from feature additions in different commits/PRs",
+    "topic": "Comparison",
     "difficulty": "medium"
   },
   {
     "id": 109,
-    "question": "In KMP, LPS array stores?",
+    "question": "Production incidents happen because staging and production environments differ. What CI/CD best practice addresses this?",
     "options": [
-      "Longest prefix-suffix",
-      "Last position",
-      "Longest palindrome",
-      "Loop count"
+      "Use environment-as-code to keep parity between staging and production",
+      "Change production manually",
+      "Ignore environment differences",
+      "Only test in dev"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Longest prefix-suffix. Tags: KMP.",
-    "topic": "dynamic blinding",
-    "difficulty": "medium"
+    "explanation": "The correct answer is Use environment-as-code to keep parity between staging and production",
+    "topic": "Comparison",
+    "difficulty": "hard"
   },
   {
     "id": 110,
-    "question": "Recursion base case prevents?",
+    "question": "Your microservice performs complex validation inline causing high latency; moving validations asynchronous speeds throughput but delays error feedback. What is the trade-off?",
     "options": [
-      "Memory leak",
-      "Binary search",
-      "Infinite calls",
-      "Sorting"
+      "Immediate consistency vs eventual throughput improvement",
+      "Availability vs partition tolerance",
+      "Maintainability vs modularity",
+      "Strong consistency vs fault tolerance"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Infinite calls. Tags: Recursion.",
-    "topic": "recrsion",
-    "difficulty": "medium"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Immediate consistency vs eventual throughput improvement",
+    "topic": "Comparison",
+    "difficulty": "hard"
   },
   {
     "id": 111,
-    "question": "In the Z-Algorithm, what does the variable R (the right boundary of the Z-box) signify?",
+    "question": "Your telemetry backend buffers metrics for 5 seconds to send in bulk, but real-time alerting needs lower delay. What compromise can you implement?",
     "options": [
-      "The total length of the string.",
-      "The index of the last character of the pattern.",
-      "The rightmost index of a substring that is also a prefix of the entire string.",
-      "The number of unique characters in the window."
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is The rightmost index of a substring that is also a prefix of the entire string.. Tags: Z Funtiion.",
-    "topic": "z fntiion",
-    "difficulty": "easy"
-  },
-  {
-    "id": 112,
-    "question": "What makes the Z-algorithm more efficient than a naive O(N^2) prefix search?",
-    "options": [
-      "It sorts the string before searching.",
-      "It only checks the first and last characters of the string.",
-      "It maintains a \"Z-box\" [L, R] to reuse previously computed match lengths.",
-      "t uses a frequency array to skip characters."
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is It maintains a \"Z-box\" [L, R] to reuse previously computed match lengths.. Tags: Z Funtiion.",
-    "topic": "z fntiion",
-    "difficulty": "easy"
-  },
-  {
-    "id": 113,
-    "question": "In the \"Sliding Window Maximum\" problem, which element is always at the front of the Deque?",
-    "options": [
-      "The smallest element in the current window.",
-      "The largest element in the current window.",
-      "The element that entered the window most recently.",
-      "The element at the exact middle of the window."
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is The largest element in the current window.. Tags: Sliding Window.",
-    "topic": "sliding window",
-    "difficulty": "easy"
-  },
-  {
-    "id": 114,
-    "question": "In a \"Rotated Sorted Array,\" how do you decide which half to discard during Binary Search?",
-    "options": [
-      "Identify which half is \"normally sorted\" by comparing arr[low] and arr[mid]",
-      "Use a linear search to find the pivot first.",
-      "Always discard the left half.",
-      "Discard the half that contains the largest number."
+      "Split traffic: immediate alerts on critical signals, batch the rest",
+      "Buffer everything longer",
+      "Disable alerts",
+      "Drop non-critical metrics"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Identify which half is \"normally sorted\" by comparing arr[low] and arr[mid]. Tags: Array.",
-    "topic": "arry",
+    "explanation": "The correct answer is Split traffic: immediate alerts on critical signals, batch the rest",
+    "topic": "Comparison",
     "difficulty": "medium"
   },
   {
-    "id": 115,
-    "question": "In the \"Prime Sieve\" implementation, up to what value do we need to iterate the outer loop to mark multiples up to N",
+    "id": 112,
+    "question": "Multiple teams edit shared code unknowingly causing integration breaks. What structural change improves this?",
     "options": [
-      "N/2",
-      "sqrt{N}",
-      "N",
-      "log N"
+      "Introduce clear module ownership boundaries and versioned interfaces",
+      "Allow anyone to edit any module without coordination",
+      "Merge all modules weekly",
+      "Centralize all changes to one developer"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is sqrt{N}. Tags: Prime Sieve.",
-    "topic": "Prime Seieve",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Introduce clear module ownership boundaries and versioned interfaces",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 113,
+    "question": "Code reviews flag complex conditional logic with no tests. What two improvements paired together align with clean code?",
+    "options": [
+      "Refactor into clarity (small functions) and add unit tests",
+      "Add more nested ifs and reduce comments",
+      "Remove tests and keep complexity",
+      "Increase coupling"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Refactor into clarity (small functions) and add unit tests",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 114,
+    "question": "Production deployments sometimes fail due to unknown dependency changes. What CI practice can catch this early?",
+    "options": [
+      "Dependency scanning and reproducible builds in pipeline",
+      "Ignore dependency updates",
+      "Deploy without builds",
+      "Manual dependency editing"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Dependency scanning and reproducible builds in pipeline",
+    "topic": "Comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 115,
+    "question": "Your global key-value store accepts conflicting writes and later resolves them with last-write-wins, sometimes losing earlier data. Which trade-off does this illustrate?",
+    "options": [
+      "Consistency sacrificed for availability",
+      "Availability sacrificed for consistency",
+      "Partition tolerance removed",
+      "Throughput reduced"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Consistency sacrificed for availability",
+    "topic": "Comparison",
     "difficulty": "medium"
   },
   {
     "id": 116,
-    "question": "The LPS array value for the string \"ABCAB\" at the last index is:",
+    "question": "A service uses per-request encryption which slows individual calls, but the system cannot scale due to CPU costs. What combined approach improves scalability while retaining security?",
     "options": [
-      "2",
-      "1",
-      "3",
-      "0"
+      "Offload encryption to edge gateway and reuse secure tokens",
+      "Remove encryption",
+      "Encrypt twice",
+      "Use a single central encryptor synchronous call"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is 2. Tags: KMP.",
-    "topic": "kmp",
-    "difficulty": "medium"
+    "explanation": "The correct answer is Offload encryption to edge gateway and reuse secure tokens",
+    "topic": "Comparison",
+    "difficulty": "hard"
   },
   {
     "id": 117,
-    "question": ". How does the Z-Algorithm handle the case where i + Z[i - L] < R?",
+    "question": "Developers frequently commit large swaths of unrelated code making blame tracking hard. What process practice improves this?",
     "options": [
-      "It starts a new character-by-character comparison.",
-      "It resets the Z-box to [0, 0].",
-      "It sets Z[i] = Z[i - L] and moves to the next index without any comparisons.",
-      "t increments R immediately."
+      "Encourage small, focused commits with clear messages",
+      "Commit everything once a month",
+      "Use ambiguous commit titles",
+      "Avoid version control"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is It sets Z[i] = Z[i - L] and moves to the next index without any comparisons.. Tags: Z Funtiion.",
-    "topic": "z fntiion",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Encourage small, focused commits with clear messages",
+    "topic": "Comparison",
+    "difficulty": "medium"
   },
   {
     "id": 118,
-    "question": "In the KMP algorithm, what is the maximum possible value of any element in the LPS (Longest Prefix Suffix) array for a string of length N",
+    "question": "A hotfix is applied manually in production and not propagated back to source. What break in pipeline discipline does this cause?",
     "options": [
-      "N-1",
-      "N/2",
-      "N",
-      "log N"
+      "Configuration drift and source-of-truth divergence",
+      "Improved reliability",
+      "Clean code compliance",
+      "Better modularity"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is N-1. Tags: KMP.",
-    "topic": "kmp",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Configuration drift and source-of-truth divergence",
+    "topic": "Comparison",
+    "difficulty": "hard"
   },
   {
     "id": 119,
-    "question": "The Z-algorithm constructs the Z-array in O(N) time. What is the core reason for this efficiency?",
+    "question": "You batch user analytics to increase throughput, but several dependent downstream systems need near real-time data. What architectural refinement helps both?",
     "options": [
-      "It uses a Hash Map to store substrings.",
-      "it sorts the string first.",
-      "It maintains a \"Z-box\" [L, R] to reuse previously computed match lengths.",
-      "It only checks every second character."
+      "Publish events for critical data immediately, batch less critical data",
+      "Batch everything with large window",
+      "Disable downstream systems",
+      "Increase user wait time"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is It maintains a \"Z-box\" [L, R] to reuse previously computed match lengths.. Tags: Z Funtiion.",
-    "topic": "z fntiion",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Publish events for critical data immediately, batch less critical data",
+    "topic": "Comparison",
+    "difficulty": "hard"
   },
   {
     "id": 120,
-    "question": "In a fixed sliding window of size K, how many windows exist in an array of size N?",
+    "question": "You want to enable rapid independent deployment of features. Which combination of practices best supports this goal?",
     "options": [
-      "N – K + 1",
-      "N + K",
-      "K",
-      "N"
+      "Modular design with well-defined APIs and semantic versioning",
+      "Tight coupling with shared monoliths",
+      "Manual integration only",
+      "No testing"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is N – K + 1. Tags: Sliding Window.",
-    "topic": "sliding window",
+    "explanation": "The correct answer is Modular design with well-defined APIs and semantic versioning",
+    "topic": "Comparison",
     "difficulty": "medium"
   },
   {
     "id": 121,
-    "question": "In an undirected graph, cycle detection can be done using:",
+    "question": "In a ride-hailing system, users often complain that the app is down during peak hours. Which System Design characteristic directly addresses this problem?",
     "options": [
-      "DFS only",
-      "Topological Sort",
-      "BFS/DFS with parent tracking",
-      "BFS only"
+      "Availability",
+      "Consistency",
+      "Latency",
+      "Throughput"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is BFS/DFS with parent tracking. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Availability",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 122,
-    "question": "Time complexity of DFS in graph:",
+    "question": "A banking application must ensure no two transactions on the same account can result in inconsistent balance updates. Which characteristic ensures this?",
     "options": [
-      "O(V + E)",
-      "O(E log V)",
-      "O(V²)",
-      "O(V log E)"
+      "Fault Tolerance",
+      "Reliability",
+      "Throughput",
+      "Latency"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is O(V + E). Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Reliability",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 123,
-    "question": "A graph with V vertices and V-1 edges is always:",
+    "question": "An e-commerce site doubles its CPU and memory capacity on a single server to handle growing traffic. Which type of scalability is being applied?",
     "options": [
-      "Bipartite only",
-      "Complete",
-      "Cyclic",
-      "Tree (if connected)"
+      "Vertical Scaling (Scaling Up)",
+      "Horizontal Scaling (Scaling Out)",
+      "Fault Tolerance",
+      "Consistency Pattern"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Tree (if connected). Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Vertical Scaling (Scaling Up)",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 124,
-    "question": "Shortest cycle in an unweighted graph can be found using",
+    "question": "A social media platform adds more servers to handle an increasing number of active users. What is this an example of?",
     "options": [
-      "Dijkstra",
-      "DFS",
-      "Kruskal",
-      "BFS"
+      "Fault Tolerance",
+      "Consistency",
+      "Horizontal Scaling (Scaling Out)",
+      "Vertical Scaling (Scaling Up)"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is BFS. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Horizontal Scaling (Scaling Out)",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 125,
-    "question": ". Cycle detection in undirected graph using DFS requires:",
+    "question": "In an online exam system, the requirement is that once a student submits an answer, it must always remain stored accurately even if a server fails. Which property ensures this?",
     "options": [
-      "Parent node tracking",
-      "Queue",
-      "Priority Queue",
-      "Stack"
+      "Availability",
+      "Durability",
+      "Scalability",
+      "Modularity"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Parent node tracking. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Durability",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 126,
-    "question": "Topological sort is applicable only for:",
+    "question": "An airline booking system must reject double bookings for the same seat even during peak load. Which property of ACID transactions ensures this?",
     "options": [
-      "Tree",
-      "DAG",
-      "Weighted Graph",
-      "Undirected Graph"
+      "Isolation",
+      "Consistency",
+      "Availability",
+      "Reliability"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is DAG. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Isolation",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 127,
-    "question": "Which algorithm detects cycle in directed graph?",
+    "question": "If a distributed system prioritizes Availability and Partition Tolerance from the CAP theorem, which consistency model will it likely follow?",
     "options": [
-      "Prim",
-      "DFS with recursion stack",
-      "BFS",
-      "Kruskal"
+      "Strong Consistency",
+      "Weak Consistency",
+      "Eventual Consistency",
+      "Strict Serializability"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is DFS with recursion stack. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Eventual Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 128,
-    "question": "Kosaraju algorithm is used for:",
+    "question": "During Black Friday sales, an e-commerce app ensures the system responds quickly to each request even if fewer items can be processed. Which metric is being prioritized?",
     "options": [
-      "Shortest Path",
-      ") Cycle detection",
-      "MST",
-      "Strongly Connected Components"
+      "Throughput",
+      "Latency",
+      "Reliability",
+      "Consistency"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Strongly Connected Components. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Latency",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 129,
-    "question": "DSU stands for:",
+    "question": "A financial trading system must ensure no message is ever lost even if a server crashes. Which system design property guarantees this?",
     "options": [
-      "Disjoint Set Union",
-      "Dynamic Set Utility",
-      "Data Set Union",
-      "Directed Set Union"
+      "Scalability",
+      "Fault Tolerance",
+      "Latency",
+      "Consistency"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Disjoint Set Union. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Fault Tolerance",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 130,
-    "question": "DSU uses which techniques for optimization?",
+    "question": "Which of the following best describes Vertical Scaling in system design?",
     "options": [
-      "DP",
-      "Backtracking",
-      "Greedy",
-      "Path compression & union by rank"
+      "Adding more servers to distribute load",
+      "Increasing resources (CPU, RAM) of an existing server",
+      "Replicating data across multiple data centers",
+      "Dividing database tables across shards"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Path compression & union by rank. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Increasing resources (CPU, RAM) of an existing server",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 131,
-    "question": "Kruskal algorithm is based on:",
+    "question": "In microservices architecture, what ensures that one failing service does not crash the entire system?",
     "options": [
-      "Greedy",
-      "DFS",
-      "DP",
-      "Backtracking"
+      "Fault Isolation",
+      "Latency Management",
+      "Consistency",
+      "Throughput"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Greedy. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Fault Isolation",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 132,
-    "question": "Kruskal uses:",
+    "question": "A video streaming service ensures that even if servers in one region go down, users can still stream from another region. This is an example of?",
     "options": [
-      "Heap",
-      "Stack",
-      "DSU",
-      "Queue"
+      "Sharding",
+      "Replication",
+      "Normalization",
+      "Vertical Scaling"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is DSU. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Replication",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 133,
-    "question": "Prim’s algorithm uses:",
+    "question": "Which of the following is an example of Event-Driven Architecture?",
     "options": [
-      "DSU",
-      "Priority Queue",
-      "Stack",
-      "Array only"
+      "User submits form → server saves record immediately",
+      "User clicks checkout → order service publishes event → payment & inventory subscribe",
+      "A single server handles all requests",
+      "Database triggers auto-backup daily"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Priority Queue. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "explanation": "The correct answer is User clicks checkout → order service publishes event → payment & inventory subscribe",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 134,
-    "question": ". MST exists only for:",
+    "question": "Which normalization form removes partial dependencies of attributes on part of a candidate key?",
     "options": [
-      "Directed Graph",
-      "Cyclic Graph",
-      "Connected Undirected Graph",
-      "DAG"
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Connected Undirected Graph. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is 2NF",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 135,
-    "question": "Time complexity of Kruskal:",
+    "question": "Which ACID property ensures that once a transaction is committed, it remains even in case of system crash?",
     "options": [
-      "O(V²)",
-      "O(E log E)",
-      "O(V log V)",
-      "O(E²)"
+      "Atomicity",
+      "Durability",
+      "Isolation",
+      "Consistency"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is O(E log E). Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Durability",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 136,
-    "question": "Dijkstra fails for:",
+    "question": "An online store increases database partitions to improve read/write speed. What concept is this?",
     "options": [
-      "Positive weights",
-      "Zero weights",
-      "Negative weights",
-      "Directed graphs"
+      "Sharding",
+      "Replication",
+      "Vertical Scaling",
+      "Normalization"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Negative weights. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Sharding",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 137,
-    "question": "Bellman-Ford detects:",
+    "question": "Which type of consistency model ensures that once a user reads a value, subsequent reads will always return the same value until updated?",
     "options": [
-      "SCC",
-      "MST",
-      "Negative cycle",
-      "Bipartite"
+      "Strong Consistency",
+      "Eventual Consistency",
+      "Weak Consistency",
+      "Monotonic Read Consistency"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Negative cycle. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Monotonic Read Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 138,
-    "question": "Time complexity of Bellman-Ford:",
+    "question": "Which architectural pattern tightly couples all components into one codebase and deployment unit?",
     "options": [
-      "O(V²)",
-      "O(VE)",
-      "O(V + E)",
-      "O(E log V)"
+      "Microservices",
+      "Monolithic Architecture",
+      "Event-Driven Architecture",
+      "Layered Architecture"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is O(VE). Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Monolithic Architecture",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 139,
-    "question": "Dijkstra uses:",
+    "question": "Which SQL command is used to remove a table permanently from a database?",
     "options": [
-      "DSU",
-      "Min Heap",
-      "Stack",
-      "Queue"
+      "DELETE",
+      "DROP",
+      "REMOVE",
+      "TRUNCATE"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Min Heap. Tags: Graph.",
-    "topic": "graph",
-    "difficulty": "easy"
+    "explanation": "The correct answer is DROP",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 140,
-    "question": "Trie is mainly used for:",
+    "question": "Which indexing structure is most commonly used in relational databases?",
     "options": [
-      "DP",
-      "Searching strings efficiently",
-      "Graph traversal",
-      "Sorting"
+      "B+ Tree",
+      "Hash Table",
+      "Bitmap Index",
+      "Skip List"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Searching strings efficiently. Tags: Trie.",
-    "topic": "tri",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is B+ Tree",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 141,
-    "question": "Time complexity of inserting a word of length L in Trie:",
+    "question": "A travel booking site ensures that duplicate booking references are never created. Which database constraint enforces this?",
     "options": [
-      "O(log L)",
-      "O(L²)",
-      "O(L)",
-      "O(1)"
+      "PRIMARY KEY",
+      "UNIQUE",
+      "NOT NULL",
+      "CHECK"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is O(L). Tags: Trie.",
-    "topic": "tri",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is UNIQUE",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 142,
-    "question": "Which problem is best solved using Trie?",
+    "question": "Which SQL statement is used to add a new row to a table?",
     "options": [
-      "Shortest path",
-      "Word dictionary search",
-      "Cycle detection",
-      "MST"
+      "INSERT",
+      "UPDATE",
+      "ALTER",
+      "SELECT"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Word dictionary search. Tags: Trie.",
-    "topic": "tri",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is INSERT",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 143,
-    "question": "Given two classes, Base and Derived, where Derived extends Base and both classes have a method show() with different implementations.\r\nHow is polymorphic behavior achieved when calling show() on a Derived object referenced by a Base type?",
+    "question": "In system design, which metric measures the maximum number of requests a system can process per second?",
     "options": [
-      "error",
-      "By marking show() in Base as final",
-      "By using the static keyword in Derived's show() method",
-      "By overriding show() in Derived"
+      "Latency",
+      "Throughput",
+      "Availability",
+      "Scalability"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is By overriding show() in Derived. Tags: Polymorphism.",
-    "topic": "polmorphism",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Throughput",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 144,
-    "question": "What is the difference between encapsulation and abstraction?",
+    "question": "Which database design phase translates ER diagrams into relational schemas with tables, attributes, and relationships?",
     "options": [
-      "There is no significant difference",
-      "Encapsulation is about hiding the details, abstraction is about showing only essential features",
-      "Encapsulation deals with data, and abstraction deals with classes",
-      "Encapsulation is a design guideline, whereas abstraction is a programming concept"
+      "Conceptual Design",
+      "Logical Design",
+      "Physical Design",
+      "Requirement Analysis"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Encapsulation is about hiding the details, abstraction is about showing only essential features. Tags: Encapsulation.",
-    "topic": "encpsulation",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Logical Design",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 145,
-    "question": "Constructor is used to:",
+    "question": "Which principle of clean code ensures that functions and classes have only one reason to change?",
     "options": [
-      "Destroy objec",
-      "Initialize object",
-      "Delete memory",
-      "Copy object"
+      "Open/Closed Principle",
+      "Single Responsibility Principle",
+      "Dependency Inversion",
+      "Interface Segregation"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Initialize object. Tags: Constructor.",
-    "topic": "contructor",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Single Responsibility Principle",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 146,
-    "question": "Real-world example of abstraction:",
+    "question": "Which consistency pattern allows temporary stale reads but guarantees all replicas eventually synchronize?",
     "options": [
-      "Memory allocation",
-      "Calculator showing result only",
-      "Compiler",
-      "Pointer"
+      "Weak Consistency",
+      "Eventual Consistency",
+      "Strong Consistency",
+      "Monotonic Consistency"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Calculator showing result only. Tags: Abstraction.",
-    "topic": "absraction",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Eventual Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 147,
-    "question": "Runtime polymorphism uses:",
+    "question": "Which SQL clause is used to filter records after aggregation functions like COUNT or SUM?",
     "options": [
-      "Function overloading",
-      "Constructors",
-      "Arrays",
-      "Function overriding"
+      "WHERE",
+      "HAVING",
+      "GROUP BY",
+      "ORDER BY"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Function overriding. Tags: Polymorphism.",
-    "topic": "polmorphism",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is HAVING",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 148,
-    "question": "Time complexity of sliding window approach?",
+    "question": "In CI/CD pipelines, which stage ensures the application is deployed to a staging environment before production?",
     "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n^2)",
-      "O(n log n)"
+      "Build",
+      "Test",
+      "Release",
+      "Deploy"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is O(n). Tags: Sliding Window.",
-    "topic": "sliding window",
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Deploy",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 149,
-    "question": "Rabin Karp uses?",
+    "question": "Which functional dependency property ensures that if A → B and B → C, then A → C?",
     "options": [
-      "Graph",
-      "Stack",
-      "Hashing",
-      "Tree"
+      "Reflexivity",
+      "Augmentation",
+      "Transitivity",
+      "Union"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Hashing. Tags: Rabin Karp.",
-    "topic": "rabin karp",
+    "explanation": "The correct answer is Transitivity",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 150,
-    "question": "Sieve of Eratosthenes used for?",
+    "question": "Which database recovery technique restores data using a transaction log after a crash?",
     "options": [
-      "Sorting",
-      "Recursion",
-      "Searching",
-      "Prime generation"
+      "Checkpointing",
+      "Rollforward",
+      "Rollback",
+      "Snapshot"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Prime generation. Tags: Prime Sieve.",
-    "topic": "prime sieve",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Rollforward",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 151,
-    "question": "Prefix sum array for [1,2,3] is?",
+    "question": "Which SQL command is part of TCL (Transaction Control Language)?",
     "options": [
-      "[1,3,6]",
-      "[0,1,3]",
-      "[1,2,3]",
-      "[6,5,3]"
+      "COMMIT",
+      "ALTER",
+      "CREATE",
+      "UPDATE"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is [1,3,6]. Tags: Prefix Sum.",
-    "topic": "prefix sum",
+    "explanation": "The correct answer is COMMIT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 152,
-    "question": "Frequency array size for lowercase letters?",
+    "question": "Which database design phase deals with physical storage structures, indexes, and file organization?",
     "options": [
-      "256",
-      "26",
-      "128",
-      "52"
+      "Conceptual Design",
+      "Logical Design",
+      "Physical Design",
+      "Requirement Analysis"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is 26. Tags: Frequency.",
-    "topic": "freuency",
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Physical Design",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 153,
-    "question": "What does n >> 1 compute?",
+    "question": "Which transaction property ensures that either all operations are performed or none are?",
     "options": [
-      "n mod 2",
-      "n+1",
-      "n / 2 (integer)",
-      "n * 2"
+      "Durability",
+      "Atomicity",
+      "Consistency",
+      "Isolation"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is n / 2 (integer). Tags: bit-masking.",
-    "topic": "Bit-masking",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Atomicity",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 154,
-    "question": "Fractional knapsack vs 0/1 knapsack: why does greedy work for fractional?",
+    "question": "Which SQL query retrieves all unique job titles from an employee table?",
     "options": [
-      "Items can be split, so taking highest value/weight ratio is always optimal",
-      "0/1 can also be solved greedily",
-      "Fractional has fewer items",
-      "Both are solved by greedy"
+      "SELECT job_title FROM employee;",
+      "SELECT DISTINCT job_title FROM employee;",
+      "SELECT UNIQUE job_title FROM employee;",
+      "SELECT job_title, COUNT(*) FROM employee;"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Items can be split, so taking highest value/weight ratio is always optimal. Tags: greedy.",
-    "topic": "Greedy",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is SELECT DISTINCT job_title FROM employee;",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 155,
-    "question": "Job sequencing with deadlines: greedy strategy?",
+    "question": "Which architectural style is best when services must communicate asynchronously using events?",
     "options": [
-      "Sort by duration asc",
-      "FIFO scheduling",
-      "Sort by profit desc, schedule each job in latest possible slot",
-      "Sort by deadline asc"
+      "Layered Architecture",
+      "Event-Driven Architecture",
+      "Microservices",
+      "Monolithic"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Sort by profit desc, schedule each job in latest possible slot. Tags: greedy.",
-    "topic": "Greedy",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Event-Driven Architecture",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 156,
-    "question": "What is the key difference between top-down and bottom-up DP?",
+    "question": "Which form of normalization eliminates transitive dependencies?",
     "options": [
-      "Top-down uses memoized recursion; bottom-up uses iterative tabulation",
-      "They produce different answers",
-      "Top-down is faster always",
-      "Bottom-up uses recursion"
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Top-down uses memoized recursion; bottom-up uses iterative tabulation. Tags: dyanamic pogramming.",
-    "topic": "Dyanamic Pogramming",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is 3NF",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 157,
-    "question": "DP on trees typically uses which traversal",
+    "question": "Which SQL keyword is used to sort query results in ascending or descending order?",
     "options": [
-      "Level order",
-      "Preorder only",
-      "BFS",
-      "DFS with post-order processing"
+      "GROUP BY",
+      "SORT",
+      "ORDER BY",
+      "RANK BY"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is DFS with post-order processing. Tags: dyanamic pogramming.",
-    "topic": "Dyanamic Pogramming",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is ORDER BY",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 158,
-    "question": "In the coin change problem (minimum coins), what is the recurrence?",
+    "question": "Which CAP theorem tradeoff allows partition tolerance and consistency but sacrifices availability?",
     "options": [
-      "dp[i] = dp[i] * coin",
-      "dp[i] = dp[i-1] - coin",
-      "dp[i] = dp[i-1] + 1",
-      "dp[i] = min(dp[i - coin] + 1) for all coins <= i"
+      "AP System",
+      "CA System",
+      "CP System",
+      "ACID System"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is dp[i] = min(dp[i - coin] + 1) for all coins <= i. Tags: dyanamic pogramming.",
-    "topic": "Dyanamic Pogramming",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is CP System",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 159,
-    "question": "Task scheduling with deadlines and profits: best approach?",
+    "question": "Which database backup strategy involves copying only data modified since the last full backup?",
     "options": [
-      "Greedy + max-heap",
-      "FIFO queue",
-      "BFS",
-      "Dynamic programming only"
+      "Incremental Backup",
+      "Differential Backup",
+      "Hot Backup",
+      "Cold Backup"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Greedy + max-heap. Tags: greedy.",
-    "topic": "Greedy",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Incremental Backup",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 160,
-    "question": "Convert a sorted array to a height-balanced BST by:",
+    "question": "Which join returns all rows from two tables, matching where possible and filling NULLs otherwise?",
     "options": [
-      "Inserting left to right",
-      "Choosing the middle element as root recursively",
-      "Inserting right to left",
-      "Using BFS"
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL OUTER JOIN"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Choosing the middle element as root recursively. Tags: bst.",
-    "topic": "BST",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "explanation": "The correct answer is FULL OUTER JOIN",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 161,
-    "question": "What is the time complexity of accessing an element in an array?",
+    "question": "Which constraint ensures that column values must not be left empty in a table?",
     "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
+      "PRIMARY KEY",
+      "UNIQUE",
+      "NOT NULL",
+      "CHECK"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is O(1). Tags: Array Indexing.",
-    "topic": "Arrays",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is NOT NULL",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 162,
-    "question": "Which technique is used to find sum of subarray of size k efficiently?",
+    "question": "Which design approach provides a bird’s-eye view of the entire system before detailing components?",
     "options": [
-      "DFS",
-      "Sorting",
-      "Recursion",
-      "Sliding Window"
+      "Low-Level Design (LLD)",
+      "High-Level Design (HLD)",
+      "Physical Design",
+      "Conceptual Design"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Sliding Window. Tags: Fixed Window Sum.",
-    "topic": "Sliding Window",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is High-Level Design (HLD)",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 163,
-    "question": "Binary search works correctly only on?",
+    "question": "Which SQL statement is used to modify existing data in a table?",
     "options": [
-      "Tree",
-      "Sorted array",
-      "Unsorted array",
-      "Graph"
+      "UPDATE",
+      "ALTER",
+      "INSERT",
+      "DELETE"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Sorted array. Tags: Sorted Array Requirement.",
-    "topic": "Binary Search",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is UPDATE",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 164,
-    "question": "What does prefix sum array help compute?",
+    "question": "Which property of functional dependency ensures every determinant is a candidate key in BCNF?",
     "options": [
-      "Range sum queries",
-      "Sorting",
-      "Deleting",
-      "Searching"
+      "Dependency Preservation",
+      "Lossless Decomposition",
+      "Canonical Cover",
+      "Boyce-Codd Condition"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Range sum queries. Tags: Prefix Range Query.",
-    "topic": "Prefix Array",
-    "difficulty": "easy"
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Boyce-Codd Condition",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 165,
-    "question": "Kadane’s algorithm is used to find?",
+    "question": "Which replication technique synchronizes data across multiple servers to improve read availability?",
     "options": [
-      "Minimum subarray",
-      "Maximum element",
-      "Sorting",
-      "Maximum subarray sum"
+      "Master-Slave Replication",
+      "Sharding",
+      "Partitioning",
+      "Normalization"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Maximum subarray sum. Tags: Maximum Subarray Sum.",
-    "topic": "Subarray",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Master-Slave Replication",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 166,
-    "question": "What stops recursion from infinite calls?",
+    "question": "Which SQL keyword is used to combine results from two queries while removing duplicates?",
     "options": [
-      "Base case",
-      "Variable",
-      "Loop",
-      "Condition"
+      "UNION",
+      "JOIN",
+      "MERGE",
+      "INTERSECT"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Base case. Tags: Recursion Base Case.",
-    "topic": "Recursion",
-    "difficulty": "easy"
+    "explanation": "The correct answer is UNION",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 167,
-    "question": "Which data structure is used in BFS traversal?",
+    "question": "Which architectural pattern is best when independent services need to scale separately?",
     "options": [
-      "Queue",
-      "Heap",
-      "Stack",
-      "Set"
+      "Monolithic",
+      "Microservices",
+      "Event-Driven",
+      "Layered"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Queue. Tags: BFS Queue Usage.",
-    "topic": "Trees",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Microservices",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 168,
-    "question": "What is the maximum number of children in a binary tree node?",
+    "question": "Which SQL command is used to permanently remove all rows from a table but keep the structure?",
     "options": [
-      "Infinite",
-      "2",
-      "1",
-      "3"
+      "DELETE",
+      "TRUNCATE",
+      "DROP",
+      "ALTER"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 2. Tags: Binary Tree Property.",
-    "topic": "Trees",
-    "difficulty": "easy"
+    "explanation": "The correct answer is TRUNCATE",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 169,
-    "question": "Average time complexity of searching in hash map?",
+    "question": "Which database integrity constraint ensures values in one table correspond to values in another?",
     "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "UNIQUE",
+      "CHECK"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is O(1). Tags: HashMap Lookup.",
-    "topic": "Hashing",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is FOREIGN KEY",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 170,
-    "question": "Trie data structure is mainly used for?",
+    "question": "Which SQL feature allows storing a query inside another query?",
     "options": [
-      "DP",
-      "Prefix search",
-      "Sorting",
-      "Graph traversal"
+      "Nested Query",
+      "Correlated Subquery",
+      "Stored Procedure",
+      "View"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Prefix search. Tags: Trie Prefix Search.",
-    "topic": "Tries",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Nested Query",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 171,
-    "question": "Which technique is used to find longest substring without repeating characters?",
+    "question": "Which SQL statement is used to define a new table in a database?",
     "options": [
-      "Greedy",
-      "Sliding Window",
-      "Binary Search",
-      "DFS"
+      "CREATE TABLE",
+      "ALTER TABLE",
+      "INSERT INTO",
+      "SELECT"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Sliding Window. Tags: Variable Window Unique Substring.",
-    "topic": "Sliding Window",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CREATE TABLE",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 172,
-    "question": "What does two pointer technique mainly optimize?",
+    "question": "Which consistency model ensures that all users see the same data at the same time?",
     "options": [
-      "Recursion",
-      "Memory",
-      "Sorting",
-      "Time complexity"
+      "Weak Consistency",
+      "Eventual Consistency",
+      "Strong Consistency",
+      "Causal Consistency"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Time complexity. Tags: Two Pointer Optimization.",
-    "topic": "Arrays",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Strong Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 173,
-    "question": "What is the worst-case time complexity of binary search?",
+    "question": "Which SQL command removes specific rows from a table based on a condition?",
     "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
+      "DELETE",
+      "DROP",
+      "TRUNCATE",
+      "REMOVE"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is O(log n). Tags: Binary Search Complexity.",
-    "topic": "Binary Search",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is DELETE",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 174,
-    "question": "Which case in binary search may cause infinite loop if not handled?",
+    "question": "Which normalization form ensures no multivalued attributes exist in a relation?",
     "options": [
-      "Left shift",
-      "Mid calculation",
-      "Overflow condition",
-      "Right shift"
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Mid calculation. Tags: Binary Search Overflow Case.",
-    "topic": "Binary Search",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is 1NF",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 175,
-    "question": "What happens if base case is missing in recursion?",
+    "question": "Which architectural pattern uses services that communicate through lightweight APIs?",
     "options": [
-      "Correct output",
-      "Faster execution",
-      "Sorted output",
-      "Infinite recursion"
+      "Event-Driven Architecture",
+      "Microservices",
+      "Monolithic Architecture",
+      "Layered Architecture"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Infinite recursion. Tags: Missing Base Case Effect.",
-    "topic": "Recursion",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Microservices",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 176,
-    "question": "Which problem is commonly solved using backtracking?",
+    "question": "Which SQL statement is used to rename a table or column?",
     "options": [
-      "Searching",
-      "Prefix sum",
-      "Permutation generation",
-      "Sorting"
+      "ALTER",
+      "RENAME",
+      "UPDATE",
+      "MODIFY"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Permutation generation. Tags: Backtracking Permutations.",
-    "topic": "Recursion",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is RENAME",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 177,
-    "question": "Height of a balanced binary tree is approximately?",
+    "question": "Which system design metric measures the probability that a system will perform without failure for a given time?",
     "options": [
-      "1",
-      "n",
-      "n^2",
-      "log n"
+      "Availability",
+      "Reliability",
+      "Consistency",
+      "Fault Tolerance"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is log n. Tags: Balanced Tree Height.",
-    "topic": "Trees",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Reliability",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 178,
-    "question": "Which traversal gives sorted output in BST?",
+    "question": "Which SQL operator is used to retrieve rows that meet either of two conditions?",
     "options": [
-      "Postorder",
-      "Level order",
-      "Preorder",
-      "Inorder"
+      "AND",
+      "OR",
+      "BETWEEN",
+      "LIKE"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Inorder. Tags: BST Inorder Traversal.",
-    "topic": "Trees",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is OR",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 179,
-    "question": "Which hashing technique reduces collisions?",
+    "question": "Which property of ACID ensures that the database moves from one valid state to another after a transaction?",
     "options": [
-      "Sorting",
-      "DFS",
-      "Chaining",
-      "Recursion"
+      "Atomicity",
+      "Consistency",
+      "Durability",
+      "Isolation"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Chaining. Tags: Collision Resolution Chaining.",
-    "topic": "Hashing",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 180,
-    "question": "Which graph algorithm is used to find shortest path in unweighted graph?",
+    "question": "Which SQL aggregate function counts the number of rows in a table?",
     "options": [
-      "Kruskal",
-      "Dijkstra",
-      "BFS",
-      "DFS"
+      "COUNT()",
+      "SUM()",
+      "AVG()",
+      "MAX()"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is BFS. Tags: Unweighted Shortest Path BFS.",
-    "topic": "Graphs",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is COUNT()",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 181,
-    "question": "What is the output of the following code snippet in Java?\r\nclass Animal {\r\npublic void sound() {\r\nSystem.out.println(\"Animal sound\");\r\n}\r\n}\r\nclass Dog extends Animal {\r\npublic void sound() {\r\nSystem.out.println(\"Bark\");\r\n}\r\n}\r\npublic class Test {\r\npublic static void main(String[] args) {\r\nAnimal myAnimal = new Dog();\r\nmyAnimal.sound();\r\n}\r\n}",
+    "question": "Which database design goal ensures that the schema avoids redundancy and anomalies?",
     "options": [
-      "Runtime error",
-      "Bark",
-      "Compilation error",
-      "Animal sound"
+      "Denormalization",
+      "Normalization",
+      "Sharding",
+      "Replication"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Bark. Tags: Inheritance.",
-    "topic": "inheritance",
+    "explanation": "The correct answer is Normalization",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 182,
-    "question": "What is the output of this two pointer code?\r\nint[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};\r\n\r\nint left = 0, right = arr.length - 1;\r\n\r\nwhile (left < right) {\r\n\r\n    int temp = arr[left];\r\n\r\n    arr[left] = arr[right];\r\n\r\n    arr[right] = temp;\r\n\r\n    left++;\r\n\r\n    right--;\r\n\r\n}\r\n\r\nSystem.out.println(arr[0] + \" \" + arr[4] + \" \" + arr[8]);",
+    "question": "Which SQL statement undoes all changes made by a transaction?",
     "options": [
-      "1 4 9",
-      "9 4 1",
-      "1 5 9",
-      "9 5 1"
+      "ROLLBACK",
+      "COMMIT",
+      "SAVEPOINT",
+      "TRUNCATE"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 9 5 1. Tags: Window Sliding.",
-    "topic": "window sliding",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is ROLLBACK",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 183,
-    "question": "What does this print?\r\nint[] arr = {2, -1, 2, 3, 4, -1};\r\nint currSum = 0, maxSum = Integer.MIN_VALUE;\r\nint start = 0, end = 0, tempStart = 0;\r\nfor (int i = 0; i < arr.length; i++) {\r\n    currSum += arr[i];\r\n    if (currSum > maxSum) {\r\n        maxSum = currSum;\r\n        start = tempStart;\r\n        end = i;\r\n    }\r\n    if (currSum < 0) { currSum = 0; tempStart = i + 1; }\r\n}\r\nSystem.out.println(maxSum + \" \" + start + \" \" + end);",
+    "question": "Which indexing method is most efficient for range queries?",
     "options": [
-      "8 2 5",
-      "9 0 4",
-      "10 1 4",
-      "9 0 4"
+      "Hash Index",
+      "B+ Tree Index",
+      "Bitmap Index",
+      "Clustered Index"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 9 0 4. Tags: Window Sliding.",
-    "topic": "window sliding",
+    "explanation": "The correct answer is B+ Tree Index",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 184,
-    "question": "What does this Z-function snippet print?\r\nString s = \"aabxaa\";\r\nint n = s.length();\r\nint[] z = new int[n];\r\nint l = 0, r = 0;\r\nfor (int i = 1; i < n; i++) {\r\n    if (i < r) z[i] = Math.min(r - i, z[i - l]);\r\n    while (i + z[i] < n && s.charAt(z[i]) == s.charAt(i + z[i])) z[i]++;\r\n    if (i + z[i] > r) { l = i; r = i + z[i]; }\r\n}\r\nSystem.out.println(z[4] + \" \" + z[5]);",
+    "question": "Which CAP theorem tradeoff allows high availability but only eventual consistency?",
     "options": [
-      "1 2",
-      "1 1",
-      "0 0",
-      "2 1"
+      "CA System",
+      "AP System",
+      "CP System",
+      "Strong Consistency System"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 2 1. Tags: Z Function.",
-    "topic": "z function",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is AP System",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 185,
-    "question": "What does this OOP polymorphism code print?\r\nclass Shape {\r\n\r\n    public void draw() { System.out.println(\"Drawing Shape\"); }\r\n\r\n}\r\n\r\nclass Circle extends Shape {\r\n\r\n    public void draw() { System.out.println(\"Drawing Circle\"); }\r\n\r\n}\r\n\r\nclass Square extends Shape {\r\n\r\n    public void draw() { System.out.println(\"Drawing Square\"); }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Shape s = new Circle();\r\n\r\n        s.draw();\r\n\r\n        s = new Square();\r\n\r\n        s.draw();\r\n\r\n    }\r\n\r\n}",
+    "question": "Which SQL clause is used to group rows that have the same values in specified columns?",
     "options": [
-      "Compile error",
-      "Drawing Circle, Drawing Square",
-      "Drawing Circle, Drawing Circle",
-      "Drawing Shape, Drawing Shape"
+      "ORDER BY",
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Drawing Circle, Drawing Square. Tags: Polymorphism.",
-    "topic": "polymorphism",
+    "explanation": "The correct answer is GROUP BY",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 186,
-    "question": "In KMP, what is the LPS (Longest Prefix Suffix) array for the string \"ABABAC\"?",
+    "question": "Which database constraint ensures that each row in a table is uniquely identified?",
     "options": [
-      "[0, 0, 1, 2, 1, 2]",
-      "[0, 0, 1, 2, 3, 0]",
-      "[0, 0, 1, 2, 1, 0]",
-      "[0, 1, 2, 3, 4, 5]"
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "CHECK",
+      "UNIQUE"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is [0, 0, 1, 2, 3, 0]. Tags: KMP.",
-    "topic": "kmp",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 187,
-    "question": "Consider a Prefix Sum array P for array A = [2, 4, 6, 8, 10]. What is the value of P[3] - P[0]?",
+    "question": "Which SQL keyword is used to search for a specified pattern in a column?",
     "options": [
-      "14",
-      "20",
-      "10",
-      "18"
+      "IN",
+      "LIKE",
+      "BETWEEN",
+      "EXISTS"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 18. Tags: Prefix Sum.",
-    "topic": "prefix sum",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is LIKE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 188,
-    "question": "What is the maximum value in the lps array for the string abcabcabc?",
+    "question": "Which property of system design ensures that a system can continue operating even after some components fail?",
     "options": [
-      "0",
-      "3",
-      "6",
-      "9"
+      "Availability",
+      "Fault Tolerance",
+      "Reliability",
+      "Consistency"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 6. Tags: KMP.",
-    "topic": "kmp",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Fault Tolerance",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 189,
-    "question": "For the string S = \"aabcaabx\", what is the value of Z[4]?",
+    "question": "Which SQL command is used to permanently save all changes in the current transaction?",
     "options": [
-      "1",
-      "0",
-      "4",
-      "3"
+      "COMMIT",
+      "SAVEPOINT",
+      "ROLLBACK",
+      "ALTER"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 3. Tags: Z Function.",
-    "topic": "z function",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is COMMIT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 190,
-    "question": "What is the Z-array for the string aaaaa?",
+    "question": "Which form of normalization ensures that every non-prime attribute is fully functionally dependent on the primary key?",
     "options": [
-      "[0, 5, 5, 5, 5]",
-      "[0, 1, 2, 3, 4]",
-      "[0, 4, 3, 2, 1]",
-      "[5, 4, 3, 2, 1]"
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is [0, 4, 3, 2, 1]. Tags: Z Function.",
-    "topic": "z function",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is 2NF",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 191,
-    "question": "What is the lps value at the last index for P = \"AAAAA\"?",
+    "question": "Which SQL command creates a virtual table based on the result of a query?",
     "options": [
-      "4",
-      "1",
-      "5",
-      "0"
+      "VIEW",
+      "TRIGGER",
+      "PROCEDURE",
+      "FUNCTION"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is 4. Tags: KMP.",
-    "topic": "kmp",
+    "explanation": "The correct answer is VIEW",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 192,
-    "question": "What is printed?\r\ninterface Printable {\r\n\r\n    void print();\r\n\r\n}\r\n\r\ninterface Showable {\r\n\r\n    void show();\r\n\r\n}\r\n\r\nclass Document implements Printable, Showable {\r\n\r\n    public void print() { System.out.println(\"Printing Document\"); }\r\n\r\n    public void show() { System.out.println(\"Showing Document\"); }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Document d = new Document();\r\n\r\n        Printable p = d;\r\n\r\n        Showable s = d;\r\n\r\n        p.print();\r\n\r\n        s.show();\r\n\r\n    }\r\n\r\n}",
+    "question": "Which metric measures the time taken to respond to a single request in a system?",
     "options": [
-      "Showing Document only",
-      "Printing Document only",
-      "Printing Document, Showing Document",
-      "Compile error"
+      "Throughput",
+      "Latency",
+      "Availability",
+      "Scalability"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Printing Document, Showing Document. Tags: Inhertiance.",
-    "topic": "inhertiance",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Latency",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 193,
-    "question": "What is the output?\r\nclass Sender {\r\n\r\n    void sendMessage(Receiver r, String msg) {\r\n\r\n        System.out.println(\"Sending: \" + msg);\r\n\r\n        r.receiveMessage(msg);\r\n\r\n    }\r\n\r\n}\r\n\r\nclass Receiver {\r\n\r\n    void receiveMessage(String msg) {\r\n\r\n        System.out.println(\"Received: \" + msg);\r\n\r\n    }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Sender s = new Sender();\r\n\r\n        Receiver r = new Receiver();\r\n\r\n        s.sendMessage(r, \"Hello OOP\");\r\n\r\n    }\r\n\r\n}",
+    "question": "Which SQL command is used to change an existing record in a table?",
     "options": [
-      "Compile error",
-      "Sending: Hello OOP, Received: Hello OOP",
-      "Received: Hello OOP only",
-      "Sending: Hello OOP only"
+      "UPDATE",
+      "ALTER",
+      "INSERT",
+      "DELETE"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Sending: Hello OOP, Received: Hello OOP. Tags: Inhertiance.",
-    "topic": "inhertiance",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is UPDATE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 194,
-    "question": "What is printed?\r\nclass Calculator {\r\n\r\n    int add(int a, int b) { return a + b; }\r\n\r\n    double add(double a, double b) { return a + b; }\r\n\r\n    int add(int a, int b, int c) { return a + b + c; }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Calculator c = new Calculator();\r\n\r\n        System.out.println(c.add(2, 3));\r\n\r\n        System.out.println(c.add(2.5, 3.5));\r\n\r\n        System.out.println(c.add(1, 2, 3));\r\n\r\n    }\r\n\r\n}",
+    "question": "Which database backup method copies all data regardless of whether it has changed?",
     "options": [
-      "5, 5.0, 5",
-      "5, 5, 6",
-      "5, 6.0, 6",
-      "5.0, 6.0, 6"
+      "Incremental Backup",
+      "Differential Backup",
+      "Full Backup",
+      "Cold Backup"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is 5, 6.0, 6. Tags: Polymorphism.",
-    "topic": "polymorphism",
+    "explanation": "The correct answer is Full Backup",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 195,
-    "question": "What is the output?\r\nclass Shape {\r\n    void draw() { System.out.println(\"Drawing Shape\"); }\r\n}\r\nclass Triangle extends Shape {\r\n    void draw() { System.out.println(\"Drawing Triangle\"); }\r\n}\r\nclass Rectangle extends Shape {\r\n    void draw() { System.out.println(\"Drawing Rectangle\"); }\r\n}\r\npublic class Test {\r\n    public static void main(String[] args) {\r\n        Shape[] shapes = {new Triangle(), new Rectangle(), new Shape()};\r\n        for (Shape s : shapes) s.draw();\r\n    }\r\n}",
+    "question": "Which system design principle suggests dividing functionality into independent, reusable modules?",
     "options": [
-      "Drawing Triangle, Drawing Rectangle, Drawing Shape",
-      "Drawing Shape, Drawing Shape, Drawing Shape",
-      "Drawing Triangle, Drawing Triangle, Drawing Rectangle",
-      "Compile error"
+      "Loose Coupling",
+      "High Cohesion",
+      "Modularity",
+      "Encapsulation"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Drawing Triangle, Drawing Rectangle, Drawing Shape. Tags: Inhertiance.",
-    "topic": "inhertiance",
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Modularity",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 196,
-    "question": "What is the output?\r\nclass A {\r\n\r\n    void display() { System.out.println(\"Class A\"); }\r\n\r\n}\r\n\r\nclass B extends A {\r\n\r\n    void display() {\r\n\r\n        super.display();\r\n\r\n        System.out.println(\"Class B\");\r\n\r\n    }\r\n\r\n}\r\n\r\nclass C extends B {\r\n\r\n    void display() {\r\n\r\n        super.display();\r\n\r\n        System.out.println(\"Class C\");\r\n\r\n    }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        C obj = new C();\r\n\r\n        obj.display();\r\n\r\n    }\r\n\r\n}",
+    "question": "Which SQL function returns the highest value in a column?",
     "options": [
-      "Class A, Class B, Class C",
-      "Class C, Class B, Class A",
-      "Class C only",
-      "Class A, Class C"
+      "MIN()",
+      "MAX()",
+      "AVG()",
+      "COUNT()"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Class A, Class B, Class C. Tags: Inheritance.",
-    "topic": "inheritance",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is MAX()",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 197,
-    "question": "What does this multilevel inheritance print?\r\nclass Vehicle {\r\n\r\n    void move() { System.out.println(\"Vehicle moves\"); }\r\n\r\n}\r\n\r\nclass Car extends Vehicle {\r\n\r\n    void move() { System.out.println(\"Car drives\"); }\r\n\r\n}\r\n\r\nclass SportsCar extends Car {\r\n\r\n    void move() { System.out.println(\"SportsCar races\"); }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Vehicle v = new SportsCar();\r\n\r\n        v.move();\r\n\r\n        Car c = new SportsCar();\r\n\r\n        c.move();\r\n\r\n    }\r\n\r\n}",
+    "question": "Which architectural style is recommended for independent deployment and scaling of services?",
     "options": [
-      "SportsCar races, Car drives",
-      "SportsCar races, SportsCar races",
-      "Car drives, SportsCar races",
-      "Vehicle moves, Car drives"
+      "Monolithic",
+      "Microservices",
+      "Event-Driven",
+      "Client-Server"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is SportsCar races, SportsCar races. Tags: Inheritance.",
-    "topic": "inheritance",
+    "explanation": "The correct answer is Microservices",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 198,
-    "question": "What is printed?\r\nclass A {\r\n    int x = 10;\r\n    void show() { System.out.println(\"A: \" + x); }\r\n}\r\nclass B extends A {\r\n    int x = 20;\r\n    void show() { System.out.println(\"B: \" + x); }\r\n}\r\nclass C extends B {\r\n    int x = 30;\r\n    void show() { System.out.println(\"C: \" + x); }\r\n}\r\npublic class Test {\r\n    public static void main(String[] args) {\r\n        A obj = new C();\r\n        obj.show();\r\n    }\r\n}",
+    "question": "Which SQL clause restricts the number of rows returned in a query?",
     "options": [
-      "A: 30",
-      "B: 20",
-      "A: 10",
-      "C: 30"
+      "TOP / LIMIT",
+      "ORDER BY",
+      "DISTINCT",
+      "HAVING"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is C: 30. Tags: Enacapsulation.",
-    "topic": "enacapsulation",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is TOP / LIMIT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 199,
-    "question": "What is the output?\r\nclass Person {\r\n    String name;\r\n    Person(String n) {\r\n        name = n;\r\n        System.out.println(\"Person: \" + name);\r\n    }\r\n}\r\nclass Teacher extends Person {\r\n    String subject;\r\n    Teacher(String n, String s) {\r\n        super(n);\r\n        subject = s;\r\n        System.out.println(\"Teacher: \" + subject);\r\n    }\r\n}\r\npublic class Test {\r\n    public static void main(String[] args) {\r\n        Teacher t = new Teacher(\"Alice\", \"Math\");\r\n    }\r\n}",
+    "question": "Which ACID property ensures that concurrent transactions do not interfere with each other?",
     "options": [
-      "Teacher: Alice, Person: Math",
-      "Person: Alice only",
-      "Person: Alice, Teacher: Math",
-      "Teacher: Math, Person: Alice"
+      "Durability",
+      "Isolation",
+      "Consistency",
+      "Atomicity"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Person: Alice, Teacher: Math. Tags: Enacapsulation.",
-    "topic": "enacapsulation",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Isolation",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 200,
-    "question": "What does this abstraction code print?\r\ninterface Vehicle {\r\n\r\n    void start();\r\n\r\n    void stop();\r\n\r\n    default void fuel() {\r\n\r\n        System.out.println(\"Fueling Vehicle\");\r\n\r\n    }\r\n\r\n}\r\n\r\nclass Bike implements Vehicle {\r\n\r\n    public void start() { System.out.println(\"Bike Started\"); }\r\n\r\n    public void stop() { System.out.println(\"Bike Stopped\"); }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Vehicle v = new Bike();\r\n\r\n        v.start();\r\n\r\n        v.fuel();\r\n\r\n        v.stop();\r\n\r\n    }\r\n\r\n}",
+    "question": "Which SQL statement is used to remove a view?",
     "options": [
-      "Bike Started, Fueling Vehicle, Bike Stopped",
-      "Bike Started, Bike Stopped only",
-      "Compile error",
-      "Fueling Vehicle, Bike Started, Bike Stopped"
+      "DROP VIEW",
+      "DELETE VIEW",
+      "TRUNCATE VIEW",
+      "ALTER VIEW"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Bike Started, Fueling Vehicle, Bike Stopped. Tags: Inheritance.",
-    "topic": "inheritance",
+    "explanation": "The correct answer is DROP VIEW",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 201,
-    "question": "What is printed?\r\nabstract class Shape {\r\n\r\n    abstract double area();\r\n\r\n    void display() {\r\n\r\n        System.out.println(\"Area = \" + area());\r\n\r\n    }\r\n\r\n}\r\n\r\nclass Circle extends Shape {\r\n\r\n    double r;\r\n\r\n    Circle(double r) { this.r = r; }\r\n\r\n    double area() { return 3.14 * r * r; }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Shape s = new Circle(5);\r\n\r\n        s.display();\r\n\r\n    }\r\n\r\n}",
+    "question": "Which consistency pattern allows stale reads but guarantees eventual synchronization of replicas?",
     "options": [
-      "Compile error",
-      "Area = 15.7",
-      "Area = 25.0",
-      "Area = 78.5"
+      "Strong Consistency",
+      "Eventual Consistency",
+      "Weak Consistency",
+      "Causal Consistency"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Area = 78.5. Tags: Inheritance.",
-    "topic": "inheritance",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Eventual Consistency",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 202,
-    "question": "What is printed?\r\nclass Person {\r\n\r\n    String name;\r\n\r\n    int age;\r\n\r\n    Person(String n, int a) { name = n; age = a; }\r\n\r\n    boolean isAdult() { return age >= 18; }\r\n\r\n    void greet(Person other) {\r\n\r\n        System.out.println(name + \" greets \" + other.name);\r\n\r\n    }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Person p1 = new Person(\"Alice\", 20);\r\n\r\n        Person p2 = new Person(\"Bob\", 15);\r\n\r\n        System.out.println(p1.isAdult() + \" \" + p2.isAdult());\r\n\r\n        p1.greet(p2);\r\n\r\n    }\r\n\r\n}",
+    "question": "Which SQL keyword is used to ensure unique values across a column?",
     "options": [
-      "true false, Alice greets Bob",
-      "false false, Bob greets Alice",
-      "false true, Alice greets Bob",
-      "true true, Bob greets Alice"
+      "PRIMARY KEY",
+      "UNIQUE",
+      "CHECK",
+      "NOT NULL"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is true false, Alice greets Bob. Tags: Polymorphism.",
-    "topic": "polymorphism",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is UNIQUE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 203,
-    "question": "What is printed?\r\nclass Mobile {\r\n\r\n    String brand;\r\n\r\n    int price;\r\n\r\n    static String company = \"TechCorp\";\r\n\r\n    Mobile(String b, int p) {\r\n\r\n        brand = b;\r\n\r\n        price = p;\r\n\r\n    }\r\n\r\n    static void showCompany() {\r\n\r\n        System.out.println(\"Company: \" + company);\r\n\r\n    }\r\n\r\n    void showDetails() {\r\n\r\n        System.out.println(brand + \" costs \" + price);\r\n\r\n    }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Mobile m = new Mobile(\"XPhone\", 15000);\r\n\r\n        Mobile.showCompany();\r\n\r\n        m.showDetails();\r\n\r\n    }\r\n\r\n}",
+    "question": "Which type of scaling is preferred when horizontal distribution of load across multiple servers is required?",
     "options": [
-      "Company: TechCorp only",
-      "Compile error",
-      "Company: TechCorp, XPhone costs 15000",
-      "XPhone costs 15000, Company: TechCorp"
+      "Vertical Scaling",
+      "Horizontal Scaling",
+      "Partitioning",
+      "Replication"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Company: TechCorp, XPhone costs 15000. Tags: Inheritance.",
-    "topic": "inheritance",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontal Scaling",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 204,
-    "question": "What is the output?\r\nabstract class Appliance {\r\n    String brand;\r\n    Appliance(String b) { brand = b; }\r\n    abstract void operate();\r\n    void powerOn() { System.out.println(brand + \" is ON\"); }\r\n}\r\nclass WashingMachine extends Appliance {\r\n    WashingMachine(String b) { super(b); }\r\n    void operate() { System.out.println(brand + \" is washing clothes\"); }\r\n}\r\npublic class Test {\r\n    public static void main(String[] args) {\r\n        Appliance a = new WashingMachine(\"Samsung\");\r\n        a.powerOn();\r\n        a.operate();\r\n    }\r\n}",
+    "question": "Which SQL keyword is used to return only different values from a query result?",
     "options": [
-      "Compile error",
-      "Samsung is washing clothes, Samsung is ON",
-      "Samsung is ON only",
-      "Samsung is ON, Samsung is washing clothes"
+      "UNIQUE",
+      "DISTINCT",
+      "FILTER",
+      "GROUP BY"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Samsung is ON, Samsung is washing clothes. Tags: Inhertiance.",
-    "topic": "inhertiance",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is DISTINCT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 205,
-    "question": "What is printed?\r\ninterface Drawable { void draw(); }\r\ninterface Resizable { void resize(int factor); }\r\nclass Square implements Drawable, Resizable {\r\n    int side;\r\n    Square(int s) { side = s; }\r\n    public void draw() {\r\n        System.out.println(\"Square with side \" + side);\r\n    }\r\n    public void resize(int factor) {\r\n        side *= factor;\r\n        System.out.println(\"Resized to \" + side);\r\n    }\r\n}\r\npublic class Test {\r\n    public static void main(String[] args) {\r\n        Square sq = new Square(4);\r\n        sq.draw();\r\n        sq.resize(3);\r\n        sq.draw();\r\n    }\r\n}",
+    "question": "Which database design approach starts with business requirements and creates ER diagrams?",
     "options": [
-      "Resized to 12, Square with side 4, Square with side 12",
-      "Compile error",
-      "Square with side 4, Resized to 4, Square with side 4",
-      "Square with side 4, Resized to 12, Square with side 12"
+      "Physical Design",
+      "Logical Design",
+      "Conceptual Design",
+      "Denormalization"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Square with side 4, Resized to 12, Square with side 12. Tags: Inheritance.",
-    "topic": "inheritance",
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Conceptual Design",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 206,
-    "question": "What is the output?\r\ninterface Flyable {\r\n\r\n    default void land() { System.out.println(\"Landing\"); }\r\n\r\n    void fly();\r\n\r\n}\r\n\r\nclass Bird implements Flyable {\r\n\r\n    public void fly() { System.out.println(\"Bird flying\"); }\r\n\r\n}\r\n\r\nclass Airplane implements Flyable {\r\n\r\n    public void fly() { System.out.println(\"Airplane flying\"); }\r\n\r\n    public void land() { System.out.println(\"Airplane landing on runway\"); }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Flyable f1 = new Bird();\r\n\r\n        Flyable f2 = new Airplane();\r\n\r\n        f1.fly(); f1.land();\r\n\r\n        f2.fly(); f2.land();\r\n\r\n    }\r\n\r\n}",
+    "question": "Which SQL command is used to assign a temporary name to a table or column?",
     "options": [
-      "Compile error",
-      "Bird flying, Landing, Airplane flying, Landing",
-      "Bird flying, Landing, Airplane flying, Airplane landing on runway",
-      "Bird flying, Airplane landing on runway, Airplane flying, Landing"
+      "ALIAS",
+      "AS",
+      "RENAME",
+      "MODIFY"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Bird flying, Landing, Airplane flying, Airplane landing on runway. Tags: Inhertiance.",
-    "topic": "inhertiance",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is AS",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 207,
-    "question": "What is the output?\r\nclass Printer {\r\n    void print(int x) { System.out.println(\"Int: \" + x); }\r\n    void print(double x) { System.out.println(\"Double: \" + x); }\r\n    void print(String x) { System.out.println(\"String: \" + x); }\r\n    void print(int x, int y) { System.out.println(\"Two Ints: \" + x + \" \" + y); }\r\n}\r\npublic class Test {\r\n    public static void main(String[] args) {\r\n        Printer p = new Printer();\r\n        p.print(5);\r\n        p.print(3.14);\r\n        p.print(\"Hello\");\r\n        p.print(2, 3);\r\n    }\r\n}",
+    "question": "Which transaction isolation level prevents dirty reads but allows non-repeatable reads?",
     "options": [
-      "Int: 5, Double: 3.14, String: Hello, Two Ints: 2 3",
-      "Compile error",
-      "String: Hello, Int: 5, Double: 3.14, Two Ints: 2 3",
-      "Int: 5, Double: 3, String: Hello, Two Ints: 2 3"
+      "READ UNCOMMITTED",
+      "READ COMMITTED",
+      "REPEATABLE READ",
+      "SERIALIZABLE"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Int: 5, Double: 3.14, String: Hello, Two Ints: 2 3. Tags: Polymorphism.",
-    "topic": "polymorphism",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is READ COMMITTED",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 208,
-    "question": "What is printed?\r\nclass Base {\r\n    int value = 100;\r\n    void show() { System.out.println(\"Base: \" + value); }\r\n}\r\nclass Derived extends Base {\r\n    int value = 200;\r\n    void show() { System.out.println(\"Derived: \" + value); }\r\n    void showBoth() {\r\n        System.out.println(super.value + \" \" + this.value);\r\n    }\r\n}\r\npublic class Test {\r\n    public static void main(String[] args) {\r\n        Derived d = new Derived();\r\n        d.show();\r\n        d.showBoth();\r\n    }\r\n}",
+    "question": "Which SQL constraint ensures that values in a column must satisfy a given condition?",
     "options": [
-      "Base: 200, 100 100",
-      "Derived: 100, 100 200",
-      "Derived: 200, 100 200",
-      "Base: 100, 200 200"
+      "CHECK",
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "NOT NULL"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Derived: 200, 100 200. Tags: Inhertiance.",
-    "topic": "inhertiance",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CHECK",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 209,
-    "question": "What is the output?\r\nclass Animal {\r\n    String name;\r\n    Animal(String n) { name = n; }\r\n    void speak() { System.out.println(name + \" makes a sound\"); }\r\n}\r\nclass Lion extends Animal {\r\n    Lion(String n) { super(n); }\r\n    void speak() { System.out.println(name + \" roars\"); }\r\n}\r\nclass Parrot extends Animal {\r\n    Parrot(String n) { super(n); }\r\n    void speak() { System.out.println(name + \" talks\"); }\r\n}\r\npublic class Test {\r\n    public static void main(String[] args) {\r\n        Animal[] animals = {\r\n            new Lion(\"Simba\"),\r\n            new Parrot(\"Polly\"),\r\n            new Animal(\"Unknown\")\r\n        };\r\n        for (Animal a : animals) a.speak();\r\n    }\r\n}",
+    "question": "Which system design metric ensures that response time remains predictable under varying load?",
     "options": [
-      "Compile error",
-      "Simba makes a sound, Polly talks, Unknown makes a sound",
-      "Simba roars, Polly talks, Unknown roars",
-      "Simba roars, Polly talks, Unknown makes a sound"
+      "Consistency",
+      "Scalability",
+      "Reliability",
+      "Latency"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Simba roars, Polly talks, Unknown makes a sound. Tags: Dynamic Binding.",
-    "topic": "dynamic binding",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Scalability",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 210,
-    "question": "What is the output?\r\nclass Vehicle {\r\n\r\n    String type;\r\n\r\n    Vehicle(String t) { type = t; }\r\n\r\n    String getType() { return type; }\r\n\r\n}\r\n\r\nclass ElectricCar extends Vehicle {\r\n\r\n    int batteryLevel;\r\n\r\n    ElectricCar(String t, int b) {\r\n\r\n        super(t);\r\n\r\n        batteryLevel = b;\r\n\r\n    }\r\n\r\n    String getType() {\r\n\r\n        return super.getType() + \" (Electric, Battery: \" + batteryLevel + \"%)\";\r\n\r\n    }\r\n\r\n}\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Vehicle v = new ElectricCar(\"Car\", 80);\r\n\r\n        System.out.println(v.getType());\r\n\r\n    }\r\n\r\n}",
+    "question": "Which SQL keyword is used to check the existence of rows in a subquery?",
     "options": [
-      "Car",
-      "Car (Electric, Battery: 0%)",
-      "Car (Electric, Battery: 80%)",
-      "Compile error"
+      "IN",
+      "ANY",
+      "EXISTS",
+      "ALL"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Car (Electric, Battery: 80%). Tags: Encapsulation.",
-    "topic": "encapsulation",
+    "explanation": "The correct answer is EXISTS",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 211,
-    "question": "0/1 knapsack complexity:",
+    "question": "Which normalization form ensures that no non-prime attribute depends transitively on the primary key?",
     "options": [
-      "O(n)",
-      "O(W²)",
-      "O(n²)",
-      "O(nW)"
+      "2NF",
+      "3NF",
+      "BCNF",
+      "1NF"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(nW). Tags: greedy.",
-    "topic": "Greedy",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is 3NF",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 212,
-    "question": "Greedy fails when:",
+    "question": "Which SQL function calculates the average value of a numeric column?",
     "options": [
-      "Optimal substructure missing",
-      "Small data",
-      "Binary data",
-      "Sorted data"
+      "SUM()",
+      "AVG()",
+      "COUNT()",
+      "MAX()"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Optimal substructure missing. Tags: greedy.",
-    "topic": "Greedy",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is AVG()",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 213,
-    "question": "What is the output of evaluating postfix: 5 1 2 + 4 * + 3 -?",
+    "question": "Which system design property ensures that even if one replica fails, another can serve the request?",
     "options": [
-      "16",
-      "14",
-      "12",
-      "10"
+      "Fault Tolerance",
+      "Consistency",
+      "Latency",
+      "Durability"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is 14. Tags: stack.",
-    "topic": "Stack",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Fault Tolerance",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 214,
-    "question": "When deleting a node with two children in BST, which node replaces it?",
+    "question": "Which SQL operator checks whether a value matches any value in a list?",
     "options": [
-      "Right child",
-      "Root",
-      "Left child",
-      "Inorder successor"
+      "IN",
+      "EXISTS",
+      "ANY",
+      "BETWEEN"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Inorder successor. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is IN",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 215,
-    "question": "Longest Common Subsequence (LCS) of strings of length m and n has complexity:",
+    "question": "Which backup method copies all changes since the last full backup, regardless of incremental backups?",
     "options": [
-      "O(2^n)",
-      "O(m log n)",
-      "O(m+n)",
-      "O(mn)"
+      "Differential Backup",
+      "Incremental Backup",
+      "Full Backup",
+      "Hot Backup"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(mn). Tags: dp.",
-    "topic": "Dynamic Pogramming",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Differential Backup",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 216,
-    "question": "Evaluate this postfix using stack: what does this return for \"231*+9-\"?\r\nint evalPostfix(String exp) {\r\n\r\n    Stack<Integer> s = new Stack<>();\r\n\r\n    for(char c : exp.toCharArray()){\r\n\r\n        if(Character.isDigit(c)) s.push(c-'0');\r\n\r\n        else {\r\n\r\n            int b=s.pop(), a=s.pop();\r\n\r\n            if(c=='+') s.push(a+b);\r\n\r\n            else if(c=='-') s.push(a-b);\r\n\r\n            else if(c=='*') s.push(a*b);\r\n\r\n        }\r\n\r\n    }\r\n\r\n    return s.pop();\r\n\r\n}",
+    "question": "Which SQL statement is used to create a named query stored in the database?",
     "options": [
-      "0",
-      "-4",
-      "2",
-      "4"
+      "VIEW",
+      "TRIGGER",
+      "STORED PROCEDURE",
+      "FUNCTION"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is -4. Tags: stack.",
-    "topic": "Stack",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is VIEW",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 217,
-    "question": "What is the output of inorder traversal?\r\nclass Node { int val; Node left,right;\r\n\r\n    Node(int v){val=v;} }\r\n\r\nNode root = new Node(4);\r\n\r\nroot.left = new Node(2);\r\n\r\nroot.right = new Node(6);\r\n\r\nroot.left.left = new Node(1);\r\n\r\nroot.left.right = new Node(3);\r\n\r\n// inorder traversal prints?",
+    "question": "Which design approach details algorithms, data structures, and class diagrams for components?",
     "options": [
-      "4 2 6 1 3",
-      "1 2 3 4 6",
-      "4 2 1 3 6",
-      "1 3 2 6 4"
+      "High-Level Design (HLD)",
+      "Low-Level Design (LLD)",
+      "Physical Design",
+      "Conceptual Design"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 1 2 3 4 6. Tags: bst.",
-    "topic": "BST",
+    "explanation": "The correct answer is Low-Level Design (LLD)",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 218,
-    "question": "What does this function return for BST with values 1,2,3,4,5 and k=3?\r\nint k, result;\r\nvoid kthSmallest(Node r, int target){\r\n    if(r==null) return;\r\n    kthSmallest(r.left, target);\r\n    k++;\r\n    if(k==target) { result=r.val; return; }\r\n    kthSmallest(r.right, target);\r\n}",
+    "question": "Which SQL feature automatically executes code in response to specific table events?",
     "options": [
-      "4",
-      "2",
-      "3",
-      "1"
+      "VIEW",
+      "TRIGGER",
+      "PROCEDURE",
+      "INDEX"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 3. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is TRIGGER",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 219,
-    "question": "What does this LCA function return for nodes 1 and 3 in BST 4,2,6,1,3,5,7?\r\nNode lca(Node r, int p, int q){\r\n    if(r==null) return null;\r\n    if(p<r.val && q<r.val) return lca(r.left,p,q);\r\n    if(p>r.val && q>r.val) return lca(r.right,p,q);\r\n    return r;\r\n}",
+    "question": "Which backup strategy allows data to be backed up without shutting down the database?",
     "options": [
-      "4",
-      "2",
-      "1",
-      "6"
+      "Cold Backup",
+      "Hot Backup",
+      "Incremental Backup",
+      "Differential Backup"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 2. Tags: bst.",
-    "topic": "BST",
+    "explanation": "The correct answer is Hot Backup",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 220,
-    "question": "What does this kth largest return for arr={3,2,1,5,6,4}, k=2?\r\nint kthLargest(int[] nums, int k){\r\n\r\n    PriorityQueue<Integer> pq = new PriorityQueue<>();\r\n\r\n    for(int n:nums){\r\n\r\n        pq.add(n);\r\n\r\n        if(pq.size()>k) pq.poll();\r\n\r\n    }\r\n\r\n    return pq.peek();\r\n\r\n}",
+    "question": "Which SQL command is used to enforce referential integrity between two tables?",
     "options": [
-      "3",
-      "6",
-      "4",
-      "5"
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "UNIQUE",
+      "CHECK"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 5. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is FOREIGN KEY",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 221,
-    "question": "What does this 0/1 knapsack return for weights={1,3,4,5}, values={1,4,5,7}, capacity=7?\r\nint knapsack(int[] w, int[] v, int W){\r\n\r\n    int n=w.length;\r\n\r\n    int[][] dp=new int[n+1][W+1];\r\n\r\n    for(int i=1;i<=n;i++)\r\n\r\n        for(int j=0;j<=W;j++){\r\n\r\n            dp[i][j]=dp[i-1][j];\r\n\r\n            if(w[i-1]<=j) dp[i][j]=Math.max(dp[i][j],dp[i-1][j-w[i-1]]+v[i-1]);\r\n\r\n        }\r\n\r\n    return dp[n][W];\r\n\r\n}",
+    "question": "Which SQL command is used to add a new column to an existing table?",
     "options": [
-      "9",
-      "7",
-      "10",
-      "11"
+      "ALTER TABLE",
+      "ADD COLUMN",
+      "UPDATE",
+      "INSERT"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is 9. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
+    "explanation": "The correct answer is ALTER TABLE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 222,
-    "question": "What does this return for arr={4,1,2,1,2}?\r\nint singleNumber(int[] nums){\r\n    int result=0;\r\n    for(int n:nums) result^=n;\r\n    return result;\r\n}",
+    "question": "Which system design principle ensures changes in one module have minimal impact on others?",
     "options": [
-      "0",
-      "4",
-      "2",
-      "1"
+      "Encapsulation",
+      "Loose Coupling",
+      "Single Responsibility",
+      "High Cohesion"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 4. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
+    "explanation": "The correct answer is Loose Coupling",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 223,
-    "question": "What is the output?\r\nint a=5,b=3;\r\n\r\na=a^b; b=a^b; a=a^b;\r\n\r\nSystem.out.println(a+\" \"+b);",
+    "question": "Which SQL function returns the smallest value in a column?",
     "options": [
-      "0 0",
-      "8 8",
-      "3 5",
-      "5 3"
+      "MIN()",
+      "MAX()",
+      "COUNT()",
+      "AVG()"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 3 5. Tags: bit-masking.",
-    "topic": "Bit-masking",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is MIN()",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 224,
-    "question": "What does this BST insert return as inorder after inserting 5,3,7,1,4?\r\nNode insert(Node r, int val){\r\n    if(r==null) return new Node(val);\r\n    if(val<r.val) r.left=insert(r.left,val);\r\n    else if(val>r.val) r.right=insert(r.right,val);\r\n    return r;\r\n}",
+    "question": "Which database schema level describes entities and relationships without implementation details?",
     "options": [
-      "1 4 3 7 5",
-      "5 3 7 1 4",
-      "1 3 4 5 7",
-      "7 5 4 3 1"
+      "Logical Schema",
+      "Conceptual Schema",
+      "Physical Schema",
+      "External Schema"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 1 3 4 5 7. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Conceptual Schema",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 225,
-    "question": "What does this return for coins={1,2,5}, amount=11?\r\nint coinChange(int[] coins, int amount){\r\n\r\n    int[] dp=new int[amount+1];\r\n\r\n    Arrays.fill(dp,amount+1);\r\n\r\n    dp[0]=0;\r\n\r\n    for(int i=1;i<=amount;i++)\r\n\r\n        for(int c:coins)\r\n\r\n            if(c<=i) dp[i]=Math.min(dp[i],dp[i-c]+1);\r\n\r\n    return dp[amount]>amount?-1:dp[amount];\r\n\r\n}",
+    "question": "Which SQL statement is used to save partial changes and return to it later within a transaction?",
     "options": [
-      "5",
-      "2",
-      "3",
-      "4"
+      "SAVEPOINT",
+      "ROLLBACK",
+      "COMMIT",
+      "TRUNCATE"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 3. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is SAVEPOINT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 226,
-    "question": "What does this perfect squares return for n=12?\r\nint numSquares(int n){\r\n\r\n    int[] dp=new int[n+1];\r\n\r\n    Arrays.fill(dp,Integer.MAX_VALUE);\r\n\r\n    dp[0]=0;\r\n\r\n    for(int i=1;i<=n;i++)\r\n\r\n        for(int j=1;j*j<=i;j++)\r\n\r\n            dp[i]=Math.min(dp[i],dp[i-j*j]+1);\r\n\r\n    return dp[n];\r\n\r\n}",
+    "question": "Which property of a distributed system ensures it can handle sudden spikes in user traffic?",
     "options": [
-      "2",
-      "3",
-      "5",
-      "4"
+      "Consistency",
+      "Scalability",
+      "Reliability",
+      "Durability"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 3. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
+    "explanation": "The correct answer is Scalability",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 227,
-    "question": "What is the output?\r\nString s1=\"AGGTAB\", s2=\"GXTXAYB\";\r\n\r\nint m=s1.length(), n=s2.length();\r\n\r\nint[][] dp=new int[m+1][n+1];\r\n\r\nfor(int i=1;i<=m;i++)\r\n\r\n    for(int j=1;j<=n;j++)\r\n\r\n        if(s1.charAt(i-1)==s2.charAt(j-1)) dp[i][j]=dp[i-1][j-1]+1;\r\n\r\n        else dp[i][j]=Math.max(dp[i-1][j],dp[i][j-1]);\r\n\r\nSystem.out.println(dp[m][n]);",
+    "question": "Which SQL keyword is used to combine rows from two or more tables based on a related column?",
     "options": [
-      "3",
-      "5",
-      "6",
-      "4"
+      "JOIN",
+      "UNION",
+      "MERGE",
+      "INTERSECT"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 4. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is JOIN",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 228,
-    "question": "What is the output?\r\nint[] prices={1,3,4,5,8,9};\r\n\r\nint maxProfit=0;\r\n\r\nfor(int i=1;i<prices.length;i++)\r\n\r\n    if(prices[i]>prices[i-1]) maxProfit+=prices[i]-prices[i-1];\r\n\r\nSystem.out.println(maxProfit);",
+    "question": "Which type of join returns only the matching rows from both tables?",
     "options": [
-      "9",
-      "7",
-      "8",
-      "6"
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "INNER JOIN",
+      "FULL OUTER JOIN"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is 8. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
+    "explanation": "The correct answer is INNER JOIN",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 229,
-    "question": "What does this non-overlapping intervals return for intervals={{1,2},{2,3},{3,4},{1,3}}?\r\nint eraseOverlapIntervals(int[][] intervals){\r\n\r\n    Arrays.sort(intervals,(a,b)->a[1]-b[1]);\r\n\r\n    int count=0, end=intervals[0][1];\r\n\r\n    for(int i=1;i<intervals.length;i++){\r\n\r\n        if(intervals[i][0]<end) count++;\r\n\r\n        else end=intervals[i][1];\r\n\r\n    }\r\n\r\n    return count;\r\n\r\n}",
+    "question": "Which property of transactions ensures effects of committed transactions are never lost?",
     "options": [
-      "0",
-      "1",
-      "2",
-      "3"
+      "Atomicity",
+      "Durability",
+      "Isolation",
+      "Consistency"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 1. Tags: greedy.",
-    "topic": "Greedy",
+    "explanation": "The correct answer is Durability",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 230,
-    "question": "What is the output?\r\nint x=10, y=3;\r\n\r\nSystem.out.println(x&y);\r\n\r\nSystem.out.println(x|y);\r\n\r\nSystem.out.println(x^y);\r\n\r\nSystem.out.println(~x);",
+    "question": "Which SQL function returns the total sum of a numeric column?",
     "options": [
-      "2,11,9,-11",
-      "2,11,9,-10",
-      "3,10,9,-10",
-      "2,10,8,-11"
+      "COUNT()",
+      "SUM()",
+      "AVG()",
+      "MAX()"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is 2,11,9,-11. Tags: bit-masking.",
-    "topic": "Bit-masking",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is SUM()",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 231,
-    "question": "What is the output of postorder traversal for tree with root=1, left=2, right=3?\r\nvoid postorder(Node r) {\r\n\r\n    if(r == null) return;\r\n\r\n    postorder(r.left);\r\n\r\n    postorder(r.right);\r\n\r\n    System.out.print(r.val + \" \");\r\n\r\n}",
+    "question": "Which consistency model ensures users always read the most recent write?",
     "options": [
-      "3 2 1",
-      "1 3 2",
-      "2 3 1",
-      "1 2 3"
+      "Weak Consistency",
+      "Eventual Consistency",
+      "Strong Consistency",
+      "Monotonic Read"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is 2 3 1. Tags: bst.",
-    "topic": "BST",
+    "explanation": "The correct answer is Strong Consistency",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 232,
-    "question": "What is the output?\r\nNode root = new Node(10);\r\nroot.left = new Node(5);\r\nroot.right = new Node(15);\r\nroot.left.left = new Node(3);\r\nroot.left.right = new Node(7);\r\n\r\nint sum = 0;\r\nQueue<Node> q = new LinkedList<>();\r\nq.add(root);\r\nwhile(!q.isEmpty()) {\r\n    Node n = q.poll();\r\n    sum += n.val;\r\n    if(n.left != null) q.add(n.left);\r\n    if(n.right != null) q.add(n.right);\r\n}\r\nSystem.out.println(sum);",
+    "question": "Which SQL command deletes all rows from a table but allows rollback?",
     "options": [
-      "45",
-      "35",
-      "40",
-      "30"
+      "TRUNCATE",
+      "DELETE",
+      "DROP",
+      "ALTER"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 40. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is DELETE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 233,
-    "question": "What does this function return for root=4, left=2, right=6?\r\nNode findMin(Node root) {\r\n\r\n    if(root == null) return null;\r\n\r\n    if(root.left == null) return root;\r\n\r\n    return findMin(root.left);\r\n\r\n}\r\n\r\n// findMin(root).val = ?",
+    "question": "Which database schema describes indexes, file structures, and storage allocation?",
     "options": [
-      "2",
-      "null",
-      "6",
-      "4"
+      "Logical Schema",
+      "Physical Schema",
+      "Conceptual Schema",
+      "External Schema"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is 2. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Physical Schema",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 234,
-    "question": "What is the output?\r\nNode root = new Node(1);\r\n\r\nroot.left = new Node(2);\r\n\r\nroot.right = new Node(3);\r\n\r\nroot.left.left = new Node(4);\r\n\r\nroot.left.right = new Node(5);\r\n\r\nList<Integer> leaves = new ArrayList<>();\r\n\r\nfindLeaves(root, leaves);\r\n\r\nSystem.out.println(leaves);\r\n\r\nvoid findLeaves(Node r, List<Integer> list) {\r\n\r\n    if(r == null) return;\r\n\r\n    if(r.left == null && r.right == null) { list.add(r.val); return; }\r\n\r\n    findLeaves(r.left, list);\r\n\r\n    findLeaves(r.right, list);\r\n\r\n}",
+    "question": "Which SQL clause is used to filter rows before grouping?",
     "options": [
-      "[1, 2]",
-      "[2, 3]",
-      "[3, 4, 5]",
-      "[4, 5, 3]"
+      "HAVING",
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is [4, 5, 3]. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is WHERE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 235,
-    "question": "What is the output after inserting 5, 3, 7, 1, 4 into BST and doing inorder?\r\nNode insert(Node r, int val) {\r\n\r\n    if(r == null) return new Node(val);\r\n\r\n    if(val < r.val) r.left = insert(r.left, val);\r\n\r\n    else if(val > r.val) r.right = insert(r.right, val);\r\n\r\n    return r;\r\n\r\n}\r\n\r\n// inorder traversal output?",
+    "question": "Which ACID property ensures that a transaction is all-or-nothing?",
     "options": [
-      "7 5 4 3 1",
-      "1 4 3 7 5",
-      "1 3 4 5 7",
-      "5 3 7 1 4"
+      "Isolation",
+      "Atomicity",
+      "Durability",
+      "Consistency"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 1 3 4 5 7. Tags: bst.",
-    "topic": "BsT",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Atomicity",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 236,
-    "question": "What does this function return for BST {1,2,3,4,5} and k=2?\r\nint count = 0;\r\n\r\nint kthSmallest(Node r, int k) {\r\n\r\n    if(r == null) return -1;\r\n\r\n    int left = kthSmallest(r.left, k);\r\n\r\n    if(left != -1) return left;\r\n\r\n    count++;\r\n\r\n    if(count == k) return r.val;\r\n\r\n    return kthSmallest(r.right, k);\r\n\r\n}",
+    "question": "Which SQL statement modifies the structure of a table?",
     "options": [
-      "4",
-      "1",
-      "2",
-      "3"
+      "ALTER TABLE",
+      "UPDATE",
+      "MODIFY",
+      "RENAME"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 2. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is ALTER TABLE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 237,
-    "question": "What does this return for BST with root=8, left=3, right=10 and key=10?\r\nNode deleteNode(Node r, int key) {\r\n    if(r == null) return null;\r\n    if(key < r.val) r.left = deleteNode(r.left, key);\r\n    else if(key > r.val) r.right = deleteNode(r.right, key);\r\n    else {\r\n        if(r.left == null) return r.right;\r\n        if(r.right == null) return r.left;\r\n        Node min = findMin(r.right);\r\n        r.val = min.val;\r\n        r.right = deleteNode(r.right, min.val);\r\n    }\r\n    return r;\r\n}\r\n// After delete, inorder of tree?",
+    "question": "Which database backup method takes a full snapshot of the database at a point in time?",
     "options": [
-      "[3, 8, 10]",
-      "[3, 10]",
-      "[8, 10]",
-      "[3, 8]"
+      "Incremental Backup",
+      "Full Backup",
+      "Differential Backup",
+      "Hot Backup"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is [3, 8]. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Full Backup",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 238,
-    "question": "What does this LCS return for s1=\"ABC\", s2=\"AC\"?\r\nint lcs(String s1, String s2) {\r\n\r\n    int m = s1.length(), n = s2.length();\r\n\r\n    int[][] dp = new int[m+1][n+1];\r\n\r\n    for(int i = 1; i <= m; i++)\r\n\r\n        for(int j = 1; j <= n; j++)\r\n\r\n            if(s1.charAt(i-1) == s2.charAt(j-1))\r\n\r\n                dp[i][j] = dp[i-1][j-1] + 1;\r\n\r\n            else\r\n\r\n                dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);\r\n\r\n    return dp[m][n];\r\n\r\n}",
+    "question": "Which SQL clause restricts results returned to only those satisfying a condition?",
     "options": [
-      "1",
-      "3",
-      "0",
-      "2"
+      "WHERE",
+      "HAVING",
+      "GROUP BY",
+      "ORDER BY"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 2. Tags: dyanamic pogramming.",
-    "topic": "Dyanamic Pogramming",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is WHERE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 239,
-    "question": "What does this return for nums={10,9,2,5,3,7}?\r\nint lis(int[] nums) {\r\n\r\n    int n = nums.length;\r\n\r\n    int[] dp = new int[n];\r\n\r\n    Arrays.fill(dp, 1);\r\n\r\n    for(int i = 1; i < n; i++)\r\n\r\n        for(int j = 0; j < i; j++)\r\n\r\n            if(nums[j] < nums[i])\r\n\r\n                dp[i] = Math.max(dp[i], dp[j]+1);\r\n\r\n    int max = 0;\r\n\r\n    for(int x : dp) max = Math.max(max, x);\r\n\r\n    return max;\r\n\r\n}",
+    "question": "Which functional dependency rule allows attributes to be added on both sides without affecting equivalence?",
     "options": [
-      "4",
-      "2",
-      "5",
-      "3"
+      "Reflexivity",
+      "Augmentation",
+      "Transitivity",
+      "Union"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 3. Tags: dyanamic pogramming.",
-    "topic": "Dyanamic Pogramming",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Augmentation",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 240,
-    "question": "What does this return for nums={3,4,2,1,2,3,7}, k=2?\r\nint maxSumAfterKOps(int[] nums, int k) {\r\n\r\n    Arrays.sort(nums);\r\n\r\n    for(int i = 0; i < k; i++)\r\n\r\n        if(nums[i] < 0) nums[i] = -nums[i];\r\n\r\n    int sum = 0;\r\n\r\n    for(int n : nums) sum += n;\r\n\r\n    return sum;\r\n\r\n}",
+    "question": "Which SQL command is used to remove a database permanently?",
     "options": [
-      "26",
-      "20",
-      "22",
-      "24"
+      "DROP DATABASE",
+      "DELETE DATABASE",
+      "TRUNCATE DATABASE",
+      "REMOVE DATABASE"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 22. Tags: dyanamic pogramming.",
-    "topic": "Dyanamic Pogramming",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is DROP DATABASE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 241,
-    "question": "Kadane’s algorithm handles negative numbers by?",
+    "question": "Which design approach ensures detailed class diagrams, database schemas, and algorithms are created?",
     "options": [
-      "Using recursion",
-      "Resetting sum to 0",
-      "Sorting array",
-      "Binary search"
+      "High-Level Design",
+      "Low-Level Design",
+      "Physical Design",
+      "Requirement Analysis"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Resetting sum to 0. Tags: Kadanes.",
-    "topic": "kadens",
+    "explanation": "The correct answer is Low-Level Design",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 242,
-    "question": "Given an array arr = [1, 2, 3, 4], what is the value of the Prefix Sum array at index 2 (0-indexed)?",
+    "question": "Which SQL operator checks if a value lies within a given range?",
     "options": [
-      "2",
-      "5",
-      "6",
-      "4"
+      "BETWEEN",
+      "LIKE",
+      "IN",
+      "EXISTS"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 6. Tags: Prefix Sum.",
-    "topic": "prefix sum",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is BETWEEN",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 243,
-    "question": "In the Rabin-Karp algorithm, if the hash values of the pattern and the current window match, what is the next step?",
+    "question": "Which system design metric focuses on how quickly the system recovers after a failure?",
     "options": [
-      "Move the window by 2 positions.",
-      "Declare a match immediately.",
-      "Re-hash the entire string with a different prime number.",
-      "Perform a character-by-character comparison to handle potential collisions."
+      "Fault Tolerance",
+      "Availability",
+      "Reliability",
+      "Recoverability"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is Perform a character-by-character comparison to handle potential collisions.. Tags: Rabin-Karp.",
-    "topic": "rabin-karp",
+    "explanation": "The correct answer is Recoverability",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 244,
-    "question": "Which constructor is called when an object is initialized using another existing object of the same class (e.g., Class obj2 = obj1;)?",
+    "question": "Which SQL command removes duplicate rows from a query result?",
     "options": [
-      "Copy Constructor",
-      "Parameterized Constructor",
-      "Destructor",
-      "Default Constructor"
+      "DISTINCT",
+      "UNIQUE",
+      "GROUP BY",
+      "FILTER"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Copy Constructor. Tags: Constructor.",
-    "topic": "constructor",
+    "explanation": "The correct answer is DISTINCT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 245,
-    "question": "In the KMP algorithm, what does the LPS (Longest Prefix Suffix) array store?",
+    "question": "Which type of replication allows multiple nodes to accept writes simultaneously?",
     "options": [
-      "The index of the first character of the pattern.",
-      "The length of the longest proper prefix which is also a suffix.",
-      "The frequency of each character in the text.",
-      "The total number of unique characters in the pattern."
+      "Master-Slave",
+      "Multi-Master",
+      "Log Shipping",
+      "Sharding"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is The length of the longest proper prefix which is also a suffix.. Tags: KMP.",
-    "topic": "kmp",
+    "explanation": "The correct answer is Multi-Master",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 246,
-    "question": "In the \"Two Sum\" problem with a sorted array, if arr[left] + arr[right] > target, what is the move?",
+    "question": "Which SQL command is used to enforce a condition at the time of data insertion?",
     "options": [
-      "left++",
-      "right--",
-      "right++",
-      "left--"
+      "CHECK",
+      "NOT NULL",
+      "PRIMARY KEY",
+      "FOREIGN KEY"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is right--. Tags: Two Pointer.",
-    "topic": "two pointer",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CHECK",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 247,
-    "question": "Overriding occurs at:",
+    "question": "Which CAP theorem property ensures the system continues operating despite network partition?",
     "options": [
-      "Runtime",
-      "Link time",
-      "Compile time",
-      "Preprocessing"
+      "Consistency",
+      "Availability",
+      "Partition Tolerance",
+      "Durability"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Runtime. Tags: Destructor.",
-    "topic": "destructor",
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Partition Tolerance",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 248,
-    "question": "What is the main logic of the \"Prime Sieve\" (Sieve of Eratosthenes) implementation?",
+    "question": "Which SQL keyword is used to check if a subquery returns at least one row?",
     "options": [
-      "Checking every number from 2 to  N using a nested loop.",
-      "Dividing the number by all integers up to N/2.",
-      "Marking multiples of every discovered prime number as non-prime",
-      "Using the Fibonacci sequence to find primes."
+      "EXISTS",
+      "ANY",
+      "ALL",
+      "IN"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Marking multiples of every discovered prime number as non-prime. Tags: Prime Seive.",
-    "topic": "Prime seieve",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is EXISTS",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 249,
-    "question": "In the Rabin-Karp algorithm, if a \"Spurious Hit\" occurs, it means:",
+    "question": "Which ACID property ensures concurrent transactions produce results consistent with serial execution?",
     "options": [
-      "The prime number used for the modulo was too small.",
-      "The pattern was found correctly.",
-      "The hash values match, but the actual strings do not.",
-      "The rolling hash calculation resulted in a negative value."
+      "Durability",
+      "Isolation",
+      "Atomicity",
+      "Consistency"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is The hash values match, but the actual strings do not.. Tags: Rabin-Karp.",
-    "topic": "rabin-karp",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Isolation",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 250,
-    "question": "The \"Z-box\" [L, R] in the Z-algorithm is used to:",
+    "question": "Which SQL command permanently deletes a table structure and its data?",
     "options": [
-      "Perform bitwise operations on the characters.",
-      "Store the frequency of characters in the window.",
-      "Represent the rightmost interval where a substring matches a prefix of the string.",
-      "Store the final result of the string matching."
+      "TRUNCATE",
+      "DROP",
+      "DELETE",
+      "REMOVE"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Represent the rightmost interval where a substring matches a prefix of the string.. Tags: Z funtion.",
-    "topic": "z function",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is DROP",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 251,
-    "question": "What data structure is used in the sliding window maximum problem to achieve O(n) time?",
+    "question": "Which architectural pattern uses a single deployable unit for all business logic?",
     "options": [
-      "Deque",
-      "Stack",
-      "Set",
-      "Priority Queue"
+      "Monolithic",
+      "Microservices",
+      "Event-Driven",
+      "Client-Server"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Deque. Tags: Window Sliding.",
-    "topic": "window sliding",
+    "explanation": "The correct answer is Monolithic",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 252,
-    "question": ". The Sieve of Eratosthenes runs in time complexity:",
+    "question": "Which SQL aggregate function finds the average of a column?",
     "options": [
-      "O(n log n)",
-      "O(n log log n)",
-      "O(n²)",
-      "O(√n)"
+      "SUM()",
+      "AVG()",
+      "COUNT()",
+      "MAX()"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is O(n log log n). Tags: Prime Seive.",
-    "topic": "Prime seieve",
+    "explanation": "The correct answer is AVG()",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 253,
-    "question": "The KMP algorithm achieves string matching in:",
+    "question": "Which consistency pattern ensures that once a value is read, it will never return an older value?",
     "options": [
-      "O(n²)",
-      "O(n + m)",
-      "O(n log n)",
-      "O(n * m)"
+      "Monotonic Read Consistency",
+      "Strong Consistency",
+      "Eventual Consistency",
+      "Weak Consistency"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is O(n + m). Tags: KMP.",
-    "topic": "kmp",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Monotonic Read Consistency",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 254,
-    "question": "Tail recursion is special because:",
+    "question": "Which SQL command is used to remove all rows from a table without logging each row deletion?",
     "options": [
-      "It uses two stacks",
-      "It has no base case",
-      "The recursive call is the last operation, allowing optimization",
-      "It runs in O(1)"
+      "DELETE",
+      "TRUNCATE",
+      "DROP",
+      "ALTER"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is The recursive call is the last operation, allowing optimization. Tags: Recursion.",
-    "topic": "recursion",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is TRUNCATE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 255,
-    "question": "Dynamic binding means:",
+    "question": "Which normalization form ensures that every determinant is a candidate key?",
     "options": [
-      "Binding constructors",
-      "Linking at compile time",
-      "Static memory allocation",
-      "Linking function calls to definitions at runtime"
+      "2NF",
+      "3NF",
+      "BCNF",
+      "1NF"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Linking function calls to definitions at runtime. Tags: Dynamic Binding.",
-    "topic": "dynamic binding",
+    "correctAnswer": "C",
+    "explanation": "The correct answer is BCNF",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 256,
-    "question": "In \"Count of subarrays with exactly K distinct integers,\" the standard trick is:",
+    "question": "Which SQL keyword is used to combine the results of two queries including duplicates?",
     "options": [
-      "Prefix sum with hashing",
-      "Binary search on K",
-      "Direct sliding window with exact count",
-      "atMost(K) – atMost(K-1)"
+      "UNION ALL",
+      "JOIN",
+      "INTERSECT",
+      "UNION"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is atMost(K) – atMost(K-1). Tags: Window Sliding.",
-    "topic": "window sliding",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is UNION ALL",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 257,
-    "question": "In the KMP failure function (LPS), what is lps[0] always equal to?",
+    "question": "Which transaction control command sets a marker to roll back part of a transaction?",
     "options": [
-      "-1",
-      "1",
-      "Length of string",
-      "0"
+      "SAVEPOINT",
+      "ROLLBACK",
+      "COMMIT",
+      "SET TRANSACTION"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 0. Tags: KMP.",
-    "topic": "kmp",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is SAVEPOINT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 258,
-    "question": "In Rabin-Karp, to avoid negative hash values during rolling hash computation, we:",
+    "question": "Which SQL command is used to define access rights and privileges?",
     "options": [
-      "Reverse the string",
-      "Use absolute value",
-      "Skip negative characters",
-      "Add MOD before taking modulo"
+      "GRANT",
+      "REVOKE",
+      "ALTER",
+      "UPDATE"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Add MOD before taking modulo. Tags: Rabin-Karp.",
-    "topic": "rabin-karp",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is GRANT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 259,
-    "question": "Which of the following is TRUE about the Z-function compared to KMP",
+    "question": "Which property of system design ensures the system is easy to update, extend, and fix?",
     "options": [
-      "Z-function only works on binary strings",
-      "Both solve the same class of problems but with different auxiliary arrays",
-      "Z-function is slower",
-      "KMP uses less memory"
+      "Maintainability",
+      "Reliability",
+      "Consistency",
+      "Scalability"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Both solve the same class of problems but with different auxiliary arrays. Tags: Z-Function.",
-    "topic": "z function",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Maintainability",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 260,
-    "question": "Two pointer approach for \"4-Sum\" problem has time complexity:",
+    "question": "Which SQL statement creates a new database user with specific permissions?",
     "options": [
-      "O(n⁴)",
-      "O(n³)",
-      "O(n²)",
-      "O(n)"
+      "CREATE USER",
+      "GRANT USER",
+      "ADD USER",
+      "ALTER USER"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is O(n³). Tags: Two Pointer.",
-    "topic": "two pointer",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CREATE USER",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 261,
-    "question": "What is the relationship between the number of nodes at level i and total nodes in a complete binary tree?",
+    "question": "Which type of indexing is particularly efficient for columns with low cardinality?",
     "options": [
-      "Every level has exactly n/height nodes",
-      "Level i has exactly i nodes",
-      "Last level always fully filled",
-      "Level i has at most 2^i nodes; last level may be partially filled"
+      "Bitmap Index",
+      "B+ Tree Index",
+      "Hash Index",
+      "Clustered Index"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Level i has at most 2^i nodes; last level may be partially filled. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Bitmap Index",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 262,
-    "question": "What is a stack?",
+    "question": "Which SQL keyword checks whether a value matches all values returned by a subquery?",
     "options": [
-      "Linear data structure following LIFO",
-      "Non-linear data structure",
-      "Circular data structure",
-      "Linear data structure following FIFO"
+      "EXISTS",
+      "ALL",
+      "ANY",
+      "IN"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Linear data structure following LIFO. Tags: stack.",
-    "topic": "Stack",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is ALL",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 263,
-    "question": "What is the time complexity of push and pop in a stack?",
+    "question": "Which CAP theorem combination ensures a system remains consistent and available if no partitions occur?",
     "options": [
-      "O(n²)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
+      "CA",
+      "AP",
+      "CP",
+      "ACID"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is O(1). Tags: stack.",
-    "topic": "Stack",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CA",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 264,
-    "question": "What is the depth of the root node?",
+    "question": "Which SQL keyword is used to rename a column in a query result?",
     "options": [
-      "-1",
-      "1",
-      "0",
-      "It depends on tree"
+      "AS",
+      "RENAME",
+      "ALIAS",
+      "MODIFY"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 0. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is AS",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 265,
-    "question": "In preorder traversal, which node is visited first?",
+    "question": "Which recovery technique undoes incomplete transactions after a system crash?",
     "options": [
-      "Leaf",
-      "Right child",
-      "Root",
-      "Left child"
+      "Rollback",
+      "Rollforward",
+      "Checkpointing",
+      "Backup Restore"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Root. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Rollback",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 266,
-    "question": "In postorder traversal, which node is visited last?",
+    "question": "Which SQL clause restricts grouped results to meet a condition?",
     "options": [
-      "Right child",
-      "Root",
-      "Left child",
-      "Leaf"
+      "WHERE",
+      "HAVING",
+      "GROUP BY",
+      "FILTER"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Root. Tags: bst.",
-    "topic": "BST",
+    "explanation": "The correct answer is HAVING",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 267,
-    "question": "Which traversal visits nodes level by level?",
+    "question": "Which database design phase involves identifying entities, attributes, and relationships?",
     "options": [
-      "Postorder",
-      "Preorder",
-      "Level order (BFS)",
-      "Inorder"
+      "Requirement Analysis",
+      "Logical Design",
+      "Physical Design",
+      "Normalization"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Level order (BFS). Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Requirement Analysis",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 268,
-    "question": "What is the inorder traversal output of a BST?",
+    "question": "Which SQL operator is used to combine rows returned by two queries and return only matching rows?",
     "options": [
-      "Random order",
-      "Level order",
-      "Reverse sorted",
-      "Sorted ascending order"
+      "INTERSECT",
+      "UNION",
+      "JOIN",
+      "EXCEPT"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Sorted ascending order. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is INTERSECT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 269,
-    "question": "Which Java collection uses hashing internally?",
+    "question": "Which system design characteristic measures the percentage of time a system is operational?",
     "options": [
-      "TreeMap",
-      "LinkedList",
-      "ArrayList",
-      "HashMap"
+      "Latency",
+      "Throughput",
+      "Availability",
+      "Reliability"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is HashMap. Tags: heap.",
-    "topic": "Heap",
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Availability",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 270,
-    "question": "What is a min-heap?",
+    "question": "Which SQL command is used to permanently revoke privileges from a user?",
     "options": [
-      "Heap where root is minimum and parent <= children",
-      "Balanced BST",
-      "Heap where root is maximum",
-      "Sorted array"
+      "REMOVE",
+      "DROP",
+      "REVOKE",
+      "DENY"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Heap where root is minimum and parent <= children. Tags: heap.",
-    "topic": "Heap",
+    "correctAnswer": "C",
+    "explanation": "The correct answer is REVOKE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 271,
-    "question": "What is the result of XOR of a number with itself?",
+    "question": "Which SQL clause is used to arrange query results in ascending or descending order?",
     "options": [
-      "1",
-      "-1",
-      "0",
-      "The number doubled"
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING",
+      "SORT BY"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 0. Tags: bit-masking.",
-    "topic": "Bit-masking",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is ORDER BY",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 272,
-    "question": "Number of edges in tree with n nodes",
+    "question": "Which consistency model guarantees that once a write is acknowledged, all future reads will return that value?",
     "options": [
-      "n²",
-      "n-1",
-      "n+1",
-      "n"
+      "Eventual Consistency",
+      "Strong Consistency",
+      "Causal Consistency",
+      "Weak Consistency"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is n-1. Tags: bst.",
-    "topic": "BST",
+    "explanation": "The correct answer is Strong Consistency",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 273,
-    "question": "Leaf node has:",
+    "question": "Which SQL function returns the number of distinct values in a column?",
     "options": [
-      "1 child",
-      "2 child",
-      "3 child",
-      "0 child"
+      "COUNT(DISTINCT ...)",
+      "SUM(DISTINCT ...)",
+      "UNIQUE()",
+      "AVG(DISTINCT ...)"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is 2 child. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is COUNT(DISTINCT ...)",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 274,
-    "question": "Memoization is:",
+    "question": "Which architectural style is best when different services are owned by separate teams?",
     "options": [
-      "Sorting",
-      "Random",
-      "Bottom-up",
-      "Top-down"
+      "Monolithic",
+      "Microservices",
+      "Layered",
+      "Client-Server"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Top-down. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Microservices",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 275,
-    "question": "Tabulation is:",
+    "question": "Which SQL command creates a backup copy of a table’s structure without copying data?",
     "options": [
-      "Bottom-up",
-      "Recursive",
-      "Random",
-      "Top-down"
+      "CREATE TABLE ... LIKE",
+      "BACKUP TABLE",
+      "COPY STRUCTURE",
+      "CLONE TABLE"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Bottom-up. Tags: dyanmic pogramming.",
-    "topic": "Dyanmic Pogramming",
+    "explanation": "The correct answer is CREATE TABLE ... LIKE",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 276,
-    "question": "GCD using Euclid complexity:",
+    "question": "Which property of ACID ensures transactions leave the database in a valid state?",
     "options": [
-      "O(1)",
-      "O(n²)",
-      "O(n)",
-      "O(log n)"
+      "Consistency",
+      "Atomicity",
+      "Isolation",
+      "Durability"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(log n). Tags: gcd.",
-    "topic": "GCD",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Consistency",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 277,
-    "question": "Sieve of Eratosthenes is used for:",
+    "question": "Which SQL operator matches a value against multiple possible values?",
     "options": [
-      "Prime numbers",
-      "Graph",
-      "Sorting",
-      "Searching"
+      "BETWEEN",
+      "LIKE",
+      "IN",
+      "ANY"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Prime numbers. Tags: prime seieve.",
-    "topic": "Prime seieve",
+    "correctAnswer": "C",
+    "explanation": "The correct answer is IN",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 278,
-    "question": "Duplicate keys in BST:",
+    "question": "Which recovery method uses checkpoints to speed up crash recovery?",
     "options": [
-      "Allowed left",
-      "Always allowed",
-      "Not allowed",
-      "Allowed right"
+      "Rollback",
+      "Rollforward",
+      "Checkpointing",
+      "Hot Backup"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Not allowed. Tags: bst.",
-    "topic": "BST",
+    "explanation": "The correct answer is Checkpointing",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 279,
-    "question": "Predecessor:",
+    "question": "Which SQL keyword is used to return rows that are present in the first query but not in the second?",
     "options": [
-      "leaf",
-      "Root",
-      "Right subtree max",
-      "Left subtree max"
+      "EXCEPT",
+      "INTERSECT",
+      "UNION",
+      "JOIN"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Left subtree max. Tags: bst.",
-    "topic": "BST",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is EXCEPT",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 280,
-    "question": "Greedy requires sorting:",
+    "question": "Which architectural pattern handles high-throughput event streams?",
     "options": [
-      "Random",
-      "Always no",
-      "Never",
-      "Often"
+      "Event-Driven",
+      "Monolithic",
+      "Layered",
+      "Client-Server"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Often. Tags: greedy.",
-    "topic": "Greedy",
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Event-Driven",
+    "topic": "System Design",
     "difficulty": "medium"
   },
   {
     "id": 281,
-    "question": "Why does sliding window fail when elements are negative?",
+    "question": "Which SQL command removes all rows from a table and cannot be rolled back?",
     "options": [
-      "Recursion issue",
-      "Memory issue",
-      "Sorting issue",
-      "Window sum not monotonic"
+      "DELETE",
+      "DROP",
+      "TRUNCATE",
+      "ALTER"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Window sum not monotonic. Tags: Negative Window Limitation.",
-    "topic": "Sliding Window",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is TRUNCATE",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 282,
-    "question": "Why is two pointer technique efficient for sorted arrays?",
+    "question": "Which system design property ensures that users experience minimal downtime during failures?",
     "options": [
-      "Uses hashing",
-      "Avoids nested loops",
-      "Uses recursion",
-      "Sorts data"
+      "Fault Tolerance",
+      "Availability",
+      "Reliability",
+      "Consistency"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Avoids nested loops. Tags: Two Pointer Nested Avoidance.",
-    "topic": "Arrays",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Availability",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 283,
-    "question": "Why does binary search have log n complexity?",
+    "question": "Which SQL keyword removes duplicate rows from a result set?",
     "options": [
-      "Uses recursion",
-      "Halves search space",
-      "Uses stack",
-      "Sorts array"
+      "DISTINCT",
+      "UNIQUE",
+      "FILTER",
+      "GROUP BY"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Halves search space. Tags: Logarithmic Reduction.",
-    "topic": "Binary Search",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is DISTINCT",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 284,
-    "question": "What error occurs if mid calculation overflows?",
+    "question": "Which type of normalization eliminates redundancy and ensures no partial dependency?",
     "options": [
-      "Memory leak",
-      "Sorting error",
-      "Recursion failure",
-      "Wrong index access"
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Wrong index access. Tags: Mid Overflow Bug.",
-    "topic": "Binary Search",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is 2NF",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 285,
-    "question": "Why is tail recursion optimized by compilers?",
+    "question": "Which SQL operator is used to compare a value against every value in a subquery?",
     "options": [
-      "Reduces stack usage",
-      "Sorts faster",
-      "Uses heap",
-      "Avoids loops"
+      "ALL",
+      "ANY",
+      "EXISTS",
+      "IN"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Reduces stack usage. Tags: Tail Recursion Optimization.",
-    "topic": "Recursion",
-    "difficulty": "easy"
+    "explanation": "The correct answer is ALL",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 286,
-    "question": "Why is backtracking slower than DP?",
+    "question": "Which CAP theorem tradeoff allows consistency and availability but no partition tolerance?",
     "options": [
-      "Sorts data",
-      "Explores all possibilities",
-      "Uses queue",
-      "Uses stack"
+      "CA",
+      "AP",
+      "CP",
+      "BASE"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Explores all possibilities. Tags: Backtracking Exhaustive Nature.",
-    "topic": "Recursion",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CA",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 287,
-    "question": "Why does BFS use queue instead of stack?",
+    "question": "Which SQL keyword creates a shortcut name for a table or column?",
     "options": [
-      "Avoids recursion",
-      "Uses less memory",
-      "Maintains level order",
-      "Sorts nodes"
+      "AS",
+      "RENAME",
+      "ALIAS",
+      "MODIFY"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Maintains level order. Tags: Queue Level Maintenance.",
-    "topic": "Graphs",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is AS",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 288,
-    "question": "Why does DFS use stack (or recursion)?",
+    "question": "Which database design principle suggests tables should store data about only one entity type?",
     "options": [
-      "Queue behavior",
-      "Heap usage",
-      "Depth exploration",
-      "Sorting"
+      "Entity Integrity",
+      "Referential Integrity",
+      "Single Responsibility",
+      "Atomicity"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Depth exploration. Tags: DFS Depth Exploration.",
-    "topic": "Graphs",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Single Responsibility",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 289,
-    "question": "Why is balanced BST efficient for search?",
+    "question": "Which SQL keyword returns the number of rows matching a condition?",
     "options": [
-      "Uses recursion",
-      "Sorts faster",
-      "Height is log n",
-      "Uses stack"
+      "COUNT()",
+      "SUM()",
+      "AVG()",
+      "MIN()"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Height is log n. Tags: Balanced BST Efficiency.",
-    "topic": "Trees",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is COUNT()",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 290,
-    "question": "Why is complete binary tree used in heaps?",
+    "question": "Which architectural pattern organizes code into presentation, business, and data layers?",
     "options": [
-      "Uses hashing",
-      "Maintains structure",
-      "Sorts data",
-      "Uses less memory"
+      "Layered",
+      "Microservices",
+      "Monolithic",
+      "Event-Driven"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Maintains structure. Tags: Heap Structure Property.",
-    "topic": "Trees",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Layered",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 291,
-    "question": "Why does hash map degrade in worst case?",
+    "question": "Which SQL clause groups rows and applies aggregate functions to them?",
     "options": [
-      "Recursion fails",
-      "Collisions increase",
-      "Sorting fails",
-      "Memory overflow"
+      "HAVING",
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Collisions increase. Tags: Hash Collision Impact.",
-    "topic": "Hashing",
-    "difficulty": "easy"
+    "explanation": "The correct answer is GROUP BY",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 292,
-    "question": "Why is load factor important in hashing?",
+    "question": "Which consistency model guarantees eventual convergence but not immediate synchronization?",
     "options": [
-      "Sorts keys",
-      "Controls performance",
-      "Uses recursion",
-      "Avoids loops"
+      "Strong Consistency",
+      "Eventual Consistency",
+      "Causal Consistency",
+      "Weak Consistency"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Controls performance. Tags: Load Factor Impact.",
-    "topic": "Hashing",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Eventual Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 293,
-    "question": "Why does trie use more space than hash map?",
+    "question": "Which SQL constraint ensures that a column cannot have NULL values?",
     "options": [
-      "Stores all prefixes",
-      "Uses recursion",
-      "Sorts data",
-      "Uses stack"
+      "PRIMARY KEY",
+      "NOT NULL",
+      "UNIQUE",
+      "CHECK"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Stores all prefixes. Tags: Trie Space Overhead.",
-    "topic": "Tries",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is NOT NULL",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 294,
-    "question": "Why is adjacency list preferred over matrix for sparse graphs?",
+    "question": "Which recovery strategy involves rolling forward using logs after restoring from a backup?",
     "options": [
-      "Uses recursion",
-      "Faster sorting",
-      "Uses stack",
-      "Less space"
+      "Rollforward",
+      "Rollback",
+      "Checkpointing",
+      "Hot Backup"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Less space. Tags: Sparse Graph Representation.",
-    "topic": "Graphs",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Rollforward",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 295,
-    "question": "Why does Bellman-Ford detect negative cycles?",
+    "question": "Which SQL clause restricts grouped rows after an aggregate function is applied?",
     "options": [
-      "DFS",
-      "Repeated relaxation",
-      "Sorting",
-      "Greedy"
+      "WHERE",
+      "HAVING",
+      "ORDER BY",
+      "FILTER"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Repeated relaxation. Tags: Negative Cycle Detection.",
-    "topic": "Graphs",
-    "difficulty": "easy"
+    "explanation": "The correct answer is HAVING",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 296,
-    "question": "Why does sliding window require shrinking condition?",
+    "question": "Which property of distributed systems allows dividing a database into smaller, faster parts?",
     "options": [
-      "Memory",
-      "Maintain constraint",
-      "Sorting",
-      "Recursion"
+      "Replication",
+      "Sharding",
+      "Denormalization",
+      "Partition Tolerance"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Maintain constraint. Tags: Window Shrinking Logic.",
-    "topic": "Sliding Window",
-    "difficulty": "easy"
+    "explanation": "The correct answer is Sharding",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 297,
-    "question": "How does prefix sum detect subarray sum?",
+    "question": "Which SQL command defines a new database schema?",
     "options": [
-      "Sorting",
-      "DFS",
-      "Cumulative addition",
-      "Recursion"
+      "CREATE SCHEMA",
+      "CREATE DATABASE",
+      "CREATE TABLE",
+      "CREATE INDEX"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Cumulative addition. Tags: Prefix Sum Detection.",
-    "topic": "Prefix",
-    "difficulty": "easy"
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CREATE SCHEMA",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 298,
-    "question": "Why binary search faster than linear?",
+    "question": "Which normalization form ensures there are no transitive dependencies?",
     "options": [
-      "Halves search",
-      "Recursion",
-      "Memory",
-      "Sorting"
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Halves search. Tags: Binary Efficiency.",
-    "topic": "Binary Search",
-    "difficulty": "easy"
+    "correctAnswer": "C",
+    "explanation": "The correct answer is 3NF",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 299,
-    "question": "Why recursion uses extra memory?",
+    "question": "Which SQL keyword is used to eliminate duplicates and show only different values?",
     "options": [
-      "Sorting",
-      "Queue",
-      "Heap",
-      "Call stack"
+      "UNIQUE",
+      "DISTINCT",
+      "GROUP BY",
+      "FILTER"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Call stack. Tags: Recursion Memory.",
-    "topic": "Recursion",
-    "difficulty": "easy"
+    "correctAnswer": "B",
+    "explanation": "The correct answer is DISTINCT",
+    "topic": "System Design",
+    "difficulty": "medium"
   },
   {
     "id": 300,
-    "question": "Why BFS finds shortest path?",
+    "question": "Which consistency pattern ensures that if one process reads a value, later reads by the same process will not return older values?",
     "options": [
-      "Sorting",
-      "Greedy",
-      "Level traversal",
-      "Stack"
+      "Causal Consistency",
+      "Monotonic Read",
+      "Strong Consistency",
+      "Eventual Consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Monotonic Read",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 301,
+    "question": "Which SQL function calculates the total number of rows including duplicates?",
+    "options": [
+      "COUNT(*)",
+      "COUNT(DISTINCT ...)",
+      "SUM()",
+      "AVG()"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is COUNT(*)",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 302,
+    "question": "Which architectural style uses event brokers to decouple producers and consumers?",
+    "options": [
+      "Event-Driven",
+      "Layered",
+      "Monolithic",
+      "Microservices"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Event-Driven",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 303,
+    "question": "Which SQL command removes an index from a table?",
+    "options": [
+      "DROP INDEX",
+      "DELETE INDEX",
+      "TRUNCATE INDEX",
+      "ALTER INDEX"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is DROP INDEX",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 304,
+    "question": "Which system design property ensures that the system delivers consistent performance as demand increases?",
+    "options": [
+      "Scalability",
+      "Reliability",
+      "Consistency",
+      "Availability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Scalability",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 305,
+    "question": "Which SQL keyword allows a query to check if a value is greater or smaller than any returned by a subquery?",
+    "options": [
+      "IN",
+      "ANY",
+      "ALL",
+      "EXISTS"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is ANY",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 306,
+    "question": "Which backup method copies only the data changed since the last backup of any type?",
+    "options": [
+      "Differential Backup",
+      "Incremental Backup",
+      "Full Backup",
+      "Cold Backup"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Incremental Backup",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 307,
+    "question": "Which SQL clause is used to restrict the number of rows returned in a result?",
+    "options": [
+      "LIMIT / TOP",
+      "OFFSET",
+      "ROWNUM",
+      "FETCH"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is LIMIT / TOP",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 308,
+    "question": "Which design phase ensures data models meet business requirements before physical design?",
+    "options": [
+      "Logical Design",
+      "Physical Design",
+      "Conceptual Design",
+      "Requirement Analysis"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Logical Design",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 309,
+    "question": "Which SQL command defines rules that execute automatically in response to data modifications?",
+    "options": [
+      "TRIGGER",
+      "VIEW",
+      "PROCEDURE",
+      "FUNCTION"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is TRIGGER",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 310,
+    "question": "Which system design property ensures the system continues operating correctly even during component failures?",
+    "options": [
+      "Fault Tolerance",
+      "Durability",
+      "Consistency",
+      "Availability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Fault Tolerance",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 311,
+    "question": "Which SQL aggregate function returns the largest value in a column?",
+    "options": [
+      "MIN()",
+      "MAX()",
+      "AVG()",
+      "SUM()"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is MAX()",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 312,
+    "question": "Which normalization form ensures elimination of redundancy by ensuring each table describes one topic?",
+    "options": [
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is 1NF",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 313,
+    "question": "Which SQL command is used to combine results of two queries and include duplicates?",
+    "options": [
+      "UNION ALL",
+      "UNION",
+      "INTERSECT",
+      "JOIN"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is UNION ALL",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 314,
+    "question": "Which consistency model ensures causally related operations are seen in the same order by all processes?",
+    "options": [
+      "Causal Consistency",
+      "Eventual Consistency",
+      "Strong Consistency",
+      "Weak Consistency"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Causal Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 315,
+    "question": "Which SQL statement removes all records from a table and resets identity values?",
+    "options": [
+      "DELETE",
+      "DROP",
+      "TRUNCATE",
+      "ALTER"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Level traversal. Tags: BFS Shortest Path.",
-    "topic": "Graphs",
+    "explanation": "The correct answer is TRUNCATE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 316,
+    "question": "Which CAP theorem combination ensures availability and partition tolerance but sacrifices consistency?",
+    "options": [
+      "CA",
+      "AP",
+      "CP",
+      "ACID"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is AP",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 317,
+    "question": "Which SQL command creates a stored subroutine that can be executed on demand?",
+    "options": [
+      "PROCEDURE",
+      "TRIGGER",
+      "VIEW",
+      "FUNCTION"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is PROCEDURE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 318,
+    "question": "Which design principle emphasizes making code simple, readable, and easy to maintain?",
+    "options": [
+      "Clean Code",
+      "Scalability",
+      "Modularization",
+      "Encapsulation"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Clean Code",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 319,
+    "question": "Which SQL keyword is used to merge results of two queries and remove duplicates?",
+    "options": [
+      "UNION",
+      "UNION ALL",
+      "INTERSECT",
+      "EXCEPT"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is UNION",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 320,
+    "question": "Which property of ACID ensures multiple transactions executed together maintain database correctness?",
+    "options": [
+      "Isolation",
+      "Durability",
+      "Consistency",
+      "Atomicity"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 321,
+    "question": "Which SQL command removes a database user from the system?",
+    "options": [
+      "DROP USER",
+      "DELETE USER",
+      "REMOVE USER",
+      "REVOKE USER"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is DROP USER",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 322,
+    "question": "Which architectural pattern ensures components communicate only via events, not direct calls?",
+    "options": [
+      "Event-Driven",
+      "Layered",
+      "Monolithic",
+      "Microservices"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Event-Driven",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 323,
+    "question": "Which SQL keyword is used to create an index on one or more columns?",
+    "options": [
+      "CREATE INDEX",
+      "ALTER INDEX",
+      "ADD INDEX",
+      "INDEX ON"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CREATE INDEX",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 324,
+    "question": "Which property of ACID ensures partial transactions are not saved in the database?",
+    "options": [
+      "Atomicity",
+      "Isolation",
+      "Consistency",
+      "Durability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Atomicity",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 325,
+    "question": "Which SQL statement is used to copy data from one table to another?",
+    "options": [
+      "INSERT INTO ... SELECT",
+      "COPY",
+      "CLONE",
+      "MERGE"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is INSERT INTO ... SELECT",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 326,
+    "question": "Which consistency model provides guarantees only within a single user session?",
+    "options": [
+      "Causal Consistency",
+      "Session Consistency",
+      "Strong Consistency",
+      "Eventual Consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Session Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 327,
+    "question": "Which SQL function returns the rounded average value of a column?",
+    "options": [
+      "AVG()",
+      "ROUND(AVG())",
+      "CEIL(AVG())",
+      "FLOOR(AVG())"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is ROUND(AVG())",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 328,
+    "question": "Which architectural pattern is simple to deploy but difficult to scale independently?",
+    "options": [
+      "Monolithic",
+      "Microservices",
+      "Event-Driven",
+      "Layered"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Monolithic",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 329,
+    "question": "Which SQL statement is used to remove a specific column from a table?",
+    "options": [
+      "ALTER TABLE ... DROP COLUMN",
+      "DELETE COLUMN",
+      "REMOVE COLUMN",
+      "DROP FIELD"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is ALTER TABLE ... DROP COLUMN",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 330,
+    "question": "Which system design metric focuses on how many requests a system can process per second?",
+    "options": [
+      "Latency",
+      "Throughput",
+      "Availability",
+      "Scalability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Throughput",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 331,
+    "question": "Which SQL clause is used to combine results of two queries and include only distinct rows?",
+    "options": [
+      "UNION",
+      "UNION ALL",
+      "INTERSECT",
+      "EXCEPT"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is UNION",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 332,
+    "question": "Which design phase identifies what the system must achieve without detailing how?",
+    "options": [
+      "Requirement Analysis",
+      "Logical Design",
+      "Physical Design",
+      "Low-Level Design"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Requirement Analysis",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 333,
+    "question": "Which SQL keyword creates a temporary table available only for the current session?",
+    "options": [
+      "TEMP TABLE",
+      "CREATE TEMPORARY TABLE",
+      "SESSION TABLE",
+      "CREATE TABLE TEMP"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is CREATE TEMPORARY TABLE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 334,
+    "question": "Which type of replication improves read performance by distributing copies across multiple servers?",
+    "options": [
+      "Master-Slave",
+      "Multi-Master",
+      "Synchronous",
+      "Asynchronous"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Master-Slave",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 335,
+    "question": "Which SQL command is used to enforce referential integrity automatically?",
+    "options": [
+      "FOREIGN KEY",
+      "PRIMARY KEY",
+      "CHECK",
+      "UNIQUE"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is FOREIGN KEY",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 336,
+    "question": "Which architectural pattern processes events asynchronously for scalability?",
+    "options": [
+      "Event-Driven",
+      "Monolithic",
+      "Microservices",
+      "Layered"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Event-Driven",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 337,
+    "question": "Which SQL command deletes a stored procedure from the database?",
+    "options": [
+      "DROP PROCEDURE",
+      "DELETE PROCEDURE",
+      "REMOVE PROCEDURE",
+      "ALTER PROCEDURE"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is DROP PROCEDURE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 338,
+    "question": "Which consistency pattern ensures that if one process sees an update, all future processes will also see it?",
+    "options": [
+      "Monotonic Read",
+      "Strong Consistency",
+      "Eventual Consistency",
+      "Causal Consistency"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Monotonic Read",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 339,
+    "question": "Which SQL statement is used to create a named group of SQL statements that can be reused?",
+    "options": [
+      "CREATE PROCEDURE",
+      "CREATE FUNCTION",
+      "CREATE VIEW",
+      "CREATE TRIGGER"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CREATE PROCEDURE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 340,
+    "question": "Which property of database design prevents inserting records without matching references?",
+    "options": [
+      "Entity Integrity",
+      "Referential Integrity",
+      "Normalization",
+      "Consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Referential Integrity",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 341,
+    "question": "Which SQL keyword is used to combine query results and include only rows present in both queries?",
+    "options": [
+      "INTERSECT",
+      "UNION",
+      "EXCEPT",
+      "UNION ALL"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is INTERSECT",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 342,
+    "question": "Which system design property ensures that a system can handle sudden increases in workload?",
+    "options": [
+      "Consistency",
+      "Scalability",
+      "Availability",
+      "Durability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Scalability",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 343,
+    "question": "Which SQL keyword restricts rows in a query result based on a condition?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "FILTER",
+      "CONSTRAINT"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is WHERE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 344,
+    "question": "Which design phase converts logical schema into actual implementation details?",
+    "options": [
+      "Physical Design",
+      "Logical Design",
+      "Requirement Analysis",
+      "Conceptual Design"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Physical Design",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 345,
+    "question": "Which SQL command grants privileges to a user?",
+    "options": [
+      "GRANT",
+      "REVOKE",
+      "AUTHORIZE",
+      "ALLOW"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is GRANT",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 346,
+    "question": "Which CAP theorem property ensures the system provides the same data to all clients?",
+    "options": [
+      "Consistency",
+      "Availability",
+      "Partition Tolerance",
+      "Durability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 347,
+    "question": "Which SQL keyword is used to return rows from the first query not found in the second?",
+    "options": [
+      "EXCEPT",
+      "UNION",
+      "INTERSECT",
+      "JOIN"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is EXCEPT",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 348,
+    "question": "Which architectural pattern is used when services need to scale independently?",
+    "options": [
+      "Microservices",
+      "Monolithic",
+      "Event-Driven",
+      "Layered"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Microservices",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 349,
+    "question": "Which SQL command creates a reusable compiled query stored in the database?",
+    "options": [
+      "STORED PROCEDURE",
+      "FUNCTION",
+      "TRIGGER",
+      "VIEW"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is STORED PROCEDURE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 350,
+    "question": "Which system design metric measures the likelihood of uninterrupted service over time?",
+    "options": [
+      "Reliability",
+      "Availability",
+      "Latency",
+      "Throughput"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Reliability",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 351,
+    "question": "Which SQL command removes all privileges previously granted to a user?",
+    "options": [
+      "REVOKE",
+      "DROP",
+      "DENY",
+      "REMOVE"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is REVOKE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 352,
+    "question": "Which consistency pattern allows stale data but guarantees it will eventually synchronize?",
+    "options": [
+      "Weak Consistency",
+      "Eventual Consistency",
+      "Strong Consistency",
+      "Causal Consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Eventual Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 353,
+    "question": "Which SQL keyword removes a constraint from a table?",
+    "options": [
+      "ALTER TABLE ... DROP CONSTRAINT",
+      "DELETE CONSTRAINT",
+      "REMOVE CONSTRAINT",
+      "DROP KEY"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is ALTER TABLE ... DROP CONSTRAINT",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 354,
+    "question": "Which system design principle ensures developers integrate changes frequently with automated testing?",
+    "options": [
+      "CI/CD",
+      "Loose Coupling",
+      "Fault Tolerance",
+      "Reliability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CI/CD",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 355,
+    "question": "Which SQL command deletes a function from the database?",
+    "options": [
+      "DROP FUNCTION",
+      "DELETE FUNCTION",
+      "REMOVE FUNCTION",
+      "ALTER FUNCTION"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is DROP FUNCTION",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 356,
+    "question": "Which database design process ensures that data redundancy and anomalies are minimized?",
+    "options": [
+      "Denormalization",
+      "Normalization",
+      "Partitioning",
+      "Replication"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Normalization",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 357,
+    "question": "Which SQL clause filters rows after grouping?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is HAVING",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 358,
+    "question": "Which ACID property ensures completed transactions persist even if the system crashes?",
+    "options": [
+      "Atomicity",
+      "Consistency",
+      "Durability",
+      "Isolation"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Durability",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 359,
+    "question": "Which SQL command is used to modify the definition of an existing view?",
+    "options": [
+      "ALTER VIEW",
+      "UPDATE VIEW",
+      "MODIFY VIEW",
+      "CHANGE VIEW"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is ALTER VIEW",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 360,
+    "question": "Which system design metric measures how fast the system recovers after downtime?",
+    "options": [
+      "Recoverability",
+      "Availability",
+      "Reliability",
+      "Latency"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Recoverability",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 361,
+    "question": "Which SQL statement permanently deletes a database?",
+    "options": [
+      "DROP DATABASE",
+      "DELETE DATABASE",
+      "REMOVE DATABASE",
+      "TRUNCATE DATABASE"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is DROP DATABASE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 362,
+    "question": "Which architectural style is easiest for small teams but becomes harder to manage as the codebase grows?",
+    "options": [
+      "Monolithic",
+      "Microservices",
+      "Layered",
+      "Event-Driven"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Monolithic",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 363,
+    "question": "Which SQL constraint ensures that values in a column are unique and not NULL?",
+    "options": [
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "UNIQUE",
+      "CHECK"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 364,
+    "question": "Which system design principle reduces dependency between services for easier scaling?",
+    "options": [
+      "Loose Coupling",
+      "High Cohesion",
+      "Encapsulation",
+      "Normalization"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Loose Coupling",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 365,
+    "question": "Which SQL keyword is used to create a database?",
+    "options": [
+      "CREATE DATABASE",
+      "NEW DATABASE",
+      "INIT DATABASE",
+      "ADD DATABASE"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CREATE DATABASE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 366,
+    "question": "Which consistency pattern ensures operations that are causally related are observed in order?",
+    "options": [
+      "Strong Consistency",
+      "Causal Consistency",
+      "Eventual Consistency",
+      "Weak Consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Causal Consistency",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 367,
+    "question": "Which SQL keyword is used to delete rows quickly without logging each deletion?",
+    "options": [
+      "DELETE",
+      "TRUNCATE",
+      "DROP",
+      "REMOVE"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is TRUNCATE",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 368,
+    "question": "Which system design property ensures changes can be deployed automatically to production with confidence?",
+    "options": [
+      "Fault Tolerance",
+      "CI/CD",
+      "Scalability",
+      "Reliability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is CI/CD",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 369,
+    "question": "Which SQL command defines a reusable computation that returns a single value?",
+    "options": [
+      "FUNCTION",
+      "PROCEDURE",
+      "TRIGGER",
+      "VIEW"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is FUNCTION",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 370,
+    "question": "Which architectural style is best suited for systems requiring real-time event notifications?",
+    "options": [
+      "Event-Driven",
+      "Monolithic",
+      "Layered",
+      "Client-Server"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Event-Driven",
+    "topic": "System Design",
+    "difficulty": "medium"
+  },
+  {
+    "id": 371,
+    "question": "EduSphere plans to replace scattered CSV/Excel files for course enrollments. The CTO wants a system that supports structured storage, efficient queries, and controlled updates. What best describes a **database** in this context?",
+    "options": [
+      "A GUI toolkit for building dashboards",
+      "A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates",
+      "A compressed archive of CSV files on a file server",
+      "A background service for sending emails"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 372,
+    "question": "RideGo plans to replace scattered CSV/Excel files for ride bookings. The CTO wants a system that supports structured storage, efficient queries, and controlled updates. What best describes a **database** in this context?",
+    "options": [
+      "A compressed archive of CSV files on a file server",
+      "A background service for sending emails",
+      "A GUI toolkit for building dashboards",
+      "A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 373,
+    "question": "PayZ plans to replace scattered CSV/Excel files for payments & refunds. The CTO wants a system that supports structured storage, efficient queries, and controlled updates. What best describes a **database** in this context?",
+    "options": [
+      "A background service for sending emails",
+      "A compressed archive of CSV files on a file server",
+      "A GUI toolkit for building dashboards",
+      "A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates",
+    "topic": "Fundamentals of Database",
     "difficulty": "easy"
   },
   {
-    "question": "What does Big O notation represent in algorithm analysis?",
+    "id": 374,
+    "question": "RideGo plans to replace scattered CSV/Excel files for ride bookings. The CTO wants a system that supports structured storage, efficient queries, and controlled updates. What best describes a **database** in this context?",
     "options": [
-      "Best-case complexity",
-      "Average-case complexity",
-      "Worst-case complexity",
-      "All of the above"
+      "A GUI toolkit for building dashboards",
+      "A compressed archive of CSV files on a file server",
+      "A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates",
+      "A background service for sending emails"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Worst-case complexity",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 301
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following is NOT an asymptotic notation used to describe algorithm complexity?",
+    "id": 375,
+    "question": "Streamly plans to replace scattered CSV/Excel files for video streams & subscriptions. The CTO wants a system that supports structured storage, efficient queries, and controlled updates. What best describes a **database** in this context?",
     "options": [
-      "O (Big O)",
-      "Θ (Theta)",
-      "σ (Sigma)",
-      "Ω (Omega)"
+      "A background service for sending emails",
+      "A GUI toolkit for building dashboards",
+      "A compressed archive of CSV files on a file server",
+      "A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 376,
+    "question": "ShopKart plans to replace scattered CSV/Excel files for e‑commerce orders. The CTO wants a system that supports structured storage, efficient queries, and controlled updates. What best describes a **database** in this context?",
+    "options": [
+      "A GUI toolkit for building dashboards",
+      "A background service for sending emails",
+      "A compressed archive of CSV files on a file server",
+      "A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS enabling efficient storage, retrieval, and updates",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 377,
+    "question": "In MedLogix, patient records require handling concurrent writes and crash recovery. Which **database characteristic** directly addresses this?",
+    "options": [
+      "Cron-based CSV exports",
+      "Client-side caching only",
+      "Static HTML rendering",
+      "ACID properties and transaction logging"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is ACID properties and transaction logging",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 378,
+    "question": "In PayZ, payments & refunds require handling schema evolution over time. Which **database characteristic** directly addresses this?",
+    "options": [
+      "Cron-based CSV exports",
+      "Static HTML rendering",
+      "data independence between logical and physical layers",
+      "Client-side caching only"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is σ (Sigma)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 302
+    "explanation": "The correct answer is data independence between logical and physical layers",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "Which asymptotic notation represents the tight bound of an algorithm's complexity?",
+    "id": 379,
+    "question": "In EduSphere, course enrollments require handling controlling access to sensitive fields. Which **database characteristic** directly addresses this?",
     "options": [
-      "ω (Omega)",
-      "Ω (Omega)",
-      "Θ (Theta)",
-      "O (Big O)"
+      "Client-side caching only",
+      "Cron-based CSV exports",
+      "Static HTML rendering",
+      "access control and authorization"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Θ (Theta)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 303
+    "correctAnswer": "D",
+    "explanation": "The correct answer is access control and authorization",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "What does Ω (Omega) notation represent?",
+    "id": 380,
+    "question": "In TripNest, hotel & flight bookings require handling ensuring integrity constraints are enforced. Which **database characteristic** directly addresses this?",
     "options": [
-      "Lower bound complexity",
-      "Average-case complexity",
-      "Worst-case complexity",
-      "None of these"
+      "integrity enforcement via constraints & triggers",
+      "Static HTML rendering",
+      "Client-side caching only",
+      "Cron-based CSV exports"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Lower bound complexity",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 304
+    "explanation": "The correct answer is integrity enforcement via constraints & triggers",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "If an algorithm's time complexity is O(n^2), which of the following statements is true?",
+    "id": 381,
+    "question": "In TripNest, hotel & flight bookings require handling query optimization for large tables. Which **database characteristic** directly addresses this?",
     "options": [
-      "The algorithm runs in polynomial time.",
-      "The algorithm runs in linear time.",
-      "The algorithm runs in exponential time.",
-      "The algorithm runs in logarithmic time."
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is The algorithm runs in polynomial time.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 305
-  },
-  {
-    "question": "Which of the following is true regarding the relationship between O (Big O) and Θ (Theta) notation?",
-    "options": [
-      "O and Θ are equivalent",
-      "Θ is a subset of O",
-      "There is no relationship between O and Θ",
-      "O is a subset of Θ"
+      "Cron-based CSV exports",
+      "cost‑based optimization and indexes",
+      "Client-side caching only",
+      "Static HTML rendering"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Θ is a subset of O",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 306
+    "explanation": "The correct answer is cost‑based optimization and indexes",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "What does o (little o) notation represent?",
+    "id": 382,
+    "question": "In Foodly, food delivery orders require handling reliable backup and restore. Which **database characteristic** directly addresses this?",
     "options": [
-      "Upper bound complexity",
-      "Lower bound complexity",
-      "Tight bound complexity",
-      "Exact complexity"
+      "Static HTML rendering",
+      "Cron-based CSV exports",
+      "backup/restore and point‑in‑time recovery",
+      "Client-side caching only"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Upper bound complexity",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 307
+    "correctAnswer": "C",
+    "explanation": "The correct answer is backup/restore and point‑in‑time recovery",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which notation is used to represent the best-case time complexity of an algorithm?",
+    "id": 383,
+    "question": "PayZ must store payments & refunds with a requirement focused on complex joins across normalized entities (orders, customers, items). Which **data model** best fits this workload?",
     "options": [
-      "Ω (Omega)",
-      "Θ (Theta)",
-      "O (Big O)",
-      "None of the above"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Ω (Omega)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 308
-  },
-  {
-    "question": "If an algorithm's time complexity is O(log n), what can be said about its efficiency?",
-    "options": [
-      "It grows linearly with the input size.",
-      "It grows polynomially with the input size.",
-      "It grows exponentially with the input size.",
-      "It grows logarithmically with the input size."
+      "Key‑value model",
+      "Graph model",
+      "Time‑series model",
+      "Relational model"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is It grows logarithmically with the input size.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 309
+    "explanation": "The correct answer is Relational model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following notations represents the upper bound complexity of an algorithm?",
+    "id": 384,
+    "question": "Foodly must store food delivery orders with a requirement focused on flexible, nested records with varying attributes per record. Which **data model** best fits this workload?",
     "options": [
-      "Ω (Omega)",
-      "ω (Omega)",
-      "Θ (Theta)",
-      "O (Big O)"
+      "Relational model",
+      "Key‑value model",
+      "Graph model",
+      "Document model"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is O (Big O)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 310
+    "explanation": "The correct answer is Document model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "What is the space complexity of an algorithm?",
+    "id": 385,
+    "question": "EduSphere must store course enrollments with a requirement focused on simple session tokens with O(1) lookup. Which **data model** best fits this workload?",
     "options": [
-      "The time required by the algorithm to execute",
-      "The amount of memory required by the algorithm to execute",
-      "The efficiency of the algorithm",
-      "The number of steps required by the algorithm to execute"
+      "Time‑series model",
+      "Wide‑column (column‑family) model",
+      "Key‑value model",
+      "Graph model"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Key‑value model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 386,
+    "question": "MedLogix must store patient records with a requirement focused on highly connected data like followers/mentions/paths. Which **data model** best fits this workload?",
+    "options": [
+      "Graph model",
+      "Relational model",
+      "Time‑series model",
+      "Key‑value model"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Graph model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 387,
+    "question": "EduSphere must store course enrollments with a requirement focused on massive sparse tables and column families for analytics. Which **data model** best fits this workload?",
+    "options": [
+      "Graph model",
+      "Key‑value model",
+      "Relational model",
+      "Wide‑column (column‑family) model"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Wide‑column (column‑family) model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 388,
+    "question": "Streamly must store video streams & subscriptions with a requirement focused on metrics with time‑based retention and rollups. Which **data model** best fits this workload?",
+    "options": [
+      "Key‑value model",
+      "Document model",
+      "Time‑series model",
+      "Graph model"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Time‑series model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 389,
+    "question": "HomeIoT must store device telemetry with a requirement focused on complex joins across normalized entities (orders, customers, items). Which **data model** best fits this workload?",
+    "options": [
+      "Relational model",
+      "Graph model",
+      "Wide‑column (column‑family) model",
+      "Key‑value model"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Relational model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 390,
+    "question": "NewsPulse must store article publishing with a requirement focused on flexible, nested records with varying attributes per record. Which **data model** best fits this workload?",
+    "options": [
+      "Graph model",
+      "Time‑series model",
+      "Document model",
+      "Key‑value model"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Document model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 391,
+    "question": "Foodly must store food delivery orders with a requirement focused on simple session tokens with O(1) lookup. Which **data model** best fits this workload?",
+    "options": [
+      "Key‑value model",
+      "Time‑series model",
+      "Relational model",
+      "Document model"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Key‑value model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 392,
+    "question": "ShopKart must store e‑commerce orders with a requirement focused on highly connected data like followers/mentions/paths. Which **data model** best fits this workload?",
+    "options": [
+      "Document model",
+      "Key‑value model",
+      "Graph model",
+      "Wide‑column (column‑family) model"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Graph model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 393,
+    "question": "HomeIoT must store device telemetry with a requirement focused on massive sparse tables and column families for analytics. Which **data model** best fits this workload?",
+    "options": [
+      "Time‑series model",
+      "Graph model",
+      "Wide‑column (column‑family) model",
+      "Relational model"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Wide‑column (column‑family) model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 394,
+    "question": "RideGo must store ride bookings with a requirement focused on metrics with time‑based retention and rollups. Which **data model** best fits this workload?",
+    "options": [
+      "Document model",
+      "Graph model",
+      "Relational model",
+      "Time‑series model"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Time‑series model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 395,
+    "question": "After stakeholder sign‑off, TripNest maps entities into tables/columns with keys and constraints, independent of storage engine specifics. Which **schema level** is this?",
+    "options": [
+      "Physical schema (storage, indexes, partitions)",
+      "Network topology diagram",
+      "Conceptual schema (pure business domain view)",
+      "Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 396,
+    "question": "After stakeholder sign‑off, RideGo maps entities into tables/columns with keys and constraints, independent of storage engine specifics. Which **schema level** is this?",
+    "options": [
+      "Physical schema (storage, indexes, partitions)",
+      "Conceptual schema (pure business domain view)",
+      "Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+      "Network topology diagram"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 397,
+    "question": "After stakeholder sign‑off, EduSphere maps entities into tables/columns with keys and constraints, independent of storage engine specifics. Which **schema level** is this?",
+    "options": [
+      "Conceptual schema (pure business domain view)",
+      "Physical schema (storage, indexes, partitions)",
+      "Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+      "Network topology diagram"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 398,
+    "question": "After stakeholder sign‑off, HomeIoT maps entities into tables/columns with keys and constraints, independent of storage engine specifics. Which **schema level** is this?",
+    "options": [
+      "Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+      "Physical schema (storage, indexes, partitions)",
+      "Conceptual schema (pure business domain view)",
+      "Network topology diagram"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 399,
+    "question": "After stakeholder sign‑off, MedLogix maps entities into tables/columns with keys and constraints, independent of storage engine specifics. Which **schema level** is this?",
+    "options": [
+      "Network topology diagram",
+      "Conceptual schema (pure business domain view)",
+      "Physical schema (storage, indexes, partitions)",
+      "Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 400,
+    "question": "After stakeholder sign‑off, MedLogix maps entities into tables/columns with keys and constraints, independent of storage engine specifics. Which **schema level** is this?",
+    "options": [
+      "Network topology diagram",
+      "Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+      "Physical schema (storage, indexes, partitions)",
+      "Conceptual schema (pure business domain view)"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is The amount of memory required by the algorithm to execute",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 311
+    "explanation": "The correct answer is Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is NOT true about the Big O notation?",
+    "id": 401,
+    "question": "After stakeholder sign‑off, Streamly maps entities into tables/columns with keys and constraints, independent of storage engine specifics. Which **schema level** is this?",
     "options": [
-      "It describes the worst-case scenario of an algorithm.",
-      "It represents the upper bound of an algorithm's time complexity.",
-      "It is often used to compare the efficiency of algorithms.",
-      "It provides an exact measure of the running time of an algorithm."
+      "Conceptual schema (pure business domain view)",
+      "Network topology diagram",
+      "Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+      "Physical schema (storage, indexes, partitions)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 402,
+    "question": "After stakeholder sign‑off, PayZ maps entities into tables/columns with keys and constraints, independent of storage engine specifics. Which **schema level** is this?",
+    "options": [
+      "Network topology diagram",
+      "Conceptual schema (pure business domain view)",
+      "Physical schema (storage, indexes, partitions)",
+      "Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is It provides an exact measure of the running time of an algorithm.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 312
+    "explanation": "The correct answer is Logical schema (tables/columns, keys, constraints; DB‑agnostic structure)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which notation is used to represent the average-case time complexity of an algorithm?",
+    "id": 403,
+    "question": "While starting PayZ's payments & refunds revamp, architects need a technology‑agnostic view of entities and relationships to align with stakeholders. Which **schema level** is this?",
     "options": [
-      "Θ (Theta)",
-      "None of the above",
-      "Ω (Omega)",
-      "O (Big O)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Θ (Theta)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 313
-  },
-  {
-    "question": "What does it mean if an algorithm's time complexity is O(1)?",
-    "options": [
-      "It runs in exponential time.",
-      "It runs in constant time regardless of input size.",
-      "It runs in logarithmic time.",
-      "It runs in linear time."
+      "Physical schema (partitions, indexes, file groups)",
+      "Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+      "UI wireframes for the web app",
+      "Logical schema (tables, keys, constraints)"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is It runs in constant time regardless of input size.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 314
+    "explanation": "The correct answer is Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following asymptotic notations represents an upper bound but not necessarily the tightest bound?",
+    "id": 404,
+    "question": "While starting PayZ's payments & refunds revamp, architects need a technology‑agnostic view of entities and relationships to align with stakeholders. Which **schema level** is this?",
     "options": [
-      "Θ (Theta)",
-      "o (little o)",
-      "O (Big O)",
-      "Ω (Omega)"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is O (Big O)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 315
-  },
-  {
-    "question": "What does Θ (Theta) notation represent?",
-    "options": [
-      "Average-case complexity",
-      "Worst-case complexity",
-      "Best-case complexity",
-      "Tight bound complexity"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Tight bound complexity",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 316
-  },
-  {
-    "question": "If an algorithm's time complexity is O(2^n), what can be said about its efficiency?",
-    "options": [
-      "It grows linearly with the input size.",
-      "It grows polynomially with the input size.",
-      "It grows exponentially with the input size.",
-      "It grows logarithmically with the input size."
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is It grows exponentially with the input size.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 317
-  },
-  {
-    "question": "Which of the following notations represents the lower bound complexity of an algorithm?",
-    "options": [
-      "Θ (Theta)",
-      "Ω (Omega)",
-      "O (Big O)",
-      "ω (Omega)"
+      "Logical schema (tables, keys, constraints)",
+      "Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+      "UI wireframes for the web app",
+      "Physical schema (partitions, indexes, file groups)"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Ω (Omega)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 318
+    "explanation": "The correct answer is Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "What does it mean if an algorithm's space complexity is O(n)?",
+    "id": 405,
+    "question": "While starting TripNest's hotel & flight bookings revamp, architects need a technology‑agnostic view of entities and relationships to align with stakeholders. Which **schema level** is this?",
     "options": [
-      "It uses constant space.",
-      "It uses linear space.",
-      "It uses exponential space.",
-      "It uses logarithmic space."
+      "Physical schema (partitions, indexes, file groups)",
+      "UI wireframes for the web app",
+      "Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+      "Logical schema (tables, keys, constraints)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 406,
+    "question": "While starting Streamly's video streams & subscriptions revamp, architects need a technology‑agnostic view of entities and relationships to align with stakeholders. Which **schema level** is this?",
+    "options": [
+      "Physical schema (partitions, indexes, file groups)",
+      "Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+      "Logical schema (tables, keys, constraints)",
+      "UI wireframes for the web app"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is It uses linear space.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 319
+    "explanation": "The correct answer is Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the time complexity of the best-case scenario often used for?",
+    "id": 407,
+    "question": "While starting ShopKart's e‑commerce orders revamp, architects need a technology‑agnostic view of entities and relationships to align with stakeholders. Which **schema level** is this?",
     "options": [
-      "It represents the most efficient scenario.",
-      "It represents the typical behavior of the algorithm.",
-      "It represents the worst possible performance of the algorithm.",
-      "It represents the average performance of the algorithm."
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is It represents the most efficient scenario.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 320
-  },
-  {
-    "question": "Which notation is used to represent the average-case space complexity of an algorithm?",
-    "options": [
-      "Θ (Theta)",
-      "O (Big O)",
-      "None of the above",
-      "Ω (Omega)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Θ (Theta)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 321
-  },
-  {
-    "question": "If an algorithm's time complexity is O(n!), what can be said about its efficiency?",
-    "options": [
-      "It grows factorially with the input size.",
-      "It grows logarithmically with the input size.",
-      "It grows exponentially with the input size.",
-      "It grows linearly with the input size."
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is It grows factorially with the input size.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 322
-  },
-  {
-    "question": "Which notation is used to represent the worse and best-case time complexity of an algorithm?",
-    "options": [
-      "Both a and b",
-      "Θ (Theta)",
-      "O (Big O)",
-      "Ω (Omega)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Both a and b",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 323
-  },
-  {
-    "question": "Which of the following statements about space complexity is correct?",
-    "options": [
-      "Space complexity measures the number of operations performed by an algorithm.",
-      "Space complexity measures the amount of input data required by an algorithm.",
-      "Space complexity measures the amount of memory required by an algorithm.",
-      "Space complexity measures the time required by an algorithm to execute."
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Space complexity measures the amount of memory required by an algorithm.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 324
-  },
-  {
-    "question": "What does it mean if an algorithm's time complexity is O(log log n)?",
-    "options": [
-      "It grows exponentially with the input size.",
-      "It grows linearly with the input size.",
-      "It grows doubly logarithmically with the input size.",
-      "It grows logarithmically with the input size."
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is It grows doubly logarithmically with the input size.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 325
-  },
-  {
-    "question": "Which of the following statements regarding the relationship between Ω (Omega) and ω (omega) notations is true?",
-    "options": [
-      "Ω and ω are equivalent.",
-      "ω is a subset of Ω.",
-      "Ω is a subset of ω.",
-      "There is no relationship between Ω and ω."
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Ω is a subset of ω.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 326
-  },
-  {
-    "question": "If an algorithm's space complexity is O(1), what can be said about its memory usage?",
-    "options": [
-      "It uses logarithmic memory.",
-      "It uses linear memory.",
-      "It uses constant memory regardless of input size.",
-      "It uses exponential memory."
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is It uses constant memory regardless of input size.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 327
-  },
-  {
-    "question": "Which of the following notations represents the lower bound but not necessarily the tightest bound?",
-    "options": [
-      "Ω (Omega)",
-      "Θ (Theta)",
-      "O (Big O)",
-      "o (little o)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Ω (Omega)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 328
-  },
-  {
-    "question": "What is the relationship between Ω (Omega) and O (Big O) notations?",
-    "options": [
-      "O is a subset of Ω.",
-      "Ω is a subset of O.",
-      "Ω and O are equivalent.",
-      "There is no relationship between Ω and O."
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is There is no relationship between Ω and O.",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 329
-  },
-  {
-    "question": "What is an array?",
-    "options": [
-      "A tree-like data structure",
-      "A linear data structure",
-      "A non-linear data structure",
-      "A hierarchical data structure"
+      "Physical schema (partitions, indexes, file groups)",
+      "Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+      "Logical schema (tables, keys, constraints)",
+      "UI wireframes for the web app"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is A linear data structure",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 330
+    "explanation": "The correct answer is Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "Which of the following best describes the representation of linear arrays in memory?",
+    "id": 408,
+    "question": "While starting TripNest's hotel & flight bookings revamp, architects need a technology‑agnostic view of entities and relationships to align with stakeholders. Which **schema level** is this?",
     "options": [
-      "Contiguous allocation",
-      "Random allocation",
-      "Sparse allocation",
-      "Linked allocation"
+      "Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+      "Logical schema (tables, keys, constraints)",
+      "Physical schema (partitions, indexes, file groups)",
+      "UI wireframes for the web app"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Contiguous allocation",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 331
+    "explanation": "The correct answer is Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "In a one-dimensional array, if the array elements are stored at contiguous memory locations, what is the formula to access the ith element?",
+    "id": 409,
+    "question": "While starting EduSphere's course enrollments revamp, architects need a technology‑agnostic view of entities and relationships to align with stakeholders. Which **schema level** is this?",
     "options": [
-      "base_address - i",
-      "base_address + i",
-      "base_address * i",
-      "base_address / i"
+      "Physical schema (partitions, indexes, file groups)",
+      "Logical schema (tables, keys, constraints)",
+      "UI wireframes for the web app",
+      "Conceptual schema (business view: entities/relationships, tech‑agnostic)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 410,
+    "question": "While starting Streamly's video streams & subscriptions revamp, architects need a technology‑agnostic view of entities and relationships to align with stakeholders. Which **schema level** is this?",
+    "options": [
+      "Logical schema (tables, keys, constraints)",
+      "Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+      "Physical schema (partitions, indexes, file groups)",
+      "UI wireframes for the web app"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is base_address + i",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 332
+    "explanation": "The correct answer is Conceptual schema (business view: entities/relationships, tech‑agnostic)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the time complexity of accessing an element in an array given its index?",
+    "id": 411,
+    "question": "HomeIoT is planning index selection, partition keys, tablespaces, and storage parameters for device telemetry. Which **schema level** defines these details?",
     "options": [
-      "O(n^2)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is O(1)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 333
-  },
-  {
-    "question": "Which traversal technique is used to visit each element of an array exactly once?",
-    "options": [
-      "Breadth-First Traversal",
-      "Linear Traversal",
-      "Pre-order Traversal",
-      "Depth-First Traversal"
+      "Conceptual schema (entities and relationships)",
+      "Physical schema (storage layout, indexes, partitions, file groups)",
+      "Use‑case diagrams for the app",
+      "Logical schema (tables and constraints)"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Linear Traversal",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 334
+    "explanation": "The correct answer is Physical schema (storage layout, indexes, partitions, file groups)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "What is the worst-case time complexity of linearly traversing an array of size n?",
+    "id": 412,
+    "question": "RideGo is planning index selection, partition keys, tablespaces, and storage parameters for ride bookings. Which **schema level** defines these details?",
     "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n^2)",
-      "O(n)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 335
-  },
-  {
-    "question": "What is the process of adding an element to the end of an array called?",
-    "options": [
-      "Appending",
-      "Deletion",
-      "Insertion",
-      "Concatenation"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Appending",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 336
-  },
-  {
-    "question": "What is the time complexity of appending an element to the end of an array with n elements, assuming sufficient space is available?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n^2)"
+      "Logical schema (tables and constraints)",
+      "Physical schema (storage layout, indexes, partitions, file groups)",
+      "Use‑case diagrams for the app",
+      "Conceptual schema (entities and relationships)"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is O(1)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 337
+    "explanation": "The correct answer is Physical schema (storage layout, indexes, partitions, file groups)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following is an advantage of using arrays for storage?",
+    "id": 413,
+    "question": "NewsPulse is planning index selection, partition keys, tablespaces, and storage parameters for article publishing. Which **schema level** defines these details?",
     "options": [
-      "Efficient random access",
-      "Dynamic resizing",
-      "Recursive traversal",
-      "Automatic memory management"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Efficient random access",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 338
-  },
-  {
-    "question": "In an array with n elements, if an element is to be inserted at the kth position (0 <= k <= n), what is the worst-case time complexity?",
-    "options": [
-      "O(n^2)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
+      "Use‑case diagrams for the app",
+      "Conceptual schema (entities and relationships)",
+      "Physical schema (storage layout, indexes, partitions, file groups)",
+      "Logical schema (tables and constraints)"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is O(n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 339
+    "explanation": "The correct answer is Physical schema (storage layout, indexes, partitions, file groups)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "What is the process of removing an element from an array called?",
+    "id": 414,
+    "question": "HomeIoT is planning index selection, partition keys, tablespaces, and storage parameters for device telemetry. Which **schema level** defines these details?",
     "options": [
-      "Extraction",
-      "Removal",
-      "Deletion",
-      "Displacement"
+      "Conceptual schema (entities and relationships)",
+      "Use‑case diagrams for the app",
+      "Logical schema (tables and constraints)",
+      "Physical schema (storage layout, indexes, partitions, file groups)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Physical schema (storage layout, indexes, partitions, file groups)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 415,
+    "question": "Foodly is planning index selection, partition keys, tablespaces, and storage parameters for food delivery orders. Which **schema level** defines these details?",
+    "options": [
+      "Logical schema (tables and constraints)",
+      "Conceptual schema (entities and relationships)",
+      "Use‑case diagrams for the app",
+      "Physical schema (storage layout, indexes, partitions, file groups)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Physical schema (storage layout, indexes, partitions, file groups)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 416,
+    "question": "Foodly is planning index selection, partition keys, tablespaces, and storage parameters for food delivery orders. Which **schema level** defines these details?",
+    "options": [
+      "Physical schema (storage layout, indexes, partitions, file groups)",
+      "Conceptual schema (entities and relationships)",
+      "Logical schema (tables and constraints)",
+      "Use‑case diagrams for the app"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Physical schema (storage layout, indexes, partitions, file groups)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 417,
+    "question": "Foodly is planning index selection, partition keys, tablespaces, and storage parameters for food delivery orders. Which **schema level** defines these details?",
+    "options": [
+      "Use‑case diagrams for the app",
+      "Logical schema (tables and constraints)",
+      "Physical schema (storage layout, indexes, partitions, file groups)",
+      "Conceptual schema (entities and relationships)"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Deletion",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 340
+    "explanation": "The correct answer is Physical schema (storage layout, indexes, partitions, file groups)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "What is the time complexity of deleting an element from the end of an array with n elements?",
+    "id": 418,
+    "question": "RideGo is planning index selection, partition keys, tablespaces, and storage parameters for ride bookings. Which **schema level** defines these details?",
     "options": [
-      "O(log n)",
-      "O(n^2)",
-      "O(n)",
-      "O(1)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(1)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 341
-  },
-  {
-    "question": "Which of the following is a disadvantage of using arrays for storage?",
-    "options": [
-      "Recursive traversal",
-      "Inefficient random access",
-      "Automatic memory management",
-      "Dynamic resizing"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Dynamic resizing",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 342
-  },
-  {
-    "question": "Which of the following traversal techniques is commonly used for searching elements in an array?",
-    "options": [
-      "Linear traversal",
-      "Pre-order traversal",
-      "In-order traversal",
-      "Post-order traversal"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Linear traversal",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 343
-  },
-  {
-    "question": "What is the index of the last element in an array with n elements?",
-    "options": [
-      "n",
-      "n+1",
-      "n/2",
-      "n-1"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is n-1",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 344
-  },
-  {
-    "question": "What is the primary disadvantage of using static arrays?",
-    "options": [
-      "Inefficient random access",
-      "Dynamic resizing",
-      "Automatic memory management",
-      "Fixed size"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Fixed size",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 345
-  },
-  {
-    "question": "Which of the following operations can be performed efficiently on a sorted array?",
-    "options": [
-      "Appending",
-      "Deletion",
-      "Insertion",
-      "Searching"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Searching",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 346
-  },
-  {
-    "question": "What is the primary advantage of using dynamic arrays over static arrays?",
-    "options": [
-      "Fixed size",
-      "Efficient random access",
-      "Automatic memory management",
-      "Dynamic resizing"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Dynamic resizing",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 347
-  },
-  {
-    "question": "Which of the following is an example of a linear data structure?",
-    "options": [
-      "Array",
-      "Heap",
-      "Hash table",
-      "Binary tree"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Array",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 348
-  },
-  {
-    "question": "What is the time complexity of searching for an element in an unsorted array with n elements?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n^2)",
-      "O(n)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 349
-  },
-  {
-    "question": "In a two-dimensional array, what does the first index represent?",
-    "options": [
-      "Depth",
-      "Row",
-      "Height",
-      "Column"
+      "Logical schema (tables and constraints)",
+      "Physical schema (storage layout, indexes, partitions, file groups)",
+      "Use‑case diagrams for the app",
+      "Conceptual schema (entities and relationships)"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Row",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 350
+    "explanation": "The correct answer is Physical schema (storage layout, indexes, partitions, file groups)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "What is the time complexity of inserting an element at the beginning of an array with n elements?",
+    "id": 419,
+    "question": "Streamly needs each video streams & subscriptions record to be uniquely identifiable and non‑null (e.g., order_id). Which constraint should be used to enforce this at the table level?",
     "options": [
-      "O(n)",
-      "O(n^2)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is O(n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 351
-  },
-  {
-    "question": "Which of the following is an advantage of using arrays over linked lists?",
-    "options": [
-      "Constant time access to elements",
-      "Efficient insertion and deletion",
-      "Dynamic resizing",
-      "Automatic memory management"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Constant time access to elements",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 352
-  },
-  {
-    "question": "In a sparse array, what is the ratio of non-zero elements to the total number of elements?",
-    "options": [
-      "Greater than 1",
-      "Equal to 1",
-      "Cannot be determined",
-      "Less than 1"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Less than 1",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 353
-  },
-  {
-    "question": "Which of the following is not a valid method to traverse an array?",
-    "options": [
-      "Linear traversal",
-      "Reverse traversal",
-      "Depth-first traversal",
-      "Breadth-first traversal"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Breadth-first traversal",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 354
-  },
-  {
-    "question": "What is the time complexity of appending an element to a dynamic array that needs resizing?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n^2)",
-      "O(log n)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is O(n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 355
-  },
-  {
-    "question": "Which of the following is a disadvantage of using arrays over linked lists?",
-    "options": [
-      "Inefficient insertion and deletion",
-      "Dynamic resizing",
-      "Fixed size",
-      "Efficient random access"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Fixed size",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 356
-  },
-  {
-    "question": "Which of the following statements is true about multidimensional arrays?",
-    "options": [
-      "All dimensions must be of the same size.",
-      "Each dimension can have a different size.",
-      "Multidimensional arrays are always dynamically resizable.",
-      "Multidimensional arrays cannot be implemented in programming languages."
+      "CHECK (value between range)",
+      "PRIMARY KEY (unique and NOT NULL)",
+      "UNIQUE allowing nulls",
+      "FOREIGN KEY"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Each dimension can have a different size.",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 357
+    "explanation": "The correct answer is PRIMARY KEY (unique and NOT NULL)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the time complexity of deleting an element from the middle of an array with n elements?",
+    "id": 420,
+    "question": "TripNest needs each hotel & flight bookings record to be uniquely identifiable and non‑null (e.g., order_id). Which constraint should be used to enforce this at the table level?",
     "options": [
-      "O(log n)",
-      "O(n^2)",
-      "O(n)",
-      "O(1)"
+      "FOREIGN KEY",
+      "CHECK (value between range)",
+      "PRIMARY KEY (unique and NOT NULL)",
+      "UNIQUE allowing nulls"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is O(n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 358
+    "explanation": "The correct answer is PRIMARY KEY (unique and NOT NULL)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which data structure is most suitable for implementing a stack?",
+    "id": 421,
+    "question": "EduSphere needs each course enrollments record to be uniquely identifiable and non‑null (e.g., order_id). Which constraint should be used to enforce this at the table level?",
     "options": [
-      "Array",
-      "Linked list",
-      "Queue",
-      "Heap"
+      "FOREIGN KEY",
+      "PRIMARY KEY (unique and NOT NULL)",
+      "CHECK (value between range)",
+      "UNIQUE allowing nulls"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Linked list",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 359
+    "explanation": "The correct answer is PRIMARY KEY (unique and NOT NULL)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "What is the time complexity of binary search in the worst-case scenario?",
+    "id": 422,
+    "question": "PayZ needs each payments & refunds record to be uniquely identifiable and non‑null (e.g., order_id). Which constraint should be used to enforce this at the table level?",
     "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n^2)",
-      "O(1)"
+      "CHECK (value between range)",
+      "UNIQUE allowing nulls",
+      "FOREIGN KEY",
+      "PRIMARY KEY (unique and NOT NULL)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is PRIMARY KEY (unique and NOT NULL)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 423,
+    "question": "TripNest needs each hotel & flight bookings record to be uniquely identifiable and non‑null (e.g., order_id). Which constraint should be used to enforce this at the table level?",
+    "options": [
+      "UNIQUE allowing nulls",
+      "CHECK (value between range)",
+      "PRIMARY KEY (unique and NOT NULL)",
+      "FOREIGN KEY"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is PRIMARY KEY (unique and NOT NULL)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 424,
+    "question": "HomeIoT needs each device telemetry record to be uniquely identifiable and non‑null (e.g., order_id). Which constraint should be used to enforce this at the table level?",
+    "options": [
+      "FOREIGN KEY",
+      "UNIQUE allowing nulls",
+      "CHECK (value between range)",
+      "PRIMARY KEY (unique and NOT NULL)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is PRIMARY KEY (unique and NOT NULL)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 425,
+    "question": "EduSphere needs each course enrollments record to be uniquely identifiable and non‑null (e.g., order_id). Which constraint should be used to enforce this at the table level?",
+    "options": [
+      "FOREIGN KEY",
+      "CHECK (value between range)",
+      "PRIMARY KEY (unique and NOT NULL)",
+      "UNIQUE allowing nulls"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is PRIMARY KEY (unique and NOT NULL)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 426,
+    "question": "Streamly needs each video streams & subscriptions record to be uniquely identifiable and non‑null (e.g., order_id). Which constraint should be used to enforce this at the table level?",
+    "options": [
+      "CHECK (value between range)",
+      "FOREIGN KEY",
+      "UNIQUE allowing nulls",
+      "PRIMARY KEY (unique and NOT NULL)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is PRIMARY KEY (unique and NOT NULL)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 427,
+    "question": "In PayZ, user accounts have both email and phone uniquely identifying a user. Either could act as the primary key. What are email and phone in key theory?",
+    "options": [
+      "Surrogate keys only",
+      "Foreign keys",
+      "Super keys but not candidate keys",
+      "Candidate keys (minimal unique sets eligible to be primary)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Candidate keys (minimal unique sets eligible to be primary)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 428,
+    "question": "In TripNest, user accounts have both email and phone uniquely identifying a user. Either could act as the primary key. What are email and phone in key theory?",
+    "options": [
+      "Candidate keys (minimal unique sets eligible to be primary)",
+      "Surrogate keys only",
+      "Foreign keys",
+      "Super keys but not candidate keys"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Candidate keys (minimal unique sets eligible to be primary)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 429,
+    "question": "In HomeIoT, user accounts have both email and phone uniquely identifying a user. Either could act as the primary key. What are email and phone in key theory?",
+    "options": [
+      "Super keys but not candidate keys",
+      "Candidate keys (minimal unique sets eligible to be primary)",
+      "Foreign keys",
+      "Surrogate keys only"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is O(log n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 360
+    "explanation": "The correct answer is Candidate keys (minimal unique sets eligible to be primary)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "Which search algorithm requires the elements to be in sorted order?",
+    "id": 430,
+    "question": "In PayZ, user accounts have both email and phone uniquely identifying a user. Either could act as the primary key. What are email and phone in key theory?",
     "options": [
-      "Neither",
-      "Linear Search",
-      "Binary Search",
-      "Both"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Binary Search",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 361
-  },
-  {
-    "question": "In which search algorithm, the elements can be in any order?",
-    "options": [
-      "Neither",
-      "Both",
-      "Binary Search",
-      "Linear Search"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Linear Search",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 362
-  },
-  {
-    "question": "What is the best-case time complexity of linear search?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n^2)",
-      "O(n)"
+      "Super keys but not candidate keys",
+      "Candidate keys (minimal unique sets eligible to be primary)",
+      "Surrogate keys only",
+      "Foreign keys"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is O(1)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 363
+    "explanation": "The correct answer is Candidate keys (minimal unique sets eligible to be primary)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "In binary search, at each step, the search range is reduced by approximately what factor?",
+    "id": 431,
+    "question": "In HomeIoT, user accounts have both email and phone uniquely identifying a user. Either could act as the primary key. What are email and phone in key theory?",
     "options": [
-      "0.5",
-      "2",
-      "4",
-      "0.25"
+      "Surrogate keys only",
+      "Foreign keys",
+      "Super keys but not candidate keys",
+      "Candidate keys (minimal unique sets eligible to be primary)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Candidate keys (minimal unique sets eligible to be primary)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 432,
+    "question": "In EduSphere, user accounts have both email and phone uniquely identifying a user. Either could act as the primary key. What are email and phone in key theory?",
+    "options": [
+      "Foreign keys",
+      "Candidate keys (minimal unique sets eligible to be primary)",
+      "Surrogate keys only",
+      "Super keys but not candidate keys"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 2",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 364
+    "explanation": "The correct answer is Candidate keys (minimal unique sets eligible to be primary)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following data structures is most suitable for binary search?",
+    "id": 433,
+    "question": "Streamly considers (email + user_id) as a unique identifier although user_id alone is unique. In key terminology, (email + user_id) is what kind of key?",
     "options": [
-      "Linked List",
-      "Queue",
-      "Array",
-      "Stack"
+      "A foreign key",
+      "A candidate key",
+      "A composite primary key only",
+      "A super key (superset of a candidate key)"
     ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Array",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 365
+    "correctAnswer": "D",
+    "explanation": "The correct answer is A super key (superset of a candidate key)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "Which search algorithm is not applicable for unsorted arrays?",
+    "id": 434,
+    "question": "Foodly considers (email + user_id) as a unique identifier although user_id alone is unique. In key terminology, (email + user_id) is what kind of key?",
     "options": [
-      "Binary Search",
-      "Neither",
-      "Both",
-      "Linear Search"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Binary Search",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 366
-  },
-  {
-    "question": "What is the space complexity of binary search?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n^2)",
-      "O(n)"
+      "A foreign key",
+      "A super key (superset of a candidate key)",
+      "A composite primary key only",
+      "A candidate key"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is O(1)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 367
+    "explanation": "The correct answer is A super key (superset of a candidate key)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is not a requirement for binary search to work correctly?",
+    "id": 435,
+    "question": "RideGo considers (email + user_id) as a unique identifier although user_id alone is unique. In key terminology, (email + user_id) is what kind of key?",
     "options": [
-      "Elements must be integers",
-      "Elements must be unique",
-      "Elements must be comparable",
-      "Elements must be sorted"
+      "A candidate key",
+      "A foreign key",
+      "A super key (superset of a candidate key)",
+      "A composite primary key only"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is A super key (superset of a candidate key)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 436,
+    "question": "Foodly considers (email + user_id) as a unique identifier although user_id alone is unique. In key terminology, (email + user_id) is what kind of key?",
+    "options": [
+      "A super key (superset of a candidate key)",
+      "A foreign key",
+      "A candidate key",
+      "A composite primary key only"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Elements must be integers",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 368
+    "explanation": "The correct answer is A super key (superset of a candidate key)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "What is the primary advantage of binary search over linear search?",
+    "id": 437,
+    "question": "Streamly considers (email + user_id) as a unique identifier although user_id alone is unique. In key terminology, (email + user_id) is what kind of key?",
     "options": [
-      "Simplicity",
-      "Suitable for unsorted arrays",
-      "Requires less memory",
-      "Lower time complexity"
+      "A composite primary key only",
+      "A candidate key",
+      "A foreign key",
+      "A super key (superset of a candidate key)"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is Lower time complexity",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 369
+    "explanation": "The correct answer is A super key (superset of a candidate key)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "In which case does linear search perform better than binary search?",
+    "id": 438,
+    "question": "ShopKart needs to ensure discount_percent is between 0 and 50 for e‑commerce orders. Which constraint enforces this rule at the column/table level?",
     "options": [
-      "When the array is large",
-      "When the array is sorted",
-      "When the array is small",
-      "When the array contains duplicate elements"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is When the array is large",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 370
-  },
-  {
-    "question": "What is the worst-case scenario for binary search when the target element is not present in the array?",
-    "options": [
-      "It goes into an infinite loop",
-      "It returns a random index",
-      "It returns -1",
-      "It continues until the array is exhausted"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is It continues until the array is exhausted",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 371
-  },
-  {
-    "question": "Binary search can be implemented recursively or iteratively. Which one is preferred and why?",
-    "options": [
-      "Recursively, for better performance",
-      "Recursively, for better memory usage",
-      "Iteratively, for better memory usage",
-      "Iteratively, for better performance"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Iteratively, for better performance",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 372
-  },
-  {
-    "question": "In binary search, how many comparisons are made in the worst-case scenario for an array of size 16?",
-    "options": [
-      "12",
-      "16",
-      "4",
-      "8"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 4",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 373
-  },
-  {
-    "question": "Which search algorithm is more suitable for searching through a phonebook?",
-    "options": [
-      "Linear Search",
-      "Neither",
-      "Binary Search",
-      "Both"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Linear Search",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 374
-  },
-  {
-    "question": "Which of the following statements is true about the time complexity of linear search?",
-    "options": [
-      "It is always O(log n)",
-      "It is always O(n^2)",
-      "It can be O(1) in the best case",
-      "It is always O(n)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is It is always O(n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 375
-  },
-  {
-    "question": "In binary search, what is the purpose of sorting the array?",
-    "options": [
-      "Sorting is not necessary",
-      "To reduce memory usage",
-      "To make the algorithm easier to implement",
-      "To reduce the number of comparisons"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is To reduce the number of comparisons",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 376
-  },
-  {
-    "question": "Which search algorithm exhibits a linear growth in time complexity with the size of the input?",
-    "options": [
-      "Linear Search",
-      "Both",
-      "Binary Search",
-      "Neither"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Linear Search",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 377
-  },
-  {
-    "question": "In binary search, what happens if the array is not sorted?",
-    "options": [
-      "The algorithm fails",
-      "The time complexity becomes O(n)",
-      "It still works correctly",
-      "The time complexity becomes O(log n)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is The algorithm fails",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 378
-  },
-  {
-    "question": "Which search algorithm is more suitable for searching through a sorted list of names?",
-    "options": [
-      "Neither",
-      "Both",
-      "Linear Search",
-      "Binary Search"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Binary Search",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 379
-  },
-  {
-    "question": "In binary search, the array is repeatedly divided into two halves. What is the time complexity of this operation?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n^2)",
-      "O(log n)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(log n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 380
-  },
-  {
-    "question": "In binary search, how many comparisons are made in the worst-case scenario for an array of size 32?",
-    "options": [
-      "6",
-      "8",
-      "7",
-      "5"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 5",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 381
-  },
-  {
-    "question": "Which search algorithm is used by most modern databases for searching through indexes?",
-    "options": [
-      "Both",
-      "Neither",
-      "Binary Search",
-      "Linear Search"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Binary Search",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 382
-  },
-  {
-    "question": "In binary search, after each comparison, what is the next step?",
-    "options": [
-      "Check if the element is found",
-      "Move to the next element",
-      "Update the search range",
-      "Divide the array into two halves"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Update the search range",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 383
-  },
-  {
-    "question": "In binary search, if the target element is found, what is the time complexity?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n^2)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is O(1)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 384
-  },
-  {
-    "question": "Which search algorithm is more suitable for searching through a large dataset with random access capability?",
-    "options": [
-      "Neither",
-      "Both",
-      "Binary Search",
-      "Linear Search"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Binary Search",
-    "topic": "Searching Algorithms",
-    "difficulty": "medium",
-    "id": 385
-  },
-  {
-    "question": "In binary search, if the array contains duplicate elements, which occurrence of the target element will be returned?",
-    "options": [
-      "Random occurrence",
-      "Last occurrence",
-      "Any occurrence",
-      "First occurrence"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Any occurrence",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 386
-  },
-  {
-    "question": "In binary search, what happens if the array contains floating-point numbers?",
-    "options": [
-      "The algorithm fails",
-      "It still works correctly",
-      "The time complexity becomes O(n)",
-      "The time complexity becomes O(log n)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is The algorithm fails",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 387
-  },
-  {
-    "question": "Which search algorithm is preferred for finding an element in a small array?",
-    "options": [
-      "It depends on the distribution of elements",
-      "Binary Search",
-      "Linear Search",
-      "Both perform equally well"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Linear Search",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 388
-  },
-  {
-    "question": "What is the size of the following character array: `char str[10];`?",
-    "options": [
-      "11",
-      "Compiler dependent",
-      "10",
-      "9"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 10",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 389
-  },
-  {
-    "question": "Which of the following statements correctly initializes a character array with the string \"Hello\"?",
-    "options": [
-      "`char str[5] = \"Hello\";`",
-      "`char str[] = {'H', 'e', 'l', 'l', 'o', '\\0'};`",
-      "`char str[] = \"Hello\";`",
-      "`char str[6] = \"Hello\";`"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is `char str[] = \"Hello\";`",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 390
-  },
-  {
-    "question": "What does the function `strlen()` return?",
-    "options": [
-      "Length of the character array",
-      "Length of the string including the null character",
-      "Length of the string excluding the null character",
-      "Index of the null character in the string"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Length of the string excluding the null character",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 391
-  },
-  {
-    "question": "Which of the following functions is used to compare two strings?",
-    "options": [
-      "`strlen()`",
-      "`strcat()`",
-      "`strcpy()`",
-      "`strcmp()`"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is `strcmp()`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 392
-  },
-  {
-    "question": "How do you access the third character in the string `char str[] = \"Hello\";`?",
-    "options": [
-      "`str[4]`",
-      "`str[2]`",
-      "`str[3]`",
-      "`str[2]`"
+      "FOREIGN KEY",
+      "CHECK (discount_percent BETWEEN 0 AND 50)",
+      "UNIQUE",
+      "PRIMARY KEY"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is `str[2]`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 393
+    "explanation": "The correct answer is CHECK (discount_percent BETWEEN 0 AND 50)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following functions can be used to convert a string to uppercase?",
+    "id": 439,
+    "question": "NewsPulse needs to ensure discount_percent is between 0 and 50 for article publishing. Which constraint enforces this rule at the column/table level?",
     "options": [
-      "`toupper()`",
-      "`strlwr()`",
-      "`strupr()`",
-      "`tolower()`"
+      "UNIQUE",
+      "CHECK (discount_percent BETWEEN 0 AND 50)",
+      "PRIMARY KEY",
+      "FOREIGN KEY"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is CHECK (discount_percent BETWEEN 0 AND 50)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 440,
+    "question": "RideGo needs to ensure discount_percent is between 0 and 50 for ride bookings. Which constraint enforces this rule at the column/table level?",
+    "options": [
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "CHECK (discount_percent BETWEEN 0 AND 50)",
+      "UNIQUE"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is `strupr()`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 394
+    "explanation": "The correct answer is CHECK (discount_percent BETWEEN 0 AND 50)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "In C language, strings are terminated by which character?",
+    "id": 441,
+    "question": "MedLogix needs to ensure discount_percent is between 0 and 50 for patient records. Which constraint enforces this rule at the column/table level?",
     "options": [
-      "Space (' ')",
-      "Period (.)",
-      "Null character ('\\0')",
-      "Comma (,)"
+      "FOREIGN KEY",
+      "CHECK (discount_percent BETWEEN 0 AND 50)",
+      "PRIMARY KEY",
+      "UNIQUE"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is CHECK (discount_percent BETWEEN 0 AND 50)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 442,
+    "question": "NewsPulse needs to ensure discount_percent is between 0 and 50 for article publishing. Which constraint enforces this rule at the column/table level?",
+    "options": [
+      "PRIMARY KEY",
+      "CHECK (discount_percent BETWEEN 0 AND 50)",
+      "UNIQUE",
+      "FOREIGN KEY"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is CHECK (discount_percent BETWEEN 0 AND 50)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 443,
+    "question": "In PayZ, usernames must be unique but can be NULL for service accounts. Which constraint suits this requirement in most RDBMS?",
+    "options": [
+      "UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+      "PRIMARY KEY (disallows NULL)",
+      "FOREIGN KEY",
+      "CHECK only"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 444,
+    "question": "In RideGo, usernames must be unique but can be NULL for service accounts. Which constraint suits this requirement in most RDBMS?",
+    "options": [
+      "FOREIGN KEY",
+      "UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+      "CHECK only",
+      "PRIMARY KEY (disallows NULL)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 445,
+    "question": "In MedLogix, usernames must be unique but can be NULL for service accounts. Which constraint suits this requirement in most RDBMS?",
+    "options": [
+      "FOREIGN KEY",
+      "CHECK only",
+      "PRIMARY KEY (disallows NULL)",
+      "UNIQUE constraint (allows NULLs depending on RDBMS semantics)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 446,
+    "question": "In TripNest, usernames must be unique but can be NULL for service accounts. Which constraint suits this requirement in most RDBMS?",
+    "options": [
+      "FOREIGN KEY",
+      "CHECK only",
+      "PRIMARY KEY (disallows NULL)",
+      "UNIQUE constraint (allows NULLs depending on RDBMS semantics)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 447,
+    "question": "In HomeIoT, usernames must be unique but can be NULL for service accounts. Which constraint suits this requirement in most RDBMS?",
+    "options": [
+      "FOREIGN KEY",
+      "UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+      "PRIMARY KEY (disallows NULL)",
+      "CHECK only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 448,
+    "question": "In ShopKart, usernames must be unique but can be NULL for service accounts. Which constraint suits this requirement in most RDBMS?",
+    "options": [
+      "CHECK only",
+      "FOREIGN KEY",
+      "UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+      "PRIMARY KEY (disallows NULL)"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Null character ('\\0')",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 395
+    "explanation": "The correct answer is UNIQUE constraint (allows NULLs depending on RDBMS semantics)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "Which of the following sorting algorithms is commonly used to sort character arrays?",
+    "id": 449,
+    "question": "MedLogix requires that every patient records row must have a created_at timestamp populated. Which constraint enforces that the column cannot be left empty?",
     "options": [
-      "Insertion Sort",
-      "Quick Sort",
-      "Selection Sort",
-      "Bubble Sort"
+      "NOT NULL constraint",
+      "FOREIGN KEY",
+      "DEFAULT only",
+      "UNIQUE"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is NOT NULL constraint",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 450,
+    "question": "PayZ requires that every payments & refunds row must have a created_at timestamp populated. Which constraint enforces that the column cannot be left empty?",
+    "options": [
+      "DEFAULT only",
+      "NOT NULL constraint",
+      "UNIQUE",
+      "FOREIGN KEY"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Quick Sort",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 396
+    "explanation": "The correct answer is NOT NULL constraint",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "Which of the following is the correct syntax to declare a character pointer in C?",
+    "id": 451,
+    "question": "MedLogix requires that every patient records row must have a created_at timestamp populated. Which constraint enforces that the column cannot be left empty?",
     "options": [
-      "`char &ptr;`",
-      "`char *ptr;`",
-      "`char ptr[];`",
-      "`char **ptr;`"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is `char *ptr;`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 397
-  },
-  {
-    "question": "What is the ASCII value of the character 'A'?",
-    "options": [
-      "67",
-      "66",
-      "64",
-      "65"
+      "FOREIGN KEY",
+      "DEFAULT only",
+      "UNIQUE",
+      "NOT NULL constraint"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is 65",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 398
+    "explanation": "The correct answer is NOT NULL constraint",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "How do you dynamically allocate memory for a character array in C?",
+    "id": 452,
+    "question": "ShopKart requires that every e‑commerce orders row must have a created_at timestamp populated. Which constraint enforces that the column cannot be left empty?",
     "options": [
-      "`char *str = malloc(10);`",
-      "`char str[10]; malloc(str);`",
-      "`char *str[10];`",
-      "`char str[] = malloc(10 * sizeof(char));`"
+      "NOT NULL constraint",
+      "DEFAULT only",
+      "FOREIGN KEY",
+      "UNIQUE"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is `char *str = malloc(10);`",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 399
+    "explanation": "The correct answer is NOT NULL constraint",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which function is used to copy one string to another in C?",
+    "id": 453,
+    "question": "Streamly requires that every video streams & subscriptions row must have a created_at timestamp populated. Which constraint enforces that the column cannot be left empty?",
     "options": [
-      "`memcpy()`",
-      "`strcpy()`",
-      "`strncpy()`",
-      "`strcat()`"
+      "DEFAULT only",
+      "UNIQUE",
+      "FOREIGN KEY",
+      "NOT NULL constraint"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is `strcpy()`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 400
+    "correctAnswer": "D",
+    "explanation": "The correct answer is NOT NULL constraint",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "How do you find the length of a string stored in a character array `str`?",
+    "id": 454,
+    "question": "HomeIoT needs to prevent orphan rows when parent is deleted for device telemetry. Which referential rule applies?",
     "options": [
-      "`strlen(str)`",
-      "`str.len()`",
-      "`len(str)`",
-      "`str.length()`"
+      "FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+      "CHECK constraint on child only",
+      "PRIMARY KEY on child table",
+      "UNIQUE index on random column"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is `strlen(str)`",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 401
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "What is the time complexity of sorting a character array using Quick Sort?",
+    "id": 455,
+    "question": "Streamly needs to cascade delete child rows when parent is removed for video streams & subscriptions. Which referential rule applies?",
     "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n^2)"
+      "CHECK constraint on child only",
+      "UNIQUE index on random column",
+      "FOREIGN KEY with ON DELETE CASCADE",
+      "PRIMARY KEY on child table"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is O(n log n)",
-    "topic": "Algorithm Complexity",
-    "difficulty": "medium",
-    "id": 402
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE CASCADE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following functions is used to convert a string to a long integer in C?",
+    "id": 456,
+    "question": "NewsPulse needs to set child ref to NULL when parent deleted for article publishing. Which referential rule applies?",
     "options": [
-      "`strtol()`",
-      "`strtod()`",
-      "`sprintf()`",
-      "`atoi()`"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is `strtol()`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 403
-  },
-  {
-    "question": "Which of the following functions is used to find the first occurrence of a character in a string?",
-    "options": [
-      "`strchr()`",
-      "`strrchr()`",
-      "`strstr()`",
-      "`strtok()`"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is `strchr()`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 404
-  },
-  {
-    "question": "Which of the following is used to compare a part of two strings in C?",
-    "options": [
-      "`strxfrm()`",
-      "`strcoll()`",
-      "`strcmp()`",
-      "`strncmp()`"
+      "CHECK constraint on child only",
+      "PRIMARY KEY on child table",
+      "UNIQUE index on random column",
+      "FOREIGN KEY with ON DELETE SET NULL"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is `strncmp()`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 405
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE SET NULL",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "What does the function `strtok()` do?",
+    "id": 457,
+    "question": "RideGo needs to ensure referenced value exists in parent table for ride bookings. Which referential rule applies?",
     "options": [
-      "Compares two strings",
-      "Concatenates two strings",
-      "Tokenizes a string",
-      "Copies one string to another"
+      "UNIQUE index on random column",
+      "FOREIGN KEY constraint referencing parent key",
+      "CHECK constraint on child only",
+      "PRIMARY KEY on child table"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is FOREIGN KEY constraint referencing parent key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 458,
+    "question": "ShopKart needs to prevent orphan rows when parent is deleted for e‑commerce orders. Which referential rule applies?",
+    "options": [
+      "FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+      "CHECK constraint on child only",
+      "PRIMARY KEY on child table",
+      "UNIQUE index on random column"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 459,
+    "question": "TripNest needs to cascade delete child rows when parent is removed for hotel & flight bookings. Which referential rule applies?",
+    "options": [
+      "UNIQUE index on random column",
+      "CHECK constraint on child only",
+      "FOREIGN KEY with ON DELETE CASCADE",
+      "PRIMARY KEY on child table"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Tokenizes a string",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 406
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE CASCADE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following functions is used to convert a character to lowercase in C?",
+    "id": 460,
+    "question": "Foodly needs to set child ref to NULL when parent deleted for food delivery orders. Which referential rule applies?",
     "options": [
-      "`toupper()`",
-      "`tolower()`",
-      "`strupr()`",
-      "`strlwr()`"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is `tolower()`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 407
-  },
-  {
-    "question": "How do you declare a two-dimensional character array in C?",
-    "options": [
-      "`char arr[rows][cols];`",
-      "`char *arr[][];`",
-      "`char arr[][] = {};`",
-      "`char arr[][];`"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is `char arr[rows][cols];`",
-    "topic": "Arrays",
-    "difficulty": "medium",
-    "id": 408
-  },
-  {
-    "question": "Which of the following functions is used to reverse a string in C?",
-    "options": [
-      "There is no built-in function for reversing a string in C",
-      "`strnrev()`",
-      "`strrev()`",
-      "`reverse()`"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is There is no built-in function for reversing a string in C",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 409
-  },
-  {
-    "question": "Which of the following functions is used to find the last occurrence of a character in a string?",
-    "options": [
-      "`strtok()`",
-      "`strrchr()`",
-      "`strstr()`",
-      "`strchr()`"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is `strrchr()`",
-    "topic": "Strings",
-    "difficulty": "medium",
-    "id": 410
-  },
-  {
-    "question": "Which sorting algorithm has the worst-case time complexity of O(n^2)?",
-    "options": [
-      "Quick Sort",
-      "Insertion Sort",
-      "Selection Sort",
-      "Merge Sort"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 411
-  },
-  {
-    "question": "Which sorting algorithm uses the divide-and-conquer strategy?",
-    "options": [
-      "Merge Sort",
-      "Quick Sort",
-      "Selection Sort",
-      "Insertion Sort"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Merge Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 412
-  },
-  {
-    "question": "In which sorting technique does the array gradually become sorted as each element is processed?",
-    "options": [
-      "Selection Sort",
-      "Merge Sort",
-      "Quick Sort",
-      "Insertion Sort"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 413
-  },
-  {
-    "question": "Which sorting algorithm has the best-case time complexity of O(n log n)?",
-    "options": [
-      "Merge Sort",
-      "Insertion Sort",
-      "Selection Sort",
-      "Quick Sort"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Merge Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 414
-  },
-  {
-    "question": "Which sorting technique is not suitable for large datasets due to its quadratic time complexity?",
-    "options": [
-      "Quick Sort",
-      "Selection Sort",
-      "Insertion Sort",
-      "Merge Sort"
+      "PRIMARY KEY on child table",
+      "CHECK constraint on child only",
+      "FOREIGN KEY with ON DELETE SET NULL",
+      "UNIQUE index on random column"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 415
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE SET NULL",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which sorting algorithm works by repeatedly finding the minimum element from the unsorted part and putting it at the beginning?",
+    "id": 461,
+    "question": "EduSphere needs to ensure referenced value exists in parent table for course enrollments. Which referential rule applies?",
     "options": [
-      "Selection Sort",
-      "Merge Sort",
-      "Insertion Sort",
-      "Quick Sort"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Selection Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 416
-  },
-  {
-    "question": "Which sorting technique is known for its stability?",
-    "options": [
-      "Selection Sort",
-      "Merge Sort",
-      "Quick Sort",
-      "Insertion Sort"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Merge Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 417
-  },
-  {
-    "question": "Which sorting algorithm is known for its in-place sorting nature?",
-    "options": [
-      "Insertion Sort",
-      "Quick Sort",
-      "Merge Sort",
-      "Selection Sort"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Quick Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 418
-  },
-  {
-    "question": "Which sorting algorithm exhibits the worst-case time complexity of O(n log n) but with a worst-case space complexity of O(n)?",
-    "options": [
-      "Insertion Sort",
-      "Selection Sort",
-      "Quick Sort",
-      "Merge Sort"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Merge Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 419
-  },
-  {
-    "question": "Which sorting algorithm uses a pivot element for partitioning the array?",
-    "options": [
-      "Selection Sort",
-      "Quick Sort",
-      "Insertion Sort",
-      "Merge Sort"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Quick Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 420
-  },
-  {
-    "question": "Which sorting technique is known for its simplicity and efficiency on small datasets?",
-    "options": [
-      "Selection Sort",
-      "Merge Sort",
-      "Insertion Sort",
-      "Quick Sort"
+      "CHECK constraint on child only",
+      "UNIQUE index on random column",
+      "FOREIGN KEY constraint referencing parent key",
+      "PRIMARY KEY on child table"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 421
+    "explanation": "The correct answer is FOREIGN KEY constraint referencing parent key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which sorting algorithm has the average-case time complexity of O(n^2)?",
+    "id": 462,
+    "question": "MedLogix needs to prevent orphan rows when parent is deleted for patient records. Which referential rule applies?",
     "options": [
-      "Quick Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 422
-  },
-  {
-    "question": "Which sorting algorithm typically uses recursion?",
-    "options": [
-      "Selection Sort",
-      "Merge Sort",
-      "Insertion Sort",
-      "Quick Sort"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Merge Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 423
-  },
-  {
-    "question": "Which sorting algorithm is based on the concept of partitioning?",
-    "options": [
-      "Insertion Sort",
-      "Merge Sort",
-      "Quick Sort",
-      "Selection Sort"
+      "PRIMARY KEY on child table",
+      "UNIQUE index on random column",
+      "FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+      "CHECK constraint on child only"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Quick Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 424
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which sorting algorithm has the best space complexity?",
+    "id": 463,
+    "question": "NewsPulse needs to cascade delete child rows when parent is removed for article publishing. Which referential rule applies?",
     "options": [
-      "Selection Sort",
-      "Merge Sort",
-      "Quick Sort",
-      "Insertion Sort"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Selection Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 425
-  },
-  {
-    "question": "Which sorting algorithm can be easily implemented in a linked list?",
-    "options": [
-      "Insertion Sort",
-      "Merge Sort",
-      "Quick Sort",
-      "Selection Sort"
+      "CHECK constraint on child only",
+      "FOREIGN KEY with ON DELETE CASCADE",
+      "UNIQUE index on random column",
+      "PRIMARY KEY on child table"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Merge Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 426
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE CASCADE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which sorting algorithm is considered an adaptive sorting algorithm?",
+    "id": 464,
+    "question": "Streamly is kicking off a new video streams & subscriptions platform. What best describes **database design** in this setting?",
     "options": [
-      "Selection Sort",
-      "Quick Sort",
-      "Merge Sort",
-      "Insertion Sort"
+      "Scheduling sprints only",
+      "Writing UI mockups",
+      "Setting up OS firewalls",
+      "Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 427
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which sorting algorithm is not a comparison-based sorting algorithm?",
+    "id": 465,
+    "question": "RideGo is kicking off a new ride bookings platform. What best describes **database design** in this setting?",
     "options": [
-      "Insertion Sort",
-      "Radix Sort",
-      "Merge Sort",
-      "Quick Sort"
+      "Scheduling sprints only",
+      "Setting up OS firewalls",
+      "Writing UI mockups",
+      "Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 466,
+    "question": "MedLogix is kicking off a new patient records platform. What best describes **database design** in this setting?",
+    "options": [
+      "Setting up OS firewalls",
+      "Scheduling sprints only",
+      "Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance",
+      "Writing UI mockups"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 467,
+    "question": "TripNest is kicking off a new hotel & flight bookings platform. What best describes **database design** in this setting?",
+    "options": [
+      "Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance",
+      "Writing UI mockups",
+      "Setting up OS firewalls",
+      "Scheduling sprints only"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 468,
+    "question": "Foodly is kicking off a new food delivery orders platform. What best describes **database design** in this setting?",
+    "options": [
+      "Scheduling sprints only",
+      "Setting up OS firewalls",
+      "Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance",
+      "Writing UI mockups"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 469,
+    "question": "PayZ is kicking off a new payments & refunds platform. What best describes **database design** in this setting?",
+    "options": [
+      "Writing UI mockups",
+      "Setting up OS firewalls",
+      "Scheduling sprints only",
+      "Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas ensuring integrity and performance",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 470,
+    "question": "Which of the following is a **recommended step** to ensure good DB design for RideGo's ride bookings?",
+    "options": [
+      "Capture requirements & constraints (use cases, data volume, SLAs)",
+      "Avoid indexing any column to reduce storage",
+      "Defer integrity constraints until after launch",
+      "Skip stakeholder validation to save time"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Capture requirements & constraints (use cases, data volume, SLAs)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 471,
+    "question": "Which of the following is a **recommended step** to ensure good DB design for RideGo's ride bookings?",
+    "options": [
+      "Skip stakeholder validation to save time",
+      "Create conceptual ER model and validate with stakeholders",
+      "Defer integrity constraints until after launch",
+      "Avoid indexing any column to reduce storage"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Radix Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 428
+    "explanation": "The correct answer is Create conceptual ER model and validate with stakeholders",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which sorting algorithm has the highest worst-case time complexity?",
+    "id": 472,
+    "question": "Which of the following is a **recommended step** to ensure good DB design for ShopKart's e‑commerce orders?",
     "options": [
-      "Insertion Sort",
-      "Quick Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "Derive logical schema with normalization to appropriate normal form",
+      "Defer integrity constraints until after launch",
+      "Avoid indexing any column to reduce storage",
+      "Skip stakeholder validation to save time"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Derive logical schema with normalization to appropriate normal form",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 473,
+    "question": "Which of the following is a **recommended step** to ensure good DB design for ShopKart's e‑commerce orders?",
+    "options": [
+      "Skip stakeholder validation to save time",
+      "Avoid indexing any column to reduce storage",
+      "Defer integrity constraints until after launch",
+      "Define keys, constraints, and relationships"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Define keys, constraints, and relationships",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 474,
+    "question": "Which of the following is a **recommended step** to ensure good DB design for PayZ's payments & refunds?",
+    "options": [
+      "Defer integrity constraints until after launch",
+      "Plan indexing strategy for critical queries",
+      "Skip stakeholder validation to save time",
+      "Avoid indexing any column to reduce storage"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Quick Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 429
+    "explanation": "The correct answer is Plan indexing strategy for critical queries",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which sorting technique is suitable for sorting small arrays efficiently?",
+    "id": 475,
+    "question": "Which of the following is a **recommended step** to ensure good DB design for MedLogix's patient records?",
     "options": [
-      "Merge Sort",
-      "Selection Sort",
-      "Quick Sort",
-      "Insertion Sort"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 430
-  },
-  {
-    "question": "Which sorting algorithm works by dividing the array into two halves, sorting each half, and then merging them?",
-    "options": [
-      "Insertion Sort",
-      "Selection Sort",
-      "Merge Sort",
-      "Quick Sort"
+      "Defer integrity constraints until after launch",
+      "Avoid indexing any column to reduce storage",
+      "Evaluate partitioning/archival strategies",
+      "Skip stakeholder validation to save time"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Merge Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 431
+    "explanation": "The correct answer is Evaluate partitioning/archival strategies",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which sorting algorithm has a time complexity of O(n^2) for the worst case and average case?",
+    "id": 476,
+    "question": "Which of the following is a **recommended step** to ensure good DB design for HomeIoT's device telemetry?",
     "options": [
-      "Quick Sort",
-      "Selection Sort",
-      "Insertion Sort",
-      "Merge Sort"
+      "Avoid indexing any column to reduce storage",
+      "Defer integrity constraints until after launch",
+      "Skip stakeholder validation to save time",
+      "Map to physical schema with storage and security plans"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Map to physical schema with storage and security plans",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 477,
+    "question": "Which of the following is a **recommended step** to ensure good DB design for ShopKart's e‑commerce orders?",
+    "options": [
+      "Avoid indexing any column to reduce storage",
+      "Defer integrity constraints until after launch",
+      "Prepare migration/seed and testing strategy",
+      "Skip stakeholder validation to save time"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Prepare migration/seed and testing strategy",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 478,
+    "question": "In the DB design lifecycle for EduSphere's course enrollments, the team interviews stakeholders, defines entities, usage patterns, volumes, and SLAs. Which phase is this?",
+    "options": [
+      "Logical Design",
+      "Requirement Analysis",
+      "Deployment/Monitoring",
+      "Physical Design"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Selection Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 432
+    "explanation": "The correct answer is Requirement Analysis",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which sorting algorithm exhibits a time complexity of O(n log n) on average but can degrade to O(n^2) in the worst case?",
+    "id": 479,
+    "question": "In the DB design lifecycle for ShopKart's e‑commerce orders, the team interviews stakeholders, defines entities, usage patterns, volumes, and SLAs. Which phase is this?",
     "options": [
-      "Quick Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Quick Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 433
-  },
-  {
-    "question": "Which sorting algorithm is efficient for almost sorted arrays?",
-    "options": [
-      "Merge Sort",
-      "Selection Sort",
-      "Quick Sort",
-      "Insertion Sort"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 434
-  },
-  {
-    "question": "Which sorting algorithm divides the array into two parts: sorted and unsorted, and repeatedly inserts elements from the unsorted part into the sorted part?",
-    "options": [
-      "Selection Sort",
-      "Merge Sort",
-      "Quick Sort",
-      "Insertion Sort"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 435
-  },
-  {
-    "question": "Which sorting technique always finds the correct position for the current element and inserts it there?",
-    "options": [
-      "Merge Sort",
-      "Selection Sort",
-      "Insertion Sort",
-      "Quick Sort"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Insertion Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 436
-  },
-  {
-    "question": "Which sorting algorithm does not use additional storage space?",
-    "options": [
-      "Merge Sort",
-      "Insertion Sort",
-      "Selection Sort",
-      "Quick Sort"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Selection Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 437
-  },
-  {
-    "question": "Which sorting algorithm performs well even when all elements are identical?",
-    "options": [
-      "Merge Sort",
-      "Selection Sort",
-      "Quick Sort",
-      "Insertion Sort"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Quick Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 438
-  },
-  {
-    "question": "Which sorting algorithm works by repeatedly dividing the array into smaller subarrays and then sorting them?",
-    "options": [
-      "Merge Sort",
-      "Insertion Sort",
-      "Quick Sort",
-      "Selection Sort"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Merge Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 439
-  },
-  {
-    "question": "Which sorting algorithm is not stable?",
-    "options": [
-      "Merge Sort",
-      "Selection Sort",
-      "Insertion Sort",
-      "Quick Sort"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Quick Sort",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 440
-  },
-  {
-    "question": "Which bitwise operator is used to perform a left shift operation?",
-    "options": [
-      "|",
-      ">>",
-      "<<",
-      "&"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is <<",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 441
-  },
-  {
-    "question": "What is the result of the bitwise AND operation between 5 (101) and 3 (011)?",
-    "options": [
-      "7 (111)",
-      "5 (101)",
-      "3 (011)",
-      "1 (001)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 1 (001)",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 442
-  },
-  {
-    "question": "What is the value of 12 & 9?",
-    "options": [
-      "9",
-      "0",
-      "8",
-      "12"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is 8",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 443
-  },
-  {
-    "question": "Which bitwise operator is used to perform a bitwise OR operation?",
-    "options": [
-      "~",
-      "|",
-      "^",
-      "&"
+      "Physical Design",
+      "Requirement Analysis",
+      "Logical Design",
+      "Deployment/Monitoring"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is |",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 444
+    "explanation": "The correct answer is Requirement Analysis",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "In C++, which header file contains the definition for the `bitset` class?",
+    "id": 480,
+    "question": "In the DB design lifecycle for Streamly's video streams & subscriptions, the team interviews stakeholders, defines entities, usage patterns, volumes, and SLAs. Which phase is this?",
     "options": [
-      "<vector>",
-      "<algorithm>",
-      "<bitset>",
-      "<iostream>"
+      "Requirement Analysis",
+      "Logical Design",
+      "Deployment/Monitoring",
+      "Physical Design"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Requirement Analysis",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 481,
+    "question": "After requirements, HomeIoT transforms the conceptual model to tables, columns, keys, and constraints, and chooses normalization levels. Which phase is this?",
+    "options": [
+      "Requirement Analysis",
+      "Operations",
+      "Physical Design",
+      "Logical Design"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Logical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 482,
+    "question": "After requirements, MedLogix transforms the conceptual model to tables, columns, keys, and constraints, and chooses normalization levels. Which phase is this?",
+    "options": [
+      "Physical Design",
+      "Requirement Analysis",
+      "Logical Design",
+      "Operations"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is <bitset>",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 445
+    "explanation": "The correct answer is Logical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following is not a bitwise operator in C++?",
+    "id": 483,
+    "question": "After requirements, HomeIoT transforms the conceptual model to tables, columns, keys, and constraints, and chooses normalization levels. Which phase is this?",
     "options": [
-      "&",
-      "^",
-      "&&",
-      "|"
+      "Logical Design",
+      "Physical Design",
+      "Requirement Analysis",
+      "Operations"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Logical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 484,
+    "question": "Streamly selects storage parameters, indexing, partitions, materialized views, and backup strategies for video streams & subscriptions. Which phase is this?",
+    "options": [
+      "Conceptual Modeling",
+      "Logical Design",
+      "Physical Design",
+      "Requirement Analysis"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is &&",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 446
+    "explanation": "The correct answer is Physical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "What is the binary representation of 10 in 8-bit two's complement format?",
+    "id": 485,
+    "question": "Foodly selects storage parameters, indexing, partitions, materialized views, and backup strategies for food delivery orders. Which phase is this?",
     "options": [
-      "00001010",
-      "01010",
-      "11110110",
-      "001010"
+      "Conceptual Modeling",
+      "Physical Design",
+      "Requirement Analysis",
+      "Logical Design"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Physical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 486,
+    "question": "TripNest selects storage parameters, indexing, partitions, materialized views, and backup strategies for hotel & flight bookings. Which phase is this?",
+    "options": [
+      "Conceptual Modeling",
+      "Requirement Analysis",
+      "Physical Design",
+      "Logical Design"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is 11110110",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 447
+    "explanation": "The correct answer is Physical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "How many bits are required to represent 16 unique values using bitmasking?",
+    "id": 487,
+    "question": "In Streamly's ORM for video streams & subscriptions, engineers face this issue: Entity classes mixing persistence, validation, and business logic. Which OO design principle/pattern best addresses it for database‑backed models?",
     "options": [
-      "16",
-      "8",
-      "32",
-      "4"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 4",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 448
-  },
-  {
-    "question": "Which bitwise operator is used to perform a bitwise XOR operation?",
-    "options": [
-      "&",
-      "|",
-      "~",
-      "^"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is ^",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 449
-  },
-  {
-    "question": "What is the value of 1 << 3?",
-    "options": [
-      "16",
-      "4",
-      "2",
-      "8"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is 8",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 450
-  },
-  {
-    "question": "In C++, which container from the STL is typically used to implement a stack?",
-    "options": [
-      "vector",
-      "stack",
-      "list",
-      "queue"
+      "Global mutable state for convenience",
+      "Apply Single Responsibility Principle; separate concerns",
+      "Tight coupling of all layers in one class",
+      "Disable tests to move faster"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is stack",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 451
+    "explanation": "The correct answer is Apply Single Responsibility Principle; separate concerns",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the complexity of finding an element in a set using the STL's set container?",
+    "id": 488,
+    "question": "In Foodly's ORM for food delivery orders, engineers face this issue: Frequent schema changes when adding new use‑cases. Which OO design principle/pattern best addresses it for database‑backed models?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
+      "Use Open/Closed Principle with extensible mappings or subtype tables",
+      "Tight coupling of all layers in one class",
+      "Global mutable state for convenience",
+      "Disable tests to move faster"
     ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is O(log n)",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 452
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Use Open/Closed Principle with extensible mappings or subtype tables",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which algorithm from the STL is used to sort elements in ascending order?",
+    "id": 489,
+    "question": "In NewsPulse's ORM for article publishing, engineers face this issue: Deep inheritance hierarchies for entities. Which OO design principle/pattern best addresses it for database‑backed models?",
     "options": [
-      "reverse()",
-      "merge()",
-      "sort()",
-      "shuffle()"
+      "Prefer composition over inheritance for evolving attributes",
+      "Global mutable state for convenience",
+      "Disable tests to move faster",
+      "Tight coupling of all layers in one class"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Prefer composition over inheritance for evolving attributes",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 490,
+    "question": "In NewsPulse's ORM for article publishing, engineers face this issue: Inconsistent creation of related aggregates. Which OO design principle/pattern best addresses it for database‑backed models?",
+    "options": [
+      "Disable tests to move faster",
+      "Tight coupling of all layers in one class",
+      "Use Factory/Builder and enforce invariants in aggregate roots",
+      "Global mutable state for convenience"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is sort()",
-    "topic": "Sorting Algorithms",
-    "difficulty": "medium",
-    "id": 453
+    "explanation": "The correct answer is Use Factory/Builder and enforce invariants in aggregate roots",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is not a valid bitwise operation?",
+    "id": 491,
+    "question": "NewsPulse needs a controlled system for defining, storing, querying, and updating data. Which option best defines a database?",
     "options": [
-      "Bitwise NOR",
-      "Bitwise NAND",
-      "Bitwise XOR",
-      "Bitwise AND"
+      "A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+      "A group of spreadsheets",
+      "A BI dashboard tool",
+      "Any CSV folder"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Bitwise NOR",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 454
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What does the bitwise left shift operator (<<) do?",
+    "id": 492,
+    "question": "ShopKart needs a controlled system for defining, storing, querying, and updating data. Which option best defines a database?",
     "options": [
-      "Moves the bits to the left by a specified number of positions",
-      "Inverts all the bits",
-      "Performs a logical AND operation",
-      "Moves the bits to the right by a specified number of positions"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Moves the bits to the left by a specified number of positions",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 455
-  },
-  {
-    "question": "Which STL container allows duplicate elements?",
-    "options": [
-      "list",
-      "map",
-      "set",
-      "vector"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is vector",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 456
-  },
-  {
-    "question": "In C++, what does the STL's `map` container store?",
-    "options": [
-      "Unique keys and their corresponding values",
-      "Only values, without corresponding keys",
-      "Keys and values in a sorted order",
-      "Only keys, without corresponding values"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Unique keys and their corresponding values",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 457
-  },
-  {
-    "question": "How many bits are used to represent the decimal number 255 in binary?",
-    "options": [
-      "16",
-      "64",
-      "8",
-      "32"
+      "Any CSV folder",
+      "A BI dashboard tool",
+      "A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+      "A group of spreadsheets"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is 8",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 458
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "What is the value of ~5 in binary?",
+    "id": 493,
+    "question": "HomeIoT needs a controlled system for defining, storing, querying, and updating data. Which option best defines a database?",
     "options": [
-      "1010",
-      "101",
-      "0101",
-      "010"
+      "A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+      "A group of spreadsheets",
+      "A BI dashboard tool",
+      "Any CSV folder"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 494,
+    "question": "TripNest needs a controlled system for defining, storing, querying, and updating data. Which option best defines a database?",
+    "options": [
+      "Any CSV folder",
+      "A group of spreadsheets",
+      "A BI dashboard tool",
+      "A structured collection of data managed by a DBMS for efficient storage, retrieval, and update"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is 010",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 459
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which bitwise operation can be used to toggle a specific bit in a bit sequence?",
+    "id": 495,
+    "question": "MedLogix needs a controlled system for defining, storing, querying, and updating data. Which option best defines a database?",
     "options": [
-      "Bitwise NOT",
-      "Bitwise OR",
-      "Bitwise AND",
-      "Bitwise XOR"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Bitwise XOR",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 460
-  },
-  {
-    "question": "Which STL algorithm is used to find the minimum element in a container?",
-    "options": [
-      "minimum_element()",
-      "find_min()",
-      "min()",
-      "min_element()"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is min_element()",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 461
-  },
-  {
-    "question": "In C++, which algorithm from the STL is used to find the first occurrence of an element in a container?",
-    "options": [
-      "search()",
-      "find_first_of()",
-      "find()",
-      "find_first()"
+      "A group of spreadsheets",
+      "A BI dashboard tool",
+      "A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+      "Any CSV folder"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is find()",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 462
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is a bitwise operator in C++?",
+    "id": 496,
+    "question": "Foodly needs a controlled system for defining, storing, querying, and updating data. Which option best defines a database?",
     "options": [
-      "?",
-      "%",
-      ":",
-      "~"
+      "A BI dashboard tool",
+      "Any CSV folder",
+      "A group of spreadsheets",
+      "A structured collection of data managed by a DBMS for efficient storage, retrieval, and update"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is ~",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 463
+    "explanation": "The correct answer is A structured collection of data managed by a DBMS for efficient storage, retrieval, and update",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the result of the bitwise XOR operation between 15 (1111) and 7 (0111)?",
+    "id": 497,
+    "question": "Which **DB characteristic** addresses: Concurrent updates safely?",
     "options": [
-      "15",
-      "8",
-      "0",
-      "7"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is 8",
-    "topic": "Bit Manipulation",
-    "difficulty": "medium",
-    "id": 464
-  },
-  {
-    "question": "Which STL container is typically used to implement a FIFO (First-In-First-Out) queue?",
-    "options": [
-      "stack",
-      "deque",
-      "queue",
-      "list"
+      "UI validation",
+      "CSV exports",
+      "Isolation & Concurrency control",
+      "Denormalization only"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is queue",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 465
+    "explanation": "The correct answer is Isolation & Concurrency control",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "In C++, which algorithm from the STL is used to find the maximum element in a container?",
+    "id": 498,
+    "question": "Which **DB characteristic** addresses: Apps unaffected by storage changes?",
     "options": [
-      "max()",
-      "find_max()",
-      "maximum_element()",
-      "max_element()"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is max_element()",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 466
-  },
-  {
-    "question": "What is recursion?",
-    "options": [
-      "A method of solving problems by breaking them down into smaller, similar subproblems",
-      "A programming technique that uses loops to solve problems",
-      "A technique to solve problems using arrays",
-      "A method of solving problems by using dynamic programming"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is A method of solving problems by breaking them down into smaller, similar subproblems",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 467
-  },
-  {
-    "question": "What is the base case in recursion?",
-    "options": [
-      "The average case in the problem",
-      "The largest case in the problem",
-      "The smallest case in the problem",
-      "The most complex case in the problem"
+      "Denormalization only",
+      "UI validation",
+      "Data independence",
+      "CSV exports"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is The smallest case in the problem",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 468
+    "explanation": "The correct answer is Data independence",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What happens if there is no base case in a recursive function?",
+    "id": 499,
+    "question": "Which **DB characteristic** addresses: Concurrent updates safely?",
     "options": [
-      "The program runs indefinitely",
-      "The program runs with incorrect output",
-      "The program gives a compilation error",
-      "The program crashes"
+      "CSV exports",
+      "Isolation & Concurrency control",
+      "UI validation",
+      "Denormalization only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Isolation & Concurrency control",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 500,
+    "question": "Which **DB characteristic** addresses: Apps unaffected by storage changes?",
+    "options": [
+      "Data independence",
+      "CSV exports",
+      "UI validation",
+      "Denormalization only"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is The program runs indefinitely",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 469
+    "explanation": "The correct answer is Data independence",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is NOT true about recursion?",
+    "id": 501,
+    "question": "Which **DB characteristic** addresses: Automatic plan selection?",
     "options": [
-      "Recursion is often used to solve problems with a natural recursive structure",
-      "Recursion can always be replaced by iteration",
-      "Recursion leads to more elegant and concise code in certain cases",
-      "Recursion uses more memory compared to iteration"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Recursion can always be replaced by iteration",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 470
-  },
-  {
-    "question": "What is tail recursion?",
-    "options": [
-      "A type of recursion where the function does not call itself",
-      "A type of recursion where the recursive call is the last thing done by the function",
-      "A type of recursion where the recursive call is the first thing done by the function",
-      "A type of recursion where there is no base case"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is A type of recursion where the recursive call is the last thing done by the function",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 471
-  },
-  {
-    "question": "Which of the following is NOT a characteristic of a problem suitable for recursion?",
-    "options": [
-      "The problem can be divided into smaller, similar subproblems",
-      "The problem can be represented as a tree or a graph",
-      "The problem can be solved using iteration",
-      "The problem has a base case"
+      "CSV exports",
+      "Denormalization only",
+      "Cost-based optimizer/indexing",
+      "UI validation"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is The problem can be solved using iteration",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 472
+    "explanation": "The correct answer is Cost-based optimizer/indexing",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is a stack overflow error?",
+    "id": 502,
+    "question": "Which **DB characteristic** addresses: Prevent partial updates after crash?",
     "options": [
-      "An error that occurs when the program runs out of memory for the call stack",
-      "An error that occurs when a recursive function calls itself too many times",
-      "An error that occurs when the stack data structure is used incorrectly",
-      "An error that occurs when there is a bug in the program"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is An error that occurs when the program runs out of memory for the call stack",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 473
-  },
-  {
-    "question": "Which data structure is commonly used to implement recursion?",
-    "options": [
-      "Stack",
-      "Queue",
-      "Linked List",
-      "Array"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Stack",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 474
-  },
-  {
-    "question": "What is backtracking?",
-    "options": [
-      "A method of solving problems using dynamic programming",
-      "A method of solving problems by breaking them down into smaller, similar subproblems",
-      "A technique to solve problems using arrays",
-      "A method of solving problems by trying all possible options and discarding those that do not work"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is A method of solving problems by trying all possible options and discarding those that do not work",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 475
-  },
-  {
-    "question": "When is backtracking used?",
-    "options": [
-      "When the problem has multiple solutions and we need to find one or more of them",
-      "When the problem can be solved using iteration",
-      "When the problem can be divided into smaller, similar subproblems",
-      "When the problem has a base case"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is When the problem has multiple solutions and we need to find one or more of them",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 476
-  },
-  {
-    "question": "Which of the following is NOT an application of backtracking?",
-    "options": [
-      "Generating all permutations of a set",
-      "Sudoku solving",
-      "Finding the factorial of a number",
-      "N-Queens problem"
+      "CSV exports",
+      "UI validation",
+      "Atomicity/Durability (ACID)",
+      "Denormalization only"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Finding the factorial of a number",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 477
+    "explanation": "The correct answer is Atomicity/Durability (ACID)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "In backtracking, what is pruning?",
+    "id": 503,
+    "question": "Which **data model** best fits: Time-stamped metrics?",
     "options": [
-      "The process of solving subproblems before solving the main problem",
-      "The process of iterating through all possible solutions",
-      "The process of eliminating certain options that are known not to lead to a solution",
-      "The process of selecting the best option at each step"
+      "File-based model",
+      "Time-series model",
+      "Spreadsheet model",
+      "Key-value model"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Time-series model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 504,
+    "question": "Which **data model** best fits: Highly connected traversals?",
+    "options": [
+      "Relational model",
+      "File-based model",
+      "Spreadsheet model",
+      "Graph model"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Graph model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 505,
+    "question": "Which **data model** best fits: Strict relationships and joins?",
+    "options": [
+      "File-based model",
+      "Spreadsheet model",
+      "Wide-column (column-family) model",
+      "Relational model"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Relational model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 506,
+    "question": "Which **data model** best fits: Strict relationships and joins?",
+    "options": [
+      "File-based model",
+      "Relational model",
+      "Spreadsheet model",
+      "Time-series model"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Relational model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 507,
+    "question": "Which **data model** best fits: Highly connected traversals?",
+    "options": [
+      "File-based model",
+      "Graph model",
+      "Spreadsheet model",
+      "Relational model"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Graph model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 508,
+    "question": "Which **data model** best fits: Low-latency key lookups?",
+    "options": [
+      "Spreadsheet model",
+      "Relational model",
+      "File-based model",
+      "Key-value model"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Key-value model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 509,
+    "question": "Which **data model** best fits: Highly connected traversals?",
+    "options": [
+      "File-based model",
+      "Graph model",
+      "Spreadsheet model",
+      "Relational model"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Graph model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 510,
+    "question": "Which **data model** best fits: Highly connected traversals?",
+    "options": [
+      "Spreadsheet model",
+      "Graph model",
+      "Relational model",
+      "File-based model"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Graph model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 511,
+    "question": "Which **data model** best fits: Time-stamped metrics?",
+    "options": [
+      "Time-series model",
+      "File-based model",
+      "Wide-column (column-family) model",
+      "Spreadsheet model"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Time-series model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 512,
+    "question": "Which **data model** best fits: Strict relationships and joins?",
+    "options": [
+      "Time-series model",
+      "File-based model",
+      "Relational model",
+      "Spreadsheet model"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is The process of eliminating certain options that are known not to lead to a solution",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 478
+    "explanation": "The correct answer is Relational model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the time complexity of backtracking algorithms in the worst-case scenario?",
+    "id": 513,
+    "question": "Which **data model** best fits: Wide, sparse analytics?",
     "options": [
-      "O(2^n)",
-      "O(n!)",
-      "O(1)",
-      "O(n)"
+      "Wide-column (column-family) model",
+      "Document model",
+      "File-based model",
+      "Spreadsheet model"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is O(2^n)",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 479
+    "explanation": "The correct answer is Wide-column (column-family) model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following is a disadvantage of backtracking?",
+    "id": 514,
+    "question": "Which **data model** best fits: Highly connected traversals?",
     "options": [
-      "It may take exponential time",
-      "It always finds the optimal solution",
-      "It is difficult to implement",
-      "It requires a lot of memory"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is It may take exponential time",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 480
-  },
-  {
-    "question": "How is backtracking different from brute force?",
-    "options": [
-      "Backtracking does not consider all possible solutions",
-      "Backtracking always finds the optimal solution",
-      "Backtracking generates all possible solutions and selects the best one",
-      "Backtracking eliminates certain options that are known not to lead to a solution"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Backtracking eliminates certain options that are known not to lead to a solution",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 481
-  },
-  {
-    "question": "What is the primary purpose of a base case in recursion?",
-    "options": [
-      "To prevent infinite recursion",
-      "To handle error conditions",
-      "To make the code more efficient",
-      "To improve code readability"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is To prevent infinite recursion",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 482
-  },
-  {
-    "question": "Which of the following is NOT a step involved in designing a recursive algorithm?",
-    "options": [
-      "Analyzing the time complexity",
-      "Identifying the base case",
-      "Writing the recursive function",
-      "Dividing the problem into smaller subproblems"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Analyzing the time complexity",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 483
-  },
-  {
-    "question": "Which of the following is an example of a problem that can be solved using backtracking?",
-    "options": [
-      "Sudoku solving",
-      "Finding the shortest path in a graph",
-      "Finding the minimum element in an array",
-      "Sorting an array"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Sudoku solving",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 484
-  },
-  {
-    "question": "Which of the following statements is true about recursive functions?",
-    "options": [
-      "Recursive functions cannot call themselves",
-      "Recursive functions are always more efficient than iterative functions",
-      "Recursive functions always have a base case",
-      "Recursive functions use a stack to keep track of function calls"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Recursive functions use a stack to keep track of function calls",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 485
-  },
-  {
-    "question": "In a recursive function, what happens during the \"unwinding\" phase?",
-    "options": [
-      "The base case is reached",
-      "The function returns to the previous level of recursion",
-      "The function calls itself again",
-      "The stack overflows"
+      "Document model",
+      "Graph model",
+      "File-based model",
+      "Spreadsheet model"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is The function returns to the previous level of recursion",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 486
+    "explanation": "The correct answer is Graph model",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "Which of the following statements about recursion is true?",
+    "id": 515,
+    "question": "An ER diagram shows **Invoice** and relationships; no column types or indexes. Which schema level is this?",
     "options": [
-      "Recursion can only be implemented using loops",
-      "Recursion is always the best solution for a problem",
-      "Recursion is less efficient than iteration in all scenarios",
-      "Recursion can lead to clearer and more concise code in some cases"
+      "Conceptual schema",
+      "Physical schema",
+      "Logical schema",
+      "External schema"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Conceptual schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 516,
+    "question": "An ER diagram shows **Shipment** and relationships; no column types or indexes. Which schema level is this?",
+    "options": [
+      "Logical schema",
+      "External schema",
+      "Physical schema",
+      "Conceptual schema"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is Recursion can lead to clearer and more concise code in some cases",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 487
+    "explanation": "The correct answer is Conceptual schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the purpose of the \"visited\" array in backtracking algorithms?",
+    "id": 517,
+    "question": "An ER diagram shows **Order** and relationships; no column types or indexes. Which schema level is this?",
     "options": [
-      "To track the recursive calls made by the algorithm",
-      "To store the final solution",
-      "To keep track of which nodes have been visited in a graph traversal",
-      "To prevent the algorithm from visiting the same state multiple times"
+      "External schema",
+      "Physical schema",
+      "Logical schema",
+      "Conceptual schema"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is To prevent the algorithm from visiting the same state multiple times",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 488
+    "explanation": "The correct answer is Conceptual schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "Which of the following is NOT a common approach to implementing backtracking?",
+    "id": 518,
+    "question": "An ER diagram shows **Patient** and relationships; no column types or indexes. Which schema level is this?",
     "options": [
-      "Using a stack",
-      "Using a queue",
-      "Using iteration",
-      "Using recursion"
+      "Conceptual schema",
+      "Physical schema",
+      "Logical schema",
+      "External schema"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Conceptual schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 519,
+    "question": "An ER diagram shows **Invoice** and relationships; no column types or indexes. Which schema level is this?",
+    "options": [
+      "Physical schema",
+      "Conceptual schema",
+      "Logical schema",
+      "External schema"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Using a queue",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 489
+    "explanation": "The correct answer is Conceptual schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is memoization?",
+    "id": 520,
+    "question": "An ER diagram shows **Customer** and relationships; no column types or indexes. Which schema level is this?",
     "options": [
-      "A technique used to optimize memory usage in recursive algorithms",
-      "A technique used to visualize recursive calls",
-      "A technique used to store and reuse previously computed results to avoid redundant calculations",
-      "A technique used to prevent stack overflow errors"
+      "External schema",
+      "Logical schema",
+      "Conceptual schema",
+      "Physical schema"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is A technique used to store and reuse previously computed results to avoid redundant calculations",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 490
+    "explanation": "The correct answer is Conceptual schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following is NOT a step in backtracking?",
+    "id": 521,
+    "question": "An ER diagram shows **Patient** and relationships; no column types or indexes. Which schema level is this?",
     "options": [
-      "Pruning",
-      "Backtracking",
-      "Moving forward",
-      "Making a choice"
+      "Physical schema",
+      "Logical schema",
+      "External schema",
+      "Conceptual schema"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Conceptual schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 522,
+    "question": "An ER diagram shows **Product** and relationships; no column types or indexes. Which schema level is this?",
+    "options": [
+      "Logical schema",
+      "Conceptual schema",
+      "External schema",
+      "Physical schema"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Conceptual schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 523,
+    "question": "Tables/columns/keys/constraints for **Device** are defined (engine-agnostic). Which level is this?",
+    "options": [
+      "Physical schema",
+      "Logical schema",
+      "Network schema",
+      "Conceptual schema"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Logical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 524,
+    "question": "Tables/columns/keys/constraints for **Shipment** are defined (engine-agnostic). Which level is this?",
+    "options": [
+      "Conceptual schema",
+      "Logical schema",
+      "Physical schema",
+      "Network schema"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Logical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 525,
+    "question": "Tables/columns/keys/constraints for **Invoice** are defined (engine-agnostic). Which level is this?",
+    "options": [
+      "Conceptual schema",
+      "Network schema",
+      "Physical schema",
+      "Logical schema"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Logical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 526,
+    "question": "Tables/columns/keys/constraints for **Course** are defined (engine-agnostic). Which level is this?",
+    "options": [
+      "Logical schema",
+      "Conceptual schema",
+      "Network schema",
+      "Physical schema"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Logical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 527,
+    "question": "Tables/columns/keys/constraints for **Customer** are defined (engine-agnostic). Which level is this?",
+    "options": [
+      "Conceptual schema",
+      "Physical schema",
+      "Network schema",
+      "Logical schema"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Logical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 528,
+    "question": "Tables/columns/keys/constraints for **Course** are defined (engine-agnostic). Which level is this?",
+    "options": [
+      "Network schema",
+      "Physical schema",
+      "Conceptual schema",
+      "Logical schema"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Logical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 529,
+    "question": "Tables/columns/keys/constraints for **Restaurant** are defined (engine-agnostic). Which level is this?",
+    "options": [
+      "Physical schema",
+      "Logical schema",
+      "Network schema",
+      "Conceptual schema"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Logical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 530,
+    "question": "Tables/columns/keys/constraints for **Order** are defined (engine-agnostic). Which level is this?",
+    "options": [
+      "Conceptual schema",
+      "Logical schema",
+      "Physical schema",
+      "Network schema"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Logical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 531,
+    "question": "Indexes, partitions, tablespaces, and filegroups for **Product** are finalized. Which level is this?",
+    "options": [
+      "Physical schema",
+      "Security schema",
+      "Conceptual schema",
+      "Logical schema"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Physical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 532,
+    "question": "Indexes, partitions, tablespaces, and filegroups for **Invoice** are finalized. Which level is this?",
+    "options": [
+      "Logical schema",
+      "Security schema",
+      "Physical schema",
+      "Conceptual schema"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Moving forward",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 491
+    "explanation": "The correct answer is Physical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following best describes the concept of \"depth-first search\" in backtracking?",
+    "id": 533,
+    "question": "Indexes, partitions, tablespaces, and filegroups for **Driver** are finalized. Which level is this?",
     "options": [
-      "Exploring all possible solutions starting from the root node",
-      "Exploring all possible solutions level by level",
-      "Exploring all possible solutions by making a series of choices and backtracking when necessary",
-      "Exploring all possible solutions using a queue"
+      "Physical schema",
+      "Conceptual schema",
+      "Logical schema",
+      "Security schema"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Physical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 534,
+    "question": "Indexes, partitions, tablespaces, and filegroups for **Patient** are finalized. Which level is this?",
+    "options": [
+      "Conceptual schema",
+      "Logical schema",
+      "Security schema",
+      "Physical schema"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Physical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 535,
+    "question": "Indexes, partitions, tablespaces, and filegroups for **Shipment** are finalized. Which level is this?",
+    "options": [
+      "Security schema",
+      "Logical schema",
+      "Physical schema",
+      "Conceptual schema"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Exploring all possible solutions by making a series of choices and backtracking when necessary",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 492
+    "explanation": "The correct answer is Physical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "In backtracking, when do we know that we have found a solution?",
+    "id": 536,
+    "question": "Indexes, partitions, tablespaces, and filegroups for **Customer** are finalized. Which level is this?",
     "options": [
-      "When we reach a leaf node in the search tree",
-      "When we reach the end of the search space",
-      "When we reach the maximum depth of recursion",
-      "When we reach a node that satisfies the problem constraints"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is When we reach a node that satisfies the problem constraints",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 493
-  },
-  {
-    "question": "Which of the following is a key difference between recursion and iteration?",
-    "options": [
-      "Recursion involves solving problems by breaking them down into smaller, similar subproblems, while iteration involves repetitive execution of a set of instructions",
-      "Recursion always uses less memory than iteration",
-      "Recursion is always easier to implement than iteration",
-      "Recursion always runs faster than iteration"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Recursion involves solving problems by breaking them down into smaller, similar subproblems, while iteration involves repetitive execution of a set of instructions",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 494
-  },
-  {
-    "question": "What is the main advantage of using recursion over iteration?",
-    "options": [
-      "Recursion uses less memory than iteration",
-      "Recursion can lead to clearer and more concise code in some cases",
-      "Recursion always leads to faster code execution",
-      "Recursion allows for easier debugging"
+      "Security schema",
+      "Physical schema",
+      "Logical schema",
+      "Conceptual schema"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Recursion can lead to clearer and more concise code in some cases",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 495
+    "explanation": "The correct answer is Physical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following best describes a backtracking algorithm?",
+    "id": 537,
+    "question": "Indexes, partitions, tablespaces, and filegroups for **Invoice** are finalized. Which level is this?",
     "options": [
-      "An algorithm that explores all possible solutions by making a series of choices and backtracking when necessary",
-      "An algorithm that iterates through all possible solutions without backtracking",
-      "An algorithm that solves problems by breaking them down into smaller, similar subproblems",
-      "An algorithm that stores and reuses previously computed results to avoid redundant calculations"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is An algorithm that explores all possible solutions by making a series of choices and backtracking when necessary",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 496
-  },
-  {
-    "question": "Which of the following is NOT a characteristic of recursion?",
-    "options": [
-      "It involves breaking a problem into smaller, similar subproblems",
-      "It always leads to more efficient algorithms compared to iteration",
-      "It requires a base case to terminate the recursion",
-      "It can be used to solve problems that can be divided into smaller instances of the same problem"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is It always leads to more efficient algorithms compared to iteration",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 497
-  },
-  {
-    "question": "Which of the following data structures is typically used to implement recursion?",
-    "options": [
-      "Linked list",
-      "Array",
-      "Queue",
-      "Stack"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Stack",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 498
-  },
-  {
-    "question": "What is the time complexity of a recursive algorithm with T(n) = T(n-1) + O(1)?",
-    "options": [
-      "O(n)",
-      "O(n!)",
-      "O(log n)",
-      "O(2^n)"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is O(n)",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 499
-  },
-  {
-    "question": "Which of the following is true about tail recursion?",
-    "options": [
-      "It always requires an extra stack space",
-      "It is less efficient than non-tail recursion",
-      "It cannot be optimized by compilers",
-      "It involves recursive function calls as the last operation in the function"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is It involves recursive function calls as the last operation in the function",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 500
-  },
-  {
-    "question": "What is the process of reducing a problem into smaller subproblems called?",
-    "options": [
-      "Recursion",
-      "Backtracking",
-      "Divide and conquer",
-      "Memoization"
+      "Security schema",
+      "Logical schema",
+      "Physical schema",
+      "Conceptual schema"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Divide and conquer",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 501
+    "explanation": "The correct answer is Physical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is a characteristic of backtracking algorithms?",
+    "id": 538,
+    "question": "Indexes, partitions, tablespaces, and filegroups for **Device** are finalized. Which level is this?",
     "options": [
-      "They backtrack from a solution space when a solution is found to be invalid",
-      "They guarantee finding the optimal solution",
-      "They require a base case to terminate",
-      "They store all possible solutions before selecting the best one"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is They backtrack from a solution space when a solution is found to be invalid",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 502
-  },
-  {
-    "question": "In backtracking, what is the purpose of the \"pruning\" step?",
-    "options": [
-      "To merge branches of the search tree",
-      "To remove invalid branches from the search tree",
-      "To optimize the search process",
-      "To add new branches to the search tree"
+      "Security schema",
+      "Physical schema",
+      "Conceptual schema",
+      "Logical schema"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is To remove invalid branches from the search tree",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 503
+    "explanation": "The correct answer is Physical schema",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following problems can be efficiently solved using backtracking?",
+    "id": 539,
+    "question": "Which constraint uniquely identifies a row and disallows NULLs?",
     "options": [
-      "Calculating the factorial of a number",
-      "Sorting an array",
-      "Finding the shortest path in a graph",
-      "Generating all permutations of a set"
+      "UNIQUE",
+      "FOREIGN KEY",
+      "CHECK",
+      "PRIMARY KEY"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is Generating all permutations of a set",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 504
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is a disadvantage of recursive algorithms?",
+    "id": 540,
+    "question": "Which constraint uniquely identifies a row and disallows NULLs?",
     "options": [
-      "They always consume less memory",
-      "They cannot be optimized for performance",
-      "They are harder to debug",
-      "They cannot handle tree-like data structures"
+      "UNIQUE",
+      "CHECK",
+      "FOREIGN KEY",
+      "PRIMARY KEY"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 541,
+    "question": "Which constraint uniquely identifies a row and disallows NULLs?",
+    "options": [
+      "PRIMARY KEY",
+      "CHECK",
+      "UNIQUE",
+      "FOREIGN KEY"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 542,
+    "question": "Which constraint uniquely identifies a row and disallows NULLs?",
+    "options": [
+      "FOREIGN KEY",
+      "PRIMARY KEY",
+      "CHECK",
+      "UNIQUE"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 543,
+    "question": "Which constraint uniquely identifies a row and disallows NULLs?",
+    "options": [
+      "PRIMARY KEY",
+      "UNIQUE",
+      "FOREIGN KEY",
+      "CHECK"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 544,
+    "question": "Which constraint uniquely identifies a row and disallows NULLs?",
+    "options": [
+      "CHECK",
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "UNIQUE"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 545,
+    "question": "Which constraint uniquely identifies a row and disallows NULLs?",
+    "options": [
+      "CHECK",
+      "FOREIGN KEY",
+      "PRIMARY KEY",
+      "UNIQUE"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is They are harder to debug",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 505
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "In the context of recursion, what is a stack overflow?",
+    "id": 546,
+    "question": "Which constraint uniquely identifies a row and disallows NULLs?",
     "options": [
-      "When the stack data structure becomes empty",
-      "When the stack exceeds its memory limit",
-      "When the base case is not reached",
-      "When the recursive function returns an incorrect value"
+      "FOREIGN KEY",
+      "PRIMARY KEY",
+      "UNIQUE",
+      "CHECK"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is When the stack exceeds its memory limit",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 506
+    "explanation": "The correct answer is PRIMARY KEY",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following problems can be solved efficiently using backtracking?",
+    "id": 547,
+    "question": "A minimal unique attribute set eligible to be the primary key is called:",
     "options": [
-      "Implementing binary search",
-      "Generating all possible combinations of a set",
-      "Finding the maximum element in an array",
-      "Sorting a linked list"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Generating all possible combinations of a set",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 507
-  },
-  {
-    "question": "What is the time complexity of generating all subsets of a set using recursion?",
-    "options": [
-      "O(2^n)",
-      "O(log n)",
-      "O(n^2)",
-      "O(n!)"
+      "Candidate key",
+      "Super key",
+      "Surrogate key",
+      "Foreign key"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is O(2^n)",
-    "topic": "C++ STL",
-    "difficulty": "medium",
-    "id": 508
+    "explanation": "The correct answer is Candidate key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "In backtracking, what does the \"back\" step involve?",
+    "id": 548,
+    "question": "A minimal unique attribute set eligible to be the primary key is called:",
     "options": [
-      "Returning to the initial state of the problem",
-      "Moving forward in the search space",
-      "Rejecting a solution and moving to the next one",
-      "Moving backward in the search space to explore other options"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Moving backward in the search space to explore other options",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 509
-  },
-  {
-    "question": "Which of the following is NOT a common application of backtracking?",
-    "options": [
-      "Knight's tour problem",
-      "N-Queens problem",
-      "Sorting algorithms",
-      "Sudoku solving"
+      "Foreign key",
+      "Super key",
+      "Candidate key",
+      "Surrogate key"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Sorting algorithms",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 510
+    "explanation": "The correct answer is Candidate key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "In recursion, what happens during the \"divide\" step?",
+    "id": 549,
+    "question": "A minimal unique attribute set eligible to be the primary key is called:",
     "options": [
-      "The problem size remains unchanged",
-      "The problem is broken down into smaller subproblems",
-      "Solutions are combined to form the final result",
-      "The base case is checked"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is The problem is broken down into smaller subproblems",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 511
-  },
-  {
-    "question": "Which of the following statements about recursion is false?",
-    "options": [
-      "Recursion can simplify the implementation of certain algorithms",
-      "Recursion always requires more memory than iteration",
-      "Recursion can be used to implement tree traversal algorithms",
-      "Recursion can lead to stack overflow errors"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Recursion always requires more memory than iteration",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 512
-  },
-  {
-    "question": "What is the main drawback of using recursion to solve a problem?",
-    "options": [
-      "It requires more memory than iteration",
-      "It cannot handle problems with overlapping subproblems",
-      "It is harder to understand compared to iteration",
-      "It always leads to infinite loops"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is It requires more memory than iteration",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 513
-  },
-  {
-    "question": "In backtracking, what does the \"tracking\" step involve?",
-    "options": [
-      "Following a specific path in the search space",
-      "Backing up to explore other options",
-      "Discarding invalid solutions",
-      "Maintaining a record of all solutions found so far"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Following a specific path in the search space",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 514
-  },
-  {
-    "question": "Which of the following problems cannot be efficiently solved using backtracking?",
-    "options": [
-      "Generating all permutations of a set",
-      "Finding the shortest path in a graph",
-      "Finding the maximum element in an array",
-      "Solving the Tower of Hanoi problem"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Finding the shortest path in a graph",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 515
-  },
-  {
-    "question": "In backtracking, what is the purpose of the \"dead end\" condition?",
-    "options": [
-      "To backtrack when a solution is found",
-      "To prune the search space when a solution is not possible",
-      "To ensure that all solutions are explored",
-      "To stop the algorithm when the base case is reached"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is To prune the search space when a solution is not possible",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 516
-  },
-  {
-    "question": "Which of the following is NOT a common technique to optimize recursive algorithms?",
-    "options": [
-      "Dynamic programming",
-      "Memoization",
-      "Branch and bound",
-      "Backtracking"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Backtracking",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 517
-  },
-  {
-    "question": "In recursion, what is meant by the \"merge\" step?",
-    "options": [
-      "Returning the final result",
-      "Combining solutions from smaller subproblems",
-      "Adding new branches to the search tree",
-      "Breaking down the problem into smaller subproblems"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Combining solutions from smaller subproblems",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 518
-  },
-  {
-    "question": "What is the main advantage of using backtracking over brute force?",
-    "options": [
-      "Backtracking explores the entire solution space",
-      "Backtracking requires less memory",
-      "Backtracking efficiently prunes the search space",
-      "Backtracking always guarantees finding the optimal solution"
+      "Surrogate key",
+      "Super key",
+      "Candidate key",
+      "Foreign key"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Backtracking efficiently prunes the search space",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 519
+    "explanation": "The correct answer is Candidate key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following is a characteristic of recursive functions?",
+    "id": 550,
+    "question": "A minimal unique attribute set eligible to be the primary key is called:",
     "options": [
-      "They always require a base case to terminate",
-      "They cannot handle problems with overlapping subproblems",
-      "They call themselves directly or indirectly",
-      "They always use a loop to iterate through the solution space"
+      "Super key",
+      "Foreign key",
+      "Candidate key",
+      "Surrogate key"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is They call themselves directly or indirectly",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 520
+    "explanation": "The correct answer is Candidate key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
   },
   {
-    "question": "What is the primary reason for using backtracking algorithms?",
+    "id": 551,
+    "question": "A minimal unique attribute set eligible to be the primary key is called:",
     "options": [
-      "They handle problems with a large solution space",
-      "They can solve problems with dynamic programming techniques",
-      "They always provide the most efficient solution",
-      "They are easier to implement than other algorithms"
+      "Super key",
+      "Surrogate key",
+      "Foreign key",
+      "Candidate key"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Candidate key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 552,
+    "question": "A minimal unique attribute set eligible to be the primary key is called:",
+    "options": [
+      "Surrogate key",
+      "Super key",
+      "Foreign key",
+      "Candidate key"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Candidate key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 553,
+    "question": "If (id, email) is unique while id alone is unique, (id, email) is a:",
+    "options": [
+      "Composite primary key by default",
+      "Super key",
+      "Foreign key",
+      "Candidate key"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Super key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 554,
+    "question": "If (id, email) is unique while id alone is unique, (id, email) is a:",
+    "options": [
+      "Super key",
+      "Candidate key",
+      "Foreign key",
+      "Composite primary key by default"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is They handle problems with a large solution space",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 521
+    "explanation": "The correct answer is Super key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following statements is true about recursion?",
+    "id": 555,
+    "question": "If (id, email) is unique while id alone is unique, (id, email) is a:",
     "options": [
-      "Recursion is less susceptible to stack overflow errors",
-      "Recursion can only be used with tree-like data structures",
-      "Recursion can lead to clearer and more concise code in some cases",
-      "Recursion is always more efficient than iteration"
+      "Candidate key",
+      "Super key",
+      "Foreign key",
+      "Composite primary key by default"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Super key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 556,
+    "question": "If (id, email) is unique while id alone is unique, (id, email) is a:",
+    "options": [
+      "Composite primary key by default",
+      "Super key",
+      "Candidate key",
+      "Foreign key"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Super key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 557,
+    "question": "Column `age` must be between 1 and 120. Which constraint enforces this?",
+    "options": [
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "UNIQUE",
+      "CHECK (age BETWEEN 1 AND 120)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is CHECK (age BETWEEN 1 AND 120)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 558,
+    "question": "Column `age` must be between 1 and 120. Which constraint enforces this?",
+    "options": [
+      "UNIQUE",
+      "PRIMARY KEY",
+      "CHECK (age BETWEEN 1 AND 120)",
+      "FOREIGN KEY"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Recursion can lead to clearer and more concise code in some cases",
-    "topic": "Recursion & Backtracking",
-    "difficulty": "medium",
-    "id": 522
+    "explanation": "The correct answer is CHECK (age BETWEEN 1 AND 120)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following statements correctly uses the ternary operator in C++?",
+    "id": 559,
+    "question": "Column `age` must be between 1 and 120. Which constraint enforces this?",
     "options": [
-      "int x = (a > b) ? a ? b;",
-      "int x = (a > b) ? a : b;",
-      "int x = (a > b) (a : b);",
-      "int x = a > b ? (a, b);"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is int x = (a > b) ? a : b;",
-    "topic": "C++ Basics",
-    "difficulty": "medium",
-    "id": 523
-  },
-  {
-    "question": "Which of the following is true about the `switch` statement in C++?",
-    "options": [
-      "The switch statement must always have a default case.",
-      "The switch statement can handle floating-point variables.",
-      "The break statement is optional after each case.",
-      "The case labels must be constant expressions."
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is The case labels must be constant expressions.",
-    "topic": "C++ Basics",
-    "difficulty": "medium",
-    "id": 524
-  },
-  {
-    "question": "What is the main advantage of using the `switch` statement over `if-else` chains?",
-    "options": [
-      "Switch statements are more flexible.",
-      "Switch statements can handle complex conditions more effectively.",
-      "Switch statements are easier to debug.",
-      "Switch statements provide better performance in certain scenarios."
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Switch statements provide better performance in certain scenarios.",
-    "topic": "C++ Basics",
-    "difficulty": "medium",
-    "id": 525
-  },
-  {
-    "question": "Which of the following is not a valid loop control statement in C++?",
-    "options": [
-      "foreach",
-      "do-while",
-      "for",
-      "while"
+      "CHECK (age BETWEEN 1 AND 120)",
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "UNIQUE"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is foreach",
-    "topic": "C++ Basics",
-    "difficulty": "medium",
-    "id": 526
+    "explanation": "The correct answer is CHECK (age BETWEEN 1 AND 120)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is true about the `while` loop in C++?",
+    "id": 560,
+    "question": "Column `age` must be between 1 and 120. Which constraint enforces this?",
     "options": [
-      "The while loop is identical to the do-while loop.",
-      "The while loop checks the condition before executing the loop body.",
-      "The while loop checks the condition at the end of the loop.",
-      "The while loop always executes at least once."
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "CHECK (age BETWEEN 1 AND 120)",
+      "UNIQUE"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is The while loop checks the condition before executing the loop body.",
-    "topic": "C++ Basics",
-    "difficulty": "medium",
-    "id": 527
+    "correctAnswer": "C",
+    "explanation": "The correct answer is CHECK (age BETWEEN 1 AND 120)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the correct syntax to declare a function pointer that points to a function returning `int` and taking two `int` arguments?",
+    "id": 561,
+    "question": "Which constraint enforces uniqueness but may allow NULLs (DBMS-dependent)?",
     "options": [
-      "int (*func)(int, int);",
-      "int *func(int, int);",
-      "int func*(int, int);",
-      "int func(int*, int*);"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is int (*func)(int, int);",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 528
-  },
-  {
-    "question": "Which of the following statements is true about function overloading in C++?",
-    "options": [
-      "Functions can be overloaded if they have the same name but different parameter lists.",
-      "Functions cannot be overloaded in C++.",
-      "Functions can only be overloaded if they have different return types.",
-      "Functions can only be overloaded if they have different names."
+      "UNIQUE",
+      "DEFAULT",
+      "PRIMARY KEY",
+      "FOREIGN KEY"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Functions can be overloaded if they have the same name but different parameter lists.",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 529
+    "explanation": "The correct answer is UNIQUE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the purpose of the `inline` keyword in function definitions?",
+    "id": 562,
+    "question": "Which constraint enforces uniqueness but may allow NULLs (DBMS-dependent)?",
     "options": [
-      "To make the function a friend of a class",
-      "To suggest to the compiler to replace the function call with the function code",
-      "To declare the function in multiple files",
-      "To increase the visibility of the function"
+      "FOREIGN KEY",
+      "UNIQUE",
+      "PRIMARY KEY",
+      "DEFAULT"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is To suggest to the compiler to replace the function call with the function code",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 530
+    "explanation": "The correct answer is UNIQUE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is true about recursive functions in C++?",
+    "id": 563,
+    "question": "Which constraint enforces uniqueness but may allow NULLs (DBMS-dependent)?",
     "options": [
-      "Recursive functions cannot have a return type.",
-      "Recursive functions must always have a base case.",
-      "Recursive functions cannot be overloaded.",
-      "Recursive functions are always more efficient than iterative solutions."
+      "DEFAULT",
+      "UNIQUE",
+      "FOREIGN KEY",
+      "PRIMARY KEY"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Recursive functions must always have a base case.",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 531
+    "explanation": "The correct answer is UNIQUE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which keyword is used to define a class in C++?",
+    "id": 564,
+    "question": "Which constraint enforces uniqueness but may allow NULLs (DBMS-dependent)?",
     "options": [
-      "object",
-      "class",
-      "void",
-      "struct"
+      "FOREIGN KEY",
+      "PRIMARY KEY",
+      "UNIQUE",
+      "DEFAULT"
     ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is class",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 532
+    "correctAnswer": "C",
+    "explanation": "The correct answer is UNIQUE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "In C++, what is the access specifier used for private members of a class?",
+    "id": 565,
+    "question": "Which constraint enforces uniqueness but may allow NULLs (DBMS-dependent)?",
     "options": [
-      "protected",
-      "friend",
-      "public",
-      "private"
+      "FOREIGN KEY",
+      "DEFAULT",
+      "UNIQUE",
+      "PRIMARY KEY"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is UNIQUE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 566,
+    "question": "Which constraint enforces uniqueness but may allow NULLs (DBMS-dependent)?",
+    "options": [
+      "DEFAULT",
+      "PRIMARY KEY",
+      "UNIQUE",
+      "FOREIGN KEY"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is UNIQUE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 567,
+    "question": "Which constraint enforces that a column cannot contain missing/unknown values?",
+    "options": [
+      "CHECK",
+      "UNIQUE",
+      "FOREIGN KEY",
+      "NOT NULL"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is private",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 533
+    "explanation": "The correct answer is NOT NULL",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is true about object-oriented programming?",
+    "id": 568,
+    "question": "Which constraint enforces that a column cannot contain missing/unknown values?",
     "options": [
-      "Inheritance allows a class to inherit properties and behavior from another class.",
-      "Polymorphism ensures that a function can perform different tasks based on the object calling it.",
-      "Encapsulation hides the implementation details.",
+      "UNIQUE",
+      "CHECK",
+      "NOT NULL",
+      "FOREIGN KEY"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is NOT NULL",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 569,
+    "question": "Which constraint enforces that a column cannot contain missing/unknown values?",
+    "options": [
+      "UNIQUE",
+      "CHECK",
+      "NOT NULL",
+      "FOREIGN KEY"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is NOT NULL",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 570,
+    "question": "Which constraint enforces that a column cannot contain missing/unknown values?",
+    "options": [
+      "CHECK",
+      "UNIQUE",
+      "FOREIGN KEY",
+      "NOT NULL"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is NOT NULL",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 571,
+    "question": "Referential integrity rule to **Set child to NULL when parent deleted** is:",
+    "options": [
+      "PRIMARY KEY on child",
+      "FOREIGN KEY with ON DELETE SET NULL",
+      "CHECK on child only",
+      "UNIQUE on random column"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE SET NULL",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 572,
+    "question": "Referential integrity rule to **Delete child rows when parent deleted** is:",
+    "options": [
+      "PRIMARY KEY on child",
+      "FOREIGN KEY with ON DELETE CASCADE",
+      "UNIQUE on random column",
+      "CHECK on child only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE CASCADE",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 573,
+    "question": "Referential integrity rule to **Set child to NULL when parent deleted** is:",
+    "options": [
+      "PRIMARY KEY on child",
+      "FOREIGN KEY with ON DELETE SET NULL",
+      "CHECK on child only",
+      "UNIQUE on random column"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE SET NULL",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 574,
+    "question": "Referential integrity rule to **Ensure child references parent** is:",
+    "options": [
+      "PRIMARY KEY on child",
+      "CHECK on child only",
+      "FOREIGN KEY referencing parent key",
+      "UNIQUE on random column"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is FOREIGN KEY referencing parent key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 575,
+    "question": "Referential integrity rule to **Prevent parent delete while child exists** is:",
+    "options": [
+      "UNIQUE on random column",
+      "CHECK on child only",
+      "PRIMARY KEY on child",
+      "FOREIGN KEY with ON DELETE RESTRICT/NO ACTION"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 576,
+    "question": "Referential integrity rule to **Prevent parent delete while child exists** is:",
+    "options": [
+      "UNIQUE on random column",
+      "PRIMARY KEY on child",
+      "FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+      "CHECK on child only"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 577,
+    "question": "Referential integrity rule to **Ensure child references parent** is:",
+    "options": [
+      "CHECK on child only",
+      "FOREIGN KEY referencing parent key",
+      "PRIMARY KEY on child",
+      "UNIQUE on random column"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is FOREIGN KEY referencing parent key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 578,
+    "question": "Referential integrity rule to **Prevent parent delete while child exists** is:",
+    "options": [
+      "UNIQUE on random column",
+      "PRIMARY KEY on child",
+      "FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+      "CHECK on child only"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 579,
+    "question": "Referential integrity rule to **Prevent parent delete while child exists** is:",
+    "options": [
+      "UNIQUE on random column",
+      "CHECK on child only",
+      "PRIMARY KEY on child",
+      "FOREIGN KEY with ON DELETE RESTRICT/NO ACTION"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is FOREIGN KEY with ON DELETE RESTRICT/NO ACTION",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 580,
+    "question": "Referential integrity rule to **Ensure child references parent** is:",
+    "options": [
+      "CHECK on child only",
+      "UNIQUE on random column",
+      "FOREIGN KEY referencing parent key",
+      "PRIMARY KEY on child"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is FOREIGN KEY referencing parent key",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 581,
+    "question": "Best exam definition of **database design** is:",
+    "options": [
+      "Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+      "Writing SQL queries",
+      "Drawing UI wireframes",
+      "Tuning the OS kernel"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 582,
+    "question": "Best exam definition of **database design** is:",
+    "options": [
+      "Writing SQL queries",
+      "Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+      "Tuning the OS kernel",
+      "Drawing UI wireframes"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 583,
+    "question": "Best exam definition of **database design** is:",
+    "options": [
+      "Tuning the OS kernel",
+      "Drawing UI wireframes",
+      "Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+      "Writing SQL queries"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 584,
+    "question": "Best exam definition of **database design** is:",
+    "options": [
+      "Tuning the OS kernel",
+      "Drawing UI wireframes",
+      "Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+      "Writing SQL queries"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 585,
+    "question": "Best exam definition of **database design** is:",
+    "options": [
+      "Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+      "Drawing UI wireframes",
+      "Writing SQL queries",
+      "Tuning the OS kernel"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 586,
+    "question": "Best exam definition of **database design** is:",
+    "options": [
+      "Drawing UI wireframes",
+      "Writing SQL queries",
+      "Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+      "Tuning the OS kernel"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Translating requirements into conceptual, logical, and physical schemas with integrity and performance considerations",
+    "topic": "Fundamentals of Database",
+    "difficulty": "easy"
+  },
+  {
+    "id": 587,
+    "question": "Which is a **recommended** step to ensure good DB design?",
+    "options": [
+      "Decide partitioning/archival and retention strategy",
+      "Skip constraints until after go-live",
+      "Avoid indexes to save space",
+      "Mix conceptual and physical in one step"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Decide partitioning/archival and retention strategy",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 588,
+    "question": "Which is a **recommended** step to ensure good DB design?",
+    "options": [
+      "Elicit requirements and constraints (entities, volumes, SLAs)",
+      "Skip constraints until after go-live",
+      "Avoid indexes to save space",
+      "Mix conceptual and physical in one step"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Elicit requirements and constraints (entities, volumes, SLAs)",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 589,
+    "question": "Which is a **recommended** step to ensure good DB design?",
+    "options": [
+      "Skip constraints until after go-live",
+      "Map logical to physical with storage/security plans",
+      "Avoid indexes to save space",
+      "Mix conceptual and physical in one step"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Map logical to physical with storage/security plans",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 590,
+    "question": "Which is a **recommended** step to ensure good DB design?",
+    "options": [
+      "Normalize logical schema appropriately",
+      "Skip constraints until after go-live",
+      "Avoid indexes to save space",
+      "Mix conceptual and physical in one step"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Normalize logical schema appropriately",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 591,
+    "question": "Which is a **recommended** step to ensure good DB design?",
+    "options": [
+      "Skip constraints until after go-live",
+      "Avoid indexes to save space",
+      "Mix conceptual and physical in one step",
+      "Define keys, constraints, and relationships"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Define keys, constraints, and relationships",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 592,
+    "question": "Which is a **recommended** step to ensure good DB design?",
+    "options": [
+      "Skip constraints until after go-live",
+      "Avoid indexes to save space",
+      "Define keys, constraints, and relationships",
+      "Mix conceptual and physical in one step"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Define keys, constraints, and relationships",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 593,
+    "question": "Which is a **recommended** step to ensure good DB design?",
+    "options": [
+      "Avoid indexes to save space",
+      "Skip constraints until after go-live",
+      "Define keys, constraints, and relationships",
+      "Mix conceptual and physical in one step"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Define keys, constraints, and relationships",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 594,
+    "question": "Which is a **recommended** step to ensure good DB design?",
+    "options": [
+      "Decide partitioning/archival and retention strategy",
+      "Mix conceptual and physical in one step",
+      "Avoid indexes to save space",
+      "Skip constraints until after go-live"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Decide partitioning/archival and retention strategy",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 595,
+    "question": "Phase focused on gathering stakeholders, entities, usage patterns, volumes, and SLAs:",
+    "options": [
+      "Requirement Analysis",
+      "Operations",
+      "Physical Design",
+      "Logical Design"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Requirement Analysis",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 596,
+    "question": "Phase focused on gathering stakeholders, entities, usage patterns, volumes, and SLAs:",
+    "options": [
+      "Requirement Analysis",
+      "Logical Design",
+      "Operations",
+      "Physical Design"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Requirement Analysis",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 597,
+    "question": "Phase focused on gathering stakeholders, entities, usage patterns, volumes, and SLAs:",
+    "options": [
+      "Operations",
+      "Logical Design",
+      "Requirement Analysis",
+      "Physical Design"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Requirement Analysis",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 598,
+    "question": "Phase focused on gathering stakeholders, entities, usage patterns, volumes, and SLAs:",
+    "options": [
+      "Operations",
+      "Logical Design",
+      "Requirement Analysis",
+      "Physical Design"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Requirement Analysis",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 599,
+    "question": "Phase converting conceptual model to tables/columns/keys/constraints with normalization:",
+    "options": [
+      "Deployment",
+      "Requirement Analysis",
+      "Logical Design",
+      "Physical Design"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Logical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 600,
+    "question": "Phase converting conceptual model to tables/columns/keys/constraints with normalization:",
+    "options": [
+      "Logical Design",
+      "Deployment",
+      "Requirement Analysis",
+      "Physical Design"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Logical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "hard"
+  },
+  {
+    "id": 601,
+    "question": "Phase converting conceptual model to tables/columns/keys/constraints with normalization:",
+    "options": [
+      "Logical Design",
+      "Physical Design",
+      "Deployment",
+      "Requirement Analysis"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Logical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 602,
+    "question": "Phase converting conceptual model to tables/columns/keys/constraints with normalization:",
+    "options": [
+      "Logical Design",
+      "Requirement Analysis",
+      "Deployment",
+      "Physical Design"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Logical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 603,
+    "question": "Phase selecting indexes, partitions, storage layout, and backup strategies:",
+    "options": [
+      "Conceptual Modeling",
+      "Physical Design",
+      "Requirement Analysis",
+      "Logical Design"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Physical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 604,
+    "question": "Phase selecting indexes, partitions, storage layout, and backup strategies:",
+    "options": [
+      "Physical Design",
+      "Conceptual Modeling",
+      "Logical Design",
+      "Requirement Analysis"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Physical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 605,
+    "question": "Phase selecting indexes, partitions, storage layout, and backup strategies:",
+    "options": [
+      "Conceptual Modeling",
+      "Physical Design",
+      "Requirement Analysis",
+      "Logical Design"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Physical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 606,
+    "question": "Phase selecting indexes, partitions, storage layout, and backup strategies:",
+    "options": [
+      "Physical Design",
+      "Logical Design",
+      "Conceptual Modeling",
+      "Requirement Analysis"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Physical Design",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 607,
+    "question": "In DB-backed design, what does **Dependency Inversion** imply?",
+    "options": [
+      "Global mutable state",
+      "Depend on abstractions, not concretions",
+      "A single God-object for everything",
+      "Tight coupling to DB schema"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Depend on abstractions, not concretions",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 608,
+    "question": "In DB-backed design, what does **Composition over Inheritance** imply?",
+    "options": [
+      "Use composition or separate tables for variation",
+      "A single God-object for everything",
+      "Tight coupling to DB schema",
+      "Global mutable state"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Use composition or separate tables for variation",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 609,
+    "question": "In DB-backed design, what does **Dependency Inversion** imply?",
+    "options": [
+      "Global mutable state",
+      "Tight coupling to DB schema",
+      "A single God-object for everything",
+      "Depend on abstractions, not concretions"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Depend on abstractions, not concretions",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 610,
+    "question": "In DB-backed design, what does **Dependency Inversion** imply?",
+    "options": [
+      "Depend on abstractions, not concretions",
+      "Tight coupling to DB schema",
+      "Global mutable state",
+      "A single God-object for everything"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Depend on abstractions, not concretions",
+    "topic": "Fundamentals of Database",
+    "difficulty": "medium"
+  },
+  {
+    "id": 611,
+    "question": "Which of the following BEST defines System Design?",
+    "options": [
+      "The process of writing production code",
+      "The process of defining the architecture, modules, interfaces, and data of a system",
+      "The process of testing software",
+      "The process of drawing UI screens only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is The process of defining the architecture, modules, interfaces, and data of a system",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 612,
+    "question": "Which system characteristic ensures the system performs correctly under stress without crashing?",
+    "options": [
+      "Reliability",
+      "Availability",
+      "Consistency",
+      "Maintainability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Reliability",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 613,
+    "question": "Which is an example of vertical scaling?",
+    "options": [
+      "Adding more servers to a cluster",
+      "Upgrading a server from 16GB RAM to 64GB RAM",
+      "Using a CDN for static content",
+      "Splitting databases by sharding"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Upgrading a server from 16GB RAM to 64GB RAM",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 614,
+    "question": "Which system design principle deals with the system’s ability to continue functioning despite component failures?",
+    "options": [
+      "Fault Tolerance",
+      "Scalability",
+      "Maintainability",
+      "Consistency"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Fault Tolerance",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 615,
+    "question": "Which metric measures the number of operations a system can process per unit of time?",
+    "options": [
+      "Availability",
+      "Latency",
+      "Throughput",
+      "Scalability"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Throughput",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 616,
+    "question": "What is the tradeoff described by the CAP theorem?",
+    "options": [
+      "Consistency, Availability, Partition Tolerance",
+      "Scalability, Reliability, Fault Tolerance",
+      "Performance, Maintainability, Scalability",
+      "Latency, Throughput, Consistency"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Consistency, Availability, Partition Tolerance",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 617,
+    "question": "Which consistency model guarantees that a read always returns the latest write?",
+    "options": [
+      "Weak Consistency",
+      "Eventual Consistency",
+      "Strong Consistency",
+      "Causal Consistency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Strong Consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 618,
+    "question": "Eventual consistency is MOST useful in which scenario?",
+    "options": [
+      "Banking transaction systems",
+      "E-commerce product recommendations",
+      "Airline reservation systems",
+      "Payment processing"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is E-commerce product recommendations",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 619,
+    "question": "Which is NOT a non-functional requirement?",
+    "options": [
+      "Scalability",
+      "Availability",
+      "Business Logic",
+      "Reliability"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Business Logic",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 620,
+    "question": "Which design approach focuses on breaking down the system into smaller modules and defining their relationships?",
+    "options": [
+      "High Level Design",
+      "Low Level Design",
+      "Functional Analysis",
+      "Requirement Gathering"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is High Level Design",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 621,
+    "question": "Which design approach provides detailed descriptions of class diagrams, database schema, and data flow?",
+    "options": [
+      "High Level Design",
+      "Low Level Design",
+      "Functional Decomposition",
+      "Modular Design"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Low Level Design",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 622,
+    "question": "Which of the following is the BEST benefit of modular design?",
+    "options": [
+      "Tight coupling between components",
+      "Ease of maintenance and scalability",
+      "Code redundancy",
+      "No need for documentation"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Ease of maintenance and scalability",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 623,
+    "question": "CI/CD pipelines mainly help in:",
+    "options": [
+      "Code compilation speed",
+      "Automating build, test, and deployment processes",
+      "Avoiding system monitoring",
+      "Creating system diagrams"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Automating build, test, and deployment processes",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 624,
+    "question": "Which of the following is an example of a monolithic architecture?",
+    "options": [
+      "A single application handling UI, business logic, and database",
+      "Multiple independent services deployed separately",
+      "Services communicating via events",
+      "Serverless functions"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is A single application handling UI, business logic, and database",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 625,
+    "question": "Which is the main advantage of microservices over monolithic systems?",
+    "options": [
+      "Less network latency",
+      "Independent deployment and scalability",
+      "Centralized database access only",
+      "Fewer APIs required"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Independent deployment and scalability",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 626,
+    "question": "Event-driven architecture is MOST useful for:",
+    "options": [
+      "Tightly coupled systems",
+      "Real-time processing and asynchronous communication",
+      "Batch processing only",
+      "Reducing system modularity"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Real-time processing and asynchronous communication",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 627,
+    "question": "Which performance metric is MOST impacted by network latency?",
+    "options": [
+      "Throughput",
+      "Consistency",
+      "Response Time",
+      "Fault Tolerance"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Response Time",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 628,
+    "question": "Which type of scaling is easier to automate in cloud-native environments?",
+    "options": [
+      "Vertical Scaling",
+      "Horizontal Scaling",
+      "Static Scaling",
+      "Manual Scaling"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontal Scaling",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 629,
+    "question": "In system design, clean code principles primarily improve:",
+    "options": [
+      "Availability",
+      "Maintainability",
+      "Latency",
+      "Throughput"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Maintainability",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 630,
+    "question": "Which of the following is an example of Availability vs Consistency tradeoff?",
+    "options": [
+      "Amazon DynamoDB favoring availability",
+      "A banking transaction system favoring consistency",
+      "CDN edge servers returning cached responses",
       "All of the above"
     ],
     "correctAnswer": "D",
     "explanation": "The correct answer is All of the above",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 534
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "What is dynamic memory allocation in C++?",
+    "id": 631,
+    "question": "Which factor MOST influences system reliability?",
     "options": [
-      "Memory allocated during runtime",
-      "Memory allocated during compilation",
-      "Memory allocated during linking",
-      "Memory allocated during preprocessing"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Memory allocated during runtime",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 535
-  },
-  {
-    "question": "Which operator is used to dynamically allocate memory in C++?",
-    "options": [
-      "new",
-      "alloc",
-      "malloc",
-      "allocate"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is new",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 536
-  },
-  {
-    "question": "In C++, what is a pointer?",
-    "options": [
-      "A data type used for integer values",
-      "A keyword to define a class",
-      "A variable that stores the address of another variable",
-      "A variable that stores the value of another variable"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is A variable that stores the address of another variable",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 537
-  },
-  {
-    "question": "What does the `delete` operator do in C++?",
-    "options": [
-      "Initializes memory",
-      "Copies memory",
-      "Deallocates memory",
-      "Allocates memory"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Deallocates memory",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 538
-  },
-  {
-    "question": "What is the result of dereferencing a null pointer in C++?",
-    "options": [
-      "Runtime error",
-      "Segmentation fault",
-      "Compilation error",
-      "Undefined behavior"
+      "Hardware uptime",
+      "Error handling mechanisms",
+      "Database indexing",
+      "UI responsiveness"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Segmentation fault",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 539
+    "explanation": "The correct answer is Error handling mechanisms",
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "What is the difference between `delete` and `delete[]` in C++?",
+    "id": 632,
+    "question": "What is the MAIN drawback of vertical scaling?",
     "options": [
-      "There is no difference",
-      "delete[] is used to deallocate memory allocated for arrays",
-      "delete is used to deallocate memory allocated for arrays",
-      "delete is used to deallocate memory allocated for single objects"
+      "Higher latency",
+      "Limited by single machine capacity",
+      "More network partitions",
+      "Difficult deployment pipelines"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is delete[] is used to deallocate memory allocated for arrays",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 540
+    "explanation": "The correct answer is Limited by single machine capacity",
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "What is a memory leak in C++?",
+    "id": 633,
+    "question": "Which of the following BEST describes fault tolerance?",
     "options": [
-      "Memory allocated is not freed after use",
-      "Memory is not allocated",
-      "Memory allocated is freed after use",
-      "Memory is deallocated before use"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Memory allocated is not freed after use",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 541
-  },
-  {
-    "question": "What is the purpose of the `this` pointer in C++?",
-    "options": [
-      "To store the address of the next object",
-      "To store the address of the parent object",
-      "To store the address of the previous object",
-      "To store the address of the current object"
+      "Ability to restart automatically after a crash",
+      "Ability to scale horizontally",
+      "Ability to deploy without downtime",
+      "Ability to maintain correct behavior despite component failures"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is To store the address of the current object",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 542
+    "explanation": "The correct answer is Ability to maintain correct behavior despite component failures",
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "What does the `nullptr` keyword represent in C++?",
+    "id": 634,
+    "question": "Throughput in system design refers to:",
     "options": [
-      "A pointer to a character",
-      "A pointer to a float",
-      "A null pointer",
-      "A pointer to an integer"
+      "The amount of data processed per second",
+      "The time taken for one request",
+      "The number of servers in the cluster",
+      "The redundancy factor of storage"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is The amount of data processed per second",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 635,
+    "question": "Which tradeoff is MOST common between latency and throughput?",
+    "options": [
+      "Higher latency reduces throughput",
+      "Higher throughput may increase latency",
+      "Latency and throughput are always independent",
+      "Throughput is unaffected by latency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Higher throughput may increase latency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 636,
+    "question": "Which is a PRIMARY goal of maintainability?",
+    "options": [
+      "Faster query execution",
+      "Ease of future modifications",
+      "Lower storage requirements",
+      "High network bandwidth usage"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Ease of future modifications",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 637,
+    "question": "Which design principle supports modular maintainability MOST?",
+    "options": [
+      "Tight coupling",
+      "Code duplication",
+      "Separation of concerns",
+      "Centralized logging"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is A null pointer",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 543
+    "explanation": "The correct answer is Separation of concerns",
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "What is a dangling pointer in C++?",
+    "id": 638,
+    "question": "In the context of CAP theorem, what does 'P' stand for?",
     "options": [
-      "A pointer that points to a valid memory location",
-      "A pointer that points to the next object",
-      "A pointer that points to the current object",
-      "A pointer that points to a memory location that has been deallocated"
+      "Performance",
+      "Partition Tolerance",
+      "Processing Power",
+      "Parallelism"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Partition Tolerance",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 639,
+    "question": "Eventual consistency guarantees:",
+    "options": [
+      "Immediate data accuracy",
+      "Temporary stale reads are possible",
+      "No network partitions",
+      "Synchronous replication always"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Temporary stale reads are possible",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 640,
+    "question": "Which design approach involves abstract diagrams focusing on major components and interactions?",
+    "options": [
+      "Low Level Design",
+      "High Level Design",
+      "Unit Testing",
+      "Code Refactoring"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is High Level Design",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 641,
+    "question": "Low Level Design (LLD) focuses primarily on:",
+    "options": [
+      "System-wide architecture",
+      "Individual classes and methods",
+      "Deployment strategies",
+      "Business case modeling"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Individual classes and methods",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 642,
+    "question": "Which of the following is NOT a functional requirement?",
+    "options": [
+      "System shall authenticate users",
+      "System shall store customer records",
+      "System shall process payments",
+      "System shall be available 99.9% of the time"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is A pointer that points to a memory location that has been deallocated",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 544
+    "explanation": "The correct answer is System shall be available 99.9% of the time",
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following operators is used to access members of an object through a pointer in C++?",
+    "id": 643,
+    "question": "In system design, which is MOST aligned with non-functional requirements?",
     "options": [
-      "::",
-      "*",
-      "->",
-      "."
+      "Data encryption",
+      "User login feature",
+      "Shopping cart management",
+      "Order tracking system"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Data encryption",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 644,
+    "question": "Which architectural pattern is MOST prone to tight coupling?",
+    "options": [
+      "Monolithic",
+      "Microservices",
+      "Event-Driven",
+      "Serverless"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Monolithic",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 645,
+    "question": "Which architectural style enables independent deployment of services?",
+    "options": [
+      "Layered Architecture",
+      "Microservices Architecture",
+      "Monolithic Architecture",
+      "File-based Systems"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Microservices Architecture",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 646,
+    "question": "Event-Driven Architecture is BEST suited for:",
+    "options": [
+      "Batch processing of data only",
+      "Tightly coupled components",
+      "Asynchronous communication",
+      "Single-threaded applications"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is ->",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 545
+    "explanation": "The correct answer is Asynchronous communication",
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "What does the `new` operator return if memory allocation fails?",
+    "id": 647,
+    "question": "Which is MOST challenging in a microservices environment?",
     "options": [
-      "nullptr",
-      "0",
-      "Throws an exception",
-      "-1"
+      "Service discovery",
+      "Code reusability",
+      "Shared logging",
+      "Deployment to a single server"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is nullptr",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 546
+    "explanation": "The correct answer is Service discovery",
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following statements is true about smart pointers in C++?",
+    "id": 648,
+    "question": "Which of the following MOST reduces system latency?",
     "options": [
-      "They are less efficient than raw pointers",
-      "They automatically deallocate memory when it is no longer needed",
-      "They are used for manual memory management",
-      "They do not support polymorphism"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is They automatically deallocate memory when it is no longer needed",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 547
-  },
-  {
-    "question": "What is the purpose of the `virtual destructor` in C++?",
-    "options": [
-      "To ensure that derived class objects are correctly deallocated",
-      "To allow dynamic allocation of objects",
-      "To prevent memory leaks",
-      "To enable polymorphism"
+      "Caching frequently accessed data",
+      "Increasing disk capacity",
+      "Adding more documentation",
+      "Decreasing modularity"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is To ensure that derived class objects are correctly deallocated",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 548
+    "explanation": "The correct answer is Caching frequently accessed data",
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "What is the role of a move constructor in C++?",
+    "id": 649,
+    "question": "Which BEST explains horizontal scaling?",
     "options": [
-      "It creates a deep copy of an object",
-      "It transfers ownership of resources from one object to another",
-      "It moves an object to a different memory location",
-      "It initializes an object with another object of the same type"
+      "Upgrading a single machine with more CPU",
+      "Adding more machines to distribute load",
+      "Refactoring existing code modules",
+      "Improving database queries"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is It transfers ownership of resources from one object to another",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 549
+    "explanation": "The correct answer is Adding more machines to distribute load",
+    "topic": "System Design",
+    "difficulty": "easy"
   },
   {
-    "question": "Which of the following is true about the `const` keyword in C++?",
+    "id": 650,
+    "question": "Which pipeline practice improves maintainability the MOST?",
     "options": [
-      "It can be used to specify constant pointers",
-      "It can be used to define constant member functions",
-      "It can be used to declare constant variables",
+      "Continuous Deployment",
+      "Continuous Integration",
+      "Ad-hoc manual testing",
+      "Unstructured code reviews"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Continuous Integration",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 651,
+    "question": "Which of the following BEST demonstrates fault tolerance in a distributed system?",
+    "options": [
+      "Adding more servers to handle increased traffic",
+      "Automatic rerouting of requests to healthy nodes during a failure",
+      "Compressing data to reduce latency",
+      "Designing modular code for maintainability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Automatic rerouting of requests to healthy nodes during a failure",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 652,
+    "question": "In CAP theorem, if a system prefers consistency and partition tolerance, what is sacrificed?",
+    "options": [
+      "Latency",
+      "Availability",
+      "Scalability",
+      "Throughput"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Availability",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 653,
+    "question": "What is the PRIMARY goal of modular design in system maintainability?",
+    "options": [
+      "Reduce cost of hardware",
+      "Encapsulate changes within small components",
+      "Improve latency performance",
+      "Increase server throughput"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Encapsulate changes within small components",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 654,
+    "question": "Which approach allows scaling different modules of an application independently?",
+    "options": [
+      "Monolithic architecture",
+      "Microservices architecture",
+      "Layered architecture",
+      "Event-driven programming"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Microservices architecture",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 655,
+    "question": "Which metric is MOST affected by introducing caching in a system?",
+    "options": [
+      "Availability",
+      "Consistency",
+      "Latency",
+      "Fault Tolerance"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Latency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 656,
+    "question": "What does eventual consistency guarantee?",
+    "options": [
+      "Data is always consistent across replicas",
+      "Data becomes consistent across replicas after some delay",
+      "Data consistency depends on user preference",
+      "Data is never lost even after partition"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Data becomes consistent across replicas after some delay",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 657,
+    "question": "Which design approach focuses on translating business requirements into conceptual models before implementation?",
+    "options": [
+      "Low Level Design",
+      "High Level Design",
+      "Agile methodology",
+      "CI/CD pipeline"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is High Level Design",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 658,
+    "question": "What is a MAJOR drawback of vertical scaling?",
+    "options": [
+      "Complex debugging",
+      "Limited by single machine capacity",
+      "Difficult to implement caching",
+      "Increased consistency problems"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Limited by single machine capacity",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 659,
+    "question": "In system design, which is considered a NON-functional requirement?",
+    "options": [
+      "User login functionality",
+      "Product catalog search",
+      "System response time under 200 ms",
+      "Checkout process flow"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is System response time under 200 ms",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 660,
+    "question": "Which scenario BEST reflects strong consistency?",
+    "options": [
+      "A user reads old balance after a deposit",
+      "All nodes immediately show updated data after a transaction",
+      "System guarantees availability during partition",
+      "Updates may take minutes but converge eventually"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is All nodes immediately show updated data after a transaction",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 661,
+    "question": "Which of the following BEST explains throughput in system design?",
+    "options": [
+      "Time taken for one request",
+      "Total number of requests processed per unit time",
+      "System response delay in milliseconds",
+      "Ability of system to scale vertically"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Total number of requests processed per unit time",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 662,
+    "question": "What is the PRIMARY challenge when adopting microservices?",
+    "options": [
+      "Increased modularity",
+      "Simpler deployments",
+      "Managing inter-service communication and data consistency",
+      "Easier scaling of monolith"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Managing inter-service communication and data consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 663,
+    "question": "Which BEST describes weak consistency?",
+    "options": [
+      "System ensures reads always reflect latest writes",
+      "Reads may return stale data without guarantee of eventual consistency",
+      "System guarantees immediate synchronization across replicas",
+      "System delays responses until strong consistency is reached"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Reads may return stale data without guarantee of eventual consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 664,
+    "question": "Which system design principle reduces time-to-market by enabling frequent safe releases?",
+    "options": [
+      "Microservices",
+      "CI/CD Pipelines",
+      "Monolithic Architecture",
+      "Vertical Scaling"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is CI/CD Pipelines",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 665,
+    "question": "Which architectural style is MOST suitable for real-time data streaming applications?",
+    "options": [
+      "Monolithic Architecture",
+      "Event-Driven Architecture",
+      "Microservices without messaging",
+      "Layered MVC Architecture"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Event-Driven Architecture",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 666,
+    "question": "What is a key limitation of horizontal scaling?",
+    "options": [
+      "Hardware upgrade cost",
+      "Complexity in distributed coordination",
+      "Single point of failure risk",
+      "Fixed memory and CPU"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Complexity in distributed coordination",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 667,
+    "question": "Which tradeoff is at the core of the CAP theorem?",
+    "options": [
+      "Latency vs Throughput",
+      "Performance vs Scalability",
+      "Consistency vs Availability during partition",
+      "Reliability vs Maintainability"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Consistency vs Availability during partition",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 668,
+    "question": "In high availability systems, which design element is CRITICAL?",
+    "options": [
+      "Single data center",
+      "Manual failover",
+      "Redundancy and automated failover",
+      "Strong consistency only"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Redundancy and automated failover",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 669,
+    "question": "Which performance measure directly impacts user experience?",
+    "options": [
+      "Throughput",
+      "Latency",
+      "Scalability",
+      "Fault Tolerance"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Latency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 670,
+    "question": "Which scenario BEST demonstrates a non-functional requirement?",
+    "options": [
+      "System must support adding new friends",
+      "Users should reset password via email",
+      "System must process 10,000 requests per second",
+      "Allow product search by category"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is System must process 10,000 requests per second",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 671,
+    "question": "Which is a PRIMARY benefit of using microservices?",
+    "options": [
+      "Reduced inter-service communication",
+      "Independent scaling and deployments",
+      "Simpler debugging than monoliths",
+      "No need for API gateways"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Independent scaling and deployments",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 672,
+    "question": "Which approach BEST fits low latency trading systems requiring strong consistency?",
+    "options": [
+      "Eventual consistency with caching",
+      "Weak consistency with replication",
+      "Strong consistency with synchronous replication",
+      "Horizontal scaling without replication"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Strong consistency with synchronous replication",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 673,
+    "question": "What does high reliability in a system indicate?",
+    "options": [
+      "System scales easily",
+      "System responds quickly",
+      "System performs correctly over long periods",
+      "System always prioritizes availability"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is System performs correctly over long periods",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 674,
+    "question": "Which CI/CD practice reduces risk of large failures?",
+    "options": [
+      "Manual deployments every 3 months",
+      "Frequent small automated releases",
+      "Ignoring automated testing",
+      "Using monolithic build pipelines"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Frequent small automated releases",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 675,
+    "question": "Which is a drawback of monolithic architecture?",
+    "options": [
+      "Simpler debugging",
+      "Independent service scaling",
+      "Single codebase tightly coupled",
+      "Centralized data consistency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Single codebase tightly coupled",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 676,
+    "question": "Which measure ensures fault tolerance in cloud deployments?",
+    "options": [
+      "Using only one availability zone",
+      "Replication across multiple regions",
+      "Reducing logging overhead",
+      "Scaling CPU vertically"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Replication across multiple regions",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 677,
+    "question": "Which BEST demonstrates low maintainability?",
+    "options": [
+      "Tightly coupled code modules",
+      "Clean code principles",
+      "Modular components",
+      "Automated test coverage"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Tightly coupled code modules",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 678,
+    "question": "Which is a FUNCTIONAL requirement?",
+    "options": [
+      "System must allow users to reset password",
+      "System must support 99.99% uptime",
+      "System must respond in under 200 ms",
+      "System must tolerate node failures"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is System must allow users to reset password",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 679,
+    "question": "Which factor primarily impacts scalability?",
+    "options": [
+      "Hardware cost",
+      "Application design architecture",
+      "User interface responsiveness",
+      "Data encryption algorithms"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Application design architecture",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 680,
+    "question": "Which is an EXAMPLE of low fault tolerance?",
+    "options": [
+      "Cluster of nodes with redundancy",
+      "Single server running entire system",
+      "Multi-zone replicated databases",
+      "Load balanced API servers"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Single server running entire system",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 681,
+    "question": "Which strategy BEST handles high throughput workloads?",
+    "options": [
+      "Add caching and asynchronous queues",
+      "Limit number of client requests",
+      "Vertical scaling only",
+      "Strong consistency without replication"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Add caching and asynchronous queues",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 682,
+    "question": "In availability vs consistency tradeoff, banking systems usually prioritize:",
+    "options": [
+      "Consistency",
+      "Availability",
+      "Throughput",
+      "Latency"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 683,
+    "question": "Which of the following is a scalability bottleneck in monolithic systems?",
+    "options": [
+      "Independent deployment",
+      "Shared database tightly coupled",
+      "Stateless services",
+      "Asynchronous processing"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Shared database tightly coupled",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 684,
+    "question": "Which characteristic MOST improves system reliability?",
+    "options": [
+      "Graceful degradation on failures",
+      "Adding features quickly",
+      "Vertical scaling",
+      "Ignoring error handling"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Graceful degradation on failures",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 685,
+    "question": "Which architectural style allows decoupled services to communicate via events?",
+    "options": [
+      "Monolithic",
+      "Layered",
+      "Event-Driven Architecture",
+      "Client-Server"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Event-Driven Architecture",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 686,
+    "question": "Which practice in CI/CD pipelines reduces integration issues?",
+    "options": [
+      "Continuous Integration with automated testing",
+      "Rare batch deployments",
+      "Manual code merges",
+      "Skipping regression testing"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Continuous Integration with automated testing",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 687,
+    "question": "Which system characteristic is MOST tied to user satisfaction in interactive apps?",
+    "options": [
+      "Throughput",
+      "Latency",
+      "Maintainability",
+      "Scalability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Latency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 688,
+    "question": "Which of the following is NOT typically improved by horizontal scaling?",
+    "options": [
+      "Fault tolerance",
+      "Availability",
+      "Vertical CPU capacity",
+      "Throughput"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Vertical CPU capacity",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 689,
+    "question": "Which consistency model is MOST acceptable for social media newsfeeds?",
+    "options": [
+      "Strong Consistency",
+      "Weak Consistency",
+      "Eventual Consistency",
+      "Linearizability"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Eventual Consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 690,
+    "question": "Which MOST improves maintainability in large-scale systems?",
+    "options": [
+      "Monolithic deployments",
+      "Tight coupling between modules",
+      "Following clean code principles",
+      "Skipping automated tests"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Following clean code principles",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 691,
+    "question": "In system design, what does 'throughput' primarily measure?",
+    "options": [
+      "Time per request",
+      "Number of requests per unit time",
+      "System fault tolerance",
+      "Code readability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Number of requests per unit time",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 692,
+    "question": "Which of these is a non-functional requirement?",
+    "options": [
+      "Database schema",
+      "System availability 99.99%",
+      "User registration workflow",
+      "API endpoints"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is System availability 99.99%",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 693,
+    "question": "Which CAP property is sacrificed when prioritizing availability over consistency?",
+    "options": [
+      "Partition tolerance",
+      "Consistency",
+      "Latency",
+      "Throughput"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 694,
+    "question": "What is the main drawback of a monolithic architecture?",
+    "options": [
+      "Simple deployments",
+      "Code reuse",
+      "Tightly coupled components hinder scaling",
+      "Unified logging"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Tightly coupled components hinder scaling",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 695,
+    "question": "Which consistency pattern allows temporary stale reads but guarantees eventual correctness?",
+    "options": [
+      "Strong consistency",
+      "Weak consistency",
+      "Eventual consistency",
+      "Serializability"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Eventual consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 696,
+    "question": "In CI/CD pipelines, which practice ensures small, frequent releases?",
+    "options": [
+      "Waterfall model",
+      "Continuous delivery",
+      "Batch deployment",
+      "Manual testing only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Continuous delivery",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 697,
+    "question": "Which system characteristic ensures a system can handle growing user load by adding more servers?",
+    "options": [
+      "Vertical scalability",
+      "Horizontal scalability",
+      "Maintainability",
+      "Latency reduction"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontal scalability",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 698,
+    "question": "Which property of distributed systems is always assumed in CAP theorem?",
+    "options": [
+      "Scalability",
+      "Partition tolerance",
+      "Availability",
+      "Consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Partition tolerance",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 699,
+    "question": "Which architectural pattern best supports real-time stock trading platforms?",
+    "options": [
+      "Monolithic",
+      "Microservices",
+      "Event-driven architecture",
+      "Layered architecture"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Event-driven architecture",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 700,
+    "question": "Which factor primarily affects system latency?",
+    "options": [
+      "Response time per request",
+      "Total requests handled per second",
+      "System modularity",
+      "Database normalization"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Response time per request",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 701,
+    "question": "Which of these BEST describes high-level design?",
+    "options": [
+      "Detailed class diagram",
+      "Technology stack decisions",
+      "Database schema design",
+      "Low-level coding tasks"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Technology stack decisions",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 702,
+    "question": "Which consistency model guarantees reads always return the most recent write?",
+    "options": [
+      "Weak consistency",
+      "Eventual consistency",
+      "Strong consistency",
+      "Causal consistency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Strong consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 703,
+    "question": "Which architectural style MOST improves modularity and deployment independence?",
+    "options": [
+      "Monolithic",
+      "Microservices",
+      "Layered",
+      "Client-server"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Microservices",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 704,
+    "question": "Which is NOT a benefit of CI/CD pipelines?",
+    "options": [
+      "Faster releases",
+      "Early bug detection",
+      "Increased manual testing effort",
+      "Reduced integration issues"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Increased manual testing effort",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 705,
+    "question": "Which scaling approach requires stronger hardware upgrades?",
+    "options": [
+      "Horizontal scaling",
+      "Vertical scaling",
+      "Fault tolerance",
+      "Load balancing"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Vertical scaling",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 706,
+    "question": "Which system design characteristic ensures recovery from component failures without data loss?",
+    "options": [
+      "Latency",
+      "Throughput",
+      "Fault tolerance",
+      "Maintainability"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Fault tolerance",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 707,
+    "question": "Which term in system design refers to modifying a system with minimal effort?",
+    "options": [
+      "Scalability",
+      "Maintainability",
+      "Reliability",
+      "Availability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Maintainability",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 708,
+    "question": "Which is an example of a functional requirement?",
+    "options": [
+      "User login feature",
+      "99.9% uptime",
+      "Low latency responses",
+      "System scalability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is User login feature",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 709,
+    "question": "Which of the following systems MOST needs strong consistency?",
+    "options": [
+      "E-commerce checkout system",
+      "Social media comments",
+      "Search engine indexing",
+      "Video streaming recommendations"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is E-commerce checkout system",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 710,
+    "question": "Which design approach focuses on module-level details like classes and methods?",
+    "options": [
+      "High-level design",
+      "Low-level design",
+      "Monolithic design",
+      "Microservices"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Low-level design",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 711,
+    "question": "Which consistency model guarantees that once a value is written, all future reads will return that value?",
+    "options": [
+      "Weak Consistency",
+      "Eventual Consistency",
+      "Strong Consistency",
+      "Causal Consistency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Strong Consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 712,
+    "question": "Which architectural pattern is MOST suitable for a payment processing system requiring high decoupling?",
+    "options": [
+      "Monolithic",
+      "Layered Architecture",
+      "Event-Driven Architecture",
+      "Microservices"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Event-Driven Architecture",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 713,
+    "question": "In system design, which metric BEST describes the system’s ability to continue working during component failures?",
+    "options": [
+      "Scalability",
+      "Maintainability",
+      "Fault Tolerance",
+      "Consistency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Fault Tolerance",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 714,
+    "question": "Which system design characteristic is MOST impacted by vertical scaling?",
+    "options": [
+      "Latency",
+      "Fault Tolerance",
+      "Throughput",
+      "Consistency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Throughput",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 715,
+    "question": "Which CAP theorem trade-off occurs when a system prioritizes availability during a network partition?",
+    "options": [
+      "Loses scalability",
+      "Sacrifices consistency",
+      "Increases latency",
+      "Sacrifices throughput"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Sacrifices consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 716,
+    "question": "What is the PRIMARY drawback of a monolithic architecture?",
+    "options": [
+      "Low throughput",
+      "Difficult to scale independently",
+      "No consistency guarantees",
+      "Requires event-driven design"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Difficult to scale independently",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 717,
+    "question": "Which consistency model is MOST suitable for a chat application where slight delays are acceptable?",
+    "options": [
+      "Strong Consistency",
+      "Eventual Consistency",
+      "Weak Consistency",
+      "Causal Consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Eventual Consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 718,
+    "question": "Which of the following is an example of a functional requirement?",
+    "options": [
+      "System must process 1000 transactions per second",
+      "System must support user login with 2FA",
+      "System must recover from crash in 5 minutes",
+      "System response time < 200ms"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is System must support user login with 2FA",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 719,
+    "question": "Which design approach provides detailed specifications for database schemas and API endpoints?",
+    "options": [
+      "High-Level Design",
+      "Low-Level Design",
+      "Functional Requirement",
+      "Event-Driven Design"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Low-Level Design",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 720,
+    "question": "Which system design principle ensures the codebase is modular and reusable?",
+    "options": [
+      "Scalability",
+      "Clean Code Principles",
+      "Throughput",
+      "Fault Tolerance"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Clean Code Principles",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 721,
+    "question": "Which type of scalability involves adding more servers to distribute load?",
+    "options": [
+      "Vertical Scaling",
+      "Horizontal Scaling",
+      "Diagonal Scaling",
+      "Database Sharding"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontal Scaling",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 722,
+    "question": "Which of the following BEST explains modular design?",
+    "options": [
+      "Breaking system into independent, reusable components",
+      "Optimizing database queries",
+      "Improving consistency with strong models",
+      "Scaling hardware resources vertically"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Breaking system into independent, reusable components",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 723,
+    "question": "Which system characteristic is MOST related to user-perceived responsiveness?",
+    "options": [
+      "Latency",
+      "Throughput",
+      "Reliability",
+      "Consistency"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Latency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 724,
+    "question": "Which pipeline ensures frequent integration and automatic deployments?",
+    "options": [
+      "CI/CD Pipeline",
+      "ETL Pipeline",
+      "Data Pipeline",
+      "Message Queue"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CI/CD Pipeline",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 725,
+    "question": "Which design principle improves testability by reducing dependencies between modules?",
+    "options": [
+      "Scalability",
+      "Loose Coupling",
+      "Vertical Scaling",
+      "Consistency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Loose Coupling",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 726,
+    "question": "Which consistency pattern allows stale data reads but guarantees data will eventually be updated across replicas?",
+    "options": [
+      "Weak Consistency",
+      "Eventual Consistency",
+      "Strong Consistency",
+      "Strict Serializability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Eventual Consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 727,
+    "question": "Which system design approach ensures detailed class diagrams and database normalization rules?",
+    "options": [
+      "Low-Level Design",
+      "High-Level Design",
+      "CI/CD Design",
+      "Event-Driven Architecture"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Low-Level Design",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 728,
+    "question": "Which system design characteristic ensures the system can recover gracefully from software bugs or hardware crashes?",
+    "options": [
+      "Reliability",
+      "Fault Tolerance",
+      "Consistency",
+      "Throughput"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Fault Tolerance",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 729,
+    "question": "Which is MOST suitable for systems that require immediate consistency, such as financial transactions?",
+    "options": [
+      "Eventual Consistency",
+      "Weak Consistency",
+      "Strong Consistency",
+      "Causal Consistency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Strong Consistency",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 730,
+    "question": "Which architectural pattern is MOST suitable for Netflix-style streaming where services must scale independently?",
+    "options": [
+      "Monolithic",
+      "Microservices",
+      "Event-Driven",
+      "Layered"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Microservices",
+    "topic": "System Design",
+    "difficulty": "easy"
+  },
+  {
+    "id": 731,
+    "question": "What is the primary objective of system design?",
+    "options": [
+      "To write efficient code",
+      "To create scalable and maintainable architecture",
+      "To debug systems effectively",
+      "To test software units"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To create scalable and maintainable architecture",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 732,
+    "question": "Which of the following best describes a monolithic system?",
+    "options": [
+      "A system broken into microservices",
+      "A distributed network of computers",
+      "A single, tightly-coupled codebase",
+      "A multi-threaded application"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is A single, tightly-coupled codebase",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 733,
+    "question": "What is the formula for calculating system availability?",
+    "options": [
+      "MTTF / (MTTF + MTTR)",
+      "MTTR / MTTF",
+      "MTBF / MTTR",
+      "Uptime / Downtime"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is MTTF / (MTTF + MTTR)",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 734,
+    "question": "Which component is crucial to ensure high availability in a distributed system?",
+    "options": [
+      "Code readability",
+      "Load Balancer",
+      "Source control",
+      "CI/CD pipeline"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Load Balancer",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 735,
+    "question": "Which of the following contributes to a system’s reliability?",
+    "options": [
+      "Automatic failover mechanisms",
+      "High latency operations",
+      "Weak authentication",
+      "Use of monolithic design"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Automatic failover mechanisms",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 736,
+    "question": "Which of the following best describes horizontal scaling?",
+    "options": [
+      "Adding more RAM to a server",
+      "Adding more CPUs to a machine",
+      "Adding more machines to the system",
+      "Adding more threads to a process"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Adding more machines to the system",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 737,
+    "question": "Which architecture supports better fault isolation: Vertical or Horizontal scaling?",
+    "options": [
+      "Vertical",
+      "Horizontal",
+      "Neither",
+      "Depends on load balancer"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontal",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 738,
+    "question": "Which of the following is a drawback of vertical scaling?",
+    "options": [
+      "Complex deployment",
+      "High cost and hardware limits",
+      "Slower data processing",
+      "Poor readability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is High cost and hardware limits",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 739,
+    "question": "Why is maintainability important in system design?",
+    "options": [
+      "It improves UI responsiveness",
+      "It allows easier feature enhancements and bug fixes",
+      "It reduces testing time",
+      "It helps in vertical scaling"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is It allows easier feature enhancements and bug fixes",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 740,
+    "question": "Which of the following supports better maintainability?",
+    "options": [
+      "Hardcoded values",
+      "Modular architecture",
+      "Long methods",
+      "Nested loops"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Modular architecture",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 741,
+    "question": "Which of the following ensures consistency in a distributed system?",
+    "options": [
+      "Load balancing",
+      "Data replication with synchronous writes",
+      "Asynchronous event handling",
+      "Vertical scaling"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Data replication with synchronous writes",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 742,
+    "question": "Which of the following trade-offs is described by the CAP theorem?",
+    "options": [
+      "Consistency vs Latency",
+      "Availability vs Throughput",
+      "Consistency vs Availability vs Partition Tolerance",
+      "Scalability vs Cost"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Consistency vs Availability vs Partition Tolerance",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 743,
+    "question": "Which mechanism is often used to detect faults in distributed systems?",
+    "options": [
+      "Reverse proxies",
+      "Health checks and heartbeat signals",
+      "Database sharding",
+      "Session caching"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Health checks and heartbeat signals",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 744,
+    "question": "What is a failover system?",
+    "options": [
+      "A backup system that takes over when the main system fails",
+      "A data recovery algorithm",
+      "A type of firewall",
+      "A method for optimizing code"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is A backup system that takes over when the main system fails",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 745,
+    "question": "Which of the following would most likely reduce system latency?",
+    "options": [
+      "Using SSDs instead of HDDs",
+      "Writing logs to a file",
+      "Adding more users",
+      "Using synchronous requests"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Using SSDs instead of HDDs",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 746,
+    "question": "Throughput in system design typically refers to:",
+    "options": [
+      "Time taken to return a single request",
+      "Number of requests processed per unit time",
+      "Size of request payloads",
+      "Database size"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Number of requests processed per unit time",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 747,
+    "question": "Which approach increases throughput?",
+    "options": [
+      "Serial processing",
+      "Parallel processing",
+      "Thread sleeping",
+      "Limiting user access"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Parallel processing",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 748,
+    "question": "What is a characteristic of one-tier architecture?",
+    "options": [
+      "Database and application layers are separated",
+      "All components reside on the same machine",
+      "Distributed across multiple networks",
+      "Uses cloud-native services"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is All components reside on the same machine",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 749,
+    "question": "In a two-tier architecture, which two components are typically separated?",
+    "options": [
+      "Client and Business Logic",
+      "Database and Network",
+      "UI and Operating System",
+      "Frontend and Load Balancer"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Client and Business Logic",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 750,
+    "question": "Which of the following layers is NOT typically part of a three-tier architecture?",
+    "options": [
+      "Presentation Layer",
+      "Application Layer",
+      "Database Layer",
+      "Firewall Layer"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Firewall Layer",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 751,
+    "question": "Which of the following is a key goal of system design?",
+    "options": [
+      "To develop mobile apps",
+      "To enhance code indentation",
+      "To define system structure and behavior",
+      "To create test cases"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is To define system structure and behavior",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 752,
+    "question": "Why is scalability important in system design?",
+    "options": [
+      "To reduce UI complexity",
+      "To allow systems to handle increased loads efficiently",
+      "To manage CSS styles",
+      "To avoid memory leaks"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To allow systems to handle increased loads efficiently",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 753,
+    "question": "Which scenario best highlights the need for a scalable system?",
+    "options": [
+      "When a system is accessed by one user only",
+      "When traffic surges during a flash sale",
+      "During deployment of code",
+      "During database backup"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is When traffic surges during a flash sale",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 754,
+    "question": "Which factor enhances system reliability?",
+    "options": [
+      "Single point of failure",
+      "Redundancy and backup strategies",
+      "High latency operations",
+      "Randomized algorithms"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Redundancy and backup strategies",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 755,
+    "question": "In eventual consistency, which of the following is true?",
+    "options": [
+      "All nodes are always in sync",
+      "Data may be temporarily inconsistent",
+      "Data is lost after write",
+      "No data replication occurs"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Data may be temporarily inconsistent",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 756,
+    "question": "Which practice promotes system maintainability?",
+    "options": [
+      "Tightly coupled components",
+      "Code duplication",
+      "Separation of concerns",
+      "Using global variables"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Separation of concerns",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 757,
+    "question": "Which of the following adds to system latency?",
+    "options": [
+      "In-memory caching",
+      "CDN implementation",
+      "Network congestion",
+      "Load balancing"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Network congestion",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 758,
+    "question": "To increase throughput, one should:",
+    "options": [
+      "Increase database read replicas",
+      "Add delays in code",
+      "Reduce thread count",
+      "Introduce single-threaded processing"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Increase database read replicas",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 759,
+    "question": "What does fault tolerance ensure in system design?",
+    "options": [
+      "High SEO ranking",
+      "Continued operation despite failures",
+      "Manual rebooting",
+      "System debugging"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Continued operation despite failures",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 760,
+    "question": "What is the best approach to handle millions of users in real-time?",
+    "options": [
+      "Vertical scaling",
+      "Horizontal scaling with load balancer",
+      "Data compression",
+      "Shared hosting"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontal scaling with load balancer",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 761,
+    "question": "Which of the following is the best strategy to improve system availability?",
+    "options": [
+      "Add more client machines",
+      "Introduce failover and redundancy",
+      "Use a slower but more stable server",
+      "Avoid caching mechanisms"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Introduce failover and redundancy",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 762,
+    "question": "What does a reliable system guarantee?",
+    "options": [
+      "Minimum memory usage",
+      "Accurate performance benchmarking",
+      "Correct operation under expected conditions",
+      "No need for backups"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Correct operation under expected conditions",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 763,
+    "question": "Which of these tools help measure system reliability?",
+    "options": [
+      "New Relic",
+      "Google Analytics",
+      "Heap Analytics",
+      "Figma"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is New Relic",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 764,
+    "question": "Which of the following is a scalability bottleneck?",
+    "options": [
+      "Stateless services",
+      "Single database writes",
+      "Load balancer setup",
+      "Message queues"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Single database writes",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 765,
+    "question": "What challenge is typically associated with horizontal scaling?",
+    "options": [
+      "Excessive cost per server",
+      "Distributed state management",
+      "Data compression",
+      "Frequent server reboots"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Distributed state management",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 766,
+    "question": "Which principle improves maintainability the most?",
+    "options": [
+      "KISS - Keep It Simple Stupid",
+      "DRY - Don't Repeat Yourself",
+      "YAGNI - You Aren't Gonna Need It",
       "All of the above"
     ],
     "correctAnswer": "D",
     "explanation": "The correct answer is All of the above",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 550
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "In C++, what is the difference between `delete` and `delete[]` when deallocating memory?",
+    "id": 767,
+    "question": "Which design pattern helps improve maintainability?",
     "options": [
-      "delete deallocates memory allocated for single objects, while delete[] deallocates memory allocated for arrays.",
-      "They both deallocate memory in the same way.",
-      "delete[] deallocates memory allocated for single objects, while delete deallocates memory allocated for arrays.",
-      "delete and delete[] are not used for memory deallocation."
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is delete deallocates memory allocated for single objects, while delete[] deallocates memory allocated for arrays.",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 551
-  },
-  {
-    "question": "Which of the following statements about memory allocation in C++ is true?",
-    "options": [
-      "Memory allocated using new must be deallocated using free.",
-      "Memory allocated using malloc is automatically deallocated when it goes out of scope.",
-      "Memory allocated using malloc must be deallocated using delete.",
-      "Memory allocated using new is automatically deallocated when it goes out of scope."
+      "Singleton",
+      "Observer",
+      "Modular",
+      "Cyclic dependency"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Memory allocated using malloc must be deallocated using delete.",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 552
+    "explanation": "The correct answer is Modular",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "In C++, what is the purpose of the `#include` directive?",
+    "id": 768,
+    "question": "In the context of databases, what does strong consistency mean?",
     "options": [
-      "To include header files",
-      "To include standard input-output library",
-      "To include user-defined functions",
-      "To define preprocessor macros"
+      "Eventually all nodes will sync",
+      "All nodes show same data instantly after a write",
+      "Reads may show outdated values",
+      "Data will never change"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is To include header files",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 553
+    "correctAnswer": "B",
+    "explanation": "The correct answer is All nodes show same data instantly after a write",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is true about the `main()` function in C++?",
+    "id": 769,
+    "question": "Which consistency model allows stale reads temporarily?",
     "options": [
-      "It can accept any number of arguments.",
-      "It must be declared as static.",
-      "It must return an integer value.",
-      "It must be defined within a class."
+      "Strong consistency",
+      "Eventual consistency",
+      "Linearizability",
+      "Snapshot isolation"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Eventual consistency",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 770,
+    "question": "Redundancy in system design contributes to which characteristic?",
+    "options": [
+      "Latency",
+      "Throughput",
+      "Fault Tolerance",
+      "UI rendering"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is It must return an integer value.",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 554
+    "explanation": "The correct answer is Fault Tolerance",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "What does the `return` statement do in a C++ program?",
+    "id": 771,
+    "question": "Which approach is used for ensuring fault tolerance in cloud services?",
     "options": [
-      "Returns control to the calling function",
-      "All of the above",
-      "Exits the program execution",
-      "Returns a value to the calling function"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Returns a value to the calling function",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 555
-  },
-  {
-    "question": "In C++, what is the correct syntax to declare a global constant variable?",
-    "options": [
-      "int PI = const 3.14;",
-      "const int PI = 3.14;",
-      "PI = const int 3.14;",
-      "int const PI = 3.14;"
+      "Single server dependency",
+      "Data mirroring and backups",
+      "Single availability zone",
+      "Disable logging"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is const int PI = 3.14;",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 556
+    "explanation": "The correct answer is Data mirroring and backups",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the purpose of the `::` operator in C++?",
+    "id": 772,
+    "question": "Which protocol is faster and often used to reduce latency in modern web apps?",
     "options": [
-      "To define scope resolution",
-      "To access class members",
-      "All of the above",
-      "To access global variables"
+      "HTTP",
+      "HTTPS",
+      "HTTP/2",
+      "FTP"
     ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is To define scope resolution",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 557
+    "correctAnswer": "C",
+    "explanation": "The correct answer is HTTP/2",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is true about function prototypes in C++?",
+    "id": 773,
+    "question": "Which factor negatively affects latency?",
     "options": [
-      "They are used to define the body of a function.",
-      "They are optional if the function definition is before the main function.",
-      "They are required for all functions.",
-      "They are used to declare the return type and parameters of a function."
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is They are used to declare the return type and parameters of a function.",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 558
-  },
-  {
-    "question": "What is the purpose of the `cin` object in C++?",
-    "options": [
-      "To define classes",
-      "To read input from the console",
-      "To perform arithmetic operations",
-      "To display output on the console"
+      "Edge caching",
+      "High network hops",
+      "CDN usage",
+      "DNS prefetching"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is To read input from the console",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 559
+    "explanation": "The correct answer is High network hops",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is true about comments in C++?",
+    "id": 774,
+    "question": "How can a message queue like Kafka improve throughput?",
     "options": [
-      "All of the above",
-      "They are used to document the code for better understanding.",
-      "They can be used to temporarily disable code.",
-      "They are ignored by the compiler."
+      "By increasing CPU speed",
+      "By enabling asynchronous processing",
+      "By disabling logs",
+      "By adding DNS servers"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is By enabling asynchronous processing",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 775,
+    "question": "Which database operation improves write throughput in NoSQL databases?",
+    "options": [
+      "Joins",
+      "Transactions",
+      "Denormalization",
+      "Foreign key constraints"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Denormalization",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 776,
+    "question": "Which application scenario is best suited for one-tier architecture?",
+    "options": [
+      "Large-scale e-commerce system",
+      "Mobile social network",
+      "Personal desktop app",
+      "Microservice platform"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Personal desktop app",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 777,
+    "question": "Which is a key limitation of two-tier architecture?",
+    "options": [
+      "Low latency",
+      "Poor scalability",
+      "High fault tolerance",
+      "Support for microservices"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Poor scalability",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 778,
+    "question": "What is the main benefit of three-tier architecture?",
+    "options": [
+      "Data processing is faster",
+      "Improved security and separation of concerns",
+      "It works without a database",
+      "Supports embedded systems"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Improved security and separation of concerns",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 779,
+    "question": "Which layer in three-tier architecture handles business logic?",
+    "options": [
+      "Presentation",
+      "Application",
+      "Data",
+      "UI"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Application",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 780,
+    "question": "Which of these is the most common reason for poor scalability?",
+    "options": [
+      "Decoupled services",
+      "Stateful session handling",
+      "Loose coupling",
+      "Stateless API design"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Stateful session handling",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 781,
+    "question": "What does system design primarily help with?",
+    "options": [
+      "Algorithm optimization",
+      "Planning scalable and reliable applications",
+      "Writing test cases",
+      "API documentation"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Planning scalable and reliable applications",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 782,
+    "question": "What is the goal of redundancy in a reliable system?",
+    "options": [
+      "Reduce latency",
+      "Avoid data duplication",
+      "Ensure continuous service in case of failure",
+      "Improve CSS rendering"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Ensure continuous service in case of failure",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 783,
+    "question": "Which layer in network communication introduces the most latency?",
+    "options": [
+      "Application Layer",
+      "Transport Layer",
+      "Network Layer",
+      "Physical Layer"
     ],
     "correctAnswer": "A",
+    "explanation": "The correct answer is Application Layer",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 784,
+    "question": "Which of the following best describes 99.99% system availability?",
+    "options": [
+      "System is down 8.76 hours/year",
+      "System is down 52.56 minutes/year",
+      "System is down 4 hours/month",
+      "System never fails"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is System is down 52.56 minutes/year",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 785,
+    "question": "High throughput systems are ideal for which use case?",
+    "options": [
+      "Static websites",
+      "File sharing platforms",
+      "Blogging platforms",
+      "Landing pages"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is File sharing platforms",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 786,
+    "question": "Which of the following is true for scaling a database horizontally?",
+    "options": [
+      "Add indexes",
+      "Increase IOPS",
+      "Shard the data",
+      "Use single instance with large RAM"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Shard the data",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 787,
+    "question": "Which storage system provides strong consistency by default?",
+    "options": [
+      "Cassandra",
+      "MongoDB",
+      "Redis (single node)",
+      "Amazon S3"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Redis (single node)",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 788,
+    "question": "Which of the following is NOT a fault tolerance strategy?",
+    "options": [
+      "Circuit breakers",
+      "Rate limiting",
+      "Failover",
+      "Replication"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Rate limiting",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 789,
+    "question": "Which method improves code maintainability in a large system?",
+    "options": [
+      "Using monoliths",
+      "Separating logic into reusable modules",
+      "Inline scripting",
+      "Global exception handlers everywhere"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Separating logic into reusable modules",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 790,
+    "question": "How does using multiple availability zones affect availability?",
+    "options": [
+      "It decreases fault tolerance",
+      "It increases deployment time",
+      "It increases system uptime and resilience",
+      "It removes the need for backups"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is It increases system uptime and resilience",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 791,
+    "question": "What aspect of a system does system design primarily deal with?",
+    "options": [
+      "Implementation syntax",
+      "Architectural structure and component interactions",
+      "Frontend animations",
+      "Database password encryption"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Architectural structure and component interactions",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 792,
+    "question": "Which database technique improves write scalability?",
+    "options": [
+      "Master-slave replication",
+      "Database normalization",
+      "Vertical partitioning",
+      "Log shipping"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Master-slave replication",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 793,
+    "question": "Refactoring code helps in achieving which system design characteristic?",
+    "options": [
+      "Fault tolerance",
+      "Throughput",
+      "Maintainability",
+      "Latency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Maintainability",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 794,
+    "question": "What type of architecture improves availability by eliminating single points of failure?",
+    "options": [
+      "Single node setup",
+      "Clustered and replicated architecture",
+      "Monolithic design",
+      "Event loop blocking"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Clustered and replicated architecture",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 795,
+    "question": "How does a CDN help reduce latency?",
+    "options": [
+      "By compressing media files",
+      "By storing data near users",
+      "By reducing request headers",
+      "By slowing down DNS resolution"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is By storing data near users",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 796,
+    "question": "What is the purpose of a retry mechanism in fault-tolerant systems?",
+    "options": [
+      "It introduces more latency",
+      "It ensures high consistency",
+      "It reattempts operations that failed due to temporary issues",
+      "It avoids logging"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is It reattempts operations that failed due to temporary issues",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 797,
+    "question": "Which layer in 3-tier architecture is responsible for data access?",
+    "options": [
+      "Presentation",
+      "Application",
+      "Database",
+      "Service"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Database",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 798,
+    "question": "Which of the following best describes BASE in NoSQL databases?",
+    "options": [
+      "Basically Available, Soft state, Eventually consistent",
+      "Binary Access Soft Encoding",
+      "Basic Algorithmic Storage Engine",
+      "Balanced Application State Engine"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Basically Available, Soft state, Eventually consistent",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 799,
+    "question": "A system that serves 1000 requests/sec is optimized for which metric?",
+    "options": [
+      "Latency",
+      "Availability",
+      "Throughput",
+      "Consistency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Throughput",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 800,
+    "question": "What is a common downside of horizontal scaling?",
+    "options": [
+      "Requires less physical infrastructure",
+      "Adds complexity in synchronization and consistency",
+      "Limited storage per node",
+      "Harder to virtualize"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Adds complexity in synchronization and consistency",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 801,
+    "question": "In two-tier architecture, where does the client directly interact?",
+    "options": [
+      "With the service layer",
+      "With the backend database",
+      "With the middleware API",
+      "With the message queue"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is With the backend database",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 802,
+    "question": "What does graceful degradation mean in fault-tolerant systems?",
+    "options": [
+      "System stops immediately when failure occurs",
+      "System switches to read-only mode or reduced functionality",
+      "Users are redirected to login page",
+      "System avoids caching"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is System switches to read-only mode or reduced functionality",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 803,
+    "question": "Sharding helps scalability by:",
+    "options": [
+      "Duplicating records",
+      "Dividing data across nodes",
+      "Backing up tables",
+      "Removing indexes"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Dividing data across nodes",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 804,
+    "question": "Which of these makes software harder to maintain?",
+    "options": [
+      "Proper documentation",
+      "Automated testing",
+      "Spaghetti code",
+      "Separation of concerns"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Spaghetti code",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 805,
+    "question": "Which load balancing strategy improves availability during spikes?",
+    "options": [
+      "Static routing",
+      "Round-robin",
+      "Single node fallback",
+      "Overflow caching"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Round-robin",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 806,
+    "question": "What does quorum mean in distributed system consistency?",
+    "options": [
+      "Majority of replicas must agree to proceed",
+      "All nodes must write simultaneously",
+      "No node can fail",
+      "Only reads are consistent"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Majority of replicas must agree to proceed",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 807,
+    "question": "Which DNS optimization reduces latency?",
+    "options": [
+      "TTL set to 0",
+      "DNS prefetching and caching",
+      "Round-robin domains",
+      "Multiple CNAME entries"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is DNS prefetching and caching",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 808,
+    "question": "Which of these is an example of vertical scaling?",
+    "options": [
+      "Adding more application instances",
+      "Migrating to microservices",
+      "Upgrading the CPU of an existing server",
+      "Using distributed cache"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Upgrading the CPU of an existing server",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 809,
+    "question": "What strategy can help scale throughput during peak traffic?",
+    "options": [
+      "Introducing synchronous API calls",
+      "Buffering incoming traffic using queues",
+      "Increasing read replicas",
+      "Disabling multithreading"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Buffering incoming traffic using queues",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 810,
+    "question": "Which of the following is true about one-tier applications?",
+    "options": [
+      "They have the highest scalability",
+      "They are easy to deploy and maintain for small apps",
+      "They support distributed services",
+      "They enforce separation of concerns"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is They are easy to deploy and maintain for small apps",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 811,
+    "question": "Which tier handles user interface rendering?",
+    "options": [
+      "Presentation Tier",
+      "Data Tier",
+      "Service Tier",
+      "Middleware"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Presentation Tier",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 812,
+    "question": "Which component detects system health automatically?",
+    "options": [
+      "Database triggers",
+      "Health check service",
+      "DNS server",
+      "Reverse proxy"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Health check service",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 813,
+    "question": "Continuous Integration (CI) improves maintainability by:",
+    "options": [
+      "Reducing deployment frequency",
+      "Automating repetitive tasks and testing",
+      "Blocking version control",
+      "Merging everything at once"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Automating repetitive tasks and testing",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 814,
+    "question": "Which factor does NOT directly improve availability?",
+    "options": [
+      "Auto-scaling",
+      "Failover systems",
+      "Redundant resources",
+      "Minifying CSS"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Minifying CSS",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 815,
+    "question": "Which of these will help reduce backend latency?",
+    "options": [
+      "Using synchronous DB writes",
+      "Optimizing SQL queries",
+      "Ignoring indexes",
+      "Increasing session timeout"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Optimizing SQL queries",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 816,
+    "question": "Which protocol provides strong consistency for distributed data?",
+    "options": [
+      "HTTP",
+      "gRPC",
+      "Two-phase commit",
+      "UDP"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Two-phase commit",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 817,
+    "question": "Which tier contains the business logic in a typical 3-tier system?",
+    "options": [
+      "Database tier",
+      "Application tier",
+      "Presentation tier",
+      "Network tier"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Application tier",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 818,
+    "question": "Why is scalability essential for modern systems?",
+    "options": [
+      "To reduce backend bugs",
+      "To manage increasing user traffic efficiently",
+      "To simplify deployment",
+      "To reduce load balancer cost"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To manage increasing user traffic efficiently",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 819,
+    "question": "What makes two-tier architecture less scalable than three-tier?",
+    "options": [
+      "Direct client-database interaction increases bottleneck risk",
+      "It requires cloud infrastructure",
+      "It does not use frontend frameworks",
+      "It can’t handle databases"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Direct client-database interaction increases bottleneck risk",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 820,
+    "question": "Which of the following helps reduce client-to-server latency?",
+    "options": [
+      "Using HTTP 1.0",
+      "Increasing the request payload size",
+      "Implementing persistent connections",
+      "Switching to FTP protocol"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Implementing persistent connections",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 821,
+    "question": "In horizontal scaling, which component becomes critical to prevent bottlenecks?",
+    "options": [
+      "Frontend framework",
+      "Load balancer",
+      "RAM size",
+      "Database schema"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Load balancer",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 822,
+    "question": "Which of these best represents high availability?",
+    "options": [
+      "System works only during peak hours",
+      "System uptime of 99.999%",
+      "Manual server restart during crash",
+      "Hourly backup to USB"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is System uptime of 99.999%",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 823,
+    "question": "Which approach is least effective in reducing latency?",
+    "options": [
+      "Edge caching",
+      "In-memory databases",
+      "Polling every 100ms",
+      "Content Delivery Network"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Polling every 100ms",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 824,
+    "question": "Which method allows a system to continue functioning after partial failure?",
+    "options": [
+      "Hard reset",
+      "Failover",
+      "Schema migration",
+      "Code minification"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Failover",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 825,
+    "question": "What is one key benefit of modular code architecture?",
+    "options": [
+      "Increases execution time",
+      "Improves maintainability and testability",
+      "Avoids dependency injection",
+      "Reduces version control usage"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Improves maintainability and testability",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 826,
+    "question": "Which type of database guarantees immediate consistency after a transaction?",
+    "options": [
+      "Eventually consistent DBs",
+      "Strongly consistent DBs",
+      "Flat-file DBs",
+      "Time-series DBs"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Strongly consistent DBs",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 827,
+    "question": "Three-tier architecture allows for better:",
+    "options": [
+      "Global variables",
+      "Scalability and separation of concerns",
+      "Hard-coded configuration",
+      "Monolithic design reuse"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Scalability and separation of concerns",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 828,
+    "question": "Which format is optimal for reducing latency in API response?",
+    "options": [
+      "XML",
+      "CSV",
+      "JSON",
+      "Binary Protocols (e.g., Protobuf)"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Binary Protocols (e.g., Protobuf)",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 829,
+    "question": "A system that scales with increasing users without changing architecture is considered:",
+    "options": [
+      "Stable",
+      "Modular",
+      "Scalable",
+      "Decoupled"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Scalable",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 830,
+    "question": "Which AWS feature provides zonal fault tolerance?",
+    "options": [
+      "S3 Versioning",
+      "CloudFront",
+      "Auto Scaling Groups with Multi-AZ",
+      "Lambda Triggers"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Auto Scaling Groups with Multi-AZ",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 831,
+    "question": "Which of the following would most likely improve API throughput?",
+    "options": [
+      "Using REST over GraphQL",
+      "Caching frequent responses",
+      "Serving requests synchronously",
+      "Increasing CPU utilization"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Caching frequent responses",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 832,
+    "question": "What does 'tech debt' refer to in system design?",
+    "options": [
+      "Unpaid hosting charges",
+      "Bug reports from testers",
+      "Compromises in code that make future changes harder",
+      "Outdated UI libraries"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Compromises in code that make future changes harder",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 833,
+    "question": "A horizontally scalable application requires:",
+    "options": [
+      "Stateful sessions",
+      "Centralized caching",
+      "Stateless server components",
+      "Vertical partitioning"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Stateless server components",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 834,
+    "question": "What is the impact of using retry logic excessively?",
+    "options": [
+      "Reduces system latency",
+      "Improves throughput",
+      "May cause cascading failures",
+      "Eliminates fault tolerance"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is May cause cascading failures",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 835,
+    "question": "What is a major limitation of one-tier applications?",
+    "options": [
+      "Easy testing",
+      "Increased hardware dependency",
+      "Good fault isolation",
+      "Ideal for distributed apps"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Increased hardware dependency",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 836,
+    "question": "Which strategy increases availability without modifying code?",
+    "options": [
+      "Edge caching",
+      "Auto restart policies",
+      "Changing DNS TTL",
+      "Applying code freeze"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Auto restart policies",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 837,
+    "question": "Which of the following is an example of eventual consistency?",
+    "options": [
+      "Banking transactions",
+      "Social media likes",
+      "Inventory deduction in flash sale",
+      "Real-time bidding"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Social media likes",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 838,
+    "question": "Which of the following contributes the most to cold start latency?",
+    "options": [
+      "Using REST APIs",
+      "Serverless architecture initialization",
+      "CDN caching",
+      "HTML rendering"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Serverless architecture initialization",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 839,
+    "question": "How do asynchronous operations impact throughput?",
+    "options": [
+      "They reduce reliability",
+      "They decrease consistency",
+      "They improve throughput by non-blocking execution",
+      "They slow down the frontend"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is They improve throughput by non-blocking execution",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 840,
+    "question": "System design helps in creating a roadmap for:",
+    "options": [
+      "Testing edge cases",
+      "Team hiring decisions",
+      "Software architecture planning",
+      "Version control"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Software architecture planning",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 841,
+    "question": "Which practice is encouraged to improve maintainability?",
+    "options": [
+      "Hard-coded logic",
+      "Coupled services",
+      "Unit testing",
+      "Circular dependencies"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Unit testing",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 842,
+    "question": "Which of the following adds least latency?",
+    "options": [
+      "Network hops",
+      "CDN edge server fetch",
+      "TCP handshakes",
+      "Cold start of serverless function"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is CDN edge server fetch",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 843,
+    "question": "Which is a drawback of two-tier architecture?",
+    "options": [
+      "UI and database tightly coupled",
+      "It supports large-scale distributed systems",
+      "Good for real-time systems",
+      "Cost-effective"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is UI and database tightly coupled",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 844,
+    "question": "Which component increases reliability by retrying failed network requests?",
+    "options": [
+      "Queue handler",
+      "Circuit breaker",
+      "Retry mechanism with backoff",
+      "Load tester"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Retry mechanism with backoff",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 845,
+    "question": "Which service is preferred for infinite horizontal scaling in cloud?",
+    "options": [
+      "Monolithic API server",
+      "Serverless functions (e.g., AWS Lambda)",
+      "FTP server",
+      "Bare metal servers"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Serverless functions (e.g., AWS Lambda)",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 846,
+    "question": "Which concept ensures that system resources are available under stress?",
+    "options": [
+      "Load balancing",
+      "Rate limiting",
+      "Backpressure mechanism",
+      "Round-robin DNS"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Backpressure mechanism",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 847,
+    "question": "Which of the following is most likely to prioritize availability over consistency?",
+    "options": [
+      "Relational databases",
+      "CAP-consistent systems",
+      "NoSQL databases like Cassandra",
+      "ACID transactions"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is NoSQL databases like Cassandra",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 848,
+    "question": "Increasing thread pool size improves throughput until:",
+    "options": [
+      "Memory is saturated",
+      "All CPU cores are idle",
+      "Threads are blocked",
+      "All logs are flushed"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Memory is saturated",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 849,
+    "question": "Which tier should contain data validation logic?",
+    "options": [
+      "Presentation Tier",
+      "Application Tier",
+      "Data Tier",
+      "Deployment Tier"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Application Tier",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 850,
+    "question": "Why is automated testing important for maintainability?",
+    "options": [
+      "It improves performance",
+      "It removes security risks",
+      "It prevents regressions during future code changes",
+      "It improves logging"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is It prevents regressions during future code changes",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 851,
+    "question": "Which cloud-native feature increases fault tolerance?",
+    "options": [
+      "Infrastructure as Code",
+      "Auto Healing Groups",
+      "GitOps",
+      "DNS over HTTPS"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Auto Healing Groups",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 852,
+    "question": "Which storage choice is better for scalability?",
+    "options": [
+      "Flat files",
+      "In-memory DB",
+      "Distributed storage systems",
+      "Local SSDs"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Distributed storage systems",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 853,
+    "question": "Which of the following minimizes latency in REST API calls?",
+    "options": [
+      "Using HTTPS over HTTP",
+      "Disabling response headers",
+      "HTTP/2 multiplexing",
+      "Long polling"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is HTTP/2 multiplexing",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 854,
+    "question": "Which of the following best fits a system requiring strong consistency?",
+    "options": [
+      "Online banking app",
+      "News feed timeline",
+      "Live chat app",
+      "Video streaming service"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Online banking app",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 855,
+    "question": "Which of the following systems needs the highest reliability?",
+    "options": [
+      "E-commerce recommendation engine",
+      "Real-time multiplayer game",
+      "Air traffic control system",
+      "Online quiz app"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Air traffic control system",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 856,
+    "question": "What is a common application of one-tier architecture?",
+    "options": [
+      "Enterprise cloud systems",
+      "Personal accounting software",
+      "Streaming platform",
+      "Real-time auctioning platform"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Personal accounting software",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 857,
+    "question": "To measure API throughput, we typically calculate:",
+    "options": [
+      "Total users per day",
+      "Response time for each call",
+      "Requests per second (RPS)",
+      "Total latency in ms"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Requests per second (RPS)",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 858,
+    "question": "Which database design helps with write scalability?",
+    "options": [
+      "3NF normalization",
+      "Denormalized wide-column store",
+      "Flat schema with joins",
+      "Global secondary indexes"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Denormalized wide-column store",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 859,
+    "question": "Which of the following ensures fault tolerance in microservices?",
+    "options": [
+      "Monolithic deployment",
+      "Service registry and discovery",
+      "Database joins",
+      "TLS handshakes"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Service registry and discovery",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 860,
+    "question": "What does a layered architecture enable?",
+    "options": [
+      "Hardcoded endpoints",
+      "Loose coupling and better maintainability",
+      "Faster monolithic execution",
+      "Improved DNS resolution"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Loose coupling and better maintainability",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 861,
+    "question": "What is a characteristic of maintainable code?",
+    "options": [
+      "Repeated logic blocks",
+      "Descriptive naming conventions",
+      "Tightly-coupled services",
+      "Hardcoded values"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Descriptive naming conventions",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 862,
+    "question": "A system that can double its performance when resources are doubled is considered:",
+    "options": [
+      "Fault tolerant",
+      "Vertically scalable",
+      "Linearly scalable",
+      "Fully consistent"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Linearly scalable",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 863,
+    "question": "Which transport layer protocol is more suitable for low-latency apps?",
+    "options": [
+      "TCP",
+      "UDP",
+      "SMTP",
+      "FTP"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is UDP",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 864,
+    "question": "How is reliability different from availability?",
+    "options": [
+      "Reliability measures uptime; availability measures correctness",
+      "Reliability is about uptime over long periods; availability is instant access",
+      "Reliability ensures UI responsiveness",
+      "They are interchangeable"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Reliability is about uptime over long periods; availability is instant access",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 865,
+    "question": "Which kind of application benefits the most from horizontal scaling?",
+    "options": [
+      "CPU-bound data processing pipeline",
+      "Simple calculator",
+      "Static web server",
+      "Single-user database"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CPU-bound data processing pipeline",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 866,
+    "question": "Which layer is absent in two-tier architecture?",
+    "options": [
+      "Application logic",
+      "Frontend",
+      "Business logic layer",
+      "Database"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Business logic layer",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 867,
+    "question": "CAP theorem says a system can have at most two of:",
+    "options": [
+      "Consistency, Availability, Partition Tolerance",
+      "Latency, Throughput, Cost",
+      "Reliability, Consistency, UI",
+      "Design, Cost, Scalability"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Consistency, Availability, Partition Tolerance",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 868,
+    "question": "Which architectural style promotes high maintainability?",
+    "options": [
+      "Microservices",
+      "Monolith",
+      "Multithreading",
+      "Single-page architecture"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Microservices",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 869,
+    "question": "What helps fault tolerance in containerized environments?",
+    "options": [
+      "High CPU allocation",
+      "Orchestrators like Kubernetes",
+      "Static IP assignment",
+      "Hardcoding DNS"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Orchestrators like Kubernetes",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 870,
+    "question": "Which cloud feature improves latency for global users?",
+    "options": [
+      "Vertical scaling",
+      "Global CDN",
+      "SSH tunneling",
+      "Load shedding"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Global CDN",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 871,
+    "question": "Which is NOT a purpose of system design?",
+    "options": [
+      "Creating maintainable architecture",
+      "Planning fault-tolerant systems",
+      "Improving database indexing",
+      "Ensuring scalable architecture"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Improving database indexing",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 872,
+    "question": "Which cache strategy improves throughput?",
+    "options": [
+      "Write-through cache",
+      "Write-behind cache",
+      "Read-through cache",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
     "explanation": "The correct answer is All of the above",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 560
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the purpose of the `static` keyword in C++?",
+    "id": 873,
+    "question": "Which component typically connects the Presentation and Data layers?",
     "options": [
-      "To define a function outside of a class",
-      "To specify that a variable is shared among all instances of a class",
-      "To declare a constant variable",
-      "To declare a variable with a fixed value"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is To specify that a variable is shared among all instances of a class",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 561
-  },
-  {
-    "question": "What does the `break` statement do in a C++ program?",
-    "options": [
-      "Terminates the loop and transfers control to a labeled statement",
-      "Terminates the loop and transfers control to the statement following the loop",
-      "Terminates the loop and transfers control to the next iteration",
-      "Terminates the loop and transfers control to the beginning of the loop"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Terminates the loop and transfers control to the statement following the loop",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 562
-  },
-  {
-    "question": "In C++, what is the purpose of the `extern` keyword?",
-    "options": [
-      "To declare a function as external",
-      "To define a variable as static",
-      "To specify the access level of a class member",
-      "To declare a global variable as external"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is To declare a global variable as external",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 563
-  },
-  {
-    "question": "Which of the following statements is true about the `do-while` loop in C++?",
-    "options": [
-      "It always executes at least once.",
-      "It can only be used for iteration over arrays.",
-      "It is rarely used in practice.",
-      "It is equivalent to the while loop."
+      "Business Logic Layer",
+      "Proxy Server",
+      "Load Balancer",
+      "Client SDK"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is It always executes at least once.",
-    "topic": "C++ Basics",
-    "difficulty": "medium",
-    "id": 564
+    "explanation": "The correct answer is Business Logic Layer",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the purpose of the `sizeof` operator in C++?",
+    "id": 874,
+    "question": "Which of the following harms maintainability?",
     "options": [
-      "To calculate the sum of elements in an array",
-      "To determine the size of a variable or data type",
-      "To find the address of a variable",
-      "To allocate memory dynamically"
+      "Using design patterns",
+      "Avoiding code reviews",
+      "Following naming conventions",
+      "Adding inline documentation"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is To determine the size of a variable or data type",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 565
+    "explanation": "The correct answer is Avoiding code reviews",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the time complexity for searching an element in a doubly linked list of size \\( n \\)?",
+    "id": 875,
+    "question": "What is one consequence of ignoring scalability in early-stage design?",
     "options": [
-      "\\( O(1) \\)",
-      "\\( O(n) \\)",
-      "\\( O(\\log n) \\)",
-      "\\( O(n^2) \\)"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is \\( O(n) \\)",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 566
-  },
-  {
-    "question": "In a doubly linked list, how many pointers does each node contain?",
-    "options": [
-      "Two",
-      "Four",
-      "Three",
-      "One"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Two",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 567
-  },
-  {
-    "question": "Which operation is NOT supported by a doubly linked list?",
-    "options": [
-      "Insertion at the beginning",
-      "Traversal",
-      "Deletion at the end",
-      "Random access"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Random access",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 568
-  },
-  {
-    "question": "What is the time complexity of inserting a node at the end of a circular linked list?",
-    "options": [
-      "\\( O(\\log n) \\)",
-      "\\( O(n^2) \\)",
-      "\\( O(n) \\)",
-      "\\( O(1) \\)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is \\( O(1) \\)",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 569
-  },
-  {
-    "question": "Which of the following is NOT an advantage of circular linked lists?",
-    "options": [
-      "Sequential access",
-      "Efficient memory usage",
-      "Constant time insertion and deletion at the beginning and end",
-      "Easy implementation of algorithms like round-robin scheduling"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Sequential access",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 570
-  },
-  {
-    "question": "What is the advantage of using a doubly linked list over a singly linked list?",
-    "options": [
-      "Faster insertion and deletion operations",
-      "Ability to traverse in both directions",
-      "Lower memory consumption",
-      "Simplicity in implementation"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Ability to traverse in both directions",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 571
-  },
-  {
-    "question": "In a circular linked list, which pointer of the last node points to the first node?",
-    "options": [
-      "Next",
-      "Previous",
-      "None",
-      "Both Next and Previous"
-    ],
-    "correctAnswer": "A",
-    "explanation": "The correct answer is Next",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 572
-  },
-  {
-    "question": "What is the space complexity of a circular linked list with \\( n \\) nodes?",
-    "options": [
-      "\\( O(\\log n) \\)",
-      "\\( O(1) \\)",
-      "\\( O(n) \\)",
-      "\\( O(n^2) \\)"
+      "Faster initial deployment",
+      "Lower hosting cost",
+      "System crashes at scale",
+      "Tighter team collaboration"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is \\( O(n) \\)",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 573
+    "explanation": "The correct answer is System crashes at scale",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "Which operation in a circular linked list requires traversal of the entire list?",
+    "id": 876,
+    "question": "What is a quick win to improve system availability?",
     "options": [
-      "Insertion at the end",
-      "Deletion at the beginning",
-      "Insertion at the beginning",
-      "Deletion at the end"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Deletion at the end",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 574
-  },
-  {
-    "question": "What is the time complexity of deleting the first node in a doubly linked list?",
-    "options": [
-      "\\( O(n^2) \\)",
-      "\\( O(1) \\)",
-      "\\( O(n) \\)",
-      "\\( O(\\log n) \\)"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is \\( O(1) \\)",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 575
-  },
-  {
-    "question": "Which data structure is NOT typically used to implement a circular linked list?",
-    "options": [
-      "Singly linked list",
-      "Doubly linked list",
-      "Dynamic array",
-      "Array"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is Array",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 576
-  },
-  {
-    "question": "What is the time complexity of traversing a circular linked list starting from any arbitrary node?",
-    "options": [
-      "\\( O(n^2) \\)",
-      "\\( O(1) \\)",
-      "\\( O(n) \\)",
-      "\\( O(\\log n) \\)"
+      "Deploy to a single availability zone",
+      "Add retries to DB queries",
+      "Use a health-checking load balancer",
+      "Avoid CI/CD tools"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is \\( O(n) \\)",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 577
+    "explanation": "The correct answer is Use a health-checking load balancer",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "In a doubly linked list, which pointer of the first node points to NULL?",
+    "id": 877,
+    "question": "A faster DNS response reduces which component of latency?",
     "options": [
-      "Previous",
-      "Next",
-      "None",
-      "Both Next and Previous"
+      "Data access latency",
+      "Load balancing latency",
+      "Name resolution latency",
+      "Memory allocation latency"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Name resolution latency",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 878,
+    "question": "What is a good practice to improve reliability in microservices?",
+    "options": [
+      "Tightly couple services",
+      "Use synchronous chaining",
+      "Implement circuit breakers and bulkheads",
+      "Centralize all logic"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Implement circuit breakers and bulkheads",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 879,
+    "question": "What causes inconsistency in distributed systems?",
+    "options": [
+      "Eventual sync",
+      "Centralized cache",
+      "Monolithic services",
+      "Client-side load balancing"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Previous",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 578
+    "explanation": "The correct answer is Eventual sync",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
   },
   {
-    "question": "Which operation is more efficient in a circular linked list compared to a doubly linked list?",
+    "id": 880,
+    "question": "System design helps a developer to:",
     "options": [
-      "Insertion at the beginning",
-      "Traversal",
-      "Deletion at the end",
-      "Random access"
+      "Focus only on frontend logic",
+      "Prepare for scalability and failure handling",
+      "Avoid version control",
+      "Skip test cases"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Prepare for scalability and failure handling",
+    "topic": "System Design Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 881,
+    "question": "What is the main difference between performance and scalability?",
+    "options": [
+      "Performance is about how much load a system can handle; scalability is about how fast it is.",
+      "Performance refers to how efficiently a system works; scalability refers to how well it handles growth.",
+      "Scalability is only applicable to databases.",
+      "Performance is about cost optimization."
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Performance refers to how efficiently a system works; scalability refers to how well it handles growth.",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 882,
+    "question": "A system that performs well under current load but fails under increased load is:",
+    "options": [
+      "Highly scalable",
+      "Performance-optimized but not scalable",
+      "Highly available",
+      "Distributed system"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Performance-optimized but not scalable",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 883,
+    "question": "Latency is best described as:",
+    "options": [
+      "Total users per day",
+      "Time taken to complete a single operation",
+      "Operations per second",
+      "Network retry delay"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Time taken to complete a single operation",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 884,
+    "question": "Which of the following best defines throughput?",
+    "options": [
+      "Delay before a system starts responding",
+      "Rate of successful message delivery over a network",
+      "Size of a single API call",
+      "CPU cache time"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Rate of successful message delivery over a network",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 885,
+    "question": "Which system will return stale data during partition but remain online?",
+    "options": [
+      "Consistent system",
+      "Available system",
+      "Fault-tolerant system",
+      "Strongly coupled system"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Available system",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 886,
+    "question": "In CAP theorem, a system can guarantee:",
+    "options": [
+      "All three - Consistency, Availability, and Partition Tolerance",
+      "Only Consistency and Availability",
+      "At most two of the three - CAP",
+      "Only Availability and Performance"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is At most two of the three - CAP",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 887,
+    "question": "Which of the following is a benefit of modular design?",
+    "options": [
+      "Reduced code readability",
+      "Improved testability and maintainability",
+      "Increased code duplication",
+      "Harder code deployment"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Improved testability and maintainability",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 888,
+    "question": "Modular architecture supports which principle?",
+    "options": [
+      "Tight coupling",
+      "Single Responsibility",
+      "Global accessibility",
+      "Monolithic structure"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Single Responsibility",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 889,
+    "question": "Which of the following aligns with clean code principles?",
+    "options": [
+      "Meaningful variable names",
+      "Hard-coded values",
+      "Long functions with nested loops",
+      "Ignoring edge cases"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Insertion at the beginning",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 579
+    "explanation": "The correct answer is Meaningful variable names",
+    "topic": "Maintainability",
+    "difficulty": "medium"
   },
   {
-    "question": "Which operation in a doubly linked list requires traversal of the entire list?",
+    "id": 890,
+    "question": "According to clean code principles, functions should be:",
     "options": [
-      "Insertion at the beginning",
-      "Insertion at the end",
-      "Deletion at the beginning",
-      "Deletion at the end"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Deletion at the beginning",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 580
-  },
-  {
-    "question": "What is the space complexity of a doubly linked list with \\( n \\) nodes?",
-    "options": [
-      "\\( O(1) \\)",
-      "\\( O(n^2) \\)",
-      "\\( O(\\log n) \\)",
-      "\\( O(n) \\)"
-    ],
-    "correctAnswer": "D",
-    "explanation": "The correct answer is \\( O(n) \\)",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 581
-  },
-  {
-    "question": "Which of the following operations can be performed efficiently in both circular and doubly linked lists?",
-    "options": [
-      "Insertion at the end",
-      "Traversal",
-      "Random access",
-      "Deletion at the beginning"
+      "Long and all-inclusive",
+      "Independent and short",
+      "Wrapped inside other functions",
+      "Written without comments"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Traversal",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 582
+    "explanation": "The correct answer is Independent and short",
+    "topic": "Maintainability",
+    "difficulty": "medium"
   },
   {
-    "question": "In a circular linked list, which operation can be performed in constant time regardless of the list size?",
+    "id": 891,
+    "question": "What does CI/CD stand for?",
     "options": [
-      "Deletion at the end",
-      "Deletion at the beginning",
-      "Insertion at the beginning",
-      "Traversal"
+      "Code Inspection and Control Deployment",
+      "Continuous Integration and Continuous Deployment",
+      "Control Integrity and Code Development",
+      "Cluster Integration and Code Delivery"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Continuous Integration and Continuous Deployment",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 892,
+    "question": "Which tool is commonly used in CI/CD?",
+    "options": [
+      "Webpack",
+      "Postman",
+      "Jenkins",
+      "MongoDB"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Insertion at the beginning",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 583
+    "explanation": "The correct answer is Jenkins",
+    "topic": "Maintainability",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following is an application of circular linked lists?",
+    "id": 893,
+    "question": "A highly performant system with poor scalability will:",
     "options": [
-      "Binary search trees",
-      "Stacks",
-      "Undo functionality in text editors",
-      "Queues"
+      "Handle increasing load gracefully",
+      "Break down when load increases",
+      "Always provide high availability",
+      "Replicate data accurately"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Break down when load increases",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 894,
+    "question": "Which metric is more important for video streaming?",
+    "options": [
+      "Latency",
+      "Throughput",
+      "Consistency",
+      "Disk I/O"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Throughput",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 895,
+    "question": "A strongly consistent system is most appropriate for:",
+    "options": [
+      "Social media likes",
+      "Shopping cart price display",
+      "Bank transactions",
+      "Video content delivery"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is Undo functionality in text editors",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 584
+    "explanation": "The correct answer is Bank transactions",
+    "topic": "Comparison",
+    "difficulty": "medium"
   },
   {
-    "question": "In a circular doubly linked list with \\( n \\) nodes, what is the time complexity of reversing the list?",
+    "id": 896,
+    "question": "Modular code allows:",
     "options": [
-      "\\( O(n) \\)",
-      "\\( O(1) \\)",
-      "\\( O(n^2) \\)",
-      "\\( O(\\log n) \\)"
+      "Easier testing and debugging",
+      "Slower execution",
+      "Bigger memory usage",
+      "All code in a single function"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is \\( O(n) \\)",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 585
+    "explanation": "The correct answer is Easier testing and debugging",
+    "topic": "Maintainability",
+    "difficulty": "medium"
   },
   {
-    "question": "Which operation in a circular linked list has the highest time complexity?",
+    "id": 897,
+    "question": "Which principle helps improve readability?",
     "options": [
-      "Deletion at the end",
-      "Insertion at the end",
-      "Deletion at the beginning",
-      "Insertion at the beginning"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Insertion at the end",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 586
-  },
-  {
-    "question": "Which of the following statements about circular linked lists is FALSE?",
-    "options": [
-      "They are always doubly linked.",
-      "They have a NULL pointer at the end.",
-      "They can be used to implement queues.",
-      "They can have a constant time complexity for certain operations."
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is They have a NULL pointer at the end.",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 587
-  },
-  {
-    "question": "In a circular linked list, if the last node's pointer points to the first node itself, what kind of circular linked list is it?",
-    "options": [
-      "Normal circular linked list",
-      "Doubly circular linked list",
-      "Circular linked list with sentinel node",
-      "Singularly circular linked list"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is Circular linked list with sentinel node",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 588
-  },
-  {
-    "question": "Which of the following operations can be performed more efficiently in a doubly linked list compared to a circular linked list?",
-    "options": [
-      "Insertion at the beginning",
-      "Insertion at the end",
-      "Deletion at the beginning",
-      "Traversal"
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct answer is Insertion at the end",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 589
-  },
-  {
-    "question": "In a circular doubly linked list, if all the nodes contain unique data values, what is the time complexity of searching for a specific element?",
-    "options": [
-      "\\( O(1) \\)",
-      "\\( O(\\log n) \\)",
-      "\\( O(n) \\)",
-      "\\( O(n^2) \\)"
-    ],
-    "correctAnswer": "C",
-    "explanation": "The correct answer is \\( O(n) \\)",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 590
-  },
-  {
-    "question": "Which of the following data structures can be used to efficiently implement undo functionality in text editors?",
-    "options": [
-      "Singly linked list",
-      "Circular linked list",
-      "Binary search tree",
-      "Doubly linked list"
+      "YAGNI",
+      "DRY",
+      "KISS",
+      "All of the above"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is Doubly linked list",
-    "topic": "Computer Science",
-    "difficulty": "medium",
-    "id": 591
+    "explanation": "The correct answer is All of the above",
+    "topic": "Maintainability",
+    "difficulty": "medium"
   },
   {
-    "question": "In a circular linked list, if the head pointer points to the last node, what kind of circular linked list is it?",
+    "id": 898,
+    "question": "Which phase comes first in a CI/CD pipeline?",
     "options": [
-      "Normal circular linked list",
-      "Circular linked list with sentinel node",
-      "Doubly circular linked list",
-      "Singularly circular linked list"
+      "Deployment",
+      "Testing",
+      "Integration",
+      "Monitoring"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Integration",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 899,
+    "question": "Which statement is true?",
+    "options": [
+      "A scalable system is always performant",
+      "A performant system is always scalable",
+      "Scalability and performance are always inversely related",
+      "A system can be scalable but not performant under load"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is Singularly circular linked list",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 592
+    "explanation": "The correct answer is A system can be scalable but not performant under load",
+    "topic": "Comparison",
+    "difficulty": "medium"
   },
   {
-    "question": "Which of the following operations can be performed in constant time in both circular and doubly linked lists?",
+    "id": 900,
+    "question": "Which scenario requires low latency?",
     "options": [
-      "Insertion at the beginning",
-      "Deletion at the beginning",
-      "Traversal",
-      "Deletion at the end"
+      "Video buffering",
+      "Online gaming",
+      "Blog content loading",
+      "Email sync"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Online gaming",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 901,
+    "question": "Eventual consistency favors:",
+    "options": [
+      "Latency",
+      "Data freshness",
+      "Availability during network partitions",
+      "Strict locking"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Availability during network partitions",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 902,
+    "question": "A modular project is typically:",
+    "options": [
+      "Hard to refactor",
+      "Easier to scale and maintain",
+      "Only for mobile apps",
+      "Better in monolithic systems"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Easier to scale and maintain",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 903,
+    "question": "What does 'DRY' stand for?",
+    "options": [
+      "Don't Repeat Yourself",
+      "Debug Ready YAML",
+      "Dynamic Runtime Yielding",
+      "Deploy Recurring Yarns"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Insertion at the beginning",
-    "topic": "Linked Lists",
-    "difficulty": "medium",
-    "id": 593
+    "explanation": "The correct answer is Don't Repeat Yourself",
+    "topic": "Maintainability",
+    "difficulty": "medium"
   },
   {
-    "question": "What is the maximum number of pointers that a node in a circular doubly linked list with \\( n \\) nodes can have?",
+    "id": 904,
+    "question": "CI/CD helps teams by:",
     "options": [
-      "4",
-      "3",
-      "1",
-      "2"
+      "Reducing deployment risks",
+      "Avoiding automated testing",
+      "Disabling rollback",
+      "Avoiding version control"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Reducing deployment risks",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 905,
+    "question": "A codebase that follows clean code principles is:",
+    "options": [
+      "Hard to change and test",
+      "Simple, understandable, and testable",
+      "Usually undocumented",
+      "Only readable by author"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is 3",
-    "topic": "C++ Concepts",
-    "difficulty": "medium",
-    "id": 594
+    "explanation": "The correct answer is Simple, understandable, and testable",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 906,
+    "question": "Which of these is not a CI/CD tool?",
+    "options": [
+      "CircleCI",
+      "GitHub Actions",
+      "Selenium",
+      "Travis CI"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Selenium",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 907,
+    "question": "Which one scales horizontally better?",
+    "options": [
+      "Tightly coupled systems",
+      "Stateless systems",
+      "Procedural codebases",
+      "Single-node applications"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Stateless systems",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 908,
+    "question": "A benefit of modular design in microservices is:",
+    "options": [
+      "Single point of failure",
+      "Independent deployment of features",
+      "Global state management",
+      "Shared global variables"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Independent deployment of features",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 909,
+    "question": "Which metric is most important for API responsiveness?",
+    "options": [
+      "Latency",
+      "Throughput",
+      "Uptime",
+      "Bandwidth"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Latency",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 910,
+    "question": "Which describes a highly scalable system?",
+    "options": [
+      "Performance reduces as users increase",
+      "Performs consistently as load increases",
+      "Slow but steady under high load",
+      "Fails under minimal load"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Performs consistently as load increases",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 911,
+    "question": "A high-latency system may still be acceptable if:",
+    "options": [
+      "It provides very low throughput",
+      "Users are offline",
+      "Throughput remains high and stable",
+      "It’s hosted on a CDN"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Throughput remains high and stable",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 912,
+    "question": "Which system characteristic ensures it can grow with increased demand?",
+    "options": [
+      "Scalability",
+      "Latency",
+      "Performance",
+      "Bandwidth"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Scalability",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 913,
+    "question": "What does KISS stand for in software design?",
+    "options": [
+      "Keep It Super Simple",
+      "Keep It Secure and Safe",
+      "Keep It Simple, Stupid",
+      "Keep In System Scope"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Keep It Simple, Stupid",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 914,
+    "question": "Which of these is an advantage of CI/CD pipelines?",
+    "options": [
+      "Faster production releases with fewer bugs",
+      "Manual deployment only",
+      "Increased human dependency",
+      "Code changes deployed yearly"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Faster production releases with fewer bugs",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 915,
+    "question": "Which system prioritizes consistency but sacrifices availability under partition?",
+    "options": [
+      "CP System",
+      "AP System",
+      "CA System",
+      "RTOS"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is CP System",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 916,
+    "question": "Which type of system is harder to scale and maintain?",
+    "options": [
+      "Layered system",
+      "Modular system",
+      "Monolithic system",
+      "Microservices"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Monolithic system",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 917,
+    "question": "Which of these helps in avoiding 'code smells'?",
+    "options": [
+      "Global variables",
+      "Tightly coupled functions",
+      "Modular and well-documented code",
+      "Single large method"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Modular and well-documented code",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 918,
+    "question": "Which of the following is a benefit of using automated tests in CI/CD?",
+    "options": [
+      "Increases manual test efforts",
+      "Speeds up feedback cycle",
+      "Adds deployment delay",
+      "Requires no testing"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Speeds up feedback cycle",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 919,
+    "question": "Which metric is more critical for real-time chat applications?",
+    "options": [
+      "Throughput",
+      "Latency",
+      "Consistency",
+      "Storage"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Latency",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 920,
+    "question": "Which of the following scenarios reflects a lack of scalability?",
+    "options": [
+      "Performance improves after adding nodes",
+      "System response time increases with user load",
+      "Memory usage remains constant",
+      "More traffic leads to faster responses"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is System response time increases with user load",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 921,
+    "question": "What makes modules easier to manage?",
+    "options": [
+      "Global access",
+      "Isolation and clear interface contracts",
+      "Hardcoded routing",
+      "Mixed responsibilities"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Isolation and clear interface contracts",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 922,
+    "question": "Why do companies prefer using CI/CD pipelines?",
+    "options": [
+      "They reduce cost by removing test teams",
+      "They automate the release process",
+      "They reduce code review quality",
+      "They increase rollback risks"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is They automate the release process",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 923,
+    "question": "Which one is a sign of good code maintainability?",
+    "options": [
+      "Functions with more than 100 lines",
+      "Functions doing multiple unrelated tasks",
+      "Code that follows SRP (Single Responsibility Principle)",
+      "Deeply nested blocks"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Code that follows SRP (Single Responsibility Principle)",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 924,
+    "question": "What does an AP system emphasize in CAP?",
+    "options": [
+      "Accuracy and durability",
+      "Availability and Partition Tolerance",
+      "Consistency and Accuracy",
+      "Cost-efficiency"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Availability and Partition Tolerance",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 925,
+    "question": "Loose coupling between modules helps by:",
+    "options": [
+      "Increasing dependencies",
+      "Reducing change impact",
+      "Avoiding version control",
+      "Introducing technical debt"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Reducing change impact",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 926,
+    "question": "Which best represents a scalable architecture?",
+    "options": [
+      "Performance drops after new users join",
+      "Scales up or down with demand",
+      "Depends on centralized DB",
+      "Runs on a single thread"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Scales up or down with demand",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 927,
+    "question": "CI/CD pipelines promote which DevOps practice?",
+    "options": [
+      "Waterfall",
+      "Big Bang Integration",
+      "Continuous delivery of features",
+      "Manual test cycles"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Continuous delivery of features",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 928,
+    "question": "Which practice supports 'DRY' coding?",
+    "options": [
+      "Copy-pasting logic across files",
+      "Using reusable helper methods",
+      "Manual loops with duplication",
+      "Long switch-case blocks"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Using reusable helper methods",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 929,
+    "question": "Why are modular services preferred in microservices?",
+    "options": [
+      "Because they share database schemas",
+      "They reduce deployment complexity",
+      "They eliminate interface definitions",
+      "They avoid refactoring"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is They reduce deployment complexity",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 930,
+    "question": "Which optimization lowers latency?",
+    "options": [
+      "Adding load balancers",
+      "Pre-warming caches",
+      "Adding retries",
+      "Increasing payload size"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Pre-warming caches",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 931,
+    "question": "Which of the following tasks can CI/CD automate?",
+    "options": [
+      "Code indentation",
+      "UI design",
+      "Deployment to production",
+      "Team collaboration"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Deployment to production",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 932,
+    "question": "Commenting code is important for:",
+    "options": [
+      "Making code longer",
+      "Explaining complex logic clearly",
+      "Adding HTML tags",
+      "Hiding syntax errors"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Explaining complex logic clearly",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 933,
+    "question": "Which service likely prefers availability over consistency?",
+    "options": [
+      "Flight booking system",
+      "E-commerce product listing",
+      "Banking core system",
+      "Tax-filing portal"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is E-commerce product listing",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 934,
+    "question": "High throughput can sometimes increase:",
+    "options": [
+      "Scalability",
+      "Latency",
+      "Availability",
+      "Code quality"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Latency",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 935,
+    "question": "Which architecture is most modular?",
+    "options": [
+      "Monolith",
+      "Client-server",
+      "Microservices",
+      "Layered monolith"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Microservices",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 936,
+    "question": "Which one breaks CI/CD pipelines?",
+    "options": [
+      "Failed unit tests",
+      "Green builds",
+      "Git commits",
+      "Docker containers"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Failed unit tests",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 937,
+    "question": "Which term is used for scaling by adding more machines?",
+    "options": [
+      "Vertical scaling",
+      "Horizontal scaling",
+      "Runtime scaling",
+      "Code optimization"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontal scaling",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 938,
+    "question": "Which naming convention enhances maintainability?",
+    "options": [
+      "i, j, k for all variables",
+      "Descriptive and meaningful names",
+      "Mixed language names",
+      "Single character names"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Descriptive and meaningful names",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 939,
+    "question": "Which workload benefits most from high throughput?",
+    "options": [
+      "Payment gateway",
+      "Bulk image uploads",
+      "Real-time chat",
+      "Online game"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Bulk image uploads",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 940,
+    "question": "What is the final step in a CD pipeline?",
+    "options": [
+      "Source code commit",
+      "Code review",
+      "Deploy to production",
+      "Integration tests"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Deploy to production",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 941,
+    "question": "A system that handles 10,000 users efficiently but fails at 1,00,000 users lacks:",
+    "options": [
+      "Performance",
+      "Concurrency",
+      "Scalability",
+      "Storage"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Scalability",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 942,
+    "question": "Which best describes a high-throughput and low-latency system?",
+    "options": [
+      "Processes many requests slowly",
+      "Processes few requests quickly",
+      "Processes many requests quickly",
+      "Processes few requests slowly"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Processes many requests quickly",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 943,
+    "question": "Refactoring code improves:",
+    "options": [
+      "Performance only",
+      "Maintainability and readability",
+      "Execution time",
+      "Memory usage"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Maintainability and readability",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 944,
+    "question": "If every function performs one specific task, the system follows:",
+    "options": [
+      "Multi-responsibility principle",
+      "Single Responsibility Principle",
+      "Dependency Injection",
+      "Encapsulation"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Single Responsibility Principle",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 945,
+    "question": "Which tool is used to define CI/CD workflows using YAML?",
+    "options": [
+      "GitHub Actions",
+      "MySQL",
+      "Nginx",
+      "Figma"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is GitHub Actions",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 946,
+    "question": "During a network partition, which system still serves data (even if outdated)?",
+    "options": [
+      "Consistent-first system",
+      "Available-first system",
+      "Strict transactional system",
+      "Stateful load balancer"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Available-first system",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 947,
+    "question": "Which of the following will increase scalability but not necessarily performance?",
+    "options": [
+      "Optimizing database joins",
+      "Horizontal scaling with stateless APIs",
+      "Refactoring loops into recursion",
+      "Adding more RAM to a single node"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontal scaling with stateless APIs",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 948,
+    "question": "A codebase with repeated logic in multiple files violates which principle?",
+    "options": [
+      "KISS",
+      "DRY",
+      "OCP",
+      "LSP"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is DRY",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 949,
+    "question": "Rollback mechanisms in CI/CD are useful when:",
+    "options": [
+      "New features are unstable",
+      "Code is perfectly tested",
+      "No tests are needed",
+      "Code runs locally"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is New features are unstable",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 950,
+    "question": "Reusability of modules increases when:",
+    "options": [
+      "They share global state",
+      "They are tightly coupled",
+      "They have single, independent logic",
+      "They use long method chains"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is They have single, independent logic",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 951,
+    "question": "Which of the following is true?",
+    "options": [
+      "High throughput guarantees low latency",
+      "High latency always means poor performance",
+      "Low latency doesn’t guarantee high throughput",
+      "Throughput is measured in milliseconds"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Low latency doesn’t guarantee high throughput",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 952,
+    "question": "Which code structure supports clean design?",
+    "options": [
+      "Magic numbers everywhere",
+      "Short methods with descriptive names",
+      "Deeply nested if-else blocks",
+      "One method per class"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Short methods with descriptive names",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 953,
+    "question": "Continuous deployment pushes code:",
+    "options": [
+      "To version control only",
+      "To production after passing tests",
+      "To staging only",
+      "To the design board"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is To production after passing tests",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 954,
+    "question": "Breaking code into self-contained units improves:",
+    "options": [
+      "Latency",
+      "Availability",
+      "Maintainability",
+      "Partition tolerance"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Maintainability",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 955,
+    "question": "A consistent system ensures:",
+    "options": [
+      "All users see the same data immediately",
+      "System is always online",
+      "No partition tolerance",
+      "Zero data replication"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is All users see the same data immediately",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 956,
+    "question": "Improving algorithm efficiency affects:",
+    "options": [
+      "Scalability only",
+      "Performance primarily",
+      "CI/CD pipelines",
+      "Version control"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Performance primarily",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 957,
+    "question": "Which is NOT a clean code practice?",
+    "options": [
+      "Small functions",
+      "Commented complex logic",
+      "Meaningful names",
+      "Copy-pasted logic"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct answer is Copy-pasted logic",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 958,
+    "question": "A build fails during CI. What should happen next?",
+    "options": [
+      "Deploy to production anyway",
+      "Notify team and halt pipeline",
+      "Skip tests",
+      "Rollback to a prior Git commit"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Notify team and halt pipeline",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 959,
+    "question": "What kind of app is most sensitive to latency?",
+    "options": [
+      "PDF viewer",
+      "Stock trading dashboard",
+      "Blogging tool",
+      "Data warehouse"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Stock trading dashboard",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 960,
+    "question": "Which project is easier to unit test?",
+    "options": [
+      "Tightly coupled monolith",
+      "Modular microservice",
+      "Flat code with repeated logic",
+      "All-in-one script"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Modular microservice",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 961,
+    "question": "What happens in a CP system during network partition?",
+    "options": [
+      "Returns stale data",
+      "Becomes unavailable temporarily",
+      "Ignores write conflicts",
+      "Serves cached data only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Becomes unavailable temporarily",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 962,
+    "question": "What can be used for CI in GitHub repositories?",
+    "options": [
+      "GitHub Pages",
+      "GitHub Issues",
+      "GitHub Actions",
+      "GitHub Wiki"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is GitHub Actions",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 963,
+    "question": "Which change improves performance but not scalability?",
+    "options": [
+      "Using a faster sorting algorithm",
+      "Distributing workload across servers",
+      "Using sharded databases",
+      "Stateless design with horizontal scaling"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Using a faster sorting algorithm",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 964,
+    "question": "Code that is readable and modifiable by any team member is called:",
+    "options": [
+      "Technical debt",
+      "Hacky patch",
+      "Clean code",
+      "Legacy code"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Clean code",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 965,
+    "question": "Loose coupling and high cohesion lead to:",
+    "options": [
+      "Better maintainability",
+      "Harder debugging",
+      "Slower performance",
+      "Brittle code"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Better maintainability",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 966,
+    "question": "Which choice improves throughput in batch jobs?",
+    "options": [
+      "Parallel processing",
+      "Single thread queues",
+      "Input throttling",
+      "Hardcoding delays"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct answer is Parallel processing",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 967,
+    "question": "CI/CD ensures code is always:",
+    "options": [
+      "Merged without review",
+      "Compiled without errors and tested",
+      "Written in Java",
+      "Tested manually"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Compiled without errors and tested",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 968,
+    "question": "Clean code avoids:",
+    "options": [
+      "Code reuse",
+      "Commenting functions",
+      "Side effects and ambiguity",
+      "Readable logic"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is Side effects and ambiguity",
+    "topic": "Maintainability",
+    "difficulty": "medium"
+  },
+  {
+    "id": 969,
+    "question": "In distributed DBs, what ensures consistency?",
+    "options": [
+      "Async replication",
+      "Majority quorum reads and writes",
+      "Disabling logging",
+      "Master-slave replication only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Majority quorum reads and writes",
+    "topic": "Comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 970,
+    "question": "A system that adds instances dynamically based on CPU load is:",
+    "options": [
+      "Performance optimized",
+      "Horizontally scalable",
+      "Vertically tuned",
+      "Low-latency bound"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct answer is Horizontally scalable",
+    "topic": "Comparison",
+    "difficulty": "medium"
   }
 ];

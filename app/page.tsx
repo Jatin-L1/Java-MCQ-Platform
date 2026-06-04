@@ -12,7 +12,7 @@ export default function HomePage() {
       <div className="max-w-5xl mx-auto px-4 text-center py-12">
         <div className="inline-flex items-center gap-2 rounded-full px-4 py-2 border border-cyan-300/30 bg-cyan-300/10 text-cyan-200 text-sm mb-8">
           <Cloud className="h-4 w-4" />
-          Cloud Computing Practice Hub
+          System Design Practice Hub
         </div>
 
         <div className="flex items-center justify-center space-x-3 mb-6">
@@ -21,17 +21,17 @@ export default function HomePage() {
             <BookOpen className="h-6 w-6 text-sky-300 absolute -top-1 -right-1" />
           </div>
           <h1 className="text-4xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent">
-            Cloud Quiz Platform
+            System Design Platform
           </h1>
         </div>
 
         <h2 className="text-5xl font-bold text-white mb-6 leading-tight">
-          Practice Cloud Concepts
+          Practice System Design Concepts
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300"> with Instant Feedback</span>
         </h2>
         
         <p className="text-xl text-slate-200 mb-10 max-w-3xl mx-auto">
-          Build confidence across cloud architecture, virtualization, IAM, compute, storage, containers, and networking.
+          Build confidence across systems architecture, databases, scaling, caching, network protocols, and distributed systems.
           Practice topic-wise or take a full timed test.
         </p>
 

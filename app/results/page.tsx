@@ -52,7 +52,7 @@ export default function ResultsPage() {
   
   const getScoreMessage = () => {
     if (percentage === null) return "";
-    if (percentage >= 90) return "Outstanding. You have strong command over cloud concepts.";
+    if (percentage >= 90) return "Outstanding. You have strong command over system design concepts.";
     if (percentage >= 80) return "Excellent work. You're highly test-ready.";
     if (percentage >= 70) return "Good job. Your foundation is solid, with room to refine.";
     if (percentage >= 60) return "You are progressing well. Keep practicing to improve accuracy.";
@@ -105,7 +105,7 @@ export default function ResultsPage() {
             <CardTitle className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
               {isMockTest ? "Mock Test Complete!" : "Quiz Completed!"}
             </CardTitle>
-              <p className="text-gray-400">Cloud Computing Assessment</p>
+              <p className="text-gray-400">System Design Assessment</p>
           </CardHeader>
           <CardContent className="space-y-8">
             <div>

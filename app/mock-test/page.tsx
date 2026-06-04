@@ -132,38 +132,38 @@ export default function MockTestPage() {
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-8">
-            Cloud Computing - Full Mock Test
+            System Design - Full Mock Test
           </h1>
           <Card className="shadow-2xl border-0 bg-gray-800/80 backdrop-blur-sm p-8 mb-8">
             <CardHeader>
               <div className="mx-auto w-20 h-20 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full flex items-center justify-center mb-6 border border-purple-500/20">
                 <Clock className="h-10 w-10 text-purple-400" />
               </div>
-              <CardTitle className="text-3xl text-white mb-4">Ready to Test Your Cloud Knowledge?</CardTitle>
+              <CardTitle className="text-3xl text-white mb-4">Ready to Test Your Architecure Knowledge?</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-xl text-gray-300 mb-8">
-                This timed mock test simulates exam conditions using your full cloud question bank.
+                This timed mock test simulates exam conditions using your full system design question bank.
               </p>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="p-6 rounded-xl bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20">
-                  <h3 className="text-xl font-bold text-purple-400 mb-4">Core Cloud Concepts</h3>
+                  <h3 className="text-xl font-bold text-purple-400 mb-4">Core Architecture Concepts</h3>
                   <ul className="text-left space-y-2 text-gray-300">
-                    <li>• Cloud architecture and deployment models</li>
-                    <li>• Virtualization and shared responsibility</li>
-                    <li>• IAM and access control</li>
-                    <li>• AWS service fundamentals</li>
+                    <li>• System architecture and deployment</li>
+                    <li>• Scalability and Load Balancing</li>
+                    <li>• Databases and Caching</li>
+                    <li>• Microservices and Monoliths</li>
                   </ul>
                 </div>
                 
                 <div className="p-6 rounded-xl bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20">
-                  <h3 className="text-xl font-bold text-blue-400 mb-4">Hands-on Services</h3>
+                  <h3 className="text-xl font-bold text-blue-400 mb-4">Applied Design</h3>
                   <ul className="text-left space-y-2 text-gray-300">
-                    <li>• Compute, storage, and networking</li>
-                    <li>• Containers and orchestration</li>
-                    <li>• Security controls and policies</li>
-                    <li>• High availability and scaling</li>
+                    <li>• Availability and Consistency (CAP)</li>
+                    <li>• Event Driven Architecture</li>
+                    <li>• Networking and Protocols</li>
+                    <li>• Real-world system tradeoffs</li>
                   </ul>
                 </div>
               </div>
@@ -215,7 +215,7 @@ export default function MockTestPage() {
       <div className="max-w-4xl mx-auto px-4">
         <div className="flex justify-between items-center mb-6 bg-gray-800/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-700">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Cloud Quiz - Mock Test
+            System Design - Mock Test
           </h1>
           <div className="flex items-center space-x-4">
             <span className="text-sm font-medium text-gray-400">
